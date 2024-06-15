@@ -30,7 +30,29 @@ namespace BalthasarIL
             this.serialize = this.assemblyType.GetMethod("Serialize");
             this.deserialize = this.assemblyType.GetMethod("Deserialize");
         }
-
+        public SerializationFormatters(ISurrogateSelector selector, StreamingContext context, string DllPath = "BalthasarIL.BinaryFormatters.dll", string Formatter = "BinaryFormatter")
+        {
+            Type[] assembly = null;
+            try
+            {
+                assembly = Assembly.LoadFrom(DllPath).GetTypes();
+            }
+            catch(Exception e) { 
+                assembly = Assembly.Load(DllPath).GetTypes(); 
+            }
+            if (Formatter == "BinaryFormatter")
+            {
+                //这只在传统的序列化器上使用，如果需要解锁任意类序列化，请使用BalthasarIL.BinaryFormatters.dll且不需要修改这里
+                var lacType = assembly.First(p => p.Name == "LocalAppContextSwitches");
+                var enField = lacType.GetField("s_binaryFormatterEnabled", BindingFlags.Static | BindingFlags.NonPublic);
+                enField.SetValue(null, 1);
+            }
+            this.assemblyType = assembly.First(p => p.Name == Formatter);
+            this.instance = assemblyType.GetConstructor(new Type[] { typeof(ISurrogateSelector), typeof(StreamingContext) }).Invoke(new object[] { selector, context });
+            this.serialize = this.assemblyType.GetMethod("Serialize");
+            this.deserialize = this.assemblyType.GetMethod("Deserialize");
+        }
+        
         public void Serialize(Stream stream,object obj)
         {
             this.serialize.Invoke(this.instance, new[] { stream,obj });

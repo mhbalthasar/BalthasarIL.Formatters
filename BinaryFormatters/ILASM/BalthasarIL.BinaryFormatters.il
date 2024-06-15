@@ -4827,6 +4827,11 @@
   .publickeytoken = (7C EC 85 D7 BE A7 79 8E )                         // |.....y.
   .ver 8:0:0:0
 }
+.assembly extern /*23000001*/ System.Runtime.Serialization.Formatters
+{
+    .publickeytoken = (B0 3F 5F 7F 11 D5 0A 3A )                         // |.....y.
+    .ver 8:0:0:0
+}
 .assembly extern /*23000002*/ System.Collections.NonGeneric
 {
   .publickeytoken = (B0 3F 5F 7F 11 D5 0A 3A )                         // .?_....:
@@ -6727,7 +6732,7 @@
     IL_0030:  /* 2C   | 0B               */ brfalse.s  IL_003d
 
     IL_0032:  /* 28   | (06)000011       */ call       string System.SR/*02000004*/::get_Serialization_NoID() /* 06000011 */
-    IL_0037:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0037:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_003c:  /* 7A   |                  */ throw
 
     IL_003d:  /* 06   |                  */ ldloc.0
@@ -7241,7 +7246,7 @@
   } // end of method Formatter::WriteValueType
 
   .method /*0600006F*/ public hidebysig newslot specialname abstract virtual 
-          instance class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ 
+          instance class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ 
           get_SurrogateSelector() cil managed
   // SIG: 20 00 12 3C
   {
@@ -7250,7 +7255,7 @@
   } // end of method Formatter::get_SurrogateSelector
 
   .method /*06000070*/ public hidebysig newslot specialname abstract virtual 
-          instance void  set_SurrogateSelector(class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ 'value') cil managed
+          instance void  set_SurrogateSelector(class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ 'value') cil managed
   // SIG: 20 01 01 12 3C
   {
     .custom /*0C00005D:0A000018*/ instance void [System.Private.CoreLib/*23000001*/]System.Runtime.CompilerServices.NullableContextAttribute/*01000019*/::.ctor(uint8) /* 0A000018 */ = ( 01 00 02 00 00 ) 
@@ -7289,12 +7294,12 @@
     // 方法在 RVA 0x0 处开始
   } // end of method Formatter::set_Context
 
-  .property /*17000044*/ instance class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/
+  .property /*17000044*/ instance class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/
           SurrogateSelector()
   {
     .custom /*0C000041:0A000010*/ instance void [System.Private.CoreLib/*23000001*/]System.Runtime.CompilerServices.NullableAttribute/*01000013*/::.ctor(uint8) /* 0A000010 */ = ( 01 00 02 00 00 ) 
-    .get instance class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.Serialization.Formatter/*02000008*/::get_SurrogateSelector() /* 0600006F */
-    .set instance void BalthasarIL.Serialization.Formatter/*02000008*/::set_SurrogateSelector(class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/) /* 06000070 */
+    .get instance class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.Serialization.Formatter/*02000008*/::get_SurrogateSelector() /* 0600006F */
+    .set instance void BalthasarIL.Serialization.Formatter/*02000008*/::set_SurrogateSelector(class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/) /* 06000070 */
   } // end of property Formatter::SurrogateSelector
   .property /*17000045*/ instance class BalthasarIL.Serialization.SerializationBinder/*0200001B*/
           Binder()
@@ -8418,7 +8423,7 @@
     IL_007b:  /* 2B   | 0B               */ br.s       IL_0088
 
     IL_007d:  /* 28   | (06)000010       */ call       string System.SR/*02000004*/::get_Serialization_UnknownMemberInfo() /* 06000010 */
-    IL_0082:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0082:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0087:  /* 7A   |                  */ throw
 
     IL_0088:  /* 06   |                  */ ldloc.0
@@ -8496,7 +8501,7 @@
     IL_0059:  /* 2C   | 0B               */ brfalse.s  IL_0066
 
     IL_005b:  /* 28   | (06)000010       */ call       string System.SR/*02000004*/::get_Serialization_UnknownMemberInfo() /* 06000010 */
-    IL_0060:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0060:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0065:  /* 7A   |                  */ throw
 
     IL_0066:  /* 06   |                  */ ldloc.0
@@ -8520,8 +8525,8 @@
   } // end of method FormatterServices::GetObjectData
 
   .method /*06000092*/ public hidebysig static 
-          class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ 
-          GetSurrogateForCyclicalReference(class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ innerSurrogate) cil managed
+          class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ 
+          GetSurrogateForCyclicalReference(class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ innerSurrogate) cil managed
   // SIG: 00 01 12 38 12 38
   {
     // 方法在 RVA 0x212b8 处开始
@@ -8532,7 +8537,7 @@
     IL_0006:  /* 28   | (0A)00002F       */ call       void [System.Private.CoreLib/*23000001*/]System.ArgumentNullException/*0100002E*/::ThrowIfNull(object,
                                                                                                                                                       string) /* 0A00002F */
     IL_000b:  /* 02   |                  */ ldarg.0
-    IL_000c:  /* 73   | (06)00009E       */ newobj     instance void BalthasarIL.Serialization.SurrogateForCyclicalReference/*0200000C*/::.ctor(class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/) /* 0600009E */
+    IL_000c:  /* 73   | (06)00009E       */ newobj     instance void BalthasarIL.Serialization.SurrogateForCyclicalReference/*0200000C*/::.ctor(class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/) /* 0600009E */
     IL_0011:  /* 2A   |                  */ ret
   } // end of method FormatterServices::GetSurrogateForCyclicalReference
 
@@ -8832,11 +8837,11 @@
 
 .class /*0200000C*/ private auto ansi sealed beforefieldinit BalthasarIL.Serialization.SurrogateForCyclicalReference
        extends [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/
-       implements BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/
+       implements [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/
 {
-  .field /*04000009*/ private initonly class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ _innerSurrogate
+  .field /*04000009*/ private initonly class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ _innerSurrogate
   .method /*0600009E*/ assembly hidebysig specialname rtspecialname 
-          instance void  .ctor(class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ innerSurrogate) cil managed
+          instance void  .ctor(class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ innerSurrogate) cil managed
   // SIG: 20 01 01 12 38
   {
     // 方法在 RVA 0x214d4 处开始
@@ -8846,7 +8851,7 @@
     IL_0001:  /* 28   | (0A)000011       */ call       instance void [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/::.ctor() /* 0A000011 */
     IL_0006:  /* 02   |                  */ ldarg.0
     IL_0007:  /* 03   |                  */ ldarg.1
-    IL_0008:  /* 7D   | (04)000009       */ stfld      class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.Serialization.SurrogateForCyclicalReference/*0200000C*/::_innerSurrogate /* 04000009 */
+    IL_0008:  /* 7D   | (04)000009       */ stfld      class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.Serialization.SurrogateForCyclicalReference/*0200000C*/::_innerSurrogate /* 04000009 */
     IL_000d:  /* 2A   |                  */ ret
   } // end of method SurrogateForCyclicalReference::.ctor
 
@@ -8860,11 +8865,11 @@
     // 代码大小       15 (0xf)
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)000009       */ ldfld      class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.Serialization.SurrogateForCyclicalReference/*0200000C*/::_innerSurrogate /* 04000009 */
+    IL_0001:  /* 7B   | (04)000009       */ ldfld      class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.Serialization.SurrogateForCyclicalReference/*0200000C*/::_innerSurrogate /* 04000009 */
     IL_0006:  /* 03   |                  */ ldarg.1
     IL_0007:  /* 04   |                  */ ldarg.2
     IL_0008:  /* 05   |                  */ ldarg.3
-    IL_0009:  /* 6F   | (06)0000A9       */ callvirt   instance void BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/::GetObjectData(object,
+    IL_0009:  /* 6F   | (06)0000A9       */ callvirt   instance void [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/::GetObjectData(object,
                                                                                                                                                      class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationInfo/*01000044*/,
                                                                                                                                                      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/) /* 060000A9 */
     IL_000e:  /* 2A   |                  */ ret
@@ -8874,22 +8879,22 @@
           instance object  SetObjectData(object obj,
                                          class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationInfo/*01000044*/ info,
                                          valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ context,
-                                         class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ selector) cil managed
+                                         class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ selector) cil managed
   // SIG: 20 04 1C 1C 12 81 11 11 41 12 3C
   {
     // 方法在 RVA 0x214f4 处开始
     // 代码大小       17 (0x11)
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)000009       */ ldfld      class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.Serialization.SurrogateForCyclicalReference/*0200000C*/::_innerSurrogate /* 04000009 */
+    IL_0001:  /* 7B   | (04)000009       */ ldfld      class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.Serialization.SurrogateForCyclicalReference/*0200000C*/::_innerSurrogate /* 04000009 */
     IL_0006:  /* 03   |                  */ ldarg.1
     IL_0007:  /* 04   |                  */ ldarg.2
     IL_0008:  /* 05   |                  */ ldarg.3
     IL_0009:  /* 0E   | 04               */ ldarg.s    selector
-    IL_000b:  /* 6F   | (06)0000AA       */ callvirt   instance object BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/::SetObjectData(object,
+    IL_000b:  /* 6F   | (06)0000AA       */ callvirt   instance object [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/::SetObjectData(object,
                                                                                                                                                        class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationInfo/*01000044*/,
                                                                                                                                                        valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/,
-                                                                                                                                                       class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/) /* 060000AA */
+                                                                                                                                                       class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/) /* 060000AA */
     IL_0010:  /* 2A   |                  */ ret
   } // end of method SurrogateForCyclicalReference::SetObjectData
 
@@ -8960,7 +8965,7 @@
   } // end of method IFormatter::Serialize
 
   .method /*060000A3*/ public hidebysig newslot specialname abstract virtual 
-          instance class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ 
+          instance class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ 
           get_SurrogateSelector() cil managed
   // SIG: 20 00 12 3C
   {
@@ -8968,7 +8973,7 @@
   } // end of method IFormatter::get_SurrogateSelector
 
   .method /*060000A4*/ public hidebysig newslot specialname abstract virtual 
-          instance void  set_SurrogateSelector(class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ 'value') cil managed
+          instance void  set_SurrogateSelector(class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ 'value') cil managed
   // SIG: 20 01 01 12 3C
   {
     // 方法在 RVA 0x0 处开始
@@ -9004,11 +9009,11 @@
     // 方法在 RVA 0x0 处开始
   } // end of method IFormatter::set_Context
 
-  .property /*17000047*/ instance class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/
+  .property /*17000047*/ instance class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/
           SurrogateSelector()
   {
-    .get instance class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.Serialization.IFormatter/*0200000D*/::get_SurrogateSelector() /* 060000A3 */
-    .set instance void BalthasarIL.Serialization.IFormatter/*0200000D*/::set_SurrogateSelector(class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/) /* 060000A4 */
+    .get instance class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.Serialization.IFormatter/*0200000D*/::get_SurrogateSelector() /* 060000A3 */
+    .set instance void BalthasarIL.Serialization.IFormatter/*0200000D*/::set_SurrogateSelector(class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/) /* 060000A4 */
   } // end of property IFormatter::SurrogateSelector
   .property /*17000048*/ instance class BalthasarIL.Serialization.SerializationBinder/*0200001B*/
           Binder()
@@ -9023,83 +9028,6 @@
     .set instance void BalthasarIL.Serialization.IFormatter/*0200000D*/::set_Context(valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/) /* 060000A8 */
   } // end of property IFormatter::Context
 } // end of class BalthasarIL.Serialization.IFormatter
-
-.class /*0200000E*/ interface public abstract auto ansi beforefieldinit BalthasarIL.Serialization.ISerializationSurrogate
-{
-  .custom /*0C000029:0A000018*/ instance void [System.Private.CoreLib/*23000001*/]System.Runtime.CompilerServices.NullableContextAttribute/*01000019*/::.ctor(uint8) /* 0A000018 */ = ( 01 00 01 00 00 ) 
-  .custom /*0C00002A:0A00002E*/ instance void [System.Private.CoreLib/*23000001*/]System.ObsoleteAttribute/*0100002C*/::.ctor(string) /* 0A00002E */ = ( 01 00 41 46 6F 72 6D 61 74 74 65 72 2D 62 61 73   // ..AFormatter-bas
-                                                                                                                                                         65 64 20 73 65 72 69 61 6C 69 7A 61 74 69 6F 6E   // ed serialization
-                                                                                                                                                         20 69 73 20 6F 62 73 6F 6C 65 74 65 20 61 6E 64   //  is obsolete and
-                                                                                                                                                         20 73 68 6F 75 6C 64 20 6E 6F 74 20 62 65 20 75   //  should not be u
-                                                                                                                                                         73 65 64 2E 02 00 54 0E 0C 44 69 61 67 6E 6F 73   // sed...T..Diagnos
-                                                                                                                                                         74 69 63 49 64 0A 53 59 53 4C 49 42 30 30 35 30   // ticId.SYSLIB0050
-                                                                                                                                                         54 0E 09 55 72 6C 46 6F 72 6D 61 74 22 68 74 74   // T..UrlFormat"htt
-                                                                                                                                                         70 73 3A 2F 2F 61 6B 61 2E 6D 73 2F 64 6F 74 6E   // ps://aka.ms/dotn
-                                                                                                                                                         65 74 2D 77 61 72 6E 69 6E 67 73 2F 7B 30 7D )    // et-warnings/{0}
-  .method /*060000A9*/ public hidebysig newslot abstract virtual 
-          instance void  GetObjectData(object obj,
-                                       class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationInfo/*01000044*/ info,
-                                       valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ context) cil managed
-  // SIG: 20 03 01 1C 12 81 11 11 41
-  {
-    // 方法在 RVA 0x0 处开始
-  } // end of method ISerializationSurrogate::GetObjectData
-
-  .method /*060000AA*/ public hidebysig newslot abstract virtual 
-          instance object  SetObjectData(object obj,
-                                         class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationInfo/*01000044*/ info,
-                                         valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ context,
-                                         class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ selector) cil managed
-  // SIG: 20 04 1C 1C 12 81 11 11 41 12 3C
-  {
-    .param [4]/*0800009B*/ 
-    .custom /*0C00006D:0A000010*/ instance void [System.Private.CoreLib/*23000001*/]System.Runtime.CompilerServices.NullableAttribute/*01000013*/::.ctor(uint8) /* 0A000010 */ = ( 01 00 02 00 00 ) 
-    // 方法在 RVA 0x0 处开始
-  } // end of method ISerializationSurrogate::SetObjectData
-
-} // end of class BalthasarIL.Serialization.ISerializationSurrogate
-
-.class /*0200000F*/ interface public abstract auto ansi beforefieldinit BalthasarIL.Serialization.ISurrogateSelector
-{
-  .custom /*0C00002B:0A000018*/ instance void [System.Private.CoreLib/*23000001*/]System.Runtime.CompilerServices.NullableContextAttribute/*01000019*/::.ctor(uint8) /* 0A000018 */ = ( 01 00 01 00 00 ) 
-  .custom /*0C00002C:0A00002E*/ instance void [System.Private.CoreLib/*23000001*/]System.ObsoleteAttribute/*0100002C*/::.ctor(string) /* 0A00002E */ = ( 01 00 41 46 6F 72 6D 61 74 74 65 72 2D 62 61 73   // ..AFormatter-bas
-                                                                                                                                                         65 64 20 73 65 72 69 61 6C 69 7A 61 74 69 6F 6E   // ed serialization
-                                                                                                                                                         20 69 73 20 6F 62 73 6F 6C 65 74 65 20 61 6E 64   //  is obsolete and
-                                                                                                                                                         20 73 68 6F 75 6C 64 20 6E 6F 74 20 62 65 20 75   //  should not be u
-                                                                                                                                                         73 65 64 2E 02 00 54 0E 0C 44 69 61 67 6E 6F 73   // sed...T..Diagnos
-                                                                                                                                                         74 69 63 49 64 0A 53 59 53 4C 49 42 30 30 35 30   // ticId.SYSLIB0050
-                                                                                                                                                         54 0E 09 55 72 6C 46 6F 72 6D 61 74 22 68 74 74   // T..UrlFormat"htt
-                                                                                                                                                         70 73 3A 2F 2F 61 6B 61 2E 6D 73 2F 64 6F 74 6E   // ps://aka.ms/dotn
-                                                                                                                                                         65 74 2D 77 61 72 6E 69 6E 67 73 2F 7B 30 7D )    // et-warnings/{0}
-  .method /*060000AB*/ public hidebysig newslot abstract virtual 
-          instance void  ChainSelector(class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ selector) cil managed
-  // SIG: 20 01 01 12 3C
-  {
-    // 方法在 RVA 0x0 处开始
-  } // end of method ISurrogateSelector::ChainSelector
-
-  .method /*060000AC*/ public hidebysig newslot abstract virtual 
-          instance class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ 
-          GetSurrogate(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ 'type',
-                       valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ context,
-                       [out] class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/& selector) cil managed
-  // SIG: 20 03 12 38 12 1D 11 41 10 12 3C
-  {
-    .param [0]/*0800009D*/ 
-    .custom /*0C00006E:0A000010*/ instance void [System.Private.CoreLib/*23000001*/]System.Runtime.CompilerServices.NullableAttribute/*01000013*/::.ctor(uint8) /* 0A000010 */ = ( 01 00 02 00 00 ) 
-    // 方法在 RVA 0x0 处开始
-  } // end of method ISurrogateSelector::GetSurrogate
-
-  .method /*060000AD*/ public hidebysig newslot abstract virtual 
-          instance class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ 
-          GetNextSelector() cil managed
-  // SIG: 20 00 12 3C
-  {
-    .custom /*0C000076:0A000018*/ instance void [System.Private.CoreLib/*23000001*/]System.Runtime.CompilerServices.NullableContextAttribute/*01000019*/::.ctor(uint8) /* 0A000018 */ = ( 01 00 02 00 00 ) 
-    // 方法在 RVA 0x0 处开始
-  } // end of method ISurrogateSelector::GetNextSelector
-
-} // end of class BalthasarIL.Serialization.ISurrogateSelector
 
 .class /*02000010*/ private auto ansi sealed beforefieldinit BalthasarIL.Serialization.MemberHolder
        extends [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/
@@ -9453,7 +9381,7 @@
     IL_0010:  /* 33   | 0B               */ bne.un.s   IL_001d
 
     IL_0012:  /* 28   | (06)000012       */ call       string System.SR/*02000004*/::get_Serialization_TooManyElements() /* 06000012 */
-    IL_0017:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0017:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_001c:  /* 7A   |                  */ throw
 
     IL_001d:  /* 02   |                  */ ldarg.0
@@ -9550,10 +9478,10 @@
   .field /*04000016*/ assembly object _topObject
   .field /*04000017*/ assembly class BalthasarIL.Serialization.ObjectHolderList/*02000017*/ _specialFixupObjects
   .field /*04000018*/ assembly int64 _fixupCount
-  .field /*04000019*/ assembly initonly class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ _selector
+  .field /*04000019*/ assembly initonly class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ _selector
   .field /*0400001A*/ assembly initonly valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ _context
   .method /*060000B6*/ public hidebysig specialname rtspecialname 
-          instance void  .ctor(class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ selector,
+          instance void  .ctor(class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ selector,
                                valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ context) cil managed
   // SIG: 20 02 01 12 3C 11 41
   {
@@ -9569,7 +9497,7 @@
     IL_000e:  /* 7D   | (04)000015       */ stfld      class BalthasarIL.Serialization.ObjectHolder/*02000013*/[] BalthasarIL.Serialization.ObjectManager/*02000012*/::_objects /* 04000015 */
     IL_0013:  /* 02   |                  */ ldarg.0
     IL_0014:  /* 03   |                  */ ldarg.1
-    IL_0015:  /* 7D   | (04)000019       */ stfld      class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.Serialization.ObjectManager/*02000012*/::_selector /* 04000019 */
+    IL_0015:  /* 7D   | (04)000019       */ stfld      class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.Serialization.ObjectManager/*02000012*/::_selector /* 04000019 */
     IL_001a:  /* 02   |                  */ ldarg.0
     IL_001b:  /* 04   |                  */ ldarg.2
     IL_001c:  /* 7D   | (04)00001A       */ stfld      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ BalthasarIL.Serialization.ObjectManager/*02000012*/::_context /* 0400001A */
@@ -9865,7 +9793,7 @@
     IL_003f:  /* 8C   | (01)000024       */ box        [System.Private.CoreLib/*23000001*/]System.Int64/*01000024*/
     IL_0044:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_0049:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0049:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_004e:  /* 7A   |                  */ throw
 
     IL_004f:  /* 04   |                  */ ldarg.2
@@ -9879,7 +9807,7 @@
     IL_0063:  /* 8C   | (01)000024       */ box        [System.Private.CoreLib/*23000001*/]System.Int64/*01000024*/
     IL_0068:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_006d:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_006d:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0072:  /* 7A   |                  */ throw
 
     IL_0073:  /* 28   | (06)000016       */ call       string System.SR/*02000004*/::get_Serialization_ObjectNotSupplied() /* 06000016 */
@@ -9888,7 +9816,7 @@
     IL_007e:  /* 8C   | (01)000024       */ box        [System.Private.CoreLib/*23000001*/]System.Int64/*01000024*/
     IL_0083:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_0088:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0088:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_008d:  /* 7A   |                  */ throw
 
     IL_008e:  /* 16   |                  */ ldc.i4.0
@@ -9937,8 +9865,8 @@
     // 方法在 RVA 0x219dc 处开始
     // 代码大小       190 (0xbe)
     .maxstack  5
-    .locals /*1100001E*/ (class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ V_0,
-             class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ V_1,
+    .locals /*1100001E*/ (class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ V_0,
+             class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ V_1,
              object V_2)
     IL_0000:  /* 14   |                  */ ldnull
     IL_0001:  /* 0A   |                  */ stloc.0
@@ -9947,7 +9875,7 @@
     IL_0008:  /* 2C   | 67               */ brfalse.s  IL_0071
 
     IL_000a:  /* 03   |                  */ ldarg.1
-    IL_000b:  /* 6F   | (06)0000FA       */ callvirt   instance class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_Surrogate() /* 060000FA */
+    IL_000b:  /* 6F   | (06)0000FA       */ callvirt   instance class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_Surrogate() /* 060000FA */
     IL_0010:  /* 0B   |                  */ stloc.1
     IL_0011:  /* 07   |                  */ ldloc.1
     IL_0012:  /* 03   |                  */ ldarg.1
@@ -9957,10 +9885,10 @@
     IL_001e:  /* 02   |                  */ ldarg.0
     IL_001f:  /* 7B   | (04)00001A       */ ldfld      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ BalthasarIL.Serialization.ObjectManager/*02000012*/::_context /* 0400001A */
     IL_0024:  /* 06   |                  */ ldloc.0
-    IL_0025:  /* 6F   | (06)0000AA       */ callvirt   instance object BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/::SetObjectData(object,
+    IL_0025:  /* 6F   | (06)0000AA       */ callvirt   instance object [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/::SetObjectData(object,
                                                                                                                                                        class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationInfo/*01000044*/,
                                                                                                                                                        valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/,
-                                                                                                                                                       class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/) /* 060000AA */
+                                                                                                                                                       class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/) /* 060000AA */
     IL_002a:  /* 0C   |                  */ stloc.2
     IL_002b:  /* 08   |                  */ ldloc.2
     IL_002c:  /* 2C   | 34               */ brfalse.s  IL_0062
@@ -9980,7 +9908,7 @@
     IL_004a:  /* 6F   | (0A)000036       */ callvirt   instance string [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/::get_FullName() /* 0A000036 */
     IL_004f:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_0054:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0054:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0059:  /* 7A   |                  */ throw
 
     IL_005a:  /* 03   |                  */ ldarg.1
@@ -9990,7 +9918,7 @@
                                                                                                                                            class BalthasarIL.Serialization.ObjectManager/*02000012*/) /* 060000F7 */
     IL_0062:  /* 03   |                  */ ldarg.1
     IL_0063:  /* 14   |                  */ ldnull
-    IL_0064:  /* 7D   | (04)000020       */ stfld      class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::_surrogate /* 04000020 */
+    IL_0064:  /* 7D   | (04)000020       */ stfld      class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::_surrogate /* 04000020 */
     IL_0069:  /* 03   |                  */ ldarg.1
     IL_006a:  /* 6F   | (06)0000E4       */ callvirt   instance void BalthasarIL.Serialization.ObjectHolder/*02000013*/::SetFlags() /* 060000E4 */
     IL_006f:  /* 2B   | 18               */ br.s       IL_0089
@@ -10054,10 +9982,10 @@
       IL_0009:  /* 03   |                  */ ldarg.1
       IL_000a:  /* 03   |                  */ ldarg.1
       IL_000b:  /* 6F   | (06)0000F6       */ callvirt   instance object BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_ObjectValue() /* 060000F6 */
-      IL_0010:  /* 74   | (01)000047       */ castclass  [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.IObjectReference/*01000047*/
+      IL_0010:  /* 74   | (01)000047       */ castclass  [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.IObjectReference/*01000047*/
       IL_0015:  /* 02   |                  */ ldarg.0
       IL_0016:  /* 7B   | (04)00001A       */ ldfld      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ BalthasarIL.Serialization.ObjectManager/*02000012*/::_context /* 0400001A */
-      IL_001b:  /* 6F   | (0A)000070       */ callvirt   instance object [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.IObjectReference/*01000047*/::GetRealObject(valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/) /* 0A000070 */
+      IL_001b:  /* 6F   | (0A)000070       */ callvirt   instance object [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.IObjectReference/*01000047*/::GetRealObject(valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/) /* 0A000070 */
       IL_0020:  /* 02   |                  */ ldarg.0
       IL_0021:  /* 6F   | (06)0000F7       */ callvirt   instance void BalthasarIL.Serialization.ObjectHolder/*02000013*/::SetObjectValue(object,
                                                                                                                                              class BalthasarIL.Serialization.ObjectManager/*02000012*/) /* 060000F7 */
@@ -10083,12 +10011,12 @@
       IL_0041:  /* 33   | 0B               */ bne.un.s   IL_004e
 
       IL_0043:  /* 28   | (06)000018       */ call       string System.SR/*02000004*/::get_Serialization_TooManyReferences() /* 06000018 */
-      IL_0048:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+      IL_0048:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
       IL_004d:  /* 7A   |                  */ throw
 
       IL_004e:  /* 03   |                  */ ldarg.1
       IL_004f:  /* 6F   | (06)0000F6       */ callvirt   instance object BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_ObjectValue() /* 060000F6 */
-      IL_0054:  /* 75   | (01)000047       */ isinst     [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.IObjectReference/*01000047*/
+      IL_0054:  /* 75   | (01)000047       */ isinst     [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.IObjectReference/*01000047*/
       IL_0059:  /* 2C   | 09               */ brfalse.s  IL_0064
 
       IL_005b:  /* 06   |                  */ ldloc.0
@@ -10418,7 +10346,7 @@
     IL_001d:  /* 8C   | (01)000024       */ box        [System.Private.CoreLib/*23000001*/]System.Int64/*01000024*/
     IL_0022:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_0027:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0027:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_002c:  /* 7A   |                  */ throw
 
     IL_002d:  /* 06   |                  */ ldloc.0
@@ -10441,7 +10369,7 @@
     IL_004c:  /* 2D   | 0B               */ brtrue.s   IL_0059
 
     IL_004e:  /* 28   | (06)00001A       */ call       string System.SR/*02000004*/::get_Serialization_InvalidFixupDiscovered() /* 0600001A */
-    IL_0053:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0053:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0058:  /* 7A   |                  */ throw
 
     IL_0059:  /* 06   |                  */ ldloc.0
@@ -10561,7 +10489,7 @@
     IL_0142:  /* 6F   | (06)00011B       */ callvirt   instance string BalthasarIL.Serialization.TypeLoadExceptionHolder/*02000019*/::get_TypeName() /* 0600011B */
     IL_0147:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_014c:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_014c:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0151:  /* 7A   |                  */ throw
 
     IL_0152:  /* 03   |                  */ ldarg.1
@@ -10589,7 +10517,7 @@
     IL_017f:  /* 2C   | 0B               */ brfalse.s  IL_018c
 
     IL_0181:  /* 28   | (06)00001C       */ call       string System.SR/*02000004*/::get_Serialization_ValueTypeFixup() /* 0600001C */
-    IL_0186:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0186:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_018b:  /* 7A   |                  */ throw
 
     IL_018c:  /* 03   |                  */ ldarg.1
@@ -10630,7 +10558,7 @@
     IL_01e4:  /* 2D   | 1F               */ brtrue.s   IL_0205
 
     IL_01e6:  /* 28   | (06)00001D       */ call       string System.SR/*02000004*/::get_Serialization_PartialValueTypeFixup() /* 0600001D */
-    IL_01eb:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_01eb:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_01f0:  /* 7A   |                  */ throw
 
     IL_01f1:  /* 11   | 09               */ ldloc.s    V_9
@@ -10651,11 +10579,11 @@
     IL_0216:  /* 2B   | 16               */ br.s       IL_022e
 
     IL_0218:  /* 28   | (06)00001E       */ call       string System.SR/*02000004*/::get_Serialization_UnableToFixup() /* 0600001E */
-    IL_021d:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_021d:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0222:  /* 7A   |                  */ throw
 
     IL_0223:  /* 28   | (06)00001E       */ call       string System.SR/*02000004*/::get_Serialization_UnableToFixup() /* 0600001E */
-    IL_0228:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0228:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_022d:  /* 7A   |                  */ throw
 
     IL_022e:  /* 11   | 05               */ ldloc.s    V_5
@@ -10926,7 +10854,7 @@
     IL_000e:  /* 73   | (06)0000DB       */ newobj     instance void BalthasarIL.Serialization.ObjectHolder/*02000013*/::.ctor(string,
                                                                                                                                   int64,
                                                                                                                                   class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationInfo/*01000044*/,
-                                                                                                                                  class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/,
+                                                                                                                                  class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/,
                                                                                                                                   int64,
                                                                                                                                   class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/,
                                                                                                                                   int32[]) /* 060000DB */
@@ -10961,8 +10889,8 @@
     // 代码大小       354 (0x162)
     .maxstack  8
     .locals /*11000023*/ (class BalthasarIL.Serialization.ObjectHolder/*02000013*/ V_0,
-             class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ V_1,
-             class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ V_2,
+             class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ V_1,
+             class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ V_2,
              class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ V_3,
              class BalthasarIL.Serialization.DeserializationEventHandler/*02000006*/ V_4)
     IL_0000:  /* 03   |                  */ ldarg.1
@@ -10991,13 +10919,13 @@
     IL_0031:  /* 2D   | 0B               */ brtrue.s   IL_003e
 
     IL_0033:  /* 28   | (06)000010       */ call       string System.SR/*02000004*/::get_Serialization_UnknownMemberInfo() /* 06000010 */
-    IL_0038:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0038:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_003d:  /* 7A   |                  */ throw
 
     IL_003e:  /* 14   |                  */ ldnull
     IL_003f:  /* 0B   |                  */ stloc.1
     IL_0040:  /* 02   |                  */ ldarg.0
-    IL_0041:  /* 7B   | (04)000019       */ ldfld      class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.Serialization.ObjectManager/*02000012*/::_selector /* 04000019 */
+    IL_0041:  /* 7B   | (04)000019       */ ldfld      class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.Serialization.ObjectManager/*02000012*/::_selector /* 04000019 */
     IL_0046:  /* 2C   | 25               */ brfalse.s  IL_006d
 
     IL_0048:  /* 02   |                  */ ldarg.0
@@ -11009,14 +10937,14 @@
     IL_0052:  /* 6F   | (0A)00001A       */ callvirt   instance class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/::GetType() /* 0A00001A */
     IL_0057:  /* 0D   |                  */ stloc.3
     IL_0058:  /* 02   |                  */ ldarg.0
-    IL_0059:  /* 7B   | (04)000019       */ ldfld      class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.Serialization.ObjectManager/*02000012*/::_selector /* 04000019 */
+    IL_0059:  /* 7B   | (04)000019       */ ldfld      class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.Serialization.ObjectManager/*02000012*/::_selector /* 04000019 */
     IL_005e:  /* 09   |                  */ ldloc.3
     IL_005f:  /* 02   |                  */ ldarg.0
     IL_0060:  /* 7B   | (04)00001A       */ ldfld      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ BalthasarIL.Serialization.ObjectManager/*02000012*/::_context /* 0400001A */
     IL_0065:  /* 12   | 02               */ ldloca.s   V_2
-    IL_0067:  /* 6F   | (06)0000AC       */ callvirt   instance class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/::GetSurrogate(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
+    IL_0067:  /* 6F   | (06)0000AC       */ callvirt   instance class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/::GetSurrogate(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
                                                                                                                                                                                                                  valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/,
-                                                                                                                                                                                                                 class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/&) /* 060000AC */
+                                                                                                                                                                                                                 class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/&) /* 060000AC */
     IL_006c:  /* 0B   |                  */ stloc.1
     IL_006d:  /* 03   |                  */ ldarg.1
     IL_006e:  /* 75   | (01)00004C       */ isinst     [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.IDeserializationCallback/*0100004C*/
@@ -11057,7 +10985,7 @@
     IL_00bd:  /* 73   | (06)0000DA       */ newobj     instance void BalthasarIL.Serialization.ObjectHolder/*02000013*/::.ctor(object,
                                                                                                                                   int64,
                                                                                                                                   class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationInfo/*01000044*/,
-                                                                                                                                  class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/,
+                                                                                                                                  class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/,
                                                                                                                                   int64,
                                                                                                                                   class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/,
                                                                                                                                   int32[]) /* 060000DA */
@@ -11083,7 +11011,7 @@
     IL_00ec:  /* 2C   | 0B               */ brfalse.s  IL_00f9
 
     IL_00ee:  /* 28   | (06)000020       */ call       string System.SR/*02000004*/::get_Serialization_RegisterTwice() /* 06000020 */
-    IL_00f3:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_00f3:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_00f8:  /* 7A   |                  */ throw
 
     IL_00f9:  /* 06   |                  */ ldloc.0
@@ -11097,7 +11025,7 @@
     IL_0108:  /* 02   |                  */ ldarg.0
     IL_0109:  /* 6F   | (06)0000E2       */ callvirt   instance void BalthasarIL.Serialization.ObjectHolder/*02000013*/::UpdateData(object,
                                                                                                                                        class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationInfo/*01000044*/,
-                                                                                                                                       class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/,
+                                                                                                                                       class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/,
                                                                                                                                        int64,
                                                                                                                                        class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/,
                                                                                                                                        int32[],
@@ -11197,7 +11125,7 @@
       IL_0035:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                               object) /* 06000007 */
       IL_003a:  /* 08   |                  */ ldloc.2
-      IL_003b:  /* 73   | (0A)00007D       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string,
+      IL_003b:  /* 73   | (0A)00007D       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string,
                                                                                                                                                                                   class [System.Private.CoreLib/*23000001*/]System.Exception/*0100003F*/) /* 0A00007D */
       IL_0040:  /* 7A   |                  */ throw
 
@@ -11295,7 +11223,7 @@
     IL_0062:  /* 6F   | (0A)000036       */ callvirt   instance string [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/::get_FullName() /* 0A000036 */
     IL_0067:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_006c:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_006c:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0071:  /* 7A   |                  */ throw
   } // end of method ObjectManager::GetDeserializationConstructor
 
@@ -11343,7 +11271,7 @@
     IL_0031:  /* 8C   | (01)000024       */ box        [System.Private.CoreLib/*23000001*/]System.Int64/*01000024*/
     IL_0036:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_003b:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_003b:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0040:  /* 7A   |                  */ throw
 
     IL_0041:  /* 06   |                  */ ldloc.0
@@ -11408,7 +11336,7 @@
     IL_00b6:  /* 6F   | (06)00011B       */ callvirt   instance string BalthasarIL.Serialization.TypeLoadExceptionHolder/*02000019*/::get_TypeName() /* 0600011B */
     IL_00bb:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_00c0:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_00c0:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_00c5:  /* 7A   |                  */ throw
 
     IL_00c6:  /* 2A   |                  */ ret
@@ -11458,7 +11386,7 @@
     IL_0107:  /* 32   | C2               */ blt.s      IL_00cb
 
     IL_0109:  /* 28   | (06)000023       */ call       string System.SR/*02000004*/::get_Serialization_IncorrectNumberOfFixups() /* 06000023 */
-    IL_010e:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_010e:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0113:  /* 7A   |                  */ throw
   } // end of method ObjectManager::DoFixups
 
@@ -11487,7 +11415,7 @@
     IL_0017:  /* 33   | 0B               */ bne.un.s   IL_0024
 
     IL_0019:  /* 28   | (06)000024       */ call       string System.SR/*02000004*/::get_Serialization_InvalidFixupType() /* 06000024 */
-    IL_001e:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_001e:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0023:  /* 7A   |                  */ throw
 
     IL_0024:  /* 06   |                  */ ldloc.0
@@ -11559,7 +11487,7 @@
     IL_003f:  /* 6F   | (0A)00001A       */ callvirt   instance class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/::GetType() /* 0A00001A */
     IL_0044:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_0049:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0049:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_004e:  /* 7A   |                  */ throw
 
     IL_004f:  /* 05   |                  */ ldarg.3
@@ -11892,7 +11820,7 @@
   .field /*0400001D*/ private int32 _missingElementsRemaining
   .field /*0400001E*/ private int32 _missingDecendents
   .field /*0400001F*/ assembly class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationInfo/*01000044*/ _serInfo
-  .field /*04000020*/ assembly class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ _surrogate
+  .field /*04000020*/ assembly class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ _surrogate
   .field /*04000021*/ assembly class BalthasarIL.Serialization.FixupHolderList/*02000015*/ _missingElements
   .field /*04000022*/ assembly class BalthasarIL.Serialization.LongList/*02000016*/ _dependentObjects
   .field /*04000023*/ assembly class BalthasarIL.Serialization.ObjectHolder/*02000013*/ _next
@@ -11920,7 +11848,7 @@
     IL_0009:  /* 28   | (06)0000DB       */ call       instance void BalthasarIL.Serialization.ObjectHolder/*02000013*/::.ctor(string,
                                                                                                                                   int64,
                                                                                                                                   class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationInfo/*01000044*/,
-                                                                                                                                  class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/,
+                                                                                                                                  class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/,
                                                                                                                                   int64,
                                                                                                                                   class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/,
                                                                                                                                   int32[]) /* 060000DB */
@@ -11931,7 +11859,7 @@
           instance void  .ctor(object obj,
                                int64 objID,
                                class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationInfo/*01000044*/ info,
-                               class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ surrogate,
+                               class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ surrogate,
                                int64 idOfContainingObj,
                                class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/ 'field',
                                int32[] arrayIndex) cil managed
@@ -11968,7 +11896,7 @@
     IL_0039:  /* 7D   | (04)00001F       */ stfld      class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationInfo/*01000044*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::_serInfo /* 0400001F */
     IL_003e:  /* 02   |                  */ ldarg.0
     IL_003f:  /* 0E   | 04               */ ldarg.s    surrogate
-    IL_0041:  /* 7D   | (04)000020       */ stfld      class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::_surrogate /* 04000020 */
+    IL_0041:  /* 7D   | (04)000020       */ stfld      class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::_surrogate /* 04000020 */
     IL_0046:  /* 02   |                  */ ldarg.0
     IL_0047:  /* 16   |                  */ ldc.i4.0
     IL_0048:  /* 7D   | (04)000025       */ stfld      bool BalthasarIL.Serialization.ObjectHolder/*02000013*/::_markForFixupWhenAvailable /* 04000025 */
@@ -12002,7 +11930,7 @@
     IL_0084:  /* 33   | 0B               */ bne.un.s   IL_0091
 
     IL_0086:  /* 28   | (06)000026       */ call       string System.SR/*02000004*/::get_Serialization_ParentChildIdentical() /* 06000026 */
-    IL_008b:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_008b:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0090:  /* 7A   |                  */ throw
 
     IL_0091:  /* 02   |                  */ ldarg.0
@@ -12022,7 +11950,7 @@
           instance void  .ctor(string obj,
                                int64 objID,
                                class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationInfo/*01000044*/ info,
-                               class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ surrogate,
+                               class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ surrogate,
                                int64 idOfContainingObj,
                                class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/ 'field',
                                int32[] arrayIndex) cil managed
@@ -12059,7 +11987,7 @@
     IL_0039:  /* 7D   | (04)00001F       */ stfld      class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationInfo/*01000044*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::_serInfo /* 0400001F */
     IL_003e:  /* 02   |                  */ ldarg.0
     IL_003f:  /* 0E   | 04               */ ldarg.s    surrogate
-    IL_0041:  /* 7D   | (04)000020       */ stfld      class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::_surrogate /* 04000020 */
+    IL_0041:  /* 7D   | (04)000020       */ stfld      class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::_surrogate /* 04000020 */
     IL_0046:  /* 02   |                  */ ldarg.0
     IL_0047:  /* 16   |                  */ ldc.i4.0
     IL_0048:  /* 7D   | (04)000025       */ stfld      bool BalthasarIL.Serialization.ObjectHolder/*02000013*/::_markForFixupWhenAvailable /* 04000025 */
@@ -12233,7 +12161,7 @@
   .method /*060000E2*/ assembly hidebysig 
           instance void  UpdateData(object obj,
                                     class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationInfo/*01000044*/ info,
-                                    class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ surrogate,
+                                    class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ surrogate,
                                     int64 idOfContainer,
                                     class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/ 'field',
                                     int32[] arrayIndex,
@@ -12253,7 +12181,7 @@
     IL_000b:  /* 7D   | (04)00001F       */ stfld      class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationInfo/*01000044*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::_serInfo /* 0400001F */
     IL_0010:  /* 02   |                  */ ldarg.0
     IL_0011:  /* 05   |                  */ ldarg.3
-    IL_0012:  /* 7D   | (04)000020       */ stfld      class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::_surrogate /* 04000020 */
+    IL_0012:  /* 7D   | (04)000020       */ stfld      class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::_surrogate /* 04000020 */
     IL_0017:  /* 0E   | 04               */ ldarg.s    idOfContainer
     IL_0019:  /* 2C   | 42               */ brfalse.s  IL_005d
 
@@ -12277,7 +12205,7 @@
     IL_003f:  /* 33   | 0B               */ bne.un.s   IL_004c
 
     IL_0041:  /* 28   | (06)000026       */ call       string System.SR/*02000004*/::get_Serialization_ParentChildIdentical() /* 06000026 */
-    IL_0046:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0046:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_004b:  /* 7A   |                  */ throw
 
     IL_004c:  /* 02   |                  */ ldarg.0
@@ -12325,7 +12253,7 @@
     .maxstack  3
     IL_0000:  /* 02   |                  */ ldarg.0
     IL_0001:  /* 7B   | (04)00001B       */ ldfld      object BalthasarIL.Serialization.ObjectHolder/*02000013*/::_object /* 0400001B */
-    IL_0006:  /* 75   | (01)000047       */ isinst     [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.IObjectReference/*01000047*/
+    IL_0006:  /* 75   | (01)000047       */ isinst     [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.IObjectReference/*01000047*/
     IL_000b:  /* 2C   | 0E               */ brfalse.s  IL_001b
 
     IL_000d:  /* 02   |                  */ ldarg.0
@@ -12341,7 +12269,7 @@
     IL_0024:  /* 5F   |                  */ and
     IL_0025:  /* 7D   | (04)000024       */ stfld      int32 BalthasarIL.Serialization.ObjectHolder/*02000013*/::_flags /* 04000024 */
     IL_002a:  /* 02   |                  */ ldarg.0
-    IL_002b:  /* 7B   | (04)000020       */ ldfld      class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::_surrogate /* 04000020 */
+    IL_002b:  /* 7B   | (04)000020       */ ldfld      class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::_surrogate /* 04000020 */
     IL_0030:  /* 2C   | 10               */ brfalse.s  IL_0042
 
     IL_0032:  /* 02   |                  */ ldarg.0
@@ -12548,11 +12476,11 @@
     // 代码大小       37 (0x25)
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)000020       */ ldfld      class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::_surrogate /* 04000020 */
+    IL_0001:  /* 7B   | (04)000020       */ ldfld      class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::_surrogate /* 04000020 */
     IL_0006:  /* 2C   | 1B               */ brfalse.s  IL_0023
 
     IL_0008:  /* 02   |                  */ ldarg.0
-    IL_0009:  /* 7B   | (04)000020       */ ldfld      class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::_surrogate /* 04000020 */
+    IL_0009:  /* 7B   | (04)000020       */ ldfld      class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::_surrogate /* 04000020 */
     IL_000e:  /* 6F   | (0A)00001A       */ callvirt   instance class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/::GetType() /* 0A00001A */
     IL_0013:  /* D0   | (02)00000C       */ ldtoken    BalthasarIL.Serialization.SurrogateForCyclicalReference/*0200000C*/
     IL_0018:  /* 28   | (0A)000009       */ call       class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/::GetTypeFromHandle(valuetype [System.Private.CoreLib/*23000001*/]System.RuntimeTypeHandle/*01000008*/) /* 0A000009 */
@@ -12760,7 +12688,7 @@
   } // end of method ObjectHolder::set_SerializationInfo
 
   .method /*060000FA*/ assembly hidebysig specialname 
-          instance class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ 
+          instance class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ 
           get_Surrogate() cil managed
   // SIG: 20 00 12 38
   {
@@ -12768,7 +12696,7 @@
     // 代码大小       7 (0x7)
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)000020       */ ldfld      class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::_surrogate /* 04000020 */
+    IL_0001:  /* 7B   | (04)000020       */ ldfld      class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::_surrogate /* 04000020 */
     IL_0006:  /* 2A   |                  */ ret
   } // end of method ObjectHolder::get_Surrogate
 
@@ -12978,10 +12906,10 @@
     .get instance class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationInfo/*01000044*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_SerializationInfo() /* 060000F8 */
     .set instance void BalthasarIL.Serialization.ObjectHolder/*02000013*/::set_SerializationInfo(class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationInfo/*01000044*/) /* 060000F9 */
   } // end of property ObjectHolder::SerializationInfo
-  .property /*1700005B*/ instance class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/
+  .property /*1700005B*/ instance class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/
           Surrogate()
   {
-    .get instance class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_Surrogate() /* 060000FA */
+    .get instance class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_Surrogate() /* 060000FA */
   } // end of property ObjectHolder::Surrogate
   .property /*1700005C*/ instance class BalthasarIL.Serialization.LongList/*02000016*/
           DependentObjects()
@@ -13846,7 +13774,7 @@
     IL_0001:  /* 28   | (0A)000011       */ call       instance void [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/::.ctor() /* 0A000011 */
     IL_0006:  /* 02   |                  */ ldarg.0
     IL_0007:  /* 02   |                  */ ldarg.0
-    IL_0008:  /* D0   | (01)000056       */ ldtoken    [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.OnSerializingAttribute/*01000056*/
+    IL_0008:  /* D0   | (01)000056       */ ldtoken    [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.OnSerializingAttribute/*01000056*/
     IL_000d:  /* 28   | (0A)000009       */ call       class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/::GetTypeFromHandle(valuetype [System.Private.CoreLib/*23000001*/]System.RuntimeTypeHandle/*01000008*/) /* 0A000009 */
     IL_0012:  /* 03   |                  */ ldarg.1
     IL_0013:  /* 28   | (06)000122       */ call       instance class [System.Private.CoreLib/*23000001*/]System.Collections.Generic.List`1/*01000033*/<class [System.Private.CoreLib/*23000001*/]System.Reflection.MethodInfo/*01000055*/> BalthasarIL.Serialization.SerializationEvents/*0200001C*/::GetMethodsWithAttribute(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
@@ -13854,7 +13782,7 @@
     IL_0018:  /* 7D   | (04)00003A       */ stfld      class [System.Private.CoreLib/*23000001*/]System.Collections.Generic.List`1/*01000033*/<class [System.Private.CoreLib/*23000001*/]System.Reflection.MethodInfo/*01000055*/> BalthasarIL.Serialization.SerializationEvents/*0200001C*/::_onSerializingMethods /* 0400003A */
     IL_001d:  /* 02   |                  */ ldarg.0
     IL_001e:  /* 02   |                  */ ldarg.0
-    IL_001f:  /* D0   | (01)000057       */ ldtoken    [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.OnSerializedAttribute/*01000057*/
+    IL_001f:  /* D0   | (01)000057       */ ldtoken    [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.OnSerializedAttribute/*01000057*/
     IL_0024:  /* 28   | (0A)000009       */ call       class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/::GetTypeFromHandle(valuetype [System.Private.CoreLib/*23000001*/]System.RuntimeTypeHandle/*01000008*/) /* 0A000009 */
     IL_0029:  /* 03   |                  */ ldarg.1
     IL_002a:  /* 28   | (06)000122       */ call       instance class [System.Private.CoreLib/*23000001*/]System.Collections.Generic.List`1/*01000033*/<class [System.Private.CoreLib/*23000001*/]System.Reflection.MethodInfo/*01000055*/> BalthasarIL.Serialization.SerializationEvents/*0200001C*/::GetMethodsWithAttribute(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
@@ -13862,7 +13790,7 @@
     IL_002f:  /* 7D   | (04)00003B       */ stfld      class [System.Private.CoreLib/*23000001*/]System.Collections.Generic.List`1/*01000033*/<class [System.Private.CoreLib/*23000001*/]System.Reflection.MethodInfo/*01000055*/> BalthasarIL.Serialization.SerializationEvents/*0200001C*/::_onSerializedMethods /* 0400003B */
     IL_0034:  /* 02   |                  */ ldarg.0
     IL_0035:  /* 02   |                  */ ldarg.0
-    IL_0036:  /* D0   | (01)000058       */ ldtoken    [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.OnDeserializingAttribute/*01000058*/
+    IL_0036:  /* D0   | (01)000058       */ ldtoken    [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.OnDeserializingAttribute/*01000058*/
     IL_003b:  /* 28   | (0A)000009       */ call       class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/::GetTypeFromHandle(valuetype [System.Private.CoreLib/*23000001*/]System.RuntimeTypeHandle/*01000008*/) /* 0A000009 */
     IL_0040:  /* 03   |                  */ ldarg.1
     IL_0041:  /* 28   | (06)000122       */ call       instance class [System.Private.CoreLib/*23000001*/]System.Collections.Generic.List`1/*01000033*/<class [System.Private.CoreLib/*23000001*/]System.Reflection.MethodInfo/*01000055*/> BalthasarIL.Serialization.SerializationEvents/*0200001C*/::GetMethodsWithAttribute(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
@@ -13870,7 +13798,7 @@
     IL_0046:  /* 7D   | (04)00003C       */ stfld      class [System.Private.CoreLib/*23000001*/]System.Collections.Generic.List`1/*01000033*/<class [System.Private.CoreLib/*23000001*/]System.Reflection.MethodInfo/*01000055*/> BalthasarIL.Serialization.SerializationEvents/*0200001C*/::_onDeserializingMethods /* 0400003C */
     IL_004b:  /* 02   |                  */ ldarg.0
     IL_004c:  /* 02   |                  */ ldarg.0
-    IL_004d:  /* D0   | (01)000059       */ ldtoken    [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.OnDeserializedAttribute/*01000059*/
+    IL_004d:  /* D0   | (01)000059       */ ldtoken    [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.OnDeserializedAttribute/*01000059*/
     IL_0052:  /* 28   | (0A)000009       */ call       class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/::GetTypeFromHandle(valuetype [System.Private.CoreLib/*23000001*/]System.RuntimeTypeHandle/*01000008*/) /* 0A000009 */
     IL_0057:  /* 03   |                  */ ldarg.1
     IL_0058:  /* 28   | (06)000122       */ call       instance class [System.Private.CoreLib/*23000001*/]System.Collections.Generic.List`1/*01000033*/<class [System.Private.CoreLib/*23000001*/]System.Reflection.MethodInfo/*01000055*/> BalthasarIL.Serialization.SerializationEvents/*0200001C*/::GetMethodsWithAttribute(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
@@ -14666,7 +14594,7 @@
 
 .class /*02000021*/ public auto ansi beforefieldinit BalthasarIL.Serialization.SurrogateSelector
        extends [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/
-       implements BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/
+       implements [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/
 {
   .custom /*0C000037:0A000018*/ instance void [System.Private.CoreLib/*23000001*/]System.Runtime.CompilerServices.NullableContextAttribute/*01000019*/::.ctor(uint8) /* 0A000018 */ = ( 01 00 01 00 00 ) 
   .custom /*0C000038:0A000010*/ instance void [System.Private.CoreLib/*23000001*/]System.Runtime.CompilerServices.NullableAttribute/*01000013*/::.ctor(uint8) /* 0A000010 */ = ( 01 00 00 00 00 ) 
@@ -14679,14 +14607,14 @@
                                                                                                                                                          54 0E 09 55 72 6C 46 6F 72 6D 61 74 22 68 74 74   // T..UrlFormat"htt
                                                                                                                                                          70 73 3A 2F 2F 61 6B 61 2E 6D 73 2F 64 6F 74 6E   // ps://aka.ms/dotn
                                                                                                                                                          65 74 2D 77 61 72 6E 69 6E 67 73 2F 7B 30 7D )    // et-warnings/{0}
-  .interfaceimpl type BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/
+  .interfaceimpl type [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/
   .custom /*0C00001A:0A000010*/ instance void [System.Private.CoreLib/*23000001*/]System.Runtime.CompilerServices.NullableAttribute/*01000013*/::.ctor(uint8) /* 0A000010 */ = ( 01 00 00 00 00 ) 
   .field /*04000045*/ assembly initonly class BalthasarIL.Serialization.SurrogateHashtable/*02000023*/ _surrogates
-  .field /*04000046*/ assembly class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ _nextSelector
+  .field /*04000046*/ assembly class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ _nextSelector
   .method /*06000141*/ public hidebysig newslot virtual 
           instance void  AddSurrogate(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ 'type',
                                       valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ context,
-                                      class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ surrogate) cil managed
+                                      class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ surrogate) cil managed
   // SIG: 20 03 01 12 1D 11 41 12 38
   {
     // 方法在 RVA 0x233fc 处开始
@@ -14716,14 +14644,14 @@
   } // end of method SurrogateSelector::AddSurrogate
 
   .method /*06000142*/ private hidebysig static 
-          bool  HasCycle(class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ selector) cil managed
+          bool  HasCycle(class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ selector) cil managed
   // SIG: 00 01 02 12 3C
   {
     // 方法在 RVA 0x23434 处开始
     // 代码大小       49 (0x31)
     .maxstack  2
-    .locals /*11000031*/ (class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ V_0,
-             class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ V_1)
+    .locals /*11000031*/ (class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ V_0,
+             class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ V_1)
     IL_0000:  /* 02   |                  */ ldarg.0
     IL_0001:  /* 0A   |                  */ stloc.0
     IL_0002:  /* 02   |                  */ ldarg.0
@@ -14731,7 +14659,7 @@
     IL_0004:  /* 2B   | 26               */ br.s       IL_002c
 
     IL_0006:  /* 06   |                  */ ldloc.0
-    IL_0007:  /* 6F   | (06)0000AD       */ callvirt   instance class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/::GetNextSelector() /* 060000AD */
+    IL_0007:  /* 6F   | (06)0000AD       */ callvirt   instance class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/::GetNextSelector() /* 060000AD */
     IL_000c:  /* 0A   |                  */ stloc.0
     IL_000d:  /* 06   |                  */ ldloc.0
     IL_000e:  /* 2D   | 02               */ brtrue.s   IL_0012
@@ -14747,10 +14675,10 @@
     IL_0017:  /* 2A   |                  */ ret
 
     IL_0018:  /* 06   |                  */ ldloc.0
-    IL_0019:  /* 6F   | (06)0000AD       */ callvirt   instance class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/::GetNextSelector() /* 060000AD */
+    IL_0019:  /* 6F   | (06)0000AD       */ callvirt   instance class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/::GetNextSelector() /* 060000AD */
     IL_001e:  /* 0A   |                  */ stloc.0
     IL_001f:  /* 07   |                  */ ldloc.1
-    IL_0020:  /* 6F   | (06)0000AD       */ callvirt   instance class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/::GetNextSelector() /* 060000AD */
+    IL_0020:  /* 6F   | (06)0000AD       */ callvirt   instance class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/::GetNextSelector() /* 060000AD */
     IL_0025:  /* 0B   |                  */ stloc.1
     IL_0026:  /* 06   |                  */ ldloc.0
     IL_0027:  /* 07   |                  */ ldloc.1
@@ -14767,16 +14695,16 @@
   } // end of method SurrogateSelector::HasCycle
 
   .method /*06000143*/ public hidebysig newslot virtual 
-          instance void  ChainSelector(class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ selector) cil managed
+          instance void  ChainSelector(class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ selector) cil managed
   // SIG: 20 01 01 12 3C
   {
     // 方法在 RVA 0x23474 处开始
     // 代码大小       234 (0xea)
     .maxstack  2
-    .locals /*11000032*/ (class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ V_0,
-             class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ V_1,
-             class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ V_2,
-             class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ V_3)
+    .locals /*11000032*/ (class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ V_0,
+             class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ V_1,
+             class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ V_2,
+             class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ V_3)
     IL_0000:  /* 03   |                  */ ldarg.1
     IL_0001:  /* 72   | (70)001180       */ ldstr      "selector" /* 70001180 */
     IL_0006:  /* 28   | (0A)00002F       */ call       void [System.Private.CoreLib/*23000001*/]System.ArgumentNullException/*0100002E*/::ThrowIfNull(object,
@@ -14786,11 +14714,11 @@
     IL_000d:  /* 33   | 0B               */ bne.un.s   IL_001a
 
     IL_000f:  /* 28   | (06)000049       */ call       string System.SR/*02000004*/::get_Serialization_SurrogateCycle() /* 06000049 */
-    IL_0014:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0014:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0019:  /* 7A   |                  */ throw
 
     IL_001a:  /* 03   |                  */ ldarg.1
-    IL_001b:  /* 28   | (06)000142       */ call       bool BalthasarIL.Serialization.SurrogateSelector/*02000021*/::HasCycle(class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/) /* 06000142 */
+    IL_001b:  /* 28   | (06)000142       */ call       bool BalthasarIL.Serialization.SurrogateSelector/*02000021*/::HasCycle(class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/) /* 06000142 */
     IL_0020:  /* 2D   | 10               */ brtrue.s   IL_0032
 
     IL_0022:  /* 28   | (06)000048       */ call       string System.SR/*02000004*/::get_Serialization_SurrogateCycleInArgument() /* 06000048 */
@@ -14800,7 +14728,7 @@
     IL_0031:  /* 7A   |                  */ throw
 
     IL_0032:  /* 03   |                  */ ldarg.1
-    IL_0033:  /* 6F   | (06)0000AD       */ callvirt   instance class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/::GetNextSelector() /* 060000AD */
+    IL_0033:  /* 6F   | (06)0000AD       */ callvirt   instance class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/::GetNextSelector() /* 060000AD */
     IL_0038:  /* 0A   |                  */ stloc.0
     IL_0039:  /* 03   |                  */ ldarg.1
     IL_003a:  /* 0B   |                  */ stloc.1
@@ -14809,7 +14737,7 @@
     IL_003d:  /* 06   |                  */ ldloc.0
     IL_003e:  /* 0B   |                  */ stloc.1
     IL_003f:  /* 06   |                  */ ldloc.0
-    IL_0040:  /* 6F   | (06)0000AD       */ callvirt   instance class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/::GetNextSelector() /* 060000AD */
+    IL_0040:  /* 6F   | (06)0000AD       */ callvirt   instance class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/::GetNextSelector() /* 060000AD */
     IL_0045:  /* 0A   |                  */ stloc.0
     IL_0046:  /* 06   |                  */ ldloc.0
     IL_0047:  /* 2C   | 04               */ brfalse.s  IL_004d
@@ -14839,12 +14767,12 @@
     IL_0069:  /* 33   | 09               */ bne.un.s   IL_0074
 
     IL_006b:  /* 02   |                  */ ldarg.0
-    IL_006c:  /* 6F   | (06)000144       */ callvirt   instance class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.Serialization.SurrogateSelector/*02000021*/::GetNextSelector() /* 06000144 */
+    IL_006c:  /* 6F   | (06)000144       */ callvirt   instance class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.Serialization.SurrogateSelector/*02000021*/::GetNextSelector() /* 06000144 */
     IL_0071:  /* 0A   |                  */ stloc.0
     IL_0072:  /* 2B   | 07               */ br.s       IL_007b
 
     IL_0074:  /* 06   |                  */ ldloc.0
-    IL_0075:  /* 6F   | (06)0000AD       */ callvirt   instance class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/::GetNextSelector() /* 060000AD */
+    IL_0075:  /* 6F   | (06)0000AD       */ callvirt   instance class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/::GetNextSelector() /* 060000AD */
     IL_007a:  /* 0A   |                  */ stloc.0
     IL_007b:  /* 06   |                  */ ldloc.0
     IL_007c:  /* 2C   | 53               */ brfalse.s  IL_00d1
@@ -14864,24 +14792,24 @@
     IL_0094:  /* 33   | 09               */ bne.un.s   IL_009f
 
     IL_0096:  /* 02   |                  */ ldarg.0
-    IL_0097:  /* 6F   | (06)000144       */ callvirt   instance class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.Serialization.SurrogateSelector/*02000021*/::GetNextSelector() /* 06000144 */
+    IL_0097:  /* 6F   | (06)000144       */ callvirt   instance class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.Serialization.SurrogateSelector/*02000021*/::GetNextSelector() /* 06000144 */
     IL_009c:  /* 0A   |                  */ stloc.0
     IL_009d:  /* 2B   | 07               */ br.s       IL_00a6
 
     IL_009f:  /* 06   |                  */ ldloc.0
-    IL_00a0:  /* 6F   | (06)0000AD       */ callvirt   instance class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/::GetNextSelector() /* 060000AD */
+    IL_00a0:  /* 6F   | (06)0000AD       */ callvirt   instance class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/::GetNextSelector() /* 060000AD */
     IL_00a5:  /* 0A   |                  */ stloc.0
     IL_00a6:  /* 08   |                  */ ldloc.2
     IL_00a7:  /* 07   |                  */ ldloc.1
     IL_00a8:  /* 33   | 09               */ bne.un.s   IL_00b3
 
     IL_00aa:  /* 02   |                  */ ldarg.0
-    IL_00ab:  /* 6F   | (06)000144       */ callvirt   instance class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.Serialization.SurrogateSelector/*02000021*/::GetNextSelector() /* 06000144 */
+    IL_00ab:  /* 6F   | (06)000144       */ callvirt   instance class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.Serialization.SurrogateSelector/*02000021*/::GetNextSelector() /* 06000144 */
     IL_00b0:  /* 0C   |                  */ stloc.2
     IL_00b1:  /* 2B   | 07               */ br.s       IL_00ba
 
     IL_00b3:  /* 08   |                  */ ldloc.2
-    IL_00b4:  /* 6F   | (06)0000AD       */ callvirt   instance class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/::GetNextSelector() /* 060000AD */
+    IL_00b4:  /* 6F   | (06)0000AD       */ callvirt   instance class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/::GetNextSelector() /* 060000AD */
     IL_00b9:  /* 0C   |                  */ stloc.2
     IL_00ba:  /* 06   |                  */ ldloc.0
     IL_00bb:  /* 08   |                  */ ldloc.2
@@ -14897,22 +14825,22 @@
     IL_00cf:  /* 2D   | 96               */ brtrue.s   IL_0067
 
     IL_00d1:  /* 02   |                  */ ldarg.0
-    IL_00d2:  /* 7B   | (04)000046       */ ldfld      class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.Serialization.SurrogateSelector/*02000021*/::_nextSelector /* 04000046 */
+    IL_00d2:  /* 7B   | (04)000046       */ ldfld      class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.Serialization.SurrogateSelector/*02000021*/::_nextSelector /* 04000046 */
     IL_00d7:  /* 0D   |                  */ stloc.3
     IL_00d8:  /* 02   |                  */ ldarg.0
     IL_00d9:  /* 03   |                  */ ldarg.1
-    IL_00da:  /* 7D   | (04)000046       */ stfld      class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.Serialization.SurrogateSelector/*02000021*/::_nextSelector /* 04000046 */
+    IL_00da:  /* 7D   | (04)000046       */ stfld      class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.Serialization.SurrogateSelector/*02000021*/::_nextSelector /* 04000046 */
     IL_00df:  /* 09   |                  */ ldloc.3
     IL_00e0:  /* 2C   | 07               */ brfalse.s  IL_00e9
 
     IL_00e2:  /* 07   |                  */ ldloc.1
     IL_00e3:  /* 09   |                  */ ldloc.3
-    IL_00e4:  /* 6F   | (06)0000AB       */ callvirt   instance void BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/::ChainSelector(class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/) /* 060000AB */
+    IL_00e4:  /* 6F   | (06)0000AB       */ callvirt   instance void [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/::ChainSelector(class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/) /* 060000AB */
     IL_00e9:  /* 2A   |                  */ ret
   } // end of method SurrogateSelector::ChainSelector
 
   .method /*06000144*/ public hidebysig newslot virtual 
-          instance class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ 
+          instance class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ 
           GetNextSelector() cil managed
   // SIG: 20 00 12 3C
   {
@@ -14921,15 +14849,15 @@
     // 代码大小       7 (0x7)
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)000046       */ ldfld      class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.Serialization.SurrogateSelector/*02000021*/::_nextSelector /* 04000046 */
+    IL_0001:  /* 7B   | (04)000046       */ ldfld      class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.Serialization.SurrogateSelector/*02000021*/::_nextSelector /* 04000046 */
     IL_0006:  /* 2A   |                  */ ret
   } // end of method SurrogateSelector::GetNextSelector
 
   .method /*06000145*/ public hidebysig newslot virtual 
-          instance class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ 
+          instance class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ 
           GetSurrogate(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ 'type',
                        valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ context,
-                       [out] class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/& selector) cil managed
+                       [out] class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/& selector) cil managed
   // SIG: 20 03 12 38 12 1D 11 41 10 12 3C
   {
     .param [0]/*08000153*/ 
@@ -14938,7 +14866,7 @@
     // 代码大小       70 (0x46)
     .maxstack  4
     .locals /*11000033*/ (class BalthasarIL.Serialization.SurrogateKey/*02000022*/ V_0,
-             class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ V_1)
+             class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ V_1)
     IL_0000:  /* 03   |                  */ ldarg.1
     IL_0001:  /* 72   | (70)001044       */ ldstr      "type" /* 70001044 */
     IL_0006:  /* 28   | (0A)00002F       */ call       void [System.Private.CoreLib/*23000001*/]System.ArgumentNullException/*0100002E*/::ThrowIfNull(object,
@@ -14955,7 +14883,7 @@
     IL_0017:  /* 7B   | (04)000045       */ ldfld      class BalthasarIL.Serialization.SurrogateHashtable/*02000023*/ BalthasarIL.Serialization.SurrogateSelector/*02000021*/::_surrogates /* 04000045 */
     IL_001c:  /* 06   |                  */ ldloc.0
     IL_001d:  /* 6F   | (0A)0000A2       */ callvirt   instance object [System.Private.CoreLib/*23000001*/]System.Collections.Hashtable/*0100005E*/::get_Item(object) /* 0A0000A2 */
-    IL_0022:  /* 74   | (02)00000E       */ castclass  BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/
+    IL_0022:  /* 74   | (02)00000E       */ castclass  [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/
     IL_0027:  /* 0B   |                  */ stloc.1
     IL_0028:  /* 07   |                  */ ldloc.1
     IL_0029:  /* 2C   | 02               */ brfalse.s  IL_002d
@@ -14964,17 +14892,17 @@
     IL_002c:  /* 2A   |                  */ ret
 
     IL_002d:  /* 02   |                  */ ldarg.0
-    IL_002e:  /* 7B   | (04)000046       */ ldfld      class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.Serialization.SurrogateSelector/*02000021*/::_nextSelector /* 04000046 */
+    IL_002e:  /* 7B   | (04)000046       */ ldfld      class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.Serialization.SurrogateSelector/*02000021*/::_nextSelector /* 04000046 */
     IL_0033:  /* 2C   | 0F               */ brfalse.s  IL_0044
 
     IL_0035:  /* 02   |                  */ ldarg.0
-    IL_0036:  /* 7B   | (04)000046       */ ldfld      class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.Serialization.SurrogateSelector/*02000021*/::_nextSelector /* 04000046 */
+    IL_0036:  /* 7B   | (04)000046       */ ldfld      class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.Serialization.SurrogateSelector/*02000021*/::_nextSelector /* 04000046 */
     IL_003b:  /* 03   |                  */ ldarg.1
     IL_003c:  /* 04   |                  */ ldarg.2
     IL_003d:  /* 05   |                  */ ldarg.3
-    IL_003e:  /* 6F   | (06)0000AC       */ callvirt   instance class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/::GetSurrogate(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
+    IL_003e:  /* 6F   | (06)0000AC       */ callvirt   instance class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/::GetSurrogate(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
                                                                                                                                                                                                                  valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/,
-                                                                                                                                                                                                                 class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/&) /* 060000AC */
+                                                                                                                                                                                                                 class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/&) /* 060000AC */
     IL_0043:  /* 2A   |                  */ ret
 
     IL_0044:  /* 14   |                  */ ldnull
@@ -16026,7 +15954,7 @@
     IL_0033:  /* 7B   | (04)000061       */ ldfld      string BalthasarIL.BinaryFormatters.Binary.BinaryAssemblyInfo/*0200002B*/::_assemblyString /* 04000061 */
     IL_0038:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_003d:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_003d:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0042:  /* 7A   |                  */ throw
 
     IL_0043:  /* 02   |                  */ ldarg.0
@@ -16173,7 +16101,7 @@
     IL_00d2:  /* 50   |                  */ ldind.ref
     IL_00d3:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_00d8:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_00d8:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_00dd:  /* 7A   |                  */ throw
 
     IL_00de:  /* 16   |                  */ ldc.i4.0
@@ -16326,7 +16254,7 @@
     IL_0064:  /* 6F   | (0A)000069       */ callvirt   instance string [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/::ToString() /* 0A000069 */
     IL_0069:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_006e:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_006e:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0073:  /* 7A   |                  */ throw
 
     IL_0074:  /* 2A   |                  */ ret
@@ -16384,7 +16312,7 @@
     IL_0060:  /* 6F   | (0A)000069       */ callvirt   instance string [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/::ToString() /* 0A000069 */
     IL_0065:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_006a:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_006a:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_006f:  /* 7A   |                  */ throw
 
     IL_0070:  /* 04   |                  */ ldarg.2
@@ -16515,7 +16443,7 @@
     IL_00cd:  /* 6F   | (0A)000069       */ callvirt   instance string [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/::ToString() /* 0A000069 */
     IL_00d2:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_00d7:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_00d7:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_00dc:  /* 7A   |                  */ throw
 
     IL_00dd:  /* 2A   |                  */ ret
@@ -17846,7 +17774,7 @@
     IL_004b:  /* 03   |                  */ ldarg.1
     IL_004c:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_0051:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0051:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0056:  /* 7A   |                  */ throw
 
     IL_0057:  /* 02   |                  */ ldarg.0
@@ -18312,7 +18240,7 @@
     IL_0038:  /* 28   | (0A)0000AC       */ call       string [System.Private.CoreLib/*23000001*/]System.BitConverter/*01000064*/::ToString(uint8[]) /* 0A0000AC */
     IL_003d:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_0042:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0042:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0047:  /* 7A   |                  */ throw
 
     IL_0048:  /* 02   |                  */ ldarg.0
@@ -19976,7 +19904,7 @@
   } // end of class '<>c'
 
   .field /*0400013F*/ private static initonly class [System.Collections.Concurrent/*23000003*/]System.Collections.Concurrent.ConcurrentDictionary`2/*01000030*/<class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,class BalthasarIL.BinaryFormatters.Binary.TypeInformation/*02000054*/> s_typeNameCache
-  .field /*04000140*/ assembly class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ _surrogates
+  .field /*04000140*/ assembly class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ _surrogates
   .field /*04000141*/ assembly valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ _context
   .field /*04000142*/ assembly class BalthasarIL.Serialization.SerializationBinder/*0200001B*/ _binder
   .field /*04000143*/ assembly valuetype BalthasarIL.BinaryFormatters.FormatterTypeStyle/*02000025*/ _typeFormat
@@ -20062,7 +19990,7 @@
   } // end of method BinaryFormatter::set_FilterLevel
 
   .method /*060001BC*/ public hidebysig newslot specialname virtual final 
-          instance class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ 
+          instance class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ 
           get_SurrogateSelector() cil managed
   // SIG: 20 00 12 3C
   {
@@ -20070,12 +19998,12 @@
     // 代码大小       7 (0x7)
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)000140       */ ldfld      class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.BinaryFormatter/*0200004A*/::_surrogates /* 04000140 */
+    IL_0001:  /* 7B   | (04)000140       */ ldfld      class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.BinaryFormatter/*0200004A*/::_surrogates /* 04000140 */
     IL_0006:  /* 2A   |                  */ ret
   } // end of method BinaryFormatter::get_SurrogateSelector
 
   .method /*060001BD*/ public hidebysig newslot specialname virtual final 
-          instance void  set_SurrogateSelector(class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ 'value') cil managed
+          instance void  set_SurrogateSelector(class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ 'value') cil managed
   // SIG: 20 01 01 12 3C
   {
     // 方法在 RVA 0x254d8 处开始
@@ -20083,7 +20011,7 @@
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
     IL_0001:  /* 03   |                  */ ldarg.1
-    IL_0002:  /* 7D   | (04)000140       */ stfld      class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.BinaryFormatter/*0200004A*/::_surrogates /* 04000140 */
+    IL_0002:  /* 7D   | (04)000140       */ stfld      class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.BinaryFormatter/*0200004A*/::_surrogates /* 04000140 */
     IL_0007:  /* 2A   |                  */ ret
   } // end of method BinaryFormatter::set_SurrogateSelector
 
@@ -20150,13 +20078,13 @@
     IL_0001:  /* 14   |                  */ ldnull
     IL_0002:  /* 20   | FF000000         */ ldc.i4     0xff
     IL_0007:  /* 73   | (0A)00004C       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/::.ctor(valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContextStates/*0100003C*/) /* 0A00004C */
-    IL_000c:  /* 28   | (06)0001C3       */ call       instance void BalthasarIL.BinaryFormatters.Binary.BinaryFormatter/*0200004A*/::.ctor(class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/,
+    IL_000c:  /* 28   | (06)0001C3       */ call       instance void BalthasarIL.BinaryFormatters.Binary.BinaryFormatter/*0200004A*/::.ctor(class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/,
                                                                                                                                                        valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/) /* 060001C3 */
     IL_0011:  /* 2A   |                  */ ret
   } // end of method BinaryFormatter::.ctor
 
   .method /*060001C3*/ public hidebysig specialname rtspecialname 
-          instance void  .ctor(class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ selector,
+          instance void  .ctor(class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ selector,
                                valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ context) cil managed
   // SIG: 20 02 01 12 3C 11 41
   {
@@ -20173,7 +20101,7 @@
     IL_000f:  /* 28   | (0A)000011       */ call       instance void [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/::.ctor() /* 0A000011 */
     IL_0014:  /* 02   |                  */ ldarg.0
     IL_0015:  /* 03   |                  */ ldarg.1
-    IL_0016:  /* 7D   | (04)000140       */ stfld      class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.BinaryFormatter/*0200004A*/::_surrogates /* 04000140 */
+    IL_0016:  /* 7D   | (04)000140       */ stfld      class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.BinaryFormatter/*0200004A*/::_surrogates /* 04000140 */
     IL_001b:  /* 02   |                  */ ldarg.0
     IL_001c:  /* 04   |                  */ ldarg.2
     IL_001d:  /* 7D   | (04)000141       */ stfld      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ BalthasarIL.BinaryFormatters.Binary.BinaryFormatter/*0200004A*/::_context /* 04000141 */
@@ -20264,7 +20192,7 @@
     IL_002b:  /* 2D   | 0B               */ brtrue.s   IL_0038
 
     IL_002d:  /* 28   | (06)00002B       */ call       string System.SR/*02000004*/::get_Serialization_Stream() /* 0600002B */
-    IL_0032:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0032:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0037:  /* 7A   |                  */ throw
 
     IL_0038:  /* 73   | (06)0002C1       */ newobj     instance void BalthasarIL.BinaryFormatters.Binary.InternalFE/*02000061*/::.ctor() /* 060002C1 */
@@ -20286,14 +20214,14 @@
     IL_0068:  /* 0A   |                  */ stloc.0
     IL_0069:  /* 03   |                  */ ldarg.1
     IL_006a:  /* 02   |                  */ ldarg.0
-    IL_006b:  /* 7B   | (04)000140       */ ldfld      class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.BinaryFormatter/*0200004A*/::_surrogates /* 04000140 */
+    IL_006b:  /* 7B   | (04)000140       */ ldfld      class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.BinaryFormatter/*0200004A*/::_surrogates /* 04000140 */
     IL_0070:  /* 02   |                  */ ldarg.0
     IL_0071:  /* 7B   | (04)000141       */ ldfld      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ BalthasarIL.BinaryFormatters.Binary.BinaryFormatter/*0200004A*/::_context /* 04000141 */
     IL_0076:  /* 06   |                  */ ldloc.0
     IL_0077:  /* 02   |                  */ ldarg.0
     IL_0078:  /* 7B   | (04)000142       */ ldfld      class BalthasarIL.Serialization.SerializationBinder/*0200001B*/ BalthasarIL.BinaryFormatters.Binary.BinaryFormatter/*0200004A*/::_binder /* 04000142 */
     IL_007d:  /* 73   | (06)000234       */ newobj     instance void BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::.ctor(class [System.Private.CoreLib/*23000001*/]System.IO.Stream/*01000015*/,
-                                                                                                                                                    class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/,
+                                                                                                                                                    class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/,
                                                                                                                                                     valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/,
                                                                                                                                                     class BalthasarIL.BinaryFormatters.Binary.InternalFE/*02000061*/,
                                                                                                                                                     class BalthasarIL.Serialization.SerializationBinder/*0200001B*/) /* 06000234 */
@@ -20320,7 +20248,7 @@
         IL_00a9:  /* DE   | 1D               */ leave.s    IL_00c8
 
       }  // end .try
-      catch [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/ 
+      catch [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/ 
       {
         IL_00ab:  /* 26   |                  */ pop
         IL_00ac:  /* FE1A |                  */ rethrow
@@ -20331,7 +20259,7 @@
         IL_00ae:  /* 13   | 04               */ stloc.s    V_4
         IL_00b0:  /* 28   | (06)00002A       */ call       string System.SR/*02000004*/::get_Serialization_CorruptedStream() /* 0600002A */
         IL_00b5:  /* 11   | 04               */ ldloc.s    V_4
-        IL_00b7:  /* 73   | (0A)00007D       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string,
+        IL_00b7:  /* 73   | (0A)00007D       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string,
                                                                                                                                                                                     class [System.Private.CoreLib/*23000001*/]System.Exception/*0100003F*/) /* 0A00007D */
         IL_00bc:  /* 7A   |                  */ throw
 
@@ -20406,13 +20334,13 @@
       IL_0042:  /* 7E   | (04)000149       */ ldsfld     class BalthasarIL.BinaryFormatters.Binary.BinaryFormatterEventSource/*0200004C*/ BalthasarIL.BinaryFormatters.Binary.BinaryFormatterEventSource/*0200004C*/::Log /* 04000149 */
       IL_0047:  /* 6F   | (06)0001CC       */ callvirt   instance void BalthasarIL.BinaryFormatters.Binary.BinaryFormatterEventSource/*0200004C*/::SerializationStart() /* 060001CC */
       IL_004c:  /* 02   |                  */ ldarg.0
-      IL_004d:  /* 7B   | (04)000140       */ ldfld      class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.BinaryFormatter/*0200004A*/::_surrogates /* 04000140 */
+      IL_004d:  /* 7B   | (04)000140       */ ldfld      class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.BinaryFormatter/*0200004A*/::_surrogates /* 04000140 */
       IL_0052:  /* 02   |                  */ ldarg.0
       IL_0053:  /* 7B   | (04)000141       */ ldfld      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ BalthasarIL.BinaryFormatters.Binary.BinaryFormatter/*0200004A*/::_context /* 04000141 */
       IL_0058:  /* 06   |                  */ ldloc.0
       IL_0059:  /* 02   |                  */ ldarg.0
       IL_005a:  /* 7B   | (04)000142       */ ldfld      class BalthasarIL.Serialization.SerializationBinder/*0200001B*/ BalthasarIL.BinaryFormatters.Binary.BinaryFormatter/*0200004A*/::_binder /* 04000142 */
-      IL_005f:  /* 73   | (06)000255       */ newobj     instance void BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::.ctor(class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/,
+      IL_005f:  /* 73   | (06)000255       */ newobj     instance void BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::.ctor(class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/,
                                                                                                                                                       valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/,
                                                                                                                                                       class BalthasarIL.BinaryFormatters.Binary.InternalFE/*02000061*/,
                                                                                                                                                       class BalthasarIL.Serialization.SerializationBinder/*0200001B*/) /* 06000255 */
@@ -20477,11 +20405,11 @@
     .get instance valuetype BalthasarIL.BinaryFormatters.TypeFilterLevel/*02000027*/ BalthasarIL.BinaryFormatters.Binary.BinaryFormatter/*0200004A*/::get_FilterLevel() /* 060001BA */
     .set instance void BalthasarIL.BinaryFormatters.Binary.BinaryFormatter/*0200004A*/::set_FilterLevel(valuetype BalthasarIL.BinaryFormatters.TypeFilterLevel/*02000027*/) /* 060001BB */
   } // end of property BinaryFormatter::FilterLevel
-  .property /*17000079*/ instance class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/
+  .property /*17000079*/ instance class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/
           SurrogateSelector()
   {
-    .get instance class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.BinaryFormatter/*0200004A*/::get_SurrogateSelector() /* 060001BC */
-    .set instance void BalthasarIL.BinaryFormatters.Binary.BinaryFormatter/*0200004A*/::set_SurrogateSelector(class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/) /* 060001BD */
+    .get instance class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.BinaryFormatter/*0200004A*/::get_SurrogateSelector() /* 060001BC */
+    .set instance void BalthasarIL.BinaryFormatters.Binary.BinaryFormatter/*0200004A*/::set_SurrogateSelector(class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/) /* 060001BD */
   } // end of property BinaryFormatter::SurrogateSelector
   .property /*1700007A*/ instance class BalthasarIL.Serialization.SerializationBinder/*0200001B*/
           Binder()
@@ -22594,7 +22522,7 @@
     IL_015e:  /* 6F   | (0A)000069       */ callvirt   instance string [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/::ToString() /* 0A000069 */
     IL_0163:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_0168:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0168:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_016d:  /* 7A   |                  */ throw
   } // end of method BinaryFormatterWriter::WriteValue
 
@@ -22613,7 +22541,7 @@
   .field /*04000167*/ assembly class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationInfo/*01000044*/ _si
   .field /*04000168*/ assembly class BalthasarIL.BinaryFormatters.Binary.SerObjectInfoCache/*02000053*/ _cache
   .field /*04000169*/ assembly object[] _memberData
-  .field /*0400016A*/ assembly class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ _serializationSurrogate
+  .field /*0400016A*/ assembly class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ _serializationSurrogate
   .field /*0400016B*/ assembly valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ _context
   .field /*0400016C*/ assembly class BalthasarIL.BinaryFormatters.Binary.SerObjectInfoInit/*02000052*/ _serObjectInfoInit
   .field /*0400016D*/ assembly int64 _objectId
@@ -22698,7 +22626,7 @@
   .method /*06000207*/ assembly hidebysig static 
           class BalthasarIL.BinaryFormatters.Binary.WriteObjectInfo/*02000050*/ 
           Serialize(object obj,
-                    class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ surrogateSelector,
+                    class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ surrogateSelector,
                     valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ context,
                     class BalthasarIL.BinaryFormatters.Binary.SerObjectInfoInit/*02000052*/ serObjectInfoInit,
                     class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.IFormatterConverter/*0100002D*/ converter,
@@ -22726,7 +22654,7 @@
     IL_000e:  /* 0E   | 05               */ ldarg.s    objectWriter
     IL_0010:  /* 0E   | 06               */ ldarg.s    binder
     IL_0012:  /* 6F   | (06)000208       */ callvirt   instance void BalthasarIL.BinaryFormatters.Binary.WriteObjectInfo/*02000050*/::InitSerialize(object,
-                                                                                                                                                               class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/,
+                                                                                                                                                               class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/,
                                                                                                                                                                valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/,
                                                                                                                                                                class BalthasarIL.BinaryFormatters.Binary.SerObjectInfoInit/*02000052*/,
                                                                                                                                                                class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.IFormatterConverter/*0100002D*/,
@@ -22738,7 +22666,7 @@
 
   .method /*06000208*/ assembly hidebysig 
           instance void  InitSerialize(object obj,
-                                       class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ surrogateSelector,
+                                       class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ surrogateSelector,
                                        valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ context,
                                        class BalthasarIL.BinaryFormatters.Binary.SerObjectInfoInit/*02000052*/ serObjectInfoInit,
                                        class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.IFormatterConverter/*0100002D*/ converter,
@@ -22753,8 +22681,8 @@
     // 方法在 RVA 0x4a31c 处开始
     // 代码大小       330 (0x14a)
     .maxstack  5
-    .locals /*1100004E*/ (class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ V_0,
-             class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ V_1)
+    .locals /*1100004E*/ (class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ V_0,
+             class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ V_1)
     IL_0000:  /* 02   |                  */ ldarg.0
     IL_0001:  /* 05   |                  */ ldarg.3
     IL_0002:  /* 7D   | (04)00016B       */ stfld      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ BalthasarIL.BinaryFormatters.Binary.WriteObjectInfo/*02000050*/::_context /* 0400016B */
@@ -22796,12 +22724,12 @@
     IL_0058:  /* 7B   | (04)000163       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ BalthasarIL.BinaryFormatters.Binary.WriteObjectInfo/*02000050*/::_objectType /* 04000163 */
     IL_005d:  /* 05   |                  */ ldarg.3
     IL_005e:  /* 12   | 00               */ ldloca.s   V_0
-    IL_0060:  /* 6F   | (06)0000AC       */ callvirt   instance class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/::GetSurrogate(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
+    IL_0060:  /* 6F   | (06)0000AC       */ callvirt   instance class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/::GetSurrogate(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
                                                                                                                                                                                                                  valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/,
-                                                                                                                                                                                                                 class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/&) /* 060000AC */
+                                                                                                                                                                                                                 class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/&) /* 060000AC */
     IL_0065:  /* 25   |                  */ dup
     IL_0066:  /* 0B   |                  */ stloc.1
-    IL_0067:  /* 7D   | (04)00016A       */ stfld      class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.BinaryFormatters.Binary.WriteObjectInfo/*02000050*/::_serializationSurrogate /* 0400016A */
+    IL_0067:  /* 7D   | (04)00016A       */ stfld      class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.BinaryFormatters.Binary.WriteObjectInfo/*02000050*/::_serializationSurrogate /* 0400016A */
     IL_006c:  /* 07   |                  */ ldloc.1
     IL_006d:  /* 2C   | 3A               */ brfalse.s  IL_00a9
 
@@ -22818,12 +22746,12 @@
     IL_008d:  /* 2D   | 13               */ brtrue.s   IL_00a2
 
     IL_008f:  /* 02   |                  */ ldarg.0
-    IL_0090:  /* 7B   | (04)00016A       */ ldfld      class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.BinaryFormatters.Binary.WriteObjectInfo/*02000050*/::_serializationSurrogate /* 0400016A */
+    IL_0090:  /* 7B   | (04)00016A       */ ldfld      class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.BinaryFormatters.Binary.WriteObjectInfo/*02000050*/::_serializationSurrogate /* 0400016A */
     IL_0095:  /* 03   |                  */ ldarg.1
     IL_0096:  /* 02   |                  */ ldarg.0
     IL_0097:  /* 7B   | (04)000167       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationInfo/*01000044*/ BalthasarIL.BinaryFormatters.Binary.WriteObjectInfo/*02000050*/::_si /* 04000167 */
     IL_009c:  /* 05   |                  */ ldarg.3
-    IL_009d:  /* 6F   | (06)0000A9       */ callvirt   instance void BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/::GetObjectData(object,
+    IL_009d:  /* 6F   | (06)0000A9       */ callvirt   instance void [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/::GetObjectData(object,
                                                                                                                                                      class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationInfo/*01000044*/,
                                                                                                                                                      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/) /* 060000A9 */
     IL_00a2:  /* 02   |                  */ ldarg.0
@@ -22926,7 +22854,7 @@
   .method /*06000209*/ assembly hidebysig static 
           class BalthasarIL.BinaryFormatters.Binary.WriteObjectInfo/*02000050*/ 
           Serialize(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ objectType,
-                    class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ surrogateSelector,
+                    class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ surrogateSelector,
                     valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ context,
                     class BalthasarIL.BinaryFormatters.Binary.SerObjectInfoInit/*02000052*/ serObjectInfoInit,
                     class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.IFormatterConverter/*0100002D*/ converter,
@@ -22950,7 +22878,7 @@
     IL_000c:  /* 0E   | 04               */ ldarg.s    converter
     IL_000e:  /* 0E   | 05               */ ldarg.s    binder
     IL_0010:  /* 6F   | (06)00020A       */ callvirt   instance void BalthasarIL.BinaryFormatters.Binary.WriteObjectInfo/*02000050*/::InitSerialize(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
-                                                                                                                                                               class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/,
+                                                                                                                                                               class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/,
                                                                                                                                                                valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/,
                                                                                                                                                                class BalthasarIL.BinaryFormatters.Binary.SerObjectInfoInit/*02000052*/,
                                                                                                                                                                class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.IFormatterConverter/*0100002D*/,
@@ -22961,7 +22889,7 @@
 
   .method /*0600020A*/ assembly hidebysig 
           instance void  InitSerialize(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ objectType,
-                                       class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ surrogateSelector,
+                                       class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ surrogateSelector,
                                        valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ context,
                                        class BalthasarIL.BinaryFormatters.Binary.SerObjectInfoInit/*02000052*/ serObjectInfoInit,
                                        class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.IFormatterConverter/*0100002D*/ converter,
@@ -22973,7 +22901,7 @@
     // 方法在 RVA 0x264e8 处开始
     // 代码大小       212 (0xd4)
     .maxstack  5
-    .locals /*1100004F*/ (class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ V_0)
+    .locals /*1100004F*/ (class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ V_0)
     IL_0000:  /* 02   |                  */ ldarg.0
     IL_0001:  /* 03   |                  */ ldarg.1
     IL_0002:  /* 7D   | (04)000163       */ stfld      class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ BalthasarIL.BinaryFormatters.Binary.WriteObjectInfo/*02000050*/::_objectType /* 04000163 */
@@ -23002,12 +22930,12 @@
     IL_0032:  /* 03   |                  */ ldarg.1
     IL_0033:  /* 05   |                  */ ldarg.3
     IL_0034:  /* 12   | 00               */ ldloca.s   V_0
-    IL_0036:  /* 6F   | (06)0000AC       */ callvirt   instance class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/::GetSurrogate(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
+    IL_0036:  /* 6F   | (06)0000AC       */ callvirt   instance class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/::GetSurrogate(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
                                                                                                                                                                                                                  valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/,
-                                                                                                                                                                                                                 class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/&) /* 060000AC */
-    IL_003b:  /* 7D   | (04)00016A       */ stfld      class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.BinaryFormatters.Binary.WriteObjectInfo/*02000050*/::_serializationSurrogate /* 0400016A */
+                                                                                                                                                                                                                 class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/&) /* 060000AC */
+    IL_003b:  /* 7D   | (04)00016A       */ stfld      class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.BinaryFormatters.Binary.WriteObjectInfo/*02000050*/::_serializationSurrogate /* 0400016A */
     IL_0040:  /* 02   |                  */ ldarg.0
-    IL_0041:  /* 7B   | (04)00016A       */ ldfld      class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.BinaryFormatters.Binary.WriteObjectInfo/*02000050*/::_serializationSurrogate /* 0400016A */
+    IL_0041:  /* 7B   | (04)00016A       */ ldfld      class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.BinaryFormatters.Binary.WriteObjectInfo/*02000050*/::_serializationSurrogate /* 0400016A */
     IL_0046:  /* 2C   | 23               */ brfalse.s  IL_006b
 
     IL_0048:  /* 02   |                  */ ldarg.0
@@ -23464,7 +23392,7 @@
     IL_0030:  /* 2D   | 0B               */ brtrue.s   IL_003d
 
     IL_0032:  /* 28   | (06)000043       */ call       string System.SR/*02000004*/::get_Serialization_ISerializableMemberInfo() /* 06000043 */
-    IL_0037:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0037:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_003c:  /* 7A   |                  */ throw
 
     IL_003d:  /* 2A   |                  */ ret
@@ -23544,7 +23472,7 @@
   .field /*0400017A*/ assembly string[] _wireMemberNames
   .field /*0400017B*/ assembly class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/[] _wireMemberTypes
   .field /*0400017C*/ private int32 _lastPosition
-  .field /*0400017D*/ assembly class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ _serializationSurrogate
+  .field /*0400017D*/ assembly class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ _serializationSurrogate
   .field /*0400017E*/ assembly valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ _context
   .field /*0400017F*/ assembly class [System.Private.CoreLib/*23000001*/]System.Collections.Generic.List`1/*01000033*/<class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/> _memberTypesList
   .field /*04000180*/ assembly class BalthasarIL.BinaryFormatters.Binary.SerObjectInfoInit/*02000052*/ _serObjectInfoInit
@@ -23587,7 +23515,7 @@
   .method /*06000218*/ assembly hidebysig static 
           class BalthasarIL.BinaryFormatters.Binary.ReadObjectInfo/*02000051*/ 
           Create(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ objectType,
-                 class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ surrogateSelector,
+                 class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ surrogateSelector,
                  valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ context,
                  class BalthasarIL.Serialization.ObjectManager/*02000012*/ objectManager,
                  class BalthasarIL.BinaryFormatters.Binary.SerObjectInfoInit/*02000052*/ serObjectInfoInit,
@@ -23613,7 +23541,7 @@
     IL_000f:  /* 0E   | 05               */ ldarg.s    converter
     IL_0011:  /* 0E   | 06               */ ldarg.s    bSimpleAssembly
     IL_0013:  /* 6F   | (06)000219       */ callvirt   instance void BalthasarIL.BinaryFormatters.Binary.ReadObjectInfo/*02000051*/::Init(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
-                                                                                                                                                     class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/,
+                                                                                                                                                     class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/,
                                                                                                                                                      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/,
                                                                                                                                                      class BalthasarIL.Serialization.ObjectManager/*02000012*/,
                                                                                                                                                      class BalthasarIL.BinaryFormatters.Binary.SerObjectInfoInit/*02000052*/,
@@ -23625,7 +23553,7 @@
 
   .method /*06000219*/ assembly hidebysig 
           instance void  Init(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ objectType,
-                              class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ surrogateSelector,
+                              class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ surrogateSelector,
                               valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ context,
                               class BalthasarIL.Serialization.ObjectManager/*02000012*/ objectManager,
                               class BalthasarIL.BinaryFormatters.Binary.SerObjectInfoInit/*02000052*/ serObjectInfoInit,
@@ -23661,7 +23589,7 @@
     IL_0030:  /* 04   |                  */ ldarg.2
     IL_0031:  /* 05   |                  */ ldarg.3
     IL_0032:  /* 28   | (06)00021C       */ call       instance void BalthasarIL.BinaryFormatters.Binary.ReadObjectInfo/*02000051*/::InitReadConstructor(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
-                                                                                                                                                                    class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/,
+                                                                                                                                                                    class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/,
                                                                                                                                                                     valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/) /* 0600021C */
     IL_0037:  /* 2A   |                  */ ret
   } // end of method ReadObjectInfo::Init
@@ -23671,7 +23599,7 @@
           Create(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ objectType,
                  string[] memberNames,
                  class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/[] memberTypes,
-                 class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ surrogateSelector,
+                 class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ surrogateSelector,
                  valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ context,
                  class BalthasarIL.Serialization.ObjectManager/*02000012*/ objectManager,
                  class BalthasarIL.BinaryFormatters.Binary.SerObjectInfoInit/*02000052*/ serObjectInfoInit,
@@ -23701,7 +23629,7 @@
     IL_0017:  /* 6F   | (06)00021B       */ callvirt   instance void BalthasarIL.BinaryFormatters.Binary.ReadObjectInfo/*02000051*/::Init(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
                                                                                                                                                      string[],
                                                                                                                                                      class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/[],
-                                                                                                                                                     class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/,
+                                                                                                                                                     class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/,
                                                                                                                                                      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/,
                                                                                                                                                      class BalthasarIL.Serialization.ObjectManager/*02000012*/,
                                                                                                                                                      class BalthasarIL.BinaryFormatters.Binary.SerObjectInfoInit/*02000052*/,
@@ -23715,7 +23643,7 @@
           instance void  Init(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ objectType,
                               string[] memberNames,
                               class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/[] memberTypes,
-                              class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ surrogateSelector,
+                              class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ surrogateSelector,
                               valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ context,
                               class BalthasarIL.Serialization.ObjectManager/*02000012*/ objectManager,
                               class BalthasarIL.BinaryFormatters.Binary.SerObjectInfoInit/*02000052*/ serObjectInfoInit,
@@ -23769,21 +23697,21 @@
     IL_0052:  /* 0E   | 04               */ ldarg.s    surrogateSelector
     IL_0054:  /* 0E   | 05               */ ldarg.s    context
     IL_0056:  /* 28   | (06)00021C       */ call       instance void BalthasarIL.BinaryFormatters.Binary.ReadObjectInfo/*02000051*/::InitReadConstructor(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
-                                                                                                                                                                    class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/,
+                                                                                                                                                                    class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/,
                                                                                                                                                                     valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/) /* 0600021C */
     IL_005b:  /* 2A   |                  */ ret
   } // end of method ReadObjectInfo::Init
 
   .method /*0600021C*/ private hidebysig 
           instance void  InitReadConstructor(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ objectType,
-                                             class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ surrogateSelector,
+                                             class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ surrogateSelector,
                                              valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ context) cil managed
   // SIG: 20 03 01 12 1D 12 3C 11 41
   {
     // 方法在 RVA 0x26a98 处开始
     // 代码大小       112 (0x70)
     .maxstack  5
-    .locals /*1100004F*/ (class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ V_0)
+    .locals /*1100004F*/ (class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ V_0)
     IL_0000:  /* 7E   | (04)000149       */ ldsfld     class BalthasarIL.BinaryFormatters.Binary.BinaryFormatterEventSource/*0200004C*/ BalthasarIL.BinaryFormatters.Binary.BinaryFormatterEventSource/*0200004C*/::Log /* 04000149 */
     IL_0005:  /* 03   |                  */ ldarg.1
     IL_0006:  /* 6F   | (06)0001D2       */ callvirt   instance void BalthasarIL.BinaryFormatters.Binary.BinaryFormatterEventSource/*0200004C*/::DeserializingObject(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/) /* 060001D2 */
@@ -23803,12 +23731,12 @@
     IL_001f:  /* 03   |                  */ ldarg.1
     IL_0020:  /* 05   |                  */ ldarg.3
     IL_0021:  /* 12   | 00               */ ldloca.s   V_0
-    IL_0023:  /* 6F   | (06)0000AC       */ callvirt   instance class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/::GetSurrogate(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
+    IL_0023:  /* 6F   | (06)0000AC       */ callvirt   instance class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/::GetSurrogate(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
                                                                                                                                                                                                                  valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/,
-                                                                                                                                                                                                                 class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/&) /* 060000AC */
-    IL_0028:  /* 7D   | (04)00017D       */ stfld      class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.BinaryFormatters.Binary.ReadObjectInfo/*02000051*/::_serializationSurrogate /* 0400017D */
+                                                                                                                                                                                                                 class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/&) /* 060000AC */
+    IL_0028:  /* 7D   | (04)00017D       */ stfld      class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.BinaryFormatters.Binary.ReadObjectInfo/*02000051*/::_serializationSurrogate /* 0400017D */
     IL_002d:  /* 02   |                  */ ldarg.0
-    IL_002e:  /* 7B   | (04)00017D       */ ldfld      class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.BinaryFormatters.Binary.ReadObjectInfo/*02000051*/::_serializationSurrogate /* 0400017D */
+    IL_002e:  /* 7B   | (04)00017D       */ ldfld      class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.BinaryFormatters.Binary.ReadObjectInfo/*02000051*/::_serializationSurrogate /* 0400017D */
     IL_0033:  /* 2C   | 09               */ brfalse.s  IL_003e
 
     IL_0035:  /* 02   |                  */ ldarg.0
@@ -23995,7 +23923,7 @@
                                                                                                                                     string) /* 0A000096 */
     IL_0034:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_0039:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0039:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_003e:  /* 7A   |                  */ throw
 
     IL_003f:  /* 02   |                  */ ldarg.0
@@ -24021,7 +23949,7 @@
                                                                                                                                     string) /* 0A000096 */
     IL_006e:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_0073:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0073:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0078:  /* 7A   |                  */ throw
 
     IL_0079:  /* 02   |                  */ ldarg.0
@@ -24104,7 +24032,7 @@
                                                                                                                                     string) /* 0A000096 */
     IL_005d:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_0062:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0062:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0067:  /* 7A   |                  */ throw
 
     IL_0068:  /* 07   |                  */ ldloc.1
@@ -24214,7 +24142,7 @@
     IL_000e:  /* 2D   | 0B               */ brtrue.s   IL_001b
 
     IL_0010:  /* 28   | (06)00002A       */ call       string System.SR/*02000004*/::get_Serialization_CorruptedStream() /* 0600002A */
-    IL_0015:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0015:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_001a:  /* 7A   |                  */ throw
 
     IL_001b:  /* 02   |                  */ ldarg.0
@@ -24240,7 +24168,7 @@
     IL_003c:  /* 2D   | 0B               */ brtrue.s   IL_0049
 
     IL_003e:  /* 28   | (06)00002A       */ call       string System.SR/*02000004*/::get_Serialization_CorruptedStream() /* 0600002A */
-    IL_0043:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0043:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0048:  /* 7A   |                  */ throw
 
     IL_0049:  /* 02   |                  */ ldarg.0
@@ -24413,7 +24341,7 @@
     IL_000d:  /* 04   |                  */ ldarg.2
     IL_000e:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_0013:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0013:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0018:  /* 7A   |                  */ throw
 
     IL_0019:  /* 02   |                  */ ldarg.0
@@ -24561,7 +24489,7 @@
     IL_0139:  /* 7B   | (04)000188       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Reflection.MemberInfo/*01000031*/[] BalthasarIL.BinaryFormatters.Binary.SerObjectInfoCache/*02000053*/::_memberInfos /* 04000188 */
     IL_013e:  /* 11   | 04               */ ldloc.s    V_4
     IL_0140:  /* 9A   |                  */ ldelem.ref
-    IL_0141:  /* D0   | (01)000074       */ ldtoken    [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.OptionalFieldAttribute/*01000074*/
+    IL_0141:  /* D0   | (01)000074       */ ldtoken    [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.OptionalFieldAttribute/*01000074*/
     IL_0146:  /* 28   | (0A)000009       */ call       class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/::GetTypeFromHandle(valuetype [System.Private.CoreLib/*23000001*/]System.RuntimeTypeHandle/*01000008*/) /* 0A000009 */
     IL_014b:  /* 16   |                  */ ldc.i4.0
     IL_014c:  /* 28   | (0A)0000EE       */ call       class [System.Private.CoreLib/*23000001*/]System.Attribute/*01000040*/ [System.Private.CoreLib/*23000001*/]System.Reflection.CustomAttributeExtensions/*01000075*/::GetCustomAttribute(class [System.Private.CoreLib/*23000001*/]System.Reflection.MemberInfo/*01000031*/,
@@ -24576,14 +24504,14 @@
     IL_0163:  /* 11   | 04               */ ldloc.s    V_4
     IL_0165:  /* 9A   |                  */ ldelem.ref
     IL_0166:  /* 04   |                  */ ldarg.2
-    IL_0167:  /* D0   | (01)000074       */ ldtoken    [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.OptionalFieldAttribute/*01000074*/
+    IL_0167:  /* D0   | (01)000074       */ ldtoken    [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.OptionalFieldAttribute/*01000074*/
     IL_016c:  /* 28   | (0A)000009       */ call       class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/::GetTypeFromHandle(valuetype [System.Private.CoreLib/*23000001*/]System.RuntimeTypeHandle/*01000008*/) /* 0A000009 */
     IL_0171:  /* 6F   | (0A)000036       */ callvirt   instance string [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/::get_FullName() /* 0A000036 */
     IL_0176:  /* 28   | (06)000009       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object,
                                                                                             object,
                                                                                             object) /* 06000009 */
-    IL_017b:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_017b:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0180:  /* 7A   |                  */ throw
 
     IL_0181:  /* 11   | 04               */ ldloc.s    V_4
@@ -24624,7 +24552,7 @@
     IL_001a:  /* 6F   | (0A)00001A       */ callvirt   instance class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/::GetType() /* 0A00001A */
     IL_001f:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_0024:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0024:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0029:  /* 7A   |                  */ throw
   } // end of method ReadObjectInfo::GetMemberType
 
@@ -24908,7 +24836,7 @@
   } // end of class '<>O'
 
   .field /*0400018E*/ assembly class [System.Private.CoreLib/*23000001*/]System.IO.Stream/*01000015*/ _stream
-  .field /*0400018F*/ assembly class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ _surrogates
+  .field /*0400018F*/ assembly class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ _surrogates
   .field /*04000190*/ assembly valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ _context
   .field /*04000191*/ assembly class BalthasarIL.Serialization.ObjectManager/*02000012*/ _objectManager
   .field /*04000192*/ assembly class BalthasarIL.BinaryFormatters.Binary.InternalFE/*02000061*/ _formatterEnums
@@ -24988,7 +24916,7 @@
 
   .method /*06000234*/ assembly hidebysig specialname rtspecialname 
           instance void  .ctor(class [System.Private.CoreLib/*23000001*/]System.IO.Stream/*01000015*/ 'stream',
-                               class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ selector,
+                               class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ selector,
                                valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ context,
                                class BalthasarIL.BinaryFormatters.Binary.InternalFE/*02000061*/ formatterEnums,
                                class BalthasarIL.Serialization.SerializationBinder/*0200001B*/ binder) cil managed
@@ -25011,7 +24939,7 @@
     IL_001e:  /* 7D   | (04)00018E       */ stfld      class [System.Private.CoreLib/*23000001*/]System.IO.Stream/*01000015*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_stream /* 0400018E */
     IL_0023:  /* 02   |                  */ ldarg.0
     IL_0024:  /* 04   |                  */ ldarg.2
-    IL_0025:  /* 7D   | (04)00018F       */ stfld      class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_surrogates /* 0400018F */
+    IL_0025:  /* 7D   | (04)00018F       */ stfld      class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_surrogates /* 0400018F */
     IL_002a:  /* 02   |                  */ ldarg.0
     IL_002b:  /* 05   |                  */ ldarg.3
     IL_002c:  /* 7D   | (04)000190       */ stfld      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_context /* 04000190 */
@@ -25036,7 +24964,7 @@
     // 方法在 RVA 0x27270 处开始
     // 代码大小       280 (0x118)
     .maxstack  3
-    .locals /*11000057*/ (valuetype [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.DeserializationToken/*01000077*/ V_0,
+    .locals /*11000057*/ (valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.DeserializationToken/*01000077*/ V_0,
              object V_1)
     IL_0000:  /* 03   |                  */ ldarg.1
     IL_0001:  /* 72   | (70)001385       */ ldstr      "serParser" /* 70001385 */
@@ -25059,7 +24987,7 @@
     IL_002d:  /* 16   |                  */ ldc.i4.0
     IL_002e:  /* FE01 |                  */ ceq
     IL_0030:  /* 7D   | (04)000195       */ stfld      bool BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_isSimpleAssembly /* 04000195 */
-    IL_0035:  /* 28   | (0A)0000F1       */ call       valuetype [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.DeserializationToken/*01000077*/ [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationInfo/*01000044*/::StartDeserialization() /* 0A0000F1 */
+    IL_0035:  /* 28   | (0A)0000F1       */ call       valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.DeserializationToken/*01000077*/ [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationInfo/*01000044*/::StartDeserialization() /* 0A0000F1 */
     IL_003a:  /* 0A   |                  */ stloc.0
     .try
     {
@@ -25069,10 +24997,10 @@
 
       IL_0043:  /* 02   |                  */ ldarg.0
       IL_0044:  /* 02   |                  */ ldarg.0
-      IL_0045:  /* 7B   | (04)00018F       */ ldfld      class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_surrogates /* 0400018F */
+      IL_0045:  /* 7B   | (04)00018F       */ ldfld      class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_surrogates /* 0400018F */
       IL_004a:  /* 02   |                  */ ldarg.0
       IL_004b:  /* 7B   | (04)000190       */ ldfld      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_context /* 04000190 */
-      IL_0050:  /* 73   | (06)0000B6       */ newobj     instance void BalthasarIL.Serialization.ObjectManager/*02000012*/::.ctor(class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/,
+      IL_0050:  /* 73   | (06)0000B6       */ newobj     instance void BalthasarIL.Serialization.ObjectManager/*02000012*/::.ctor(class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/,
                                                                                                                                      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/) /* 060000B6 */
       IL_0055:  /* 7D   | (04)000191       */ stfld      class BalthasarIL.Serialization.ObjectManager/*02000012*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_objectManager /* 04000191 */
       IL_005a:  /* 02   |                  */ ldarg.0
@@ -25092,7 +25020,7 @@
       IL_0084:  /* 2D   | 0B               */ brtrue.s   IL_0091
 
       IL_0086:  /* 28   | (06)00003A       */ call       string System.SR/*02000004*/::get_Serialization_TopObject() /* 0600003A */
-      IL_008b:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+      IL_008b:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
       IL_0090:  /* 7A   |                  */ throw
 
       IL_0091:  /* 02   |                  */ ldarg.0
@@ -25115,16 +25043,16 @@
       IL_00be:  /* 28   | (06)000233       */ call       instance void BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::set_TopObject(object) /* 06000233 */
       IL_00c3:  /* 02   |                  */ ldarg.0
       IL_00c4:  /* 28   | (06)000232       */ call       instance object BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::get_TopObject() /* 06000232 */
-      IL_00c9:  /* 75   | (01)000047       */ isinst     [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.IObjectReference/*01000047*/
+      IL_00c9:  /* 75   | (01)000047       */ isinst     [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.IObjectReference/*01000047*/
       IL_00ce:  /* 2C   | 1C               */ brfalse.s  IL_00ec
 
       IL_00d0:  /* 02   |                  */ ldarg.0
       IL_00d1:  /* 02   |                  */ ldarg.0
       IL_00d2:  /* 28   | (06)000232       */ call       instance object BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::get_TopObject() /* 06000232 */
-      IL_00d7:  /* 74   | (01)000047       */ castclass  [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.IObjectReference/*01000047*/
+      IL_00d7:  /* 74   | (01)000047       */ castclass  [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.IObjectReference/*01000047*/
       IL_00dc:  /* 02   |                  */ ldarg.0
       IL_00dd:  /* 7B   | (04)000190       */ ldfld      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_context /* 04000190 */
-      IL_00e2:  /* 6F   | (0A)000070       */ callvirt   instance object [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.IObjectReference/*01000047*/::GetRealObject(valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/) /* 0A000070 */
+      IL_00e2:  /* 6F   | (0A)000070       */ callvirt   instance object [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.IObjectReference/*01000047*/::GetRealObject(valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/) /* 0A000070 */
       IL_00e7:  /* 28   | (06)000233       */ call       instance void BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::set_TopObject(object) /* 06000233 */
       IL_00ec:  /* 02   |                  */ ldarg.0
       IL_00ed:  /* 7B   | (04)00019C       */ ldfld      bool BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_fullDeserialization /* 0400019C */
@@ -25142,7 +25070,7 @@
     finally
     {
       IL_0108:  /* 12   | 00               */ ldloca.s   V_0
-      IL_010a:  /* FE16 | (01)000077       */ constrained. [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.DeserializationToken/*01000077*/
+      IL_010a:  /* FE16 | (01)000077       */ constrained. [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.DeserializationToken/*01000077*/
       IL_0110:  /* 6F   | (0A)000091       */ callvirt   instance void [System.Private.CoreLib/*23000001*/]System.IDisposable/*0100005B*/::Dispose() /* 0A000091 */
       IL_0115:  /* DC   |                  */ endfinally
     }  // end handler
@@ -25158,20 +25086,20 @@
     // 方法在 RVA 0x273a4 处开始
     // 代码大小       34 (0x22)
     .maxstack  4
-    .locals /*1100004F*/ (class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ V_0)
+    .locals /*1100004F*/ (class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ V_0)
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)00018F       */ ldfld      class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_surrogates /* 0400018F */
+    IL_0001:  /* 7B   | (04)00018F       */ ldfld      class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_surrogates /* 0400018F */
     IL_0006:  /* 2C   | 18               */ brfalse.s  IL_0020
 
     IL_0008:  /* 02   |                  */ ldarg.0
-    IL_0009:  /* 7B   | (04)00018F       */ ldfld      class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_surrogates /* 0400018F */
+    IL_0009:  /* 7B   | (04)00018F       */ ldfld      class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_surrogates /* 0400018F */
     IL_000e:  /* 03   |                  */ ldarg.1
     IL_000f:  /* 02   |                  */ ldarg.0
     IL_0010:  /* 7B   | (04)000190       */ ldfld      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_context /* 04000190 */
     IL_0015:  /* 12   | 00               */ ldloca.s   V_0
-    IL_0017:  /* 6F   | (06)0000AC       */ callvirt   instance class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/::GetSurrogate(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
+    IL_0017:  /* 6F   | (06)0000AC       */ callvirt   instance class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/::GetSurrogate(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
                                                                                                                                                                                                                  valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/,
-                                                                                                                                                                                                                 class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/&) /* 060000AC */
+                                                                                                                                                                                                                 class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/&) /* 060000AC */
     IL_001c:  /* 14   |                  */ ldnull
     IL_001d:  /* FE03 |                  */ cgt.un
     IL_001f:  /* 2A   |                  */ ret
@@ -25261,10 +25189,10 @@
     IL_0012:  /* 7D   | (04)000199       */ stfld      class BalthasarIL.BinaryFormatters.Binary.SerStack/*0200005C*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_stack /* 04000199 */
     IL_0017:  /* 02   |                  */ ldarg.0
     IL_0018:  /* 02   |                  */ ldarg.0
-    IL_0019:  /* 7B   | (04)00018F       */ ldfld      class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_surrogates /* 0400018F */
+    IL_0019:  /* 7B   | (04)00018F       */ ldfld      class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_surrogates /* 0400018F */
     IL_001e:  /* 02   |                  */ ldarg.0
     IL_001f:  /* 7B   | (04)000190       */ ldfld      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_context /* 04000190 */
-    IL_0024:  /* 73   | (06)0000B6       */ newobj     instance void BalthasarIL.Serialization.ObjectManager/*02000012*/::.ctor(class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/,
+    IL_0024:  /* 73   | (06)0000B6       */ newobj     instance void BalthasarIL.Serialization.ObjectManager/*02000012*/::.ctor(class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/,
                                                                                                                                    valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/) /* 060000B6 */
     IL_0029:  /* 7D   | (04)000191       */ stfld      class BalthasarIL.Serialization.ObjectManager/*02000012*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_objectManager /* 04000191 */
     IL_002e:  /* 02   |                  */ ldarg.0
@@ -25303,7 +25231,7 @@
     .maxstack  8
     IL_0000:  /* 03   |                  */ ldarg.1
     IL_0001:  /* 02   |                  */ ldarg.0
-    IL_0002:  /* 7B   | (04)00018F       */ ldfld      class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_surrogates /* 0400018F */
+    IL_0002:  /* 7B   | (04)00018F       */ ldfld      class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_surrogates /* 0400018F */
     IL_0007:  /* 02   |                  */ ldarg.0
     IL_0008:  /* 7B   | (04)000190       */ ldfld      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_context /* 04000190 */
     IL_000d:  /* 02   |                  */ ldarg.0
@@ -25315,7 +25243,7 @@
     IL_001f:  /* 02   |                  */ ldarg.0
     IL_0020:  /* 7B   | (04)000195       */ ldfld      bool BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_isSimpleAssembly /* 04000195 */
     IL_0025:  /* 28   | (06)000218       */ call       class BalthasarIL.BinaryFormatters.Binary.ReadObjectInfo/*02000051*/ BalthasarIL.BinaryFormatters.Binary.ReadObjectInfo/*02000051*/::Create(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
-                                                                                                                                                                                                                         class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/,
+                                                                                                                                                                                                                         class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/,
                                                                                                                                                                                                                          valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/,
                                                                                                                                                                                                                          class BalthasarIL.Serialization.ObjectManager/*02000012*/,
                                                                                                                                                                                                                          class BalthasarIL.BinaryFormatters.Binary.SerObjectInfoInit/*02000052*/,
@@ -25340,7 +25268,7 @@
     IL_0001:  /* 04   |                  */ ldarg.2
     IL_0002:  /* 05   |                  */ ldarg.3
     IL_0003:  /* 02   |                  */ ldarg.0
-    IL_0004:  /* 7B   | (04)00018F       */ ldfld      class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_surrogates /* 0400018F */
+    IL_0004:  /* 7B   | (04)00018F       */ ldfld      class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_surrogates /* 0400018F */
     IL_0009:  /* 02   |                  */ ldarg.0
     IL_000a:  /* 7B   | (04)000190       */ ldfld      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_context /* 04000190 */
     IL_000f:  /* 02   |                  */ ldarg.0
@@ -25354,7 +25282,7 @@
     IL_0027:  /* 28   | (06)00021A       */ call       class BalthasarIL.BinaryFormatters.Binary.ReadObjectInfo/*02000051*/ BalthasarIL.BinaryFormatters.Binary.ReadObjectInfo/*02000051*/::Create(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
                                                                                                                                                                                                                          string[],
                                                                                                                                                                                                                          class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/[],
-                                                                                                                                                                                                                         class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/,
+                                                                                                                                                                                                                         class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/,
                                                                                                                                                                                                                          valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/,
                                                                                                                                                                                                                          class BalthasarIL.Serialization.ObjectManager/*02000012*/,
                                                                                                                                                                                                                          class BalthasarIL.BinaryFormatters.Binary.SerObjectInfoInit/*02000052*/,
@@ -25432,7 +25360,7 @@
     IL_0079:  /* 7B   | (04)0001D9       */ ldfld      string BalthasarIL.BinaryFormatters.Binary.ParseRecord/*0200005B*/::_name /* 040001D9 */
     IL_007e:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_0083:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0083:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0088:  /* 7A   |                  */ throw
 
     IL_0089:  /* 2A   |                  */ ret
@@ -25488,7 +25416,7 @@
     IL_005d:  /* 28   | (0A)0000F2       */ call       string [System.Private.CoreLib/*23000001*/]System.String/*01000003*/::Concat(string[]) /* 0A0000F2 */
     IL_0062:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_0067:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0067:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_006c:  /* 7A   |                  */ throw
   } // end of method ObjectReader::ParseError
 
@@ -25648,7 +25576,7 @@
     IL_0107:  /* 7B   | (04)0001DD       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ BalthasarIL.BinaryFormatters.Binary.ParseRecord/*0200005B*/::_dtType /* 040001DD */
     IL_010c:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_0111:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0111:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0116:  /* 7A   |                  */ throw
 
     IL_0117:  /* 03   |                  */ ldarg.1
@@ -25670,7 +25598,7 @@
     IL_0137:  /* 03   |                  */ ldarg.1
     IL_0138:  /* 7B   | (04)0001DD       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ BalthasarIL.BinaryFormatters.Binary.ParseRecord/*0200005B*/::_dtType /* 040001DD */
     IL_013d:  /* 02   |                  */ ldarg.0
-    IL_013e:  /* 7B   | (04)00018F       */ ldfld      class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_surrogates /* 0400018F */
+    IL_013e:  /* 7B   | (04)00018F       */ ldfld      class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_surrogates /* 0400018F */
     IL_0143:  /* 02   |                  */ ldarg.0
     IL_0144:  /* 7B   | (04)000190       */ ldfld      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_context /* 04000190 */
     IL_0149:  /* 02   |                  */ ldarg.0
@@ -25682,7 +25610,7 @@
     IL_015b:  /* 02   |                  */ ldarg.0
     IL_015c:  /* 7B   | (04)000195       */ ldfld      bool BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_isSimpleAssembly /* 04000195 */
     IL_0161:  /* 28   | (06)000218       */ call       class BalthasarIL.BinaryFormatters.Binary.ReadObjectInfo/*02000051*/ BalthasarIL.BinaryFormatters.Binary.ReadObjectInfo/*02000051*/::Create(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
-                                                                                                                                                                                                                         class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/,
+                                                                                                                                                                                                                         class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/,
                                                                                                                                                                                                                          valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/,
                                                                                                                                                                                                                          class BalthasarIL.Serialization.ObjectManager/*02000012*/,
                                                                                                                                                                                                                          class BalthasarIL.BinaryFormatters.Binary.SerObjectInfoInit/*02000052*/,
@@ -26204,7 +26132,7 @@
     IL_031c:  /* 8C   | (02)000045       */ box        BalthasarIL.BinaryFormatters.Binary.InternalArrayTypeE/*02000045*/
     IL_0321:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_0326:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0326:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_032b:  /* 7A   |                  */ throw
   } // end of method ObjectReader::ParseArray
 
@@ -26579,7 +26507,7 @@
     IL_026b:  /* 2D   | 0B               */ brtrue.s   IL_0278
 
     IL_026d:  /* 28   | (06)00003D       */ call       string System.SR/*02000004*/::get_Serialization_ArrayTypeObject() /* 0600003D */
-    IL_0272:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0272:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0277:  /* 7A   |                  */ throw
 
     IL_0278:  /* 03   |                  */ ldarg.1
@@ -27015,7 +26943,7 @@
     IL_0249:  /* 7B   | (04)0001D9       */ ldfld      string BalthasarIL.BinaryFormatters.Binary.ParseRecord/*0200005B*/::_name /* 040001D9 */
     IL_024e:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_0253:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0253:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0258:  /* 7A   |                  */ throw
 
     IL_0259:  /* 02   |                  */ ldarg.0
@@ -27846,7 +27774,7 @@
   .field /*040001A7*/ private class [System.Private.CoreLib/*23000001*/]System.Collections.Generic.Queue`1/*0100007D*/<object> _objectQueue
   .field /*040001A8*/ private class BalthasarIL.Serialization.ObjectIDGenerator/*02000011*/ _idGenerator
   .field /*040001A9*/ private int32 _currentId
-  .field /*040001AA*/ private initonly class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ _surrogates
+  .field /*040001AA*/ private initonly class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ _surrogates
   .field /*040001AB*/ private initonly valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ _context
   .field /*040001AC*/ private class BalthasarIL.BinaryFormatters.Binary.BinaryFormatterWriter/*0200004E*/ _serWriter
   .field /*040001AD*/ private initonly class BalthasarIL.Serialization.SerializationObjectManager/*02000020*/ _objectManager
@@ -27863,7 +27791,7 @@
   .field /*040001B8*/ private class [System.Private.CoreLib/*23000001*/]System.Collections.Generic.Dictionary`2/*0100005D*/<string,int64> _assemblyToIdTable
   .field /*040001B9*/ private initonly class BalthasarIL.BinaryFormatters.Binary.SerStack/*0200005C*/ _niPool
   .method /*06000255*/ assembly hidebysig specialname rtspecialname 
-          instance void  .ctor(class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ selector,
+          instance void  .ctor(class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ selector,
                                valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ context,
                                class BalthasarIL.BinaryFormatters.Binary.InternalFE/*02000061*/ formatterEnums,
                                class BalthasarIL.Serialization.SerializationBinder/*0200001B*/ binder) cil managed
@@ -27883,7 +27811,7 @@
     IL_0018:  /* 7D   | (04)0001A9       */ stfld      int32 BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_currentId /* 040001A9 */
     IL_001d:  /* 02   |                  */ ldarg.0
     IL_001e:  /* 03   |                  */ ldarg.1
-    IL_001f:  /* 7D   | (04)0001AA       */ stfld      class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_surrogates /* 040001AA */
+    IL_001f:  /* 7D   | (04)0001AA       */ stfld      class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_surrogates /* 040001AA */
     IL_0024:  /* 02   |                  */ ldarg.0
     IL_0025:  /* 04   |                  */ ldarg.2
     IL_0026:  /* 7D   | (04)0001AB       */ stfld      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_context /* 040001AB */
@@ -27984,7 +27912,7 @@
 
     IL_009a:  /* 07   |                  */ ldloc.1
     IL_009b:  /* 02   |                  */ ldarg.0
-    IL_009c:  /* 7B   | (04)0001AA       */ ldfld      class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_surrogates /* 040001AA */
+    IL_009c:  /* 7B   | (04)0001AA       */ ldfld      class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_surrogates /* 040001AA */
     IL_00a1:  /* 02   |                  */ ldarg.0
     IL_00a2:  /* 7B   | (04)0001AB       */ ldfld      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_context /* 040001AB */
     IL_00a7:  /* 02   |                  */ ldarg.0
@@ -27995,7 +27923,7 @@
     IL_00b4:  /* 02   |                  */ ldarg.0
     IL_00b5:  /* 7B   | (04)0001B0       */ ldfld      class BalthasarIL.Serialization.SerializationBinder/*0200001B*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_binder /* 040001B0 */
     IL_00ba:  /* 28   | (06)000207       */ call       class BalthasarIL.BinaryFormatters.Binary.WriteObjectInfo/*02000050*/ BalthasarIL.BinaryFormatters.Binary.WriteObjectInfo/*02000050*/::Serialize(object,
-                                                                                                                                                                                                                              class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/,
+                                                                                                                                                                                                                              class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/,
                                                                                                                                                                                                                               valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/,
                                                                                                                                                                                                                               class BalthasarIL.BinaryFormatters.Binary.SerObjectInfoInit/*02000052*/,
                                                                                                                                                                                                                               class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.IFormatterConverter/*0100002D*/,
@@ -28203,7 +28131,7 @@
     IL_00fc:  /* 11   | 07               */ ldloc.s    V_7
     IL_00fe:  /* 9A   |                  */ ldelem.ref
     IL_00ff:  /* 02   |                  */ ldarg.0
-    IL_0100:  /* 7B   | (04)0001AA       */ ldfld      class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_surrogates /* 040001AA */
+    IL_0100:  /* 7B   | (04)0001AA       */ ldfld      class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_surrogates /* 040001AA */
     IL_0105:  /* 02   |                  */ ldarg.0
     IL_0106:  /* 7B   | (04)0001AB       */ ldfld      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_context /* 040001AB */
     IL_010b:  /* 02   |                  */ ldarg.0
@@ -28214,7 +28142,7 @@
     IL_0118:  /* 02   |                  */ ldarg.0
     IL_0119:  /* 7B   | (04)0001B0       */ ldfld      class BalthasarIL.Serialization.SerializationBinder/*0200001B*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_binder /* 040001B0 */
     IL_011e:  /* 28   | (06)000207       */ call       class BalthasarIL.BinaryFormatters.Binary.WriteObjectInfo/*02000050*/ BalthasarIL.BinaryFormatters.Binary.WriteObjectInfo/*02000050*/::Serialize(object,
-                                                                                                                                                                                                                              class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/,
+                                                                                                                                                                                                                              class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/,
                                                                                                                                                                                                                               valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/,
                                                                                                                                                                                                                               class BalthasarIL.BinaryFormatters.Binary.SerObjectInfoInit/*02000052*/,
                                                                                                                                                                                                                               class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.IFormatterConverter/*0100002D*/,
@@ -28238,7 +28166,7 @@
     IL_0141:  /* 11   | 07               */ ldloc.s    V_7
     IL_0143:  /* 9A   |                  */ ldelem.ref
     IL_0144:  /* 02   |                  */ ldarg.0
-    IL_0145:  /* 7B   | (04)0001AA       */ ldfld      class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_surrogates /* 040001AA */
+    IL_0145:  /* 7B   | (04)0001AA       */ ldfld      class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_surrogates /* 040001AA */
     IL_014a:  /* 02   |                  */ ldarg.0
     IL_014b:  /* 7B   | (04)0001AB       */ ldfld      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_context /* 040001AB */
     IL_0150:  /* 02   |                  */ ldarg.0
@@ -28248,7 +28176,7 @@
     IL_015c:  /* 02   |                  */ ldarg.0
     IL_015d:  /* 7B   | (04)0001B0       */ ldfld      class BalthasarIL.Serialization.SerializationBinder/*0200001B*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_binder /* 040001B0 */
     IL_0162:  /* 28   | (06)000209       */ call       class BalthasarIL.BinaryFormatters.Binary.WriteObjectInfo/*02000050*/ BalthasarIL.BinaryFormatters.Binary.WriteObjectInfo/*02000050*/::Serialize(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
-                                                                                                                                                                                                                              class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/,
+                                                                                                                                                                                                                              class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/,
                                                                                                                                                                                                                               valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/,
                                                                                                                                                                                                                               class BalthasarIL.BinaryFormatters.Binary.SerObjectInfoInit/*02000052*/,
                                                                                                                                                                                                                               class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.IFormatterConverter/*0100002D*/,
@@ -28834,7 +28762,7 @@
 
     IL_0051:  /* 11   | 04               */ ldloc.s    V_4
     IL_0053:  /* 02   |                  */ ldarg.0
-    IL_0054:  /* 7B   | (04)0001AA       */ ldfld      class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_surrogates /* 040001AA */
+    IL_0054:  /* 7B   | (04)0001AA       */ ldfld      class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_surrogates /* 040001AA */
     IL_0059:  /* 02   |                  */ ldarg.0
     IL_005a:  /* 7B   | (04)0001AB       */ ldfld      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_context /* 040001AB */
     IL_005f:  /* 02   |                  */ ldarg.0
@@ -28844,7 +28772,7 @@
     IL_006b:  /* 02   |                  */ ldarg.0
     IL_006c:  /* 7B   | (04)0001B0       */ ldfld      class BalthasarIL.Serialization.SerializationBinder/*0200001B*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_binder /* 040001B0 */
     IL_0071:  /* 28   | (06)000209       */ call       class BalthasarIL.BinaryFormatters.Binary.WriteObjectInfo/*02000050*/ BalthasarIL.BinaryFormatters.Binary.WriteObjectInfo/*02000050*/::Serialize(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
-                                                                                                                                                                                                                              class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/,
+                                                                                                                                                                                                                              class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/,
                                                                                                                                                                                                                               valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/,
                                                                                                                                                                                                                               class BalthasarIL.BinaryFormatters.Binary.SerObjectInfoInit/*02000052*/,
                                                                                                                                                                                                                               class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.IFormatterConverter/*0100002D*/,
@@ -29406,7 +29334,7 @@
 
     IL_00da:  /* 09   |                  */ ldloc.3
     IL_00db:  /* 02   |                  */ ldarg.0
-    IL_00dc:  /* 7B   | (04)0001AA       */ ldfld      class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_surrogates /* 040001AA */
+    IL_00dc:  /* 7B   | (04)0001AA       */ ldfld      class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_surrogates /* 040001AA */
     IL_00e1:  /* 02   |                  */ ldarg.0
     IL_00e2:  /* 7B   | (04)0001AB       */ ldfld      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_context /* 040001AB */
     IL_00e7:  /* 02   |                  */ ldarg.0
@@ -29417,7 +29345,7 @@
     IL_00f4:  /* 02   |                  */ ldarg.0
     IL_00f5:  /* 7B   | (04)0001B0       */ ldfld      class BalthasarIL.Serialization.SerializationBinder/*0200001B*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_binder /* 040001B0 */
     IL_00fa:  /* 28   | (06)000207       */ call       class BalthasarIL.BinaryFormatters.Binary.WriteObjectInfo/*02000050*/ BalthasarIL.BinaryFormatters.Binary.WriteObjectInfo/*02000050*/::Serialize(object,
-                                                                                                                                                                                                                              class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/,
+                                                                                                                                                                                                                              class [System.Runtime.Serialization.Formatters] System.Runtime.Serialization.ISurrogateSelector/*0200000F*/,
                                                                                                                                                                                                                               valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/,
                                                                                                                                                                                                                               class BalthasarIL.BinaryFormatters.Binary.SerObjectInfoInit/*02000052*/,
                                                                                                                                                                                                                               class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.IFormatterConverter/*0100002D*/,
@@ -29714,7 +29642,7 @@
     IL_004e:  /* 08   |                  */ ldloc.2
     IL_004f:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_0054:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0054:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0059:  /* 7A   |                  */ throw
 
     IL_005a:  /* 07   |                  */ ldloc.1
@@ -30776,7 +30704,7 @@
       IL_0102:  /* 8C   | (01)000021       */ box        [System.Private.CoreLib/*23000001*/]System.Byte/*01000021*/
       IL_0107:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                               object) /* 06000007 */
-      IL_010c:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+      IL_010c:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
       IL_0111:  /* 7A   |                  */ throw
 
       IL_0112:  /* 02   |                  */ ldarg.0
@@ -30784,7 +30712,7 @@
       IL_0118:  /* 2B   | 0B               */ br.s       IL_0125
 
       IL_011a:  /* 28   | (06)00002D       */ call       string System.SR/*02000004*/::get_Serialization_TypeExpected() /* 0600002D */
-      IL_011f:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+      IL_011f:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
       IL_0124:  /* 7A   |                  */ throw
 
       IL_0125:  /* 07   |                  */ ldloc.1
@@ -30900,7 +30828,7 @@
     {
       IL_0255:  /* 26   |                  */ pop
       IL_0256:  /* 28   | (06)00002E       */ call       string System.SR/*02000004*/::get_Serialization_StreamEnd() /* 0600002E */
-      IL_025b:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+      IL_025b:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
       IL_0260:  /* 7A   |                  */ throw
 
     }  // end handler
@@ -31328,7 +31256,7 @@
     IL_005d:  /* 28   | (06)000008       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object,
                                                                                             object) /* 06000008 */
-    IL_0062:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0062:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0067:  /* 7A   |                  */ throw
 
     IL_0068:  /* 06   |                  */ ldloc.0
@@ -31393,7 +31321,7 @@
     IL_004e:  /* 8C   | (01)000023       */ box        [System.Private.CoreLib/*23000001*/]System.Int32/*01000023*/
     IL_0053:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_0058:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0058:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_005d:  /* 7A   |                  */ throw
 
     IL_005e:  /* 02   |                  */ ldarg.0
@@ -31504,7 +31432,7 @@
     IL_015b:  /* 6F   | (0A)000069       */ callvirt   instance string [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/::ToString() /* 0A000069 */
     IL_0160:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_0165:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0165:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_016a:  /* 7A   |                  */ throw
 
     IL_016b:  /* 08   |                  */ ldloc.2
@@ -31611,7 +31539,7 @@
     IL_004e:  /* 28   | (06)000008       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object,
                                                                                             object) /* 06000008 */
-    IL_0053:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0053:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0058:  /* 7A   |                  */ throw
   } // end of method BinaryParser::ReadCrossAppDomainMap
 
@@ -31699,7 +31627,7 @@
     IL_0034:  /* 7B   | (04)00006E       */ ldfld      string BalthasarIL.BinaryFormatters.Binary.BinaryObjectWithMap/*02000032*/::_name /* 0400006E */
     IL_0039:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_003e:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_003e:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0043:  /* 7A   |                  */ throw
 
     IL_0044:  /* 02   |                  */ ldarg.0
@@ -31724,7 +31652,7 @@
                                                                                                                                     string) /* 0A000096 */
     IL_007e:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_0083:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0083:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0088:  /* 7A   |                  */ throw
 
     IL_0089:  /* 03   |                  */ ldarg.1
@@ -31865,7 +31793,7 @@
     IL_01cd:  /* 6F   | (0A)000069       */ callvirt   instance string [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/::ToString() /* 0A000069 */
     IL_01d2:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_01d7:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_01d7:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_01dc:  /* 7A   |                  */ throw
 
     IL_01dd:  /* 08   |                  */ ldloc.2
@@ -31997,7 +31925,7 @@
     IL_0034:  /* 7B   | (04)000074       */ ldfld      string BalthasarIL.BinaryFormatters.Binary.BinaryObjectWithMapTyped/*02000033*/::_name /* 04000074 */
     IL_0039:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_003e:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_003e:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0043:  /* 7A   |                  */ throw
 
     IL_0044:  /* 02   |                  */ ldarg.0
@@ -32022,7 +31950,7 @@
                                                                                                                                     string) /* 0A000096 */
     IL_007e:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_0083:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0083:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0088:  /* 7A   |                  */ throw
 
     IL_0089:  /* 03   |                  */ ldarg.1
@@ -32165,7 +32093,7 @@
     IL_01cb:  /* 6F   | (0A)000069       */ callvirt   instance string [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/::ToString() /* 0A000069 */
     IL_01d0:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_01d5:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_01d5:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_01da:  /* 7A   |                  */ throw
 
     IL_01db:  /* 08   |                  */ ldloc.2
@@ -32282,7 +32210,7 @@
     IL_0094:  /* 28   | (06)000008       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object,
                                                                                             object) /* 06000008 */
-    IL_0099:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0099:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_009e:  /* 7A   |                  */ throw
 
     IL_009f:  /* 02   |                  */ ldarg.0
@@ -32410,7 +32338,7 @@
     IL_020a:  /* 6F   | (0A)000069       */ callvirt   instance string [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/::ToString() /* 0A000069 */
     IL_020f:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_0214:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0214:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0219:  /* 7A   |                  */ throw
 
     IL_021a:  /* 02   |                  */ ldarg.0
@@ -32543,7 +32471,7 @@
     IL_0131:  /* 6F   | (0A)000069       */ callvirt   instance string [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/::ToString() /* 0A000069 */
     IL_0136:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_013b:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_013b:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0140:  /* 7A   |                  */ throw
 
     IL_0141:  /* 02   |                  */ ldarg.0
@@ -32598,7 +32526,7 @@
     IL_0026:  /* 7B   | (04)00005B       */ ldfld      object BalthasarIL.BinaryFormatters.Binary.BinaryArray/*02000029*/::_typeInformation /* 0400005B */
     IL_002b:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_0030:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0030:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0035:  /* 7A   |                  */ throw
 
     IL_0036:  /* 02   |                  */ ldarg.0
@@ -32711,7 +32639,7 @@
     IL_0143:  /* 6F   | (0A)000069       */ callvirt   instance string [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/::ToString() /* 0A000069 */
     IL_0148:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_014d:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_014d:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0152:  /* 7A   |                  */ throw
 
     IL_0153:  /* 09   |                  */ ldloc.3
@@ -32884,7 +32812,7 @@
     IL_02d5:  /* 6F   | (0A)000069       */ callvirt   instance string [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/::ToString() /* 0A000069 */
     IL_02da:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_02df:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_02df:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_02e4:  /* 7A   |                  */ throw
 
     IL_02e5:  /* 11   | 05               */ ldloc.s    V_5
@@ -33392,7 +33320,7 @@
     IL_002d:  /* 2D   | 0B               */ brtrue.s   IL_003a
 
     IL_002f:  /* 28   | (06)00002E       */ call       string System.SR/*02000004*/::get_Serialization_StreamEnd() /* 0600002E */
-    IL_0034:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0034:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0039:  /* 7A   |                  */ throw
 
     IL_003a:  /* 2A   |                  */ ret
@@ -33524,7 +33452,7 @@
     IL_0141:  /* 6F   | (0A)000069       */ callvirt   instance string [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/::ToString() /* 0A000069 */
     IL_0146:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_014b:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_014b:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0150:  /* 7A   |                  */ throw
 
     IL_0151:  /* 06   |                  */ ldloc.0
@@ -34279,7 +34207,7 @@
     {
       IL_0073:  /* 26   |                  */ pop
       IL_0074:  /* 28   | (06)00002A       */ call       string System.SR/*02000004*/::get_Serialization_CorruptedStream() /* 0600002A */
-      IL_0079:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+      IL_0079:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
       IL_007e:  /* 7A   |                  */ throw
 
     }  // end handler
@@ -34568,7 +34496,7 @@
     {
       IL_0073:  /* 26   |                  */ pop
       IL_0074:  /* 28   | (06)00002A       */ call       string System.SR/*02000004*/::get_Serialization_CorruptedStream() /* 0600002A */
-      IL_0079:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+      IL_0079:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
       IL_007e:  /* 7A   |                  */ throw
 
     }  // end handler
