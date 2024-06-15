@@ -4468,9 +4468,9 @@
 // 
 // User Strings
 // -------------------------------------------------------
-// 70000001 : (69) L"System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization"
+// 70000001 : (69) L"BalthasarIL.Serialization.EnableUnsafeBinaryFormatterSerialization"
 // 7000008e : (41) L"TestSwitch.LocalAppContext.DisableCaching"
-// 700000e2 : (54) L"Switch.System.Runtime.Serialization.SerializationGuard"
+// 700000e2 : (54) L"Switch.BalthasarIL.Serialization.SerializationGuard"
 // 70000150 : (51) L"System.Xml.XmlResolver.IsNetworkingEnabledByDefault"
 // 700001b8 : ( 2) L", "
 // 700001be : (22) L"Arg_HTCapacityOverflow"
@@ -4977,7 +4977,7 @@
     // 方法在 RVA 0x203e4 处开始
     // 代码大小       16 (0x10)
     .maxstack  8
-    IL_0000:  /* 72   | (70)000001       */ ldstr      "System.Runtime.Serialization.EnableUnsafeBinaryFor"
+    IL_0000:  /* 72   | (70)000001       */ ldstr      "BalthasarIL.Serialization.EnableUnsafeBinaryFor"
     + "matterSerialization" /* 70000001 */
     IL_0005:  /* 7F   | (04)000001       */ ldsflda    int32 System.LocalAppContextSwitches/*02000003*/::s_binaryFormatterEnabled /* 04000001 */
     IL_000a:  /* 28   | (06)000002       */ call       bool System.LocalAppContextSwitches/*02000003*/::GetCachedSwitchValue(string,
@@ -5067,7 +5067,7 @@
     // 代码大小       47 (0x2f)
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 72   | (70)0000E2       */ ldstr      "Switch.System.Runtime.Serialization.SerializationG"
+    IL_0001:  /* 72   | (70)0000E2       */ ldstr      "Switch.BalthasarIL.Serialization.SerializationG"
     + "uard" /* 700000E2 */
     IL_0006:  /* 28   | (0A)000002       */ call       bool [System.Private.CoreLib/*23000001*/]System.String/*01000003*/::op_Equality(string,
                                                                                                                                        string) /* 0A000002 */
@@ -5077,7 +5077,7 @@
     IL_000e:  /* 2A   |                  */ ret
 
     IL_000f:  /* 02   |                  */ ldarg.0
-    IL_0010:  /* 72   | (70)000001       */ ldstr      "System.Runtime.Serialization.EnableUnsafeBinaryFor"
+    IL_0010:  /* 72   | (70)000001       */ ldstr      "BalthasarIL.Serialization.EnableUnsafeBinaryFor"
     + "matterSerialization" /* 70000001 */
     IL_0015:  /* 28   | (0A)000002       */ call       bool [System.Private.CoreLib/*23000001*/]System.String/*01000003*/::op_Equality(string,
                                                                                                                                        string) /* 0A000002 */
@@ -6571,7 +6571,7 @@
   } // end of property HashHelpers::Primes
 } // end of class System.Collections.HashHelpers
 
-.class /*02000006*/ private auto ansi sealed System.Runtime.Serialization.DeserializationEventHandler
+.class /*02000006*/ private auto ansi sealed BalthasarIL.Serialization.DeserializationEventHandler
        extends [System.Private.CoreLib/*23000001*/]System.MulticastDelegate/*0100000F*/
 {
   .method /*06000051*/ public hidebysig specialname rtspecialname 
@@ -6587,9 +6587,9 @@
   {
   } // end of method DeserializationEventHandler::Invoke
 
-} // end of class System.Runtime.Serialization.DeserializationEventHandler
+} // end of class BalthasarIL.Serialization.DeserializationEventHandler
 
-.class /*02000007*/ public auto ansi sealed System.Runtime.Serialization.SerializationEventHandler
+.class /*02000007*/ public auto ansi sealed BalthasarIL.Serialization.SerializationEventHandler
        extends [System.Private.CoreLib/*23000001*/]System.MulticastDelegate/*0100000F*/
 {
   .method /*06000053*/ public hidebysig specialname rtspecialname 
@@ -6620,11 +6620,11 @@
   {
   } // end of method SerializationEventHandler::EndInvoke
 
-} // end of class System.Runtime.Serialization.SerializationEventHandler
+} // end of class BalthasarIL.Serialization.SerializationEventHandler
 
-.class /*02000008*/ public abstract auto ansi beforefieldinit System.Runtime.Serialization.Formatter
+.class /*02000008*/ public abstract auto ansi beforefieldinit BalthasarIL.Serialization.Formatter
        extends [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/
-       implements System.Runtime.Serialization.IFormatter/*0200000D*/
+       implements BalthasarIL.Serialization.IFormatter/*0200000D*/
 {
   .custom /*0C00001B:0A000018*/ instance void [System.Private.CoreLib/*23000001*/]System.Runtime.CompilerServices.NullableContextAttribute/*01000019*/::.ctor(uint8) /* 0A000018 */ = ( 01 00 01 00 00 ) 
   .custom /*0C00001C:0A000010*/ instance void [System.Private.CoreLib/*23000001*/]System.Runtime.CompilerServices.NullableAttribute/*01000013*/::.ctor(uint8) /* 0A000010 */ = ( 01 00 00 00 00 ) 
@@ -6642,9 +6642,9 @@
                                                                                                                                                          6F 72 6D 61 74 22 68 74 74 70 73 3A 2F 2F 61 6B   // ormat"https://ak
                                                                                                                                                          61 2E 6D 73 2F 64 6F 74 6E 65 74 2D 77 61 72 6E   // a.ms/dotnet-warn
                                                                                                                                                          69 6E 67 73 2F 7B 30 7D )                         // ings/{0}
-  .interfaceimpl type System.Runtime.Serialization.IFormatter/*0200000D*/
+  .interfaceimpl type BalthasarIL.Serialization.IFormatter/*0200000D*/
   .custom /*0C000001:0A000010*/ instance void [System.Private.CoreLib/*23000001*/]System.Runtime.CompilerServices.NullableAttribute/*01000013*/::.ctor(uint8) /* 0A000010 */ = ( 01 00 00 00 00 ) 
-  .field /*04000004*/ family class System.Runtime.Serialization.ObjectIDGenerator/*02000011*/ m_idGenerator
+  .field /*04000004*/ family class BalthasarIL.Serialization.ObjectIDGenerator/*02000011*/ m_idGenerator
   .field /*04000005*/ family class [System.Collections.NonGeneric/*23000002*/]System.Collections.Queue/*01000014*/ m_objectQueue
   .method /*06000057*/ family hidebysig specialname rtspecialname 
           instance void  .ctor() cil managed
@@ -6657,10 +6657,10 @@
     IL_0001:  /* 28   | (0A)000011       */ call       instance void [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/::.ctor() /* 0A000011 */
     IL_0006:  /* 02   |                  */ ldarg.0
     IL_0007:  /* 73   | (0A)000012       */ newobj     instance void [System.Collections.NonGeneric/*23000002*/]System.Collections.Queue/*01000014*/::.ctor() /* 0A000012 */
-    IL_000c:  /* 7D   | (04)000005       */ stfld      class [System.Collections.NonGeneric/*23000002*/]System.Collections.Queue/*01000014*/ System.Runtime.Serialization.Formatter/*02000008*/::m_objectQueue /* 04000005 */
+    IL_000c:  /* 7D   | (04)000005       */ stfld      class [System.Collections.NonGeneric/*23000002*/]System.Collections.Queue/*01000014*/ BalthasarIL.Serialization.Formatter/*02000008*/::m_objectQueue /* 04000005 */
     IL_0011:  /* 02   |                  */ ldarg.0
-    IL_0012:  /* 73   | (06)0000B1       */ newobj     instance void System.Runtime.Serialization.ObjectIDGenerator/*02000011*/::.ctor() /* 060000B1 */
-    IL_0017:  /* 7D   | (04)000004       */ stfld      class System.Runtime.Serialization.ObjectIDGenerator/*02000011*/ System.Runtime.Serialization.Formatter/*02000008*/::m_idGenerator /* 04000004 */
+    IL_0012:  /* 73   | (06)0000B1       */ newobj     instance void BalthasarIL.Serialization.ObjectIDGenerator/*02000011*/::.ctor() /* 060000B1 */
+    IL_0017:  /* 7D   | (04)000004       */ stfld      class BalthasarIL.Serialization.ObjectIDGenerator/*02000011*/ BalthasarIL.Serialization.Formatter/*02000008*/::m_idGenerator /* 04000004 */
     IL_001c:  /* 2A   |                  */ ret
   } // end of method Formatter::.ctor
 
@@ -6700,7 +6700,7 @@
     .locals /*11000007*/ (object V_0,
              bool V_1)
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)000005       */ ldfld      class [System.Collections.NonGeneric/*23000002*/]System.Collections.Queue/*01000014*/ System.Runtime.Serialization.Formatter/*02000008*/::m_objectQueue /* 04000005 */
+    IL_0001:  /* 7B   | (04)000005       */ ldfld      class [System.Collections.NonGeneric/*23000002*/]System.Collections.Queue/*01000014*/ BalthasarIL.Serialization.Formatter/*02000008*/::m_objectQueue /* 04000005 */
     IL_0006:  /* 6F   | (0A)000015       */ callvirt   instance int32 [System.Collections.NonGeneric/*23000002*/]System.Collections.Queue/*01000014*/::get_Count() /* 0A000015 */
     IL_000b:  /* 2D   | 06               */ brtrue.s   IL_0013
 
@@ -6712,22 +6712,22 @@
     IL_0012:  /* 2A   |                  */ ret
 
     IL_0013:  /* 02   |                  */ ldarg.0
-    IL_0014:  /* 7B   | (04)000005       */ ldfld      class [System.Collections.NonGeneric/*23000002*/]System.Collections.Queue/*01000014*/ System.Runtime.Serialization.Formatter/*02000008*/::m_objectQueue /* 04000005 */
+    IL_0014:  /* 7B   | (04)000005       */ ldfld      class [System.Collections.NonGeneric/*23000002*/]System.Collections.Queue/*01000014*/ BalthasarIL.Serialization.Formatter/*02000008*/::m_objectQueue /* 04000005 */
     IL_0019:  /* 6F   | (0A)000016       */ callvirt   instance object [System.Collections.NonGeneric/*23000002*/]System.Collections.Queue/*01000014*/::Dequeue() /* 0A000016 */
     IL_001e:  /* 0A   |                  */ stloc.0
     IL_001f:  /* 03   |                  */ ldarg.1
     IL_0020:  /* 02   |                  */ ldarg.0
-    IL_0021:  /* 7B   | (04)000004       */ ldfld      class System.Runtime.Serialization.ObjectIDGenerator/*02000011*/ System.Runtime.Serialization.Formatter/*02000008*/::m_idGenerator /* 04000004 */
+    IL_0021:  /* 7B   | (04)000004       */ ldfld      class BalthasarIL.Serialization.ObjectIDGenerator/*02000011*/ BalthasarIL.Serialization.Formatter/*02000008*/::m_idGenerator /* 04000004 */
     IL_0026:  /* 06   |                  */ ldloc.0
     IL_0027:  /* 12   | 01               */ ldloca.s   V_1
-    IL_0029:  /* 6F   | (06)0000B4       */ callvirt   instance int64 System.Runtime.Serialization.ObjectIDGenerator/*02000011*/::HasId(object,
+    IL_0029:  /* 6F   | (06)0000B4       */ callvirt   instance int64 BalthasarIL.Serialization.ObjectIDGenerator/*02000011*/::HasId(object,
                                                                                                                                         bool&) /* 060000B4 */
     IL_002e:  /* 55   |                  */ stind.i8
     IL_002f:  /* 07   |                  */ ldloc.1
     IL_0030:  /* 2C   | 0B               */ brfalse.s  IL_003d
 
     IL_0032:  /* 28   | (06)000011       */ call       string System.SR/*02000004*/::get_Serialization_NoID() /* 06000011 */
-    IL_0037:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0037:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_003c:  /* 7A   |                  */ throw
 
     IL_003d:  /* 06   |                  */ ldloc.0
@@ -6752,17 +6752,17 @@
     IL_0005:  /* 2A   |                  */ ret
 
     IL_0006:  /* 02   |                  */ ldarg.0
-    IL_0007:  /* 7B   | (04)000004       */ ldfld      class System.Runtime.Serialization.ObjectIDGenerator/*02000011*/ System.Runtime.Serialization.Formatter/*02000008*/::m_idGenerator /* 04000004 */
+    IL_0007:  /* 7B   | (04)000004       */ ldfld      class BalthasarIL.Serialization.ObjectIDGenerator/*02000011*/ BalthasarIL.Serialization.Formatter/*02000008*/::m_idGenerator /* 04000004 */
     IL_000c:  /* 03   |                  */ ldarg.1
     IL_000d:  /* 12   | 00               */ ldloca.s   V_0
-    IL_000f:  /* 6F   | (06)0000B3       */ callvirt   instance int64 System.Runtime.Serialization.ObjectIDGenerator/*02000011*/::GetId(object,
+    IL_000f:  /* 6F   | (06)0000B3       */ callvirt   instance int64 BalthasarIL.Serialization.ObjectIDGenerator/*02000011*/::GetId(object,
                                                                                                                                         bool&) /* 060000B3 */
     IL_0014:  /* 0B   |                  */ stloc.1
     IL_0015:  /* 06   |                  */ ldloc.0
     IL_0016:  /* 2C   | 0C               */ brfalse.s  IL_0024
 
     IL_0018:  /* 02   |                  */ ldarg.0
-    IL_0019:  /* 7B   | (04)000005       */ ldfld      class [System.Collections.NonGeneric/*23000002*/]System.Collections.Queue/*01000014*/ System.Runtime.Serialization.Formatter/*02000008*/::m_objectQueue /* 04000005 */
+    IL_0019:  /* 7B   | (04)000005       */ ldfld      class [System.Collections.NonGeneric/*23000002*/]System.Collections.Queue/*01000014*/ BalthasarIL.Serialization.Formatter/*02000008*/::m_objectQueue /* 04000005 */
     IL_001e:  /* 03   |                  */ ldarg.1
     IL_001f:  /* 6F   | (0A)000019       */ callvirt   instance void [System.Collections.NonGeneric/*23000002*/]System.Collections.Queue/*01000014*/::Enqueue(object) /* 0A000019 */
     IL_0024:  /* 07   |                  */ ldloc.1
@@ -6897,7 +6897,7 @@
     IL_0005:  /* 03   |                  */ ldarg.1
     IL_0006:  /* D0   | (01)000001       */ ldtoken    [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/
     IL_000b:  /* 28   | (0A)000009       */ call       class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/::GetTypeFromHandle(valuetype [System.Private.CoreLib/*23000001*/]System.RuntimeTypeHandle/*01000008*/) /* 0A000009 */
-    IL_0010:  /* 6F   | (06)000066       */ callvirt   instance void System.Runtime.Serialization.Formatter/*02000008*/::WriteObjectRef(object,
+    IL_0010:  /* 6F   | (06)000066       */ callvirt   instance void BalthasarIL.Serialization.Formatter/*02000008*/::WriteObjectRef(object,
                                                                                                                                         string,
                                                                                                                                         class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/) /* 06000066 */
     IL_0015:  /* 2A   |                  */ ret
@@ -6918,7 +6918,7 @@
     IL_0036:  /* 28   | (0A)00001D       */ call       bool [System.Private.CoreLib/*23000001*/]System.Convert/*0100001E*/::ToBoolean(object,
                                                                                                                                       class [System.Private.CoreLib/*23000001*/]System.IFormatProvider/*01000006*/) /* 0A00001D */
     IL_003b:  /* 03   |                  */ ldarg.1
-    IL_003c:  /* 6F   | (06)00005D       */ callvirt   instance void System.Runtime.Serialization.Formatter/*02000008*/::WriteBoolean(bool,
+    IL_003c:  /* 6F   | (06)00005D       */ callvirt   instance void BalthasarIL.Serialization.Formatter/*02000008*/::WriteBoolean(bool,
                                                                                                                                       string) /* 0600005D */
     IL_0041:  /* 2A   |                  */ ret
 
@@ -6935,7 +6935,7 @@
     IL_005b:  /* 28   | (0A)00001E       */ call       char [System.Private.CoreLib/*23000001*/]System.Convert/*0100001E*/::ToChar(object,
                                                                                                                                    class [System.Private.CoreLib/*23000001*/]System.IFormatProvider/*01000006*/) /* 0A00001E */
     IL_0060:  /* 03   |                  */ ldarg.1
-    IL_0061:  /* 6F   | (06)00005F       */ callvirt   instance void System.Runtime.Serialization.Formatter/*02000008*/::WriteChar(char,
+    IL_0061:  /* 6F   | (06)00005F       */ callvirt   instance void BalthasarIL.Serialization.Formatter/*02000008*/::WriteChar(char,
                                                                                                                                    string) /* 0600005F */
     IL_0066:  /* 2A   |                  */ ret
 
@@ -6952,7 +6952,7 @@
     IL_0080:  /* 28   | (0A)00001F       */ call       int8 [System.Private.CoreLib/*23000001*/]System.Convert/*0100001E*/::ToSByte(object,
                                                                                                                                     class [System.Private.CoreLib/*23000001*/]System.IFormatProvider/*01000006*/) /* 0A00001F */
     IL_0085:  /* 03   |                  */ ldarg.1
-    IL_0086:  /* 6F   | (06)000068       */ callvirt   instance void System.Runtime.Serialization.Formatter/*02000008*/::WriteSByte(int8,
+    IL_0086:  /* 6F   | (06)000068       */ callvirt   instance void BalthasarIL.Serialization.Formatter/*02000008*/::WriteSByte(int8,
                                                                                                                                     string) /* 06000068 */
     IL_008b:  /* 2A   |                  */ ret
 
@@ -6969,7 +6969,7 @@
     IL_00a5:  /* 28   | (0A)000020       */ call       uint8 [System.Private.CoreLib/*23000001*/]System.Convert/*0100001E*/::ToByte(object,
                                                                                                                                     class [System.Private.CoreLib/*23000001*/]System.IFormatProvider/*01000006*/) /* 0A000020 */
     IL_00aa:  /* 03   |                  */ ldarg.1
-    IL_00ab:  /* 6F   | (06)00005E       */ callvirt   instance void System.Runtime.Serialization.Formatter/*02000008*/::WriteByte(uint8,
+    IL_00ab:  /* 6F   | (06)00005E       */ callvirt   instance void BalthasarIL.Serialization.Formatter/*02000008*/::WriteByte(uint8,
                                                                                                                                    string) /* 0600005E */
     IL_00b0:  /* 2A   |                  */ ret
 
@@ -6986,7 +6986,7 @@
     IL_00ca:  /* 28   | (0A)000021       */ call       int16 [System.Private.CoreLib/*23000001*/]System.Convert/*0100001E*/::ToInt16(object,
                                                                                                                                      class [System.Private.CoreLib/*23000001*/]System.IFormatProvider/*01000006*/) /* 0A000021 */
     IL_00cf:  /* 03   |                  */ ldarg.1
-    IL_00d0:  /* 6F   | (06)000063       */ callvirt   instance void System.Runtime.Serialization.Formatter/*02000008*/::WriteInt16(int16,
+    IL_00d0:  /* 6F   | (06)000063       */ callvirt   instance void BalthasarIL.Serialization.Formatter/*02000008*/::WriteInt16(int16,
                                                                                                                                     string) /* 06000063 */
     IL_00d5:  /* 2A   |                  */ ret
 
@@ -7003,7 +7003,7 @@
     IL_00ef:  /* 28   | (0A)000022       */ call       int32 [System.Private.CoreLib/*23000001*/]System.Convert/*0100001E*/::ToInt32(object,
                                                                                                                                      class [System.Private.CoreLib/*23000001*/]System.IFormatProvider/*01000006*/) /* 0A000022 */
     IL_00f4:  /* 03   |                  */ ldarg.1
-    IL_00f5:  /* 6F   | (06)000064       */ callvirt   instance void System.Runtime.Serialization.Formatter/*02000008*/::WriteInt32(int32,
+    IL_00f5:  /* 6F   | (06)000064       */ callvirt   instance void BalthasarIL.Serialization.Formatter/*02000008*/::WriteInt32(int32,
                                                                                                                                     string) /* 06000064 */
     IL_00fa:  /* 2A   |                  */ ret
 
@@ -7020,7 +7020,7 @@
     IL_0114:  /* 28   | (0A)000023       */ call       int64 [System.Private.CoreLib/*23000001*/]System.Convert/*0100001E*/::ToInt64(object,
                                                                                                                                      class [System.Private.CoreLib/*23000001*/]System.IFormatProvider/*01000006*/) /* 0A000023 */
     IL_0119:  /* 03   |                  */ ldarg.1
-    IL_011a:  /* 6F   | (06)000065       */ callvirt   instance void System.Runtime.Serialization.Formatter/*02000008*/::WriteInt64(int64,
+    IL_011a:  /* 6F   | (06)000065       */ callvirt   instance void BalthasarIL.Serialization.Formatter/*02000008*/::WriteInt64(int64,
                                                                                                                                     string) /* 06000065 */
     IL_011f:  /* 2A   |                  */ ret
 
@@ -7037,7 +7037,7 @@
     IL_0139:  /* 28   | (0A)000024       */ call       float32 [System.Private.CoreLib/*23000001*/]System.Convert/*0100001E*/::ToSingle(object,
                                                                                                                                         class [System.Private.CoreLib/*23000001*/]System.IFormatProvider/*01000006*/) /* 0A000024 */
     IL_013e:  /* 03   |                  */ ldarg.1
-    IL_013f:  /* 6F   | (06)000069       */ callvirt   instance void System.Runtime.Serialization.Formatter/*02000008*/::WriteSingle(float32,
+    IL_013f:  /* 6F   | (06)000069       */ callvirt   instance void BalthasarIL.Serialization.Formatter/*02000008*/::WriteSingle(float32,
                                                                                                                                      string) /* 06000069 */
     IL_0144:  /* 2A   |                  */ ret
 
@@ -7054,7 +7054,7 @@
     IL_015e:  /* 28   | (0A)000025       */ call       float64 [System.Private.CoreLib/*23000001*/]System.Convert/*0100001E*/::ToDouble(object,
                                                                                                                                         class [System.Private.CoreLib/*23000001*/]System.IFormatProvider/*01000006*/) /* 0A000025 */
     IL_0163:  /* 03   |                  */ ldarg.1
-    IL_0164:  /* 6F   | (06)000062       */ callvirt   instance void System.Runtime.Serialization.Formatter/*02000008*/::WriteDouble(float64,
+    IL_0164:  /* 6F   | (06)000062       */ callvirt   instance void BalthasarIL.Serialization.Formatter/*02000008*/::WriteDouble(float64,
                                                                                                                                      string) /* 06000062 */
     IL_0169:  /* 2A   |                  */ ret
 
@@ -7071,7 +7071,7 @@
     IL_0183:  /* 28   | (0A)000026       */ call       valuetype [System.Private.CoreLib/*23000001*/]System.DateTime/*0100001A*/ [System.Private.CoreLib/*23000001*/]System.Convert/*0100001E*/::ToDateTime(object,
                                                                                                                                                                                                             class [System.Private.CoreLib/*23000001*/]System.IFormatProvider/*01000006*/) /* 0A000026 */
     IL_0188:  /* 03   |                  */ ldarg.1
-    IL_0189:  /* 6F   | (06)000060       */ callvirt   instance void System.Runtime.Serialization.Formatter/*02000008*/::WriteDateTime(valuetype [System.Private.CoreLib/*23000001*/]System.DateTime/*0100001A*/,
+    IL_0189:  /* 6F   | (06)000060       */ callvirt   instance void BalthasarIL.Serialization.Formatter/*02000008*/::WriteDateTime(valuetype [System.Private.CoreLib/*23000001*/]System.DateTime/*0100001A*/,
                                                                                                                                        string) /* 06000060 */
     IL_018e:  /* 2A   |                  */ ret
 
@@ -7088,7 +7088,7 @@
     IL_01a8:  /* 28   | (0A)000027       */ call       valuetype [System.Private.CoreLib/*23000001*/]System.Decimal/*0100001B*/ [System.Private.CoreLib/*23000001*/]System.Convert/*0100001E*/::ToDecimal(object,
                                                                                                                                                                                                           class [System.Private.CoreLib/*23000001*/]System.IFormatProvider/*01000006*/) /* 0A000027 */
     IL_01ad:  /* 03   |                  */ ldarg.1
-    IL_01ae:  /* 6F   | (06)000061       */ callvirt   instance void System.Runtime.Serialization.Formatter/*02000008*/::WriteDecimal(valuetype [System.Private.CoreLib/*23000001*/]System.Decimal/*0100001B*/,
+    IL_01ae:  /* 6F   | (06)000061       */ callvirt   instance void BalthasarIL.Serialization.Formatter/*02000008*/::WriteDecimal(valuetype [System.Private.CoreLib/*23000001*/]System.Decimal/*0100001B*/,
                                                                                                                                       string) /* 06000061 */
     IL_01b3:  /* 2A   |                  */ ret
 
@@ -7105,7 +7105,7 @@
     IL_01cd:  /* 28   | (0A)000028       */ call       uint16 [System.Private.CoreLib/*23000001*/]System.Convert/*0100001E*/::ToUInt16(object,
                                                                                                                                        class [System.Private.CoreLib/*23000001*/]System.IFormatProvider/*01000006*/) /* 0A000028 */
     IL_01d2:  /* 03   |                  */ ldarg.1
-    IL_01d3:  /* 6F   | (06)00006B       */ callvirt   instance void System.Runtime.Serialization.Formatter/*02000008*/::WriteUInt16(uint16,
+    IL_01d3:  /* 6F   | (06)00006B       */ callvirt   instance void BalthasarIL.Serialization.Formatter/*02000008*/::WriteUInt16(uint16,
                                                                                                                                      string) /* 0600006B */
     IL_01d8:  /* 2A   |                  */ ret
 
@@ -7122,7 +7122,7 @@
     IL_01f2:  /* 28   | (0A)000029       */ call       uint32 [System.Private.CoreLib/*23000001*/]System.Convert/*0100001E*/::ToUInt32(object,
                                                                                                                                        class [System.Private.CoreLib/*23000001*/]System.IFormatProvider/*01000006*/) /* 0A000029 */
     IL_01f7:  /* 03   |                  */ ldarg.1
-    IL_01f8:  /* 6F   | (06)00006C       */ callvirt   instance void System.Runtime.Serialization.Formatter/*02000008*/::WriteUInt32(uint32,
+    IL_01f8:  /* 6F   | (06)00006C       */ callvirt   instance void BalthasarIL.Serialization.Formatter/*02000008*/::WriteUInt32(uint32,
                                                                                                                                      string) /* 0600006C */
     IL_01fd:  /* 2A   |                  */ ret
 
@@ -7139,7 +7139,7 @@
     IL_0217:  /* 28   | (0A)00002A       */ call       uint64 [System.Private.CoreLib/*23000001*/]System.Convert/*0100001E*/::ToUInt64(object,
                                                                                                                                        class [System.Private.CoreLib/*23000001*/]System.IFormatProvider/*01000006*/) /* 0A00002A */
     IL_021c:  /* 03   |                  */ ldarg.1
-    IL_021d:  /* 6F   | (06)00006D       */ callvirt   instance void System.Runtime.Serialization.Formatter/*02000008*/::WriteUInt64(uint64,
+    IL_021d:  /* 6F   | (06)00006D       */ callvirt   instance void BalthasarIL.Serialization.Formatter/*02000008*/::WriteUInt64(uint64,
                                                                                                                                      string) /* 0600006D */
     IL_0222:  /* 2A   |                  */ ret
 
@@ -7151,7 +7151,7 @@
     IL_022c:  /* 04   |                  */ ldarg.2
     IL_022d:  /* 03   |                  */ ldarg.1
     IL_022e:  /* 06   |                  */ ldloc.0
-    IL_022f:  /* 6F   | (06)00005C       */ callvirt   instance void System.Runtime.Serialization.Formatter/*02000008*/::WriteArray(object,
+    IL_022f:  /* 6F   | (06)00005C       */ callvirt   instance void BalthasarIL.Serialization.Formatter/*02000008*/::WriteArray(object,
                                                                                                                                     string,
                                                                                                                                     class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/) /* 0600005C */
     IL_0234:  /* 2A   |                  */ ret
@@ -7164,7 +7164,7 @@
     IL_023e:  /* 04   |                  */ ldarg.2
     IL_023f:  /* 03   |                  */ ldarg.1
     IL_0240:  /* 06   |                  */ ldloc.0
-    IL_0241:  /* 6F   | (06)00006E       */ callvirt   instance void System.Runtime.Serialization.Formatter/*02000008*/::WriteValueType(object,
+    IL_0241:  /* 6F   | (06)00006E       */ callvirt   instance void BalthasarIL.Serialization.Formatter/*02000008*/::WriteValueType(object,
                                                                                                                                         string,
                                                                                                                                         class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/) /* 0600006E */
     IL_0246:  /* 2A   |                  */ ret
@@ -7173,7 +7173,7 @@
     IL_0248:  /* 04   |                  */ ldarg.2
     IL_0249:  /* 03   |                  */ ldarg.1
     IL_024a:  /* 06   |                  */ ldloc.0
-    IL_024b:  /* 6F   | (06)000066       */ callvirt   instance void System.Runtime.Serialization.Formatter/*02000008*/::WriteObjectRef(object,
+    IL_024b:  /* 6F   | (06)000066       */ callvirt   instance void BalthasarIL.Serialization.Formatter/*02000008*/::WriteObjectRef(object,
                                                                                                                                         string,
                                                                                                                                         class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/) /* 06000066 */
     IL_0250:  /* 2A   |                  */ ret
@@ -7241,7 +7241,7 @@
   } // end of method Formatter::WriteValueType
 
   .method /*0600006F*/ public hidebysig newslot specialname abstract virtual 
-          instance class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ 
+          instance class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ 
           get_SurrogateSelector() cil managed
   // SIG: 20 00 12 3C
   {
@@ -7250,7 +7250,7 @@
   } // end of method Formatter::get_SurrogateSelector
 
   .method /*06000070*/ public hidebysig newslot specialname abstract virtual 
-          instance void  set_SurrogateSelector(class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ 'value') cil managed
+          instance void  set_SurrogateSelector(class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ 'value') cil managed
   // SIG: 20 01 01 12 3C
   {
     .custom /*0C00005D:0A000018*/ instance void [System.Private.CoreLib/*23000001*/]System.Runtime.CompilerServices.NullableContextAttribute/*01000019*/::.ctor(uint8) /* 0A000018 */ = ( 01 00 02 00 00 ) 
@@ -7258,7 +7258,7 @@
   } // end of method Formatter::set_SurrogateSelector
 
   .method /*06000071*/ public hidebysig newslot specialname abstract virtual 
-          instance class System.Runtime.Serialization.SerializationBinder/*0200001B*/ 
+          instance class BalthasarIL.Serialization.SerializationBinder/*0200001B*/ 
           get_Binder() cil managed
   // SIG: 20 00 12 6C
   {
@@ -7267,7 +7267,7 @@
   } // end of method Formatter::get_Binder
 
   .method /*06000072*/ public hidebysig newslot specialname abstract virtual 
-          instance void  set_Binder(class System.Runtime.Serialization.SerializationBinder/*0200001B*/ 'value') cil managed
+          instance void  set_Binder(class BalthasarIL.Serialization.SerializationBinder/*0200001B*/ 'value') cil managed
   // SIG: 20 01 01 12 6C
   {
     .custom /*0C000061:0A000018*/ instance void [System.Private.CoreLib/*23000001*/]System.Runtime.CompilerServices.NullableContextAttribute/*01000019*/::.ctor(uint8) /* 0A000018 */ = ( 01 00 02 00 00 ) 
@@ -7289,29 +7289,29 @@
     // 方法在 RVA 0x0 处开始
   } // end of method Formatter::set_Context
 
-  .property /*17000044*/ instance class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/
+  .property /*17000044*/ instance class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/
           SurrogateSelector()
   {
     .custom /*0C000041:0A000010*/ instance void [System.Private.CoreLib/*23000001*/]System.Runtime.CompilerServices.NullableAttribute/*01000013*/::.ctor(uint8) /* 0A000010 */ = ( 01 00 02 00 00 ) 
-    .get instance class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ System.Runtime.Serialization.Formatter/*02000008*/::get_SurrogateSelector() /* 0600006F */
-    .set instance void System.Runtime.Serialization.Formatter/*02000008*/::set_SurrogateSelector(class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/) /* 06000070 */
+    .get instance class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.Serialization.Formatter/*02000008*/::get_SurrogateSelector() /* 0600006F */
+    .set instance void BalthasarIL.Serialization.Formatter/*02000008*/::set_SurrogateSelector(class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/) /* 06000070 */
   } // end of property Formatter::SurrogateSelector
-  .property /*17000045*/ instance class System.Runtime.Serialization.SerializationBinder/*0200001B*/
+  .property /*17000045*/ instance class BalthasarIL.Serialization.SerializationBinder/*0200001B*/
           Binder()
   {
     .custom /*0C000042:0A000010*/ instance void [System.Private.CoreLib/*23000001*/]System.Runtime.CompilerServices.NullableAttribute/*01000013*/::.ctor(uint8) /* 0A000010 */ = ( 01 00 02 00 00 ) 
-    .get instance class System.Runtime.Serialization.SerializationBinder/*0200001B*/ System.Runtime.Serialization.Formatter/*02000008*/::get_Binder() /* 06000071 */
-    .set instance void System.Runtime.Serialization.Formatter/*02000008*/::set_Binder(class System.Runtime.Serialization.SerializationBinder/*0200001B*/) /* 06000072 */
+    .get instance class BalthasarIL.Serialization.SerializationBinder/*0200001B*/ BalthasarIL.Serialization.Formatter/*02000008*/::get_Binder() /* 06000071 */
+    .set instance void BalthasarIL.Serialization.Formatter/*02000008*/::set_Binder(class BalthasarIL.Serialization.SerializationBinder/*0200001B*/) /* 06000072 */
   } // end of property Formatter::Binder
   .property /*17000046*/ instance valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/
           Context()
   {
-    .get instance valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ System.Runtime.Serialization.Formatter/*02000008*/::get_Context() /* 06000073 */
-    .set instance void System.Runtime.Serialization.Formatter/*02000008*/::set_Context(valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/) /* 06000074 */
+    .get instance valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ BalthasarIL.Serialization.Formatter/*02000008*/::get_Context() /* 06000073 */
+    .set instance void BalthasarIL.Serialization.Formatter/*02000008*/::set_Context(valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/) /* 06000074 */
   } // end of property Formatter::Context
-} // end of class System.Runtime.Serialization.Formatter
+} // end of class BalthasarIL.Serialization.Formatter
 
-.class /*02000009*/ public auto ansi beforefieldinit System.Runtime.Serialization.FormatterConverter
+.class /*02000009*/ public auto ansi beforefieldinit BalthasarIL.Serialization.FormatterConverter
        extends [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/
        implements [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.IFormatterConverter/*0100002D*/
 {
@@ -7660,9 +7660,9 @@
     IL_0006:  /* 2A   |                  */ ret
   } // end of method FormatterConverter::.ctor
 
-} // end of class System.Runtime.Serialization.FormatterConverter
+} // end of class BalthasarIL.Serialization.FormatterConverter
 
-.class /*0200000A*/ public abstract auto ansi sealed beforefieldinit System.Runtime.Serialization.FormatterServices
+.class /*0200000A*/ public abstract auto ansi sealed beforefieldinit BalthasarIL.Serialization.FormatterServices
        extends [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/
 {
   .custom /*0C000022:0A000018*/ instance void [System.Private.CoreLib/*23000001*/]System.Runtime.CompilerServices.NullableContextAttribute/*01000019*/::.ctor(uint8) /* 0A000018 */ = ( 01 00 01 00 00 ) 
@@ -7680,8 +7680,8 @@
          extends [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/
   {
     .custom /*0C000025:0A00006B*/ instance void [System.Private.CoreLib/*23000001*/]System.Runtime.CompilerServices.CompilerGeneratedAttribute/*01000043*/::.ctor() /* 0A00006B */ = ( 01 00 00 00 ) 
-    .field /*04000007*/ public static initonly class System.Runtime.Serialization.FormatterServices/*0200000A*//'<>c'/*0200000B*/ '<>9'
-    .field /*04000008*/ public static class [System.Private.CoreLib/*23000001*/]System.Func`2/*0100003D*/<class System.Runtime.Serialization.MemberHolder/*02000010*/,class [System.Private.CoreLib/*23000001*/]System.Reflection.MemberInfo/*01000031*/[]> '<>9__5_0'
+    .field /*04000007*/ public static initonly class BalthasarIL.Serialization.FormatterServices/*0200000A*//'<>c'/*0200000B*/ '<>9'
+    .field /*04000008*/ public static class [System.Private.CoreLib/*23000001*/]System.Func`2/*0100003D*/<class BalthasarIL.Serialization.MemberHolder/*02000010*/,class [System.Private.CoreLib/*23000001*/]System.Reflection.MemberInfo/*01000031*/[]> '<>9__5_0'
     .method /*0600009B*/ private hidebysig specialname rtspecialname static 
             void  .cctor() cil managed
     // SIG: 00 00 01
@@ -7689,8 +7689,8 @@
       // 方法在 RVA 0x214a4 处开始
       // 代码大小       11 (0xb)
       .maxstack  8
-      IL_0000:  /* 73   | (06)00009C       */ newobj     instance void System.Runtime.Serialization.FormatterServices/*0200000A*//'<>c'/*0200000B*/::.ctor() /* 0600009C */
-      IL_0005:  /* 80   | (04)000007       */ stsfld     class System.Runtime.Serialization.FormatterServices/*0200000A*//'<>c'/*0200000B*/ System.Runtime.Serialization.FormatterServices/*0200000A*//'<>c'/*0200000B*/::'<>9' /* 04000007 */
+      IL_0000:  /* 73   | (06)00009C       */ newobj     instance void BalthasarIL.Serialization.FormatterServices/*0200000A*//'<>c'/*0200000B*/::.ctor() /* 0600009C */
+      IL_0005:  /* 80   | (04)000007       */ stsfld     class BalthasarIL.Serialization.FormatterServices/*0200000A*//'<>c'/*0200000B*/ BalthasarIL.Serialization.FormatterServices/*0200000A*//'<>c'/*0200000B*/::'<>9' /* 04000007 */
       IL_000a:  /* 2A   |                  */ ret
     } // end of method '<>c'::.cctor
 
@@ -7708,7 +7708,7 @@
 
     .method /*0600009D*/ assembly hidebysig 
             instance class [System.Private.CoreLib/*23000001*/]System.Reflection.MemberInfo/*01000031*/[] 
-            '<GetSerializableMembers>b__5_0'(class System.Runtime.Serialization.MemberHolder/*02000010*/ mh) cil managed
+            '<GetSerializableMembers>b__5_0'(class BalthasarIL.Serialization.MemberHolder/*02000010*/ mh) cil managed
     // SIG: 20 01 1D 12 80 C5 12 40
     {
       // 方法在 RVA 0x214b8 处开始
@@ -7716,8 +7716,8 @@
       .maxstack  1
       .locals /*11000014*/ (class [System.Private.CoreLib/*23000001*/]System.Reflection.MemberInfo/*01000031*/[] V_0)
       IL_0000:  /* 03   |                  */ ldarg.1
-      IL_0001:  /* 7B   | (04)00000C       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ System.Runtime.Serialization.MemberHolder/*02000010*/::_memberType /* 0400000C */
-      IL_0006:  /* 28   | (06)000087       */ call       class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/[] System.Runtime.Serialization.FormatterServices/*0200000A*/::InternalGetSerializableMembers(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/) /* 06000087 */
+      IL_0001:  /* 7B   | (04)00000C       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ BalthasarIL.Serialization.MemberHolder/*02000010*/::_memberType /* 0400000C */
+      IL_0006:  /* 28   | (06)000087       */ call       class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/[] BalthasarIL.Serialization.FormatterServices/*0200000A*/::InternalGetSerializableMembers(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/) /* 06000087 */
       IL_000b:  /* 0A   |                  */ stloc.0
       IL_000c:  /* 06   |                  */ ldloc.0
       IL_000d:  /* 2A   |                  */ ret
@@ -7725,7 +7725,7 @@
 
   } // end of class '<>c'
 
-  .field /*04000006*/ private static initonly class [System.Collections.Concurrent/*23000003*/]System.Collections.Concurrent.ConcurrentDictionary`2/*01000030*/<class System.Runtime.Serialization.MemberHolder/*02000010*/,class [System.Private.CoreLib/*23000001*/]System.Reflection.MemberInfo/*01000031*/[]> s_memberInfoTable
+  .field /*04000006*/ private static initonly class [System.Collections.Concurrent/*23000003*/]System.Collections.Concurrent.ConcurrentDictionary`2/*01000030*/<class BalthasarIL.Serialization.MemberHolder/*02000010*/,class [System.Private.CoreLib/*23000001*/]System.Reflection.MemberInfo/*01000031*/[]> s_memberInfoTable
   .method /*06000087*/ private hidebysig static 
           class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/[] 
           InternalGetSerializableMembers(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ 'type') cil managed
@@ -7810,7 +7810,7 @@
     IL_0035:  /* 00   |                  */ nop
     IL_0036:  /* 00   |                  */ nop
     IL_0037:  /* 02   |                  */ ldarg.0
-    IL_0038:  /* 28   | (06)000088       */ call       class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/[] System.Runtime.Serialization.FormatterServices/*0200000A*/::GetSerializableFields(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/) /* 06000088 */
+    IL_0038:  /* 28   | (06)000088       */ call       class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/[] BalthasarIL.Serialization.FormatterServices/*0200000A*/::GetSerializableFields(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/) /* 06000088 */
     IL_003d:  /* 0A   |                  */ stloc.0
     IL_003e:  /* 02   |                  */ ldarg.0
     IL_003f:  /* 6F   | (0A)000039       */ callvirt   instance class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/::get_BaseType() /* 0A000039 */
@@ -7831,7 +7831,7 @@
     IL_0066:  /* 07   |                  */ ldloc.1
     IL_0067:  /* 12   | 03               */ ldloca.s   V_3
     IL_0069:  /* 12   | 04               */ ldloca.s   V_4
-    IL_006b:  /* 28   | (06)000089       */ call       bool System.Runtime.Serialization.FormatterServices/*0200000A*/::GetParentTypes(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
+    IL_006b:  /* 28   | (06)000089       */ call       bool BalthasarIL.Serialization.FormatterServices/*0200000A*/::GetParentTypes(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
                                                                                                                                        class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/[]&,
                                                                                                                                        int32&) /* 06000089 */
     IL_0070:  /* 0C   |                  */ stloc.2
@@ -7922,7 +7922,7 @@
     IL_00f1:  /* 11   | 05               */ ldloc.s    V_5
     IL_00f3:  /* 11   | 0B               */ ldloc.s    V_11
     IL_00f5:  /* 11   | 08               */ ldloc.s    V_8
-    IL_00f7:  /* 73   | (06)00012E       */ newobj     instance void System.Runtime.Serialization.SerializationFieldInfo/*0200001F*/::.ctor(class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/,
+    IL_00f7:  /* 73   | (06)00012E       */ newobj     instance void BalthasarIL.Serialization.SerializationFieldInfo/*0200001F*/::.ctor(class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/,
                                                                                                                                             string) /* 0600012E */
     IL_00fc:  /* 6F   | (0A)000041       */ callvirt   instance void class [System.Private.CoreLib/*23000001*/]System.Collections.Generic.List`1/*01000033*/<class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/>/*1B000002*/::Add(!0) /* 0A000041 */
     IL_0101:  /* 11   | 0A               */ ldloc.s    V_10
@@ -8224,7 +8224,7 @@
     IL_0000:  /* 02   |                  */ ldarg.0
     IL_0001:  /* 20   | FF000000         */ ldc.i4     0xff
     IL_0006:  /* 73   | (0A)00004C       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/::.ctor(valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContextStates/*0100003C*/) /* 0A00004C */
-    IL_000b:  /* 28   | (06)00008B       */ call       class [System.Private.CoreLib/*23000001*/]System.Reflection.MemberInfo/*01000031*/[] System.Runtime.Serialization.FormatterServices/*0200000A*/::GetSerializableMembers(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
+    IL_000b:  /* 28   | (06)00008B       */ call       class [System.Private.CoreLib/*23000001*/]System.Reflection.MemberInfo/*01000031*/[] BalthasarIL.Serialization.FormatterServices/*0200000A*/::GetSerializableMembers(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
                                                                                                                                                                                                                                valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/) /* 0600008B */
     IL_0010:  /* 2A   |                  */ ret
   } // end of method FormatterServices::GetSerializableMembers
@@ -8244,23 +8244,23 @@
     IL_0001:  /* 72   | (70)001044       */ ldstr      "type" /* 70001044 */
     IL_0006:  /* 28   | (0A)00002F       */ call       void [System.Private.CoreLib/*23000001*/]System.ArgumentNullException/*0100002E*/::ThrowIfNull(object,
                                                                                                                                                       string) /* 0A00002F */
-    IL_000b:  /* 7E   | (04)000006       */ ldsfld     class [System.Collections.Concurrent/*23000003*/]System.Collections.Concurrent.ConcurrentDictionary`2/*01000030*/<class System.Runtime.Serialization.MemberHolder/*02000010*/,class [System.Private.CoreLib/*23000001*/]System.Reflection.MemberInfo/*01000031*/[]> System.Runtime.Serialization.FormatterServices/*0200000A*/::s_memberInfoTable /* 04000006 */
+    IL_000b:  /* 7E   | (04)000006       */ ldsfld     class [System.Collections.Concurrent/*23000003*/]System.Collections.Concurrent.ConcurrentDictionary`2/*01000030*/<class BalthasarIL.Serialization.MemberHolder/*02000010*/,class [System.Private.CoreLib/*23000001*/]System.Reflection.MemberInfo/*01000031*/[]> BalthasarIL.Serialization.FormatterServices/*0200000A*/::s_memberInfoTable /* 04000006 */
     IL_0010:  /* 02   |                  */ ldarg.0
     IL_0011:  /* 03   |                  */ ldarg.1
-    IL_0012:  /* 73   | (06)0000AE       */ newobj     instance void System.Runtime.Serialization.MemberHolder/*02000010*/::.ctor(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
+    IL_0012:  /* 73   | (06)0000AE       */ newobj     instance void BalthasarIL.Serialization.MemberHolder/*02000010*/::.ctor(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
                                                                                                                                   valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/) /* 060000AE */
-    IL_0017:  /* 7E   | (04)000008       */ ldsfld     class [System.Private.CoreLib/*23000001*/]System.Func`2/*0100003D*/<class System.Runtime.Serialization.MemberHolder/*02000010*/,class [System.Private.CoreLib/*23000001*/]System.Reflection.MemberInfo/*01000031*/[]> System.Runtime.Serialization.FormatterServices/*0200000A*//'<>c'/*0200000B*/::'<>9__5_0' /* 04000008 */
+    IL_0017:  /* 7E   | (04)000008       */ ldsfld     class [System.Private.CoreLib/*23000001*/]System.Func`2/*0100003D*/<class BalthasarIL.Serialization.MemberHolder/*02000010*/,class [System.Private.CoreLib/*23000001*/]System.Reflection.MemberInfo/*01000031*/[]> BalthasarIL.Serialization.FormatterServices/*0200000A*//'<>c'/*0200000B*/::'<>9__5_0' /* 04000008 */
     IL_001c:  /* 25   |                  */ dup
     IL_001d:  /* 2D   | 17               */ brtrue.s   IL_0036
 
     IL_001f:  /* 26   |                  */ pop
-    IL_0020:  /* 7E   | (04)000007       */ ldsfld     class System.Runtime.Serialization.FormatterServices/*0200000A*//'<>c'/*0200000B*/ System.Runtime.Serialization.FormatterServices/*0200000A*//'<>c'/*0200000B*/::'<>9' /* 04000007 */
-    IL_0025:  /* FE06 | (06)00009D       */ ldftn      instance class [System.Private.CoreLib/*23000001*/]System.Reflection.MemberInfo/*01000031*/[] System.Runtime.Serialization.FormatterServices/*0200000A*//'<>c'/*0200000B*/::'<GetSerializableMembers>b__5_0'(class System.Runtime.Serialization.MemberHolder/*02000010*/) /* 0600009D */
-    IL_002b:  /* 73   | (0A)00004D       */ newobj     instance void class [System.Private.CoreLib/*23000001*/]System.Func`2/*0100003D*/<class System.Runtime.Serialization.MemberHolder/*02000010*/,class [System.Private.CoreLib/*23000001*/]System.Reflection.MemberInfo/*01000031*/[]>/*1B000003*/::.ctor(object,
+    IL_0020:  /* 7E   | (04)000007       */ ldsfld     class BalthasarIL.Serialization.FormatterServices/*0200000A*//'<>c'/*0200000B*/ BalthasarIL.Serialization.FormatterServices/*0200000A*//'<>c'/*0200000B*/::'<>9' /* 04000007 */
+    IL_0025:  /* FE06 | (06)00009D       */ ldftn      instance class [System.Private.CoreLib/*23000001*/]System.Reflection.MemberInfo/*01000031*/[] BalthasarIL.Serialization.FormatterServices/*0200000A*//'<>c'/*0200000B*/::'<GetSerializableMembers>b__5_0'(class BalthasarIL.Serialization.MemberHolder/*02000010*/) /* 0600009D */
+    IL_002b:  /* 73   | (0A)00004D       */ newobj     instance void class [System.Private.CoreLib/*23000001*/]System.Func`2/*0100003D*/<class BalthasarIL.Serialization.MemberHolder/*02000010*/,class [System.Private.CoreLib/*23000001*/]System.Reflection.MemberInfo/*01000031*/[]>/*1B000003*/::.ctor(object,
                                                                                                                                                                                                                                                                                                               native int) /* 0A00004D */
     IL_0030:  /* 25   |                  */ dup
-    IL_0031:  /* 80   | (04)000008       */ stsfld     class [System.Private.CoreLib/*23000001*/]System.Func`2/*0100003D*/<class System.Runtime.Serialization.MemberHolder/*02000010*/,class [System.Private.CoreLib/*23000001*/]System.Reflection.MemberInfo/*01000031*/[]> System.Runtime.Serialization.FormatterServices/*0200000A*//'<>c'/*0200000B*/::'<>9__5_0' /* 04000008 */
-    IL_0036:  /* 6F   | (0A)00004E       */ callvirt   instance !1 class [System.Collections.Concurrent/*23000003*/]System.Collections.Concurrent.ConcurrentDictionary`2/*01000030*/<class System.Runtime.Serialization.MemberHolder/*02000010*/,class [System.Private.CoreLib/*23000001*/]System.Reflection.MemberInfo/*01000031*/[]>/*1B000004*/::GetOrAdd(!0,
+    IL_0031:  /* 80   | (04)000008       */ stsfld     class [System.Private.CoreLib/*23000001*/]System.Func`2/*0100003D*/<class BalthasarIL.Serialization.MemberHolder/*02000010*/,class [System.Private.CoreLib/*23000001*/]System.Reflection.MemberInfo/*01000031*/[]> BalthasarIL.Serialization.FormatterServices/*0200000A*//'<>c'/*0200000B*/::'<>9__5_0' /* 04000008 */
+    IL_0036:  /* 6F   | (0A)00004E       */ callvirt   instance !1 class [System.Collections.Concurrent/*23000003*/]System.Collections.Concurrent.ConcurrentDictionary`2/*01000030*/<class BalthasarIL.Serialization.MemberHolder/*02000010*/,class [System.Private.CoreLib/*23000001*/]System.Reflection.MemberInfo/*01000031*/[]>/*1B000004*/::GetOrAdd(!0,
                                                                                                                                                                                                                                                                                                                                                              class [System.Private.CoreLib/*23000001*/]System.Func`2/*0100003D*/<!0,!1>) /* 0A00004E */
     IL_003b:  /* 2A   |                  */ ret
   } // end of method FormatterServices::GetSerializableMembers
@@ -8418,7 +8418,7 @@
     IL_007b:  /* 2B   | 0B               */ br.s       IL_0088
 
     IL_007d:  /* 28   | (06)000010       */ call       string System.SR/*02000004*/::get_Serialization_UnknownMemberInfo() /* 06000010 */
-    IL_0082:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0082:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0087:  /* 7A   |                  */ throw
 
     IL_0088:  /* 06   |                  */ ldloc.0
@@ -8496,7 +8496,7 @@
     IL_0059:  /* 2C   | 0B               */ brfalse.s  IL_0066
 
     IL_005b:  /* 28   | (06)000010       */ call       string System.SR/*02000004*/::get_Serialization_UnknownMemberInfo() /* 06000010 */
-    IL_0060:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0060:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0065:  /* 7A   |                  */ throw
 
     IL_0066:  /* 06   |                  */ ldloc.0
@@ -8520,8 +8520,8 @@
   } // end of method FormatterServices::GetObjectData
 
   .method /*06000092*/ public hidebysig static 
-          class System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ 
-          GetSurrogateForCyclicalReference(class System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ innerSurrogate) cil managed
+          class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ 
+          GetSurrogateForCyclicalReference(class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ innerSurrogate) cil managed
   // SIG: 00 01 12 38 12 38
   {
     // 方法在 RVA 0x212b8 处开始
@@ -8532,7 +8532,7 @@
     IL_0006:  /* 28   | (0A)00002F       */ call       void [System.Private.CoreLib/*23000001*/]System.ArgumentNullException/*0100002E*/::ThrowIfNull(object,
                                                                                                                                                       string) /* 0A00002F */
     IL_000b:  /* 02   |                  */ ldarg.0
-    IL_000c:  /* 73   | (06)00009E       */ newobj     instance void System.Runtime.Serialization.SurrogateForCyclicalReference/*0200000C*/::.ctor(class System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/) /* 0600009E */
+    IL_000c:  /* 73   | (06)00009E       */ newobj     instance void BalthasarIL.Serialization.SurrogateForCyclicalReference/*0200000C*/::.ctor(class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/) /* 0600009E */
     IL_0011:  /* 2A   |                  */ ret
   } // end of method FormatterServices::GetSurrogateForCyclicalReference
 
@@ -8589,7 +8589,7 @@
     .try
     {
       IL_0000:  /* 02   |                  */ ldarg.0
-      IL_0001:  /* 28   | (06)000094       */ call       class [System.Private.CoreLib/*23000001*/]System.Reflection.Assembly/*01000035*/ System.Runtime.Serialization.FormatterServices/*0200000A*/::LoadAssemblyFromString(string) /* 06000094 */
+      IL_0001:  /* 28   | (06)000094       */ call       class [System.Private.CoreLib/*23000001*/]System.Reflection.Assembly/*01000035*/ BalthasarIL.Serialization.FormatterServices/*0200000A*/::LoadAssemblyFromString(string) /* 06000094 */
       IL_0006:  /* 0A   |                  */ stloc.0
       IL_0007:  /* DE   | 05               */ leave.s    IL_000e
 
@@ -8686,11 +8686,11 @@
     IL_0006:  /* 2D   | 07               */ brtrue.s   IL_000f
 
     IL_0008:  /* 02   |                  */ ldarg.0
-    IL_0009:  /* 28   | (06)000099       */ call       string System.Runtime.Serialization.FormatterServices/*0200000A*/::GetClrTypeFullNameForNonArrayTypes(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/) /* 06000099 */
+    IL_0009:  /* 28   | (06)000099       */ call       string BalthasarIL.Serialization.FormatterServices/*0200000A*/::GetClrTypeFullNameForNonArrayTypes(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/) /* 06000099 */
     IL_000e:  /* 2A   |                  */ ret
 
     IL_000f:  /* 02   |                  */ ldarg.0
-    IL_0010:  /* 28   | (06)000098       */ call       string System.Runtime.Serialization.FormatterServices/*0200000A*/::GetClrTypeFullNameForArray(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/) /* 06000098 */
+    IL_0010:  /* 28   | (06)000098       */ call       string BalthasarIL.Serialization.FormatterServices/*0200000A*/::GetClrTypeFullNameForArray(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/) /* 06000098 */
     IL_0015:  /* 2A   |                  */ ret
   } // end of method FormatterServices::GetClrTypeFullName
 
@@ -8708,7 +8708,7 @@
     IL_0006:  /* 0A   |                  */ stloc.0
     IL_0007:  /* 02   |                  */ ldarg.0
     IL_0008:  /* 6F   | (0A)000059       */ callvirt   instance class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/::GetElementType() /* 0A000059 */
-    IL_000d:  /* 28   | (06)000097       */ call       string System.Runtime.Serialization.FormatterServices/*0200000A*/::GetClrTypeFullName(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/) /* 06000097 */
+    IL_000d:  /* 28   | (06)000097       */ call       string BalthasarIL.Serialization.FormatterServices/*0200000A*/::GetClrTypeFullName(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/) /* 06000097 */
     IL_0012:  /* 0B   |                  */ stloc.1
     IL_0013:  /* 06   |                  */ ldloc.0
     IL_0014:  /* 17   |                  */ ldc.i4.1
@@ -8778,7 +8778,7 @@
     IL_0038:  /* 1F   | 5B               */ ldc.i4.s   91
     IL_003a:  /* 6F   | (0A)000064       */ callvirt   instance class [System.Private.CoreLib/*23000001*/]System.Text.StringBuilder/*01000042*/ [System.Private.CoreLib/*23000001*/]System.Text.StringBuilder/*01000042*/::Append(char) /* 0A000064 */
     IL_003f:  /* 11   | 04               */ ldloc.s    V_4
-    IL_0041:  /* 28   | (06)000097       */ call       string System.Runtime.Serialization.FormatterServices/*0200000A*/::GetClrTypeFullName(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/) /* 06000097 */
+    IL_0041:  /* 28   | (06)000097       */ call       string BalthasarIL.Serialization.FormatterServices/*0200000A*/::GetClrTypeFullName(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/) /* 06000097 */
     IL_0046:  /* 6F   | (0A)000066       */ callvirt   instance class [System.Private.CoreLib/*23000001*/]System.Text.StringBuilder/*01000042*/ [System.Private.CoreLib/*23000001*/]System.Text.StringBuilder/*01000042*/::Append(string) /* 0A000066 */
     IL_004b:  /* 72   | (70)0001B8       */ ldstr      ", " /* 700001B8 */
     IL_0050:  /* 6F   | (0A)000066       */ callvirt   instance class [System.Private.CoreLib/*23000001*/]System.Text.StringBuilder/*01000042*/ [System.Private.CoreLib/*23000001*/]System.Text.StringBuilder/*01000042*/::Append(string) /* 0A000066 */
@@ -8786,7 +8786,7 @@
     IL_0056:  /* 06   |                  */ ldloc.0
     IL_0057:  /* 11   | 04               */ ldloc.s    V_4
     IL_0059:  /* 12   | 01               */ ldloca.s   V_1
-    IL_005b:  /* 28   | (06)000096       */ call       string System.Runtime.Serialization.FormatterServices/*0200000A*/::GetClrAssemblyName(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
+    IL_005b:  /* 28   | (06)000096       */ call       string BalthasarIL.Serialization.FormatterServices/*0200000A*/::GetClrAssemblyName(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
                                                                                                                                              bool&) /* 06000096 */
     IL_0060:  /* 6F   | (0A)000066       */ callvirt   instance class [System.Private.CoreLib/*23000001*/]System.Text.StringBuilder/*01000042*/ [System.Private.CoreLib/*23000001*/]System.Text.StringBuilder/*01000042*/::Append(string) /* 0A000066 */
     IL_0065:  /* 72   | (70)0010A8       */ ldstr      "]," /* 700010A8 */
@@ -8823,20 +8823,20 @@
     // 方法在 RVA 0x21498 处开始
     // 代码大小       11 (0xb)
     .maxstack  8
-    IL_0000:  /* 73   | (0A)00006A       */ newobj     instance void class [System.Collections.Concurrent/*23000003*/]System.Collections.Concurrent.ConcurrentDictionary`2/*01000030*/<class System.Runtime.Serialization.MemberHolder/*02000010*/,class [System.Private.CoreLib/*23000001*/]System.Reflection.MemberInfo/*01000031*/[]>/*1B000004*/::.ctor() /* 0A00006A */
-    IL_0005:  /* 80   | (04)000006       */ stsfld     class [System.Collections.Concurrent/*23000003*/]System.Collections.Concurrent.ConcurrentDictionary`2/*01000030*/<class System.Runtime.Serialization.MemberHolder/*02000010*/,class [System.Private.CoreLib/*23000001*/]System.Reflection.MemberInfo/*01000031*/[]> System.Runtime.Serialization.FormatterServices/*0200000A*/::s_memberInfoTable /* 04000006 */
+    IL_0000:  /* 73   | (0A)00006A       */ newobj     instance void class [System.Collections.Concurrent/*23000003*/]System.Collections.Concurrent.ConcurrentDictionary`2/*01000030*/<class BalthasarIL.Serialization.MemberHolder/*02000010*/,class [System.Private.CoreLib/*23000001*/]System.Reflection.MemberInfo/*01000031*/[]>/*1B000004*/::.ctor() /* 0A00006A */
+    IL_0005:  /* 80   | (04)000006       */ stsfld     class [System.Collections.Concurrent/*23000003*/]System.Collections.Concurrent.ConcurrentDictionary`2/*01000030*/<class BalthasarIL.Serialization.MemberHolder/*02000010*/,class [System.Private.CoreLib/*23000001*/]System.Reflection.MemberInfo/*01000031*/[]> BalthasarIL.Serialization.FormatterServices/*0200000A*/::s_memberInfoTable /* 04000006 */
     IL_000a:  /* 2A   |                  */ ret
   } // end of method FormatterServices::.cctor
 
-} // end of class System.Runtime.Serialization.FormatterServices
+} // end of class BalthasarIL.Serialization.FormatterServices
 
-.class /*0200000C*/ private auto ansi sealed beforefieldinit System.Runtime.Serialization.SurrogateForCyclicalReference
+.class /*0200000C*/ private auto ansi sealed beforefieldinit BalthasarIL.Serialization.SurrogateForCyclicalReference
        extends [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/
-       implements System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/
+       implements BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/
 {
-  .field /*04000009*/ private initonly class System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ _innerSurrogate
+  .field /*04000009*/ private initonly class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ _innerSurrogate
   .method /*0600009E*/ assembly hidebysig specialname rtspecialname 
-          instance void  .ctor(class System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ innerSurrogate) cil managed
+          instance void  .ctor(class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ innerSurrogate) cil managed
   // SIG: 20 01 01 12 38
   {
     // 方法在 RVA 0x214d4 处开始
@@ -8846,7 +8846,7 @@
     IL_0001:  /* 28   | (0A)000011       */ call       instance void [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/::.ctor() /* 0A000011 */
     IL_0006:  /* 02   |                  */ ldarg.0
     IL_0007:  /* 03   |                  */ ldarg.1
-    IL_0008:  /* 7D   | (04)000009       */ stfld      class System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ System.Runtime.Serialization.SurrogateForCyclicalReference/*0200000C*/::_innerSurrogate /* 04000009 */
+    IL_0008:  /* 7D   | (04)000009       */ stfld      class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.Serialization.SurrogateForCyclicalReference/*0200000C*/::_innerSurrogate /* 04000009 */
     IL_000d:  /* 2A   |                  */ ret
   } // end of method SurrogateForCyclicalReference::.ctor
 
@@ -8860,11 +8860,11 @@
     // 代码大小       15 (0xf)
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)000009       */ ldfld      class System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ System.Runtime.Serialization.SurrogateForCyclicalReference/*0200000C*/::_innerSurrogate /* 04000009 */
+    IL_0001:  /* 7B   | (04)000009       */ ldfld      class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.Serialization.SurrogateForCyclicalReference/*0200000C*/::_innerSurrogate /* 04000009 */
     IL_0006:  /* 03   |                  */ ldarg.1
     IL_0007:  /* 04   |                  */ ldarg.2
     IL_0008:  /* 05   |                  */ ldarg.3
-    IL_0009:  /* 6F   | (06)0000A9       */ callvirt   instance void System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/::GetObjectData(object,
+    IL_0009:  /* 6F   | (06)0000A9       */ callvirt   instance void BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/::GetObjectData(object,
                                                                                                                                                      class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationInfo/*01000044*/,
                                                                                                                                                      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/) /* 060000A9 */
     IL_000e:  /* 2A   |                  */ ret
@@ -8874,28 +8874,28 @@
           instance object  SetObjectData(object obj,
                                          class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationInfo/*01000044*/ info,
                                          valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ context,
-                                         class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ selector) cil managed
+                                         class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ selector) cil managed
   // SIG: 20 04 1C 1C 12 81 11 11 41 12 3C
   {
     // 方法在 RVA 0x214f4 处开始
     // 代码大小       17 (0x11)
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)000009       */ ldfld      class System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ System.Runtime.Serialization.SurrogateForCyclicalReference/*0200000C*/::_innerSurrogate /* 04000009 */
+    IL_0001:  /* 7B   | (04)000009       */ ldfld      class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.Serialization.SurrogateForCyclicalReference/*0200000C*/::_innerSurrogate /* 04000009 */
     IL_0006:  /* 03   |                  */ ldarg.1
     IL_0007:  /* 04   |                  */ ldarg.2
     IL_0008:  /* 05   |                  */ ldarg.3
     IL_0009:  /* 0E   | 04               */ ldarg.s    selector
-    IL_000b:  /* 6F   | (06)0000AA       */ callvirt   instance object System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/::SetObjectData(object,
+    IL_000b:  /* 6F   | (06)0000AA       */ callvirt   instance object BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/::SetObjectData(object,
                                                                                                                                                        class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationInfo/*01000044*/,
                                                                                                                                                        valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/,
-                                                                                                                                                       class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/) /* 060000AA */
+                                                                                                                                                       class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/) /* 060000AA */
     IL_0010:  /* 2A   |                  */ ret
   } // end of method SurrogateForCyclicalReference::SetObjectData
 
-} // end of class System.Runtime.Serialization.SurrogateForCyclicalReference
+} // end of class BalthasarIL.Serialization.SurrogateForCyclicalReference
 
-.class /*0200000D*/ interface public abstract auto ansi beforefieldinit System.Runtime.Serialization.IFormatter
+.class /*0200000D*/ interface public abstract auto ansi beforefieldinit BalthasarIL.Serialization.IFormatter
 {
   .custom /*0C000027:0A000018*/ instance void [System.Private.CoreLib/*23000001*/]System.Runtime.CompilerServices.NullableContextAttribute/*01000019*/::.ctor(uint8) /* 0A000018 */ = ( 01 00 02 00 00 ) 
   .custom /*0C000028:0A00002E*/ instance void [System.Private.CoreLib/*23000001*/]System.ObsoleteAttribute/*0100002C*/::.ctor(string) /* 0A00002E */ = ( 01 00 7A 42 69 6E 61 72 79 46 6F 72 6D 61 74 74   // ..zBinaryFormatt
@@ -8960,7 +8960,7 @@
   } // end of method IFormatter::Serialize
 
   .method /*060000A3*/ public hidebysig newslot specialname abstract virtual 
-          instance class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ 
+          instance class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ 
           get_SurrogateSelector() cil managed
   // SIG: 20 00 12 3C
   {
@@ -8968,14 +8968,14 @@
   } // end of method IFormatter::get_SurrogateSelector
 
   .method /*060000A4*/ public hidebysig newslot specialname abstract virtual 
-          instance void  set_SurrogateSelector(class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ 'value') cil managed
+          instance void  set_SurrogateSelector(class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ 'value') cil managed
   // SIG: 20 01 01 12 3C
   {
     // 方法在 RVA 0x0 处开始
   } // end of method IFormatter::set_SurrogateSelector
 
   .method /*060000A5*/ public hidebysig newslot specialname abstract virtual 
-          instance class System.Runtime.Serialization.SerializationBinder/*0200001B*/ 
+          instance class BalthasarIL.Serialization.SerializationBinder/*0200001B*/ 
           get_Binder() cil managed
   // SIG: 20 00 12 6C
   {
@@ -8983,7 +8983,7 @@
   } // end of method IFormatter::get_Binder
 
   .method /*060000A6*/ public hidebysig newslot specialname abstract virtual 
-          instance void  set_Binder(class System.Runtime.Serialization.SerializationBinder/*0200001B*/ 'value') cil managed
+          instance void  set_Binder(class BalthasarIL.Serialization.SerializationBinder/*0200001B*/ 'value') cil managed
   // SIG: 20 01 01 12 6C
   {
     // 方法在 RVA 0x0 处开始
@@ -9004,27 +9004,27 @@
     // 方法在 RVA 0x0 处开始
   } // end of method IFormatter::set_Context
 
-  .property /*17000047*/ instance class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/
+  .property /*17000047*/ instance class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/
           SurrogateSelector()
   {
-    .get instance class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ System.Runtime.Serialization.IFormatter/*0200000D*/::get_SurrogateSelector() /* 060000A3 */
-    .set instance void System.Runtime.Serialization.IFormatter/*0200000D*/::set_SurrogateSelector(class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/) /* 060000A4 */
+    .get instance class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.Serialization.IFormatter/*0200000D*/::get_SurrogateSelector() /* 060000A3 */
+    .set instance void BalthasarIL.Serialization.IFormatter/*0200000D*/::set_SurrogateSelector(class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/) /* 060000A4 */
   } // end of property IFormatter::SurrogateSelector
-  .property /*17000048*/ instance class System.Runtime.Serialization.SerializationBinder/*0200001B*/
+  .property /*17000048*/ instance class BalthasarIL.Serialization.SerializationBinder/*0200001B*/
           Binder()
   {
-    .get instance class System.Runtime.Serialization.SerializationBinder/*0200001B*/ System.Runtime.Serialization.IFormatter/*0200000D*/::get_Binder() /* 060000A5 */
-    .set instance void System.Runtime.Serialization.IFormatter/*0200000D*/::set_Binder(class System.Runtime.Serialization.SerializationBinder/*0200001B*/) /* 060000A6 */
+    .get instance class BalthasarIL.Serialization.SerializationBinder/*0200001B*/ BalthasarIL.Serialization.IFormatter/*0200000D*/::get_Binder() /* 060000A5 */
+    .set instance void BalthasarIL.Serialization.IFormatter/*0200000D*/::set_Binder(class BalthasarIL.Serialization.SerializationBinder/*0200001B*/) /* 060000A6 */
   } // end of property IFormatter::Binder
   .property /*17000049*/ instance valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/
           Context()
   {
-    .get instance valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ System.Runtime.Serialization.IFormatter/*0200000D*/::get_Context() /* 060000A7 */
-    .set instance void System.Runtime.Serialization.IFormatter/*0200000D*/::set_Context(valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/) /* 060000A8 */
+    .get instance valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ BalthasarIL.Serialization.IFormatter/*0200000D*/::get_Context() /* 060000A7 */
+    .set instance void BalthasarIL.Serialization.IFormatter/*0200000D*/::set_Context(valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/) /* 060000A8 */
   } // end of property IFormatter::Context
-} // end of class System.Runtime.Serialization.IFormatter
+} // end of class BalthasarIL.Serialization.IFormatter
 
-.class /*0200000E*/ interface public abstract auto ansi beforefieldinit System.Runtime.Serialization.ISerializationSurrogate
+.class /*0200000E*/ interface public abstract auto ansi beforefieldinit BalthasarIL.Serialization.ISerializationSurrogate
 {
   .custom /*0C000029:0A000018*/ instance void [System.Private.CoreLib/*23000001*/]System.Runtime.CompilerServices.NullableContextAttribute/*01000019*/::.ctor(uint8) /* 0A000018 */ = ( 01 00 01 00 00 ) 
   .custom /*0C00002A:0A00002E*/ instance void [System.Private.CoreLib/*23000001*/]System.ObsoleteAttribute/*0100002C*/::.ctor(string) /* 0A00002E */ = ( 01 00 41 46 6F 72 6D 61 74 74 65 72 2D 62 61 73   // ..AFormatter-bas
@@ -9049,7 +9049,7 @@
           instance object  SetObjectData(object obj,
                                          class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationInfo/*01000044*/ info,
                                          valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ context,
-                                         class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ selector) cil managed
+                                         class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ selector) cil managed
   // SIG: 20 04 1C 1C 12 81 11 11 41 12 3C
   {
     .param [4]/*0800009B*/ 
@@ -9057,9 +9057,9 @@
     // 方法在 RVA 0x0 处开始
   } // end of method ISerializationSurrogate::SetObjectData
 
-} // end of class System.Runtime.Serialization.ISerializationSurrogate
+} // end of class BalthasarIL.Serialization.ISerializationSurrogate
 
-.class /*0200000F*/ interface public abstract auto ansi beforefieldinit System.Runtime.Serialization.ISurrogateSelector
+.class /*0200000F*/ interface public abstract auto ansi beforefieldinit BalthasarIL.Serialization.ISurrogateSelector
 {
   .custom /*0C00002B:0A000018*/ instance void [System.Private.CoreLib/*23000001*/]System.Runtime.CompilerServices.NullableContextAttribute/*01000019*/::.ctor(uint8) /* 0A000018 */ = ( 01 00 01 00 00 ) 
   .custom /*0C00002C:0A00002E*/ instance void [System.Private.CoreLib/*23000001*/]System.ObsoleteAttribute/*0100002C*/::.ctor(string) /* 0A00002E */ = ( 01 00 41 46 6F 72 6D 61 74 74 65 72 2D 62 61 73   // ..AFormatter-bas
@@ -9072,17 +9072,17 @@
                                                                                                                                                          70 73 3A 2F 2F 61 6B 61 2E 6D 73 2F 64 6F 74 6E   // ps://aka.ms/dotn
                                                                                                                                                          65 74 2D 77 61 72 6E 69 6E 67 73 2F 7B 30 7D )    // et-warnings/{0}
   .method /*060000AB*/ public hidebysig newslot abstract virtual 
-          instance void  ChainSelector(class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ selector) cil managed
+          instance void  ChainSelector(class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ selector) cil managed
   // SIG: 20 01 01 12 3C
   {
     // 方法在 RVA 0x0 处开始
   } // end of method ISurrogateSelector::ChainSelector
 
   .method /*060000AC*/ public hidebysig newslot abstract virtual 
-          instance class System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ 
+          instance class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ 
           GetSurrogate(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ 'type',
                        valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ context,
-                       [out] class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/& selector) cil managed
+                       [out] class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/& selector) cil managed
   // SIG: 20 03 12 38 12 1D 11 41 10 12 3C
   {
     .param [0]/*0800009D*/ 
@@ -9091,7 +9091,7 @@
   } // end of method ISurrogateSelector::GetSurrogate
 
   .method /*060000AD*/ public hidebysig newslot abstract virtual 
-          instance class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ 
+          instance class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ 
           GetNextSelector() cil managed
   // SIG: 20 00 12 3C
   {
@@ -9099,9 +9099,9 @@
     // 方法在 RVA 0x0 处开始
   } // end of method ISurrogateSelector::GetNextSelector
 
-} // end of class System.Runtime.Serialization.ISurrogateSelector
+} // end of class BalthasarIL.Serialization.ISurrogateSelector
 
-.class /*02000010*/ private auto ansi sealed beforefieldinit System.Runtime.Serialization.MemberHolder
+.class /*02000010*/ private auto ansi sealed beforefieldinit BalthasarIL.Serialization.MemberHolder
        extends [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/
 {
   .field /*0400000C*/ assembly initonly class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ _memberType
@@ -9121,10 +9121,10 @@
     IL_0001:  /* 28   | (0A)000011       */ call       instance void [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/::.ctor() /* 0A000011 */
     IL_0006:  /* 02   |                  */ ldarg.0
     IL_0007:  /* 03   |                  */ ldarg.1
-    IL_0008:  /* 7D   | (04)00000C       */ stfld      class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ System.Runtime.Serialization.MemberHolder/*02000010*/::_memberType /* 0400000C */
+    IL_0008:  /* 7D   | (04)00000C       */ stfld      class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ BalthasarIL.Serialization.MemberHolder/*02000010*/::_memberType /* 0400000C */
     IL_000d:  /* 02   |                  */ ldarg.0
     IL_000e:  /* 04   |                  */ ldarg.2
-    IL_000f:  /* 7D   | (04)00000D       */ stfld      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ System.Runtime.Serialization.MemberHolder/*02000010*/::_context /* 0400000D */
+    IL_000f:  /* 7D   | (04)00000D       */ stfld      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ BalthasarIL.Serialization.MemberHolder/*02000010*/::_context /* 0400000D */
     IL_0014:  /* 2A   |                  */ ret
   } // end of method MemberHolder::.ctor
 
@@ -9136,7 +9136,7 @@
     // 代码大小       12 (0xc)
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)00000C       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ System.Runtime.Serialization.MemberHolder/*02000010*/::_memberType /* 0400000C */
+    IL_0001:  /* 7B   | (04)00000C       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ BalthasarIL.Serialization.MemberHolder/*02000010*/::_memberType /* 0400000C */
     IL_0006:  /* 6F   | (0A)00006C       */ callvirt   instance int32 [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/::GetHashCode() /* 0A00006C */
     IL_000b:  /* 2A   |                  */ ret
   } // end of method MemberHolder::GetHashCode
@@ -9150,24 +9150,24 @@
     // 方法在 RVA 0x21530 处开始
     // 代码大小       51 (0x33)
     .maxstack  2
-    .locals /*11000015*/ (class System.Runtime.Serialization.MemberHolder/*02000010*/ V_0)
+    .locals /*11000015*/ (class BalthasarIL.Serialization.MemberHolder/*02000010*/ V_0)
     IL_0000:  /* 03   |                  */ ldarg.1
-    IL_0001:  /* 75   | (02)000010       */ isinst     System.Runtime.Serialization.MemberHolder/*02000010*/
+    IL_0001:  /* 75   | (02)000010       */ isinst     BalthasarIL.Serialization.MemberHolder/*02000010*/
     IL_0006:  /* 0A   |                  */ stloc.0
     IL_0007:  /* 06   |                  */ ldloc.0
     IL_0008:  /* 2C   | 27               */ brfalse.s  IL_0031
 
     IL_000a:  /* 06   |                  */ ldloc.0
-    IL_000b:  /* 7B   | (04)00000C       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ System.Runtime.Serialization.MemberHolder/*02000010*/::_memberType /* 0400000C */
+    IL_000b:  /* 7B   | (04)00000C       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ BalthasarIL.Serialization.MemberHolder/*02000010*/::_memberType /* 0400000C */
     IL_0010:  /* 02   |                  */ ldarg.0
-    IL_0011:  /* 7B   | (04)00000C       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ System.Runtime.Serialization.MemberHolder/*02000010*/::_memberType /* 0400000C */
+    IL_0011:  /* 7B   | (04)00000C       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ BalthasarIL.Serialization.MemberHolder/*02000010*/::_memberType /* 0400000C */
     IL_0016:  /* 33   | 19               */ bne.un.s   IL_0031
 
     IL_0018:  /* 06   |                  */ ldloc.0
-    IL_0019:  /* 7C   | (04)00000D       */ ldflda     valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ System.Runtime.Serialization.MemberHolder/*02000010*/::_context /* 0400000D */
+    IL_0019:  /* 7C   | (04)00000D       */ ldflda     valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ BalthasarIL.Serialization.MemberHolder/*02000010*/::_context /* 0400000D */
     IL_001e:  /* 28   | (0A)00006D       */ call       instance valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContextStates/*0100003C*/ [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/::get_State() /* 0A00006D */
     IL_0023:  /* 02   |                  */ ldarg.0
-    IL_0024:  /* 7C   | (04)00000D       */ ldflda     valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ System.Runtime.Serialization.MemberHolder/*02000010*/::_context /* 0400000D */
+    IL_0024:  /* 7C   | (04)00000D       */ ldflda     valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ BalthasarIL.Serialization.MemberHolder/*02000010*/::_context /* 0400000D */
     IL_0029:  /* 28   | (0A)00006D       */ call       instance valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContextStates/*0100003C*/ [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/::get_State() /* 0A00006D */
     IL_002e:  /* FE01 |                  */ ceq
     IL_0030:  /* 2A   |                  */ ret
@@ -9176,9 +9176,9 @@
     IL_0032:  /* 2A   |                  */ ret
   } // end of method MemberHolder::Equals
 
-} // end of class System.Runtime.Serialization.MemberHolder
+} // end of class BalthasarIL.Serialization.MemberHolder
 
-.class /*02000011*/ public auto ansi beforefieldinit System.Runtime.Serialization.ObjectIDGenerator
+.class /*02000011*/ public auto ansi beforefieldinit BalthasarIL.Serialization.ObjectIDGenerator
        extends [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/
 {
   .custom /*0C00002D:0A000018*/ instance void [System.Private.CoreLib/*23000001*/]System.Runtime.CompilerServices.NullableContextAttribute/*01000019*/::.ctor(uint8) /* 0A000018 */ = ( 01 00 01 00 00 ) 
@@ -9207,24 +9207,24 @@
     IL_0001:  /* 28   | (0A)000011       */ call       instance void [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/::.ctor() /* 0A000011 */
     IL_0006:  /* 02   |                  */ ldarg.0
     IL_0007:  /* 17   |                  */ ldc.i4.1
-    IL_0008:  /* 7D   | (04)00000E       */ stfld      int32 System.Runtime.Serialization.ObjectIDGenerator/*02000011*/::_currentCount /* 0400000E */
+    IL_0008:  /* 7D   | (04)00000E       */ stfld      int32 BalthasarIL.Serialization.ObjectIDGenerator/*02000011*/::_currentCount /* 0400000E */
     IL_000d:  /* 02   |                  */ ldarg.0
     IL_000e:  /* 19   |                  */ ldc.i4.3
-    IL_000f:  /* 7D   | (04)00000F       */ stfld      int32 System.Runtime.Serialization.ObjectIDGenerator/*02000011*/::_currentSize /* 0400000F */
+    IL_000f:  /* 7D   | (04)00000F       */ stfld      int32 BalthasarIL.Serialization.ObjectIDGenerator/*02000011*/::_currentSize /* 0400000F */
     IL_0014:  /* 02   |                  */ ldarg.0
     IL_0015:  /* 02   |                  */ ldarg.0
-    IL_0016:  /* 7B   | (04)00000F       */ ldfld      int32 System.Runtime.Serialization.ObjectIDGenerator/*02000011*/::_currentSize /* 0400000F */
+    IL_0016:  /* 7B   | (04)00000F       */ ldfld      int32 BalthasarIL.Serialization.ObjectIDGenerator/*02000011*/::_currentSize /* 0400000F */
     IL_001b:  /* 1A   |                  */ ldc.i4.4
     IL_001c:  /* 5A   |                  */ mul
     IL_001d:  /* 8D   | (01)000024       */ newarr     [System.Private.CoreLib/*23000001*/]System.Int64/*01000024*/
-    IL_0022:  /* 7D   | (04)000010       */ stfld      int64[] System.Runtime.Serialization.ObjectIDGenerator/*02000011*/::_ids /* 04000010 */
+    IL_0022:  /* 7D   | (04)000010       */ stfld      int64[] BalthasarIL.Serialization.ObjectIDGenerator/*02000011*/::_ids /* 04000010 */
     IL_0027:  /* 02   |                  */ ldarg.0
     IL_0028:  /* 02   |                  */ ldarg.0
-    IL_0029:  /* 7B   | (04)00000F       */ ldfld      int32 System.Runtime.Serialization.ObjectIDGenerator/*02000011*/::_currentSize /* 0400000F */
+    IL_0029:  /* 7B   | (04)00000F       */ ldfld      int32 BalthasarIL.Serialization.ObjectIDGenerator/*02000011*/::_currentSize /* 0400000F */
     IL_002e:  /* 1A   |                  */ ldc.i4.4
     IL_002f:  /* 5A   |                  */ mul
     IL_0030:  /* 8D   | (01)000001       */ newarr     [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/
-    IL_0035:  /* 7D   | (04)000011       */ stfld      object[] System.Runtime.Serialization.ObjectIDGenerator/*02000011*/::_objs /* 04000011 */
+    IL_0035:  /* 7D   | (04)000011       */ stfld      object[] BalthasarIL.Serialization.ObjectIDGenerator/*02000011*/::_objs /* 04000011 */
     IL_003a:  /* 2A   |                  */ ret
   } // end of method ObjectIDGenerator::.ctor
 
@@ -9248,7 +9248,7 @@
     IL_0009:  /* 20   | FFFFFF7F         */ ldc.i4     0x7fffffff
     IL_000e:  /* 5F   |                  */ and
     IL_000f:  /* 02   |                  */ ldarg.0
-    IL_0010:  /* 7B   | (04)00000F       */ ldfld      int32 System.Runtime.Serialization.ObjectIDGenerator/*02000011*/::_currentSize /* 0400000F */
+    IL_0010:  /* 7B   | (04)00000F       */ ldfld      int32 BalthasarIL.Serialization.ObjectIDGenerator/*02000011*/::_currentSize /* 0400000F */
     IL_0015:  /* 18   |                  */ ldc.i4.2
     IL_0016:  /* 59   |                  */ sub
     IL_0017:  /* 5D   |                  */ rem
@@ -9258,7 +9258,7 @@
     IL_001b:  /* 20   | FFFFFF7F         */ ldc.i4     0x7fffffff
     IL_0020:  /* 5F   |                  */ and
     IL_0021:  /* 02   |                  */ ldarg.0
-    IL_0022:  /* 7B   | (04)00000F       */ ldfld      int32 System.Runtime.Serialization.ObjectIDGenerator/*02000011*/::_currentSize /* 0400000F */
+    IL_0022:  /* 7B   | (04)00000F       */ ldfld      int32 BalthasarIL.Serialization.ObjectIDGenerator/*02000011*/::_currentSize /* 0400000F */
     IL_0027:  /* 5D   |                  */ rem
     IL_0028:  /* 1A   |                  */ ldc.i4.4
     IL_0029:  /* 5A   |                  */ mul
@@ -9268,7 +9268,7 @@
     IL_002d:  /* 2B   | 23               */ br.s       IL_0052
 
     IL_002f:  /* 02   |                  */ ldarg.0
-    IL_0030:  /* 7B   | (04)000011       */ ldfld      object[] System.Runtime.Serialization.ObjectIDGenerator/*02000011*/::_objs /* 04000011 */
+    IL_0030:  /* 7B   | (04)000011       */ ldfld      object[] BalthasarIL.Serialization.ObjectIDGenerator/*02000011*/::_objs /* 04000011 */
     IL_0035:  /* 09   |                  */ ldloc.3
     IL_0036:  /* 9A   |                  */ ldelem.ref
     IL_0037:  /* 2D   | 05               */ brtrue.s   IL_003e
@@ -9280,7 +9280,7 @@
     IL_003d:  /* 2A   |                  */ ret
 
     IL_003e:  /* 02   |                  */ ldarg.0
-    IL_003f:  /* 7B   | (04)000011       */ ldfld      object[] System.Runtime.Serialization.ObjectIDGenerator/*02000011*/::_objs /* 04000011 */
+    IL_003f:  /* 7B   | (04)000011       */ ldfld      object[] BalthasarIL.Serialization.ObjectIDGenerator/*02000011*/::_objs /* 04000011 */
     IL_0044:  /* 09   |                  */ ldloc.3
     IL_0045:  /* 9A   |                  */ ldelem.ref
     IL_0046:  /* 03   |                  */ ldarg.1
@@ -9328,40 +9328,40 @@
     IL_000b:  /* 02   |                  */ ldarg.0
     IL_000c:  /* 03   |                  */ ldarg.1
     IL_000d:  /* 12   | 00               */ ldloca.s   V_0
-    IL_000f:  /* 28   | (06)0000B2       */ call       instance int32 System.Runtime.Serialization.ObjectIDGenerator/*02000011*/::FindElement(object,
+    IL_000f:  /* 28   | (06)0000B2       */ call       instance int32 BalthasarIL.Serialization.ObjectIDGenerator/*02000011*/::FindElement(object,
                                                                                                                                               bool&) /* 060000B2 */
     IL_0014:  /* 0B   |                  */ stloc.1
     IL_0015:  /* 06   |                  */ ldloc.0
     IL_0016:  /* 2D   | 46               */ brtrue.s   IL_005e
 
     IL_0018:  /* 02   |                  */ ldarg.0
-    IL_0019:  /* 7B   | (04)000011       */ ldfld      object[] System.Runtime.Serialization.ObjectIDGenerator/*02000011*/::_objs /* 04000011 */
+    IL_0019:  /* 7B   | (04)000011       */ ldfld      object[] BalthasarIL.Serialization.ObjectIDGenerator/*02000011*/::_objs /* 04000011 */
     IL_001e:  /* 07   |                  */ ldloc.1
     IL_001f:  /* 03   |                  */ ldarg.1
     IL_0020:  /* A2   |                  */ stelem.ref
     IL_0021:  /* 02   |                  */ ldarg.0
-    IL_0022:  /* 7B   | (04)000010       */ ldfld      int64[] System.Runtime.Serialization.ObjectIDGenerator/*02000011*/::_ids /* 04000010 */
+    IL_0022:  /* 7B   | (04)000010       */ ldfld      int64[] BalthasarIL.Serialization.ObjectIDGenerator/*02000011*/::_ids /* 04000010 */
     IL_0027:  /* 07   |                  */ ldloc.1
     IL_0028:  /* 02   |                  */ ldarg.0
     IL_0029:  /* 02   |                  */ ldarg.0
-    IL_002a:  /* 7B   | (04)00000E       */ ldfld      int32 System.Runtime.Serialization.ObjectIDGenerator/*02000011*/::_currentCount /* 0400000E */
+    IL_002a:  /* 7B   | (04)00000E       */ ldfld      int32 BalthasarIL.Serialization.ObjectIDGenerator/*02000011*/::_currentCount /* 0400000E */
     IL_002f:  /* 0D   |                  */ stloc.3
     IL_0030:  /* 09   |                  */ ldloc.3
     IL_0031:  /* 17   |                  */ ldc.i4.1
     IL_0032:  /* 58   |                  */ add
-    IL_0033:  /* 7D   | (04)00000E       */ stfld      int32 System.Runtime.Serialization.ObjectIDGenerator/*02000011*/::_currentCount /* 0400000E */
+    IL_0033:  /* 7D   | (04)00000E       */ stfld      int32 BalthasarIL.Serialization.ObjectIDGenerator/*02000011*/::_currentCount /* 0400000E */
     IL_0038:  /* 09   |                  */ ldloc.3
     IL_0039:  /* 6A   |                  */ conv.i8
     IL_003a:  /* 9F   |                  */ stelem.i8
     IL_003b:  /* 02   |                  */ ldarg.0
-    IL_003c:  /* 7B   | (04)000010       */ ldfld      int64[] System.Runtime.Serialization.ObjectIDGenerator/*02000011*/::_ids /* 04000010 */
+    IL_003c:  /* 7B   | (04)000010       */ ldfld      int64[] BalthasarIL.Serialization.ObjectIDGenerator/*02000011*/::_ids /* 04000010 */
     IL_0041:  /* 07   |                  */ ldloc.1
     IL_0042:  /* 96   |                  */ ldelem.i8
     IL_0043:  /* 0C   |                  */ stloc.2
     IL_0044:  /* 02   |                  */ ldarg.0
-    IL_0045:  /* 7B   | (04)00000E       */ ldfld      int32 System.Runtime.Serialization.ObjectIDGenerator/*02000011*/::_currentCount /* 0400000E */
+    IL_0045:  /* 7B   | (04)00000E       */ ldfld      int32 BalthasarIL.Serialization.ObjectIDGenerator/*02000011*/::_currentCount /* 0400000E */
     IL_004a:  /* 02   |                  */ ldarg.0
-    IL_004b:  /* 7B   | (04)00000F       */ ldfld      int32 System.Runtime.Serialization.ObjectIDGenerator/*02000011*/::_currentSize /* 0400000F */
+    IL_004b:  /* 7B   | (04)00000F       */ ldfld      int32 BalthasarIL.Serialization.ObjectIDGenerator/*02000011*/::_currentSize /* 0400000F */
     IL_0050:  /* 1A   |                  */ ldc.i4.4
     IL_0051:  /* 5A   |                  */ mul
     IL_0052:  /* 18   |                  */ ldc.i4.2
@@ -9369,11 +9369,11 @@
     IL_0054:  /* 31   | 11               */ ble.s      IL_0067
 
     IL_0056:  /* 02   |                  */ ldarg.0
-    IL_0057:  /* 28   | (06)0000B5       */ call       instance void System.Runtime.Serialization.ObjectIDGenerator/*02000011*/::Rehash() /* 060000B5 */
+    IL_0057:  /* 28   | (06)0000B5       */ call       instance void BalthasarIL.Serialization.ObjectIDGenerator/*02000011*/::Rehash() /* 060000B5 */
     IL_005c:  /* 2B   | 09               */ br.s       IL_0067
 
     IL_005e:  /* 02   |                  */ ldarg.0
-    IL_005f:  /* 7B   | (04)000010       */ ldfld      int64[] System.Runtime.Serialization.ObjectIDGenerator/*02000011*/::_ids /* 04000010 */
+    IL_005f:  /* 7B   | (04)000010       */ ldfld      int64[] BalthasarIL.Serialization.ObjectIDGenerator/*02000011*/::_ids /* 04000010 */
     IL_0064:  /* 07   |                  */ ldloc.1
     IL_0065:  /* 96   |                  */ ldelem.i8
     IL_0066:  /* 0C   |                  */ stloc.2
@@ -9403,7 +9403,7 @@
     IL_000b:  /* 02   |                  */ ldarg.0
     IL_000c:  /* 03   |                  */ ldarg.1
     IL_000d:  /* 12   | 00               */ ldloca.s   V_0
-    IL_000f:  /* 28   | (06)0000B2       */ call       instance int32 System.Runtime.Serialization.ObjectIDGenerator/*02000011*/::FindElement(object,
+    IL_000f:  /* 28   | (06)0000B2       */ call       instance int32 BalthasarIL.Serialization.ObjectIDGenerator/*02000011*/::FindElement(object,
                                                                                                                                               bool&) /* 060000B2 */
     IL_0014:  /* 0B   |                  */ stloc.1
     IL_0015:  /* 06   |                  */ ldloc.0
@@ -9413,7 +9413,7 @@
     IL_0019:  /* 16   |                  */ ldc.i4.0
     IL_001a:  /* 52   |                  */ stind.i1
     IL_001b:  /* 02   |                  */ ldarg.0
-    IL_001c:  /* 7B   | (04)000010       */ ldfld      int64[] System.Runtime.Serialization.ObjectIDGenerator/*02000011*/::_ids /* 04000010 */
+    IL_001c:  /* 7B   | (04)000010       */ ldfld      int64[] BalthasarIL.Serialization.ObjectIDGenerator/*02000011*/::_ids /* 04000010 */
     IL_0021:  /* 07   |                  */ ldloc.1
     IL_0022:  /* 96   |                  */ ldelem.i8
     IL_0023:  /* 2A   |                  */ ret
@@ -9443,7 +9443,7 @@
              int32 V_7,
              bool V_8)
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)00000F       */ ldfld      int32 System.Runtime.Serialization.ObjectIDGenerator/*02000011*/::_currentSize /* 0400000F */
+    IL_0001:  /* 7B   | (04)00000F       */ ldfld      int32 BalthasarIL.Serialization.ObjectIDGenerator/*02000011*/::_currentSize /* 0400000F */
     IL_0006:  /* 0A   |                  */ stloc.0
     IL_0007:  /* 06   |                  */ ldloc.0
     IL_0008:  /* 28   | (06)000050       */ call       int32 System.Collections.HashHelpers/*02000005*/::ExpandPrime(int32) /* 06000050 */
@@ -9453,36 +9453,36 @@
     IL_0010:  /* 33   | 0B               */ bne.un.s   IL_001d
 
     IL_0012:  /* 28   | (06)000012       */ call       string System.SR/*02000004*/::get_Serialization_TooManyElements() /* 06000012 */
-    IL_0017:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0017:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_001c:  /* 7A   |                  */ throw
 
     IL_001d:  /* 02   |                  */ ldarg.0
     IL_001e:  /* 07   |                  */ ldloc.1
-    IL_001f:  /* 7D   | (04)00000F       */ stfld      int32 System.Runtime.Serialization.ObjectIDGenerator/*02000011*/::_currentSize /* 0400000F */
+    IL_001f:  /* 7D   | (04)00000F       */ stfld      int32 BalthasarIL.Serialization.ObjectIDGenerator/*02000011*/::_currentSize /* 0400000F */
     IL_0024:  /* 02   |                  */ ldarg.0
-    IL_0025:  /* 7B   | (04)00000F       */ ldfld      int32 System.Runtime.Serialization.ObjectIDGenerator/*02000011*/::_currentSize /* 0400000F */
+    IL_0025:  /* 7B   | (04)00000F       */ ldfld      int32 BalthasarIL.Serialization.ObjectIDGenerator/*02000011*/::_currentSize /* 0400000F */
     IL_002a:  /* 1A   |                  */ ldc.i4.4
     IL_002b:  /* 5A   |                  */ mul
     IL_002c:  /* 8D   | (01)000024       */ newarr     [System.Private.CoreLib/*23000001*/]System.Int64/*01000024*/
     IL_0031:  /* 0C   |                  */ stloc.2
     IL_0032:  /* 02   |                  */ ldarg.0
-    IL_0033:  /* 7B   | (04)00000F       */ ldfld      int32 System.Runtime.Serialization.ObjectIDGenerator/*02000011*/::_currentSize /* 0400000F */
+    IL_0033:  /* 7B   | (04)00000F       */ ldfld      int32 BalthasarIL.Serialization.ObjectIDGenerator/*02000011*/::_currentSize /* 0400000F */
     IL_0038:  /* 1A   |                  */ ldc.i4.4
     IL_0039:  /* 5A   |                  */ mul
     IL_003a:  /* 8D   | (01)000001       */ newarr     [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/
     IL_003f:  /* 0D   |                  */ stloc.3
     IL_0040:  /* 02   |                  */ ldarg.0
-    IL_0041:  /* 7B   | (04)000010       */ ldfld      int64[] System.Runtime.Serialization.ObjectIDGenerator/*02000011*/::_ids /* 04000010 */
+    IL_0041:  /* 7B   | (04)000010       */ ldfld      int64[] BalthasarIL.Serialization.ObjectIDGenerator/*02000011*/::_ids /* 04000010 */
     IL_0046:  /* 13   | 04               */ stloc.s    V_4
     IL_0048:  /* 02   |                  */ ldarg.0
-    IL_0049:  /* 7B   | (04)000011       */ ldfld      object[] System.Runtime.Serialization.ObjectIDGenerator/*02000011*/::_objs /* 04000011 */
+    IL_0049:  /* 7B   | (04)000011       */ ldfld      object[] BalthasarIL.Serialization.ObjectIDGenerator/*02000011*/::_objs /* 04000011 */
     IL_004e:  /* 13   | 05               */ stloc.s    V_5
     IL_0050:  /* 02   |                  */ ldarg.0
     IL_0051:  /* 08   |                  */ ldloc.2
-    IL_0052:  /* 7D   | (04)000010       */ stfld      int64[] System.Runtime.Serialization.ObjectIDGenerator/*02000011*/::_ids /* 04000010 */
+    IL_0052:  /* 7D   | (04)000010       */ stfld      int64[] BalthasarIL.Serialization.ObjectIDGenerator/*02000011*/::_ids /* 04000010 */
     IL_0057:  /* 02   |                  */ ldarg.0
     IL_0058:  /* 09   |                  */ ldloc.3
-    IL_0059:  /* 7D   | (04)000011       */ stfld      object[] System.Runtime.Serialization.ObjectIDGenerator/*02000011*/::_objs /* 04000011 */
+    IL_0059:  /* 7D   | (04)000011       */ stfld      object[] BalthasarIL.Serialization.ObjectIDGenerator/*02000011*/::_objs /* 04000011 */
     IL_005e:  /* 16   |                  */ ldc.i4.0
     IL_005f:  /* 13   | 06               */ stloc.s    V_6
     IL_0061:  /* 2B   | 38               */ br.s       IL_009b
@@ -9497,18 +9497,18 @@
     IL_006d:  /* 11   | 06               */ ldloc.s    V_6
     IL_006f:  /* 9A   |                  */ ldelem.ref
     IL_0070:  /* 12   | 08               */ ldloca.s   V_8
-    IL_0072:  /* 28   | (06)0000B2       */ call       instance int32 System.Runtime.Serialization.ObjectIDGenerator/*02000011*/::FindElement(object,
+    IL_0072:  /* 28   | (06)0000B2       */ call       instance int32 BalthasarIL.Serialization.ObjectIDGenerator/*02000011*/::FindElement(object,
                                                                                                                                               bool&) /* 060000B2 */
     IL_0077:  /* 13   | 07               */ stloc.s    V_7
     IL_0079:  /* 02   |                  */ ldarg.0
-    IL_007a:  /* 7B   | (04)000011       */ ldfld      object[] System.Runtime.Serialization.ObjectIDGenerator/*02000011*/::_objs /* 04000011 */
+    IL_007a:  /* 7B   | (04)000011       */ ldfld      object[] BalthasarIL.Serialization.ObjectIDGenerator/*02000011*/::_objs /* 04000011 */
     IL_007f:  /* 11   | 07               */ ldloc.s    V_7
     IL_0081:  /* 11   | 05               */ ldloc.s    V_5
     IL_0083:  /* 11   | 06               */ ldloc.s    V_6
     IL_0085:  /* 9A   |                  */ ldelem.ref
     IL_0086:  /* A2   |                  */ stelem.ref
     IL_0087:  /* 02   |                  */ ldarg.0
-    IL_0088:  /* 7B   | (04)000010       */ ldfld      int64[] System.Runtime.Serialization.ObjectIDGenerator/*02000011*/::_ids /* 04000010 */
+    IL_0088:  /* 7B   | (04)000010       */ ldfld      int64[] BalthasarIL.Serialization.ObjectIDGenerator/*02000011*/::_ids /* 04000010 */
     IL_008d:  /* 11   | 07               */ ldloc.s    V_7
     IL_008f:  /* 11   | 04               */ ldloc.s    V_4
     IL_0091:  /* 11   | 06               */ ldloc.s    V_6
@@ -9527,9 +9527,9 @@
     IL_00a3:  /* 2A   |                  */ ret
   } // end of method ObjectIDGenerator::Rehash
 
-} // end of class System.Runtime.Serialization.ObjectIDGenerator
+} // end of class BalthasarIL.Serialization.ObjectIDGenerator
 
-.class /*02000012*/ public auto ansi beforefieldinit System.Runtime.Serialization.ObjectManager
+.class /*02000012*/ public auto ansi beforefieldinit BalthasarIL.Serialization.ObjectManager
        extends [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/
 {
   .custom /*0C000030:0A000018*/ instance void [System.Private.CoreLib/*23000001*/]System.Runtime.CompilerServices.NullableContextAttribute/*01000019*/::.ctor(uint8) /* 0A000018 */ = ( 01 00 01 00 00 ) 
@@ -9544,16 +9544,16 @@
                                                                                                                                                          70 73 3A 2F 2F 61 6B 61 2E 6D 73 2F 64 6F 74 6E   // ps://aka.ms/dotn
                                                                                                                                                          65 74 2D 77 61 72 6E 69 6E 67 73 2F 7B 30 7D )    // et-warnings/{0}
   .field /*04000012*/ private static initonly class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/ s_nullableValueField
-  .field /*04000013*/ private class System.Runtime.Serialization.DeserializationEventHandler/*02000006*/ _onDeserializationHandler
-  .field /*04000014*/ private class System.Runtime.Serialization.SerializationEventHandler/*02000007*/ _onDeserializedHandler
-  .field /*04000015*/ assembly class System.Runtime.Serialization.ObjectHolder/*02000013*/[] _objects
+  .field /*04000013*/ private class BalthasarIL.Serialization.DeserializationEventHandler/*02000006*/ _onDeserializationHandler
+  .field /*04000014*/ private class BalthasarIL.Serialization.SerializationEventHandler/*02000007*/ _onDeserializedHandler
+  .field /*04000015*/ assembly class BalthasarIL.Serialization.ObjectHolder/*02000013*/[] _objects
   .field /*04000016*/ assembly object _topObject
-  .field /*04000017*/ assembly class System.Runtime.Serialization.ObjectHolderList/*02000017*/ _specialFixupObjects
+  .field /*04000017*/ assembly class BalthasarIL.Serialization.ObjectHolderList/*02000017*/ _specialFixupObjects
   .field /*04000018*/ assembly int64 _fixupCount
-  .field /*04000019*/ assembly initonly class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ _selector
+  .field /*04000019*/ assembly initonly class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ _selector
   .field /*0400001A*/ assembly initonly valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ _context
   .method /*060000B6*/ public hidebysig specialname rtspecialname 
-          instance void  .ctor(class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ selector,
+          instance void  .ctor(class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ selector,
                                valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ context) cil managed
   // SIG: 20 02 01 12 3C 11 41
   {
@@ -9565,14 +9565,14 @@
     IL_0001:  /* 28   | (0A)000011       */ call       instance void [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/::.ctor() /* 0A000011 */
     IL_0006:  /* 02   |                  */ ldarg.0
     IL_0007:  /* 1F   | 10               */ ldc.i4.s   16
-    IL_0009:  /* 8D   | (02)000013       */ newarr     System.Runtime.Serialization.ObjectHolder/*02000013*/
-    IL_000e:  /* 7D   | (04)000015       */ stfld      class System.Runtime.Serialization.ObjectHolder/*02000013*/[] System.Runtime.Serialization.ObjectManager/*02000012*/::_objects /* 04000015 */
+    IL_0009:  /* 8D   | (02)000013       */ newarr     BalthasarIL.Serialization.ObjectHolder/*02000013*/
+    IL_000e:  /* 7D   | (04)000015       */ stfld      class BalthasarIL.Serialization.ObjectHolder/*02000013*/[] BalthasarIL.Serialization.ObjectManager/*02000012*/::_objects /* 04000015 */
     IL_0013:  /* 02   |                  */ ldarg.0
     IL_0014:  /* 03   |                  */ ldarg.1
-    IL_0015:  /* 7D   | (04)000019       */ stfld      class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ System.Runtime.Serialization.ObjectManager/*02000012*/::_selector /* 04000019 */
+    IL_0015:  /* 7D   | (04)000019       */ stfld      class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.Serialization.ObjectManager/*02000012*/::_selector /* 04000019 */
     IL_001a:  /* 02   |                  */ ldarg.0
     IL_001b:  /* 04   |                  */ ldarg.2
-    IL_001c:  /* 7D   | (04)00001A       */ stfld      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ System.Runtime.Serialization.ObjectManager/*02000012*/::_context /* 0400001A */
+    IL_001c:  /* 7D   | (04)00001A       */ stfld      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ BalthasarIL.Serialization.ObjectManager/*02000012*/::_context /* 0400001A */
     IL_0021:  /* 2A   |                  */ ret
   } // end of method ObjectManager::.ctor
 
@@ -9595,7 +9595,7 @@
     // 代码大小       7 (0x7)
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)000016       */ ldfld      object System.Runtime.Serialization.ObjectManager/*02000012*/::_topObject /* 04000016 */
+    IL_0001:  /* 7B   | (04)000016       */ ldfld      object BalthasarIL.Serialization.ObjectManager/*02000012*/::_topObject /* 04000016 */
     IL_0006:  /* 2A   |                  */ ret
   } // end of method ObjectManager::get_TopObject
 
@@ -9608,36 +9608,36 @@
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
     IL_0001:  /* 03   |                  */ ldarg.1
-    IL_0002:  /* 7D   | (04)000016       */ stfld      object System.Runtime.Serialization.ObjectManager/*02000012*/::_topObject /* 04000016 */
+    IL_0002:  /* 7D   | (04)000016       */ stfld      object BalthasarIL.Serialization.ObjectManager/*02000012*/::_topObject /* 04000016 */
     IL_0007:  /* 2A   |                  */ ret
   } // end of method ObjectManager::set_TopObject
 
   .method /*060000BA*/ assembly hidebysig specialname 
-          instance class System.Runtime.Serialization.ObjectHolderList/*02000017*/ 
+          instance class BalthasarIL.Serialization.ObjectHolderList/*02000017*/ 
           get_SpecialFixupObjects() cil managed
   // SIG: 20 00 12 5C
   {
     // 方法在 RVA 0x217b8 处开始
     // 代码大小       25 (0x19)
     .maxstack  3
-    .locals /*1100001A*/ (class System.Runtime.Serialization.ObjectHolderList/*02000017*/ V_0)
+    .locals /*1100001A*/ (class BalthasarIL.Serialization.ObjectHolderList/*02000017*/ V_0)
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)000017       */ ldfld      class System.Runtime.Serialization.ObjectHolderList/*02000017*/ System.Runtime.Serialization.ObjectManager/*02000012*/::_specialFixupObjects /* 04000017 */
+    IL_0001:  /* 7B   | (04)000017       */ ldfld      class BalthasarIL.Serialization.ObjectHolderList/*02000017*/ BalthasarIL.Serialization.ObjectManager/*02000012*/::_specialFixupObjects /* 04000017 */
     IL_0006:  /* 25   |                  */ dup
     IL_0007:  /* 2D   | 0F               */ brtrue.s   IL_0018
 
     IL_0009:  /* 26   |                  */ pop
     IL_000a:  /* 02   |                  */ ldarg.0
-    IL_000b:  /* 73   | (06)000110       */ newobj     instance void System.Runtime.Serialization.ObjectHolderList/*02000017*/::.ctor() /* 06000110 */
+    IL_000b:  /* 73   | (06)000110       */ newobj     instance void BalthasarIL.Serialization.ObjectHolderList/*02000017*/::.ctor() /* 06000110 */
     IL_0010:  /* 25   |                  */ dup
     IL_0011:  /* 0A   |                  */ stloc.0
-    IL_0012:  /* 7D   | (04)000017       */ stfld      class System.Runtime.Serialization.ObjectHolderList/*02000017*/ System.Runtime.Serialization.ObjectManager/*02000012*/::_specialFixupObjects /* 04000017 */
+    IL_0012:  /* 7D   | (04)000017       */ stfld      class BalthasarIL.Serialization.ObjectHolderList/*02000017*/ BalthasarIL.Serialization.ObjectManager/*02000012*/::_specialFixupObjects /* 04000017 */
     IL_0017:  /* 06   |                  */ ldloc.0
     IL_0018:  /* 2A   |                  */ ret
   } // end of method ObjectManager::get_SpecialFixupObjects
 
   .method /*060000BB*/ assembly hidebysig 
-          instance class System.Runtime.Serialization.ObjectHolder/*02000013*/ 
+          instance class BalthasarIL.Serialization.ObjectHolder/*02000013*/ 
           FindObjectHolder(int64 objectID) cil managed
   // SIG: 20 01 12 4C 0A
   {
@@ -9645,7 +9645,7 @@
     // 代码大小       57 (0x39)
     .maxstack  2
     .locals /*1100001B*/ (int32 V_0,
-             class System.Runtime.Serialization.ObjectHolder/*02000013*/ V_1)
+             class BalthasarIL.Serialization.ObjectHolder/*02000013*/ V_1)
     IL_0000:  /* 03   |                  */ ldarg.1
     IL_0001:  /* 20   | FFFF0F00         */ ldc.i4     0xfffff
     IL_0006:  /* 6A   |                  */ conv.i8
@@ -9654,7 +9654,7 @@
     IL_0009:  /* 0A   |                  */ stloc.0
     IL_000a:  /* 06   |                  */ ldloc.0
     IL_000b:  /* 02   |                  */ ldarg.0
-    IL_000c:  /* 7B   | (04)000015       */ ldfld      class System.Runtime.Serialization.ObjectHolder/*02000013*/[] System.Runtime.Serialization.ObjectManager/*02000012*/::_objects /* 04000015 */
+    IL_000c:  /* 7B   | (04)000015       */ ldfld      class BalthasarIL.Serialization.ObjectHolder/*02000013*/[] BalthasarIL.Serialization.ObjectManager/*02000012*/::_objects /* 04000015 */
     IL_0011:  /* 8E   |                  */ ldlen
     IL_0012:  /* 69   |                  */ conv.i4
     IL_0013:  /* 32   | 02               */ blt.s      IL_0017
@@ -9663,14 +9663,14 @@
     IL_0016:  /* 2A   |                  */ ret
 
     IL_0017:  /* 02   |                  */ ldarg.0
-    IL_0018:  /* 7B   | (04)000015       */ ldfld      class System.Runtime.Serialization.ObjectHolder/*02000013*/[] System.Runtime.Serialization.ObjectManager/*02000012*/::_objects /* 04000015 */
+    IL_0018:  /* 7B   | (04)000015       */ ldfld      class BalthasarIL.Serialization.ObjectHolder/*02000013*/[] BalthasarIL.Serialization.ObjectManager/*02000012*/::_objects /* 04000015 */
     IL_001d:  /* 06   |                  */ ldloc.0
     IL_001e:  /* 9A   |                  */ ldelem.ref
     IL_001f:  /* 0B   |                  */ stloc.1
     IL_0020:  /* 2B   | 12               */ br.s       IL_0034
 
     IL_0022:  /* 07   |                  */ ldloc.1
-    IL_0023:  /* 7B   | (04)00001C       */ ldfld      int64 System.Runtime.Serialization.ObjectHolder/*02000013*/::_id /* 0400001C */
+    IL_0023:  /* 7B   | (04)00001C       */ ldfld      int64 BalthasarIL.Serialization.ObjectHolder/*02000013*/::_id /* 0400001C */
     IL_0028:  /* 03   |                  */ ldarg.1
     IL_0029:  /* 33   | 02               */ bne.un.s   IL_002d
 
@@ -9678,7 +9678,7 @@
     IL_002c:  /* 2A   |                  */ ret
 
     IL_002d:  /* 07   |                  */ ldloc.1
-    IL_002e:  /* 7B   | (04)000023       */ ldfld      class System.Runtime.Serialization.ObjectHolder/*02000013*/ System.Runtime.Serialization.ObjectHolder/*02000013*/::_next /* 04000023 */
+    IL_002e:  /* 7B   | (04)000023       */ ldfld      class BalthasarIL.Serialization.ObjectHolder/*02000013*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::_next /* 04000023 */
     IL_0033:  /* 0B   |                  */ stloc.1
     IL_0034:  /* 07   |                  */ ldloc.1
     IL_0035:  /* 2D   | EB               */ brtrue.s   IL_0022
@@ -9688,53 +9688,53 @@
   } // end of method ObjectManager::FindObjectHolder
 
   .method /*060000BC*/ assembly hidebysig 
-          instance class System.Runtime.Serialization.ObjectHolder/*02000013*/ 
+          instance class BalthasarIL.Serialization.ObjectHolder/*02000013*/ 
           FindOrCreateObjectHolder(int64 objectID) cil managed
   // SIG: 20 01 12 4C 0A
   {
     // 方法在 RVA 0x21828 处开始
     // 代码大小       27 (0x1b)
     .maxstack  2
-    .locals /*1100001C*/ (class System.Runtime.Serialization.ObjectHolder/*02000013*/ V_0)
+    .locals /*1100001C*/ (class BalthasarIL.Serialization.ObjectHolder/*02000013*/ V_0)
     IL_0000:  /* 02   |                  */ ldarg.0
     IL_0001:  /* 03   |                  */ ldarg.1
-    IL_0002:  /* 28   | (06)0000BB       */ call       instance class System.Runtime.Serialization.ObjectHolder/*02000013*/ System.Runtime.Serialization.ObjectManager/*02000012*/::FindObjectHolder(int64) /* 060000BB */
+    IL_0002:  /* 28   | (06)0000BB       */ call       instance class BalthasarIL.Serialization.ObjectHolder/*02000013*/ BalthasarIL.Serialization.ObjectManager/*02000012*/::FindObjectHolder(int64) /* 060000BB */
     IL_0007:  /* 0A   |                  */ stloc.0
     IL_0008:  /* 06   |                  */ ldloc.0
     IL_0009:  /* 2D   | 0E               */ brtrue.s   IL_0019
 
     IL_000b:  /* 03   |                  */ ldarg.1
-    IL_000c:  /* 73   | (06)0000D9       */ newobj     instance void System.Runtime.Serialization.ObjectHolder/*02000013*/::.ctor(int64) /* 060000D9 */
+    IL_000c:  /* 73   | (06)0000D9       */ newobj     instance void BalthasarIL.Serialization.ObjectHolder/*02000013*/::.ctor(int64) /* 060000D9 */
     IL_0011:  /* 0A   |                  */ stloc.0
     IL_0012:  /* 02   |                  */ ldarg.0
     IL_0013:  /* 06   |                  */ ldloc.0
-    IL_0014:  /* 28   | (06)0000BD       */ call       instance void System.Runtime.Serialization.ObjectManager/*02000012*/::AddObjectHolder(class System.Runtime.Serialization.ObjectHolder/*02000013*/) /* 060000BD */
+    IL_0014:  /* 28   | (06)0000BD       */ call       instance void BalthasarIL.Serialization.ObjectManager/*02000012*/::AddObjectHolder(class BalthasarIL.Serialization.ObjectHolder/*02000013*/) /* 060000BD */
     IL_0019:  /* 06   |                  */ ldloc.0
     IL_001a:  /* 2A   |                  */ ret
   } // end of method ObjectManager::FindOrCreateObjectHolder
 
   .method /*060000BD*/ private hidebysig 
-          instance void  AddObjectHolder(class System.Runtime.Serialization.ObjectHolder/*02000013*/ holder) cil managed
+          instance void  AddObjectHolder(class BalthasarIL.Serialization.ObjectHolder/*02000013*/ holder) cil managed
   // SIG: 20 01 01 12 4C
   {
     // 方法在 RVA 0x21850 处开始
     // 代码大小       176 (0xb0)
     .maxstack  3
     .locals /*1100001D*/ (int32 V_0,
-             class System.Runtime.Serialization.ObjectHolder/*02000013*/ V_1,
+             class BalthasarIL.Serialization.ObjectHolder/*02000013*/ V_1,
              int32 V_2,
-             class System.Runtime.Serialization.ObjectHolder/*02000013*/[] V_3)
+             class BalthasarIL.Serialization.ObjectHolder/*02000013*/[] V_3)
     IL_0000:  /* 03   |                  */ ldarg.1
-    IL_0001:  /* 7B   | (04)00001C       */ ldfld      int64 System.Runtime.Serialization.ObjectHolder/*02000013*/::_id /* 0400001C */
+    IL_0001:  /* 7B   | (04)00001C       */ ldfld      int64 BalthasarIL.Serialization.ObjectHolder/*02000013*/::_id /* 0400001C */
     IL_0006:  /* 02   |                  */ ldarg.0
-    IL_0007:  /* 7B   | (04)000015       */ ldfld      class System.Runtime.Serialization.ObjectHolder/*02000013*/[] System.Runtime.Serialization.ObjectManager/*02000012*/::_objects /* 04000015 */
+    IL_0007:  /* 7B   | (04)000015       */ ldfld      class BalthasarIL.Serialization.ObjectHolder/*02000013*/[] BalthasarIL.Serialization.ObjectManager/*02000012*/::_objects /* 04000015 */
     IL_000c:  /* 8E   |                  */ ldlen
     IL_000d:  /* 69   |                  */ conv.i4
     IL_000e:  /* 6A   |                  */ conv.i8
     IL_000f:  /* 32   | 76               */ blt.s      IL_0087
 
     IL_0011:  /* 02   |                  */ ldarg.0
-    IL_0012:  /* 7B   | (04)000015       */ ldfld      class System.Runtime.Serialization.ObjectHolder/*02000013*/[] System.Runtime.Serialization.ObjectManager/*02000012*/::_objects /* 04000015 */
+    IL_0012:  /* 7B   | (04)000015       */ ldfld      class BalthasarIL.Serialization.ObjectHolder/*02000013*/[] BalthasarIL.Serialization.ObjectManager/*02000012*/::_objects /* 04000015 */
     IL_0017:  /* 8E   |                  */ ldlen
     IL_0018:  /* 69   |                  */ conv.i4
     IL_0019:  /* 20   | 00001000         */ ldc.i4     0x100000
@@ -9743,13 +9743,13 @@
     IL_0020:  /* 20   | 00001000         */ ldc.i4     0x100000
     IL_0025:  /* 0C   |                  */ stloc.2
     IL_0026:  /* 03   |                  */ ldarg.1
-    IL_0027:  /* 7B   | (04)00001C       */ ldfld      int64 System.Runtime.Serialization.ObjectHolder/*02000013*/::_id /* 0400001C */
+    IL_0027:  /* 7B   | (04)00001C       */ ldfld      int64 BalthasarIL.Serialization.ObjectHolder/*02000013*/::_id /* 0400001C */
     IL_002c:  /* 20   | 00000800         */ ldc.i4     0x80000
     IL_0031:  /* 6A   |                  */ conv.i8
     IL_0032:  /* 2F   | 31               */ bge.s      IL_0065
 
     IL_0034:  /* 02   |                  */ ldarg.0
-    IL_0035:  /* 7B   | (04)000015       */ ldfld      class System.Runtime.Serialization.ObjectHolder/*02000013*/[] System.Runtime.Serialization.ObjectManager/*02000012*/::_objects /* 04000015 */
+    IL_0035:  /* 7B   | (04)000015       */ ldfld      class BalthasarIL.Serialization.ObjectHolder/*02000013*/[] BalthasarIL.Serialization.ObjectManager/*02000012*/::_objects /* 04000015 */
     IL_003a:  /* 8E   |                  */ ldlen
     IL_003b:  /* 69   |                  */ conv.i4
     IL_003c:  /* 18   |                  */ ldc.i4.2
@@ -9764,7 +9764,7 @@
     IL_0045:  /* 08   |                  */ ldloc.2
     IL_0046:  /* 6A   |                  */ conv.i8
     IL_0047:  /* 03   |                  */ ldarg.1
-    IL_0048:  /* 7B   | (04)00001C       */ ldfld      int64 System.Runtime.Serialization.ObjectHolder/*02000013*/::_id /* 0400001C */
+    IL_0048:  /* 7B   | (04)00001C       */ ldfld      int64 BalthasarIL.Serialization.ObjectHolder/*02000013*/::_id /* 0400001C */
     IL_004d:  /* 30   | 08               */ bgt.s      IL_0057
 
     IL_004f:  /* 08   |                  */ ldloc.2
@@ -9778,13 +9778,13 @@
     IL_005f:  /* 20   | 00001000         */ ldc.i4     0x100000
     IL_0064:  /* 0C   |                  */ stloc.2
     IL_0065:  /* 08   |                  */ ldloc.2
-    IL_0066:  /* 8D   | (02)000013       */ newarr     System.Runtime.Serialization.ObjectHolder/*02000013*/
+    IL_0066:  /* 8D   | (02)000013       */ newarr     BalthasarIL.Serialization.ObjectHolder/*02000013*/
     IL_006b:  /* 0D   |                  */ stloc.3
     IL_006c:  /* 02   |                  */ ldarg.0
-    IL_006d:  /* 7B   | (04)000015       */ ldfld      class System.Runtime.Serialization.ObjectHolder/*02000013*/[] System.Runtime.Serialization.ObjectManager/*02000012*/::_objects /* 04000015 */
+    IL_006d:  /* 7B   | (04)000015       */ ldfld      class BalthasarIL.Serialization.ObjectHolder/*02000013*/[] BalthasarIL.Serialization.ObjectManager/*02000012*/::_objects /* 04000015 */
     IL_0072:  /* 09   |                  */ ldloc.3
     IL_0073:  /* 02   |                  */ ldarg.0
-    IL_0074:  /* 7B   | (04)000015       */ ldfld      class System.Runtime.Serialization.ObjectHolder/*02000013*/[] System.Runtime.Serialization.ObjectManager/*02000012*/::_objects /* 04000015 */
+    IL_0074:  /* 7B   | (04)000015       */ ldfld      class BalthasarIL.Serialization.ObjectHolder/*02000013*/[] BalthasarIL.Serialization.ObjectManager/*02000012*/::_objects /* 04000015 */
     IL_0079:  /* 8E   |                  */ ldlen
     IL_007a:  /* 69   |                  */ conv.i4
     IL_007b:  /* 28   | (0A)000043       */ call       void [System.Private.CoreLib/*23000001*/]System.Array/*01000034*/::Copy(class [System.Private.CoreLib/*23000001*/]System.Array/*01000034*/,
@@ -9792,24 +9792,24 @@
                                                                                                                                int32) /* 0A000043 */
     IL_0080:  /* 02   |                  */ ldarg.0
     IL_0081:  /* 09   |                  */ ldloc.3
-    IL_0082:  /* 7D   | (04)000015       */ stfld      class System.Runtime.Serialization.ObjectHolder/*02000013*/[] System.Runtime.Serialization.ObjectManager/*02000012*/::_objects /* 04000015 */
+    IL_0082:  /* 7D   | (04)000015       */ stfld      class BalthasarIL.Serialization.ObjectHolder/*02000013*/[] BalthasarIL.Serialization.ObjectManager/*02000012*/::_objects /* 04000015 */
     IL_0087:  /* 03   |                  */ ldarg.1
-    IL_0088:  /* 7B   | (04)00001C       */ ldfld      int64 System.Runtime.Serialization.ObjectHolder/*02000013*/::_id /* 0400001C */
+    IL_0088:  /* 7B   | (04)00001C       */ ldfld      int64 BalthasarIL.Serialization.ObjectHolder/*02000013*/::_id /* 0400001C */
     IL_008d:  /* 20   | FFFF0F00         */ ldc.i4     0xfffff
     IL_0092:  /* 6A   |                  */ conv.i8
     IL_0093:  /* 5F   |                  */ and
     IL_0094:  /* 69   |                  */ conv.i4
     IL_0095:  /* 0A   |                  */ stloc.0
     IL_0096:  /* 02   |                  */ ldarg.0
-    IL_0097:  /* 7B   | (04)000015       */ ldfld      class System.Runtime.Serialization.ObjectHolder/*02000013*/[] System.Runtime.Serialization.ObjectManager/*02000012*/::_objects /* 04000015 */
+    IL_0097:  /* 7B   | (04)000015       */ ldfld      class BalthasarIL.Serialization.ObjectHolder/*02000013*/[] BalthasarIL.Serialization.ObjectManager/*02000012*/::_objects /* 04000015 */
     IL_009c:  /* 06   |                  */ ldloc.0
     IL_009d:  /* 9A   |                  */ ldelem.ref
     IL_009e:  /* 0B   |                  */ stloc.1
     IL_009f:  /* 03   |                  */ ldarg.1
     IL_00a0:  /* 07   |                  */ ldloc.1
-    IL_00a1:  /* 7D   | (04)000023       */ stfld      class System.Runtime.Serialization.ObjectHolder/*02000013*/ System.Runtime.Serialization.ObjectHolder/*02000013*/::_next /* 04000023 */
+    IL_00a1:  /* 7D   | (04)000023       */ stfld      class BalthasarIL.Serialization.ObjectHolder/*02000013*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::_next /* 04000023 */
     IL_00a6:  /* 02   |                  */ ldarg.0
-    IL_00a7:  /* 7B   | (04)000015       */ ldfld      class System.Runtime.Serialization.ObjectHolder/*02000013*/[] System.Runtime.Serialization.ObjectManager/*02000012*/::_objects /* 04000015 */
+    IL_00a7:  /* 7B   | (04)000015       */ ldfld      class BalthasarIL.Serialization.ObjectHolder/*02000013*/[] BalthasarIL.Serialization.ObjectManager/*02000012*/::_objects /* 04000015 */
     IL_00ac:  /* 06   |                  */ ldloc.0
     IL_00ad:  /* 03   |                  */ ldarg.1
     IL_00ae:  /* A2   |                  */ stelem.ref
@@ -9817,8 +9817,8 @@
   } // end of method ObjectManager::AddObjectHolder
 
   .method /*060000BE*/ private hidebysig 
-          instance bool  GetCompletionInfo(class System.Runtime.Serialization.FixupHolder/*02000014*/ fixup,
-                                           [out] class System.Runtime.Serialization.ObjectHolder/*02000013*/& holder,
+          instance bool  GetCompletionInfo(class BalthasarIL.Serialization.FixupHolder/*02000014*/ fixup,
+                                           [out] class BalthasarIL.Serialization.ObjectHolder/*02000013*/& holder,
                                            [out] object& member,
                                            bool bThrowIfMissing) cil managed
   // SIG: 20 04 02 12 50 10 12 4C 10 1C 02
@@ -9830,13 +9830,13 @@
     .maxstack  3
     IL_0000:  /* 05   |                  */ ldarg.3
     IL_0001:  /* 03   |                  */ ldarg.1
-    IL_0002:  /* 7B   | (04)00002A       */ ldfld      object System.Runtime.Serialization.FixupHolder/*02000014*/::_fixupInfo /* 0400002A */
+    IL_0002:  /* 7B   | (04)00002A       */ ldfld      object BalthasarIL.Serialization.FixupHolder/*02000014*/::_fixupInfo /* 0400002A */
     IL_0007:  /* 51   |                  */ stind.ref
     IL_0008:  /* 04   |                  */ ldarg.2
     IL_0009:  /* 02   |                  */ ldarg.0
     IL_000a:  /* 03   |                  */ ldarg.1
-    IL_000b:  /* 7B   | (04)000029       */ ldfld      int64 System.Runtime.Serialization.FixupHolder/*02000014*/::_id /* 04000029 */
-    IL_0010:  /* 28   | (06)0000BB       */ call       instance class System.Runtime.Serialization.ObjectHolder/*02000013*/ System.Runtime.Serialization.ObjectManager/*02000012*/::FindObjectHolder(int64) /* 060000BB */
+    IL_000b:  /* 7B   | (04)000029       */ ldfld      int64 BalthasarIL.Serialization.FixupHolder/*02000014*/::_id /* 04000029 */
+    IL_0010:  /* 28   | (06)0000BB       */ call       instance class BalthasarIL.Serialization.ObjectHolder/*02000013*/ BalthasarIL.Serialization.ObjectManager/*02000012*/::FindObjectHolder(int64) /* 060000BB */
     IL_0015:  /* 51   |                  */ stind.ref
     IL_0016:  /* 04   |                  */ ldarg.2
     IL_0017:  /* 50   |                  */ ldind.ref
@@ -9844,12 +9844,12 @@
 
     IL_001a:  /* 04   |                  */ ldarg.2
     IL_001b:  /* 50   |                  */ ldind.ref
-    IL_001c:  /* 6F   | (06)0000EE       */ callvirt   instance bool System.Runtime.Serialization.ObjectHolder/*02000013*/::get_CanObjectValueChange() /* 060000EE */
+    IL_001c:  /* 6F   | (06)0000EE       */ callvirt   instance bool BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_CanObjectValueChange() /* 060000EE */
     IL_0021:  /* 2D   | 09               */ brtrue.s   IL_002c
 
     IL_0023:  /* 04   |                  */ ldarg.2
     IL_0024:  /* 50   |                  */ ldind.ref
-    IL_0025:  /* 6F   | (06)0000F6       */ callvirt   instance object System.Runtime.Serialization.ObjectHolder/*02000013*/::get_ObjectValue() /* 060000F6 */
+    IL_0025:  /* 6F   | (06)0000F6       */ callvirt   instance object BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_ObjectValue() /* 060000F6 */
     IL_002a:  /* 2D   | 64               */ brtrue.s   IL_0090
 
     IL_002c:  /* 0E   | 04               */ ldarg.s    bThrowIfMissing
@@ -9861,34 +9861,34 @@
 
     IL_0034:  /* 28   | (06)000014       */ call       string System.SR/*02000004*/::get_Serialization_NeverSeen() /* 06000014 */
     IL_0039:  /* 03   |                  */ ldarg.1
-    IL_003a:  /* 7B   | (04)000029       */ ldfld      int64 System.Runtime.Serialization.FixupHolder/*02000014*/::_id /* 04000029 */
+    IL_003a:  /* 7B   | (04)000029       */ ldfld      int64 BalthasarIL.Serialization.FixupHolder/*02000014*/::_id /* 04000029 */
     IL_003f:  /* 8C   | (01)000024       */ box        [System.Private.CoreLib/*23000001*/]System.Int64/*01000024*/
     IL_0044:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_0049:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0049:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_004e:  /* 7A   |                  */ throw
 
     IL_004f:  /* 04   |                  */ ldarg.2
     IL_0050:  /* 50   |                  */ ldind.ref
-    IL_0051:  /* 6F   | (06)0000E5       */ callvirt   instance bool System.Runtime.Serialization.ObjectHolder/*02000013*/::get_IsIncompleteObjectReference() /* 060000E5 */
+    IL_0051:  /* 6F   | (06)0000E5       */ callvirt   instance bool BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_IsIncompleteObjectReference() /* 060000E5 */
     IL_0056:  /* 2C   | 1B               */ brfalse.s  IL_0073
 
     IL_0058:  /* 28   | (06)000015       */ call       string System.SR/*02000004*/::get_Serialization_IORIncomplete() /* 06000015 */
     IL_005d:  /* 03   |                  */ ldarg.1
-    IL_005e:  /* 7B   | (04)000029       */ ldfld      int64 System.Runtime.Serialization.FixupHolder/*02000014*/::_id /* 04000029 */
+    IL_005e:  /* 7B   | (04)000029       */ ldfld      int64 BalthasarIL.Serialization.FixupHolder/*02000014*/::_id /* 04000029 */
     IL_0063:  /* 8C   | (01)000024       */ box        [System.Private.CoreLib/*23000001*/]System.Int64/*01000024*/
     IL_0068:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_006d:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_006d:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0072:  /* 7A   |                  */ throw
 
     IL_0073:  /* 28   | (06)000016       */ call       string System.SR/*02000004*/::get_Serialization_ObjectNotSupplied() /* 06000016 */
     IL_0078:  /* 03   |                  */ ldarg.1
-    IL_0079:  /* 7B   | (04)000029       */ ldfld      int64 System.Runtime.Serialization.FixupHolder/*02000014*/::_id /* 04000029 */
+    IL_0079:  /* 7B   | (04)000029       */ ldfld      int64 BalthasarIL.Serialization.FixupHolder/*02000014*/::_id /* 04000029 */
     IL_007e:  /* 8C   | (01)000024       */ box        [System.Private.CoreLib/*23000001*/]System.Int64/*01000024*/
     IL_0083:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_0088:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0088:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_008d:  /* 7A   |                  */ throw
 
     IL_008e:  /* 16   |                  */ ldc.i4.0
@@ -9896,25 +9896,25 @@
 
     IL_0090:  /* 04   |                  */ ldarg.2
     IL_0091:  /* 50   |                  */ ldind.ref
-    IL_0092:  /* 6F   | (06)000100       */ callvirt   instance bool System.Runtime.Serialization.ObjectHolder/*02000013*/::get_CompletelyFixed() /* 06000100 */
+    IL_0092:  /* 6F   | (06)000100       */ callvirt   instance bool BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_CompletelyFixed() /* 06000100 */
     IL_0097:  /* 2D   | 26               */ brtrue.s   IL_00bf
 
     IL_0099:  /* 04   |                  */ ldarg.2
     IL_009a:  /* 50   |                  */ ldind.ref
-    IL_009b:  /* 6F   | (06)0000F6       */ callvirt   instance object System.Runtime.Serialization.ObjectHolder/*02000013*/::get_ObjectValue() /* 060000F6 */
+    IL_009b:  /* 6F   | (06)0000F6       */ callvirt   instance object BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_ObjectValue() /* 060000F6 */
     IL_00a0:  /* 2C   | 1D               */ brfalse.s  IL_00bf
 
     IL_00a2:  /* 04   |                  */ ldarg.2
     IL_00a3:  /* 50   |                  */ ldind.ref
-    IL_00a4:  /* 6F   | (06)0000F6       */ callvirt   instance object System.Runtime.Serialization.ObjectHolder/*02000013*/::get_ObjectValue() /* 060000F6 */
+    IL_00a4:  /* 6F   | (06)0000F6       */ callvirt   instance object BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_ObjectValue() /* 060000F6 */
     IL_00a9:  /* 75   | (01)000046       */ isinst     [System.Private.CoreLib/*23000001*/]System.ValueType/*01000046*/
     IL_00ae:  /* 2C   | 0F               */ brfalse.s  IL_00bf
 
     IL_00b0:  /* 02   |                  */ ldarg.0
-    IL_00b1:  /* 28   | (06)0000BA       */ call       instance class System.Runtime.Serialization.ObjectHolderList/*02000017*/ System.Runtime.Serialization.ObjectManager/*02000012*/::get_SpecialFixupObjects() /* 060000BA */
+    IL_00b1:  /* 28   | (06)0000BA       */ call       instance class BalthasarIL.Serialization.ObjectHolderList/*02000017*/ BalthasarIL.Serialization.ObjectManager/*02000012*/::get_SpecialFixupObjects() /* 060000BA */
     IL_00b6:  /* 04   |                  */ ldarg.2
     IL_00b7:  /* 50   |                  */ ldind.ref
-    IL_00b8:  /* 6F   | (06)000112       */ callvirt   instance void System.Runtime.Serialization.ObjectHolderList/*02000017*/::Add(class System.Runtime.Serialization.ObjectHolder/*02000013*/) /* 06000112 */
+    IL_00b8:  /* 6F   | (06)000112       */ callvirt   instance void BalthasarIL.Serialization.ObjectHolderList/*02000017*/::Add(class BalthasarIL.Serialization.ObjectHolder/*02000013*/) /* 06000112 */
     IL_00bd:  /* 16   |                  */ ldc.i4.0
     IL_00be:  /* 2A   |                  */ ret
 
@@ -9923,7 +9923,7 @@
   } // end of method ObjectManager::GetCompletionInfo
 
   .method /*060000BF*/ private hidebysig 
-          instance void  FixupSpecialObject(class System.Runtime.Serialization.ObjectHolder/*02000013*/ holder) cil managed
+          instance void  FixupSpecialObject(class BalthasarIL.Serialization.ObjectHolder/*02000013*/ holder) cil managed
   // SIG: 20 01 01 12 4C
   {
     .custom /*0C000079:0A000014*/ instance void [System.Private.CoreLib/*23000001*/]System.Diagnostics.CodeAnalysis.RequiresUnreferencedCodeAttribute/*01000017*/::.ctor(string) /* 0A000014 */ = ( 01 00 6F 4F 62 6A 65 63 74 4D 61 6E 61 67 65 72   // ..oObjectManager
@@ -9937,41 +9937,41 @@
     // 方法在 RVA 0x219dc 处开始
     // 代码大小       190 (0xbe)
     .maxstack  5
-    .locals /*1100001E*/ (class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ V_0,
-             class System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ V_1,
+    .locals /*1100001E*/ (class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ V_0,
+             class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ V_1,
              object V_2)
     IL_0000:  /* 14   |                  */ ldnull
     IL_0001:  /* 0A   |                  */ stloc.0
     IL_0002:  /* 03   |                  */ ldarg.1
-    IL_0003:  /* 6F   | (06)0000EC       */ callvirt   instance bool System.Runtime.Serialization.ObjectHolder/*02000013*/::get_HasSurrogate() /* 060000EC */
+    IL_0003:  /* 6F   | (06)0000EC       */ callvirt   instance bool BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_HasSurrogate() /* 060000EC */
     IL_0008:  /* 2C   | 67               */ brfalse.s  IL_0071
 
     IL_000a:  /* 03   |                  */ ldarg.1
-    IL_000b:  /* 6F   | (06)0000FA       */ callvirt   instance class System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ System.Runtime.Serialization.ObjectHolder/*02000013*/::get_Surrogate() /* 060000FA */
+    IL_000b:  /* 6F   | (06)0000FA       */ callvirt   instance class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_Surrogate() /* 060000FA */
     IL_0010:  /* 0B   |                  */ stloc.1
     IL_0011:  /* 07   |                  */ ldloc.1
     IL_0012:  /* 03   |                  */ ldarg.1
-    IL_0013:  /* 6F   | (06)0000F6       */ callvirt   instance object System.Runtime.Serialization.ObjectHolder/*02000013*/::get_ObjectValue() /* 060000F6 */
+    IL_0013:  /* 6F   | (06)0000F6       */ callvirt   instance object BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_ObjectValue() /* 060000F6 */
     IL_0018:  /* 03   |                  */ ldarg.1
-    IL_0019:  /* 6F   | (06)0000F8       */ callvirt   instance class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationInfo/*01000044*/ System.Runtime.Serialization.ObjectHolder/*02000013*/::get_SerializationInfo() /* 060000F8 */
+    IL_0019:  /* 6F   | (06)0000F8       */ callvirt   instance class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationInfo/*01000044*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_SerializationInfo() /* 060000F8 */
     IL_001e:  /* 02   |                  */ ldarg.0
-    IL_001f:  /* 7B   | (04)00001A       */ ldfld      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ System.Runtime.Serialization.ObjectManager/*02000012*/::_context /* 0400001A */
+    IL_001f:  /* 7B   | (04)00001A       */ ldfld      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ BalthasarIL.Serialization.ObjectManager/*02000012*/::_context /* 0400001A */
     IL_0024:  /* 06   |                  */ ldloc.0
-    IL_0025:  /* 6F   | (06)0000AA       */ callvirt   instance object System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/::SetObjectData(object,
+    IL_0025:  /* 6F   | (06)0000AA       */ callvirt   instance object BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/::SetObjectData(object,
                                                                                                                                                        class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationInfo/*01000044*/,
                                                                                                                                                        valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/,
-                                                                                                                                                       class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/) /* 060000AA */
+                                                                                                                                                       class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/) /* 060000AA */
     IL_002a:  /* 0C   |                  */ stloc.2
     IL_002b:  /* 08   |                  */ ldloc.2
     IL_002c:  /* 2C   | 34               */ brfalse.s  IL_0062
 
     IL_002e:  /* 03   |                  */ ldarg.1
-    IL_002f:  /* 6F   | (06)0000ED       */ callvirt   instance bool System.Runtime.Serialization.ObjectHolder/*02000013*/::get_CanSurrogatedObjectValueChange() /* 060000ED */
+    IL_002f:  /* 6F   | (06)0000ED       */ callvirt   instance bool BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_CanSurrogatedObjectValueChange() /* 060000ED */
     IL_0034:  /* 2D   | 24               */ brtrue.s   IL_005a
 
     IL_0036:  /* 08   |                  */ ldloc.2
     IL_0037:  /* 03   |                  */ ldarg.1
-    IL_0038:  /* 6F   | (06)0000F6       */ callvirt   instance object System.Runtime.Serialization.ObjectHolder/*02000013*/::get_ObjectValue() /* 060000F6 */
+    IL_0038:  /* 6F   | (06)0000F6       */ callvirt   instance object BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_ObjectValue() /* 060000F6 */
     IL_003d:  /* 2E   | 1B               */ beq.s      IL_005a
 
     IL_003f:  /* 28   | (06)000017       */ call       string System.SR/*02000004*/::get_Serialization_NotCyclicallyReferenceableSurrogate() /* 06000017 */
@@ -9980,62 +9980,62 @@
     IL_004a:  /* 6F   | (0A)000036       */ callvirt   instance string [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/::get_FullName() /* 0A000036 */
     IL_004f:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_0054:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0054:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0059:  /* 7A   |                  */ throw
 
     IL_005a:  /* 03   |                  */ ldarg.1
     IL_005b:  /* 08   |                  */ ldloc.2
     IL_005c:  /* 02   |                  */ ldarg.0
-    IL_005d:  /* 6F   | (06)0000F7       */ callvirt   instance void System.Runtime.Serialization.ObjectHolder/*02000013*/::SetObjectValue(object,
-                                                                                                                                           class System.Runtime.Serialization.ObjectManager/*02000012*/) /* 060000F7 */
+    IL_005d:  /* 6F   | (06)0000F7       */ callvirt   instance void BalthasarIL.Serialization.ObjectHolder/*02000013*/::SetObjectValue(object,
+                                                                                                                                           class BalthasarIL.Serialization.ObjectManager/*02000012*/) /* 060000F7 */
     IL_0062:  /* 03   |                  */ ldarg.1
     IL_0063:  /* 14   |                  */ ldnull
-    IL_0064:  /* 7D   | (04)000020       */ stfld      class System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ System.Runtime.Serialization.ObjectHolder/*02000013*/::_surrogate /* 04000020 */
+    IL_0064:  /* 7D   | (04)000020       */ stfld      class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::_surrogate /* 04000020 */
     IL_0069:  /* 03   |                  */ ldarg.1
-    IL_006a:  /* 6F   | (06)0000E4       */ callvirt   instance void System.Runtime.Serialization.ObjectHolder/*02000013*/::SetFlags() /* 060000E4 */
+    IL_006a:  /* 6F   | (06)0000E4       */ callvirt   instance void BalthasarIL.Serialization.ObjectHolder/*02000013*/::SetFlags() /* 060000E4 */
     IL_006f:  /* 2B   | 18               */ br.s       IL_0089
 
     IL_0071:  /* 02   |                  */ ldarg.0
     IL_0072:  /* 03   |                  */ ldarg.1
-    IL_0073:  /* 6F   | (06)0000F6       */ callvirt   instance object System.Runtime.Serialization.ObjectHolder/*02000013*/::get_ObjectValue() /* 060000F6 */
+    IL_0073:  /* 6F   | (06)0000F6       */ callvirt   instance object BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_ObjectValue() /* 060000F6 */
     IL_0078:  /* 03   |                  */ ldarg.1
-    IL_0079:  /* 6F   | (06)0000F8       */ callvirt   instance class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationInfo/*01000044*/ System.Runtime.Serialization.ObjectHolder/*02000013*/::get_SerializationInfo() /* 060000F8 */
+    IL_0079:  /* 6F   | (06)0000F8       */ callvirt   instance class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationInfo/*01000044*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_SerializationInfo() /* 060000F8 */
     IL_007e:  /* 02   |                  */ ldarg.0
-    IL_007f:  /* 7B   | (04)00001A       */ ldfld      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ System.Runtime.Serialization.ObjectManager/*02000012*/::_context /* 0400001A */
-    IL_0084:  /* 28   | (06)0000CB       */ call       instance void System.Runtime.Serialization.ObjectManager/*02000012*/::CompleteISerializableObject(object,
+    IL_007f:  /* 7B   | (04)00001A       */ ldfld      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ BalthasarIL.Serialization.ObjectManager/*02000012*/::_context /* 0400001A */
+    IL_0084:  /* 28   | (06)0000CB       */ call       instance void BalthasarIL.Serialization.ObjectManager/*02000012*/::CompleteISerializableObject(object,
                                                                                                                                                          class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationInfo/*01000044*/,
                                                                                                                                                          valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/) /* 060000CB */
     IL_0089:  /* 03   |                  */ ldarg.1
     IL_008a:  /* 14   |                  */ ldnull
-    IL_008b:  /* 6F   | (06)0000F9       */ callvirt   instance void System.Runtime.Serialization.ObjectHolder/*02000013*/::set_SerializationInfo(class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationInfo/*01000044*/) /* 060000F9 */
+    IL_008b:  /* 6F   | (06)0000F9       */ callvirt   instance void BalthasarIL.Serialization.ObjectHolder/*02000013*/::set_SerializationInfo(class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationInfo/*01000044*/) /* 060000F9 */
     IL_0090:  /* 03   |                  */ ldarg.1
     IL_0091:  /* 16   |                  */ ldc.i4.0
-    IL_0092:  /* 6F   | (06)0000FE       */ callvirt   instance void System.Runtime.Serialization.ObjectHolder/*02000013*/::set_RequiresSerInfoFixup(bool) /* 060000FE */
+    IL_0092:  /* 6F   | (06)0000FE       */ callvirt   instance void BalthasarIL.Serialization.ObjectHolder/*02000013*/::set_RequiresSerInfoFixup(bool) /* 060000FE */
     IL_0097:  /* 03   |                  */ ldarg.1
-    IL_0098:  /* 6F   | (06)0000E8       */ callvirt   instance bool System.Runtime.Serialization.ObjectHolder/*02000013*/::get_RequiresValueTypeFixup() /* 060000E8 */
+    IL_0098:  /* 6F   | (06)0000E8       */ callvirt   instance bool BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_RequiresValueTypeFixup() /* 060000E8 */
     IL_009d:  /* 2C   | 17               */ brfalse.s  IL_00b6
 
     IL_009f:  /* 03   |                  */ ldarg.1
-    IL_00a0:  /* 6F   | (06)0000E9       */ callvirt   instance bool System.Runtime.Serialization.ObjectHolder/*02000013*/::get_ValueTypeFixupPerformed() /* 060000E9 */
+    IL_00a0:  /* 6F   | (06)0000E9       */ callvirt   instance bool BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_ValueTypeFixupPerformed() /* 060000E9 */
     IL_00a5:  /* 2C   | 0F               */ brfalse.s  IL_00b6
 
     IL_00a7:  /* 02   |                  */ ldarg.0
     IL_00a8:  /* 14   |                  */ ldnull
     IL_00a9:  /* 03   |                  */ ldarg.1
     IL_00aa:  /* 03   |                  */ ldarg.1
-    IL_00ab:  /* 6F   | (06)0000F6       */ callvirt   instance object System.Runtime.Serialization.ObjectHolder/*02000013*/::get_ObjectValue() /* 060000F6 */
-    IL_00b0:  /* 28   | (06)0000C1       */ call       instance bool System.Runtime.Serialization.ObjectManager/*02000012*/::DoValueTypeFixup(class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/,
-                                                                                                                                              class System.Runtime.Serialization.ObjectHolder/*02000013*/,
+    IL_00ab:  /* 6F   | (06)0000F6       */ callvirt   instance object BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_ObjectValue() /* 060000F6 */
+    IL_00b0:  /* 28   | (06)0000C1       */ call       instance bool BalthasarIL.Serialization.ObjectManager/*02000012*/::DoValueTypeFixup(class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/,
+                                                                                                                                              class BalthasarIL.Serialization.ObjectHolder/*02000013*/,
                                                                                                                                               object) /* 060000C1 */
     IL_00b5:  /* 26   |                  */ pop
     IL_00b6:  /* 02   |                  */ ldarg.0
     IL_00b7:  /* 03   |                  */ ldarg.1
-    IL_00b8:  /* 28   | (06)0000C4       */ call       instance void System.Runtime.Serialization.ObjectManager/*02000012*/::DoNewlyRegisteredObjectFixups(class System.Runtime.Serialization.ObjectHolder/*02000013*/) /* 060000C4 */
+    IL_00b8:  /* 28   | (06)0000C4       */ call       instance void BalthasarIL.Serialization.ObjectManager/*02000012*/::DoNewlyRegisteredObjectFixups(class BalthasarIL.Serialization.ObjectHolder/*02000013*/) /* 060000C4 */
     IL_00bd:  /* 2A   |                  */ ret
   } // end of method ObjectManager::FixupSpecialObject
 
   .method /*060000C0*/ private hidebysig 
-          instance bool  ResolveObjectReference(class System.Runtime.Serialization.ObjectHolder/*02000013*/ holder) cil managed
+          instance bool  ResolveObjectReference(class BalthasarIL.Serialization.ObjectHolder/*02000013*/ holder) cil managed
   // SIG: 20 01 02 12 4C
   {
     // 方法在 RVA 0x21aa8 处开始
@@ -10049,27 +10049,27 @@
     .try
     {
       IL_0002:  /* 03   |                  */ ldarg.1
-      IL_0003:  /* 6F   | (06)0000F6       */ callvirt   instance object System.Runtime.Serialization.ObjectHolder/*02000013*/::get_ObjectValue() /* 060000F6 */
+      IL_0003:  /* 6F   | (06)0000F6       */ callvirt   instance object BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_ObjectValue() /* 060000F6 */
       IL_0008:  /* 0A   |                  */ stloc.0
       IL_0009:  /* 03   |                  */ ldarg.1
       IL_000a:  /* 03   |                  */ ldarg.1
-      IL_000b:  /* 6F   | (06)0000F6       */ callvirt   instance object System.Runtime.Serialization.ObjectHolder/*02000013*/::get_ObjectValue() /* 060000F6 */
-      IL_0010:  /* 74   | (01)000047       */ castclass  [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.IObjectReference/*01000047*/
+      IL_000b:  /* 6F   | (06)0000F6       */ callvirt   instance object BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_ObjectValue() /* 060000F6 */
+      IL_0010:  /* 74   | (01)000047       */ castclass  [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.IObjectReference/*01000047*/
       IL_0015:  /* 02   |                  */ ldarg.0
-      IL_0016:  /* 7B   | (04)00001A       */ ldfld      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ System.Runtime.Serialization.ObjectManager/*02000012*/::_context /* 0400001A */
-      IL_001b:  /* 6F   | (0A)000070       */ callvirt   instance object [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.IObjectReference/*01000047*/::GetRealObject(valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/) /* 0A000070 */
+      IL_0016:  /* 7B   | (04)00001A       */ ldfld      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ BalthasarIL.Serialization.ObjectManager/*02000012*/::_context /* 0400001A */
+      IL_001b:  /* 6F   | (0A)000070       */ callvirt   instance object [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.IObjectReference/*01000047*/::GetRealObject(valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/) /* 0A000070 */
       IL_0020:  /* 02   |                  */ ldarg.0
-      IL_0021:  /* 6F   | (06)0000F7       */ callvirt   instance void System.Runtime.Serialization.ObjectHolder/*02000013*/::SetObjectValue(object,
-                                                                                                                                             class System.Runtime.Serialization.ObjectManager/*02000012*/) /* 060000F7 */
+      IL_0021:  /* 6F   | (06)0000F7       */ callvirt   instance void BalthasarIL.Serialization.ObjectHolder/*02000013*/::SetObjectValue(object,
+                                                                                                                                             class BalthasarIL.Serialization.ObjectManager/*02000012*/) /* 060000F7 */
       IL_0026:  /* 03   |                  */ ldarg.1
-      IL_0027:  /* 6F   | (06)0000F6       */ callvirt   instance object System.Runtime.Serialization.ObjectHolder/*02000013*/::get_ObjectValue() /* 060000F6 */
+      IL_0027:  /* 6F   | (06)0000F6       */ callvirt   instance object BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_ObjectValue() /* 060000F6 */
       IL_002c:  /* 2D   | 0C               */ brtrue.s   IL_003a
 
       IL_002e:  /* 03   |                  */ ldarg.1
       IL_002f:  /* 06   |                  */ ldloc.0
       IL_0030:  /* 02   |                  */ ldarg.0
-      IL_0031:  /* 6F   | (06)0000F7       */ callvirt   instance void System.Runtime.Serialization.ObjectHolder/*02000013*/::SetObjectValue(object,
-                                                                                                                                             class System.Runtime.Serialization.ObjectManager/*02000012*/) /* 060000F7 */
+      IL_0031:  /* 6F   | (06)0000F7       */ callvirt   instance void BalthasarIL.Serialization.ObjectHolder/*02000013*/::SetObjectValue(object,
+                                                                                                                                             class BalthasarIL.Serialization.ObjectManager/*02000012*/) /* 060000F7 */
       IL_0036:  /* 16   |                  */ ldc.i4.0
       IL_0037:  /* 0C   |                  */ stloc.2
       IL_0038:  /* DE   | 41               */ leave.s    IL_007b
@@ -10083,17 +10083,17 @@
       IL_0041:  /* 33   | 0B               */ bne.un.s   IL_004e
 
       IL_0043:  /* 28   | (06)000018       */ call       string System.SR/*02000004*/::get_Serialization_TooManyReferences() /* 06000018 */
-      IL_0048:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+      IL_0048:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
       IL_004d:  /* 7A   |                  */ throw
 
       IL_004e:  /* 03   |                  */ ldarg.1
-      IL_004f:  /* 6F   | (06)0000F6       */ callvirt   instance object System.Runtime.Serialization.ObjectHolder/*02000013*/::get_ObjectValue() /* 060000F6 */
-      IL_0054:  /* 75   | (01)000047       */ isinst     [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.IObjectReference/*01000047*/
+      IL_004f:  /* 6F   | (06)0000F6       */ callvirt   instance object BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_ObjectValue() /* 060000F6 */
+      IL_0054:  /* 75   | (01)000047       */ isinst     [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.IObjectReference/*01000047*/
       IL_0059:  /* 2C   | 09               */ brfalse.s  IL_0064
 
       IL_005b:  /* 06   |                  */ ldloc.0
       IL_005c:  /* 03   |                  */ ldarg.1
-      IL_005d:  /* 6F   | (06)0000F6       */ callvirt   instance object System.Runtime.Serialization.ObjectHolder/*02000013*/::get_ObjectValue() /* 060000F6 */
+      IL_005d:  /* 6F   | (06)0000F6       */ callvirt   instance object BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_ObjectValue() /* 060000F6 */
       IL_0062:  /* 33   | 9E               */ bne.un.s   IL_0002
 
       IL_0064:  /* DE   | 05               */ leave.s    IL_006b
@@ -10110,10 +10110,10 @@
     // HEX: 00 00 02 00 64 66 00 05 48 00 00 01
     IL_006b:  /* 03   |                  */ ldarg.1
     IL_006c:  /* 16   |                  */ ldc.i4.0
-    IL_006d:  /* 6F   | (06)0000E6       */ callvirt   instance void System.Runtime.Serialization.ObjectHolder/*02000013*/::set_IsIncompleteObjectReference(bool) /* 060000E6 */
+    IL_006d:  /* 6F   | (06)0000E6       */ callvirt   instance void BalthasarIL.Serialization.ObjectHolder/*02000013*/::set_IsIncompleteObjectReference(bool) /* 060000E6 */
     IL_0072:  /* 02   |                  */ ldarg.0
     IL_0073:  /* 03   |                  */ ldarg.1
-    IL_0074:  /* 28   | (06)0000C4       */ call       instance void System.Runtime.Serialization.ObjectManager/*02000012*/::DoNewlyRegisteredObjectFixups(class System.Runtime.Serialization.ObjectHolder/*02000013*/) /* 060000C4 */
+    IL_0074:  /* 28   | (06)0000C4       */ call       instance void BalthasarIL.Serialization.ObjectManager/*02000012*/::DoNewlyRegisteredObjectFixups(class BalthasarIL.Serialization.ObjectHolder/*02000013*/) /* 060000C4 */
     IL_0079:  /* 17   |                  */ ldc.i4.1
     IL_007a:  /* 2A   |                  */ ret
 
@@ -10123,7 +10123,7 @@
 
   .method /*060000C1*/ private hidebysig 
           instance bool  DoValueTypeFixup(class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/ memberToFix,
-                                          class System.Runtime.Serialization.ObjectHolder/*02000013*/ holder,
+                                          class BalthasarIL.Serialization.ObjectHolder/*02000013*/ holder,
                                           object 'value') cil managed
   // SIG: 20 03 02 12 80 C9 12 4C 1C
   {
@@ -10134,16 +10134,16 @@
              class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/[] V_1,
              int32 V_2,
              int32[] V_3,
-             class System.Runtime.Serialization.ValueTypeFixupInfo/*02000024*/ V_4,
+             class BalthasarIL.Serialization.ValueTypeFixupInfo/*02000024*/ V_4,
              object V_5,
              class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/[] V_6,
              class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/ V_7,
-             class System.Runtime.Serialization.ObjectHolder/*02000013*/ V_8,
+             class BalthasarIL.Serialization.ObjectHolder/*02000013*/ V_8,
              class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/ V_9,
              typedref V_10,
              int32 V_11,
              class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/ V_12,
-             class System.Runtime.Serialization.SerializationFieldInfo/*0200001F*/ V_13)
+             class BalthasarIL.Serialization.SerializationFieldInfo/*0200001F*/ V_13)
     IL_0000:  /* 1A   |                  */ ldc.i4.4
     IL_0001:  /* 8D   | (01)000032       */ newarr     [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/
     IL_0006:  /* 0A   |                  */ stloc.0
@@ -10152,7 +10152,7 @@
     IL_0009:  /* 14   |                  */ ldnull
     IL_000a:  /* 0D   |                  */ stloc.3
     IL_000b:  /* 04   |                  */ ldarg.2
-    IL_000c:  /* 6F   | (06)0000F6       */ callvirt   instance object System.Runtime.Serialization.ObjectHolder/*02000013*/::get_ObjectValue() /* 060000F6 */
+    IL_000c:  /* 6F   | (06)0000F6       */ callvirt   instance object BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_ObjectValue() /* 060000F6 */
     IL_0011:  /* 13   | 05               */ stloc.s    V_5
     IL_0013:  /* 38   | AB000000         */ br         IL_00c3
 
@@ -10182,33 +10182,33 @@
     IL_0037:  /* 11   | 06               */ ldloc.s    V_6
     IL_0039:  /* 0A   |                  */ stloc.0
     IL_003a:  /* 04   |                  */ ldarg.2
-    IL_003b:  /* 6F   | (06)0000FF       */ callvirt   instance class System.Runtime.Serialization.ValueTypeFixupInfo/*02000024*/ System.Runtime.Serialization.ObjectHolder/*02000013*/::get_ValueFixup() /* 060000FF */
+    IL_003b:  /* 6F   | (06)0000FF       */ callvirt   instance class BalthasarIL.Serialization.ValueTypeFixupInfo/*02000024*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_ValueFixup() /* 060000FF */
     IL_0040:  /* 13   | 04               */ stloc.s    V_4
     IL_0042:  /* 04   |                  */ ldarg.2
-    IL_0043:  /* 6F   | (06)0000F6       */ callvirt   instance object System.Runtime.Serialization.ObjectHolder/*02000013*/::get_ObjectValue() /* 060000F6 */
+    IL_0043:  /* 6F   | (06)0000F6       */ callvirt   instance object BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_ObjectValue() /* 060000F6 */
     IL_0048:  /* 13   | 05               */ stloc.s    V_5
     IL_004a:  /* 11   | 04               */ ldloc.s    V_4
-    IL_004c:  /* 6F   | (06)00014E       */ callvirt   instance class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/ System.Runtime.Serialization.ValueTypeFixupInfo/*02000024*/::get_ParentField() /* 0600014E */
+    IL_004c:  /* 6F   | (06)00014E       */ callvirt   instance class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/ BalthasarIL.Serialization.ValueTypeFixupInfo/*02000024*/::get_ParentField() /* 0600014E */
     IL_0051:  /* 14   |                  */ ldnull
     IL_0052:  /* 28   | (0A)000071       */ call       bool [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/::op_Inequality(class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/,
                                                                                                                                                        class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/) /* 0A000071 */
     IL_0057:  /* 2C   | 51               */ brfalse.s  IL_00aa
 
     IL_0059:  /* 11   | 04               */ ldloc.s    V_4
-    IL_005b:  /* 6F   | (06)00014E       */ callvirt   instance class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/ System.Runtime.Serialization.ValueTypeFixupInfo/*02000024*/::get_ParentField() /* 0600014E */
+    IL_005b:  /* 6F   | (06)00014E       */ callvirt   instance class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/ BalthasarIL.Serialization.ValueTypeFixupInfo/*02000024*/::get_ParentField() /* 0600014E */
     IL_0060:  /* 13   | 07               */ stloc.s    V_7
     IL_0062:  /* 02   |                  */ ldarg.0
     IL_0063:  /* 11   | 04               */ ldloc.s    V_4
-    IL_0065:  /* 6F   | (06)00014D       */ callvirt   instance int64 System.Runtime.Serialization.ValueTypeFixupInfo/*02000024*/::get_ContainerID() /* 0600014D */
-    IL_006a:  /* 28   | (06)0000BB       */ call       instance class System.Runtime.Serialization.ObjectHolder/*02000013*/ System.Runtime.Serialization.ObjectManager/*02000012*/::FindObjectHolder(int64) /* 060000BB */
+    IL_0065:  /* 6F   | (06)00014D       */ callvirt   instance int64 BalthasarIL.Serialization.ValueTypeFixupInfo/*02000024*/::get_ContainerID() /* 0600014D */
+    IL_006a:  /* 28   | (06)0000BB       */ call       instance class BalthasarIL.Serialization.ObjectHolder/*02000013*/ BalthasarIL.Serialization.ObjectManager/*02000012*/::FindObjectHolder(int64) /* 060000BB */
     IL_006f:  /* 13   | 08               */ stloc.s    V_8
     IL_0071:  /* 11   | 08               */ ldloc.s    V_8
-    IL_0073:  /* 6F   | (06)0000F6       */ callvirt   instance object System.Runtime.Serialization.ObjectHolder/*02000013*/::get_ObjectValue() /* 060000F6 */
+    IL_0073:  /* 6F   | (06)0000F6       */ callvirt   instance object BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_ObjectValue() /* 060000F6 */
     IL_0078:  /* 2C   | 54               */ brfalse.s  IL_00ce
 
     IL_007a:  /* 11   | 07               */ ldloc.s    V_7
     IL_007c:  /* 6F   | (0A)000072       */ callvirt   instance class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/::get_FieldType() /* 0A000072 */
-    IL_0081:  /* 28   | (06)0000C2       */ call       class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/ System.Runtime.Serialization.ObjectManager/*02000012*/::GetNullableValueField(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/) /* 060000C2 */
+    IL_0081:  /* 28   | (06)0000C2       */ call       class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/ BalthasarIL.Serialization.ObjectManager/*02000012*/::GetNullableValueField(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/) /* 060000C2 */
     IL_0086:  /* 13   | 09               */ stloc.s    V_9
     IL_0088:  /* 11   | 09               */ ldloc.s    V_9
     IL_008a:  /* 14   |                  */ ldnull
@@ -10238,29 +10238,29 @@
 
     IL_00aa:  /* 02   |                  */ ldarg.0
     IL_00ab:  /* 11   | 04               */ ldloc.s    V_4
-    IL_00ad:  /* 6F   | (06)00014D       */ callvirt   instance int64 System.Runtime.Serialization.ValueTypeFixupInfo/*02000024*/::get_ContainerID() /* 0600014D */
-    IL_00b2:  /* 28   | (06)0000BB       */ call       instance class System.Runtime.Serialization.ObjectHolder/*02000013*/ System.Runtime.Serialization.ObjectManager/*02000012*/::FindObjectHolder(int64) /* 060000BB */
+    IL_00ad:  /* 6F   | (06)00014D       */ callvirt   instance int64 BalthasarIL.Serialization.ValueTypeFixupInfo/*02000024*/::get_ContainerID() /* 0600014D */
+    IL_00b2:  /* 28   | (06)0000BB       */ call       instance class BalthasarIL.Serialization.ObjectHolder/*02000013*/ BalthasarIL.Serialization.ObjectManager/*02000012*/::FindObjectHolder(int64) /* 060000BB */
     IL_00b7:  /* 10   | 02               */ starg.s    holder
     IL_00b9:  /* 11   | 04               */ ldloc.s    V_4
-    IL_00bb:  /* 6F   | (06)00014F       */ callvirt   instance int32[] System.Runtime.Serialization.ValueTypeFixupInfo/*02000024*/::get_ParentIndex() /* 0600014F */
+    IL_00bb:  /* 6F   | (06)00014F       */ callvirt   instance int32[] BalthasarIL.Serialization.ValueTypeFixupInfo/*02000024*/::get_ParentIndex() /* 0600014F */
     IL_00c0:  /* 0D   |                  */ stloc.3
     IL_00c1:  /* 2B   | 0B               */ br.s       IL_00ce
 
     IL_00c3:  /* 04   |                  */ ldarg.2
-    IL_00c4:  /* 6F   | (06)0000E8       */ callvirt   instance bool System.Runtime.Serialization.ObjectHolder/*02000013*/::get_RequiresValueTypeFixup() /* 060000E8 */
+    IL_00c4:  /* 6F   | (06)0000E8       */ callvirt   instance bool BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_RequiresValueTypeFixup() /* 060000E8 */
     IL_00c9:  /* 3A   | 4AFFFFFF         */ brtrue     IL_0018
 
     IL_00ce:  /* 04   |                  */ ldarg.2
-    IL_00cf:  /* 6F   | (06)0000F6       */ callvirt   instance object System.Runtime.Serialization.ObjectHolder/*02000013*/::get_ObjectValue() /* 060000F6 */
+    IL_00cf:  /* 6F   | (06)0000F6       */ callvirt   instance object BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_ObjectValue() /* 060000F6 */
     IL_00d4:  /* 75   | (01)000034       */ isinst     [System.Private.CoreLib/*23000001*/]System.Array/*01000034*/
     IL_00d9:  /* 2D   | 10               */ brtrue.s   IL_00eb
 
     IL_00db:  /* 04   |                  */ ldarg.2
-    IL_00dc:  /* 6F   | (06)0000F6       */ callvirt   instance object System.Runtime.Serialization.ObjectHolder/*02000013*/::get_ObjectValue() /* 060000F6 */
+    IL_00dc:  /* 6F   | (06)0000F6       */ callvirt   instance object BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_ObjectValue() /* 060000F6 */
     IL_00e1:  /* 2C   | 08               */ brfalse.s  IL_00eb
 
     IL_00e3:  /* 04   |                  */ ldarg.2
-    IL_00e4:  /* 6F   | (06)0000F6       */ callvirt   instance object System.Runtime.Serialization.ObjectHolder/*02000013*/::get_ObjectValue() /* 060000F6 */
+    IL_00e4:  /* 6F   | (06)0000F6       */ callvirt   instance object BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_ObjectValue() /* 060000F6 */
     IL_00e9:  /* 13   | 05               */ stloc.s    V_5
     IL_00eb:  /* 08   |                  */ ldloc.2
     IL_00ec:  /* 2C   | 6B               */ brfalse.s  IL_0159
@@ -10281,7 +10281,7 @@
     IL_0101:  /* 9A   |                  */ ldelem.ref
     IL_0102:  /* 13   | 0C               */ stloc.s    V_12
     IL_0104:  /* 11   | 0C               */ ldloc.s    V_12
-    IL_0106:  /* 75   | (02)00001F       */ isinst     System.Runtime.Serialization.SerializationFieldInfo/*0200001F*/
+    IL_0106:  /* 75   | (02)00001F       */ isinst     BalthasarIL.Serialization.SerializationFieldInfo/*0200001F*/
     IL_010b:  /* 13   | 0D               */ stloc.s    V_13
     IL_010d:  /* 07   |                  */ ldloc.1
     IL_010e:  /* 11   | 0B               */ ldloc.s    V_11
@@ -10292,7 +10292,7 @@
     IL_0118:  /* 2D   | 09               */ brtrue.s   IL_0123
 
     IL_011a:  /* 11   | 0D               */ ldloc.s    V_13
-    IL_011c:  /* 6F   | (06)00012F       */ callvirt   instance class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/ System.Runtime.Serialization.SerializationFieldInfo/*0200001F*/::get_FieldInfo() /* 0600012F */
+    IL_011c:  /* 6F   | (06)00012F       */ callvirt   instance class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/ BalthasarIL.Serialization.SerializationFieldInfo/*0200001F*/::get_FieldInfo() /* 0600012F */
     IL_0121:  /* 2B   | 02               */ br.s       IL_0125
 
     IL_0123:  /* 11   | 0C               */ ldloc.s    V_12
@@ -10338,18 +10338,18 @@
     IL_0162:  /* 03   |                  */ ldarg.1
     IL_0163:  /* 11   | 05               */ ldloc.s    V_5
     IL_0165:  /* 05   |                  */ ldarg.3
-    IL_0166:  /* 28   | (06)00008F       */ call       void System.Runtime.Serialization.FormatterServices/*0200000A*/::SerializationSetValue(class [System.Private.CoreLib/*23000001*/]System.Reflection.MemberInfo/*01000031*/,
+    IL_0166:  /* 28   | (06)00008F       */ call       void BalthasarIL.Serialization.FormatterServices/*0200000A*/::SerializationSetValue(class [System.Private.CoreLib/*23000001*/]System.Reflection.MemberInfo/*01000031*/,
                                                                                                                                               object,
                                                                                                                                               object) /* 0600008F */
     IL_016b:  /* 09   |                  */ ldloc.3
     IL_016c:  /* 2C   | 1B               */ brfalse.s  IL_0189
 
     IL_016e:  /* 04   |                  */ ldarg.2
-    IL_016f:  /* 6F   | (06)0000F6       */ callvirt   instance object System.Runtime.Serialization.ObjectHolder/*02000013*/::get_ObjectValue() /* 060000F6 */
+    IL_016f:  /* 6F   | (06)0000F6       */ callvirt   instance object BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_ObjectValue() /* 060000F6 */
     IL_0174:  /* 2C   | 13               */ brfalse.s  IL_0189
 
     IL_0176:  /* 04   |                  */ ldarg.2
-    IL_0177:  /* 6F   | (06)0000F6       */ callvirt   instance object System.Runtime.Serialization.ObjectHolder/*02000013*/::get_ObjectValue() /* 060000F6 */
+    IL_0177:  /* 6F   | (06)0000F6       */ callvirt   instance object BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_ObjectValue() /* 060000F6 */
     IL_017c:  /* 74   | (01)000034       */ castclass  [System.Private.CoreLib/*23000001*/]System.Array/*01000034*/
     IL_0181:  /* 11   | 05               */ ldloc.s    V_5
     IL_0183:  /* 09   |                  */ ldloc.3
@@ -10375,7 +10375,7 @@
     IL_000c:  /* 2C   | 11               */ brfalse.s  IL_001f
 
     IL_000e:  /* 02   |                  */ ldarg.0
-    IL_000f:  /* 7E   | (04)000012       */ ldsfld     class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/ System.Runtime.Serialization.ObjectManager/*02000012*/::s_nullableValueField /* 04000012 */
+    IL_000f:  /* 7E   | (04)000012       */ ldsfld     class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/ BalthasarIL.Serialization.ObjectManager/*02000012*/::s_nullableValueField /* 04000012 */
     IL_0014:  /* 6F   | (0A)000078       */ callvirt   instance class [System.Private.CoreLib/*23000001*/]System.Reflection.MemberInfo/*01000031*/ [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/::GetMemberWithSameMetadataDefinitionAs(class [System.Private.CoreLib/*23000001*/]System.Reflection.MemberInfo/*01000031*/) /* 0A000078 */
     IL_0019:  /* 74   | (01)000032       */ castclass  [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/
     IL_001e:  /* 2A   |                  */ ret
@@ -10385,18 +10385,18 @@
   } // end of method ObjectManager::GetNullableValueField
 
   .method /*060000C3*/ assembly hidebysig 
-          instance void  CompleteObject(class System.Runtime.Serialization.ObjectHolder/*02000013*/ holder,
+          instance void  CompleteObject(class BalthasarIL.Serialization.ObjectHolder/*02000013*/ holder,
                                         bool bObjectFullyComplete) cil managed
   // SIG: 20 02 01 12 4C 02
   {
     // 方法在 RVA 0x21d00 处开始
     // 代码大小       650 (0x28a)
     .maxstack  5
-    .locals /*11000021*/ (class System.Runtime.Serialization.FixupHolderList/*02000015*/ V_0,
-             class System.Runtime.Serialization.FixupHolder/*02000014*/ V_1,
+    .locals /*11000021*/ (class BalthasarIL.Serialization.FixupHolderList/*02000015*/ V_0,
+             class BalthasarIL.Serialization.FixupHolder/*02000014*/ V_1,
              class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationInfo/*01000044*/ V_2,
              object V_3,
-             class System.Runtime.Serialization.ObjectHolder/*02000013*/ V_4,
+             class BalthasarIL.Serialization.ObjectHolder/*02000013*/ V_4,
              int32 V_5,
              int32 V_6,
              object V_7,
@@ -10404,21 +10404,21 @@
              class [System.Private.CoreLib/*23000001*/]System.Reflection.MemberInfo/*01000031*/ V_9,
              int32 V_10)
     IL_0000:  /* 03   |                  */ ldarg.1
-    IL_0001:  /* 7B   | (04)000021       */ ldfld      class System.Runtime.Serialization.FixupHolderList/*02000015*/ System.Runtime.Serialization.ObjectHolder/*02000013*/::_missingElements /* 04000021 */
+    IL_0001:  /* 7B   | (04)000021       */ ldfld      class BalthasarIL.Serialization.FixupHolderList/*02000015*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::_missingElements /* 04000021 */
     IL_0006:  /* 0A   |                  */ stloc.0
     IL_0007:  /* 16   |                  */ ldc.i4.0
     IL_0008:  /* 13   | 05               */ stloc.s    V_5
     IL_000a:  /* 03   |                  */ ldarg.1
-    IL_000b:  /* 6F   | (06)0000F6       */ callvirt   instance object System.Runtime.Serialization.ObjectHolder/*02000013*/::get_ObjectValue() /* 060000F6 */
+    IL_000b:  /* 6F   | (06)0000F6       */ callvirt   instance object BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_ObjectValue() /* 060000F6 */
     IL_0010:  /* 2D   | 1B               */ brtrue.s   IL_002d
 
     IL_0012:  /* 28   | (06)000019       */ call       string System.SR/*02000004*/::get_Serialization_MissingObject() /* 06000019 */
     IL_0017:  /* 03   |                  */ ldarg.1
-    IL_0018:  /* 7B   | (04)00001C       */ ldfld      int64 System.Runtime.Serialization.ObjectHolder/*02000013*/::_id /* 0400001C */
+    IL_0018:  /* 7B   | (04)00001C       */ ldfld      int64 BalthasarIL.Serialization.ObjectHolder/*02000013*/::_id /* 0400001C */
     IL_001d:  /* 8C   | (01)000024       */ box        [System.Private.CoreLib/*23000001*/]System.Int64/*01000024*/
     IL_0022:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_0027:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0027:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_002c:  /* 7A   |                  */ throw
 
     IL_002d:  /* 06   |                  */ ldloc.0
@@ -10427,21 +10427,21 @@
     IL_0030:  /* 2A   |                  */ ret
 
     IL_0031:  /* 03   |                  */ ldarg.1
-    IL_0032:  /* 6F   | (06)0000EC       */ callvirt   instance bool System.Runtime.Serialization.ObjectHolder/*02000013*/::get_HasSurrogate() /* 060000EC */
+    IL_0032:  /* 6F   | (06)0000EC       */ callvirt   instance bool BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_HasSurrogate() /* 060000EC */
     IL_0037:  /* 2D   | 0B               */ brtrue.s   IL_0044
 
     IL_0039:  /* 03   |                  */ ldarg.1
-    IL_003a:  /* 6F   | (06)0000EB       */ callvirt   instance bool System.Runtime.Serialization.ObjectHolder/*02000013*/::get_HasISerializable() /* 060000EB */
+    IL_003a:  /* 6F   | (06)0000EB       */ callvirt   instance bool BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_HasISerializable() /* 060000EB */
     IL_003f:  /* 39   | AC000000         */ brfalse    IL_00f0
 
     IL_0044:  /* 03   |                  */ ldarg.1
-    IL_0045:  /* 7B   | (04)00001F       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationInfo/*01000044*/ System.Runtime.Serialization.ObjectHolder/*02000013*/::_serInfo /* 0400001F */
+    IL_0045:  /* 7B   | (04)00001F       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationInfo/*01000044*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::_serInfo /* 0400001F */
     IL_004a:  /* 0C   |                  */ stloc.2
     IL_004b:  /* 08   |                  */ ldloc.2
     IL_004c:  /* 2D   | 0B               */ brtrue.s   IL_0059
 
     IL_004e:  /* 28   | (06)00001A       */ call       string System.SR/*02000004*/::get_Serialization_InvalidFixupDiscovered() /* 0600001A */
-    IL_0053:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0053:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0058:  /* 7A   |                  */ throw
 
     IL_0059:  /* 06   |                  */ ldloc.0
@@ -10452,31 +10452,31 @@
     IL_0062:  /* 38   | 77000000         */ br         IL_00de
 
     IL_0067:  /* 06   |                  */ ldloc.0
-    IL_0068:  /* 7B   | (04)00002C       */ ldfld      class System.Runtime.Serialization.FixupHolder/*02000014*/[] System.Runtime.Serialization.FixupHolderList/*02000015*/::_values /* 0400002C */
+    IL_0068:  /* 7B   | (04)00002C       */ ldfld      class BalthasarIL.Serialization.FixupHolder/*02000014*/[] BalthasarIL.Serialization.FixupHolderList/*02000015*/::_values /* 0400002C */
     IL_006d:  /* 11   | 06               */ ldloc.s    V_6
     IL_006f:  /* 9A   |                  */ ldelem.ref
     IL_0070:  /* 2C   | 66               */ brfalse.s  IL_00d8
 
     IL_0072:  /* 02   |                  */ ldarg.0
     IL_0073:  /* 06   |                  */ ldloc.0
-    IL_0074:  /* 7B   | (04)00002C       */ ldfld      class System.Runtime.Serialization.FixupHolder/*02000014*/[] System.Runtime.Serialization.FixupHolderList/*02000015*/::_values /* 0400002C */
+    IL_0074:  /* 7B   | (04)00002C       */ ldfld      class BalthasarIL.Serialization.FixupHolder/*02000014*/[] BalthasarIL.Serialization.FixupHolderList/*02000015*/::_values /* 0400002C */
     IL_0079:  /* 11   | 06               */ ldloc.s    V_6
     IL_007b:  /* 9A   |                  */ ldelem.ref
     IL_007c:  /* 12   | 04               */ ldloca.s   V_4
     IL_007e:  /* 12   | 03               */ ldloca.s   V_3
     IL_0080:  /* 04   |                  */ ldarg.2
-    IL_0081:  /* 28   | (06)0000BE       */ call       instance bool System.Runtime.Serialization.ObjectManager/*02000012*/::GetCompletionInfo(class System.Runtime.Serialization.FixupHolder/*02000014*/,
-                                                                                                                                               class System.Runtime.Serialization.ObjectHolder/*02000013*/&,
+    IL_0081:  /* 28   | (06)0000BE       */ call       instance bool BalthasarIL.Serialization.ObjectManager/*02000012*/::GetCompletionInfo(class BalthasarIL.Serialization.FixupHolder/*02000014*/,
+                                                                                                                                               class BalthasarIL.Serialization.ObjectHolder/*02000013*/&,
                                                                                                                                                object&,
                                                                                                                                                bool) /* 060000BE */
     IL_0086:  /* 2C   | 50               */ brfalse.s  IL_00d8
 
     IL_0088:  /* 11   | 04               */ ldloc.s    V_4
-    IL_008a:  /* 6F   | (06)0000F6       */ callvirt   instance object System.Runtime.Serialization.ObjectHolder/*02000013*/::get_ObjectValue() /* 060000F6 */
+    IL_008a:  /* 6F   | (06)0000F6       */ callvirt   instance object BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_ObjectValue() /* 060000F6 */
     IL_008f:  /* 13   | 07               */ stloc.s    V_7
     IL_0091:  /* 02   |                  */ ldarg.0
     IL_0092:  /* 11   | 07               */ ldloc.s    V_7
-    IL_0094:  /* 28   | (06)0000B7       */ call       instance bool System.Runtime.Serialization.ObjectManager/*02000012*/::CanCallGetType(object) /* 060000B7 */
+    IL_0094:  /* 28   | (06)0000B7       */ call       instance bool BalthasarIL.Serialization.ObjectManager/*02000012*/::CanCallGetType(object) /* 060000B7 */
     IL_0099:  /* 26   |                  */ pop
     IL_009a:  /* 08   |                  */ ldloc.2
     IL_009b:  /* 09   |                  */ ldloc.3
@@ -10495,7 +10495,7 @@
     IL_00b4:  /* 58   |                  */ add
     IL_00b5:  /* 13   | 05               */ stloc.s    V_5
     IL_00b7:  /* 06   |                  */ ldloc.0
-    IL_00b8:  /* 7B   | (04)00002C       */ ldfld      class System.Runtime.Serialization.FixupHolder/*02000014*/[] System.Runtime.Serialization.FixupHolderList/*02000015*/::_values /* 0400002C */
+    IL_00b8:  /* 7B   | (04)00002C       */ ldfld      class BalthasarIL.Serialization.FixupHolder/*02000014*/[] BalthasarIL.Serialization.FixupHolderList/*02000015*/::_values /* 0400002C */
     IL_00bd:  /* 11   | 06               */ ldloc.s    V_6
     IL_00bf:  /* 14   |                  */ ldnull
     IL_00c0:  /* A2   |                  */ stelem.ref
@@ -10504,18 +10504,18 @@
 
     IL_00c4:  /* 03   |                  */ ldarg.1
     IL_00c5:  /* 02   |                  */ ldarg.0
-    IL_00c6:  /* 6F   | (06)0000DD       */ callvirt   instance void System.Runtime.Serialization.ObjectHolder/*02000013*/::DecrementFixupsRemaining(class System.Runtime.Serialization.ObjectManager/*02000012*/) /* 060000DD */
+    IL_00c6:  /* 6F   | (06)0000DD       */ callvirt   instance void BalthasarIL.Serialization.ObjectHolder/*02000013*/::DecrementFixupsRemaining(class BalthasarIL.Serialization.ObjectManager/*02000012*/) /* 060000DD */
     IL_00cb:  /* 11   | 04               */ ldloc.s    V_4
     IL_00cd:  /* 03   |                  */ ldarg.1
-    IL_00ce:  /* 7B   | (04)00001C       */ ldfld      int64 System.Runtime.Serialization.ObjectHolder/*02000013*/::_id /* 0400001C */
-    IL_00d3:  /* 6F   | (06)0000DE       */ callvirt   instance void System.Runtime.Serialization.ObjectHolder/*02000013*/::RemoveDependency(int64) /* 060000DE */
+    IL_00ce:  /* 7B   | (04)00001C       */ ldfld      int64 BalthasarIL.Serialization.ObjectHolder/*02000013*/::_id /* 0400001C */
+    IL_00d3:  /* 6F   | (06)0000DE       */ callvirt   instance void BalthasarIL.Serialization.ObjectHolder/*02000013*/::RemoveDependency(int64) /* 060000DE */
     IL_00d8:  /* 11   | 06               */ ldloc.s    V_6
     IL_00da:  /* 17   |                  */ ldc.i4.1
     IL_00db:  /* 58   |                  */ add
     IL_00dc:  /* 13   | 06               */ stloc.s    V_6
     IL_00de:  /* 11   | 06               */ ldloc.s    V_6
     IL_00e0:  /* 06   |                  */ ldloc.0
-    IL_00e1:  /* 7B   | (04)00002D       */ ldfld      int32 System.Runtime.Serialization.FixupHolderList/*02000015*/::_count /* 0400002D */
+    IL_00e1:  /* 7B   | (04)00002D       */ ldfld      int32 BalthasarIL.Serialization.FixupHolderList/*02000015*/::_count /* 0400002D */
     IL_00e6:  /* 3F   | 7CFFFFFF         */ blt        IL_0067
 
     IL_00eb:  /* 38   | 78010000         */ br         IL_0268
@@ -10525,7 +10525,7 @@
     IL_00f3:  /* 38   | 63010000         */ br         IL_025b
 
     IL_00f8:  /* 06   |                  */ ldloc.0
-    IL_00f9:  /* 7B   | (04)00002C       */ ldfld      class System.Runtime.Serialization.FixupHolder/*02000014*/[] System.Runtime.Serialization.FixupHolderList/*02000015*/::_values /* 0400002C */
+    IL_00f9:  /* 7B   | (04)00002C       */ ldfld      class BalthasarIL.Serialization.FixupHolder/*02000014*/[] BalthasarIL.Serialization.FixupHolderList/*02000015*/::_values /* 0400002C */
     IL_00fe:  /* 11   | 08               */ ldloc.s    V_8
     IL_0100:  /* 9A   |                  */ ldelem.ref
     IL_0101:  /* 0B   |                  */ stloc.1
@@ -10537,42 +10537,42 @@
     IL_010a:  /* 12   | 04               */ ldloca.s   V_4
     IL_010c:  /* 12   | 03               */ ldloca.s   V_3
     IL_010e:  /* 04   |                  */ ldarg.2
-    IL_010f:  /* 28   | (06)0000BE       */ call       instance bool System.Runtime.Serialization.ObjectManager/*02000012*/::GetCompletionInfo(class System.Runtime.Serialization.FixupHolder/*02000014*/,
-                                                                                                                                               class System.Runtime.Serialization.ObjectHolder/*02000013*/&,
+    IL_010f:  /* 28   | (06)0000BE       */ call       instance bool BalthasarIL.Serialization.ObjectManager/*02000012*/::GetCompletionInfo(class BalthasarIL.Serialization.FixupHolder/*02000014*/,
+                                                                                                                                               class BalthasarIL.Serialization.ObjectHolder/*02000013*/&,
                                                                                                                                                object&,
                                                                                                                                                bool) /* 060000BE */
     IL_0114:  /* 39   | 3C010000         */ brfalse    IL_0255
 
     IL_0119:  /* 11   | 04               */ ldloc.s    V_4
-    IL_011b:  /* 6F   | (06)0000F3       */ callvirt   instance bool System.Runtime.Serialization.ObjectHolder/*02000013*/::get_TypeLoadExceptionReachable() /* 060000F3 */
+    IL_011b:  /* 6F   | (06)0000F3       */ callvirt   instance bool BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_TypeLoadExceptionReachable() /* 060000F3 */
     IL_0120:  /* 2C   | 30               */ brfalse.s  IL_0152
 
     IL_0122:  /* 03   |                  */ ldarg.1
     IL_0123:  /* 11   | 04               */ ldloc.s    V_4
-    IL_0125:  /* 6F   | (06)0000F4       */ callvirt   instance class System.Runtime.Serialization.TypeLoadExceptionHolder/*02000019*/ System.Runtime.Serialization.ObjectHolder/*02000013*/::get_TypeLoadException() /* 060000F4 */
-    IL_012a:  /* 6F   | (06)0000F5       */ callvirt   instance void System.Runtime.Serialization.ObjectHolder/*02000013*/::set_TypeLoadException(class System.Runtime.Serialization.TypeLoadExceptionHolder/*02000019*/) /* 060000F5 */
+    IL_0125:  /* 6F   | (06)0000F4       */ callvirt   instance class BalthasarIL.Serialization.TypeLoadExceptionHolder/*02000019*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_TypeLoadException() /* 060000F4 */
+    IL_012a:  /* 6F   | (06)0000F5       */ callvirt   instance void BalthasarIL.Serialization.ObjectHolder/*02000013*/::set_TypeLoadException(class BalthasarIL.Serialization.TypeLoadExceptionHolder/*02000019*/) /* 060000F5 */
     IL_012f:  /* 03   |                  */ ldarg.1
-    IL_0130:  /* 6F   | (06)0000F1       */ callvirt   instance bool System.Runtime.Serialization.ObjectHolder/*02000013*/::get_Reachable() /* 060000F1 */
+    IL_0130:  /* 6F   | (06)0000F1       */ callvirt   instance bool BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_Reachable() /* 060000F1 */
     IL_0135:  /* 2C   | 1B               */ brfalse.s  IL_0152
 
     IL_0137:  /* 28   | (06)00001B       */ call       string System.SR/*02000004*/::get_Serialization_TypeLoadFailure() /* 0600001B */
     IL_013c:  /* 03   |                  */ ldarg.1
-    IL_013d:  /* 6F   | (06)0000F4       */ callvirt   instance class System.Runtime.Serialization.TypeLoadExceptionHolder/*02000019*/ System.Runtime.Serialization.ObjectHolder/*02000013*/::get_TypeLoadException() /* 060000F4 */
-    IL_0142:  /* 6F   | (06)00011B       */ callvirt   instance string System.Runtime.Serialization.TypeLoadExceptionHolder/*02000019*/::get_TypeName() /* 0600011B */
+    IL_013d:  /* 6F   | (06)0000F4       */ callvirt   instance class BalthasarIL.Serialization.TypeLoadExceptionHolder/*02000019*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_TypeLoadException() /* 060000F4 */
+    IL_0142:  /* 6F   | (06)00011B       */ callvirt   instance string BalthasarIL.Serialization.TypeLoadExceptionHolder/*02000019*/::get_TypeName() /* 0600011B */
     IL_0147:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_014c:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_014c:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0151:  /* 7A   |                  */ throw
 
     IL_0152:  /* 03   |                  */ ldarg.1
-    IL_0153:  /* 6F   | (06)0000F1       */ callvirt   instance bool System.Runtime.Serialization.ObjectHolder/*02000013*/::get_Reachable() /* 060000F1 */
+    IL_0153:  /* 6F   | (06)0000F1       */ callvirt   instance bool BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_Reachable() /* 060000F1 */
     IL_0158:  /* 2C   | 08               */ brfalse.s  IL_0162
 
     IL_015a:  /* 11   | 04               */ ldloc.s    V_4
     IL_015c:  /* 17   |                  */ ldc.i4.1
-    IL_015d:  /* 6F   | (06)0000F2       */ callvirt   instance void System.Runtime.Serialization.ObjectHolder/*02000013*/::set_Reachable(bool) /* 060000F2 */
+    IL_015d:  /* 6F   | (06)0000F2       */ callvirt   instance void BalthasarIL.Serialization.ObjectHolder/*02000013*/::set_Reachable(bool) /* 060000F2 */
     IL_0162:  /* 07   |                  */ ldloc.1
-    IL_0163:  /* 7B   | (04)00002B       */ ldfld      int32 System.Runtime.Serialization.FixupHolder/*02000014*/::_fixupType /* 0400002B */
+    IL_0163:  /* 7B   | (04)00002B       */ ldfld      int32 BalthasarIL.Serialization.FixupHolder/*02000014*/::_fixupType /* 0400002B */
     IL_0168:  /* 13   | 0A               */ stloc.s    V_10
     IL_016a:  /* 11   | 0A               */ ldloc.s    V_10
     IL_016c:  /* 17   |                  */ ldc.i4.1
@@ -10585,18 +10585,18 @@
     IL_0174:  /* 38   | AA000000         */ br         IL_0223
 
     IL_0179:  /* 03   |                  */ ldarg.1
-    IL_017a:  /* 6F   | (06)0000E8       */ callvirt   instance bool System.Runtime.Serialization.ObjectHolder/*02000013*/::get_RequiresValueTypeFixup() /* 060000E8 */
+    IL_017a:  /* 6F   | (06)0000E8       */ callvirt   instance bool BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_RequiresValueTypeFixup() /* 060000E8 */
     IL_017f:  /* 2C   | 0B               */ brfalse.s  IL_018c
 
     IL_0181:  /* 28   | (06)00001C       */ call       string System.SR/*02000004*/::get_Serialization_ValueTypeFixup() /* 0600001C */
-    IL_0186:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0186:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_018b:  /* 7A   |                  */ throw
 
     IL_018c:  /* 03   |                  */ ldarg.1
-    IL_018d:  /* 6F   | (06)0000F6       */ callvirt   instance object System.Runtime.Serialization.ObjectHolder/*02000013*/::get_ObjectValue() /* 060000F6 */
+    IL_018d:  /* 6F   | (06)0000F6       */ callvirt   instance object BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_ObjectValue() /* 060000F6 */
     IL_0192:  /* 74   | (01)000034       */ castclass  [System.Private.CoreLib/*23000001*/]System.Array/*01000034*/
     IL_0197:  /* 11   | 04               */ ldloc.s    V_4
-    IL_0199:  /* 6F   | (06)0000F6       */ callvirt   instance object System.Runtime.Serialization.ObjectHolder/*02000013*/::get_ObjectValue() /* 060000F6 */
+    IL_0199:  /* 6F   | (06)0000F6       */ callvirt   instance object BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_ObjectValue() /* 060000F6 */
     IL_019e:  /* 09   |                  */ ldloc.3
     IL_019f:  /* 74   | (1B)000005       */ castclass  int32[]/*1B000005*/
     IL_01a4:  /* 6F   | (0A)000076       */ callvirt   instance void [System.Private.CoreLib/*23000001*/]System.Array/*01000034*/::SetValue(object,
@@ -10611,11 +10611,11 @@
     IL_01bd:  /* 2C   | 59               */ brfalse.s  IL_0218
 
     IL_01bf:  /* 03   |                  */ ldarg.1
-    IL_01c0:  /* 6F   | (06)0000E8       */ callvirt   instance bool System.Runtime.Serialization.ObjectHolder/*02000013*/::get_RequiresValueTypeFixup() /* 060000E8 */
+    IL_01c0:  /* 6F   | (06)0000E8       */ callvirt   instance bool BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_RequiresValueTypeFixup() /* 060000E8 */
     IL_01c5:  /* 2C   | 2A               */ brfalse.s  IL_01f1
 
     IL_01c7:  /* 03   |                  */ ldarg.1
-    IL_01c8:  /* 6F   | (06)0000E9       */ callvirt   instance bool System.Runtime.Serialization.ObjectHolder/*02000013*/::get_ValueTypeFixupPerformed() /* 060000E9 */
+    IL_01c8:  /* 6F   | (06)0000E9       */ callvirt   instance bool BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_ValueTypeFixupPerformed() /* 060000E9 */
     IL_01cd:  /* 2C   | 22               */ brfalse.s  IL_01f1
 
     IL_01cf:  /* 02   |                  */ ldarg.0
@@ -10623,39 +10623,39 @@
     IL_01d2:  /* 74   | (01)000032       */ castclass  [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/
     IL_01d7:  /* 03   |                  */ ldarg.1
     IL_01d8:  /* 11   | 04               */ ldloc.s    V_4
-    IL_01da:  /* 6F   | (06)0000F6       */ callvirt   instance object System.Runtime.Serialization.ObjectHolder/*02000013*/::get_ObjectValue() /* 060000F6 */
-    IL_01df:  /* 28   | (06)0000C1       */ call       instance bool System.Runtime.Serialization.ObjectManager/*02000012*/::DoValueTypeFixup(class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/,
-                                                                                                                                              class System.Runtime.Serialization.ObjectHolder/*02000013*/,
+    IL_01da:  /* 6F   | (06)0000F6       */ callvirt   instance object BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_ObjectValue() /* 060000F6 */
+    IL_01df:  /* 28   | (06)0000C1       */ call       instance bool BalthasarIL.Serialization.ObjectManager/*02000012*/::DoValueTypeFixup(class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/,
+                                                                                                                                              class BalthasarIL.Serialization.ObjectHolder/*02000013*/,
                                                                                                                                               object) /* 060000C1 */
     IL_01e4:  /* 2D   | 1F               */ brtrue.s   IL_0205
 
     IL_01e6:  /* 28   | (06)00001D       */ call       string System.SR/*02000004*/::get_Serialization_PartialValueTypeFixup() /* 0600001D */
-    IL_01eb:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_01eb:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_01f0:  /* 7A   |                  */ throw
 
     IL_01f1:  /* 11   | 09               */ ldloc.s    V_9
     IL_01f3:  /* 03   |                  */ ldarg.1
-    IL_01f4:  /* 6F   | (06)0000F6       */ callvirt   instance object System.Runtime.Serialization.ObjectHolder/*02000013*/::get_ObjectValue() /* 060000F6 */
+    IL_01f4:  /* 6F   | (06)0000F6       */ callvirt   instance object BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_ObjectValue() /* 060000F6 */
     IL_01f9:  /* 11   | 04               */ ldloc.s    V_4
-    IL_01fb:  /* 6F   | (06)0000F6       */ callvirt   instance object System.Runtime.Serialization.ObjectHolder/*02000013*/::get_ObjectValue() /* 060000F6 */
-    IL_0200:  /* 28   | (06)00008F       */ call       void System.Runtime.Serialization.FormatterServices/*0200000A*/::SerializationSetValue(class [System.Private.CoreLib/*23000001*/]System.Reflection.MemberInfo/*01000031*/,
+    IL_01fb:  /* 6F   | (06)0000F6       */ callvirt   instance object BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_ObjectValue() /* 060000F6 */
+    IL_0200:  /* 28   | (06)00008F       */ call       void BalthasarIL.Serialization.FormatterServices/*0200000A*/::SerializationSetValue(class [System.Private.CoreLib/*23000001*/]System.Reflection.MemberInfo/*01000031*/,
                                                                                                                                               object,
                                                                                                                                               object) /* 0600008F */
     IL_0205:  /* 11   | 04               */ ldloc.s    V_4
-    IL_0207:  /* 6F   | (06)0000E8       */ callvirt   instance bool System.Runtime.Serialization.ObjectHolder/*02000013*/::get_RequiresValueTypeFixup() /* 060000E8 */
+    IL_0207:  /* 6F   | (06)0000E8       */ callvirt   instance bool BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_RequiresValueTypeFixup() /* 060000E8 */
     IL_020c:  /* 2C   | 20               */ brfalse.s  IL_022e
 
     IL_020e:  /* 11   | 04               */ ldloc.s    V_4
     IL_0210:  /* 17   |                  */ ldc.i4.1
-    IL_0211:  /* 6F   | (06)0000EA       */ callvirt   instance void System.Runtime.Serialization.ObjectHolder/*02000013*/::set_ValueTypeFixupPerformed(bool) /* 060000EA */
+    IL_0211:  /* 6F   | (06)0000EA       */ callvirt   instance void BalthasarIL.Serialization.ObjectHolder/*02000013*/::set_ValueTypeFixupPerformed(bool) /* 060000EA */
     IL_0216:  /* 2B   | 16               */ br.s       IL_022e
 
     IL_0218:  /* 28   | (06)00001E       */ call       string System.SR/*02000004*/::get_Serialization_UnableToFixup() /* 0600001E */
-    IL_021d:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_021d:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0222:  /* 7A   |                  */ throw
 
     IL_0223:  /* 28   | (06)00001E       */ call       string System.SR/*02000004*/::get_Serialization_UnableToFixup() /* 0600001E */
-    IL_0228:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0228:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_022d:  /* 7A   |                  */ throw
 
     IL_022e:  /* 11   | 05               */ ldloc.s    V_5
@@ -10663,7 +10663,7 @@
     IL_0231:  /* 58   |                  */ add
     IL_0232:  /* 13   | 05               */ stloc.s    V_5
     IL_0234:  /* 06   |                  */ ldloc.0
-    IL_0235:  /* 7B   | (04)00002C       */ ldfld      class System.Runtime.Serialization.FixupHolder/*02000014*/[] System.Runtime.Serialization.FixupHolderList/*02000015*/::_values /* 0400002C */
+    IL_0235:  /* 7B   | (04)00002C       */ ldfld      class BalthasarIL.Serialization.FixupHolder/*02000014*/[] BalthasarIL.Serialization.FixupHolderList/*02000015*/::_values /* 0400002C */
     IL_023a:  /* 11   | 08               */ ldloc.s    V_8
     IL_023c:  /* 14   |                  */ ldnull
     IL_023d:  /* A2   |                  */ stelem.ref
@@ -10672,55 +10672,55 @@
 
     IL_0241:  /* 03   |                  */ ldarg.1
     IL_0242:  /* 02   |                  */ ldarg.0
-    IL_0243:  /* 6F   | (06)0000DD       */ callvirt   instance void System.Runtime.Serialization.ObjectHolder/*02000013*/::DecrementFixupsRemaining(class System.Runtime.Serialization.ObjectManager/*02000012*/) /* 060000DD */
+    IL_0243:  /* 6F   | (06)0000DD       */ callvirt   instance void BalthasarIL.Serialization.ObjectHolder/*02000013*/::DecrementFixupsRemaining(class BalthasarIL.Serialization.ObjectManager/*02000012*/) /* 060000DD */
     IL_0248:  /* 11   | 04               */ ldloc.s    V_4
     IL_024a:  /* 03   |                  */ ldarg.1
-    IL_024b:  /* 7B   | (04)00001C       */ ldfld      int64 System.Runtime.Serialization.ObjectHolder/*02000013*/::_id /* 0400001C */
-    IL_0250:  /* 6F   | (06)0000DE       */ callvirt   instance void System.Runtime.Serialization.ObjectHolder/*02000013*/::RemoveDependency(int64) /* 060000DE */
+    IL_024b:  /* 7B   | (04)00001C       */ ldfld      int64 BalthasarIL.Serialization.ObjectHolder/*02000013*/::_id /* 0400001C */
+    IL_0250:  /* 6F   | (06)0000DE       */ callvirt   instance void BalthasarIL.Serialization.ObjectHolder/*02000013*/::RemoveDependency(int64) /* 060000DE */
     IL_0255:  /* 11   | 08               */ ldloc.s    V_8
     IL_0257:  /* 17   |                  */ ldc.i4.1
     IL_0258:  /* 58   |                  */ add
     IL_0259:  /* 13   | 08               */ stloc.s    V_8
     IL_025b:  /* 11   | 08               */ ldloc.s    V_8
     IL_025d:  /* 06   |                  */ ldloc.0
-    IL_025e:  /* 7B   | (04)00002D       */ ldfld      int32 System.Runtime.Serialization.FixupHolderList/*02000015*/::_count /* 0400002D */
+    IL_025e:  /* 7B   | (04)00002D       */ ldfld      int32 BalthasarIL.Serialization.FixupHolderList/*02000015*/::_count /* 0400002D */
     IL_0263:  /* 3F   | 90FEFFFF         */ blt        IL_00f8
 
     IL_0268:  /* 02   |                  */ ldarg.0
     IL_0269:  /* 02   |                  */ ldarg.0
-    IL_026a:  /* 7B   | (04)000018       */ ldfld      int64 System.Runtime.Serialization.ObjectManager/*02000012*/::_fixupCount /* 04000018 */
+    IL_026a:  /* 7B   | (04)000018       */ ldfld      int64 BalthasarIL.Serialization.ObjectManager/*02000012*/::_fixupCount /* 04000018 */
     IL_026f:  /* 11   | 05               */ ldloc.s    V_5
     IL_0271:  /* 6A   |                  */ conv.i8
     IL_0272:  /* 59   |                  */ sub
-    IL_0273:  /* 7D   | (04)000018       */ stfld      int64 System.Runtime.Serialization.ObjectManager/*02000012*/::_fixupCount /* 04000018 */
+    IL_0273:  /* 7D   | (04)000018       */ stfld      int64 BalthasarIL.Serialization.ObjectManager/*02000012*/::_fixupCount /* 04000018 */
     IL_0278:  /* 06   |                  */ ldloc.0
-    IL_0279:  /* 7B   | (04)00002D       */ ldfld      int32 System.Runtime.Serialization.FixupHolderList/*02000015*/::_count /* 0400002D */
+    IL_0279:  /* 7B   | (04)00002D       */ ldfld      int32 BalthasarIL.Serialization.FixupHolderList/*02000015*/::_count /* 0400002D */
     IL_027e:  /* 11   | 05               */ ldloc.s    V_5
     IL_0280:  /* 33   | 07               */ bne.un.s   IL_0289
 
     IL_0282:  /* 03   |                  */ ldarg.1
     IL_0283:  /* 14   |                  */ ldnull
-    IL_0284:  /* 7D   | (04)000021       */ stfld      class System.Runtime.Serialization.FixupHolderList/*02000015*/ System.Runtime.Serialization.ObjectHolder/*02000013*/::_missingElements /* 04000021 */
+    IL_0284:  /* 7D   | (04)000021       */ stfld      class BalthasarIL.Serialization.FixupHolderList/*02000015*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::_missingElements /* 04000021 */
     IL_0289:  /* 2A   |                  */ ret
   } // end of method ObjectManager::CompleteObject
 
   .method /*060000C4*/ private hidebysig 
-          instance void  DoNewlyRegisteredObjectFixups(class System.Runtime.Serialization.ObjectHolder/*02000013*/ holder) cil managed
+          instance void  DoNewlyRegisteredObjectFixups(class BalthasarIL.Serialization.ObjectHolder/*02000013*/ holder) cil managed
   // SIG: 20 01 01 12 4C
   {
     // 方法在 RVA 0x21f98 处开始
     // 代码大小       89 (0x59)
     .maxstack  3
-    .locals /*11000022*/ (class System.Runtime.Serialization.LongList/*02000016*/ V_0,
-             class System.Runtime.Serialization.ObjectHolder/*02000013*/ V_1)
+    .locals /*11000022*/ (class BalthasarIL.Serialization.LongList/*02000016*/ V_0,
+             class BalthasarIL.Serialization.ObjectHolder/*02000013*/ V_1)
     IL_0000:  /* 03   |                  */ ldarg.1
-    IL_0001:  /* 6F   | (06)0000EE       */ callvirt   instance bool System.Runtime.Serialization.ObjectHolder/*02000013*/::get_CanObjectValueChange() /* 060000EE */
+    IL_0001:  /* 6F   | (06)0000EE       */ callvirt   instance bool BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_CanObjectValueChange() /* 060000EE */
     IL_0006:  /* 2C   | 01               */ brfalse.s  IL_0009
 
     IL_0008:  /* 2A   |                  */ ret
 
     IL_0009:  /* 03   |                  */ ldarg.1
-    IL_000a:  /* 6F   | (06)0000FB       */ callvirt   instance class System.Runtime.Serialization.LongList/*02000016*/ System.Runtime.Serialization.ObjectHolder/*02000013*/::get_DependentObjects() /* 060000FB */
+    IL_000a:  /* 6F   | (06)0000FB       */ callvirt   instance class BalthasarIL.Serialization.LongList/*02000016*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_DependentObjects() /* 060000FB */
     IL_000f:  /* 0A   |                  */ stloc.0
     IL_0010:  /* 06   |                  */ ldloc.0
     IL_0011:  /* 2D   | 01               */ brtrue.s   IL_0014
@@ -10728,36 +10728,36 @@
     IL_0013:  /* 2A   |                  */ ret
 
     IL_0014:  /* 06   |                  */ ldloc.0
-    IL_0015:  /* 6F   | (06)00010B       */ callvirt   instance void System.Runtime.Serialization.LongList/*02000016*/::StartEnumeration() /* 0600010B */
+    IL_0015:  /* 6F   | (06)00010B       */ callvirt   instance void BalthasarIL.Serialization.LongList/*02000016*/::StartEnumeration() /* 0600010B */
     IL_001a:  /* 2B   | 34               */ br.s       IL_0050
 
     IL_001c:  /* 02   |                  */ ldarg.0
     IL_001d:  /* 06   |                  */ ldloc.0
-    IL_001e:  /* 6F   | (06)00010D       */ callvirt   instance int64 System.Runtime.Serialization.LongList/*02000016*/::get_Current() /* 0600010D */
-    IL_0023:  /* 28   | (06)0000BB       */ call       instance class System.Runtime.Serialization.ObjectHolder/*02000013*/ System.Runtime.Serialization.ObjectManager/*02000012*/::FindObjectHolder(int64) /* 060000BB */
+    IL_001e:  /* 6F   | (06)00010D       */ callvirt   instance int64 BalthasarIL.Serialization.LongList/*02000016*/::get_Current() /* 0600010D */
+    IL_0023:  /* 28   | (06)0000BB       */ call       instance class BalthasarIL.Serialization.ObjectHolder/*02000013*/ BalthasarIL.Serialization.ObjectManager/*02000012*/::FindObjectHolder(int64) /* 060000BB */
     IL_0028:  /* 0B   |                  */ stloc.1
     IL_0029:  /* 07   |                  */ ldloc.1
     IL_002a:  /* 02   |                  */ ldarg.0
-    IL_002b:  /* 6F   | (06)0000DD       */ callvirt   instance void System.Runtime.Serialization.ObjectHolder/*02000013*/::DecrementFixupsRemaining(class System.Runtime.Serialization.ObjectManager/*02000012*/) /* 060000DD */
+    IL_002b:  /* 6F   | (06)0000DD       */ callvirt   instance void BalthasarIL.Serialization.ObjectHolder/*02000013*/::DecrementFixupsRemaining(class BalthasarIL.Serialization.ObjectManager/*02000012*/) /* 060000DD */
     IL_0030:  /* 07   |                  */ ldloc.1
-    IL_0031:  /* 6F   | (06)0000EF       */ callvirt   instance int32 System.Runtime.Serialization.ObjectHolder/*02000013*/::get_DirectlyDependentObjects() /* 060000EF */
+    IL_0031:  /* 6F   | (06)0000EF       */ callvirt   instance int32 BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_DirectlyDependentObjects() /* 060000EF */
     IL_0036:  /* 2D   | 18               */ brtrue.s   IL_0050
 
     IL_0038:  /* 07   |                  */ ldloc.1
-    IL_0039:  /* 6F   | (06)0000F6       */ callvirt   instance object System.Runtime.Serialization.ObjectHolder/*02000013*/::get_ObjectValue() /* 060000F6 */
+    IL_0039:  /* 6F   | (06)0000F6       */ callvirt   instance object BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_ObjectValue() /* 060000F6 */
     IL_003e:  /* 2C   | 0A               */ brfalse.s  IL_004a
 
     IL_0040:  /* 02   |                  */ ldarg.0
     IL_0041:  /* 07   |                  */ ldloc.1
     IL_0042:  /* 17   |                  */ ldc.i4.1
-    IL_0043:  /* 28   | (06)0000C3       */ call       instance void System.Runtime.Serialization.ObjectManager/*02000012*/::CompleteObject(class System.Runtime.Serialization.ObjectHolder/*02000013*/,
+    IL_0043:  /* 28   | (06)0000C3       */ call       instance void BalthasarIL.Serialization.ObjectManager/*02000012*/::CompleteObject(class BalthasarIL.Serialization.ObjectHolder/*02000013*/,
                                                                                                                                             bool) /* 060000C3 */
     IL_0048:  /* 2B   | 06               */ br.s       IL_0050
 
     IL_004a:  /* 07   |                  */ ldloc.1
-    IL_004b:  /* 6F   | (06)0000E3       */ callvirt   instance void System.Runtime.Serialization.ObjectHolder/*02000013*/::MarkForCompletionWhenAvailable() /* 060000E3 */
+    IL_004b:  /* 6F   | (06)0000E3       */ callvirt   instance void BalthasarIL.Serialization.ObjectHolder/*02000013*/::MarkForCompletionWhenAvailable() /* 060000E3 */
     IL_0050:  /* 06   |                  */ ldloc.0
-    IL_0051:  /* 6F   | (06)00010C       */ callvirt   instance bool System.Runtime.Serialization.LongList/*02000016*/::MoveNext() /* 0600010C */
+    IL_0051:  /* 6F   | (06)00010C       */ callvirt   instance bool BalthasarIL.Serialization.LongList/*02000016*/::MoveNext() /* 0600010C */
     IL_0056:  /* 2D   | C4               */ brtrue.s   IL_001c
 
     IL_0058:  /* 2A   |                  */ ret
@@ -10771,7 +10771,7 @@
     // 方法在 RVA 0x22000 处开始
     // 代码大小       49 (0x31)
     .maxstack  2
-    .locals /*1100001C*/ (class System.Runtime.Serialization.ObjectHolder/*02000013*/ V_0)
+    .locals /*1100001C*/ (class BalthasarIL.Serialization.ObjectHolder/*02000013*/ V_0)
     IL_0000:  /* 03   |                  */ ldarg.1
     IL_0001:  /* 16   |                  */ ldc.i4.0
     IL_0002:  /* 6A   |                  */ conv.i8
@@ -10785,20 +10785,20 @@
 
     IL_0015:  /* 02   |                  */ ldarg.0
     IL_0016:  /* 03   |                  */ ldarg.1
-    IL_0017:  /* 28   | (06)0000BB       */ call       instance class System.Runtime.Serialization.ObjectHolder/*02000013*/ System.Runtime.Serialization.ObjectManager/*02000012*/::FindObjectHolder(int64) /* 060000BB */
+    IL_0017:  /* 28   | (06)0000BB       */ call       instance class BalthasarIL.Serialization.ObjectHolder/*02000013*/ BalthasarIL.Serialization.ObjectManager/*02000012*/::FindObjectHolder(int64) /* 060000BB */
     IL_001c:  /* 0A   |                  */ stloc.0
     IL_001d:  /* 06   |                  */ ldloc.0
     IL_001e:  /* 2C   | 08               */ brfalse.s  IL_0028
 
     IL_0020:  /* 06   |                  */ ldloc.0
-    IL_0021:  /* 6F   | (06)0000EE       */ callvirt   instance bool System.Runtime.Serialization.ObjectHolder/*02000013*/::get_CanObjectValueChange() /* 060000EE */
+    IL_0021:  /* 6F   | (06)0000EE       */ callvirt   instance bool BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_CanObjectValueChange() /* 060000EE */
     IL_0026:  /* 2C   | 02               */ brfalse.s  IL_002a
 
     IL_0028:  /* 14   |                  */ ldnull
     IL_0029:  /* 2A   |                  */ ret
 
     IL_002a:  /* 06   |                  */ ldloc.0
-    IL_002b:  /* 6F   | (06)0000F6       */ callvirt   instance object System.Runtime.Serialization.ObjectHolder/*02000013*/::get_ObjectValue() /* 060000F6 */
+    IL_002b:  /* 6F   | (06)0000F6       */ callvirt   instance object BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_ObjectValue() /* 060000F6 */
     IL_0030:  /* 2A   |                  */ ret
   } // end of method ObjectManager::GetObject
 
@@ -10825,7 +10825,7 @@
     IL_0004:  /* 16   |                  */ ldc.i4.0
     IL_0005:  /* 6A   |                  */ conv.i8
     IL_0006:  /* 14   |                  */ ldnull
-    IL_0007:  /* 28   | (06)0000C8       */ call       instance void System.Runtime.Serialization.ObjectManager/*02000012*/::RegisterObject(object,
+    IL_0007:  /* 28   | (06)0000C8       */ call       instance void BalthasarIL.Serialization.ObjectManager/*02000012*/::RegisterObject(object,
                                                                                                                                             int64,
                                                                                                                                             class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationInfo/*01000044*/,
                                                                                                                                             int64,
@@ -10857,7 +10857,7 @@
     IL_0004:  /* 16   |                  */ ldc.i4.0
     IL_0005:  /* 6A   |                  */ conv.i8
     IL_0006:  /* 14   |                  */ ldnull
-    IL_0007:  /* 28   | (06)0000C8       */ call       instance void System.Runtime.Serialization.ObjectManager/*02000012*/::RegisterObject(object,
+    IL_0007:  /* 28   | (06)0000C8       */ call       instance void BalthasarIL.Serialization.ObjectManager/*02000012*/::RegisterObject(object,
                                                                                                                                             int64,
                                                                                                                                             class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationInfo/*01000044*/,
                                                                                                                                             int64,
@@ -10894,7 +10894,7 @@
     IL_0004:  /* 0E   | 04               */ ldarg.s    idOfContainingObj
     IL_0006:  /* 0E   | 05               */ ldarg.s    member
     IL_0008:  /* 14   |                  */ ldnull
-    IL_0009:  /* 28   | (06)0000CA       */ call       instance void System.Runtime.Serialization.ObjectManager/*02000012*/::RegisterObject(object,
+    IL_0009:  /* 28   | (06)0000CA       */ call       instance void BalthasarIL.Serialization.ObjectManager/*02000012*/::RegisterObject(object,
                                                                                                                                             int64,
                                                                                                                                             class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationInfo/*01000044*/,
                                                                                                                                             int64,
@@ -10914,7 +10914,7 @@
     // 方法在 RVA 0x22070 处开始
     // 代码大小       28 (0x1c)
     .maxstack  7
-    .locals /*1100001C*/ (class System.Runtime.Serialization.ObjectHolder/*02000013*/ V_0)
+    .locals /*1100001C*/ (class BalthasarIL.Serialization.ObjectHolder/*02000013*/ V_0)
     IL_0000:  /* 03   |                  */ ldarg.1
     IL_0001:  /* 04   |                  */ ldarg.2
     IL_0002:  /* 05   |                  */ ldarg.3
@@ -10923,17 +10923,17 @@
     IL_0006:  /* 0E   | 05               */ ldarg.s    member
     IL_0008:  /* 74   | (01)000032       */ castclass  [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/
     IL_000d:  /* 14   |                  */ ldnull
-    IL_000e:  /* 73   | (06)0000DB       */ newobj     instance void System.Runtime.Serialization.ObjectHolder/*02000013*/::.ctor(string,
+    IL_000e:  /* 73   | (06)0000DB       */ newobj     instance void BalthasarIL.Serialization.ObjectHolder/*02000013*/::.ctor(string,
                                                                                                                                   int64,
                                                                                                                                   class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationInfo/*01000044*/,
-                                                                                                                                  class System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/,
+                                                                                                                                  class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/,
                                                                                                                                   int64,
                                                                                                                                   class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/,
                                                                                                                                   int32[]) /* 060000DB */
     IL_0013:  /* 0A   |                  */ stloc.0
     IL_0014:  /* 02   |                  */ ldarg.0
     IL_0015:  /* 06   |                  */ ldloc.0
-    IL_0016:  /* 28   | (06)0000BD       */ call       instance void System.Runtime.Serialization.ObjectManager/*02000012*/::AddObjectHolder(class System.Runtime.Serialization.ObjectHolder/*02000013*/) /* 060000BD */
+    IL_0016:  /* 28   | (06)0000BD       */ call       instance void BalthasarIL.Serialization.ObjectManager/*02000012*/::AddObjectHolder(class BalthasarIL.Serialization.ObjectHolder/*02000013*/) /* 060000BD */
     IL_001b:  /* 2A   |                  */ ret
   } // end of method ObjectManager::RegisterString
 
@@ -10960,11 +10960,11 @@
     // 方法在 RVA 0x22098 处开始
     // 代码大小       354 (0x162)
     .maxstack  8
-    .locals /*11000023*/ (class System.Runtime.Serialization.ObjectHolder/*02000013*/ V_0,
-             class System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ V_1,
-             class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ V_2,
+    .locals /*11000023*/ (class BalthasarIL.Serialization.ObjectHolder/*02000013*/ V_0,
+             class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ V_1,
+             class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ V_2,
              class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ V_3,
-             class System.Runtime.Serialization.DeserializationEventHandler/*02000006*/ V_4)
+             class BalthasarIL.Serialization.DeserializationEventHandler/*02000006*/ V_4)
     IL_0000:  /* 03   |                  */ ldarg.1
     IL_0001:  /* 72   | (70)00104E       */ ldstr      "obj" /* 7000104E */
     IL_0006:  /* 28   | (0A)00002F       */ call       void [System.Private.CoreLib/*23000001*/]System.ArgumentNullException/*0100002E*/::ThrowIfNull(object,
@@ -10991,32 +10991,32 @@
     IL_0031:  /* 2D   | 0B               */ brtrue.s   IL_003e
 
     IL_0033:  /* 28   | (06)000010       */ call       string System.SR/*02000004*/::get_Serialization_UnknownMemberInfo() /* 06000010 */
-    IL_0038:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0038:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_003d:  /* 7A   |                  */ throw
 
     IL_003e:  /* 14   |                  */ ldnull
     IL_003f:  /* 0B   |                  */ stloc.1
     IL_0040:  /* 02   |                  */ ldarg.0
-    IL_0041:  /* 7B   | (04)000019       */ ldfld      class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ System.Runtime.Serialization.ObjectManager/*02000012*/::_selector /* 04000019 */
+    IL_0041:  /* 7B   | (04)000019       */ ldfld      class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.Serialization.ObjectManager/*02000012*/::_selector /* 04000019 */
     IL_0046:  /* 2C   | 25               */ brfalse.s  IL_006d
 
     IL_0048:  /* 02   |                  */ ldarg.0
     IL_0049:  /* 03   |                  */ ldarg.1
-    IL_004a:  /* 28   | (06)0000B7       */ call       instance bool System.Runtime.Serialization.ObjectManager/*02000012*/::CanCallGetType(object) /* 060000B7 */
+    IL_004a:  /* 28   | (06)0000B7       */ call       instance bool BalthasarIL.Serialization.ObjectManager/*02000012*/::CanCallGetType(object) /* 060000B7 */
     IL_004f:  /* 2D   | 00               */ brtrue.s   IL_0051
 
     IL_0051:  /* 03   |                  */ ldarg.1
     IL_0052:  /* 6F   | (0A)00001A       */ callvirt   instance class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/::GetType() /* 0A00001A */
     IL_0057:  /* 0D   |                  */ stloc.3
     IL_0058:  /* 02   |                  */ ldarg.0
-    IL_0059:  /* 7B   | (04)000019       */ ldfld      class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ System.Runtime.Serialization.ObjectManager/*02000012*/::_selector /* 04000019 */
+    IL_0059:  /* 7B   | (04)000019       */ ldfld      class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.Serialization.ObjectManager/*02000012*/::_selector /* 04000019 */
     IL_005e:  /* 09   |                  */ ldloc.3
     IL_005f:  /* 02   |                  */ ldarg.0
-    IL_0060:  /* 7B   | (04)00001A       */ ldfld      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ System.Runtime.Serialization.ObjectManager/*02000012*/::_context /* 0400001A */
+    IL_0060:  /* 7B   | (04)00001A       */ ldfld      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ BalthasarIL.Serialization.ObjectManager/*02000012*/::_context /* 0400001A */
     IL_0065:  /* 12   | 02               */ ldloca.s   V_2
-    IL_0067:  /* 6F   | (06)0000AC       */ callvirt   instance class System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ System.Runtime.Serialization.ISurrogateSelector/*0200000F*/::GetSurrogate(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
+    IL_0067:  /* 6F   | (06)0000AC       */ callvirt   instance class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/::GetSurrogate(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
                                                                                                                                                                                                                  valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/,
-                                                                                                                                                                                                                 class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/&) /* 060000AC */
+                                                                                                                                                                                                                 class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/&) /* 060000AC */
     IL_006c:  /* 0B   |                  */ stloc.1
     IL_006d:  /* 03   |                  */ ldarg.1
     IL_006e:  /* 75   | (01)00004C       */ isinst     [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.IDeserializationCallback/*0100004C*/
@@ -11026,12 +11026,12 @@
     IL_0076:  /* 74   | (01)00004C       */ castclass  [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.IDeserializationCallback/*0100004C*/
     IL_007b:  /* 25   |                  */ dup
     IL_007c:  /* FE07 | (0A)00007B       */ ldvirtftn  instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.IDeserializationCallback/*0100004C*/::OnDeserialization(object) /* 0A00007B */
-    IL_0082:  /* 73   | (06)000051       */ newobj     instance void System.Runtime.Serialization.DeserializationEventHandler/*02000006*/::.ctor(object,
+    IL_0082:  /* 73   | (06)000051       */ newobj     instance void BalthasarIL.Serialization.DeserializationEventHandler/*02000006*/::.ctor(object,
                                                                                                                                                  native int) /* 06000051 */
     IL_0087:  /* 13   | 04               */ stloc.s    V_4
     IL_0089:  /* 02   |                  */ ldarg.0
     IL_008a:  /* 11   | 04               */ ldloc.s    V_4
-    IL_008c:  /* 6F   | (06)0000D4       */ callvirt   instance void System.Runtime.Serialization.ObjectManager/*02000012*/::AddOnDeserialization(class System.Runtime.Serialization.DeserializationEventHandler/*02000006*/) /* 060000D4 */
+    IL_008c:  /* 6F   | (06)0000D4       */ callvirt   instance void BalthasarIL.Serialization.ObjectManager/*02000012*/::AddOnDeserialization(class BalthasarIL.Serialization.DeserializationEventHandler/*02000006*/) /* 060000D4 */
     IL_0091:  /* 0E   | 06               */ ldarg.s    arrayIndex
     IL_0093:  /* 2C   | 0E               */ brfalse.s  IL_00a3
 
@@ -11041,7 +11041,7 @@
     IL_00a1:  /* 10   | 06               */ starg.s    arrayIndex
     IL_00a3:  /* 02   |                  */ ldarg.0
     IL_00a4:  /* 04   |                  */ ldarg.2
-    IL_00a5:  /* 28   | (06)0000BB       */ call       instance class System.Runtime.Serialization.ObjectHolder/*02000013*/ System.Runtime.Serialization.ObjectManager/*02000012*/::FindObjectHolder(int64) /* 060000BB */
+    IL_00a5:  /* 28   | (06)0000BB       */ call       instance class BalthasarIL.Serialization.ObjectHolder/*02000013*/ BalthasarIL.Serialization.ObjectManager/*02000012*/::FindObjectHolder(int64) /* 060000BB */
     IL_00aa:  /* 0A   |                  */ stloc.0
     IL_00ab:  /* 06   |                  */ ldloc.0
     IL_00ac:  /* 2D   | 38               */ brtrue.s   IL_00e6
@@ -11054,36 +11054,36 @@
     IL_00b4:  /* 0E   | 05               */ ldarg.s    member
     IL_00b6:  /* 74   | (01)000032       */ castclass  [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/
     IL_00bb:  /* 0E   | 06               */ ldarg.s    arrayIndex
-    IL_00bd:  /* 73   | (06)0000DA       */ newobj     instance void System.Runtime.Serialization.ObjectHolder/*02000013*/::.ctor(object,
+    IL_00bd:  /* 73   | (06)0000DA       */ newobj     instance void BalthasarIL.Serialization.ObjectHolder/*02000013*/::.ctor(object,
                                                                                                                                   int64,
                                                                                                                                   class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationInfo/*01000044*/,
-                                                                                                                                  class System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/,
+                                                                                                                                  class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/,
                                                                                                                                   int64,
                                                                                                                                   class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/,
                                                                                                                                   int32[]) /* 060000DA */
     IL_00c2:  /* 0A   |                  */ stloc.0
     IL_00c3:  /* 02   |                  */ ldarg.0
     IL_00c4:  /* 06   |                  */ ldloc.0
-    IL_00c5:  /* 28   | (06)0000BD       */ call       instance void System.Runtime.Serialization.ObjectManager/*02000012*/::AddObjectHolder(class System.Runtime.Serialization.ObjectHolder/*02000013*/) /* 060000BD */
+    IL_00c5:  /* 28   | (06)0000BD       */ call       instance void BalthasarIL.Serialization.ObjectManager/*02000012*/::AddObjectHolder(class BalthasarIL.Serialization.ObjectHolder/*02000013*/) /* 060000BD */
     IL_00ca:  /* 06   |                  */ ldloc.0
-    IL_00cb:  /* 6F   | (06)0000E7       */ callvirt   instance bool System.Runtime.Serialization.ObjectHolder/*02000013*/::get_RequiresDelayedFixup() /* 060000E7 */
+    IL_00cb:  /* 6F   | (06)0000E7       */ callvirt   instance bool BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_RequiresDelayedFixup() /* 060000E7 */
     IL_00d0:  /* 2C   | 0C               */ brfalse.s  IL_00de
 
     IL_00d2:  /* 02   |                  */ ldarg.0
-    IL_00d3:  /* 28   | (06)0000BA       */ call       instance class System.Runtime.Serialization.ObjectHolderList/*02000017*/ System.Runtime.Serialization.ObjectManager/*02000012*/::get_SpecialFixupObjects() /* 060000BA */
+    IL_00d3:  /* 28   | (06)0000BA       */ call       instance class BalthasarIL.Serialization.ObjectHolderList/*02000017*/ BalthasarIL.Serialization.ObjectManager/*02000012*/::get_SpecialFixupObjects() /* 060000BA */
     IL_00d8:  /* 06   |                  */ ldloc.0
-    IL_00d9:  /* 6F   | (06)000112       */ callvirt   instance void System.Runtime.Serialization.ObjectHolderList/*02000017*/::Add(class System.Runtime.Serialization.ObjectHolder/*02000013*/) /* 06000112 */
+    IL_00d9:  /* 6F   | (06)000112       */ callvirt   instance void BalthasarIL.Serialization.ObjectHolderList/*02000017*/::Add(class BalthasarIL.Serialization.ObjectHolder/*02000013*/) /* 06000112 */
     IL_00de:  /* 02   |                  */ ldarg.0
     IL_00df:  /* 03   |                  */ ldarg.1
-    IL_00e0:  /* 6F   | (06)0000D5       */ callvirt   instance void System.Runtime.Serialization.ObjectManager/*02000012*/::AddOnDeserialized(object) /* 060000D5 */
+    IL_00e0:  /* 6F   | (06)0000D5       */ callvirt   instance void BalthasarIL.Serialization.ObjectManager/*02000012*/::AddOnDeserialized(object) /* 060000D5 */
     IL_00e5:  /* 2A   |                  */ ret
 
     IL_00e6:  /* 06   |                  */ ldloc.0
-    IL_00e7:  /* 6F   | (06)0000F6       */ callvirt   instance object System.Runtime.Serialization.ObjectHolder/*02000013*/::get_ObjectValue() /* 060000F6 */
+    IL_00e7:  /* 6F   | (06)0000F6       */ callvirt   instance object BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_ObjectValue() /* 060000F6 */
     IL_00ec:  /* 2C   | 0B               */ brfalse.s  IL_00f9
 
     IL_00ee:  /* 28   | (06)000020       */ call       string System.SR/*02000004*/::get_Serialization_RegisterTwice() /* 06000020 */
-    IL_00f3:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_00f3:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_00f8:  /* 7A   |                  */ throw
 
     IL_00f9:  /* 06   |                  */ ldloc.0
@@ -11095,54 +11095,54 @@
     IL_0101:  /* 74   | (01)000032       */ castclass  [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/
     IL_0106:  /* 0E   | 06               */ ldarg.s    arrayIndex
     IL_0108:  /* 02   |                  */ ldarg.0
-    IL_0109:  /* 6F   | (06)0000E2       */ callvirt   instance void System.Runtime.Serialization.ObjectHolder/*02000013*/::UpdateData(object,
+    IL_0109:  /* 6F   | (06)0000E2       */ callvirt   instance void BalthasarIL.Serialization.ObjectHolder/*02000013*/::UpdateData(object,
                                                                                                                                        class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationInfo/*01000044*/,
-                                                                                                                                       class System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/,
+                                                                                                                                       class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/,
                                                                                                                                        int64,
                                                                                                                                        class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/,
                                                                                                                                        int32[],
-                                                                                                                                       class System.Runtime.Serialization.ObjectManager/*02000012*/) /* 060000E2 */
+                                                                                                                                       class BalthasarIL.Serialization.ObjectManager/*02000012*/) /* 060000E2 */
     IL_010e:  /* 06   |                  */ ldloc.0
-    IL_010f:  /* 6F   | (06)0000EF       */ callvirt   instance int32 System.Runtime.Serialization.ObjectHolder/*02000013*/::get_DirectlyDependentObjects() /* 060000EF */
+    IL_010f:  /* 6F   | (06)0000EF       */ callvirt   instance int32 BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_DirectlyDependentObjects() /* 060000EF */
     IL_0114:  /* 16   |                  */ ldc.i4.0
     IL_0115:  /* 31   | 08               */ ble.s      IL_011f
 
     IL_0117:  /* 02   |                  */ ldarg.0
     IL_0118:  /* 06   |                  */ ldloc.0
     IL_0119:  /* 16   |                  */ ldc.i4.0
-    IL_011a:  /* 28   | (06)0000C3       */ call       instance void System.Runtime.Serialization.ObjectManager/*02000012*/::CompleteObject(class System.Runtime.Serialization.ObjectHolder/*02000013*/,
+    IL_011a:  /* 28   | (06)0000C3       */ call       instance void BalthasarIL.Serialization.ObjectManager/*02000012*/::CompleteObject(class BalthasarIL.Serialization.ObjectHolder/*02000013*/,
                                                                                                                                             bool) /* 060000C3 */
     IL_011f:  /* 06   |                  */ ldloc.0
-    IL_0120:  /* 6F   | (06)0000E7       */ callvirt   instance bool System.Runtime.Serialization.ObjectHolder/*02000013*/::get_RequiresDelayedFixup() /* 060000E7 */
+    IL_0120:  /* 6F   | (06)0000E7       */ callvirt   instance bool BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_RequiresDelayedFixup() /* 060000E7 */
     IL_0125:  /* 2C   | 0C               */ brfalse.s  IL_0133
 
     IL_0127:  /* 02   |                  */ ldarg.0
-    IL_0128:  /* 28   | (06)0000BA       */ call       instance class System.Runtime.Serialization.ObjectHolderList/*02000017*/ System.Runtime.Serialization.ObjectManager/*02000012*/::get_SpecialFixupObjects() /* 060000BA */
+    IL_0128:  /* 28   | (06)0000BA       */ call       instance class BalthasarIL.Serialization.ObjectHolderList/*02000017*/ BalthasarIL.Serialization.ObjectManager/*02000012*/::get_SpecialFixupObjects() /* 060000BA */
     IL_012d:  /* 06   |                  */ ldloc.0
-    IL_012e:  /* 6F   | (06)000112       */ callvirt   instance void System.Runtime.Serialization.ObjectHolderList/*02000017*/::Add(class System.Runtime.Serialization.ObjectHolder/*02000013*/) /* 06000112 */
+    IL_012e:  /* 6F   | (06)000112       */ callvirt   instance void BalthasarIL.Serialization.ObjectHolderList/*02000017*/::Add(class BalthasarIL.Serialization.ObjectHolder/*02000013*/) /* 06000112 */
     IL_0133:  /* 06   |                  */ ldloc.0
-    IL_0134:  /* 6F   | (06)000100       */ callvirt   instance bool System.Runtime.Serialization.ObjectHolder/*02000013*/::get_CompletelyFixed() /* 06000100 */
+    IL_0134:  /* 6F   | (06)000100       */ callvirt   instance bool BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_CompletelyFixed() /* 06000100 */
     IL_0139:  /* 2C   | 0E               */ brfalse.s  IL_0149
 
     IL_013b:  /* 02   |                  */ ldarg.0
     IL_013c:  /* 06   |                  */ ldloc.0
-    IL_013d:  /* 28   | (06)0000C4       */ call       instance void System.Runtime.Serialization.ObjectManager/*02000012*/::DoNewlyRegisteredObjectFixups(class System.Runtime.Serialization.ObjectHolder/*02000013*/) /* 060000C4 */
+    IL_013d:  /* 28   | (06)0000C4       */ call       instance void BalthasarIL.Serialization.ObjectManager/*02000012*/::DoNewlyRegisteredObjectFixups(class BalthasarIL.Serialization.ObjectHolder/*02000013*/) /* 060000C4 */
     IL_0142:  /* 06   |                  */ ldloc.0
     IL_0143:  /* 14   |                  */ ldnull
-    IL_0144:  /* 6F   | (06)0000FC       */ callvirt   instance void System.Runtime.Serialization.ObjectHolder/*02000013*/::set_DependentObjects(class System.Runtime.Serialization.LongList/*02000016*/) /* 060000FC */
+    IL_0144:  /* 6F   | (06)0000FC       */ callvirt   instance void BalthasarIL.Serialization.ObjectHolder/*02000013*/::set_DependentObjects(class BalthasarIL.Serialization.LongList/*02000016*/) /* 060000FC */
     IL_0149:  /* 06   |                  */ ldloc.0
-    IL_014a:  /* 6F   | (06)0000F0       */ callvirt   instance int32 System.Runtime.Serialization.ObjectHolder/*02000013*/::get_TotalDependentObjects() /* 060000F0 */
+    IL_014a:  /* 6F   | (06)0000F0       */ callvirt   instance int32 BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_TotalDependentObjects() /* 060000F0 */
     IL_014f:  /* 16   |                  */ ldc.i4.0
     IL_0150:  /* 31   | 08               */ ble.s      IL_015a
 
     IL_0152:  /* 02   |                  */ ldarg.0
     IL_0153:  /* 03   |                  */ ldarg.1
-    IL_0154:  /* 6F   | (06)0000D5       */ callvirt   instance void System.Runtime.Serialization.ObjectManager/*02000012*/::AddOnDeserialized(object) /* 060000D5 */
+    IL_0154:  /* 6F   | (06)0000D5       */ callvirt   instance void BalthasarIL.Serialization.ObjectManager/*02000012*/::AddOnDeserialized(object) /* 060000D5 */
     IL_0159:  /* 2A   |                  */ ret
 
     IL_015a:  /* 02   |                  */ ldarg.0
     IL_015b:  /* 03   |                  */ ldarg.1
-    IL_015c:  /* 6F   | (06)0000D6       */ callvirt   instance void System.Runtime.Serialization.ObjectManager/*02000012*/::RaiseOnDeserializedEvent(object) /* 060000D6 */
+    IL_015c:  /* 6F   | (06)0000D6       */ callvirt   instance void BalthasarIL.Serialization.ObjectManager/*02000012*/::RaiseOnDeserializedEvent(object) /* 060000D6 */
     IL_0161:  /* 2A   |                  */ ret
   } // end of method ObjectManager::RegisterObject
 
@@ -11184,7 +11184,7 @@
     .try
     {
       IL_0025:  /* 07   |                  */ ldloc.1
-      IL_0026:  /* 28   | (06)0000CC       */ call       class [System.Private.CoreLib/*23000001*/]System.Reflection.ConstructorInfo/*0100004D*/ System.Runtime.Serialization.ObjectManager/*02000012*/::GetDeserializationConstructor(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/) /* 060000CC */
+      IL_0026:  /* 28   | (06)0000CC       */ call       class [System.Private.CoreLib/*23000001*/]System.Reflection.ConstructorInfo/*0100004D*/ BalthasarIL.Serialization.ObjectManager/*02000012*/::GetDeserializationConstructor(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/) /* 060000CC */
       IL_002b:  /* 0A   |                  */ stloc.0
       IL_002c:  /* DE   | 13               */ leave.s    IL_0041
 
@@ -11197,7 +11197,7 @@
       IL_0035:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                               object) /* 06000007 */
       IL_003a:  /* 08   |                  */ ldloc.2
-      IL_003b:  /* 73   | (0A)00007D       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string,
+      IL_003b:  /* 73   | (0A)00007D       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string,
                                                                                                                                                                                   class [System.Private.CoreLib/*23000001*/]System.Exception/*0100003F*/) /* 0A00007D */
       IL_0040:  /* 7A   |                  */ throw
 
@@ -11295,7 +11295,7 @@
     IL_0062:  /* 6F   | (0A)000036       */ callvirt   instance string [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/::get_FullName() /* 0A000036 */
     IL_0067:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_006c:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_006c:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0071:  /* 7A   |                  */ throw
   } // end of method ObjectManager::GetDeserializationConstructor
 
@@ -11314,9 +11314,9 @@
     // 方法在 RVA 0x22304 处开始
     // 代码大小       276 (0x114)
     .maxstack  3
-    .locals /*11000026*/ (class System.Runtime.Serialization.ObjectHolder/*02000013*/ V_0,
+    .locals /*11000026*/ (class BalthasarIL.Serialization.ObjectHolder/*02000013*/ V_0,
              int32 V_1,
-             class System.Runtime.Serialization.ObjectHolderListEnumerator/*02000018*/ V_2,
+             class BalthasarIL.Serialization.ObjectHolderListEnumerator/*02000018*/ V_2,
              int32 V_3)
     IL_0000:  /* 15   |                  */ ldc.i4.m1
     IL_0001:  /* 0B   |                  */ stloc.1
@@ -11325,38 +11325,38 @@
     IL_0007:  /* 16   |                  */ ldc.i4.0
     IL_0008:  /* 0B   |                  */ stloc.1
     IL_0009:  /* 02   |                  */ ldarg.0
-    IL_000a:  /* 28   | (06)0000BA       */ call       instance class System.Runtime.Serialization.ObjectHolderList/*02000017*/ System.Runtime.Serialization.ObjectManager/*02000012*/::get_SpecialFixupObjects() /* 060000BA */
-    IL_000f:  /* 6F   | (06)000113       */ callvirt   instance class System.Runtime.Serialization.ObjectHolderListEnumerator/*02000018*/ System.Runtime.Serialization.ObjectHolderList/*02000017*/::GetFixupEnumerator() /* 06000113 */
+    IL_000a:  /* 28   | (06)0000BA       */ call       instance class BalthasarIL.Serialization.ObjectHolderList/*02000017*/ BalthasarIL.Serialization.ObjectManager/*02000012*/::get_SpecialFixupObjects() /* 060000BA */
+    IL_000f:  /* 6F   | (06)000113       */ callvirt   instance class BalthasarIL.Serialization.ObjectHolderListEnumerator/*02000018*/ BalthasarIL.Serialization.ObjectHolderList/*02000017*/::GetFixupEnumerator() /* 06000113 */
     IL_0014:  /* 0C   |                  */ stloc.2
     IL_0015:  /* 2B   | 6C               */ br.s       IL_0083
 
     IL_0017:  /* 08   |                  */ ldloc.2
-    IL_0018:  /* 6F   | (06)000119       */ callvirt   instance class System.Runtime.Serialization.ObjectHolder/*02000013*/ System.Runtime.Serialization.ObjectHolderListEnumerator/*02000018*/::get_Current() /* 06000119 */
+    IL_0018:  /* 6F   | (06)000119       */ callvirt   instance class BalthasarIL.Serialization.ObjectHolder/*02000013*/ BalthasarIL.Serialization.ObjectHolderListEnumerator/*02000018*/::get_Current() /* 06000119 */
     IL_001d:  /* 0A   |                  */ stloc.0
     IL_001e:  /* 06   |                  */ ldloc.0
-    IL_001f:  /* 6F   | (06)0000F6       */ callvirt   instance object System.Runtime.Serialization.ObjectHolder/*02000013*/::get_ObjectValue() /* 060000F6 */
+    IL_001f:  /* 6F   | (06)0000F6       */ callvirt   instance object BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_ObjectValue() /* 060000F6 */
     IL_0024:  /* 2D   | 1B               */ brtrue.s   IL_0041
 
     IL_0026:  /* 28   | (06)000016       */ call       string System.SR/*02000004*/::get_Serialization_ObjectNotSupplied() /* 06000016 */
     IL_002b:  /* 06   |                  */ ldloc.0
-    IL_002c:  /* 7B   | (04)00001C       */ ldfld      int64 System.Runtime.Serialization.ObjectHolder/*02000013*/::_id /* 0400001C */
+    IL_002c:  /* 7B   | (04)00001C       */ ldfld      int64 BalthasarIL.Serialization.ObjectHolder/*02000013*/::_id /* 0400001C */
     IL_0031:  /* 8C   | (01)000024       */ box        [System.Private.CoreLib/*23000001*/]System.Int64/*01000024*/
     IL_0036:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_003b:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_003b:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0040:  /* 7A   |                  */ throw
 
     IL_0041:  /* 06   |                  */ ldloc.0
-    IL_0042:  /* 6F   | (06)0000F0       */ callvirt   instance int32 System.Runtime.Serialization.ObjectHolder/*02000013*/::get_TotalDependentObjects() /* 060000F0 */
+    IL_0042:  /* 6F   | (06)0000F0       */ callvirt   instance int32 BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_TotalDependentObjects() /* 060000F0 */
     IL_0047:  /* 2D   | 3A               */ brtrue.s   IL_0083
 
     IL_0049:  /* 06   |                  */ ldloc.0
-    IL_004a:  /* 6F   | (06)0000FD       */ callvirt   instance bool System.Runtime.Serialization.ObjectHolder/*02000013*/::get_RequiresSerInfoFixup() /* 060000FD */
+    IL_004a:  /* 6F   | (06)0000FD       */ callvirt   instance bool BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_RequiresSerInfoFixup() /* 060000FD */
     IL_004f:  /* 2C   | 0D               */ brfalse.s  IL_005e
 
     IL_0051:  /* 02   |                  */ ldarg.0
     IL_0052:  /* 06   |                  */ ldloc.0
-    IL_0053:  /* 28   | (06)0000BF       */ call       instance void System.Runtime.Serialization.ObjectManager/*02000012*/::FixupSpecialObject(class System.Runtime.Serialization.ObjectHolder/*02000013*/) /* 060000BF */
+    IL_0053:  /* 28   | (06)0000BF       */ call       instance void BalthasarIL.Serialization.ObjectManager/*02000012*/::FixupSpecialObject(class BalthasarIL.Serialization.ObjectHolder/*02000013*/) /* 060000BF */
     IL_0058:  /* 07   |                  */ ldloc.1
     IL_0059:  /* 17   |                  */ ldc.i4.1
     IL_005a:  /* 58   |                  */ add
@@ -11364,21 +11364,21 @@
     IL_005c:  /* 2B   | 10               */ br.s       IL_006e
 
     IL_005e:  /* 06   |                  */ ldloc.0
-    IL_005f:  /* 6F   | (06)0000E5       */ callvirt   instance bool System.Runtime.Serialization.ObjectHolder/*02000013*/::get_IsIncompleteObjectReference() /* 060000E5 */
+    IL_005f:  /* 6F   | (06)0000E5       */ callvirt   instance bool BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_IsIncompleteObjectReference() /* 060000E5 */
     IL_0064:  /* 2D   | 08               */ brtrue.s   IL_006e
 
     IL_0066:  /* 02   |                  */ ldarg.0
     IL_0067:  /* 06   |                  */ ldloc.0
     IL_0068:  /* 17   |                  */ ldc.i4.1
-    IL_0069:  /* 28   | (06)0000C3       */ call       instance void System.Runtime.Serialization.ObjectManager/*02000012*/::CompleteObject(class System.Runtime.Serialization.ObjectHolder/*02000013*/,
+    IL_0069:  /* 28   | (06)0000C3       */ call       instance void BalthasarIL.Serialization.ObjectManager/*02000012*/::CompleteObject(class BalthasarIL.Serialization.ObjectHolder/*02000013*/,
                                                                                                                                             bool) /* 060000C3 */
     IL_006e:  /* 06   |                  */ ldloc.0
-    IL_006f:  /* 6F   | (06)0000E5       */ callvirt   instance bool System.Runtime.Serialization.ObjectHolder/*02000013*/::get_IsIncompleteObjectReference() /* 060000E5 */
+    IL_006f:  /* 6F   | (06)0000E5       */ callvirt   instance bool BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_IsIncompleteObjectReference() /* 060000E5 */
     IL_0074:  /* 2C   | 0D               */ brfalse.s  IL_0083
 
     IL_0076:  /* 02   |                  */ ldarg.0
     IL_0077:  /* 06   |                  */ ldloc.0
-    IL_0078:  /* 28   | (06)0000C0       */ call       instance bool System.Runtime.Serialization.ObjectManager/*02000012*/::ResolveObjectReference(class System.Runtime.Serialization.ObjectHolder/*02000013*/) /* 060000C0 */
+    IL_0078:  /* 28   | (06)0000C0       */ call       instance bool BalthasarIL.Serialization.ObjectManager/*02000012*/::ResolveObjectReference(class BalthasarIL.Serialization.ObjectHolder/*02000013*/) /* 060000C0 */
     IL_007d:  /* 2C   | 04               */ brfalse.s  IL_0083
 
     IL_007f:  /* 07   |                  */ ldloc.1
@@ -11386,29 +11386,29 @@
     IL_0081:  /* 58   |                  */ add
     IL_0082:  /* 0B   |                  */ stloc.1
     IL_0083:  /* 08   |                  */ ldloc.2
-    IL_0084:  /* 6F   | (06)000118       */ callvirt   instance bool System.Runtime.Serialization.ObjectHolderListEnumerator/*02000018*/::MoveNext() /* 06000118 */
+    IL_0084:  /* 6F   | (06)000118       */ callvirt   instance bool BalthasarIL.Serialization.ObjectHolderListEnumerator/*02000018*/::MoveNext() /* 06000118 */
     IL_0089:  /* 2D   | 8C               */ brtrue.s   IL_0017
 
     IL_008b:  /* 07   |                  */ ldloc.1
     IL_008c:  /* 3A   | 76FFFFFF         */ brtrue     IL_0007
 
     IL_0091:  /* 02   |                  */ ldarg.0
-    IL_0092:  /* 7B   | (04)000018       */ ldfld      int64 System.Runtime.Serialization.ObjectManager/*02000012*/::_fixupCount /* 04000018 */
+    IL_0092:  /* 7B   | (04)000018       */ ldfld      int64 BalthasarIL.Serialization.ObjectManager/*02000012*/::_fixupCount /* 04000018 */
     IL_0097:  /* 2D   | 2E               */ brtrue.s   IL_00c7
 
     IL_0099:  /* 02   |                  */ ldarg.0
-    IL_009a:  /* 28   | (06)0000B8       */ call       instance object System.Runtime.Serialization.ObjectManager/*02000012*/::get_TopObject() /* 060000B8 */
-    IL_009f:  /* 75   | (02)000019       */ isinst     System.Runtime.Serialization.TypeLoadExceptionHolder/*02000019*/
+    IL_009a:  /* 28   | (06)0000B8       */ call       instance object BalthasarIL.Serialization.ObjectManager/*02000012*/::get_TopObject() /* 060000B8 */
+    IL_009f:  /* 75   | (02)000019       */ isinst     BalthasarIL.Serialization.TypeLoadExceptionHolder/*02000019*/
     IL_00a4:  /* 2C   | 20               */ brfalse.s  IL_00c6
 
     IL_00a6:  /* 28   | (06)00001B       */ call       string System.SR/*02000004*/::get_Serialization_TypeLoadFailure() /* 0600001B */
     IL_00ab:  /* 02   |                  */ ldarg.0
-    IL_00ac:  /* 28   | (06)0000B8       */ call       instance object System.Runtime.Serialization.ObjectManager/*02000012*/::get_TopObject() /* 060000B8 */
-    IL_00b1:  /* 74   | (02)000019       */ castclass  System.Runtime.Serialization.TypeLoadExceptionHolder/*02000019*/
-    IL_00b6:  /* 6F   | (06)00011B       */ callvirt   instance string System.Runtime.Serialization.TypeLoadExceptionHolder/*02000019*/::get_TypeName() /* 0600011B */
+    IL_00ac:  /* 28   | (06)0000B8       */ call       instance object BalthasarIL.Serialization.ObjectManager/*02000012*/::get_TopObject() /* 060000B8 */
+    IL_00b1:  /* 74   | (02)000019       */ castclass  BalthasarIL.Serialization.TypeLoadExceptionHolder/*02000019*/
+    IL_00b6:  /* 6F   | (06)00011B       */ callvirt   instance string BalthasarIL.Serialization.TypeLoadExceptionHolder/*02000019*/::get_TypeName() /* 0600011B */
     IL_00bb:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_00c0:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_00c0:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_00c5:  /* 7A   |                  */ throw
 
     IL_00c6:  /* 2A   |                  */ ret
@@ -11418,30 +11418,30 @@
     IL_00c9:  /* 2B   | 33               */ br.s       IL_00fe
 
     IL_00cb:  /* 02   |                  */ ldarg.0
-    IL_00cc:  /* 7B   | (04)000015       */ ldfld      class System.Runtime.Serialization.ObjectHolder/*02000013*/[] System.Runtime.Serialization.ObjectManager/*02000012*/::_objects /* 04000015 */
+    IL_00cc:  /* 7B   | (04)000015       */ ldfld      class BalthasarIL.Serialization.ObjectHolder/*02000013*/[] BalthasarIL.Serialization.ObjectManager/*02000012*/::_objects /* 04000015 */
     IL_00d1:  /* 09   |                  */ ldloc.3
     IL_00d2:  /* 9A   |                  */ ldelem.ref
     IL_00d3:  /* 0A   |                  */ stloc.0
     IL_00d4:  /* 2B   | 18               */ br.s       IL_00ee
 
     IL_00d6:  /* 06   |                  */ ldloc.0
-    IL_00d7:  /* 6F   | (06)0000F0       */ callvirt   instance int32 System.Runtime.Serialization.ObjectHolder/*02000013*/::get_TotalDependentObjects() /* 060000F0 */
+    IL_00d7:  /* 6F   | (06)0000F0       */ callvirt   instance int32 BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_TotalDependentObjects() /* 060000F0 */
     IL_00dc:  /* 16   |                  */ ldc.i4.0
     IL_00dd:  /* 31   | 08               */ ble.s      IL_00e7
 
     IL_00df:  /* 02   |                  */ ldarg.0
     IL_00e0:  /* 06   |                  */ ldloc.0
     IL_00e1:  /* 17   |                  */ ldc.i4.1
-    IL_00e2:  /* 28   | (06)0000C3       */ call       instance void System.Runtime.Serialization.ObjectManager/*02000012*/::CompleteObject(class System.Runtime.Serialization.ObjectHolder/*02000013*/,
+    IL_00e2:  /* 28   | (06)0000C3       */ call       instance void BalthasarIL.Serialization.ObjectManager/*02000012*/::CompleteObject(class BalthasarIL.Serialization.ObjectHolder/*02000013*/,
                                                                                                                                             bool) /* 060000C3 */
     IL_00e7:  /* 06   |                  */ ldloc.0
-    IL_00e8:  /* 7B   | (04)000023       */ ldfld      class System.Runtime.Serialization.ObjectHolder/*02000013*/ System.Runtime.Serialization.ObjectHolder/*02000013*/::_next /* 04000023 */
+    IL_00e8:  /* 7B   | (04)000023       */ ldfld      class BalthasarIL.Serialization.ObjectHolder/*02000013*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::_next /* 04000023 */
     IL_00ed:  /* 0A   |                  */ stloc.0
     IL_00ee:  /* 06   |                  */ ldloc.0
     IL_00ef:  /* 2D   | E5               */ brtrue.s   IL_00d6
 
     IL_00f1:  /* 02   |                  */ ldarg.0
-    IL_00f2:  /* 7B   | (04)000018       */ ldfld      int64 System.Runtime.Serialization.ObjectManager/*02000012*/::_fixupCount /* 04000018 */
+    IL_00f2:  /* 7B   | (04)000018       */ ldfld      int64 BalthasarIL.Serialization.ObjectManager/*02000012*/::_fixupCount /* 04000018 */
     IL_00f7:  /* 2D   | 01               */ brtrue.s   IL_00fa
 
     IL_00f9:  /* 2A   |                  */ ret
@@ -11452,18 +11452,18 @@
     IL_00fd:  /* 0D   |                  */ stloc.3
     IL_00fe:  /* 09   |                  */ ldloc.3
     IL_00ff:  /* 02   |                  */ ldarg.0
-    IL_0100:  /* 7B   | (04)000015       */ ldfld      class System.Runtime.Serialization.ObjectHolder/*02000013*/[] System.Runtime.Serialization.ObjectManager/*02000012*/::_objects /* 04000015 */
+    IL_0100:  /* 7B   | (04)000015       */ ldfld      class BalthasarIL.Serialization.ObjectHolder/*02000013*/[] BalthasarIL.Serialization.ObjectManager/*02000012*/::_objects /* 04000015 */
     IL_0105:  /* 8E   |                  */ ldlen
     IL_0106:  /* 69   |                  */ conv.i4
     IL_0107:  /* 32   | C2               */ blt.s      IL_00cb
 
     IL_0109:  /* 28   | (06)000023       */ call       string System.SR/*02000004*/::get_Serialization_IncorrectNumberOfFixups() /* 06000023 */
-    IL_010e:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_010e:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0113:  /* 7A   |                  */ throw
   } // end of method ObjectManager::DoFixups
 
   .method /*060000CE*/ private hidebysig 
-          instance void  RegisterFixup(class System.Runtime.Serialization.FixupHolder/*02000014*/ fixup,
+          instance void  RegisterFixup(class BalthasarIL.Serialization.FixupHolder/*02000014*/ fixup,
                                        int64 objectToBeFixed,
                                        int64 objectRequired) cil managed
   // SIG: 20 03 01 12 50 0A 0A
@@ -11471,44 +11471,44 @@
     // 方法在 RVA 0x22424 处开始
     // 代码大小       75 (0x4b)
     .maxstack  3
-    .locals /*11000027*/ (class System.Runtime.Serialization.ObjectHolder/*02000013*/ V_0,
-             class System.Runtime.Serialization.ObjectHolder/*02000013*/ V_1)
+    .locals /*11000027*/ (class BalthasarIL.Serialization.ObjectHolder/*02000013*/ V_0,
+             class BalthasarIL.Serialization.ObjectHolder/*02000013*/ V_1)
     IL_0000:  /* 02   |                  */ ldarg.0
     IL_0001:  /* 04   |                  */ ldarg.2
-    IL_0002:  /* 28   | (06)0000BC       */ call       instance class System.Runtime.Serialization.ObjectHolder/*02000013*/ System.Runtime.Serialization.ObjectManager/*02000012*/::FindOrCreateObjectHolder(int64) /* 060000BC */
+    IL_0002:  /* 28   | (06)0000BC       */ call       instance class BalthasarIL.Serialization.ObjectHolder/*02000013*/ BalthasarIL.Serialization.ObjectManager/*02000012*/::FindOrCreateObjectHolder(int64) /* 060000BC */
     IL_0007:  /* 0A   |                  */ stloc.0
     IL_0008:  /* 06   |                  */ ldloc.0
-    IL_0009:  /* 6F   | (06)0000FD       */ callvirt   instance bool System.Runtime.Serialization.ObjectHolder/*02000013*/::get_RequiresSerInfoFixup() /* 060000FD */
+    IL_0009:  /* 6F   | (06)0000FD       */ callvirt   instance bool BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_RequiresSerInfoFixup() /* 060000FD */
     IL_000e:  /* 2C   | 14               */ brfalse.s  IL_0024
 
     IL_0010:  /* 03   |                  */ ldarg.1
-    IL_0011:  /* 7B   | (04)00002B       */ ldfld      int32 System.Runtime.Serialization.FixupHolder/*02000014*/::_fixupType /* 0400002B */
+    IL_0011:  /* 7B   | (04)00002B       */ ldfld      int32 BalthasarIL.Serialization.FixupHolder/*02000014*/::_fixupType /* 0400002B */
     IL_0016:  /* 18   |                  */ ldc.i4.2
     IL_0017:  /* 33   | 0B               */ bne.un.s   IL_0024
 
     IL_0019:  /* 28   | (06)000024       */ call       string System.SR/*02000004*/::get_Serialization_InvalidFixupType() /* 06000024 */
-    IL_001e:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_001e:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0023:  /* 7A   |                  */ throw
 
     IL_0024:  /* 06   |                  */ ldloc.0
     IL_0025:  /* 03   |                  */ ldarg.1
     IL_0026:  /* 02   |                  */ ldarg.0
-    IL_0027:  /* 6F   | (06)0000DF       */ callvirt   instance void System.Runtime.Serialization.ObjectHolder/*02000013*/::AddFixup(class System.Runtime.Serialization.FixupHolder/*02000014*/,
-                                                                                                                                     class System.Runtime.Serialization.ObjectManager/*02000012*/) /* 060000DF */
+    IL_0027:  /* 6F   | (06)0000DF       */ callvirt   instance void BalthasarIL.Serialization.ObjectHolder/*02000013*/::AddFixup(class BalthasarIL.Serialization.FixupHolder/*02000014*/,
+                                                                                                                                     class BalthasarIL.Serialization.ObjectManager/*02000012*/) /* 060000DF */
     IL_002c:  /* 02   |                  */ ldarg.0
     IL_002d:  /* 05   |                  */ ldarg.3
-    IL_002e:  /* 28   | (06)0000BC       */ call       instance class System.Runtime.Serialization.ObjectHolder/*02000013*/ System.Runtime.Serialization.ObjectManager/*02000012*/::FindOrCreateObjectHolder(int64) /* 060000BC */
+    IL_002e:  /* 28   | (06)0000BC       */ call       instance class BalthasarIL.Serialization.ObjectHolder/*02000013*/ BalthasarIL.Serialization.ObjectManager/*02000012*/::FindOrCreateObjectHolder(int64) /* 060000BC */
     IL_0033:  /* 0B   |                  */ stloc.1
     IL_0034:  /* 07   |                  */ ldloc.1
     IL_0035:  /* 04   |                  */ ldarg.2
-    IL_0036:  /* 6F   | (06)0000E1       */ callvirt   instance void System.Runtime.Serialization.ObjectHolder/*02000013*/::AddDependency(int64) /* 060000E1 */
+    IL_0036:  /* 6F   | (06)0000E1       */ callvirt   instance void BalthasarIL.Serialization.ObjectHolder/*02000013*/::AddDependency(int64) /* 060000E1 */
     IL_003b:  /* 02   |                  */ ldarg.0
     IL_003c:  /* 02   |                  */ ldarg.0
-    IL_003d:  /* 7B   | (04)000018       */ ldfld      int64 System.Runtime.Serialization.ObjectManager/*02000012*/::_fixupCount /* 04000018 */
+    IL_003d:  /* 7B   | (04)000018       */ ldfld      int64 BalthasarIL.Serialization.ObjectManager/*02000012*/::_fixupCount /* 04000018 */
     IL_0042:  /* 17   |                  */ ldc.i4.1
     IL_0043:  /* 6A   |                  */ conv.i8
     IL_0044:  /* 58   |                  */ add
-    IL_0045:  /* 7D   | (04)000018       */ stfld      int64 System.Runtime.Serialization.ObjectManager/*02000012*/::_fixupCount /* 04000018 */
+    IL_0045:  /* 7D   | (04)000018       */ stfld      int64 BalthasarIL.Serialization.ObjectManager/*02000012*/::_fixupCount /* 04000018 */
     IL_004a:  /* 2A   |                  */ ret
   } // end of method ObjectManager::RegisterFixup
 
@@ -11521,7 +11521,7 @@
     // 方法在 RVA 0x2247c 处开始
     // 代码大小       98 (0x62)
     .maxstack  4
-    .locals /*11000028*/ (class System.Runtime.Serialization.FixupHolder/*02000014*/ V_0)
+    .locals /*11000028*/ (class BalthasarIL.Serialization.FixupHolder/*02000014*/ V_0)
     IL_0000:  /* 03   |                  */ ldarg.1
     IL_0001:  /* 16   |                  */ ldc.i4.0
     IL_0002:  /* 6A   |                  */ conv.i8
@@ -11559,13 +11559,13 @@
     IL_003f:  /* 6F   | (0A)00001A       */ callvirt   instance class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/::GetType() /* 0A00001A */
     IL_0044:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_0049:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0049:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_004e:  /* 7A   |                  */ throw
 
     IL_004f:  /* 05   |                  */ ldarg.3
     IL_0050:  /* 04   |                  */ ldarg.2
     IL_0051:  /* 18   |                  */ ldc.i4.2
-    IL_0052:  /* 73   | (06)000102       */ newobj     instance void System.Runtime.Serialization.FixupHolder/*02000014*/::.ctor(int64,
+    IL_0052:  /* 73   | (06)000102       */ newobj     instance void BalthasarIL.Serialization.FixupHolder/*02000014*/::.ctor(int64,
                                                                                                                                  object,
                                                                                                                                  int32) /* 06000102 */
     IL_0057:  /* 0A   |                  */ stloc.0
@@ -11573,7 +11573,7 @@
     IL_0059:  /* 06   |                  */ ldloc.0
     IL_005a:  /* 03   |                  */ ldarg.1
     IL_005b:  /* 05   |                  */ ldarg.3
-    IL_005c:  /* 28   | (06)0000CE       */ call       instance void System.Runtime.Serialization.ObjectManager/*02000012*/::RegisterFixup(class System.Runtime.Serialization.FixupHolder/*02000014*/,
+    IL_005c:  /* 28   | (06)0000CE       */ call       instance void BalthasarIL.Serialization.ObjectManager/*02000012*/::RegisterFixup(class BalthasarIL.Serialization.FixupHolder/*02000014*/,
                                                                                                                                            int64,
                                                                                                                                            int64) /* 060000CE */
     IL_0061:  /* 2A   |                  */ ret
@@ -11588,7 +11588,7 @@
     // 方法在 RVA 0x224ec 处开始
     // 代码大小       68 (0x44)
     .maxstack  4
-    .locals /*11000028*/ (class System.Runtime.Serialization.FixupHolder/*02000014*/ V_0)
+    .locals /*11000028*/ (class BalthasarIL.Serialization.FixupHolder/*02000014*/ V_0)
     IL_0000:  /* 03   |                  */ ldarg.1
     IL_0001:  /* 16   |                  */ ldc.i4.0
     IL_0002:  /* 6A   |                  */ conv.i8
@@ -11620,7 +11620,7 @@
     IL_0031:  /* 05   |                  */ ldarg.3
     IL_0032:  /* 04   |                  */ ldarg.2
     IL_0033:  /* 1A   |                  */ ldc.i4.4
-    IL_0034:  /* 73   | (06)000102       */ newobj     instance void System.Runtime.Serialization.FixupHolder/*02000014*/::.ctor(int64,
+    IL_0034:  /* 73   | (06)000102       */ newobj     instance void BalthasarIL.Serialization.FixupHolder/*02000014*/::.ctor(int64,
                                                                                                                                  object,
                                                                                                                                  int32) /* 06000102 */
     IL_0039:  /* 0A   |                  */ stloc.0
@@ -11628,7 +11628,7 @@
     IL_003b:  /* 06   |                  */ ldloc.0
     IL_003c:  /* 03   |                  */ ldarg.1
     IL_003d:  /* 05   |                  */ ldarg.3
-    IL_003e:  /* 28   | (06)0000CE       */ call       instance void System.Runtime.Serialization.ObjectManager/*02000012*/::RegisterFixup(class System.Runtime.Serialization.FixupHolder/*02000014*/,
+    IL_003e:  /* 28   | (06)0000CE       */ call       instance void BalthasarIL.Serialization.ObjectManager/*02000012*/::RegisterFixup(class BalthasarIL.Serialization.FixupHolder/*02000014*/,
                                                                                                                                            int64,
                                                                                                                                            int64) /* 060000CE */
     IL_0043:  /* 2A   |                  */ ret
@@ -11655,7 +11655,7 @@
     IL_000c:  /* 03   |                  */ ldarg.1
     IL_000d:  /* 06   |                  */ ldloc.0
     IL_000e:  /* 05   |                  */ ldarg.3
-    IL_000f:  /* 6F   | (06)0000D2       */ callvirt   instance void System.Runtime.Serialization.ObjectManager/*02000012*/::RecordArrayElementFixup(int64,
+    IL_000f:  /* 6F   | (06)0000D2       */ callvirt   instance void BalthasarIL.Serialization.ObjectManager/*02000012*/::RecordArrayElementFixup(int64,
                                                                                                                                                      int32[],
                                                                                                                                                      int64) /* 060000D2 */
     IL_0014:  /* 2A   |                  */ ret
@@ -11670,7 +11670,7 @@
     // 方法在 RVA 0x22560 处开始
     // 代码大小       68 (0x44)
     .maxstack  4
-    .locals /*11000028*/ (class System.Runtime.Serialization.FixupHolder/*02000014*/ V_0)
+    .locals /*11000028*/ (class BalthasarIL.Serialization.FixupHolder/*02000014*/ V_0)
     IL_0000:  /* 03   |                  */ ldarg.1
     IL_0001:  /* 16   |                  */ ldc.i4.0
     IL_0002:  /* 6A   |                  */ conv.i8
@@ -11702,7 +11702,7 @@
     IL_0031:  /* 05   |                  */ ldarg.3
     IL_0032:  /* 04   |                  */ ldarg.2
     IL_0033:  /* 17   |                  */ ldc.i4.1
-    IL_0034:  /* 73   | (06)000102       */ newobj     instance void System.Runtime.Serialization.FixupHolder/*02000014*/::.ctor(int64,
+    IL_0034:  /* 73   | (06)000102       */ newobj     instance void BalthasarIL.Serialization.FixupHolder/*02000014*/::.ctor(int64,
                                                                                                                                  object,
                                                                                                                                  int32) /* 06000102 */
     IL_0039:  /* 0A   |                  */ stloc.0
@@ -11710,7 +11710,7 @@
     IL_003b:  /* 06   |                  */ ldloc.0
     IL_003c:  /* 03   |                  */ ldarg.1
     IL_003d:  /* 05   |                  */ ldarg.3
-    IL_003e:  /* 28   | (06)0000CE       */ call       instance void System.Runtime.Serialization.ObjectManager/*02000012*/::RegisterFixup(class System.Runtime.Serialization.FixupHolder/*02000014*/,
+    IL_003e:  /* 28   | (06)0000CE       */ call       instance void BalthasarIL.Serialization.ObjectManager/*02000012*/::RegisterFixup(class BalthasarIL.Serialization.FixupHolder/*02000014*/,
                                                                                                                                            int64,
                                                                                                                                            int64) /* 060000CE */
     IL_0043:  /* 2A   |                  */ ret
@@ -11724,7 +11724,7 @@
     // 代码大小       41 (0x29)
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)000014       */ ldfld      class System.Runtime.Serialization.SerializationEventHandler/*02000007*/ System.Runtime.Serialization.ObjectManager/*02000012*/::_onDeserializedHandler /* 04000014 */
+    IL_0001:  /* 7B   | (04)000014       */ ldfld      class BalthasarIL.Serialization.SerializationEventHandler/*02000007*/ BalthasarIL.Serialization.ObjectManager/*02000012*/::_onDeserializedHandler /* 04000014 */
     IL_0006:  /* 25   |                  */ dup
     IL_0007:  /* 2D   | 03               */ brtrue.s   IL_000c
 
@@ -11732,10 +11732,10 @@
     IL_000a:  /* 2B   | 0B               */ br.s       IL_0017
 
     IL_000c:  /* 02   |                  */ ldarg.0
-    IL_000d:  /* 7B   | (04)00001A       */ ldfld      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ System.Runtime.Serialization.ObjectManager/*02000012*/::_context /* 0400001A */
-    IL_0012:  /* 6F   | (06)000054       */ callvirt   instance void System.Runtime.Serialization.SerializationEventHandler/*02000007*/::Invoke(valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/) /* 06000054 */
+    IL_000d:  /* 7B   | (04)00001A       */ ldfld      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ BalthasarIL.Serialization.ObjectManager/*02000012*/::_context /* 0400001A */
+    IL_0012:  /* 6F   | (06)000054       */ callvirt   instance void BalthasarIL.Serialization.SerializationEventHandler/*02000007*/::Invoke(valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/) /* 06000054 */
     IL_0017:  /* 02   |                  */ ldarg.0
-    IL_0018:  /* 7B   | (04)000013       */ ldfld      class System.Runtime.Serialization.DeserializationEventHandler/*02000006*/ System.Runtime.Serialization.ObjectManager/*02000012*/::_onDeserializationHandler /* 04000013 */
+    IL_0018:  /* 7B   | (04)000013       */ ldfld      class BalthasarIL.Serialization.DeserializationEventHandler/*02000006*/ BalthasarIL.Serialization.ObjectManager/*02000012*/::_onDeserializationHandler /* 04000013 */
     IL_001d:  /* 25   |                  */ dup
     IL_001e:  /* 2D   | 02               */ brtrue.s   IL_0022
 
@@ -11743,12 +11743,12 @@
     IL_0021:  /* 2A   |                  */ ret
 
     IL_0022:  /* 14   |                  */ ldnull
-    IL_0023:  /* 6F   | (06)000052       */ callvirt   instance void System.Runtime.Serialization.DeserializationEventHandler/*02000006*/::Invoke(object) /* 06000052 */
+    IL_0023:  /* 6F   | (06)000052       */ callvirt   instance void BalthasarIL.Serialization.DeserializationEventHandler/*02000006*/::Invoke(object) /* 06000052 */
     IL_0028:  /* 2A   |                  */ ret
   } // end of method ObjectManager::RaiseDeserializationEvent
 
   .method /*060000D4*/ assembly hidebysig newslot strict virtual 
-          instance void  AddOnDeserialization(class System.Runtime.Serialization.DeserializationEventHandler/*02000006*/ 'handler') cil managed
+          instance void  AddOnDeserialization(class BalthasarIL.Serialization.DeserializationEventHandler/*02000006*/ 'handler') cil managed
   // SIG: 20 01 01 12 18
   {
     // 方法在 RVA 0x225dc 处开始
@@ -11756,12 +11756,12 @@
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
     IL_0001:  /* 02   |                  */ ldarg.0
-    IL_0002:  /* 7B   | (04)000013       */ ldfld      class System.Runtime.Serialization.DeserializationEventHandler/*02000006*/ System.Runtime.Serialization.ObjectManager/*02000012*/::_onDeserializationHandler /* 04000013 */
+    IL_0002:  /* 7B   | (04)000013       */ ldfld      class BalthasarIL.Serialization.DeserializationEventHandler/*02000006*/ BalthasarIL.Serialization.ObjectManager/*02000012*/::_onDeserializationHandler /* 04000013 */
     IL_0007:  /* 03   |                  */ ldarg.1
     IL_0008:  /* 28   | (0A)000082       */ call       class [System.Private.CoreLib/*23000001*/]System.Delegate/*01000051*/ [System.Private.CoreLib/*23000001*/]System.Delegate/*01000051*/::Combine(class [System.Private.CoreLib/*23000001*/]System.Delegate/*01000051*/,
                                                                                                                                                                                                       class [System.Private.CoreLib/*23000001*/]System.Delegate/*01000051*/) /* 0A000082 */
-    IL_000d:  /* 74   | (02)000006       */ castclass  System.Runtime.Serialization.DeserializationEventHandler/*02000006*/
-    IL_0012:  /* 7D   | (04)000013       */ stfld      class System.Runtime.Serialization.DeserializationEventHandler/*02000006*/ System.Runtime.Serialization.ObjectManager/*02000012*/::_onDeserializationHandler /* 04000013 */
+    IL_000d:  /* 74   | (02)000006       */ castclass  BalthasarIL.Serialization.DeserializationEventHandler/*02000006*/
+    IL_0012:  /* 7D   | (04)000013       */ stfld      class BalthasarIL.Serialization.DeserializationEventHandler/*02000006*/ BalthasarIL.Serialization.ObjectManager/*02000012*/::_onDeserializationHandler /* 04000013 */
     IL_0017:  /* 2A   |                  */ ret
   } // end of method ObjectManager::AddOnDeserialization
 
@@ -11780,19 +11780,19 @@
     // 方法在 RVA 0x225f8 处开始
     // 代码大小       32 (0x20)
     .maxstack  4
-    .locals /*1100002A*/ (class System.Runtime.Serialization.SerializationEvents/*0200001C*/ V_0)
+    .locals /*1100002A*/ (class BalthasarIL.Serialization.SerializationEvents/*0200001C*/ V_0)
     IL_0000:  /* 03   |                  */ ldarg.1
     IL_0001:  /* 6F   | (0A)00001A       */ callvirt   instance class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/::GetType() /* 0A00001A */
-    IL_0006:  /* 28   | (06)00012B       */ call       class System.Runtime.Serialization.SerializationEvents/*0200001C*/ System.Runtime.Serialization.SerializationEventsCache/*0200001D*/::GetSerializationEventsForType(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/) /* 0600012B */
+    IL_0006:  /* 28   | (06)00012B       */ call       class BalthasarIL.Serialization.SerializationEvents/*0200001C*/ BalthasarIL.Serialization.SerializationEventsCache/*0200001D*/::GetSerializationEventsForType(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/) /* 0600012B */
     IL_000b:  /* 0A   |                  */ stloc.0
     IL_000c:  /* 02   |                  */ ldarg.0
     IL_000d:  /* 06   |                  */ ldloc.0
     IL_000e:  /* 03   |                  */ ldarg.1
     IL_000f:  /* 02   |                  */ ldarg.0
-    IL_0010:  /* 7B   | (04)000014       */ ldfld      class System.Runtime.Serialization.SerializationEventHandler/*02000007*/ System.Runtime.Serialization.ObjectManager/*02000012*/::_onDeserializedHandler /* 04000014 */
-    IL_0015:  /* 6F   | (06)000128       */ callvirt   instance class System.Runtime.Serialization.SerializationEventHandler/*02000007*/ System.Runtime.Serialization.SerializationEvents/*0200001C*/::AddOnDeserialized(object,
-                                                                                                                                                                                                                         class System.Runtime.Serialization.SerializationEventHandler/*02000007*/) /* 06000128 */
-    IL_001a:  /* 7D   | (04)000014       */ stfld      class System.Runtime.Serialization.SerializationEventHandler/*02000007*/ System.Runtime.Serialization.ObjectManager/*02000012*/::_onDeserializedHandler /* 04000014 */
+    IL_0010:  /* 7B   | (04)000014       */ ldfld      class BalthasarIL.Serialization.SerializationEventHandler/*02000007*/ BalthasarIL.Serialization.ObjectManager/*02000012*/::_onDeserializedHandler /* 04000014 */
+    IL_0015:  /* 6F   | (06)000128       */ callvirt   instance class BalthasarIL.Serialization.SerializationEventHandler/*02000007*/ BalthasarIL.Serialization.SerializationEvents/*0200001C*/::AddOnDeserialized(object,
+                                                                                                                                                                                                                         class BalthasarIL.Serialization.SerializationEventHandler/*02000007*/) /* 06000128 */
+    IL_001a:  /* 7D   | (04)000014       */ stfld      class BalthasarIL.Serialization.SerializationEventHandler/*02000007*/ BalthasarIL.Serialization.ObjectManager/*02000012*/::_onDeserializedHandler /* 04000014 */
     IL_001f:  /* 2A   |                  */ ret
   } // end of method ObjectManager::AddOnDeserialized
 
@@ -11811,16 +11811,16 @@
     // 方法在 RVA 0x22624 处开始
     // 代码大小       26 (0x1a)
     .maxstack  3
-    .locals /*1100002A*/ (class System.Runtime.Serialization.SerializationEvents/*0200001C*/ V_0)
+    .locals /*1100002A*/ (class BalthasarIL.Serialization.SerializationEvents/*0200001C*/ V_0)
     IL_0000:  /* 03   |                  */ ldarg.1
     IL_0001:  /* 6F   | (0A)00001A       */ callvirt   instance class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/::GetType() /* 0A00001A */
-    IL_0006:  /* 28   | (06)00012B       */ call       class System.Runtime.Serialization.SerializationEvents/*0200001C*/ System.Runtime.Serialization.SerializationEventsCache/*0200001D*/::GetSerializationEventsForType(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/) /* 0600012B */
+    IL_0006:  /* 28   | (06)00012B       */ call       class BalthasarIL.Serialization.SerializationEvents/*0200001C*/ BalthasarIL.Serialization.SerializationEventsCache/*0200001D*/::GetSerializationEventsForType(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/) /* 0600012B */
     IL_000b:  /* 0A   |                  */ stloc.0
     IL_000c:  /* 06   |                  */ ldloc.0
     IL_000d:  /* 03   |                  */ ldarg.1
     IL_000e:  /* 02   |                  */ ldarg.0
-    IL_000f:  /* 7B   | (04)00001A       */ ldfld      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ System.Runtime.Serialization.ObjectManager/*02000012*/::_context /* 0400001A */
-    IL_0014:  /* 6F   | (06)000126       */ callvirt   instance void System.Runtime.Serialization.SerializationEvents/*0200001C*/::InvokeOnDeserialized(object,
+    IL_000f:  /* 7B   | (04)00001A       */ ldfld      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ BalthasarIL.Serialization.ObjectManager/*02000012*/::_context /* 0400001A */
+    IL_0014:  /* 6F   | (06)000126       */ callvirt   instance void BalthasarIL.Serialization.SerializationEvents/*0200001C*/::InvokeOnDeserialized(object,
                                                                                                                                                         valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/) /* 06000126 */
     IL_0019:  /* 2A   |                  */ ret
   } // end of method ObjectManager::RaiseOnDeserializedEvent
@@ -11840,16 +11840,16 @@
     // 方法在 RVA 0x2264c 处开始
     // 代码大小       26 (0x1a)
     .maxstack  3
-    .locals /*1100002A*/ (class System.Runtime.Serialization.SerializationEvents/*0200001C*/ V_0)
+    .locals /*1100002A*/ (class BalthasarIL.Serialization.SerializationEvents/*0200001C*/ V_0)
     IL_0000:  /* 03   |                  */ ldarg.1
     IL_0001:  /* 6F   | (0A)00001A       */ callvirt   instance class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/::GetType() /* 0A00001A */
-    IL_0006:  /* 28   | (06)00012B       */ call       class System.Runtime.Serialization.SerializationEvents/*0200001C*/ System.Runtime.Serialization.SerializationEventsCache/*0200001D*/::GetSerializationEventsForType(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/) /* 0600012B */
+    IL_0006:  /* 28   | (06)00012B       */ call       class BalthasarIL.Serialization.SerializationEvents/*0200001C*/ BalthasarIL.Serialization.SerializationEventsCache/*0200001D*/::GetSerializationEventsForType(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/) /* 0600012B */
     IL_000b:  /* 0A   |                  */ stloc.0
     IL_000c:  /* 06   |                  */ ldloc.0
     IL_000d:  /* 03   |                  */ ldarg.1
     IL_000e:  /* 02   |                  */ ldarg.0
-    IL_000f:  /* 7B   | (04)00001A       */ ldfld      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ System.Runtime.Serialization.ObjectManager/*02000012*/::_context /* 0400001A */
-    IL_0014:  /* 6F   | (06)000125       */ callvirt   instance void System.Runtime.Serialization.SerializationEvents/*0200001C*/::InvokeOnDeserializing(object,
+    IL_000f:  /* 7B   | (04)00001A       */ ldfld      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ BalthasarIL.Serialization.ObjectManager/*02000012*/::_context /* 0400001A */
+    IL_0014:  /* 6F   | (06)000125       */ callvirt   instance void BalthasarIL.Serialization.SerializationEvents/*0200001C*/::InvokeOnDeserializing(object,
                                                                                                                                                          valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/) /* 06000125 */
     IL_0019:  /* 2A   |                  */ ret
   } // end of method ObjectManager::RaiseOnDeserializingEvent
@@ -11867,24 +11867,24 @@
     IL_000f:  /* 1F   | 24               */ ldc.i4.s   36
     IL_0011:  /* 6F   | (0A)000083       */ callvirt   instance class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/ [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/::GetField(string,
                                                                                                                                                                                                                         valuetype [System.Private.CoreLib/*23000001*/]System.Reflection.BindingFlags/*01000037*/) /* 0A000083 */
-    IL_0016:  /* 80   | (04)000012       */ stsfld     class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/ System.Runtime.Serialization.ObjectManager/*02000012*/::s_nullableValueField /* 04000012 */
+    IL_0016:  /* 80   | (04)000012       */ stsfld     class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/ BalthasarIL.Serialization.ObjectManager/*02000012*/::s_nullableValueField /* 04000012 */
     IL_001b:  /* 2A   |                  */ ret
   } // end of method ObjectManager::.cctor
 
   .property /*1700004A*/ instance object TopObject()
   {
     .custom /*0C000046:0A000010*/ instance void [System.Private.CoreLib/*23000001*/]System.Runtime.CompilerServices.NullableAttribute/*01000013*/::.ctor(uint8) /* 0A000010 */ = ( 01 00 02 00 00 ) 
-    .get instance object System.Runtime.Serialization.ObjectManager/*02000012*/::get_TopObject() /* 060000B8 */
-    .set instance void System.Runtime.Serialization.ObjectManager/*02000012*/::set_TopObject(object) /* 060000B9 */
+    .get instance object BalthasarIL.Serialization.ObjectManager/*02000012*/::get_TopObject() /* 060000B8 */
+    .set instance void BalthasarIL.Serialization.ObjectManager/*02000012*/::set_TopObject(object) /* 060000B9 */
   } // end of property ObjectManager::TopObject
-  .property /*1700004B*/ instance class System.Runtime.Serialization.ObjectHolderList/*02000017*/
+  .property /*1700004B*/ instance class BalthasarIL.Serialization.ObjectHolderList/*02000017*/
           SpecialFixupObjects()
   {
-    .get instance class System.Runtime.Serialization.ObjectHolderList/*02000017*/ System.Runtime.Serialization.ObjectManager/*02000012*/::get_SpecialFixupObjects() /* 060000BA */
+    .get instance class BalthasarIL.Serialization.ObjectHolderList/*02000017*/ BalthasarIL.Serialization.ObjectManager/*02000012*/::get_SpecialFixupObjects() /* 060000BA */
   } // end of property ObjectManager::SpecialFixupObjects
-} // end of class System.Runtime.Serialization.ObjectManager
+} // end of class BalthasarIL.Serialization.ObjectManager
 
-.class /*02000013*/ private auto ansi sealed beforefieldinit System.Runtime.Serialization.ObjectHolder
+.class /*02000013*/ private auto ansi sealed beforefieldinit BalthasarIL.Serialization.ObjectHolder
        extends [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/
 {
   .field /*0400001B*/ private object _object
@@ -11892,14 +11892,14 @@
   .field /*0400001D*/ private int32 _missingElementsRemaining
   .field /*0400001E*/ private int32 _missingDecendents
   .field /*0400001F*/ assembly class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationInfo/*01000044*/ _serInfo
-  .field /*04000020*/ assembly class System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ _surrogate
-  .field /*04000021*/ assembly class System.Runtime.Serialization.FixupHolderList/*02000015*/ _missingElements
-  .field /*04000022*/ assembly class System.Runtime.Serialization.LongList/*02000016*/ _dependentObjects
-  .field /*04000023*/ assembly class System.Runtime.Serialization.ObjectHolder/*02000013*/ _next
+  .field /*04000020*/ assembly class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ _surrogate
+  .field /*04000021*/ assembly class BalthasarIL.Serialization.FixupHolderList/*02000015*/ _missingElements
+  .field /*04000022*/ assembly class BalthasarIL.Serialization.LongList/*02000016*/ _dependentObjects
+  .field /*04000023*/ assembly class BalthasarIL.Serialization.ObjectHolder/*02000013*/ _next
   .field /*04000024*/ assembly int32 _flags
   .field /*04000025*/ private bool _markForFixupWhenAvailable
-  .field /*04000026*/ private class System.Runtime.Serialization.ValueTypeFixupInfo/*02000024*/ _valueFixup
-  .field /*04000027*/ private class System.Runtime.Serialization.TypeLoadExceptionHolder/*02000019*/ _typeLoad
+  .field /*04000026*/ private class BalthasarIL.Serialization.ValueTypeFixupInfo/*02000024*/ _valueFixup
+  .field /*04000027*/ private class BalthasarIL.Serialization.TypeLoadExceptionHolder/*02000019*/ _typeLoad
   .field /*04000028*/ private bool _reachable
   .method /*060000D9*/ assembly hidebysig specialname rtspecialname 
           instance void  .ctor(int64 objID) cil managed
@@ -11917,10 +11917,10 @@
     IL_0006:  /* 6A   |                  */ conv.i8
     IL_0007:  /* 14   |                  */ ldnull
     IL_0008:  /* 14   |                  */ ldnull
-    IL_0009:  /* 28   | (06)0000DB       */ call       instance void System.Runtime.Serialization.ObjectHolder/*02000013*/::.ctor(string,
+    IL_0009:  /* 28   | (06)0000DB       */ call       instance void BalthasarIL.Serialization.ObjectHolder/*02000013*/::.ctor(string,
                                                                                                                                   int64,
                                                                                                                                   class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationInfo/*01000044*/,
-                                                                                                                                  class System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/,
+                                                                                                                                  class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/,
                                                                                                                                   int64,
                                                                                                                                   class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/,
                                                                                                                                   int32[]) /* 060000DB */
@@ -11931,7 +11931,7 @@
           instance void  .ctor(object obj,
                                int64 objID,
                                class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationInfo/*01000044*/ info,
-                               class System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ surrogate,
+                               class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ surrogate,
                                int64 idOfContainingObj,
                                class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/ 'field',
                                int32[] arrayIndex) cil managed
@@ -11944,42 +11944,42 @@
     IL_0001:  /* 28   | (0A)000011       */ call       instance void [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/::.ctor() /* 0A000011 */
     IL_0006:  /* 02   |                  */ ldarg.0
     IL_0007:  /* 03   |                  */ ldarg.1
-    IL_0008:  /* 7D   | (04)00001B       */ stfld      object System.Runtime.Serialization.ObjectHolder/*02000013*/::_object /* 0400001B */
+    IL_0008:  /* 7D   | (04)00001B       */ stfld      object BalthasarIL.Serialization.ObjectHolder/*02000013*/::_object /* 0400001B */
     IL_000d:  /* 02   |                  */ ldarg.0
     IL_000e:  /* 04   |                  */ ldarg.2
-    IL_000f:  /* 7D   | (04)00001C       */ stfld      int64 System.Runtime.Serialization.ObjectHolder/*02000013*/::_id /* 0400001C */
+    IL_000f:  /* 7D   | (04)00001C       */ stfld      int64 BalthasarIL.Serialization.ObjectHolder/*02000013*/::_id /* 0400001C */
     IL_0014:  /* 02   |                  */ ldarg.0
     IL_0015:  /* 16   |                  */ ldc.i4.0
-    IL_0016:  /* 7D   | (04)000024       */ stfld      int32 System.Runtime.Serialization.ObjectHolder/*02000013*/::_flags /* 04000024 */
+    IL_0016:  /* 7D   | (04)000024       */ stfld      int32 BalthasarIL.Serialization.ObjectHolder/*02000013*/::_flags /* 04000024 */
     IL_001b:  /* 02   |                  */ ldarg.0
     IL_001c:  /* 16   |                  */ ldc.i4.0
-    IL_001d:  /* 7D   | (04)00001D       */ stfld      int32 System.Runtime.Serialization.ObjectHolder/*02000013*/::_missingElementsRemaining /* 0400001D */
+    IL_001d:  /* 7D   | (04)00001D       */ stfld      int32 BalthasarIL.Serialization.ObjectHolder/*02000013*/::_missingElementsRemaining /* 0400001D */
     IL_0022:  /* 02   |                  */ ldarg.0
     IL_0023:  /* 16   |                  */ ldc.i4.0
-    IL_0024:  /* 7D   | (04)00001E       */ stfld      int32 System.Runtime.Serialization.ObjectHolder/*02000013*/::_missingDecendents /* 0400001E */
+    IL_0024:  /* 7D   | (04)00001E       */ stfld      int32 BalthasarIL.Serialization.ObjectHolder/*02000013*/::_missingDecendents /* 0400001E */
     IL_0029:  /* 02   |                  */ ldarg.0
     IL_002a:  /* 14   |                  */ ldnull
-    IL_002b:  /* 7D   | (04)000022       */ stfld      class System.Runtime.Serialization.LongList/*02000016*/ System.Runtime.Serialization.ObjectHolder/*02000013*/::_dependentObjects /* 04000022 */
+    IL_002b:  /* 7D   | (04)000022       */ stfld      class BalthasarIL.Serialization.LongList/*02000016*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::_dependentObjects /* 04000022 */
     IL_0030:  /* 02   |                  */ ldarg.0
     IL_0031:  /* 14   |                  */ ldnull
-    IL_0032:  /* 7D   | (04)000023       */ stfld      class System.Runtime.Serialization.ObjectHolder/*02000013*/ System.Runtime.Serialization.ObjectHolder/*02000013*/::_next /* 04000023 */
+    IL_0032:  /* 7D   | (04)000023       */ stfld      class BalthasarIL.Serialization.ObjectHolder/*02000013*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::_next /* 04000023 */
     IL_0037:  /* 02   |                  */ ldarg.0
     IL_0038:  /* 05   |                  */ ldarg.3
-    IL_0039:  /* 7D   | (04)00001F       */ stfld      class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationInfo/*01000044*/ System.Runtime.Serialization.ObjectHolder/*02000013*/::_serInfo /* 0400001F */
+    IL_0039:  /* 7D   | (04)00001F       */ stfld      class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationInfo/*01000044*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::_serInfo /* 0400001F */
     IL_003e:  /* 02   |                  */ ldarg.0
     IL_003f:  /* 0E   | 04               */ ldarg.s    surrogate
-    IL_0041:  /* 7D   | (04)000020       */ stfld      class System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ System.Runtime.Serialization.ObjectHolder/*02000013*/::_surrogate /* 04000020 */
+    IL_0041:  /* 7D   | (04)000020       */ stfld      class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::_surrogate /* 04000020 */
     IL_0046:  /* 02   |                  */ ldarg.0
     IL_0047:  /* 16   |                  */ ldc.i4.0
-    IL_0048:  /* 7D   | (04)000025       */ stfld      bool System.Runtime.Serialization.ObjectHolder/*02000013*/::_markForFixupWhenAvailable /* 04000025 */
+    IL_0048:  /* 7D   | (04)000025       */ stfld      bool BalthasarIL.Serialization.ObjectHolder/*02000013*/::_markForFixupWhenAvailable /* 04000025 */
     IL_004d:  /* 03   |                  */ ldarg.1
-    IL_004e:  /* 75   | (02)000019       */ isinst     System.Runtime.Serialization.TypeLoadExceptionHolder/*02000019*/
+    IL_004e:  /* 75   | (02)000019       */ isinst     BalthasarIL.Serialization.TypeLoadExceptionHolder/*02000019*/
     IL_0053:  /* 2C   | 0C               */ brfalse.s  IL_0061
 
     IL_0055:  /* 02   |                  */ ldarg.0
     IL_0056:  /* 03   |                  */ ldarg.1
-    IL_0057:  /* 74   | (02)000019       */ castclass  System.Runtime.Serialization.TypeLoadExceptionHolder/*02000019*/
-    IL_005c:  /* 7D   | (04)000027       */ stfld      class System.Runtime.Serialization.TypeLoadExceptionHolder/*02000019*/ System.Runtime.Serialization.ObjectHolder/*02000013*/::_typeLoad /* 04000027 */
+    IL_0057:  /* 74   | (02)000019       */ castclass  BalthasarIL.Serialization.TypeLoadExceptionHolder/*02000019*/
+    IL_005c:  /* 7D   | (04)000027       */ stfld      class BalthasarIL.Serialization.TypeLoadExceptionHolder/*02000019*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::_typeLoad /* 04000027 */
     IL_0061:  /* 0E   | 05               */ ldarg.s    idOfContainingObj
     IL_0063:  /* 2C   | 3D               */ brfalse.s  IL_00a2
 
@@ -12002,19 +12002,19 @@
     IL_0084:  /* 33   | 0B               */ bne.un.s   IL_0091
 
     IL_0086:  /* 28   | (06)000026       */ call       string System.SR/*02000004*/::get_Serialization_ParentChildIdentical() /* 06000026 */
-    IL_008b:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_008b:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0090:  /* 7A   |                  */ throw
 
     IL_0091:  /* 02   |                  */ ldarg.0
     IL_0092:  /* 0E   | 05               */ ldarg.s    idOfContainingObj
     IL_0094:  /* 0E   | 06               */ ldarg.s    'field'
     IL_0096:  /* 0E   | 07               */ ldarg.s    arrayIndex
-    IL_0098:  /* 73   | (06)00014C       */ newobj     instance void System.Runtime.Serialization.ValueTypeFixupInfo/*02000024*/::.ctor(int64,
+    IL_0098:  /* 73   | (06)00014C       */ newobj     instance void BalthasarIL.Serialization.ValueTypeFixupInfo/*02000024*/::.ctor(int64,
                                                                                                                                         class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/,
                                                                                                                                         int32[]) /* 0600014C */
-    IL_009d:  /* 7D   | (04)000026       */ stfld      class System.Runtime.Serialization.ValueTypeFixupInfo/*02000024*/ System.Runtime.Serialization.ObjectHolder/*02000013*/::_valueFixup /* 04000026 */
+    IL_009d:  /* 7D   | (04)000026       */ stfld      class BalthasarIL.Serialization.ValueTypeFixupInfo/*02000024*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::_valueFixup /* 04000026 */
     IL_00a2:  /* 02   |                  */ ldarg.0
-    IL_00a3:  /* 28   | (06)0000E4       */ call       instance void System.Runtime.Serialization.ObjectHolder/*02000013*/::SetFlags() /* 060000E4 */
+    IL_00a3:  /* 28   | (06)0000E4       */ call       instance void BalthasarIL.Serialization.ObjectHolder/*02000013*/::SetFlags() /* 060000E4 */
     IL_00a8:  /* 2A   |                  */ ret
   } // end of method ObjectHolder::.ctor
 
@@ -12022,7 +12022,7 @@
           instance void  .ctor(string obj,
                                int64 objID,
                                class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationInfo/*01000044*/ info,
-                               class System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ surrogate,
+                               class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ surrogate,
                                int64 idOfContainingObj,
                                class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/ 'field',
                                int32[] arrayIndex) cil managed
@@ -12035,34 +12035,34 @@
     IL_0001:  /* 28   | (0A)000011       */ call       instance void [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/::.ctor() /* 0A000011 */
     IL_0006:  /* 02   |                  */ ldarg.0
     IL_0007:  /* 03   |                  */ ldarg.1
-    IL_0008:  /* 7D   | (04)00001B       */ stfld      object System.Runtime.Serialization.ObjectHolder/*02000013*/::_object /* 0400001B */
+    IL_0008:  /* 7D   | (04)00001B       */ stfld      object BalthasarIL.Serialization.ObjectHolder/*02000013*/::_object /* 0400001B */
     IL_000d:  /* 02   |                  */ ldarg.0
     IL_000e:  /* 04   |                  */ ldarg.2
-    IL_000f:  /* 7D   | (04)00001C       */ stfld      int64 System.Runtime.Serialization.ObjectHolder/*02000013*/::_id /* 0400001C */
+    IL_000f:  /* 7D   | (04)00001C       */ stfld      int64 BalthasarIL.Serialization.ObjectHolder/*02000013*/::_id /* 0400001C */
     IL_0014:  /* 02   |                  */ ldarg.0
     IL_0015:  /* 16   |                  */ ldc.i4.0
-    IL_0016:  /* 7D   | (04)000024       */ stfld      int32 System.Runtime.Serialization.ObjectHolder/*02000013*/::_flags /* 04000024 */
+    IL_0016:  /* 7D   | (04)000024       */ stfld      int32 BalthasarIL.Serialization.ObjectHolder/*02000013*/::_flags /* 04000024 */
     IL_001b:  /* 02   |                  */ ldarg.0
     IL_001c:  /* 16   |                  */ ldc.i4.0
-    IL_001d:  /* 7D   | (04)00001D       */ stfld      int32 System.Runtime.Serialization.ObjectHolder/*02000013*/::_missingElementsRemaining /* 0400001D */
+    IL_001d:  /* 7D   | (04)00001D       */ stfld      int32 BalthasarIL.Serialization.ObjectHolder/*02000013*/::_missingElementsRemaining /* 0400001D */
     IL_0022:  /* 02   |                  */ ldarg.0
     IL_0023:  /* 16   |                  */ ldc.i4.0
-    IL_0024:  /* 7D   | (04)00001E       */ stfld      int32 System.Runtime.Serialization.ObjectHolder/*02000013*/::_missingDecendents /* 0400001E */
+    IL_0024:  /* 7D   | (04)00001E       */ stfld      int32 BalthasarIL.Serialization.ObjectHolder/*02000013*/::_missingDecendents /* 0400001E */
     IL_0029:  /* 02   |                  */ ldarg.0
     IL_002a:  /* 14   |                  */ ldnull
-    IL_002b:  /* 7D   | (04)000022       */ stfld      class System.Runtime.Serialization.LongList/*02000016*/ System.Runtime.Serialization.ObjectHolder/*02000013*/::_dependentObjects /* 04000022 */
+    IL_002b:  /* 7D   | (04)000022       */ stfld      class BalthasarIL.Serialization.LongList/*02000016*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::_dependentObjects /* 04000022 */
     IL_0030:  /* 02   |                  */ ldarg.0
     IL_0031:  /* 14   |                  */ ldnull
-    IL_0032:  /* 7D   | (04)000023       */ stfld      class System.Runtime.Serialization.ObjectHolder/*02000013*/ System.Runtime.Serialization.ObjectHolder/*02000013*/::_next /* 04000023 */
+    IL_0032:  /* 7D   | (04)000023       */ stfld      class BalthasarIL.Serialization.ObjectHolder/*02000013*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::_next /* 04000023 */
     IL_0037:  /* 02   |                  */ ldarg.0
     IL_0038:  /* 05   |                  */ ldarg.3
-    IL_0039:  /* 7D   | (04)00001F       */ stfld      class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationInfo/*01000044*/ System.Runtime.Serialization.ObjectHolder/*02000013*/::_serInfo /* 0400001F */
+    IL_0039:  /* 7D   | (04)00001F       */ stfld      class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationInfo/*01000044*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::_serInfo /* 0400001F */
     IL_003e:  /* 02   |                  */ ldarg.0
     IL_003f:  /* 0E   | 04               */ ldarg.s    surrogate
-    IL_0041:  /* 7D   | (04)000020       */ stfld      class System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ System.Runtime.Serialization.ObjectHolder/*02000013*/::_surrogate /* 04000020 */
+    IL_0041:  /* 7D   | (04)000020       */ stfld      class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::_surrogate /* 04000020 */
     IL_0046:  /* 02   |                  */ ldarg.0
     IL_0047:  /* 16   |                  */ ldc.i4.0
-    IL_0048:  /* 7D   | (04)000025       */ stfld      bool System.Runtime.Serialization.ObjectHolder/*02000013*/::_markForFixupWhenAvailable /* 04000025 */
+    IL_0048:  /* 7D   | (04)000025       */ stfld      bool BalthasarIL.Serialization.ObjectHolder/*02000013*/::_markForFixupWhenAvailable /* 04000025 */
     IL_004d:  /* 0E   | 05               */ ldarg.s    idOfContainingObj
     IL_004f:  /* 2C   | 15               */ brfalse.s  IL_0066
 
@@ -12073,20 +12073,20 @@
     IL_0056:  /* 0E   | 05               */ ldarg.s    idOfContainingObj
     IL_0058:  /* 0E   | 06               */ ldarg.s    'field'
     IL_005a:  /* 0E   | 07               */ ldarg.s    arrayIndex
-    IL_005c:  /* 73   | (06)00014C       */ newobj     instance void System.Runtime.Serialization.ValueTypeFixupInfo/*02000024*/::.ctor(int64,
+    IL_005c:  /* 73   | (06)00014C       */ newobj     instance void BalthasarIL.Serialization.ValueTypeFixupInfo/*02000024*/::.ctor(int64,
                                                                                                                                         class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/,
                                                                                                                                         int32[]) /* 0600014C */
-    IL_0061:  /* 7D   | (04)000026       */ stfld      class System.Runtime.Serialization.ValueTypeFixupInfo/*02000024*/ System.Runtime.Serialization.ObjectHolder/*02000013*/::_valueFixup /* 04000026 */
+    IL_0061:  /* 7D   | (04)000026       */ stfld      class BalthasarIL.Serialization.ValueTypeFixupInfo/*02000024*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::_valueFixup /* 04000026 */
     IL_0066:  /* 02   |                  */ ldarg.0
-    IL_0067:  /* 7B   | (04)000026       */ ldfld      class System.Runtime.Serialization.ValueTypeFixupInfo/*02000024*/ System.Runtime.Serialization.ObjectHolder/*02000013*/::_valueFixup /* 04000026 */
+    IL_0067:  /* 7B   | (04)000026       */ ldfld      class BalthasarIL.Serialization.ValueTypeFixupInfo/*02000024*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::_valueFixup /* 04000026 */
     IL_006c:  /* 2C   | 0E               */ brfalse.s  IL_007c
 
     IL_006e:  /* 02   |                  */ ldarg.0
     IL_006f:  /* 02   |                  */ ldarg.0
-    IL_0070:  /* 7B   | (04)000024       */ ldfld      int32 System.Runtime.Serialization.ObjectHolder/*02000013*/::_flags /* 04000024 */
+    IL_0070:  /* 7B   | (04)000024       */ ldfld      int32 BalthasarIL.Serialization.ObjectHolder/*02000013*/::_flags /* 04000024 */
     IL_0075:  /* 1E   |                  */ ldc.i4.8
     IL_0076:  /* 60   |                  */ or
-    IL_0077:  /* 7D   | (04)000024       */ stfld      int32 System.Runtime.Serialization.ObjectHolder/*02000013*/::_flags /* 04000024 */
+    IL_0077:  /* 7D   | (04)000024       */ stfld      int32 BalthasarIL.Serialization.ObjectHolder/*02000013*/::_flags /* 04000024 */
     IL_007c:  /* 2A   |                  */ ret
   } // end of method ObjectHolder::.ctor
 
@@ -12099,15 +12099,15 @@
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
     IL_0001:  /* 02   |                  */ ldarg.0
-    IL_0002:  /* 7B   | (04)00001E       */ ldfld      int32 System.Runtime.Serialization.ObjectHolder/*02000013*/::_missingDecendents /* 0400001E */
+    IL_0002:  /* 7B   | (04)00001E       */ ldfld      int32 BalthasarIL.Serialization.ObjectHolder/*02000013*/::_missingDecendents /* 0400001E */
     IL_0007:  /* 03   |                  */ ldarg.1
     IL_0008:  /* 58   |                  */ add
-    IL_0009:  /* 7D   | (04)00001E       */ stfld      int32 System.Runtime.Serialization.ObjectHolder/*02000013*/::_missingDecendents /* 0400001E */
+    IL_0009:  /* 7D   | (04)00001E       */ stfld      int32 BalthasarIL.Serialization.ObjectHolder/*02000013*/::_missingDecendents /* 0400001E */
     IL_000e:  /* 2A   |                  */ ret
   } // end of method ObjectHolder::IncrementDescendentFixups
 
   .method /*060000DD*/ assembly hidebysig 
-          instance void  DecrementFixupsRemaining(class System.Runtime.Serialization.ObjectManager/*02000012*/ manager) cil managed
+          instance void  DecrementFixupsRemaining(class BalthasarIL.Serialization.ObjectManager/*02000012*/ manager) cil managed
   // SIG: 20 01 01 12 48
   {
     // 方法在 RVA 0x227f8 处开始
@@ -12115,19 +12115,19 @@
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
     IL_0001:  /* 02   |                  */ ldarg.0
-    IL_0002:  /* 7B   | (04)00001D       */ ldfld      int32 System.Runtime.Serialization.ObjectHolder/*02000013*/::_missingElementsRemaining /* 0400001D */
+    IL_0002:  /* 7B   | (04)00001D       */ ldfld      int32 BalthasarIL.Serialization.ObjectHolder/*02000013*/::_missingElementsRemaining /* 0400001D */
     IL_0007:  /* 17   |                  */ ldc.i4.1
     IL_0008:  /* 59   |                  */ sub
-    IL_0009:  /* 7D   | (04)00001D       */ stfld      int32 System.Runtime.Serialization.ObjectHolder/*02000013*/::_missingElementsRemaining /* 0400001D */
+    IL_0009:  /* 7D   | (04)00001D       */ stfld      int32 BalthasarIL.Serialization.ObjectHolder/*02000013*/::_missingElementsRemaining /* 0400001D */
     IL_000e:  /* 02   |                  */ ldarg.0
-    IL_000f:  /* 28   | (06)0000E8       */ call       instance bool System.Runtime.Serialization.ObjectHolder/*02000013*/::get_RequiresValueTypeFixup() /* 060000E8 */
+    IL_000f:  /* 28   | (06)0000E8       */ call       instance bool BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_RequiresValueTypeFixup() /* 060000E8 */
     IL_0014:  /* 2C   | 08               */ brfalse.s  IL_001e
 
     IL_0016:  /* 02   |                  */ ldarg.0
     IL_0017:  /* 15   |                  */ ldc.i4.m1
     IL_0018:  /* 03   |                  */ ldarg.1
-    IL_0019:  /* 28   | (06)0000E0       */ call       instance void System.Runtime.Serialization.ObjectHolder/*02000013*/::UpdateDescendentDependencyChain(int32,
-                                                                                                                                                            class System.Runtime.Serialization.ObjectManager/*02000012*/) /* 060000E0 */
+    IL_0019:  /* 28   | (06)0000E0       */ call       instance void BalthasarIL.Serialization.ObjectHolder/*02000013*/::UpdateDescendentDependencyChain(int32,
+                                                                                                                                                            class BalthasarIL.Serialization.ObjectManager/*02000012*/) /* 060000E0 */
     IL_001e:  /* 2A   |                  */ ret
   } // end of method ObjectHolder::DecrementFixupsRemaining
 
@@ -12139,71 +12139,71 @@
     // 代码大小       14 (0xe)
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)000022       */ ldfld      class System.Runtime.Serialization.LongList/*02000016*/ System.Runtime.Serialization.ObjectHolder/*02000013*/::_dependentObjects /* 04000022 */
+    IL_0001:  /* 7B   | (04)000022       */ ldfld      class BalthasarIL.Serialization.LongList/*02000016*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::_dependentObjects /* 04000022 */
     IL_0006:  /* 03   |                  */ ldarg.1
-    IL_0007:  /* 6F   | (06)00010E       */ callvirt   instance bool System.Runtime.Serialization.LongList/*02000016*/::RemoveElement(int64) /* 0600010E */
+    IL_0007:  /* 6F   | (06)00010E       */ callvirt   instance bool BalthasarIL.Serialization.LongList/*02000016*/::RemoveElement(int64) /* 0600010E */
     IL_000c:  /* 26   |                  */ pop
     IL_000d:  /* 2A   |                  */ ret
   } // end of method ObjectHolder::RemoveDependency
 
   .method /*060000DF*/ assembly hidebysig 
-          instance void  AddFixup(class System.Runtime.Serialization.FixupHolder/*02000014*/ fixup,
-                                  class System.Runtime.Serialization.ObjectManager/*02000012*/ manager) cil managed
+          instance void  AddFixup(class BalthasarIL.Serialization.FixupHolder/*02000014*/ fixup,
+                                  class BalthasarIL.Serialization.ObjectManager/*02000012*/ manager) cil managed
   // SIG: 20 02 01 12 50 12 48
   {
     // 方法在 RVA 0x22828 处开始
     // 代码大小       62 (0x3e)
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)000021       */ ldfld      class System.Runtime.Serialization.FixupHolderList/*02000015*/ System.Runtime.Serialization.ObjectHolder/*02000013*/::_missingElements /* 04000021 */
+    IL_0001:  /* 7B   | (04)000021       */ ldfld      class BalthasarIL.Serialization.FixupHolderList/*02000015*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::_missingElements /* 04000021 */
     IL_0006:  /* 2D   | 0B               */ brtrue.s   IL_0013
 
     IL_0008:  /* 02   |                  */ ldarg.0
-    IL_0009:  /* 73   | (06)000103       */ newobj     instance void System.Runtime.Serialization.FixupHolderList/*02000015*/::.ctor() /* 06000103 */
-    IL_000e:  /* 7D   | (04)000021       */ stfld      class System.Runtime.Serialization.FixupHolderList/*02000015*/ System.Runtime.Serialization.ObjectHolder/*02000013*/::_missingElements /* 04000021 */
+    IL_0009:  /* 73   | (06)000103       */ newobj     instance void BalthasarIL.Serialization.FixupHolderList/*02000015*/::.ctor() /* 06000103 */
+    IL_000e:  /* 7D   | (04)000021       */ stfld      class BalthasarIL.Serialization.FixupHolderList/*02000015*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::_missingElements /* 04000021 */
     IL_0013:  /* 02   |                  */ ldarg.0
-    IL_0014:  /* 7B   | (04)000021       */ ldfld      class System.Runtime.Serialization.FixupHolderList/*02000015*/ System.Runtime.Serialization.ObjectHolder/*02000013*/::_missingElements /* 04000021 */
+    IL_0014:  /* 7B   | (04)000021       */ ldfld      class BalthasarIL.Serialization.FixupHolderList/*02000015*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::_missingElements /* 04000021 */
     IL_0019:  /* 03   |                  */ ldarg.1
-    IL_001a:  /* 6F   | (06)000105       */ callvirt   instance void System.Runtime.Serialization.FixupHolderList/*02000015*/::Add(class System.Runtime.Serialization.FixupHolder/*02000014*/) /* 06000105 */
+    IL_001a:  /* 6F   | (06)000105       */ callvirt   instance void BalthasarIL.Serialization.FixupHolderList/*02000015*/::Add(class BalthasarIL.Serialization.FixupHolder/*02000014*/) /* 06000105 */
     IL_001f:  /* 02   |                  */ ldarg.0
     IL_0020:  /* 02   |                  */ ldarg.0
-    IL_0021:  /* 7B   | (04)00001D       */ ldfld      int32 System.Runtime.Serialization.ObjectHolder/*02000013*/::_missingElementsRemaining /* 0400001D */
+    IL_0021:  /* 7B   | (04)00001D       */ ldfld      int32 BalthasarIL.Serialization.ObjectHolder/*02000013*/::_missingElementsRemaining /* 0400001D */
     IL_0026:  /* 17   |                  */ ldc.i4.1
     IL_0027:  /* 58   |                  */ add
-    IL_0028:  /* 7D   | (04)00001D       */ stfld      int32 System.Runtime.Serialization.ObjectHolder/*02000013*/::_missingElementsRemaining /* 0400001D */
+    IL_0028:  /* 7D   | (04)00001D       */ stfld      int32 BalthasarIL.Serialization.ObjectHolder/*02000013*/::_missingElementsRemaining /* 0400001D */
     IL_002d:  /* 02   |                  */ ldarg.0
-    IL_002e:  /* 28   | (06)0000E8       */ call       instance bool System.Runtime.Serialization.ObjectHolder/*02000013*/::get_RequiresValueTypeFixup() /* 060000E8 */
+    IL_002e:  /* 28   | (06)0000E8       */ call       instance bool BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_RequiresValueTypeFixup() /* 060000E8 */
     IL_0033:  /* 2C   | 08               */ brfalse.s  IL_003d
 
     IL_0035:  /* 02   |                  */ ldarg.0
     IL_0036:  /* 17   |                  */ ldc.i4.1
     IL_0037:  /* 04   |                  */ ldarg.2
-    IL_0038:  /* 28   | (06)0000E0       */ call       instance void System.Runtime.Serialization.ObjectHolder/*02000013*/::UpdateDescendentDependencyChain(int32,
-                                                                                                                                                            class System.Runtime.Serialization.ObjectManager/*02000012*/) /* 060000E0 */
+    IL_0038:  /* 28   | (06)0000E0       */ call       instance void BalthasarIL.Serialization.ObjectHolder/*02000013*/::UpdateDescendentDependencyChain(int32,
+                                                                                                                                                            class BalthasarIL.Serialization.ObjectManager/*02000012*/) /* 060000E0 */
     IL_003d:  /* 2A   |                  */ ret
   } // end of method ObjectHolder::AddFixup
 
   .method /*060000E0*/ private hidebysig 
           instance void  UpdateDescendentDependencyChain(int32 amount,
-                                                         class System.Runtime.Serialization.ObjectManager/*02000012*/ manager) cil managed
+                                                         class BalthasarIL.Serialization.ObjectManager/*02000012*/ manager) cil managed
   // SIG: 20 02 01 08 12 48
   {
     // 方法在 RVA 0x22868 处开始
     // 代码大小       31 (0x1f)
     .maxstack  2
-    .locals /*1100001C*/ (class System.Runtime.Serialization.ObjectHolder/*02000013*/ V_0)
+    .locals /*1100001C*/ (class BalthasarIL.Serialization.ObjectHolder/*02000013*/ V_0)
     IL_0000:  /* 02   |                  */ ldarg.0
     IL_0001:  /* 0A   |                  */ stloc.0
     IL_0002:  /* 04   |                  */ ldarg.2
     IL_0003:  /* 06   |                  */ ldloc.0
-    IL_0004:  /* 6F   | (06)000101       */ callvirt   instance int64 System.Runtime.Serialization.ObjectHolder/*02000013*/::get_ContainerID() /* 06000101 */
-    IL_0009:  /* 6F   | (06)0000BC       */ callvirt   instance class System.Runtime.Serialization.ObjectHolder/*02000013*/ System.Runtime.Serialization.ObjectManager/*02000012*/::FindOrCreateObjectHolder(int64) /* 060000BC */
+    IL_0004:  /* 6F   | (06)000101       */ callvirt   instance int64 BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_ContainerID() /* 06000101 */
+    IL_0009:  /* 6F   | (06)0000BC       */ callvirt   instance class BalthasarIL.Serialization.ObjectHolder/*02000013*/ BalthasarIL.Serialization.ObjectManager/*02000012*/::FindOrCreateObjectHolder(int64) /* 060000BC */
     IL_000e:  /* 0A   |                  */ stloc.0
     IL_000f:  /* 06   |                  */ ldloc.0
     IL_0010:  /* 03   |                  */ ldarg.1
-    IL_0011:  /* 6F   | (06)0000DC       */ callvirt   instance void System.Runtime.Serialization.ObjectHolder/*02000013*/::IncrementDescendentFixups(int32) /* 060000DC */
+    IL_0011:  /* 6F   | (06)0000DC       */ callvirt   instance void BalthasarIL.Serialization.ObjectHolder/*02000013*/::IncrementDescendentFixups(int32) /* 060000DC */
     IL_0016:  /* 06   |                  */ ldloc.0
-    IL_0017:  /* 6F   | (06)0000E8       */ callvirt   instance bool System.Runtime.Serialization.ObjectHolder/*02000013*/::get_RequiresValueTypeFixup() /* 060000E8 */
+    IL_0017:  /* 6F   | (06)0000E8       */ callvirt   instance bool BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_RequiresValueTypeFixup() /* 060000E8 */
     IL_001c:  /* 2D   | E4               */ brtrue.s   IL_0002
 
     IL_001e:  /* 2A   |                  */ ret
@@ -12217,27 +12217,27 @@
     // 代码大小       32 (0x20)
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)000022       */ ldfld      class System.Runtime.Serialization.LongList/*02000016*/ System.Runtime.Serialization.ObjectHolder/*02000013*/::_dependentObjects /* 04000022 */
+    IL_0001:  /* 7B   | (04)000022       */ ldfld      class BalthasarIL.Serialization.LongList/*02000016*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::_dependentObjects /* 04000022 */
     IL_0006:  /* 2D   | 0B               */ brtrue.s   IL_0013
 
     IL_0008:  /* 02   |                  */ ldarg.0
-    IL_0009:  /* 73   | (06)000107       */ newobj     instance void System.Runtime.Serialization.LongList/*02000016*/::.ctor() /* 06000107 */
-    IL_000e:  /* 7D   | (04)000022       */ stfld      class System.Runtime.Serialization.LongList/*02000016*/ System.Runtime.Serialization.ObjectHolder/*02000013*/::_dependentObjects /* 04000022 */
+    IL_0009:  /* 73   | (06)000107       */ newobj     instance void BalthasarIL.Serialization.LongList/*02000016*/::.ctor() /* 06000107 */
+    IL_000e:  /* 7D   | (04)000022       */ stfld      class BalthasarIL.Serialization.LongList/*02000016*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::_dependentObjects /* 04000022 */
     IL_0013:  /* 02   |                  */ ldarg.0
-    IL_0014:  /* 7B   | (04)000022       */ ldfld      class System.Runtime.Serialization.LongList/*02000016*/ System.Runtime.Serialization.ObjectHolder/*02000013*/::_dependentObjects /* 04000022 */
+    IL_0014:  /* 7B   | (04)000022       */ ldfld      class BalthasarIL.Serialization.LongList/*02000016*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::_dependentObjects /* 04000022 */
     IL_0019:  /* 03   |                  */ ldarg.1
-    IL_001a:  /* 6F   | (06)000109       */ callvirt   instance void System.Runtime.Serialization.LongList/*02000016*/::Add(int64) /* 06000109 */
+    IL_001a:  /* 6F   | (06)000109       */ callvirt   instance void BalthasarIL.Serialization.LongList/*02000016*/::Add(int64) /* 06000109 */
     IL_001f:  /* 2A   |                  */ ret
   } // end of method ObjectHolder::AddDependency
 
   .method /*060000E2*/ assembly hidebysig 
           instance void  UpdateData(object obj,
                                     class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationInfo/*01000044*/ info,
-                                    class System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ surrogate,
+                                    class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ surrogate,
                                     int64 idOfContainer,
                                     class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/ 'field',
                                     int32[] arrayIndex,
-                                    class System.Runtime.Serialization.ObjectManager/*02000012*/ manager) cil managed
+                                    class BalthasarIL.Serialization.ObjectManager/*02000012*/ manager) cil managed
   // SIG: 20 07 01 1C 12 81 11 12 38 0A 12 80 C9 1D 08 12 48
   {
     // 方法在 RVA 0x228b8 处开始
@@ -12246,14 +12246,14 @@
     IL_0000:  /* 02   |                  */ ldarg.0
     IL_0001:  /* 03   |                  */ ldarg.1
     IL_0002:  /* 0E   | 07               */ ldarg.s    manager
-    IL_0004:  /* 28   | (06)0000F7       */ call       instance void System.Runtime.Serialization.ObjectHolder/*02000013*/::SetObjectValue(object,
-                                                                                                                                           class System.Runtime.Serialization.ObjectManager/*02000012*/) /* 060000F7 */
+    IL_0004:  /* 28   | (06)0000F7       */ call       instance void BalthasarIL.Serialization.ObjectHolder/*02000013*/::SetObjectValue(object,
+                                                                                                                                           class BalthasarIL.Serialization.ObjectManager/*02000012*/) /* 060000F7 */
     IL_0009:  /* 02   |                  */ ldarg.0
     IL_000a:  /* 04   |                  */ ldarg.2
-    IL_000b:  /* 7D   | (04)00001F       */ stfld      class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationInfo/*01000044*/ System.Runtime.Serialization.ObjectHolder/*02000013*/::_serInfo /* 0400001F */
+    IL_000b:  /* 7D   | (04)00001F       */ stfld      class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationInfo/*01000044*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::_serInfo /* 0400001F */
     IL_0010:  /* 02   |                  */ ldarg.0
     IL_0011:  /* 05   |                  */ ldarg.3
-    IL_0012:  /* 7D   | (04)000020       */ stfld      class System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ System.Runtime.Serialization.ObjectHolder/*02000013*/::_surrogate /* 04000020 */
+    IL_0012:  /* 7D   | (04)000020       */ stfld      class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::_surrogate /* 04000020 */
     IL_0017:  /* 0E   | 04               */ ldarg.s    idOfContainer
     IL_0019:  /* 2C   | 42               */ brfalse.s  IL_005d
 
@@ -12273,33 +12273,33 @@
 
     IL_0037:  /* 0E   | 04               */ ldarg.s    idOfContainer
     IL_0039:  /* 02   |                  */ ldarg.0
-    IL_003a:  /* 7B   | (04)00001C       */ ldfld      int64 System.Runtime.Serialization.ObjectHolder/*02000013*/::_id /* 0400001C */
+    IL_003a:  /* 7B   | (04)00001C       */ ldfld      int64 BalthasarIL.Serialization.ObjectHolder/*02000013*/::_id /* 0400001C */
     IL_003f:  /* 33   | 0B               */ bne.un.s   IL_004c
 
     IL_0041:  /* 28   | (06)000026       */ call       string System.SR/*02000004*/::get_Serialization_ParentChildIdentical() /* 06000026 */
-    IL_0046:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0046:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_004b:  /* 7A   |                  */ throw
 
     IL_004c:  /* 02   |                  */ ldarg.0
     IL_004d:  /* 0E   | 04               */ ldarg.s    idOfContainer
     IL_004f:  /* 0E   | 05               */ ldarg.s    'field'
     IL_0051:  /* 0E   | 06               */ ldarg.s    arrayIndex
-    IL_0053:  /* 73   | (06)00014C       */ newobj     instance void System.Runtime.Serialization.ValueTypeFixupInfo/*02000024*/::.ctor(int64,
+    IL_0053:  /* 73   | (06)00014C       */ newobj     instance void BalthasarIL.Serialization.ValueTypeFixupInfo/*02000024*/::.ctor(int64,
                                                                                                                                         class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/,
                                                                                                                                         int32[]) /* 0600014C */
-    IL_0058:  /* 7D   | (04)000026       */ stfld      class System.Runtime.Serialization.ValueTypeFixupInfo/*02000024*/ System.Runtime.Serialization.ObjectHolder/*02000013*/::_valueFixup /* 04000026 */
+    IL_0058:  /* 7D   | (04)000026       */ stfld      class BalthasarIL.Serialization.ValueTypeFixupInfo/*02000024*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::_valueFixup /* 04000026 */
     IL_005d:  /* 02   |                  */ ldarg.0
-    IL_005e:  /* 28   | (06)0000E4       */ call       instance void System.Runtime.Serialization.ObjectHolder/*02000013*/::SetFlags() /* 060000E4 */
+    IL_005e:  /* 28   | (06)0000E4       */ call       instance void BalthasarIL.Serialization.ObjectHolder/*02000013*/::SetFlags() /* 060000E4 */
     IL_0063:  /* 02   |                  */ ldarg.0
-    IL_0064:  /* 28   | (06)0000E8       */ call       instance bool System.Runtime.Serialization.ObjectHolder/*02000013*/::get_RequiresValueTypeFixup() /* 060000E8 */
+    IL_0064:  /* 28   | (06)0000E8       */ call       instance bool BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_RequiresValueTypeFixup() /* 060000E8 */
     IL_0069:  /* 2C   | 0E               */ brfalse.s  IL_0079
 
     IL_006b:  /* 02   |                  */ ldarg.0
     IL_006c:  /* 02   |                  */ ldarg.0
-    IL_006d:  /* 7B   | (04)00001D       */ ldfld      int32 System.Runtime.Serialization.ObjectHolder/*02000013*/::_missingElementsRemaining /* 0400001D */
+    IL_006d:  /* 7B   | (04)00001D       */ ldfld      int32 BalthasarIL.Serialization.ObjectHolder/*02000013*/::_missingElementsRemaining /* 0400001D */
     IL_0072:  /* 0E   | 07               */ ldarg.s    manager
-    IL_0074:  /* 28   | (06)0000E0       */ call       instance void System.Runtime.Serialization.ObjectHolder/*02000013*/::UpdateDescendentDependencyChain(int32,
-                                                                                                                                                            class System.Runtime.Serialization.ObjectManager/*02000012*/) /* 060000E0 */
+    IL_0074:  /* 28   | (06)0000E0       */ call       instance void BalthasarIL.Serialization.ObjectHolder/*02000013*/::UpdateDescendentDependencyChain(int32,
+                                                                                                                                                            class BalthasarIL.Serialization.ObjectManager/*02000012*/) /* 060000E0 */
     IL_0079:  /* 2A   |                  */ ret
   } // end of method ObjectHolder::UpdateData
 
@@ -12312,7 +12312,7 @@
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
     IL_0001:  /* 17   |                  */ ldc.i4.1
-    IL_0002:  /* 7D   | (04)000025       */ stfld      bool System.Runtime.Serialization.ObjectHolder/*02000013*/::_markForFixupWhenAvailable /* 04000025 */
+    IL_0002:  /* 7D   | (04)000025       */ stfld      bool BalthasarIL.Serialization.ObjectHolder/*02000013*/::_markForFixupWhenAvailable /* 04000025 */
     IL_0007:  /* 2A   |                  */ ret
   } // end of method ObjectHolder::MarkForCompletionWhenAvailable
 
@@ -12324,55 +12324,55 @@
     // 代码大小       116 (0x74)
     .maxstack  3
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)00001B       */ ldfld      object System.Runtime.Serialization.ObjectHolder/*02000013*/::_object /* 0400001B */
-    IL_0006:  /* 75   | (01)000047       */ isinst     [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.IObjectReference/*01000047*/
+    IL_0001:  /* 7B   | (04)00001B       */ ldfld      object BalthasarIL.Serialization.ObjectHolder/*02000013*/::_object /* 0400001B */
+    IL_0006:  /* 75   | (01)000047       */ isinst     [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.IObjectReference/*01000047*/
     IL_000b:  /* 2C   | 0E               */ brfalse.s  IL_001b
 
     IL_000d:  /* 02   |                  */ ldarg.0
     IL_000e:  /* 02   |                  */ ldarg.0
-    IL_000f:  /* 7B   | (04)000024       */ ldfld      int32 System.Runtime.Serialization.ObjectHolder/*02000013*/::_flags /* 04000024 */
+    IL_000f:  /* 7B   | (04)000024       */ ldfld      int32 BalthasarIL.Serialization.ObjectHolder/*02000013*/::_flags /* 04000024 */
     IL_0014:  /* 17   |                  */ ldc.i4.1
     IL_0015:  /* 60   |                  */ or
-    IL_0016:  /* 7D   | (04)000024       */ stfld      int32 System.Runtime.Serialization.ObjectHolder/*02000013*/::_flags /* 04000024 */
+    IL_0016:  /* 7D   | (04)000024       */ stfld      int32 BalthasarIL.Serialization.ObjectHolder/*02000013*/::_flags /* 04000024 */
     IL_001b:  /* 02   |                  */ ldarg.0
     IL_001c:  /* 02   |                  */ ldarg.0
-    IL_001d:  /* 7B   | (04)000024       */ ldfld      int32 System.Runtime.Serialization.ObjectHolder/*02000013*/::_flags /* 04000024 */
+    IL_001d:  /* 7B   | (04)000024       */ ldfld      int32 BalthasarIL.Serialization.ObjectHolder/*02000013*/::_flags /* 04000024 */
     IL_0022:  /* 1F   | F9               */ ldc.i4.s   -7
     IL_0024:  /* 5F   |                  */ and
-    IL_0025:  /* 7D   | (04)000024       */ stfld      int32 System.Runtime.Serialization.ObjectHolder/*02000013*/::_flags /* 04000024 */
+    IL_0025:  /* 7D   | (04)000024       */ stfld      int32 BalthasarIL.Serialization.ObjectHolder/*02000013*/::_flags /* 04000024 */
     IL_002a:  /* 02   |                  */ ldarg.0
-    IL_002b:  /* 7B   | (04)000020       */ ldfld      class System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ System.Runtime.Serialization.ObjectHolder/*02000013*/::_surrogate /* 04000020 */
+    IL_002b:  /* 7B   | (04)000020       */ ldfld      class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::_surrogate /* 04000020 */
     IL_0030:  /* 2C   | 10               */ brfalse.s  IL_0042
 
     IL_0032:  /* 02   |                  */ ldarg.0
     IL_0033:  /* 02   |                  */ ldarg.0
-    IL_0034:  /* 7B   | (04)000024       */ ldfld      int32 System.Runtime.Serialization.ObjectHolder/*02000013*/::_flags /* 04000024 */
+    IL_0034:  /* 7B   | (04)000024       */ ldfld      int32 BalthasarIL.Serialization.ObjectHolder/*02000013*/::_flags /* 04000024 */
     IL_0039:  /* 1A   |                  */ ldc.i4.4
     IL_003a:  /* 60   |                  */ or
-    IL_003b:  /* 7D   | (04)000024       */ stfld      int32 System.Runtime.Serialization.ObjectHolder/*02000013*/::_flags /* 04000024 */
+    IL_003b:  /* 7D   | (04)000024       */ stfld      int32 BalthasarIL.Serialization.ObjectHolder/*02000013*/::_flags /* 04000024 */
     IL_0040:  /* 2B   | 1B               */ br.s       IL_005d
 
     IL_0042:  /* 02   |                  */ ldarg.0
-    IL_0043:  /* 7B   | (04)00001B       */ ldfld      object System.Runtime.Serialization.ObjectHolder/*02000013*/::_object /* 0400001B */
+    IL_0043:  /* 7B   | (04)00001B       */ ldfld      object BalthasarIL.Serialization.ObjectHolder/*02000013*/::_object /* 0400001B */
     IL_0048:  /* 75   | (01)00004E       */ isinst     [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.ISerializable/*0100004E*/
     IL_004d:  /* 2C   | 0E               */ brfalse.s  IL_005d
 
     IL_004f:  /* 02   |                  */ ldarg.0
     IL_0050:  /* 02   |                  */ ldarg.0
-    IL_0051:  /* 7B   | (04)000024       */ ldfld      int32 System.Runtime.Serialization.ObjectHolder/*02000013*/::_flags /* 04000024 */
+    IL_0051:  /* 7B   | (04)000024       */ ldfld      int32 BalthasarIL.Serialization.ObjectHolder/*02000013*/::_flags /* 04000024 */
     IL_0056:  /* 18   |                  */ ldc.i4.2
     IL_0057:  /* 60   |                  */ or
-    IL_0058:  /* 7D   | (04)000024       */ stfld      int32 System.Runtime.Serialization.ObjectHolder/*02000013*/::_flags /* 04000024 */
+    IL_0058:  /* 7D   | (04)000024       */ stfld      int32 BalthasarIL.Serialization.ObjectHolder/*02000013*/::_flags /* 04000024 */
     IL_005d:  /* 02   |                  */ ldarg.0
-    IL_005e:  /* 7B   | (04)000026       */ ldfld      class System.Runtime.Serialization.ValueTypeFixupInfo/*02000024*/ System.Runtime.Serialization.ObjectHolder/*02000013*/::_valueFixup /* 04000026 */
+    IL_005e:  /* 7B   | (04)000026       */ ldfld      class BalthasarIL.Serialization.ValueTypeFixupInfo/*02000024*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::_valueFixup /* 04000026 */
     IL_0063:  /* 2C   | 0E               */ brfalse.s  IL_0073
 
     IL_0065:  /* 02   |                  */ ldarg.0
     IL_0066:  /* 02   |                  */ ldarg.0
-    IL_0067:  /* 7B   | (04)000024       */ ldfld      int32 System.Runtime.Serialization.ObjectHolder/*02000013*/::_flags /* 04000024 */
+    IL_0067:  /* 7B   | (04)000024       */ ldfld      int32 BalthasarIL.Serialization.ObjectHolder/*02000013*/::_flags /* 04000024 */
     IL_006c:  /* 1E   |                  */ ldc.i4.8
     IL_006d:  /* 60   |                  */ or
-    IL_006e:  /* 7D   | (04)000024       */ stfld      int32 System.Runtime.Serialization.ObjectHolder/*02000013*/::_flags /* 04000024 */
+    IL_006e:  /* 7D   | (04)000024       */ stfld      int32 BalthasarIL.Serialization.ObjectHolder/*02000013*/::_flags /* 04000024 */
     IL_0073:  /* 2A   |                  */ ret
   } // end of method ObjectHolder::SetFlags
 
@@ -12384,7 +12384,7 @@
     // 代码大小       12 (0xc)
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)000024       */ ldfld      int32 System.Runtime.Serialization.ObjectHolder/*02000013*/::_flags /* 04000024 */
+    IL_0001:  /* 7B   | (04)000024       */ ldfld      int32 BalthasarIL.Serialization.ObjectHolder/*02000013*/::_flags /* 04000024 */
     IL_0006:  /* 17   |                  */ ldc.i4.1
     IL_0007:  /* 5F   |                  */ and
     IL_0008:  /* 16   |                  */ ldc.i4.0
@@ -12404,18 +12404,18 @@
 
     IL_0003:  /* 02   |                  */ ldarg.0
     IL_0004:  /* 02   |                  */ ldarg.0
-    IL_0005:  /* 7B   | (04)000024       */ ldfld      int32 System.Runtime.Serialization.ObjectHolder/*02000013*/::_flags /* 04000024 */
+    IL_0005:  /* 7B   | (04)000024       */ ldfld      int32 BalthasarIL.Serialization.ObjectHolder/*02000013*/::_flags /* 04000024 */
     IL_000a:  /* 17   |                  */ ldc.i4.1
     IL_000b:  /* 60   |                  */ or
-    IL_000c:  /* 7D   | (04)000024       */ stfld      int32 System.Runtime.Serialization.ObjectHolder/*02000013*/::_flags /* 04000024 */
+    IL_000c:  /* 7D   | (04)000024       */ stfld      int32 BalthasarIL.Serialization.ObjectHolder/*02000013*/::_flags /* 04000024 */
     IL_0011:  /* 2A   |                  */ ret
 
     IL_0012:  /* 02   |                  */ ldarg.0
     IL_0013:  /* 02   |                  */ ldarg.0
-    IL_0014:  /* 7B   | (04)000024       */ ldfld      int32 System.Runtime.Serialization.ObjectHolder/*02000013*/::_flags /* 04000024 */
+    IL_0014:  /* 7B   | (04)000024       */ ldfld      int32 BalthasarIL.Serialization.ObjectHolder/*02000013*/::_flags /* 04000024 */
     IL_0019:  /* 1F   | FE               */ ldc.i4.s   -2
     IL_001b:  /* 5F   |                  */ and
-    IL_001c:  /* 7D   | (04)000024       */ stfld      int32 System.Runtime.Serialization.ObjectHolder/*02000013*/::_flags /* 04000024 */
+    IL_001c:  /* 7D   | (04)000024       */ stfld      int32 BalthasarIL.Serialization.ObjectHolder/*02000013*/::_flags /* 04000024 */
     IL_0021:  /* 2A   |                  */ ret
   } // end of method ObjectHolder::set_IsIncompleteObjectReference
 
@@ -12427,7 +12427,7 @@
     // 代码大小       12 (0xc)
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)000024       */ ldfld      int32 System.Runtime.Serialization.ObjectHolder/*02000013*/::_flags /* 04000024 */
+    IL_0001:  /* 7B   | (04)000024       */ ldfld      int32 BalthasarIL.Serialization.ObjectHolder/*02000013*/::_flags /* 04000024 */
     IL_0006:  /* 1D   |                  */ ldc.i4.7
     IL_0007:  /* 5F   |                  */ and
     IL_0008:  /* 16   |                  */ ldc.i4.0
@@ -12443,7 +12443,7 @@
     // 代码大小       12 (0xc)
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)000024       */ ldfld      int32 System.Runtime.Serialization.ObjectHolder/*02000013*/::_flags /* 04000024 */
+    IL_0001:  /* 7B   | (04)000024       */ ldfld      int32 BalthasarIL.Serialization.ObjectHolder/*02000013*/::_flags /* 04000024 */
     IL_0006:  /* 1E   |                  */ ldc.i4.8
     IL_0007:  /* 5F   |                  */ and
     IL_0008:  /* 16   |                  */ ldc.i4.0
@@ -12459,22 +12459,22 @@
     // 代码大小       51 (0x33)
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)000024       */ ldfld      int32 System.Runtime.Serialization.ObjectHolder/*02000013*/::_flags /* 04000024 */
+    IL_0001:  /* 7B   | (04)000024       */ ldfld      int32 BalthasarIL.Serialization.ObjectHolder/*02000013*/::_flags /* 04000024 */
     IL_0006:  /* 20   | 00800000         */ ldc.i4     0x8000
     IL_000b:  /* 5F   |                  */ and
     IL_000c:  /* 2D   | 23               */ brtrue.s   IL_0031
 
     IL_000e:  /* 02   |                  */ ldarg.0
-    IL_000f:  /* 7B   | (04)00001B       */ ldfld      object System.Runtime.Serialization.ObjectHolder/*02000013*/::_object /* 0400001B */
+    IL_000f:  /* 7B   | (04)00001B       */ ldfld      object BalthasarIL.Serialization.ObjectHolder/*02000013*/::_object /* 0400001B */
     IL_0014:  /* 2C   | 19               */ brfalse.s  IL_002f
 
     IL_0016:  /* 02   |                  */ ldarg.0
-    IL_0017:  /* 7B   | (04)000022       */ ldfld      class System.Runtime.Serialization.LongList/*02000016*/ System.Runtime.Serialization.ObjectHolder/*02000013*/::_dependentObjects /* 04000022 */
+    IL_0017:  /* 7B   | (04)000022       */ ldfld      class BalthasarIL.Serialization.LongList/*02000016*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::_dependentObjects /* 04000022 */
     IL_001c:  /* 2C   | 0F               */ brfalse.s  IL_002d
 
     IL_001e:  /* 02   |                  */ ldarg.0
-    IL_001f:  /* 7B   | (04)000022       */ ldfld      class System.Runtime.Serialization.LongList/*02000016*/ System.Runtime.Serialization.ObjectHolder/*02000013*/::_dependentObjects /* 04000022 */
-    IL_0024:  /* 6F   | (06)00010A       */ callvirt   instance int32 System.Runtime.Serialization.LongList/*02000016*/::get_Count() /* 0600010A */
+    IL_001f:  /* 7B   | (04)000022       */ ldfld      class BalthasarIL.Serialization.LongList/*02000016*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::_dependentObjects /* 04000022 */
+    IL_0024:  /* 6F   | (06)00010A       */ callvirt   instance int32 BalthasarIL.Serialization.LongList/*02000016*/::get_Count() /* 0600010A */
     IL_0029:  /* 16   |                  */ ldc.i4.0
     IL_002a:  /* FE01 |                  */ ceq
     IL_002c:  /* 2A   |                  */ ret
@@ -12501,10 +12501,10 @@
 
     IL_0003:  /* 02   |                  */ ldarg.0
     IL_0004:  /* 02   |                  */ ldarg.0
-    IL_0005:  /* 7B   | (04)000024       */ ldfld      int32 System.Runtime.Serialization.ObjectHolder/*02000013*/::_flags /* 04000024 */
+    IL_0005:  /* 7B   | (04)000024       */ ldfld      int32 BalthasarIL.Serialization.ObjectHolder/*02000013*/::_flags /* 04000024 */
     IL_000a:  /* 20   | 00800000         */ ldc.i4     0x8000
     IL_000f:  /* 60   |                  */ or
-    IL_0010:  /* 7D   | (04)000024       */ stfld      int32 System.Runtime.Serialization.ObjectHolder/*02000013*/::_flags /* 04000024 */
+    IL_0010:  /* 7D   | (04)000024       */ stfld      int32 BalthasarIL.Serialization.ObjectHolder/*02000013*/::_flags /* 04000024 */
     IL_0015:  /* 2A   |                  */ ret
   } // end of method ObjectHolder::set_ValueTypeFixupPerformed
 
@@ -12516,7 +12516,7 @@
     // 代码大小       12 (0xc)
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)000024       */ ldfld      int32 System.Runtime.Serialization.ObjectHolder/*02000013*/::_flags /* 04000024 */
+    IL_0001:  /* 7B   | (04)000024       */ ldfld      int32 BalthasarIL.Serialization.ObjectHolder/*02000013*/::_flags /* 04000024 */
     IL_0006:  /* 18   |                  */ ldc.i4.2
     IL_0007:  /* 5F   |                  */ and
     IL_0008:  /* 16   |                  */ ldc.i4.0
@@ -12532,7 +12532,7 @@
     // 代码大小       12 (0xc)
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)000024       */ ldfld      int32 System.Runtime.Serialization.ObjectHolder/*02000013*/::_flags /* 04000024 */
+    IL_0001:  /* 7B   | (04)000024       */ ldfld      int32 BalthasarIL.Serialization.ObjectHolder/*02000013*/::_flags /* 04000024 */
     IL_0006:  /* 1A   |                  */ ldc.i4.4
     IL_0007:  /* 5F   |                  */ and
     IL_0008:  /* 16   |                  */ ldc.i4.0
@@ -12548,13 +12548,13 @@
     // 代码大小       37 (0x25)
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)000020       */ ldfld      class System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ System.Runtime.Serialization.ObjectHolder/*02000013*/::_surrogate /* 04000020 */
+    IL_0001:  /* 7B   | (04)000020       */ ldfld      class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::_surrogate /* 04000020 */
     IL_0006:  /* 2C   | 1B               */ brfalse.s  IL_0023
 
     IL_0008:  /* 02   |                  */ ldarg.0
-    IL_0009:  /* 7B   | (04)000020       */ ldfld      class System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ System.Runtime.Serialization.ObjectHolder/*02000013*/::_surrogate /* 04000020 */
+    IL_0009:  /* 7B   | (04)000020       */ ldfld      class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::_surrogate /* 04000020 */
     IL_000e:  /* 6F   | (0A)00001A       */ callvirt   instance class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/::GetType() /* 0A00001A */
-    IL_0013:  /* D0   | (02)00000C       */ ldtoken    System.Runtime.Serialization.SurrogateForCyclicalReference/*0200000C*/
+    IL_0013:  /* D0   | (02)00000C       */ ldtoken    BalthasarIL.Serialization.SurrogateForCyclicalReference/*0200000C*/
     IL_0018:  /* 28   | (0A)000009       */ call       class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/::GetTypeFromHandle(valuetype [System.Private.CoreLib/*23000001*/]System.RuntimeTypeHandle/*01000008*/) /* 0A000009 */
     IL_001d:  /* 28   | (0A)00003A       */ call       bool [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/::op_Inequality(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
                                                                                                                                        class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/) /* 0A00003A */
@@ -12572,18 +12572,18 @@
     // 代码大小       27 (0x1b)
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 28   | (06)0000E5       */ call       instance bool System.Runtime.Serialization.ObjectHolder/*02000013*/::get_IsIncompleteObjectReference() /* 060000E5 */
+    IL_0001:  /* 28   | (06)0000E5       */ call       instance bool BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_IsIncompleteObjectReference() /* 060000E5 */
     IL_0006:  /* 2D   | 11               */ brtrue.s   IL_0019
 
     IL_0008:  /* 02   |                  */ ldarg.0
-    IL_0009:  /* 28   | (06)0000EC       */ call       instance bool System.Runtime.Serialization.ObjectHolder/*02000013*/::get_HasSurrogate() /* 060000EC */
+    IL_0009:  /* 28   | (06)0000EC       */ call       instance bool BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_HasSurrogate() /* 060000EC */
     IL_000e:  /* 2D   | 02               */ brtrue.s   IL_0012
 
     IL_0010:  /* 16   |                  */ ldc.i4.0
     IL_0011:  /* 2A   |                  */ ret
 
     IL_0012:  /* 02   |                  */ ldarg.0
-    IL_0013:  /* 28   | (06)0000ED       */ call       instance bool System.Runtime.Serialization.ObjectHolder/*02000013*/::get_CanSurrogatedObjectValueChange() /* 060000ED */
+    IL_0013:  /* 28   | (06)0000ED       */ call       instance bool BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_CanSurrogatedObjectValueChange() /* 060000ED */
     IL_0018:  /* 2A   |                  */ ret
 
     IL_0019:  /* 17   |                  */ ldc.i4.1
@@ -12598,7 +12598,7 @@
     // 代码大小       7 (0x7)
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)00001D       */ ldfld      int32 System.Runtime.Serialization.ObjectHolder/*02000013*/::_missingElementsRemaining /* 0400001D */
+    IL_0001:  /* 7B   | (04)00001D       */ ldfld      int32 BalthasarIL.Serialization.ObjectHolder/*02000013*/::_missingElementsRemaining /* 0400001D */
     IL_0006:  /* 2A   |                  */ ret
   } // end of method ObjectHolder::get_DirectlyDependentObjects
 
@@ -12610,9 +12610,9 @@
     // 代码大小       14 (0xe)
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)00001D       */ ldfld      int32 System.Runtime.Serialization.ObjectHolder/*02000013*/::_missingElementsRemaining /* 0400001D */
+    IL_0001:  /* 7B   | (04)00001D       */ ldfld      int32 BalthasarIL.Serialization.ObjectHolder/*02000013*/::_missingElementsRemaining /* 0400001D */
     IL_0006:  /* 02   |                  */ ldarg.0
-    IL_0007:  /* 7B   | (04)00001E       */ ldfld      int32 System.Runtime.Serialization.ObjectHolder/*02000013*/::_missingDecendents /* 0400001E */
+    IL_0007:  /* 7B   | (04)00001E       */ ldfld      int32 BalthasarIL.Serialization.ObjectHolder/*02000013*/::_missingDecendents /* 0400001E */
     IL_000c:  /* 58   |                  */ add
     IL_000d:  /* 2A   |                  */ ret
   } // end of method ObjectHolder::get_TotalDependentObjects
@@ -12625,7 +12625,7 @@
     // 代码大小       7 (0x7)
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)000028       */ ldfld      bool System.Runtime.Serialization.ObjectHolder/*02000013*/::_reachable /* 04000028 */
+    IL_0001:  /* 7B   | (04)000028       */ ldfld      bool BalthasarIL.Serialization.ObjectHolder/*02000013*/::_reachable /* 04000028 */
     IL_0006:  /* 2A   |                  */ ret
   } // end of method ObjectHolder::get_Reachable
 
@@ -12638,7 +12638,7 @@
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
     IL_0001:  /* 03   |                  */ ldarg.1
-    IL_0002:  /* 7D   | (04)000028       */ stfld      bool System.Runtime.Serialization.ObjectHolder/*02000013*/::_reachable /* 04000028 */
+    IL_0002:  /* 7D   | (04)000028       */ stfld      bool BalthasarIL.Serialization.ObjectHolder/*02000013*/::_reachable /* 04000028 */
     IL_0007:  /* 2A   |                  */ ret
   } // end of method ObjectHolder::set_Reachable
 
@@ -12650,14 +12650,14 @@
     // 代码大小       10 (0xa)
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)000027       */ ldfld      class System.Runtime.Serialization.TypeLoadExceptionHolder/*02000019*/ System.Runtime.Serialization.ObjectHolder/*02000013*/::_typeLoad /* 04000027 */
+    IL_0001:  /* 7B   | (04)000027       */ ldfld      class BalthasarIL.Serialization.TypeLoadExceptionHolder/*02000019*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::_typeLoad /* 04000027 */
     IL_0006:  /* 14   |                  */ ldnull
     IL_0007:  /* FE03 |                  */ cgt.un
     IL_0009:  /* 2A   |                  */ ret
   } // end of method ObjectHolder::get_TypeLoadExceptionReachable
 
   .method /*060000F4*/ assembly hidebysig specialname 
-          instance class System.Runtime.Serialization.TypeLoadExceptionHolder/*02000019*/ 
+          instance class BalthasarIL.Serialization.TypeLoadExceptionHolder/*02000019*/ 
           get_TypeLoadException() cil managed
   // SIG: 20 00 12 64
   {
@@ -12665,12 +12665,12 @@
     // 代码大小       7 (0x7)
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)000027       */ ldfld      class System.Runtime.Serialization.TypeLoadExceptionHolder/*02000019*/ System.Runtime.Serialization.ObjectHolder/*02000013*/::_typeLoad /* 04000027 */
+    IL_0001:  /* 7B   | (04)000027       */ ldfld      class BalthasarIL.Serialization.TypeLoadExceptionHolder/*02000019*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::_typeLoad /* 04000027 */
     IL_0006:  /* 2A   |                  */ ret
   } // end of method ObjectHolder::get_TypeLoadException
 
   .method /*060000F5*/ assembly hidebysig specialname 
-          instance void  set_TypeLoadException(class System.Runtime.Serialization.TypeLoadExceptionHolder/*02000019*/ 'value') cil managed
+          instance void  set_TypeLoadException(class BalthasarIL.Serialization.TypeLoadExceptionHolder/*02000019*/ 'value') cil managed
   // SIG: 20 01 01 12 64
   {
     // 方法在 RVA 0x22b10 处开始
@@ -12678,7 +12678,7 @@
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
     IL_0001:  /* 03   |                  */ ldarg.1
-    IL_0002:  /* 7D   | (04)000027       */ stfld      class System.Runtime.Serialization.TypeLoadExceptionHolder/*02000019*/ System.Runtime.Serialization.ObjectHolder/*02000013*/::_typeLoad /* 04000027 */
+    IL_0002:  /* 7D   | (04)000027       */ stfld      class BalthasarIL.Serialization.TypeLoadExceptionHolder/*02000019*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::_typeLoad /* 04000027 */
     IL_0007:  /* 2A   |                  */ ret
   } // end of method ObjectHolder::set_TypeLoadException
 
@@ -12690,13 +12690,13 @@
     // 代码大小       7 (0x7)
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)00001B       */ ldfld      object System.Runtime.Serialization.ObjectHolder/*02000013*/::_object /* 0400001B */
+    IL_0001:  /* 7B   | (04)00001B       */ ldfld      object BalthasarIL.Serialization.ObjectHolder/*02000013*/::_object /* 0400001B */
     IL_0006:  /* 2A   |                  */ ret
   } // end of method ObjectHolder::get_ObjectValue
 
   .method /*060000F7*/ assembly hidebysig 
           instance void  SetObjectValue(object obj,
-                                        class System.Runtime.Serialization.ObjectManager/*02000012*/ manager) cil managed
+                                        class BalthasarIL.Serialization.ObjectManager/*02000012*/ manager) cil managed
   // SIG: 20 02 01 1C 12 48
   {
     // 方法在 RVA 0x22b24 处开始
@@ -12704,31 +12704,31 @@
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
     IL_0001:  /* 03   |                  */ ldarg.1
-    IL_0002:  /* 7D   | (04)00001B       */ stfld      object System.Runtime.Serialization.ObjectHolder/*02000013*/::_object /* 0400001B */
+    IL_0002:  /* 7D   | (04)00001B       */ stfld      object BalthasarIL.Serialization.ObjectHolder/*02000013*/::_object /* 0400001B */
     IL_0007:  /* 03   |                  */ ldarg.1
     IL_0008:  /* 04   |                  */ ldarg.2
-    IL_0009:  /* 6F   | (06)0000B8       */ callvirt   instance object System.Runtime.Serialization.ObjectManager/*02000012*/::get_TopObject() /* 060000B8 */
+    IL_0009:  /* 6F   | (06)0000B8       */ callvirt   instance object BalthasarIL.Serialization.ObjectManager/*02000012*/::get_TopObject() /* 060000B8 */
     IL_000e:  /* 33   | 07               */ bne.un.s   IL_0017
 
     IL_0010:  /* 02   |                  */ ldarg.0
     IL_0011:  /* 17   |                  */ ldc.i4.1
-    IL_0012:  /* 7D   | (04)000028       */ stfld      bool System.Runtime.Serialization.ObjectHolder/*02000013*/::_reachable /* 04000028 */
+    IL_0012:  /* 7D   | (04)000028       */ stfld      bool BalthasarIL.Serialization.ObjectHolder/*02000013*/::_reachable /* 04000028 */
     IL_0017:  /* 03   |                  */ ldarg.1
-    IL_0018:  /* 75   | (02)000019       */ isinst     System.Runtime.Serialization.TypeLoadExceptionHolder/*02000019*/
+    IL_0018:  /* 75   | (02)000019       */ isinst     BalthasarIL.Serialization.TypeLoadExceptionHolder/*02000019*/
     IL_001d:  /* 2C   | 0C               */ brfalse.s  IL_002b
 
     IL_001f:  /* 02   |                  */ ldarg.0
     IL_0020:  /* 03   |                  */ ldarg.1
-    IL_0021:  /* 74   | (02)000019       */ castclass  System.Runtime.Serialization.TypeLoadExceptionHolder/*02000019*/
-    IL_0026:  /* 7D   | (04)000027       */ stfld      class System.Runtime.Serialization.TypeLoadExceptionHolder/*02000019*/ System.Runtime.Serialization.ObjectHolder/*02000013*/::_typeLoad /* 04000027 */
+    IL_0021:  /* 74   | (02)000019       */ castclass  BalthasarIL.Serialization.TypeLoadExceptionHolder/*02000019*/
+    IL_0026:  /* 7D   | (04)000027       */ stfld      class BalthasarIL.Serialization.TypeLoadExceptionHolder/*02000019*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::_typeLoad /* 04000027 */
     IL_002b:  /* 02   |                  */ ldarg.0
-    IL_002c:  /* 7B   | (04)000025       */ ldfld      bool System.Runtime.Serialization.ObjectHolder/*02000013*/::_markForFixupWhenAvailable /* 04000025 */
+    IL_002c:  /* 7B   | (04)000025       */ ldfld      bool BalthasarIL.Serialization.ObjectHolder/*02000013*/::_markForFixupWhenAvailable /* 04000025 */
     IL_0031:  /* 2C   | 08               */ brfalse.s  IL_003b
 
     IL_0033:  /* 04   |                  */ ldarg.2
     IL_0034:  /* 02   |                  */ ldarg.0
     IL_0035:  /* 17   |                  */ ldc.i4.1
-    IL_0036:  /* 6F   | (06)0000C3       */ callvirt   instance void System.Runtime.Serialization.ObjectManager/*02000012*/::CompleteObject(class System.Runtime.Serialization.ObjectHolder/*02000013*/,
+    IL_0036:  /* 6F   | (06)0000C3       */ callvirt   instance void BalthasarIL.Serialization.ObjectManager/*02000012*/::CompleteObject(class BalthasarIL.Serialization.ObjectHolder/*02000013*/,
                                                                                                                                             bool) /* 060000C3 */
     IL_003b:  /* 2A   |                  */ ret
   } // end of method ObjectHolder::SetObjectValue
@@ -12742,7 +12742,7 @@
     // 代码大小       7 (0x7)
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)00001F       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationInfo/*01000044*/ System.Runtime.Serialization.ObjectHolder/*02000013*/::_serInfo /* 0400001F */
+    IL_0001:  /* 7B   | (04)00001F       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationInfo/*01000044*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::_serInfo /* 0400001F */
     IL_0006:  /* 2A   |                  */ ret
   } // end of method ObjectHolder::get_SerializationInfo
 
@@ -12755,12 +12755,12 @@
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
     IL_0001:  /* 03   |                  */ ldarg.1
-    IL_0002:  /* 7D   | (04)00001F       */ stfld      class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationInfo/*01000044*/ System.Runtime.Serialization.ObjectHolder/*02000013*/::_serInfo /* 0400001F */
+    IL_0002:  /* 7D   | (04)00001F       */ stfld      class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationInfo/*01000044*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::_serInfo /* 0400001F */
     IL_0007:  /* 2A   |                  */ ret
   } // end of method ObjectHolder::set_SerializationInfo
 
   .method /*060000FA*/ assembly hidebysig specialname 
-          instance class System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ 
+          instance class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ 
           get_Surrogate() cil managed
   // SIG: 20 00 12 38
   {
@@ -12768,12 +12768,12 @@
     // 代码大小       7 (0x7)
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)000020       */ ldfld      class System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ System.Runtime.Serialization.ObjectHolder/*02000013*/::_surrogate /* 04000020 */
+    IL_0001:  /* 7B   | (04)000020       */ ldfld      class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::_surrogate /* 04000020 */
     IL_0006:  /* 2A   |                  */ ret
   } // end of method ObjectHolder::get_Surrogate
 
   .method /*060000FB*/ assembly hidebysig specialname 
-          instance class System.Runtime.Serialization.LongList/*02000016*/ 
+          instance class BalthasarIL.Serialization.LongList/*02000016*/ 
           get_DependentObjects() cil managed
   // SIG: 20 00 12 58
   {
@@ -12781,12 +12781,12 @@
     // 代码大小       7 (0x7)
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)000022       */ ldfld      class System.Runtime.Serialization.LongList/*02000016*/ System.Runtime.Serialization.ObjectHolder/*02000013*/::_dependentObjects /* 04000022 */
+    IL_0001:  /* 7B   | (04)000022       */ ldfld      class BalthasarIL.Serialization.LongList/*02000016*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::_dependentObjects /* 04000022 */
     IL_0006:  /* 2A   |                  */ ret
   } // end of method ObjectHolder::get_DependentObjects
 
   .method /*060000FC*/ assembly hidebysig specialname 
-          instance void  set_DependentObjects(class System.Runtime.Serialization.LongList/*02000016*/ 'value') cil managed
+          instance void  set_DependentObjects(class BalthasarIL.Serialization.LongList/*02000016*/ 'value') cil managed
   // SIG: 20 01 01 12 58
   {
     // 方法在 RVA 0x22b88 处开始
@@ -12794,7 +12794,7 @@
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
     IL_0001:  /* 03   |                  */ ldarg.1
-    IL_0002:  /* 7D   | (04)000022       */ stfld      class System.Runtime.Serialization.LongList/*02000016*/ System.Runtime.Serialization.ObjectHolder/*02000013*/::_dependentObjects /* 04000022 */
+    IL_0002:  /* 7D   | (04)000022       */ stfld      class BalthasarIL.Serialization.LongList/*02000016*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::_dependentObjects /* 04000022 */
     IL_0007:  /* 2A   |                  */ ret
   } // end of method ObjectHolder::set_DependentObjects
 
@@ -12806,13 +12806,13 @@
     // 代码大小       38 (0x26)
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)000024       */ ldfld      int32 System.Runtime.Serialization.ObjectHolder/*02000013*/::_flags /* 04000024 */
+    IL_0001:  /* 7B   | (04)000024       */ ldfld      int32 BalthasarIL.Serialization.ObjectHolder/*02000013*/::_flags /* 04000024 */
     IL_0006:  /* 1A   |                  */ ldc.i4.4
     IL_0007:  /* 5F   |                  */ and
     IL_0008:  /* 2D   | 0C               */ brtrue.s   IL_0016
 
     IL_000a:  /* 02   |                  */ ldarg.0
-    IL_000b:  /* 7B   | (04)000024       */ ldfld      int32 System.Runtime.Serialization.ObjectHolder/*02000013*/::_flags /* 04000024 */
+    IL_000b:  /* 7B   | (04)000024       */ ldfld      int32 BalthasarIL.Serialization.ObjectHolder/*02000013*/::_flags /* 04000024 */
     IL_0010:  /* 18   |                  */ ldc.i4.2
     IL_0011:  /* 5F   |                  */ and
     IL_0012:  /* 2D   | 02               */ brtrue.s   IL_0016
@@ -12821,7 +12821,7 @@
     IL_0015:  /* 2A   |                  */ ret
 
     IL_0016:  /* 02   |                  */ ldarg.0
-    IL_0017:  /* 7B   | (04)000024       */ ldfld      int32 System.Runtime.Serialization.ObjectHolder/*02000013*/::_flags /* 04000024 */
+    IL_0017:  /* 7B   | (04)000024       */ ldfld      int32 BalthasarIL.Serialization.ObjectHolder/*02000013*/::_flags /* 04000024 */
     IL_001c:  /* 20   | 00400000         */ ldc.i4     0x4000
     IL_0021:  /* 5F   |                  */ and
     IL_0022:  /* 16   |                  */ ldc.i4.0
@@ -12841,23 +12841,23 @@
 
     IL_0003:  /* 02   |                  */ ldarg.0
     IL_0004:  /* 02   |                  */ ldarg.0
-    IL_0005:  /* 7B   | (04)000024       */ ldfld      int32 System.Runtime.Serialization.ObjectHolder/*02000013*/::_flags /* 04000024 */
+    IL_0005:  /* 7B   | (04)000024       */ ldfld      int32 BalthasarIL.Serialization.ObjectHolder/*02000013*/::_flags /* 04000024 */
     IL_000a:  /* 20   | 00400000         */ ldc.i4     0x4000
     IL_000f:  /* 60   |                  */ or
-    IL_0010:  /* 7D   | (04)000024       */ stfld      int32 System.Runtime.Serialization.ObjectHolder/*02000013*/::_flags /* 04000024 */
+    IL_0010:  /* 7D   | (04)000024       */ stfld      int32 BalthasarIL.Serialization.ObjectHolder/*02000013*/::_flags /* 04000024 */
     IL_0015:  /* 2A   |                  */ ret
 
     IL_0016:  /* 02   |                  */ ldarg.0
     IL_0017:  /* 02   |                  */ ldarg.0
-    IL_0018:  /* 7B   | (04)000024       */ ldfld      int32 System.Runtime.Serialization.ObjectHolder/*02000013*/::_flags /* 04000024 */
+    IL_0018:  /* 7B   | (04)000024       */ ldfld      int32 BalthasarIL.Serialization.ObjectHolder/*02000013*/::_flags /* 04000024 */
     IL_001d:  /* 20   | FFBFFFFF         */ ldc.i4     0xffffbfff
     IL_0022:  /* 5F   |                  */ and
-    IL_0023:  /* 7D   | (04)000024       */ stfld      int32 System.Runtime.Serialization.ObjectHolder/*02000013*/::_flags /* 04000024 */
+    IL_0023:  /* 7D   | (04)000024       */ stfld      int32 BalthasarIL.Serialization.ObjectHolder/*02000013*/::_flags /* 04000024 */
     IL_0028:  /* 2A   |                  */ ret
   } // end of method ObjectHolder::set_RequiresSerInfoFixup
 
   .method /*060000FF*/ assembly hidebysig specialname 
-          instance class System.Runtime.Serialization.ValueTypeFixupInfo/*02000024*/ 
+          instance class BalthasarIL.Serialization.ValueTypeFixupInfo/*02000024*/ 
           get_ValueFixup() cil managed
   // SIG: 20 00 12 80 90
   {
@@ -12865,7 +12865,7 @@
     // 代码大小       7 (0x7)
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)000026       */ ldfld      class System.Runtime.Serialization.ValueTypeFixupInfo/*02000024*/ System.Runtime.Serialization.ObjectHolder/*02000013*/::_valueFixup /* 04000026 */
+    IL_0001:  /* 7B   | (04)000026       */ ldfld      class BalthasarIL.Serialization.ValueTypeFixupInfo/*02000024*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::_valueFixup /* 04000026 */
     IL_0006:  /* 2A   |                  */ ret
   } // end of method ObjectHolder::get_ValueFixup
 
@@ -12877,11 +12877,11 @@
     // 代码大小       20 (0x14)
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 28   | (06)0000FD       */ call       instance bool System.Runtime.Serialization.ObjectHolder/*02000013*/::get_RequiresSerInfoFixup() /* 060000FD */
+    IL_0001:  /* 28   | (06)0000FD       */ call       instance bool BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_RequiresSerInfoFixup() /* 060000FD */
     IL_0006:  /* 2D   | 0A               */ brtrue.s   IL_0012
 
     IL_0008:  /* 02   |                  */ ldarg.0
-    IL_0009:  /* 28   | (06)0000E5       */ call       instance bool System.Runtime.Serialization.ObjectHolder/*02000013*/::get_IsIncompleteObjectReference() /* 060000E5 */
+    IL_0009:  /* 28   | (06)0000E5       */ call       instance bool BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_IsIncompleteObjectReference() /* 060000E5 */
     IL_000e:  /* 16   |                  */ ldc.i4.0
     IL_000f:  /* FE01 |                  */ ceq
     IL_0011:  /* 2A   |                  */ ret
@@ -12898,7 +12898,7 @@
     // 代码大小       23 (0x17)
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)000026       */ ldfld      class System.Runtime.Serialization.ValueTypeFixupInfo/*02000024*/ System.Runtime.Serialization.ObjectHolder/*02000013*/::_valueFixup /* 04000026 */
+    IL_0001:  /* 7B   | (04)000026       */ ldfld      class BalthasarIL.Serialization.ValueTypeFixupInfo/*02000024*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::_valueFixup /* 04000026 */
     IL_0006:  /* 2D   | 03               */ brtrue.s   IL_000b
 
     IL_0008:  /* 16   |                  */ ldc.i4.0
@@ -12906,110 +12906,110 @@
     IL_000a:  /* 2A   |                  */ ret
 
     IL_000b:  /* 02   |                  */ ldarg.0
-    IL_000c:  /* 7B   | (04)000026       */ ldfld      class System.Runtime.Serialization.ValueTypeFixupInfo/*02000024*/ System.Runtime.Serialization.ObjectHolder/*02000013*/::_valueFixup /* 04000026 */
-    IL_0011:  /* 6F   | (06)00014D       */ callvirt   instance int64 System.Runtime.Serialization.ValueTypeFixupInfo/*02000024*/::get_ContainerID() /* 0600014D */
+    IL_000c:  /* 7B   | (04)000026       */ ldfld      class BalthasarIL.Serialization.ValueTypeFixupInfo/*02000024*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::_valueFixup /* 04000026 */
+    IL_0011:  /* 6F   | (06)00014D       */ callvirt   instance int64 BalthasarIL.Serialization.ValueTypeFixupInfo/*02000024*/::get_ContainerID() /* 0600014D */
     IL_0016:  /* 2A   |                  */ ret
   } // end of method ObjectHolder::get_ContainerID
 
   .property /*1700004C*/ instance bool IsIncompleteObjectReference()
   {
-    .get instance bool System.Runtime.Serialization.ObjectHolder/*02000013*/::get_IsIncompleteObjectReference() /* 060000E5 */
-    .set instance void System.Runtime.Serialization.ObjectHolder/*02000013*/::set_IsIncompleteObjectReference(bool) /* 060000E6 */
+    .get instance bool BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_IsIncompleteObjectReference() /* 060000E5 */
+    .set instance void BalthasarIL.Serialization.ObjectHolder/*02000013*/::set_IsIncompleteObjectReference(bool) /* 060000E6 */
   } // end of property ObjectHolder::IsIncompleteObjectReference
   .property /*1700004D*/ instance bool RequiresDelayedFixup()
   {
-    .get instance bool System.Runtime.Serialization.ObjectHolder/*02000013*/::get_RequiresDelayedFixup() /* 060000E7 */
+    .get instance bool BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_RequiresDelayedFixup() /* 060000E7 */
   } // end of property ObjectHolder::RequiresDelayedFixup
   .property /*1700004E*/ instance bool RequiresValueTypeFixup()
   {
-    .get instance bool System.Runtime.Serialization.ObjectHolder/*02000013*/::get_RequiresValueTypeFixup() /* 060000E8 */
+    .get instance bool BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_RequiresValueTypeFixup() /* 060000E8 */
   } // end of property ObjectHolder::RequiresValueTypeFixup
   .property /*1700004F*/ instance bool ValueTypeFixupPerformed()
   {
-    .get instance bool System.Runtime.Serialization.ObjectHolder/*02000013*/::get_ValueTypeFixupPerformed() /* 060000E9 */
-    .set instance void System.Runtime.Serialization.ObjectHolder/*02000013*/::set_ValueTypeFixupPerformed(bool) /* 060000EA */
+    .get instance bool BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_ValueTypeFixupPerformed() /* 060000E9 */
+    .set instance void BalthasarIL.Serialization.ObjectHolder/*02000013*/::set_ValueTypeFixupPerformed(bool) /* 060000EA */
   } // end of property ObjectHolder::ValueTypeFixupPerformed
   .property /*17000050*/ instance bool HasISerializable()
   {
-    .get instance bool System.Runtime.Serialization.ObjectHolder/*02000013*/::get_HasISerializable() /* 060000EB */
+    .get instance bool BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_HasISerializable() /* 060000EB */
   } // end of property ObjectHolder::HasISerializable
   .property /*17000051*/ instance bool HasSurrogate()
   {
-    .get instance bool System.Runtime.Serialization.ObjectHolder/*02000013*/::get_HasSurrogate() /* 060000EC */
+    .get instance bool BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_HasSurrogate() /* 060000EC */
   } // end of property ObjectHolder::HasSurrogate
   .property /*17000052*/ instance bool CanSurrogatedObjectValueChange()
   {
-    .get instance bool System.Runtime.Serialization.ObjectHolder/*02000013*/::get_CanSurrogatedObjectValueChange() /* 060000ED */
+    .get instance bool BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_CanSurrogatedObjectValueChange() /* 060000ED */
   } // end of property ObjectHolder::CanSurrogatedObjectValueChange
   .property /*17000053*/ instance bool CanObjectValueChange()
   {
-    .get instance bool System.Runtime.Serialization.ObjectHolder/*02000013*/::get_CanObjectValueChange() /* 060000EE */
+    .get instance bool BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_CanObjectValueChange() /* 060000EE */
   } // end of property ObjectHolder::CanObjectValueChange
   .property /*17000054*/ instance int32 DirectlyDependentObjects()
   {
-    .get instance int32 System.Runtime.Serialization.ObjectHolder/*02000013*/::get_DirectlyDependentObjects() /* 060000EF */
+    .get instance int32 BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_DirectlyDependentObjects() /* 060000EF */
   } // end of property ObjectHolder::DirectlyDependentObjects
   .property /*17000055*/ instance int32 TotalDependentObjects()
   {
-    .get instance int32 System.Runtime.Serialization.ObjectHolder/*02000013*/::get_TotalDependentObjects() /* 060000F0 */
+    .get instance int32 BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_TotalDependentObjects() /* 060000F0 */
   } // end of property ObjectHolder::TotalDependentObjects
   .property /*17000056*/ instance bool Reachable()
   {
-    .get instance bool System.Runtime.Serialization.ObjectHolder/*02000013*/::get_Reachable() /* 060000F1 */
-    .set instance void System.Runtime.Serialization.ObjectHolder/*02000013*/::set_Reachable(bool) /* 060000F2 */
+    .get instance bool BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_Reachable() /* 060000F1 */
+    .set instance void BalthasarIL.Serialization.ObjectHolder/*02000013*/::set_Reachable(bool) /* 060000F2 */
   } // end of property ObjectHolder::Reachable
   .property /*17000057*/ instance bool TypeLoadExceptionReachable()
   {
-    .get instance bool System.Runtime.Serialization.ObjectHolder/*02000013*/::get_TypeLoadExceptionReachable() /* 060000F3 */
+    .get instance bool BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_TypeLoadExceptionReachable() /* 060000F3 */
   } // end of property ObjectHolder::TypeLoadExceptionReachable
-  .property /*17000058*/ instance class System.Runtime.Serialization.TypeLoadExceptionHolder/*02000019*/
+  .property /*17000058*/ instance class BalthasarIL.Serialization.TypeLoadExceptionHolder/*02000019*/
           TypeLoadException()
   {
-    .get instance class System.Runtime.Serialization.TypeLoadExceptionHolder/*02000019*/ System.Runtime.Serialization.ObjectHolder/*02000013*/::get_TypeLoadException() /* 060000F4 */
-    .set instance void System.Runtime.Serialization.ObjectHolder/*02000013*/::set_TypeLoadException(class System.Runtime.Serialization.TypeLoadExceptionHolder/*02000019*/) /* 060000F5 */
+    .get instance class BalthasarIL.Serialization.TypeLoadExceptionHolder/*02000019*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_TypeLoadException() /* 060000F4 */
+    .set instance void BalthasarIL.Serialization.ObjectHolder/*02000013*/::set_TypeLoadException(class BalthasarIL.Serialization.TypeLoadExceptionHolder/*02000019*/) /* 060000F5 */
   } // end of property ObjectHolder::TypeLoadException
   .property /*17000059*/ instance object ObjectValue()
   {
-    .get instance object System.Runtime.Serialization.ObjectHolder/*02000013*/::get_ObjectValue() /* 060000F6 */
+    .get instance object BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_ObjectValue() /* 060000F6 */
   } // end of property ObjectHolder::ObjectValue
   .property /*1700005A*/ instance class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationInfo/*01000044*/
           SerializationInfo()
   {
-    .get instance class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationInfo/*01000044*/ System.Runtime.Serialization.ObjectHolder/*02000013*/::get_SerializationInfo() /* 060000F8 */
-    .set instance void System.Runtime.Serialization.ObjectHolder/*02000013*/::set_SerializationInfo(class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationInfo/*01000044*/) /* 060000F9 */
+    .get instance class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationInfo/*01000044*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_SerializationInfo() /* 060000F8 */
+    .set instance void BalthasarIL.Serialization.ObjectHolder/*02000013*/::set_SerializationInfo(class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationInfo/*01000044*/) /* 060000F9 */
   } // end of property ObjectHolder::SerializationInfo
-  .property /*1700005B*/ instance class System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/
+  .property /*1700005B*/ instance class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/
           Surrogate()
   {
-    .get instance class System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ System.Runtime.Serialization.ObjectHolder/*02000013*/::get_Surrogate() /* 060000FA */
+    .get instance class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_Surrogate() /* 060000FA */
   } // end of property ObjectHolder::Surrogate
-  .property /*1700005C*/ instance class System.Runtime.Serialization.LongList/*02000016*/
+  .property /*1700005C*/ instance class BalthasarIL.Serialization.LongList/*02000016*/
           DependentObjects()
   {
-    .get instance class System.Runtime.Serialization.LongList/*02000016*/ System.Runtime.Serialization.ObjectHolder/*02000013*/::get_DependentObjects() /* 060000FB */
-    .set instance void System.Runtime.Serialization.ObjectHolder/*02000013*/::set_DependentObjects(class System.Runtime.Serialization.LongList/*02000016*/) /* 060000FC */
+    .get instance class BalthasarIL.Serialization.LongList/*02000016*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_DependentObjects() /* 060000FB */
+    .set instance void BalthasarIL.Serialization.ObjectHolder/*02000013*/::set_DependentObjects(class BalthasarIL.Serialization.LongList/*02000016*/) /* 060000FC */
   } // end of property ObjectHolder::DependentObjects
   .property /*1700005D*/ instance bool RequiresSerInfoFixup()
   {
-    .get instance bool System.Runtime.Serialization.ObjectHolder/*02000013*/::get_RequiresSerInfoFixup() /* 060000FD */
-    .set instance void System.Runtime.Serialization.ObjectHolder/*02000013*/::set_RequiresSerInfoFixup(bool) /* 060000FE */
+    .get instance bool BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_RequiresSerInfoFixup() /* 060000FD */
+    .set instance void BalthasarIL.Serialization.ObjectHolder/*02000013*/::set_RequiresSerInfoFixup(bool) /* 060000FE */
   } // end of property ObjectHolder::RequiresSerInfoFixup
-  .property /*1700005E*/ instance class System.Runtime.Serialization.ValueTypeFixupInfo/*02000024*/
+  .property /*1700005E*/ instance class BalthasarIL.Serialization.ValueTypeFixupInfo/*02000024*/
           ValueFixup()
   {
-    .get instance class System.Runtime.Serialization.ValueTypeFixupInfo/*02000024*/ System.Runtime.Serialization.ObjectHolder/*02000013*/::get_ValueFixup() /* 060000FF */
+    .get instance class BalthasarIL.Serialization.ValueTypeFixupInfo/*02000024*/ BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_ValueFixup() /* 060000FF */
   } // end of property ObjectHolder::ValueFixup
   .property /*1700005F*/ instance bool CompletelyFixed()
   {
-    .get instance bool System.Runtime.Serialization.ObjectHolder/*02000013*/::get_CompletelyFixed() /* 06000100 */
+    .get instance bool BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_CompletelyFixed() /* 06000100 */
   } // end of property ObjectHolder::CompletelyFixed
   .property /*17000060*/ instance int64 ContainerID()
   {
-    .get instance int64 System.Runtime.Serialization.ObjectHolder/*02000013*/::get_ContainerID() /* 06000101 */
+    .get instance int64 BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_ContainerID() /* 06000101 */
   } // end of property ObjectHolder::ContainerID
-} // end of class System.Runtime.Serialization.ObjectHolder
+} // end of class BalthasarIL.Serialization.ObjectHolder
 
-.class /*02000014*/ private auto ansi sealed beforefieldinit System.Runtime.Serialization.FixupHolder
+.class /*02000014*/ private auto ansi sealed beforefieldinit BalthasarIL.Serialization.FixupHolder
        extends [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/
 {
   .field /*04000029*/ assembly int64 _id
@@ -13028,22 +13028,22 @@
     IL_0001:  /* 28   | (0A)000011       */ call       instance void [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/::.ctor() /* 0A000011 */
     IL_0006:  /* 02   |                  */ ldarg.0
     IL_0007:  /* 03   |                  */ ldarg.1
-    IL_0008:  /* 7D   | (04)000029       */ stfld      int64 System.Runtime.Serialization.FixupHolder/*02000014*/::_id /* 04000029 */
+    IL_0008:  /* 7D   | (04)000029       */ stfld      int64 BalthasarIL.Serialization.FixupHolder/*02000014*/::_id /* 04000029 */
     IL_000d:  /* 02   |                  */ ldarg.0
     IL_000e:  /* 04   |                  */ ldarg.2
-    IL_000f:  /* 7D   | (04)00002A       */ stfld      object System.Runtime.Serialization.FixupHolder/*02000014*/::_fixupInfo /* 0400002A */
+    IL_000f:  /* 7D   | (04)00002A       */ stfld      object BalthasarIL.Serialization.FixupHolder/*02000014*/::_fixupInfo /* 0400002A */
     IL_0014:  /* 02   |                  */ ldarg.0
     IL_0015:  /* 05   |                  */ ldarg.3
-    IL_0016:  /* 7D   | (04)00002B       */ stfld      int32 System.Runtime.Serialization.FixupHolder/*02000014*/::_fixupType /* 0400002B */
+    IL_0016:  /* 7D   | (04)00002B       */ stfld      int32 BalthasarIL.Serialization.FixupHolder/*02000014*/::_fixupType /* 0400002B */
     IL_001b:  /* 2A   |                  */ ret
   } // end of method FixupHolder::.ctor
 
-} // end of class System.Runtime.Serialization.FixupHolder
+} // end of class BalthasarIL.Serialization.FixupHolder
 
-.class /*02000015*/ private auto ansi sealed beforefieldinit System.Runtime.Serialization.FixupHolderList
+.class /*02000015*/ private auto ansi sealed beforefieldinit BalthasarIL.Serialization.FixupHolderList
        extends [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/
 {
-  .field /*0400002C*/ assembly class System.Runtime.Serialization.FixupHolder/*02000014*/[] _values
+  .field /*0400002C*/ assembly class BalthasarIL.Serialization.FixupHolder/*02000014*/[] _values
   .field /*0400002D*/ assembly int32 _count
   .method /*06000103*/ assembly hidebysig specialname rtspecialname 
           instance void  .ctor() cil managed
@@ -13054,7 +13054,7 @@
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
     IL_0001:  /* 18   |                  */ ldc.i4.2
-    IL_0002:  /* 28   | (06)000104       */ call       instance void System.Runtime.Serialization.FixupHolderList/*02000015*/::.ctor(int32) /* 06000104 */
+    IL_0002:  /* 28   | (06)000104       */ call       instance void BalthasarIL.Serialization.FixupHolderList/*02000015*/::.ctor(int32) /* 06000104 */
     IL_0007:  /* 2A   |                  */ ret
   } // end of method FixupHolderList::.ctor
 
@@ -13069,16 +13069,16 @@
     IL_0001:  /* 28   | (0A)000011       */ call       instance void [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/::.ctor() /* 0A000011 */
     IL_0006:  /* 02   |                  */ ldarg.0
     IL_0007:  /* 16   |                  */ ldc.i4.0
-    IL_0008:  /* 7D   | (04)00002D       */ stfld      int32 System.Runtime.Serialization.FixupHolderList/*02000015*/::_count /* 0400002D */
+    IL_0008:  /* 7D   | (04)00002D       */ stfld      int32 BalthasarIL.Serialization.FixupHolderList/*02000015*/::_count /* 0400002D */
     IL_000d:  /* 02   |                  */ ldarg.0
     IL_000e:  /* 03   |                  */ ldarg.1
-    IL_000f:  /* 8D   | (02)000014       */ newarr     System.Runtime.Serialization.FixupHolder/*02000014*/
-    IL_0014:  /* 7D   | (04)00002C       */ stfld      class System.Runtime.Serialization.FixupHolder/*02000014*/[] System.Runtime.Serialization.FixupHolderList/*02000015*/::_values /* 0400002C */
+    IL_000f:  /* 8D   | (02)000014       */ newarr     BalthasarIL.Serialization.FixupHolder/*02000014*/
+    IL_0014:  /* 7D   | (04)00002C       */ stfld      class BalthasarIL.Serialization.FixupHolder/*02000014*/[] BalthasarIL.Serialization.FixupHolderList/*02000015*/::_values /* 0400002C */
     IL_0019:  /* 2A   |                  */ ret
   } // end of method FixupHolderList::.ctor
 
   .method /*06000105*/ assembly hidebysig 
-          instance void  Add(class System.Runtime.Serialization.FixupHolder/*02000014*/ fixup) cil managed
+          instance void  Add(class BalthasarIL.Serialization.FixupHolder/*02000014*/ fixup) cil managed
   // SIG: 20 01 01 12 50
   {
     // 方法在 RVA 0x22c68 处开始
@@ -13086,25 +13086,25 @@
     .maxstack  4
     .locals /*11000006*/ (int32 V_0)
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)00002D       */ ldfld      int32 System.Runtime.Serialization.FixupHolderList/*02000015*/::_count /* 0400002D */
+    IL_0001:  /* 7B   | (04)00002D       */ ldfld      int32 BalthasarIL.Serialization.FixupHolderList/*02000015*/::_count /* 0400002D */
     IL_0006:  /* 02   |                  */ ldarg.0
-    IL_0007:  /* 7B   | (04)00002C       */ ldfld      class System.Runtime.Serialization.FixupHolder/*02000014*/[] System.Runtime.Serialization.FixupHolderList/*02000015*/::_values /* 0400002C */
+    IL_0007:  /* 7B   | (04)00002C       */ ldfld      class BalthasarIL.Serialization.FixupHolder/*02000014*/[] BalthasarIL.Serialization.FixupHolderList/*02000015*/::_values /* 0400002C */
     IL_000c:  /* 8E   |                  */ ldlen
     IL_000d:  /* 69   |                  */ conv.i4
     IL_000e:  /* 33   | 06               */ bne.un.s   IL_0016
 
     IL_0010:  /* 02   |                  */ ldarg.0
-    IL_0011:  /* 28   | (06)000106       */ call       instance void System.Runtime.Serialization.FixupHolderList/*02000015*/::EnlargeArray() /* 06000106 */
+    IL_0011:  /* 28   | (06)000106       */ call       instance void BalthasarIL.Serialization.FixupHolderList/*02000015*/::EnlargeArray() /* 06000106 */
     IL_0016:  /* 02   |                  */ ldarg.0
-    IL_0017:  /* 7B   | (04)00002C       */ ldfld      class System.Runtime.Serialization.FixupHolder/*02000014*/[] System.Runtime.Serialization.FixupHolderList/*02000015*/::_values /* 0400002C */
+    IL_0017:  /* 7B   | (04)00002C       */ ldfld      class BalthasarIL.Serialization.FixupHolder/*02000014*/[] BalthasarIL.Serialization.FixupHolderList/*02000015*/::_values /* 0400002C */
     IL_001c:  /* 02   |                  */ ldarg.0
     IL_001d:  /* 02   |                  */ ldarg.0
-    IL_001e:  /* 7B   | (04)00002D       */ ldfld      int32 System.Runtime.Serialization.FixupHolderList/*02000015*/::_count /* 0400002D */
+    IL_001e:  /* 7B   | (04)00002D       */ ldfld      int32 BalthasarIL.Serialization.FixupHolderList/*02000015*/::_count /* 0400002D */
     IL_0023:  /* 0A   |                  */ stloc.0
     IL_0024:  /* 06   |                  */ ldloc.0
     IL_0025:  /* 17   |                  */ ldc.i4.1
     IL_0026:  /* 58   |                  */ add
-    IL_0027:  /* 7D   | (04)00002D       */ stfld      int32 System.Runtime.Serialization.FixupHolderList/*02000015*/::_count /* 0400002D */
+    IL_0027:  /* 7D   | (04)00002D       */ stfld      int32 BalthasarIL.Serialization.FixupHolderList/*02000015*/::_count /* 0400002D */
     IL_002c:  /* 06   |                  */ ldloc.0
     IL_002d:  /* 03   |                  */ ldarg.1
     IL_002e:  /* A2   |                  */ stelem.ref
@@ -13119,9 +13119,9 @@
     // 代码大小       54 (0x36)
     .maxstack  3
     .locals /*1100002B*/ (int32 V_0,
-             class System.Runtime.Serialization.FixupHolder/*02000014*/[] V_1)
+             class BalthasarIL.Serialization.FixupHolder/*02000014*/[] V_1)
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)00002C       */ ldfld      class System.Runtime.Serialization.FixupHolder/*02000014*/[] System.Runtime.Serialization.FixupHolderList/*02000015*/::_values /* 0400002C */
+    IL_0001:  /* 7B   | (04)00002C       */ ldfld      class BalthasarIL.Serialization.FixupHolder/*02000014*/[] BalthasarIL.Serialization.FixupHolderList/*02000015*/::_values /* 0400002C */
     IL_0006:  /* 8E   |                  */ ldlen
     IL_0007:  /* 69   |                  */ conv.i4
     IL_0008:  /* 18   |                  */ ldc.i4.2
@@ -13134,25 +13134,25 @@
     IL_000f:  /* 20   | FFFFFF7F         */ ldc.i4     0x7fffffff
     IL_0014:  /* 0A   |                  */ stloc.0
     IL_0015:  /* 06   |                  */ ldloc.0
-    IL_0016:  /* 8D   | (02)000014       */ newarr     System.Runtime.Serialization.FixupHolder/*02000014*/
+    IL_0016:  /* 8D   | (02)000014       */ newarr     BalthasarIL.Serialization.FixupHolder/*02000014*/
     IL_001b:  /* 0B   |                  */ stloc.1
     IL_001c:  /* 02   |                  */ ldarg.0
-    IL_001d:  /* 7B   | (04)00002C       */ ldfld      class System.Runtime.Serialization.FixupHolder/*02000014*/[] System.Runtime.Serialization.FixupHolderList/*02000015*/::_values /* 0400002C */
+    IL_001d:  /* 7B   | (04)00002C       */ ldfld      class BalthasarIL.Serialization.FixupHolder/*02000014*/[] BalthasarIL.Serialization.FixupHolderList/*02000015*/::_values /* 0400002C */
     IL_0022:  /* 07   |                  */ ldloc.1
     IL_0023:  /* 02   |                  */ ldarg.0
-    IL_0024:  /* 7B   | (04)00002D       */ ldfld      int32 System.Runtime.Serialization.FixupHolderList/*02000015*/::_count /* 0400002D */
+    IL_0024:  /* 7B   | (04)00002D       */ ldfld      int32 BalthasarIL.Serialization.FixupHolderList/*02000015*/::_count /* 0400002D */
     IL_0029:  /* 28   | (0A)000043       */ call       void [System.Private.CoreLib/*23000001*/]System.Array/*01000034*/::Copy(class [System.Private.CoreLib/*23000001*/]System.Array/*01000034*/,
                                                                                                                                class [System.Private.CoreLib/*23000001*/]System.Array/*01000034*/,
                                                                                                                                int32) /* 0A000043 */
     IL_002e:  /* 02   |                  */ ldarg.0
     IL_002f:  /* 07   |                  */ ldloc.1
-    IL_0030:  /* 7D   | (04)00002C       */ stfld      class System.Runtime.Serialization.FixupHolder/*02000014*/[] System.Runtime.Serialization.FixupHolderList/*02000015*/::_values /* 0400002C */
+    IL_0030:  /* 7D   | (04)00002C       */ stfld      class BalthasarIL.Serialization.FixupHolder/*02000014*/[] BalthasarIL.Serialization.FixupHolderList/*02000015*/::_values /* 0400002C */
     IL_0035:  /* 2A   |                  */ ret
   } // end of method FixupHolderList::EnlargeArray
 
-} // end of class System.Runtime.Serialization.FixupHolderList
+} // end of class BalthasarIL.Serialization.FixupHolderList
 
-.class /*02000016*/ private auto ansi sealed beforefieldinit System.Runtime.Serialization.LongList
+.class /*02000016*/ private auto ansi sealed beforefieldinit BalthasarIL.Serialization.LongList
        extends [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/
 {
   .field /*0400002E*/ private int64[] _values
@@ -13168,7 +13168,7 @@
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
     IL_0001:  /* 18   |                  */ ldc.i4.2
-    IL_0002:  /* 28   | (06)000108       */ call       instance void System.Runtime.Serialization.LongList/*02000016*/::.ctor(int32) /* 06000108 */
+    IL_0002:  /* 28   | (06)000108       */ call       instance void BalthasarIL.Serialization.LongList/*02000016*/::.ctor(int32) /* 06000108 */
     IL_0007:  /* 2A   |                  */ ret
   } // end of method LongList::.ctor
 
@@ -13183,14 +13183,14 @@
     IL_0001:  /* 28   | (0A)000011       */ call       instance void [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/::.ctor() /* 0A000011 */
     IL_0006:  /* 02   |                  */ ldarg.0
     IL_0007:  /* 16   |                  */ ldc.i4.0
-    IL_0008:  /* 7D   | (04)00002F       */ stfld      int32 System.Runtime.Serialization.LongList/*02000016*/::_count /* 0400002F */
+    IL_0008:  /* 7D   | (04)00002F       */ stfld      int32 BalthasarIL.Serialization.LongList/*02000016*/::_count /* 0400002F */
     IL_000d:  /* 02   |                  */ ldarg.0
     IL_000e:  /* 16   |                  */ ldc.i4.0
-    IL_000f:  /* 7D   | (04)000030       */ stfld      int32 System.Runtime.Serialization.LongList/*02000016*/::_totalItems /* 04000030 */
+    IL_000f:  /* 7D   | (04)000030       */ stfld      int32 BalthasarIL.Serialization.LongList/*02000016*/::_totalItems /* 04000030 */
     IL_0014:  /* 02   |                  */ ldarg.0
     IL_0015:  /* 03   |                  */ ldarg.1
     IL_0016:  /* 8D   | (01)000024       */ newarr     [System.Private.CoreLib/*23000001*/]System.Int64/*01000024*/
-    IL_001b:  /* 7D   | (04)00002E       */ stfld      int64[] System.Runtime.Serialization.LongList/*02000016*/::_values /* 0400002E */
+    IL_001b:  /* 7D   | (04)00002E       */ stfld      int64[] BalthasarIL.Serialization.LongList/*02000016*/::_values /* 0400002E */
     IL_0020:  /* 2A   |                  */ ret
   } // end of method LongList::.ctor
 
@@ -13203,34 +13203,34 @@
     .maxstack  4
     .locals /*11000006*/ (int32 V_0)
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)000030       */ ldfld      int32 System.Runtime.Serialization.LongList/*02000016*/::_totalItems /* 04000030 */
+    IL_0001:  /* 7B   | (04)000030       */ ldfld      int32 BalthasarIL.Serialization.LongList/*02000016*/::_totalItems /* 04000030 */
     IL_0006:  /* 02   |                  */ ldarg.0
-    IL_0007:  /* 7B   | (04)00002E       */ ldfld      int64[] System.Runtime.Serialization.LongList/*02000016*/::_values /* 0400002E */
+    IL_0007:  /* 7B   | (04)00002E       */ ldfld      int64[] BalthasarIL.Serialization.LongList/*02000016*/::_values /* 0400002E */
     IL_000c:  /* 8E   |                  */ ldlen
     IL_000d:  /* 69   |                  */ conv.i4
     IL_000e:  /* 33   | 06               */ bne.un.s   IL_0016
 
     IL_0010:  /* 02   |                  */ ldarg.0
-    IL_0011:  /* 28   | (06)00010F       */ call       instance void System.Runtime.Serialization.LongList/*02000016*/::EnlargeArray() /* 0600010F */
+    IL_0011:  /* 28   | (06)00010F       */ call       instance void BalthasarIL.Serialization.LongList/*02000016*/::EnlargeArray() /* 0600010F */
     IL_0016:  /* 02   |                  */ ldarg.0
-    IL_0017:  /* 7B   | (04)00002E       */ ldfld      int64[] System.Runtime.Serialization.LongList/*02000016*/::_values /* 0400002E */
+    IL_0017:  /* 7B   | (04)00002E       */ ldfld      int64[] BalthasarIL.Serialization.LongList/*02000016*/::_values /* 0400002E */
     IL_001c:  /* 02   |                  */ ldarg.0
     IL_001d:  /* 02   |                  */ ldarg.0
-    IL_001e:  /* 7B   | (04)000030       */ ldfld      int32 System.Runtime.Serialization.LongList/*02000016*/::_totalItems /* 04000030 */
+    IL_001e:  /* 7B   | (04)000030       */ ldfld      int32 BalthasarIL.Serialization.LongList/*02000016*/::_totalItems /* 04000030 */
     IL_0023:  /* 0A   |                  */ stloc.0
     IL_0024:  /* 06   |                  */ ldloc.0
     IL_0025:  /* 17   |                  */ ldc.i4.1
     IL_0026:  /* 58   |                  */ add
-    IL_0027:  /* 7D   | (04)000030       */ stfld      int32 System.Runtime.Serialization.LongList/*02000016*/::_totalItems /* 04000030 */
+    IL_0027:  /* 7D   | (04)000030       */ stfld      int32 BalthasarIL.Serialization.LongList/*02000016*/::_totalItems /* 04000030 */
     IL_002c:  /* 06   |                  */ ldloc.0
     IL_002d:  /* 03   |                  */ ldarg.1
     IL_002e:  /* 9F   |                  */ stelem.i8
     IL_002f:  /* 02   |                  */ ldarg.0
     IL_0030:  /* 02   |                  */ ldarg.0
-    IL_0031:  /* 7B   | (04)00002F       */ ldfld      int32 System.Runtime.Serialization.LongList/*02000016*/::_count /* 0400002F */
+    IL_0031:  /* 7B   | (04)00002F       */ ldfld      int32 BalthasarIL.Serialization.LongList/*02000016*/::_count /* 0400002F */
     IL_0036:  /* 17   |                  */ ldc.i4.1
     IL_0037:  /* 58   |                  */ add
-    IL_0038:  /* 7D   | (04)00002F       */ stfld      int32 System.Runtime.Serialization.LongList/*02000016*/::_count /* 0400002F */
+    IL_0038:  /* 7D   | (04)00002F       */ stfld      int32 BalthasarIL.Serialization.LongList/*02000016*/::_count /* 0400002F */
     IL_003d:  /* 2A   |                  */ ret
   } // end of method LongList::Add
 
@@ -13242,7 +13242,7 @@
     // 代码大小       7 (0x7)
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)00002F       */ ldfld      int32 System.Runtime.Serialization.LongList/*02000016*/::_count /* 0400002F */
+    IL_0001:  /* 7B   | (04)00002F       */ ldfld      int32 BalthasarIL.Serialization.LongList/*02000016*/::_count /* 0400002F */
     IL_0006:  /* 2A   |                  */ ret
   } // end of method LongList::get_Count
 
@@ -13255,7 +13255,7 @@
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
     IL_0001:  /* 15   |                  */ ldc.i4.m1
-    IL_0002:  /* 7D   | (04)000031       */ stfld      int32 System.Runtime.Serialization.LongList/*02000016*/::_currentItem /* 04000031 */
+    IL_0002:  /* 7D   | (04)000031       */ stfld      int32 BalthasarIL.Serialization.LongList/*02000016*/::_currentItem /* 04000031 */
     IL_0007:  /* 2A   |                  */ ret
   } // end of method LongList::StartEnumeration
 
@@ -13269,30 +13269,30 @@
     .locals /*11000006*/ (int32 V_0)
     IL_0000:  /* 02   |                  */ ldarg.0
     IL_0001:  /* 02   |                  */ ldarg.0
-    IL_0002:  /* 7B   | (04)000031       */ ldfld      int32 System.Runtime.Serialization.LongList/*02000016*/::_currentItem /* 04000031 */
+    IL_0002:  /* 7B   | (04)000031       */ ldfld      int32 BalthasarIL.Serialization.LongList/*02000016*/::_currentItem /* 04000031 */
     IL_0007:  /* 17   |                  */ ldc.i4.1
     IL_0008:  /* 58   |                  */ add
     IL_0009:  /* 0A   |                  */ stloc.0
     IL_000a:  /* 06   |                  */ ldloc.0
-    IL_000b:  /* 7D   | (04)000031       */ stfld      int32 System.Runtime.Serialization.LongList/*02000016*/::_currentItem /* 04000031 */
+    IL_000b:  /* 7D   | (04)000031       */ stfld      int32 BalthasarIL.Serialization.LongList/*02000016*/::_currentItem /* 04000031 */
     IL_0010:  /* 06   |                  */ ldloc.0
     IL_0011:  /* 02   |                  */ ldarg.0
-    IL_0012:  /* 7B   | (04)000030       */ ldfld      int32 System.Runtime.Serialization.LongList/*02000016*/::_totalItems /* 04000030 */
+    IL_0012:  /* 7B   | (04)000030       */ ldfld      int32 BalthasarIL.Serialization.LongList/*02000016*/::_totalItems /* 04000030 */
     IL_0017:  /* 2F   | 11               */ bge.s      IL_002a
 
     IL_0019:  /* 02   |                  */ ldarg.0
-    IL_001a:  /* 7B   | (04)00002E       */ ldfld      int64[] System.Runtime.Serialization.LongList/*02000016*/::_values /* 0400002E */
+    IL_001a:  /* 7B   | (04)00002E       */ ldfld      int64[] BalthasarIL.Serialization.LongList/*02000016*/::_values /* 0400002E */
     IL_001f:  /* 02   |                  */ ldarg.0
-    IL_0020:  /* 7B   | (04)000031       */ ldfld      int32 System.Runtime.Serialization.LongList/*02000016*/::_currentItem /* 04000031 */
+    IL_0020:  /* 7B   | (04)000031       */ ldfld      int32 BalthasarIL.Serialization.LongList/*02000016*/::_currentItem /* 04000031 */
     IL_0025:  /* 96   |                  */ ldelem.i8
     IL_0026:  /* 15   |                  */ ldc.i4.m1
     IL_0027:  /* 6A   |                  */ conv.i8
     IL_0028:  /* 2E   | D6               */ beq.s      IL_0000
 
     IL_002a:  /* 02   |                  */ ldarg.0
-    IL_002b:  /* 7B   | (04)000031       */ ldfld      int32 System.Runtime.Serialization.LongList/*02000016*/::_currentItem /* 04000031 */
+    IL_002b:  /* 7B   | (04)000031       */ ldfld      int32 BalthasarIL.Serialization.LongList/*02000016*/::_currentItem /* 04000031 */
     IL_0030:  /* 02   |                  */ ldarg.0
-    IL_0031:  /* 7B   | (04)000030       */ ldfld      int32 System.Runtime.Serialization.LongList/*02000016*/::_totalItems /* 04000030 */
+    IL_0031:  /* 7B   | (04)000030       */ ldfld      int32 BalthasarIL.Serialization.LongList/*02000016*/::_totalItems /* 04000030 */
     IL_0036:  /* FE01 |                  */ ceq
     IL_0038:  /* 16   |                  */ ldc.i4.0
     IL_0039:  /* FE01 |                  */ ceq
@@ -13307,9 +13307,9 @@
     // 代码大小       14 (0xe)
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)00002E       */ ldfld      int64[] System.Runtime.Serialization.LongList/*02000016*/::_values /* 0400002E */
+    IL_0001:  /* 7B   | (04)00002E       */ ldfld      int64[] BalthasarIL.Serialization.LongList/*02000016*/::_values /* 0400002E */
     IL_0006:  /* 02   |                  */ ldarg.0
-    IL_0007:  /* 7B   | (04)000031       */ ldfld      int32 System.Runtime.Serialization.LongList/*02000016*/::_currentItem /* 04000031 */
+    IL_0007:  /* 7B   | (04)000031       */ ldfld      int32 BalthasarIL.Serialization.LongList/*02000016*/::_currentItem /* 04000031 */
     IL_000c:  /* 96   |                  */ ldelem.i8
     IL_000d:  /* 2A   |                  */ ret
   } // end of method LongList::get_Current
@@ -13327,7 +13327,7 @@
     IL_0002:  /* 2B   | 0F               */ br.s       IL_0013
 
     IL_0004:  /* 02   |                  */ ldarg.0
-    IL_0005:  /* 7B   | (04)00002E       */ ldfld      int64[] System.Runtime.Serialization.LongList/*02000016*/::_values /* 0400002E */
+    IL_0005:  /* 7B   | (04)00002E       */ ldfld      int64[] BalthasarIL.Serialization.LongList/*02000016*/::_values /* 0400002E */
     IL_000a:  /* 06   |                  */ ldloc.0
     IL_000b:  /* 96   |                  */ ldelem.i8
     IL_000c:  /* 03   |                  */ ldarg.1
@@ -13339,19 +13339,19 @@
     IL_0012:  /* 0A   |                  */ stloc.0
     IL_0013:  /* 06   |                  */ ldloc.0
     IL_0014:  /* 02   |                  */ ldarg.0
-    IL_0015:  /* 7B   | (04)000030       */ ldfld      int32 System.Runtime.Serialization.LongList/*02000016*/::_totalItems /* 04000030 */
+    IL_0015:  /* 7B   | (04)000030       */ ldfld      int32 BalthasarIL.Serialization.LongList/*02000016*/::_totalItems /* 04000030 */
     IL_001a:  /* 32   | E8               */ blt.s      IL_0004
 
     IL_001c:  /* 06   |                  */ ldloc.0
     IL_001d:  /* 02   |                  */ ldarg.0
-    IL_001e:  /* 7B   | (04)000030       */ ldfld      int32 System.Runtime.Serialization.LongList/*02000016*/::_totalItems /* 04000030 */
+    IL_001e:  /* 7B   | (04)000030       */ ldfld      int32 BalthasarIL.Serialization.LongList/*02000016*/::_totalItems /* 04000030 */
     IL_0023:  /* 33   | 02               */ bne.un.s   IL_0027
 
     IL_0025:  /* 16   |                  */ ldc.i4.0
     IL_0026:  /* 2A   |                  */ ret
 
     IL_0027:  /* 02   |                  */ ldarg.0
-    IL_0028:  /* 7B   | (04)00002E       */ ldfld      int64[] System.Runtime.Serialization.LongList/*02000016*/::_values /* 0400002E */
+    IL_0028:  /* 7B   | (04)00002E       */ ldfld      int64[] BalthasarIL.Serialization.LongList/*02000016*/::_values /* 0400002E */
     IL_002d:  /* 06   |                  */ ldloc.0
     IL_002e:  /* 15   |                  */ ldc.i4.m1
     IL_002f:  /* 6A   |                  */ conv.i8
@@ -13370,7 +13370,7 @@
     .locals /*1100002C*/ (int32 V_0,
              int64[] V_1)
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)00002E       */ ldfld      int64[] System.Runtime.Serialization.LongList/*02000016*/::_values /* 0400002E */
+    IL_0001:  /* 7B   | (04)00002E       */ ldfld      int64[] BalthasarIL.Serialization.LongList/*02000016*/::_values /* 0400002E */
     IL_0006:  /* 8E   |                  */ ldlen
     IL_0007:  /* 69   |                  */ conv.i4
     IL_0008:  /* 18   |                  */ ldc.i4.2
@@ -13386,33 +13386,33 @@
     IL_0016:  /* 8D   | (01)000024       */ newarr     [System.Private.CoreLib/*23000001*/]System.Int64/*01000024*/
     IL_001b:  /* 0B   |                  */ stloc.1
     IL_001c:  /* 02   |                  */ ldarg.0
-    IL_001d:  /* 7B   | (04)00002E       */ ldfld      int64[] System.Runtime.Serialization.LongList/*02000016*/::_values /* 0400002E */
+    IL_001d:  /* 7B   | (04)00002E       */ ldfld      int64[] BalthasarIL.Serialization.LongList/*02000016*/::_values /* 0400002E */
     IL_0022:  /* 07   |                  */ ldloc.1
     IL_0023:  /* 02   |                  */ ldarg.0
-    IL_0024:  /* 7B   | (04)00002F       */ ldfld      int32 System.Runtime.Serialization.LongList/*02000016*/::_count /* 0400002F */
+    IL_0024:  /* 7B   | (04)00002F       */ ldfld      int32 BalthasarIL.Serialization.LongList/*02000016*/::_count /* 0400002F */
     IL_0029:  /* 28   | (0A)000043       */ call       void [System.Private.CoreLib/*23000001*/]System.Array/*01000034*/::Copy(class [System.Private.CoreLib/*23000001*/]System.Array/*01000034*/,
                                                                                                                                class [System.Private.CoreLib/*23000001*/]System.Array/*01000034*/,
                                                                                                                                int32) /* 0A000043 */
     IL_002e:  /* 02   |                  */ ldarg.0
     IL_002f:  /* 07   |                  */ ldloc.1
-    IL_0030:  /* 7D   | (04)00002E       */ stfld      int64[] System.Runtime.Serialization.LongList/*02000016*/::_values /* 0400002E */
+    IL_0030:  /* 7D   | (04)00002E       */ stfld      int64[] BalthasarIL.Serialization.LongList/*02000016*/::_values /* 0400002E */
     IL_0035:  /* 2A   |                  */ ret
   } // end of method LongList::EnlargeArray
 
   .property /*17000061*/ instance int32 Count()
   {
-    .get instance int32 System.Runtime.Serialization.LongList/*02000016*/::get_Count() /* 0600010A */
+    .get instance int32 BalthasarIL.Serialization.LongList/*02000016*/::get_Count() /* 0600010A */
   } // end of property LongList::Count
   .property /*17000062*/ instance int64 Current()
   {
-    .get instance int64 System.Runtime.Serialization.LongList/*02000016*/::get_Current() /* 0600010D */
+    .get instance int64 BalthasarIL.Serialization.LongList/*02000016*/::get_Current() /* 0600010D */
   } // end of property LongList::Current
-} // end of class System.Runtime.Serialization.LongList
+} // end of class BalthasarIL.Serialization.LongList
 
-.class /*02000017*/ private auto ansi sealed beforefieldinit System.Runtime.Serialization.ObjectHolderList
+.class /*02000017*/ private auto ansi sealed beforefieldinit BalthasarIL.Serialization.ObjectHolderList
        extends [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/
 {
-  .field /*04000032*/ assembly class System.Runtime.Serialization.ObjectHolder/*02000013*/[] _values
+  .field /*04000032*/ assembly class BalthasarIL.Serialization.ObjectHolder/*02000013*/[] _values
   .field /*04000033*/ assembly int32 _count
   .method /*06000110*/ assembly hidebysig specialname rtspecialname 
           instance void  .ctor() cil managed
@@ -13423,7 +13423,7 @@
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
     IL_0001:  /* 1E   |                  */ ldc.i4.8
-    IL_0002:  /* 28   | (06)000111       */ call       instance void System.Runtime.Serialization.ObjectHolderList/*02000017*/::.ctor(int32) /* 06000111 */
+    IL_0002:  /* 28   | (06)000111       */ call       instance void BalthasarIL.Serialization.ObjectHolderList/*02000017*/::.ctor(int32) /* 06000111 */
     IL_0007:  /* 2A   |                  */ ret
   } // end of method ObjectHolderList::.ctor
 
@@ -13438,16 +13438,16 @@
     IL_0001:  /* 28   | (0A)000011       */ call       instance void [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/::.ctor() /* 0A000011 */
     IL_0006:  /* 02   |                  */ ldarg.0
     IL_0007:  /* 16   |                  */ ldc.i4.0
-    IL_0008:  /* 7D   | (04)000033       */ stfld      int32 System.Runtime.Serialization.ObjectHolderList/*02000017*/::_count /* 04000033 */
+    IL_0008:  /* 7D   | (04)000033       */ stfld      int32 BalthasarIL.Serialization.ObjectHolderList/*02000017*/::_count /* 04000033 */
     IL_000d:  /* 02   |                  */ ldarg.0
     IL_000e:  /* 03   |                  */ ldarg.1
-    IL_000f:  /* 8D   | (02)000013       */ newarr     System.Runtime.Serialization.ObjectHolder/*02000013*/
-    IL_0014:  /* 7D   | (04)000032       */ stfld      class System.Runtime.Serialization.ObjectHolder/*02000013*/[] System.Runtime.Serialization.ObjectHolderList/*02000017*/::_values /* 04000032 */
+    IL_000f:  /* 8D   | (02)000013       */ newarr     BalthasarIL.Serialization.ObjectHolder/*02000013*/
+    IL_0014:  /* 7D   | (04)000032       */ stfld      class BalthasarIL.Serialization.ObjectHolder/*02000013*/[] BalthasarIL.Serialization.ObjectHolderList/*02000017*/::_values /* 04000032 */
     IL_0019:  /* 2A   |                  */ ret
   } // end of method ObjectHolderList::.ctor
 
   .method /*06000112*/ assembly hidebysig 
-          instance void  Add(class System.Runtime.Serialization.ObjectHolder/*02000013*/ 'value') cil managed
+          instance void  Add(class BalthasarIL.Serialization.ObjectHolder/*02000013*/ 'value') cil managed
   // SIG: 20 01 01 12 4C
   {
     // 方法在 RVA 0x22e7c 处开始
@@ -13455,25 +13455,25 @@
     .maxstack  4
     .locals /*11000006*/ (int32 V_0)
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)000033       */ ldfld      int32 System.Runtime.Serialization.ObjectHolderList/*02000017*/::_count /* 04000033 */
+    IL_0001:  /* 7B   | (04)000033       */ ldfld      int32 BalthasarIL.Serialization.ObjectHolderList/*02000017*/::_count /* 04000033 */
     IL_0006:  /* 02   |                  */ ldarg.0
-    IL_0007:  /* 7B   | (04)000032       */ ldfld      class System.Runtime.Serialization.ObjectHolder/*02000013*/[] System.Runtime.Serialization.ObjectHolderList/*02000017*/::_values /* 04000032 */
+    IL_0007:  /* 7B   | (04)000032       */ ldfld      class BalthasarIL.Serialization.ObjectHolder/*02000013*/[] BalthasarIL.Serialization.ObjectHolderList/*02000017*/::_values /* 04000032 */
     IL_000c:  /* 8E   |                  */ ldlen
     IL_000d:  /* 69   |                  */ conv.i4
     IL_000e:  /* 33   | 06               */ bne.un.s   IL_0016
 
     IL_0010:  /* 02   |                  */ ldarg.0
-    IL_0011:  /* 28   | (06)000114       */ call       instance void System.Runtime.Serialization.ObjectHolderList/*02000017*/::EnlargeArray() /* 06000114 */
+    IL_0011:  /* 28   | (06)000114       */ call       instance void BalthasarIL.Serialization.ObjectHolderList/*02000017*/::EnlargeArray() /* 06000114 */
     IL_0016:  /* 02   |                  */ ldarg.0
-    IL_0017:  /* 7B   | (04)000032       */ ldfld      class System.Runtime.Serialization.ObjectHolder/*02000013*/[] System.Runtime.Serialization.ObjectHolderList/*02000017*/::_values /* 04000032 */
+    IL_0017:  /* 7B   | (04)000032       */ ldfld      class BalthasarIL.Serialization.ObjectHolder/*02000013*/[] BalthasarIL.Serialization.ObjectHolderList/*02000017*/::_values /* 04000032 */
     IL_001c:  /* 02   |                  */ ldarg.0
     IL_001d:  /* 02   |                  */ ldarg.0
-    IL_001e:  /* 7B   | (04)000033       */ ldfld      int32 System.Runtime.Serialization.ObjectHolderList/*02000017*/::_count /* 04000033 */
+    IL_001e:  /* 7B   | (04)000033       */ ldfld      int32 BalthasarIL.Serialization.ObjectHolderList/*02000017*/::_count /* 04000033 */
     IL_0023:  /* 0A   |                  */ stloc.0
     IL_0024:  /* 06   |                  */ ldloc.0
     IL_0025:  /* 17   |                  */ ldc.i4.1
     IL_0026:  /* 58   |                  */ add
-    IL_0027:  /* 7D   | (04)000033       */ stfld      int32 System.Runtime.Serialization.ObjectHolderList/*02000017*/::_count /* 04000033 */
+    IL_0027:  /* 7D   | (04)000033       */ stfld      int32 BalthasarIL.Serialization.ObjectHolderList/*02000017*/::_count /* 04000033 */
     IL_002c:  /* 06   |                  */ ldloc.0
     IL_002d:  /* 03   |                  */ ldarg.1
     IL_002e:  /* A2   |                  */ stelem.ref
@@ -13481,7 +13481,7 @@
   } // end of method ObjectHolderList::Add
 
   .method /*06000113*/ assembly hidebysig 
-          instance class System.Runtime.Serialization.ObjectHolderListEnumerator/*02000018*/ 
+          instance class BalthasarIL.Serialization.ObjectHolderListEnumerator/*02000018*/ 
           GetFixupEnumerator() cil managed
   // SIG: 20 00 12 60
   {
@@ -13490,7 +13490,7 @@
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
     IL_0001:  /* 17   |                  */ ldc.i4.1
-    IL_0002:  /* 73   | (06)000117       */ newobj     instance void System.Runtime.Serialization.ObjectHolderListEnumerator/*02000018*/::.ctor(class System.Runtime.Serialization.ObjectHolderList/*02000017*/,
+    IL_0002:  /* 73   | (06)000117       */ newobj     instance void BalthasarIL.Serialization.ObjectHolderListEnumerator/*02000018*/::.ctor(class BalthasarIL.Serialization.ObjectHolderList/*02000017*/,
                                                                                                                                                 bool) /* 06000117 */
     IL_0007:  /* 2A   |                  */ ret
   } // end of method ObjectHolderList::GetFixupEnumerator
@@ -13503,9 +13503,9 @@
     // 代码大小       54 (0x36)
     .maxstack  3
     .locals /*1100002D*/ (int32 V_0,
-             class System.Runtime.Serialization.ObjectHolder/*02000013*/[] V_1)
+             class BalthasarIL.Serialization.ObjectHolder/*02000013*/[] V_1)
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)000032       */ ldfld      class System.Runtime.Serialization.ObjectHolder/*02000013*/[] System.Runtime.Serialization.ObjectHolderList/*02000017*/::_values /* 04000032 */
+    IL_0001:  /* 7B   | (04)000032       */ ldfld      class BalthasarIL.Serialization.ObjectHolder/*02000013*/[] BalthasarIL.Serialization.ObjectHolderList/*02000017*/::_values /* 04000032 */
     IL_0006:  /* 8E   |                  */ ldlen
     IL_0007:  /* 69   |                  */ conv.i4
     IL_0008:  /* 18   |                  */ ldc.i4.2
@@ -13518,19 +13518,19 @@
     IL_000f:  /* 20   | FFFFFF7F         */ ldc.i4     0x7fffffff
     IL_0014:  /* 0A   |                  */ stloc.0
     IL_0015:  /* 06   |                  */ ldloc.0
-    IL_0016:  /* 8D   | (02)000013       */ newarr     System.Runtime.Serialization.ObjectHolder/*02000013*/
+    IL_0016:  /* 8D   | (02)000013       */ newarr     BalthasarIL.Serialization.ObjectHolder/*02000013*/
     IL_001b:  /* 0B   |                  */ stloc.1
     IL_001c:  /* 02   |                  */ ldarg.0
-    IL_001d:  /* 7B   | (04)000032       */ ldfld      class System.Runtime.Serialization.ObjectHolder/*02000013*/[] System.Runtime.Serialization.ObjectHolderList/*02000017*/::_values /* 04000032 */
+    IL_001d:  /* 7B   | (04)000032       */ ldfld      class BalthasarIL.Serialization.ObjectHolder/*02000013*/[] BalthasarIL.Serialization.ObjectHolderList/*02000017*/::_values /* 04000032 */
     IL_0022:  /* 07   |                  */ ldloc.1
     IL_0023:  /* 02   |                  */ ldarg.0
-    IL_0024:  /* 7B   | (04)000033       */ ldfld      int32 System.Runtime.Serialization.ObjectHolderList/*02000017*/::_count /* 04000033 */
+    IL_0024:  /* 7B   | (04)000033       */ ldfld      int32 BalthasarIL.Serialization.ObjectHolderList/*02000017*/::_count /* 04000033 */
     IL_0029:  /* 28   | (0A)000043       */ call       void [System.Private.CoreLib/*23000001*/]System.Array/*01000034*/::Copy(class [System.Private.CoreLib/*23000001*/]System.Array/*01000034*/,
                                                                                                                                class [System.Private.CoreLib/*23000001*/]System.Array/*01000034*/,
                                                                                                                                int32) /* 0A000043 */
     IL_002e:  /* 02   |                  */ ldarg.0
     IL_002f:  /* 07   |                  */ ldloc.1
-    IL_0030:  /* 7D   | (04)000032       */ stfld      class System.Runtime.Serialization.ObjectHolder/*02000013*/[] System.Runtime.Serialization.ObjectHolderList/*02000017*/::_values /* 04000032 */
+    IL_0030:  /* 7D   | (04)000032       */ stfld      class BalthasarIL.Serialization.ObjectHolder/*02000013*/[] BalthasarIL.Serialization.ObjectHolderList/*02000017*/::_values /* 04000032 */
     IL_0035:  /* 2A   |                  */ ret
   } // end of method ObjectHolderList::EnlargeArray
 
@@ -13542,7 +13542,7 @@
     // 代码大小       7 (0x7)
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)000033       */ ldfld      int32 System.Runtime.Serialization.ObjectHolderList/*02000017*/::_count /* 04000033 */
+    IL_0001:  /* 7B   | (04)000033       */ ldfld      int32 BalthasarIL.Serialization.ObjectHolderList/*02000017*/::_count /* 04000033 */
     IL_0006:  /* 2A   |                  */ ret
   } // end of method ObjectHolderList::get_Version
 
@@ -13554,29 +13554,29 @@
     // 代码大小       7 (0x7)
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)000033       */ ldfld      int32 System.Runtime.Serialization.ObjectHolderList/*02000017*/::_count /* 04000033 */
+    IL_0001:  /* 7B   | (04)000033       */ ldfld      int32 BalthasarIL.Serialization.ObjectHolderList/*02000017*/::_count /* 04000033 */
     IL_0006:  /* 2A   |                  */ ret
   } // end of method ObjectHolderList::get_Count
 
   .property /*17000063*/ instance int32 Version()
   {
-    .get instance int32 System.Runtime.Serialization.ObjectHolderList/*02000017*/::get_Version() /* 06000115 */
+    .get instance int32 BalthasarIL.Serialization.ObjectHolderList/*02000017*/::get_Version() /* 06000115 */
   } // end of property ObjectHolderList::Version
   .property /*17000064*/ instance int32 Count()
   {
-    .get instance int32 System.Runtime.Serialization.ObjectHolderList/*02000017*/::get_Count() /* 06000116 */
+    .get instance int32 BalthasarIL.Serialization.ObjectHolderList/*02000017*/::get_Count() /* 06000116 */
   } // end of property ObjectHolderList::Count
-} // end of class System.Runtime.Serialization.ObjectHolderList
+} // end of class BalthasarIL.Serialization.ObjectHolderList
 
-.class /*02000018*/ private auto ansi sealed beforefieldinit System.Runtime.Serialization.ObjectHolderListEnumerator
+.class /*02000018*/ private auto ansi sealed beforefieldinit BalthasarIL.Serialization.ObjectHolderListEnumerator
        extends [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/
 {
   .field /*04000034*/ private initonly bool _isFixupEnumerator
-  .field /*04000035*/ private initonly class System.Runtime.Serialization.ObjectHolderList/*02000017*/ _list
+  .field /*04000035*/ private initonly class BalthasarIL.Serialization.ObjectHolderList/*02000017*/ _list
   .field /*04000036*/ private initonly int32 _startingVersion
   .field /*04000037*/ private int32 _currPos
   .method /*06000117*/ assembly hidebysig specialname rtspecialname 
-          instance void  .ctor(class System.Runtime.Serialization.ObjectHolderList/*02000017*/ list,
+          instance void  .ctor(class BalthasarIL.Serialization.ObjectHolderList/*02000017*/ list,
                                bool isFixupEnumerator) cil managed
   // SIG: 20 02 01 12 5C 02
   {
@@ -13587,18 +13587,18 @@
     IL_0001:  /* 28   | (0A)000011       */ call       instance void [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/::.ctor() /* 0A000011 */
     IL_0006:  /* 02   |                  */ ldarg.0
     IL_0007:  /* 03   |                  */ ldarg.1
-    IL_0008:  /* 7D   | (04)000035       */ stfld      class System.Runtime.Serialization.ObjectHolderList/*02000017*/ System.Runtime.Serialization.ObjectHolderListEnumerator/*02000018*/::_list /* 04000035 */
+    IL_0008:  /* 7D   | (04)000035       */ stfld      class BalthasarIL.Serialization.ObjectHolderList/*02000017*/ BalthasarIL.Serialization.ObjectHolderListEnumerator/*02000018*/::_list /* 04000035 */
     IL_000d:  /* 02   |                  */ ldarg.0
     IL_000e:  /* 02   |                  */ ldarg.0
-    IL_000f:  /* 7B   | (04)000035       */ ldfld      class System.Runtime.Serialization.ObjectHolderList/*02000017*/ System.Runtime.Serialization.ObjectHolderListEnumerator/*02000018*/::_list /* 04000035 */
-    IL_0014:  /* 6F   | (06)000115       */ callvirt   instance int32 System.Runtime.Serialization.ObjectHolderList/*02000017*/::get_Version() /* 06000115 */
-    IL_0019:  /* 7D   | (04)000036       */ stfld      int32 System.Runtime.Serialization.ObjectHolderListEnumerator/*02000018*/::_startingVersion /* 04000036 */
+    IL_000f:  /* 7B   | (04)000035       */ ldfld      class BalthasarIL.Serialization.ObjectHolderList/*02000017*/ BalthasarIL.Serialization.ObjectHolderListEnumerator/*02000018*/::_list /* 04000035 */
+    IL_0014:  /* 6F   | (06)000115       */ callvirt   instance int32 BalthasarIL.Serialization.ObjectHolderList/*02000017*/::get_Version() /* 06000115 */
+    IL_0019:  /* 7D   | (04)000036       */ stfld      int32 BalthasarIL.Serialization.ObjectHolderListEnumerator/*02000018*/::_startingVersion /* 04000036 */
     IL_001e:  /* 02   |                  */ ldarg.0
     IL_001f:  /* 15   |                  */ ldc.i4.m1
-    IL_0020:  /* 7D   | (04)000037       */ stfld      int32 System.Runtime.Serialization.ObjectHolderListEnumerator/*02000018*/::_currPos /* 04000037 */
+    IL_0020:  /* 7D   | (04)000037       */ stfld      int32 BalthasarIL.Serialization.ObjectHolderListEnumerator/*02000018*/::_currPos /* 04000037 */
     IL_0025:  /* 02   |                  */ ldarg.0
     IL_0026:  /* 04   |                  */ ldarg.2
-    IL_0027:  /* 7D   | (04)000034       */ stfld      bool System.Runtime.Serialization.ObjectHolderListEnumerator/*02000018*/::_isFixupEnumerator /* 04000034 */
+    IL_0027:  /* 7D   | (04)000034       */ stfld      bool BalthasarIL.Serialization.ObjectHolderListEnumerator/*02000018*/::_isFixupEnumerator /* 04000034 */
     IL_002c:  /* 2A   |                  */ ret
   } // end of method ObjectHolderListEnumerator::.ctor
 
@@ -13611,37 +13611,37 @@
     .maxstack  3
     .locals /*11000006*/ (int32 V_0)
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)000034       */ ldfld      bool System.Runtime.Serialization.ObjectHolderListEnumerator/*02000018*/::_isFixupEnumerator /* 04000034 */
+    IL_0001:  /* 7B   | (04)000034       */ ldfld      bool BalthasarIL.Serialization.ObjectHolderListEnumerator/*02000018*/::_isFixupEnumerator /* 04000034 */
     IL_0006:  /* 2C   | 4E               */ brfalse.s  IL_0056
 
     IL_0008:  /* 02   |                  */ ldarg.0
     IL_0009:  /* 02   |                  */ ldarg.0
-    IL_000a:  /* 7B   | (04)000037       */ ldfld      int32 System.Runtime.Serialization.ObjectHolderListEnumerator/*02000018*/::_currPos /* 04000037 */
+    IL_000a:  /* 7B   | (04)000037       */ ldfld      int32 BalthasarIL.Serialization.ObjectHolderListEnumerator/*02000018*/::_currPos /* 04000037 */
     IL_000f:  /* 17   |                  */ ldc.i4.1
     IL_0010:  /* 58   |                  */ add
     IL_0011:  /* 0A   |                  */ stloc.0
     IL_0012:  /* 06   |                  */ ldloc.0
-    IL_0013:  /* 7D   | (04)000037       */ stfld      int32 System.Runtime.Serialization.ObjectHolderListEnumerator/*02000018*/::_currPos /* 04000037 */
+    IL_0013:  /* 7D   | (04)000037       */ stfld      int32 BalthasarIL.Serialization.ObjectHolderListEnumerator/*02000018*/::_currPos /* 04000037 */
     IL_0018:  /* 06   |                  */ ldloc.0
     IL_0019:  /* 02   |                  */ ldarg.0
-    IL_001a:  /* 7B   | (04)000035       */ ldfld      class System.Runtime.Serialization.ObjectHolderList/*02000017*/ System.Runtime.Serialization.ObjectHolderListEnumerator/*02000018*/::_list /* 04000035 */
-    IL_001f:  /* 6F   | (06)000116       */ callvirt   instance int32 System.Runtime.Serialization.ObjectHolderList/*02000017*/::get_Count() /* 06000116 */
+    IL_001a:  /* 7B   | (04)000035       */ ldfld      class BalthasarIL.Serialization.ObjectHolderList/*02000017*/ BalthasarIL.Serialization.ObjectHolderListEnumerator/*02000018*/::_list /* 04000035 */
+    IL_001f:  /* 6F   | (06)000116       */ callvirt   instance int32 BalthasarIL.Serialization.ObjectHolderList/*02000017*/::get_Count() /* 06000116 */
     IL_0024:  /* 2F   | 19               */ bge.s      IL_003f
 
     IL_0026:  /* 02   |                  */ ldarg.0
-    IL_0027:  /* 7B   | (04)000035       */ ldfld      class System.Runtime.Serialization.ObjectHolderList/*02000017*/ System.Runtime.Serialization.ObjectHolderListEnumerator/*02000018*/::_list /* 04000035 */
-    IL_002c:  /* 7B   | (04)000032       */ ldfld      class System.Runtime.Serialization.ObjectHolder/*02000013*/[] System.Runtime.Serialization.ObjectHolderList/*02000017*/::_values /* 04000032 */
+    IL_0027:  /* 7B   | (04)000035       */ ldfld      class BalthasarIL.Serialization.ObjectHolderList/*02000017*/ BalthasarIL.Serialization.ObjectHolderListEnumerator/*02000018*/::_list /* 04000035 */
+    IL_002c:  /* 7B   | (04)000032       */ ldfld      class BalthasarIL.Serialization.ObjectHolder/*02000013*/[] BalthasarIL.Serialization.ObjectHolderList/*02000017*/::_values /* 04000032 */
     IL_0031:  /* 02   |                  */ ldarg.0
-    IL_0032:  /* 7B   | (04)000037       */ ldfld      int32 System.Runtime.Serialization.ObjectHolderListEnumerator/*02000018*/::_currPos /* 04000037 */
+    IL_0032:  /* 7B   | (04)000037       */ ldfld      int32 BalthasarIL.Serialization.ObjectHolderListEnumerator/*02000018*/::_currPos /* 04000037 */
     IL_0037:  /* 9A   |                  */ ldelem.ref
-    IL_0038:  /* 6F   | (06)000100       */ callvirt   instance bool System.Runtime.Serialization.ObjectHolder/*02000013*/::get_CompletelyFixed() /* 06000100 */
+    IL_0038:  /* 6F   | (06)000100       */ callvirt   instance bool BalthasarIL.Serialization.ObjectHolder/*02000013*/::get_CompletelyFixed() /* 06000100 */
     IL_003d:  /* 2D   | C9               */ brtrue.s   IL_0008
 
     IL_003f:  /* 02   |                  */ ldarg.0
-    IL_0040:  /* 7B   | (04)000037       */ ldfld      int32 System.Runtime.Serialization.ObjectHolderListEnumerator/*02000018*/::_currPos /* 04000037 */
+    IL_0040:  /* 7B   | (04)000037       */ ldfld      int32 BalthasarIL.Serialization.ObjectHolderListEnumerator/*02000018*/::_currPos /* 04000037 */
     IL_0045:  /* 02   |                  */ ldarg.0
-    IL_0046:  /* 7B   | (04)000035       */ ldfld      class System.Runtime.Serialization.ObjectHolderList/*02000017*/ System.Runtime.Serialization.ObjectHolderListEnumerator/*02000018*/::_list /* 04000035 */
-    IL_004b:  /* 6F   | (06)000116       */ callvirt   instance int32 System.Runtime.Serialization.ObjectHolderList/*02000017*/::get_Count() /* 06000116 */
+    IL_0046:  /* 7B   | (04)000035       */ ldfld      class BalthasarIL.Serialization.ObjectHolderList/*02000017*/ BalthasarIL.Serialization.ObjectHolderListEnumerator/*02000018*/::_list /* 04000035 */
+    IL_004b:  /* 6F   | (06)000116       */ callvirt   instance int32 BalthasarIL.Serialization.ObjectHolderList/*02000017*/::get_Count() /* 06000116 */
     IL_0050:  /* FE01 |                  */ ceq
     IL_0052:  /* 16   |                  */ ldc.i4.0
     IL_0053:  /* FE01 |                  */ ceq
@@ -13649,15 +13649,15 @@
 
     IL_0056:  /* 02   |                  */ ldarg.0
     IL_0057:  /* 02   |                  */ ldarg.0
-    IL_0058:  /* 7B   | (04)000037       */ ldfld      int32 System.Runtime.Serialization.ObjectHolderListEnumerator/*02000018*/::_currPos /* 04000037 */
+    IL_0058:  /* 7B   | (04)000037       */ ldfld      int32 BalthasarIL.Serialization.ObjectHolderListEnumerator/*02000018*/::_currPos /* 04000037 */
     IL_005d:  /* 17   |                  */ ldc.i4.1
     IL_005e:  /* 58   |                  */ add
-    IL_005f:  /* 7D   | (04)000037       */ stfld      int32 System.Runtime.Serialization.ObjectHolderListEnumerator/*02000018*/::_currPos /* 04000037 */
+    IL_005f:  /* 7D   | (04)000037       */ stfld      int32 BalthasarIL.Serialization.ObjectHolderListEnumerator/*02000018*/::_currPos /* 04000037 */
     IL_0064:  /* 02   |                  */ ldarg.0
-    IL_0065:  /* 7B   | (04)000037       */ ldfld      int32 System.Runtime.Serialization.ObjectHolderListEnumerator/*02000018*/::_currPos /* 04000037 */
+    IL_0065:  /* 7B   | (04)000037       */ ldfld      int32 BalthasarIL.Serialization.ObjectHolderListEnumerator/*02000018*/::_currPos /* 04000037 */
     IL_006a:  /* 02   |                  */ ldarg.0
-    IL_006b:  /* 7B   | (04)000035       */ ldfld      class System.Runtime.Serialization.ObjectHolderList/*02000017*/ System.Runtime.Serialization.ObjectHolderListEnumerator/*02000018*/::_list /* 04000035 */
-    IL_0070:  /* 6F   | (06)000116       */ callvirt   instance int32 System.Runtime.Serialization.ObjectHolderList/*02000017*/::get_Count() /* 06000116 */
+    IL_006b:  /* 7B   | (04)000035       */ ldfld      class BalthasarIL.Serialization.ObjectHolderList/*02000017*/ BalthasarIL.Serialization.ObjectHolderListEnumerator/*02000018*/::_list /* 04000035 */
+    IL_0070:  /* 6F   | (06)000116       */ callvirt   instance int32 BalthasarIL.Serialization.ObjectHolderList/*02000017*/::get_Count() /* 06000116 */
     IL_0075:  /* FE01 |                  */ ceq
     IL_0077:  /* 16   |                  */ ldc.i4.0
     IL_0078:  /* FE01 |                  */ ceq
@@ -13665,7 +13665,7 @@
   } // end of method ObjectHolderListEnumerator::MoveNext
 
   .method /*06000119*/ assembly hidebysig specialname 
-          instance class System.Runtime.Serialization.ObjectHolder/*02000013*/ 
+          instance class BalthasarIL.Serialization.ObjectHolder/*02000013*/ 
           get_Current() cil managed
   // SIG: 20 00 12 4C
   {
@@ -13673,22 +13673,22 @@
     // 代码大小       19 (0x13)
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)000035       */ ldfld      class System.Runtime.Serialization.ObjectHolderList/*02000017*/ System.Runtime.Serialization.ObjectHolderListEnumerator/*02000018*/::_list /* 04000035 */
-    IL_0006:  /* 7B   | (04)000032       */ ldfld      class System.Runtime.Serialization.ObjectHolder/*02000013*/[] System.Runtime.Serialization.ObjectHolderList/*02000017*/::_values /* 04000032 */
+    IL_0001:  /* 7B   | (04)000035       */ ldfld      class BalthasarIL.Serialization.ObjectHolderList/*02000017*/ BalthasarIL.Serialization.ObjectHolderListEnumerator/*02000018*/::_list /* 04000035 */
+    IL_0006:  /* 7B   | (04)000032       */ ldfld      class BalthasarIL.Serialization.ObjectHolder/*02000013*/[] BalthasarIL.Serialization.ObjectHolderList/*02000017*/::_values /* 04000032 */
     IL_000b:  /* 02   |                  */ ldarg.0
-    IL_000c:  /* 7B   | (04)000037       */ ldfld      int32 System.Runtime.Serialization.ObjectHolderListEnumerator/*02000018*/::_currPos /* 04000037 */
+    IL_000c:  /* 7B   | (04)000037       */ ldfld      int32 BalthasarIL.Serialization.ObjectHolderListEnumerator/*02000018*/::_currPos /* 04000037 */
     IL_0011:  /* 9A   |                  */ ldelem.ref
     IL_0012:  /* 2A   |                  */ ret
   } // end of method ObjectHolderListEnumerator::get_Current
 
-  .property /*17000065*/ instance class System.Runtime.Serialization.ObjectHolder/*02000013*/
+  .property /*17000065*/ instance class BalthasarIL.Serialization.ObjectHolder/*02000013*/
           Current()
   {
-    .get instance class System.Runtime.Serialization.ObjectHolder/*02000013*/ System.Runtime.Serialization.ObjectHolderListEnumerator/*02000018*/::get_Current() /* 06000119 */
+    .get instance class BalthasarIL.Serialization.ObjectHolder/*02000013*/ BalthasarIL.Serialization.ObjectHolderListEnumerator/*02000018*/::get_Current() /* 06000119 */
   } // end of property ObjectHolderListEnumerator::Current
-} // end of class System.Runtime.Serialization.ObjectHolderListEnumerator
+} // end of class BalthasarIL.Serialization.ObjectHolderListEnumerator
 
-.class /*02000019*/ public auto ansi sealed beforefieldinit System.Runtime.Serialization.TypeLoadExceptionHolder
+.class /*02000019*/ public auto ansi sealed beforefieldinit BalthasarIL.Serialization.TypeLoadExceptionHolder
        extends [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/
 {
   .field /*04000038*/ private initonly string '<TypeName>k__BackingField'
@@ -13704,7 +13704,7 @@
     IL_0001:  /* 28   | (0A)000011       */ call       instance void [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/::.ctor() /* 0A000011 */
     IL_0006:  /* 02   |                  */ ldarg.0
     IL_0007:  /* 03   |                  */ ldarg.1
-    IL_0008:  /* 7D   | (04)000038       */ stfld      string System.Runtime.Serialization.TypeLoadExceptionHolder/*02000019*/::'<TypeName>k__BackingField' /* 04000038 */
+    IL_0008:  /* 7D   | (04)000038       */ stfld      string BalthasarIL.Serialization.TypeLoadExceptionHolder/*02000019*/::'<TypeName>k__BackingField' /* 04000038 */
     IL_000d:  /* 2A   |                  */ ret
   } // end of method TypeLoadExceptionHolder::.ctor
 
@@ -13717,16 +13717,16 @@
     // 代码大小       7 (0x7)
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)000038       */ ldfld      string System.Runtime.Serialization.TypeLoadExceptionHolder/*02000019*/::'<TypeName>k__BackingField' /* 04000038 */
+    IL_0001:  /* 7B   | (04)000038       */ ldfld      string BalthasarIL.Serialization.TypeLoadExceptionHolder/*02000019*/::'<TypeName>k__BackingField' /* 04000038 */
     IL_0006:  /* 2A   |                  */ ret
   } // end of method TypeLoadExceptionHolder::get_TypeName
 
   .property /*17000066*/ instance string TypeName()
   {
     .custom /*0C000054:0A000010*/ instance void [System.Private.CoreLib/*23000001*/]System.Runtime.CompilerServices.NullableAttribute/*01000013*/::.ctor(uint8) /* 0A000010 */ = ( 01 00 02 00 00 ) 
-    .get instance string System.Runtime.Serialization.TypeLoadExceptionHolder/*02000019*/::get_TypeName() /* 0600011B */
+    .get instance string BalthasarIL.Serialization.TypeLoadExceptionHolder/*02000019*/::get_TypeName() /* 0600011B */
   } // end of property TypeLoadExceptionHolder::TypeName
-} // end of class System.Runtime.Serialization.TypeLoadExceptionHolder
+} // end of class BalthasarIL.Serialization.TypeLoadExceptionHolder
 
 .class /*0200001A*/ private abstract auto ansi sealed beforefieldinit System.Runtime.Serialization.SerializationInfoExtensions
        extends [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/
@@ -13776,7 +13776,7 @@
 
 } // end of class System.Runtime.Serialization.SerializationInfoExtensions
 
-.class /*0200001B*/ public abstract auto ansi beforefieldinit System.Runtime.Serialization.SerializationBinder
+.class /*0200001B*/ public abstract auto ansi beforefieldinit BalthasarIL.Serialization.SerializationBinder
        extends [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/
 {
   .method /*0600011E*/ public hidebysig newslot virtual 
@@ -13824,9 +13824,9 @@
     IL_0006:  /* 2A   |                  */ ret
   } // end of method SerializationBinder::.ctor
 
-} // end of class System.Runtime.Serialization.SerializationBinder
+} // end of class BalthasarIL.Serialization.SerializationBinder
 
-.class /*0200001C*/ private auto ansi sealed beforefieldinit System.Runtime.Serialization.SerializationEvents
+.class /*0200001C*/ private auto ansi sealed beforefieldinit BalthasarIL.Serialization.SerializationEvents
        extends [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/
 {
   .field /*0400003A*/ private initonly class [System.Private.CoreLib/*23000001*/]System.Collections.Generic.List`1/*01000033*/<class [System.Private.CoreLib/*23000001*/]System.Reflection.MethodInfo/*01000055*/> _onSerializingMethods
@@ -13846,36 +13846,36 @@
     IL_0001:  /* 28   | (0A)000011       */ call       instance void [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/::.ctor() /* 0A000011 */
     IL_0006:  /* 02   |                  */ ldarg.0
     IL_0007:  /* 02   |                  */ ldarg.0
-    IL_0008:  /* D0   | (01)000056       */ ldtoken    [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.OnSerializingAttribute/*01000056*/
+    IL_0008:  /* D0   | (01)000056       */ ldtoken    [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.OnSerializingAttribute/*01000056*/
     IL_000d:  /* 28   | (0A)000009       */ call       class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/::GetTypeFromHandle(valuetype [System.Private.CoreLib/*23000001*/]System.RuntimeTypeHandle/*01000008*/) /* 0A000009 */
     IL_0012:  /* 03   |                  */ ldarg.1
-    IL_0013:  /* 28   | (06)000122       */ call       instance class [System.Private.CoreLib/*23000001*/]System.Collections.Generic.List`1/*01000033*/<class [System.Private.CoreLib/*23000001*/]System.Reflection.MethodInfo/*01000055*/> System.Runtime.Serialization.SerializationEvents/*0200001C*/::GetMethodsWithAttribute(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
+    IL_0013:  /* 28   | (06)000122       */ call       instance class [System.Private.CoreLib/*23000001*/]System.Collections.Generic.List`1/*01000033*/<class [System.Private.CoreLib/*23000001*/]System.Reflection.MethodInfo/*01000055*/> BalthasarIL.Serialization.SerializationEvents/*0200001C*/::GetMethodsWithAttribute(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
                                                                                                                                                                                                                                                                                                                                   class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/) /* 06000122 */
-    IL_0018:  /* 7D   | (04)00003A       */ stfld      class [System.Private.CoreLib/*23000001*/]System.Collections.Generic.List`1/*01000033*/<class [System.Private.CoreLib/*23000001*/]System.Reflection.MethodInfo/*01000055*/> System.Runtime.Serialization.SerializationEvents/*0200001C*/::_onSerializingMethods /* 0400003A */
+    IL_0018:  /* 7D   | (04)00003A       */ stfld      class [System.Private.CoreLib/*23000001*/]System.Collections.Generic.List`1/*01000033*/<class [System.Private.CoreLib/*23000001*/]System.Reflection.MethodInfo/*01000055*/> BalthasarIL.Serialization.SerializationEvents/*0200001C*/::_onSerializingMethods /* 0400003A */
     IL_001d:  /* 02   |                  */ ldarg.0
     IL_001e:  /* 02   |                  */ ldarg.0
-    IL_001f:  /* D0   | (01)000057       */ ldtoken    [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.OnSerializedAttribute/*01000057*/
+    IL_001f:  /* D0   | (01)000057       */ ldtoken    [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.OnSerializedAttribute/*01000057*/
     IL_0024:  /* 28   | (0A)000009       */ call       class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/::GetTypeFromHandle(valuetype [System.Private.CoreLib/*23000001*/]System.RuntimeTypeHandle/*01000008*/) /* 0A000009 */
     IL_0029:  /* 03   |                  */ ldarg.1
-    IL_002a:  /* 28   | (06)000122       */ call       instance class [System.Private.CoreLib/*23000001*/]System.Collections.Generic.List`1/*01000033*/<class [System.Private.CoreLib/*23000001*/]System.Reflection.MethodInfo/*01000055*/> System.Runtime.Serialization.SerializationEvents/*0200001C*/::GetMethodsWithAttribute(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
+    IL_002a:  /* 28   | (06)000122       */ call       instance class [System.Private.CoreLib/*23000001*/]System.Collections.Generic.List`1/*01000033*/<class [System.Private.CoreLib/*23000001*/]System.Reflection.MethodInfo/*01000055*/> BalthasarIL.Serialization.SerializationEvents/*0200001C*/::GetMethodsWithAttribute(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
                                                                                                                                                                                                                                                                                                                                   class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/) /* 06000122 */
-    IL_002f:  /* 7D   | (04)00003B       */ stfld      class [System.Private.CoreLib/*23000001*/]System.Collections.Generic.List`1/*01000033*/<class [System.Private.CoreLib/*23000001*/]System.Reflection.MethodInfo/*01000055*/> System.Runtime.Serialization.SerializationEvents/*0200001C*/::_onSerializedMethods /* 0400003B */
+    IL_002f:  /* 7D   | (04)00003B       */ stfld      class [System.Private.CoreLib/*23000001*/]System.Collections.Generic.List`1/*01000033*/<class [System.Private.CoreLib/*23000001*/]System.Reflection.MethodInfo/*01000055*/> BalthasarIL.Serialization.SerializationEvents/*0200001C*/::_onSerializedMethods /* 0400003B */
     IL_0034:  /* 02   |                  */ ldarg.0
     IL_0035:  /* 02   |                  */ ldarg.0
-    IL_0036:  /* D0   | (01)000058       */ ldtoken    [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.OnDeserializingAttribute/*01000058*/
+    IL_0036:  /* D0   | (01)000058       */ ldtoken    [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.OnDeserializingAttribute/*01000058*/
     IL_003b:  /* 28   | (0A)000009       */ call       class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/::GetTypeFromHandle(valuetype [System.Private.CoreLib/*23000001*/]System.RuntimeTypeHandle/*01000008*/) /* 0A000009 */
     IL_0040:  /* 03   |                  */ ldarg.1
-    IL_0041:  /* 28   | (06)000122       */ call       instance class [System.Private.CoreLib/*23000001*/]System.Collections.Generic.List`1/*01000033*/<class [System.Private.CoreLib/*23000001*/]System.Reflection.MethodInfo/*01000055*/> System.Runtime.Serialization.SerializationEvents/*0200001C*/::GetMethodsWithAttribute(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
+    IL_0041:  /* 28   | (06)000122       */ call       instance class [System.Private.CoreLib/*23000001*/]System.Collections.Generic.List`1/*01000033*/<class [System.Private.CoreLib/*23000001*/]System.Reflection.MethodInfo/*01000055*/> BalthasarIL.Serialization.SerializationEvents/*0200001C*/::GetMethodsWithAttribute(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
                                                                                                                                                                                                                                                                                                                                   class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/) /* 06000122 */
-    IL_0046:  /* 7D   | (04)00003C       */ stfld      class [System.Private.CoreLib/*23000001*/]System.Collections.Generic.List`1/*01000033*/<class [System.Private.CoreLib/*23000001*/]System.Reflection.MethodInfo/*01000055*/> System.Runtime.Serialization.SerializationEvents/*0200001C*/::_onDeserializingMethods /* 0400003C */
+    IL_0046:  /* 7D   | (04)00003C       */ stfld      class [System.Private.CoreLib/*23000001*/]System.Collections.Generic.List`1/*01000033*/<class [System.Private.CoreLib/*23000001*/]System.Reflection.MethodInfo/*01000055*/> BalthasarIL.Serialization.SerializationEvents/*0200001C*/::_onDeserializingMethods /* 0400003C */
     IL_004b:  /* 02   |                  */ ldarg.0
     IL_004c:  /* 02   |                  */ ldarg.0
-    IL_004d:  /* D0   | (01)000059       */ ldtoken    [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.OnDeserializedAttribute/*01000059*/
+    IL_004d:  /* D0   | (01)000059       */ ldtoken    [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.OnDeserializedAttribute/*01000059*/
     IL_0052:  /* 28   | (0A)000009       */ call       class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/::GetTypeFromHandle(valuetype [System.Private.CoreLib/*23000001*/]System.RuntimeTypeHandle/*01000008*/) /* 0A000009 */
     IL_0057:  /* 03   |                  */ ldarg.1
-    IL_0058:  /* 28   | (06)000122       */ call       instance class [System.Private.CoreLib/*23000001*/]System.Collections.Generic.List`1/*01000033*/<class [System.Private.CoreLib/*23000001*/]System.Reflection.MethodInfo/*01000055*/> System.Runtime.Serialization.SerializationEvents/*0200001C*/::GetMethodsWithAttribute(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
+    IL_0058:  /* 28   | (06)000122       */ call       instance class [System.Private.CoreLib/*23000001*/]System.Collections.Generic.List`1/*01000033*/<class [System.Private.CoreLib/*23000001*/]System.Reflection.MethodInfo/*01000055*/> BalthasarIL.Serialization.SerializationEvents/*0200001C*/::GetMethodsWithAttribute(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
                                                                                                                                                                                                                                                                                                                                   class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/) /* 06000122 */
-    IL_005d:  /* 7D   | (04)00003D       */ stfld      class [System.Private.CoreLib/*23000001*/]System.Collections.Generic.List`1/*01000033*/<class [System.Private.CoreLib/*23000001*/]System.Reflection.MethodInfo/*01000055*/> System.Runtime.Serialization.SerializationEvents/*0200001C*/::_onDeserializedMethods /* 0400003D */
+    IL_005d:  /* 7D   | (04)00003D       */ stfld      class [System.Private.CoreLib/*23000001*/]System.Collections.Generic.List`1/*01000033*/<class [System.Private.CoreLib/*23000001*/]System.Reflection.MethodInfo/*01000055*/> BalthasarIL.Serialization.SerializationEvents/*0200001C*/::_onDeserializedMethods /* 0400003D */
     IL_0062:  /* 2A   |                  */ ret
   } // end of method SerializationEvents::.ctor
 
@@ -13974,11 +13974,11 @@
     // 代码大小       20 (0x14)
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)00003A       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Collections.Generic.List`1/*01000033*/<class [System.Private.CoreLib/*23000001*/]System.Reflection.MethodInfo/*01000055*/> System.Runtime.Serialization.SerializationEvents/*0200001C*/::_onSerializingMethods /* 0400003A */
+    IL_0001:  /* 7B   | (04)00003A       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Collections.Generic.List`1/*01000033*/<class [System.Private.CoreLib/*23000001*/]System.Reflection.MethodInfo/*01000055*/> BalthasarIL.Serialization.SerializationEvents/*0200001C*/::_onSerializingMethods /* 0400003A */
     IL_0006:  /* 2D   | 0A               */ brtrue.s   IL_0012
 
     IL_0008:  /* 02   |                  */ ldarg.0
-    IL_0009:  /* 7B   | (04)00003B       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Collections.Generic.List`1/*01000033*/<class [System.Private.CoreLib/*23000001*/]System.Reflection.MethodInfo/*01000055*/> System.Runtime.Serialization.SerializationEvents/*0200001C*/::_onSerializedMethods /* 0400003B */
+    IL_0009:  /* 7B   | (04)00003B       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Collections.Generic.List`1/*01000033*/<class [System.Private.CoreLib/*23000001*/]System.Reflection.MethodInfo/*01000055*/> BalthasarIL.Serialization.SerializationEvents/*0200001C*/::_onSerializedMethods /* 0400003B */
     IL_000e:  /* 14   |                  */ ldnull
     IL_000f:  /* FE03 |                  */ cgt.un
     IL_0011:  /* 2A   |                  */ ret
@@ -13998,8 +13998,8 @@
     IL_0000:  /* 03   |                  */ ldarg.1
     IL_0001:  /* 04   |                  */ ldarg.2
     IL_0002:  /* 02   |                  */ ldarg.0
-    IL_0003:  /* 7B   | (04)00003A       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Collections.Generic.List`1/*01000033*/<class [System.Private.CoreLib/*23000001*/]System.Reflection.MethodInfo/*01000055*/> System.Runtime.Serialization.SerializationEvents/*0200001C*/::_onSerializingMethods /* 0400003A */
-    IL_0008:  /* 28   | (06)000129       */ call       void System.Runtime.Serialization.SerializationEvents/*0200001C*/::InvokeOnDelegate(object,
+    IL_0003:  /* 7B   | (04)00003A       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Collections.Generic.List`1/*01000033*/<class [System.Private.CoreLib/*23000001*/]System.Reflection.MethodInfo/*01000055*/> BalthasarIL.Serialization.SerializationEvents/*0200001C*/::_onSerializingMethods /* 0400003A */
+    IL_0008:  /* 28   | (06)000129       */ call       void BalthasarIL.Serialization.SerializationEvents/*0200001C*/::InvokeOnDelegate(object,
                                                                                                                                            valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/,
                                                                                                                                            class [System.Private.CoreLib/*23000001*/]System.Collections.Generic.List`1/*01000033*/<class [System.Private.CoreLib/*23000001*/]System.Reflection.MethodInfo/*01000055*/>) /* 06000129 */
     IL_000d:  /* 2A   |                  */ ret
@@ -14016,8 +14016,8 @@
     IL_0000:  /* 03   |                  */ ldarg.1
     IL_0001:  /* 04   |                  */ ldarg.2
     IL_0002:  /* 02   |                  */ ldarg.0
-    IL_0003:  /* 7B   | (04)00003C       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Collections.Generic.List`1/*01000033*/<class [System.Private.CoreLib/*23000001*/]System.Reflection.MethodInfo/*01000055*/> System.Runtime.Serialization.SerializationEvents/*0200001C*/::_onDeserializingMethods /* 0400003C */
-    IL_0008:  /* 28   | (06)000129       */ call       void System.Runtime.Serialization.SerializationEvents/*0200001C*/::InvokeOnDelegate(object,
+    IL_0003:  /* 7B   | (04)00003C       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Collections.Generic.List`1/*01000033*/<class [System.Private.CoreLib/*23000001*/]System.Reflection.MethodInfo/*01000055*/> BalthasarIL.Serialization.SerializationEvents/*0200001C*/::_onDeserializingMethods /* 0400003C */
+    IL_0008:  /* 28   | (06)000129       */ call       void BalthasarIL.Serialization.SerializationEvents/*0200001C*/::InvokeOnDelegate(object,
                                                                                                                                            valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/,
                                                                                                                                            class [System.Private.CoreLib/*23000001*/]System.Collections.Generic.List`1/*01000033*/<class [System.Private.CoreLib/*23000001*/]System.Reflection.MethodInfo/*01000055*/>) /* 06000129 */
     IL_000d:  /* 2A   |                  */ ret
@@ -14034,17 +14034,17 @@
     IL_0000:  /* 03   |                  */ ldarg.1
     IL_0001:  /* 04   |                  */ ldarg.2
     IL_0002:  /* 02   |                  */ ldarg.0
-    IL_0003:  /* 7B   | (04)00003D       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Collections.Generic.List`1/*01000033*/<class [System.Private.CoreLib/*23000001*/]System.Reflection.MethodInfo/*01000055*/> System.Runtime.Serialization.SerializationEvents/*0200001C*/::_onDeserializedMethods /* 0400003D */
-    IL_0008:  /* 28   | (06)000129       */ call       void System.Runtime.Serialization.SerializationEvents/*0200001C*/::InvokeOnDelegate(object,
+    IL_0003:  /* 7B   | (04)00003D       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Collections.Generic.List`1/*01000033*/<class [System.Private.CoreLib/*23000001*/]System.Reflection.MethodInfo/*01000055*/> BalthasarIL.Serialization.SerializationEvents/*0200001C*/::_onDeserializedMethods /* 0400003D */
+    IL_0008:  /* 28   | (06)000129       */ call       void BalthasarIL.Serialization.SerializationEvents/*0200001C*/::InvokeOnDelegate(object,
                                                                                                                                            valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/,
                                                                                                                                            class [System.Private.CoreLib/*23000001*/]System.Collections.Generic.List`1/*01000033*/<class [System.Private.CoreLib/*23000001*/]System.Reflection.MethodInfo/*01000055*/>) /* 06000129 */
     IL_000d:  /* 2A   |                  */ ret
   } // end of method SerializationEvents::InvokeOnDeserialized
 
   .method /*06000127*/ assembly hidebysig 
-          instance class System.Runtime.Serialization.SerializationEventHandler/*02000007*/ 
+          instance class BalthasarIL.Serialization.SerializationEventHandler/*02000007*/ 
           AddOnSerialized(object obj,
-                          class System.Runtime.Serialization.SerializationEventHandler/*02000007*/ 'handler') cil managed
+                          class BalthasarIL.Serialization.SerializationEventHandler/*02000007*/ 'handler') cil managed
   // SIG: 20 02 12 1C 1C 12 1C
   {
     // 方法在 RVA 0x23178 处开始
@@ -14053,17 +14053,17 @@
     IL_0000:  /* 03   |                  */ ldarg.1
     IL_0001:  /* 04   |                  */ ldarg.2
     IL_0002:  /* 02   |                  */ ldarg.0
-    IL_0003:  /* 7B   | (04)00003B       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Collections.Generic.List`1/*01000033*/<class [System.Private.CoreLib/*23000001*/]System.Reflection.MethodInfo/*01000055*/> System.Runtime.Serialization.SerializationEvents/*0200001C*/::_onSerializedMethods /* 0400003B */
-    IL_0008:  /* 28   | (06)00012A       */ call       class System.Runtime.Serialization.SerializationEventHandler/*02000007*/ System.Runtime.Serialization.SerializationEvents/*0200001C*/::AddOnDelegate(object,
-                                                                                                                                                                                                            class System.Runtime.Serialization.SerializationEventHandler/*02000007*/,
+    IL_0003:  /* 7B   | (04)00003B       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Collections.Generic.List`1/*01000033*/<class [System.Private.CoreLib/*23000001*/]System.Reflection.MethodInfo/*01000055*/> BalthasarIL.Serialization.SerializationEvents/*0200001C*/::_onSerializedMethods /* 0400003B */
+    IL_0008:  /* 28   | (06)00012A       */ call       class BalthasarIL.Serialization.SerializationEventHandler/*02000007*/ BalthasarIL.Serialization.SerializationEvents/*0200001C*/::AddOnDelegate(object,
+                                                                                                                                                                                                            class BalthasarIL.Serialization.SerializationEventHandler/*02000007*/,
                                                                                                                                                                                                             class [System.Private.CoreLib/*23000001*/]System.Collections.Generic.List`1/*01000033*/<class [System.Private.CoreLib/*23000001*/]System.Reflection.MethodInfo/*01000055*/>) /* 0600012A */
     IL_000d:  /* 2A   |                  */ ret
   } // end of method SerializationEvents::AddOnSerialized
 
   .method /*06000128*/ assembly hidebysig 
-          instance class System.Runtime.Serialization.SerializationEventHandler/*02000007*/ 
+          instance class BalthasarIL.Serialization.SerializationEventHandler/*02000007*/ 
           AddOnDeserialized(object obj,
-                            class System.Runtime.Serialization.SerializationEventHandler/*02000007*/ 'handler') cil managed
+                            class BalthasarIL.Serialization.SerializationEventHandler/*02000007*/ 'handler') cil managed
   // SIG: 20 02 12 1C 1C 12 1C
   {
     // 方法在 RVA 0x23188 处开始
@@ -14072,9 +14072,9 @@
     IL_0000:  /* 03   |                  */ ldarg.1
     IL_0001:  /* 04   |                  */ ldarg.2
     IL_0002:  /* 02   |                  */ ldarg.0
-    IL_0003:  /* 7B   | (04)00003D       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Collections.Generic.List`1/*01000033*/<class [System.Private.CoreLib/*23000001*/]System.Reflection.MethodInfo/*01000055*/> System.Runtime.Serialization.SerializationEvents/*0200001C*/::_onDeserializedMethods /* 0400003D */
-    IL_0008:  /* 28   | (06)00012A       */ call       class System.Runtime.Serialization.SerializationEventHandler/*02000007*/ System.Runtime.Serialization.SerializationEvents/*0200001C*/::AddOnDelegate(object,
-                                                                                                                                                                                                            class System.Runtime.Serialization.SerializationEventHandler/*02000007*/,
+    IL_0003:  /* 7B   | (04)00003D       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Collections.Generic.List`1/*01000033*/<class [System.Private.CoreLib/*23000001*/]System.Reflection.MethodInfo/*01000055*/> BalthasarIL.Serialization.SerializationEvents/*0200001C*/::_onDeserializedMethods /* 0400003D */
+    IL_0008:  /* 28   | (06)00012A       */ call       class BalthasarIL.Serialization.SerializationEventHandler/*02000007*/ BalthasarIL.Serialization.SerializationEvents/*0200001C*/::AddOnDelegate(object,
+                                                                                                                                                                                                            class BalthasarIL.Serialization.SerializationEventHandler/*02000007*/,
                                                                                                                                                                                                             class [System.Private.CoreLib/*23000001*/]System.Collections.Generic.List`1/*01000033*/<class [System.Private.CoreLib/*23000001*/]System.Reflection.MethodInfo/*01000055*/>) /* 0600012A */
     IL_000d:  /* 2A   |                  */ ret
   } // end of method SerializationEvents::AddOnDeserialized
@@ -14091,8 +14091,8 @@
     IL_0000:  /* 02   |                  */ ldarg.0
     IL_0001:  /* 14   |                  */ ldnull
     IL_0002:  /* 04   |                  */ ldarg.2
-    IL_0003:  /* 28   | (06)00012A       */ call       class System.Runtime.Serialization.SerializationEventHandler/*02000007*/ System.Runtime.Serialization.SerializationEvents/*0200001C*/::AddOnDelegate(object,
-                                                                                                                                                                                                            class System.Runtime.Serialization.SerializationEventHandler/*02000007*/,
+    IL_0003:  /* 28   | (06)00012A       */ call       class BalthasarIL.Serialization.SerializationEventHandler/*02000007*/ BalthasarIL.Serialization.SerializationEvents/*0200001C*/::AddOnDelegate(object,
+                                                                                                                                                                                                            class BalthasarIL.Serialization.SerializationEventHandler/*02000007*/,
                                                                                                                                                                                                             class [System.Private.CoreLib/*23000001*/]System.Collections.Generic.List`1/*01000033*/<class [System.Private.CoreLib/*23000001*/]System.Reflection.MethodInfo/*01000055*/>) /* 0600012A */
     IL_0008:  /* 25   |                  */ dup
     IL_0009:  /* 2D   | 02               */ brtrue.s   IL_000d
@@ -14101,14 +14101,14 @@
     IL_000c:  /* 2A   |                  */ ret
 
     IL_000d:  /* 03   |                  */ ldarg.1
-    IL_000e:  /* 6F   | (06)000054       */ callvirt   instance void System.Runtime.Serialization.SerializationEventHandler/*02000007*/::Invoke(valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/) /* 06000054 */
+    IL_000e:  /* 6F   | (06)000054       */ callvirt   instance void BalthasarIL.Serialization.SerializationEventHandler/*02000007*/::Invoke(valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/) /* 06000054 */
     IL_0013:  /* 2A   |                  */ ret
   } // end of method SerializationEvents::InvokeOnDelegate
 
   .method /*0600012A*/ private hidebysig static 
-          class System.Runtime.Serialization.SerializationEventHandler/*02000007*/ 
+          class BalthasarIL.Serialization.SerializationEventHandler/*02000007*/ 
           AddOnDelegate(object obj,
-                        class System.Runtime.Serialization.SerializationEventHandler/*02000007*/ 'handler',
+                        class BalthasarIL.Serialization.SerializationEventHandler/*02000007*/ 'handler',
                         class [System.Private.CoreLib/*23000001*/]System.Collections.Generic.List`1/*01000033*/<class [System.Private.CoreLib/*23000001*/]System.Reflection.MethodInfo/*01000055*/> methods) cil managed
   // SIG: 00 03 12 1C 1C 12 1C 15 12 80 CD 01 12 81 55
   {
@@ -14117,7 +14117,7 @@
     .maxstack  2
     .locals /*1100002F*/ (valuetype [System.Private.CoreLib/*23000001*/]System.Collections.Generic.List`1/*01000033*//Enumerator/*0100005A*/<class [System.Private.CoreLib/*23000001*/]System.Reflection.MethodInfo/*01000055*/> V_0,
              class [System.Private.CoreLib/*23000001*/]System.Reflection.MethodInfo/*01000055*/ V_1,
-             class System.Runtime.Serialization.SerializationEventHandler/*02000007*/ V_2)
+             class BalthasarIL.Serialization.SerializationEventHandler/*02000007*/ V_2)
     IL_0000:  /* 04   |                  */ ldarg.2
     IL_0001:  /* 2C   | 40               */ brfalse.s  IL_0043
 
@@ -14133,13 +14133,13 @@
       IL_0013:  /* 0B   |                  */ stloc.1
       IL_0014:  /* 07   |                  */ ldloc.1
       IL_0015:  /* 02   |                  */ ldarg.0
-      IL_0016:  /* 6F   | (2B)000005       */ callvirt   instance !!0 [System.Private.CoreLib/*23000001*/]System.Reflection.MethodInfo/*01000055*/::CreateDelegate<class System.Runtime.Serialization.SerializationEventHandler/*02000007*/>(object) /* 2B000005 */
+      IL_0016:  /* 6F   | (2B)000005       */ callvirt   instance !!0 [System.Private.CoreLib/*23000001*/]System.Reflection.MethodInfo/*01000055*/::CreateDelegate<class BalthasarIL.Serialization.SerializationEventHandler/*02000007*/>(object) /* 2B000005 */
       IL_001b:  /* 0C   |                  */ stloc.2
       IL_001c:  /* 03   |                  */ ldarg.1
       IL_001d:  /* 08   |                  */ ldloc.2
       IL_001e:  /* 28   | (0A)000082       */ call       class [System.Private.CoreLib/*23000001*/]System.Delegate/*01000051*/ [System.Private.CoreLib/*23000001*/]System.Delegate/*01000051*/::Combine(class [System.Private.CoreLib/*23000001*/]System.Delegate/*01000051*/,
                                                                                                                                                                                                         class [System.Private.CoreLib/*23000001*/]System.Delegate/*01000051*/) /* 0A000082 */
-      IL_0023:  /* 74   | (02)000007       */ castclass  System.Runtime.Serialization.SerializationEventHandler/*02000007*/
+      IL_0023:  /* 74   | (02)000007       */ castclass  BalthasarIL.Serialization.SerializationEventHandler/*02000007*/
       IL_0028:  /* 10   | 01               */ starg.s    'handler'
       IL_002a:  /* 12   | 00               */ ldloca.s   V_0
       IL_002c:  /* 28   | (0A)000090       */ call       instance bool valuetype [System.Private.CoreLib/*23000001*/]System.Collections.Generic.List`1/*01000033*//Enumerator/*0100005A*/<class [System.Private.CoreLib/*23000001*/]System.Reflection.MethodInfo/*01000055*/>/*1B000008*/::MoveNext() /* 0A000090 */
@@ -14162,23 +14162,23 @@
 
   .property /*17000067*/ instance bool HasOnSerializingEvents()
   {
-    .get instance bool System.Runtime.Serialization.SerializationEvents/*0200001C*/::get_HasOnSerializingEvents() /* 06000123 */
+    .get instance bool BalthasarIL.Serialization.SerializationEvents/*0200001C*/::get_HasOnSerializingEvents() /* 06000123 */
   } // end of property SerializationEvents::HasOnSerializingEvents
-} // end of class System.Runtime.Serialization.SerializationEvents
+} // end of class BalthasarIL.Serialization.SerializationEvents
 
-.class /*0200001D*/ private abstract auto ansi sealed beforefieldinit System.Runtime.Serialization.SerializationEventsCache
+.class /*0200001D*/ private abstract auto ansi sealed beforefieldinit BalthasarIL.Serialization.SerializationEventsCache
        extends [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/
 {
   .class /*0200001E*/ abstract auto ansi sealed nested private beforefieldinit '<>O'
          extends [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/
   {
     .custom /*0C000035:0A00006B*/ instance void [System.Private.CoreLib/*23000001*/]System.Runtime.CompilerServices.CompilerGeneratedAttribute/*01000043*/::.ctor() /* 0A00006B */ = ( 01 00 00 00 ) 
-    .field /*0400003F*/ public static class [System.Private.CoreLib/*23000001*/]System.Func`2/*0100003D*/<class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,class System.Runtime.Serialization.SerializationEvents/*0200001C*/> '<0>__CreateSerializationEvents'
+    .field /*0400003F*/ public static class [System.Private.CoreLib/*23000001*/]System.Func`2/*0100003D*/<class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,class BalthasarIL.Serialization.SerializationEvents/*0200001C*/> '<0>__CreateSerializationEvents'
   } // end of class '<>O'
 
-  .field /*0400003E*/ private static initonly class [System.Collections.Concurrent/*23000003*/]System.Collections.Concurrent.ConcurrentDictionary`2/*01000030*/<class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,class System.Runtime.Serialization.SerializationEvents/*0200001C*/> s_cache
+  .field /*0400003E*/ private static initonly class [System.Collections.Concurrent/*23000003*/]System.Collections.Concurrent.ConcurrentDictionary`2/*01000030*/<class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,class BalthasarIL.Serialization.SerializationEvents/*0200001C*/> s_cache
   .method /*0600012B*/ assembly hidebysig static 
-          class System.Runtime.Serialization.SerializationEvents/*0200001C*/ 
+          class BalthasarIL.Serialization.SerializationEvents/*0200001C*/ 
           GetSerializationEventsForType(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ t) cil managed
   // SIG: 00 01 12 70 12 1D
   {
@@ -14187,26 +14187,26 @@
     // 方法在 RVA 0x23214 处开始
     // 代码大小       39 (0x27)
     .maxstack  8
-    IL_0000:  /* 7E   | (04)00003E       */ ldsfld     class [System.Collections.Concurrent/*23000003*/]System.Collections.Concurrent.ConcurrentDictionary`2/*01000030*/<class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,class System.Runtime.Serialization.SerializationEvents/*0200001C*/> System.Runtime.Serialization.SerializationEventsCache/*0200001D*/::s_cache /* 0400003E */
+    IL_0000:  /* 7E   | (04)00003E       */ ldsfld     class [System.Collections.Concurrent/*23000003*/]System.Collections.Concurrent.ConcurrentDictionary`2/*01000030*/<class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,class BalthasarIL.Serialization.SerializationEvents/*0200001C*/> BalthasarIL.Serialization.SerializationEventsCache/*0200001D*/::s_cache /* 0400003E */
     IL_0005:  /* 02   |                  */ ldarg.0
-    IL_0006:  /* 7E   | (04)00003F       */ ldsfld     class [System.Private.CoreLib/*23000001*/]System.Func`2/*0100003D*/<class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,class System.Runtime.Serialization.SerializationEvents/*0200001C*/> System.Runtime.Serialization.SerializationEventsCache/*0200001D*//'<>O'/*0200001E*/::'<0>__CreateSerializationEvents' /* 0400003F */
+    IL_0006:  /* 7E   | (04)00003F       */ ldsfld     class [System.Private.CoreLib/*23000001*/]System.Func`2/*0100003D*/<class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,class BalthasarIL.Serialization.SerializationEvents/*0200001C*/> BalthasarIL.Serialization.SerializationEventsCache/*0200001D*//'<>O'/*0200001E*/::'<0>__CreateSerializationEvents' /* 0400003F */
     IL_000b:  /* 25   |                  */ dup
     IL_000c:  /* 2D   | 13               */ brtrue.s   IL_0021
 
     IL_000e:  /* 26   |                  */ pop
     IL_000f:  /* 14   |                  */ ldnull
-    IL_0010:  /* FE06 | (06)00012C       */ ldftn      class System.Runtime.Serialization.SerializationEvents/*0200001C*/ System.Runtime.Serialization.SerializationEventsCache/*0200001D*/::CreateSerializationEvents(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/) /* 0600012C */
-    IL_0016:  /* 73   | (0A)000092       */ newobj     instance void class [System.Private.CoreLib/*23000001*/]System.Func`2/*0100003D*/<class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,class System.Runtime.Serialization.SerializationEvents/*0200001C*/>/*1B000009*/::.ctor(object,
+    IL_0010:  /* FE06 | (06)00012C       */ ldftn      class BalthasarIL.Serialization.SerializationEvents/*0200001C*/ BalthasarIL.Serialization.SerializationEventsCache/*0200001D*/::CreateSerializationEvents(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/) /* 0600012C */
+    IL_0016:  /* 73   | (0A)000092       */ newobj     instance void class [System.Private.CoreLib/*23000001*/]System.Func`2/*0100003D*/<class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,class BalthasarIL.Serialization.SerializationEvents/*0200001C*/>/*1B000009*/::.ctor(object,
                                                                                                                                                                                                                                                                                                   native int) /* 0A000092 */
     IL_001b:  /* 25   |                  */ dup
-    IL_001c:  /* 80   | (04)00003F       */ stsfld     class [System.Private.CoreLib/*23000001*/]System.Func`2/*0100003D*/<class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,class System.Runtime.Serialization.SerializationEvents/*0200001C*/> System.Runtime.Serialization.SerializationEventsCache/*0200001D*//'<>O'/*0200001E*/::'<0>__CreateSerializationEvents' /* 0400003F */
-    IL_0021:  /* 6F   | (0A)000093       */ callvirt   instance !1 class [System.Collections.Concurrent/*23000003*/]System.Collections.Concurrent.ConcurrentDictionary`2/*01000030*/<class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,class System.Runtime.Serialization.SerializationEvents/*0200001C*/>/*1B00000A*/::GetOrAdd(!0,
+    IL_001c:  /* 80   | (04)00003F       */ stsfld     class [System.Private.CoreLib/*23000001*/]System.Func`2/*0100003D*/<class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,class BalthasarIL.Serialization.SerializationEvents/*0200001C*/> BalthasarIL.Serialization.SerializationEventsCache/*0200001D*//'<>O'/*0200001E*/::'<0>__CreateSerializationEvents' /* 0400003F */
+    IL_0021:  /* 6F   | (0A)000093       */ callvirt   instance !1 class [System.Collections.Concurrent/*23000003*/]System.Collections.Concurrent.ConcurrentDictionary`2/*01000030*/<class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,class BalthasarIL.Serialization.SerializationEvents/*0200001C*/>/*1B00000A*/::GetOrAdd(!0,
                                                                                                                                                                                                                                                                                                                                                  class [System.Private.CoreLib/*23000001*/]System.Func`2/*0100003D*/<!0,!1>) /* 0A000093 */
     IL_0026:  /* 2A   |                  */ ret
   } // end of method SerializationEventsCache::GetSerializationEventsForType
 
   .method /*0600012C*/ private hidebysig static 
-          class System.Runtime.Serialization.SerializationEvents/*0200001C*/ 
+          class BalthasarIL.Serialization.SerializationEvents/*0200001C*/ 
           CreateSerializationEvents(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ t) cil managed
   // SIG: 00 01 12 70 12 1D
   {
@@ -14225,7 +14225,7 @@
     // 代码大小       7 (0x7)
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 73   | (06)000121       */ newobj     instance void System.Runtime.Serialization.SerializationEvents/*0200001C*/::.ctor(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/) /* 06000121 */
+    IL_0001:  /* 73   | (06)000121       */ newobj     instance void BalthasarIL.Serialization.SerializationEvents/*0200001C*/::.ctor(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/) /* 06000121 */
     IL_0006:  /* 2A   |                  */ ret
   } // end of method SerializationEventsCache::CreateSerializationEvents
 
@@ -14236,14 +14236,14 @@
     // 方法在 RVA 0x23244 处开始
     // 代码大小       11 (0xb)
     .maxstack  8
-    IL_0000:  /* 73   | (0A)000094       */ newobj     instance void class [System.Collections.Concurrent/*23000003*/]System.Collections.Concurrent.ConcurrentDictionary`2/*01000030*/<class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,class System.Runtime.Serialization.SerializationEvents/*0200001C*/>/*1B00000A*/::.ctor() /* 0A000094 */
-    IL_0005:  /* 80   | (04)00003E       */ stsfld     class [System.Collections.Concurrent/*23000003*/]System.Collections.Concurrent.ConcurrentDictionary`2/*01000030*/<class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,class System.Runtime.Serialization.SerializationEvents/*0200001C*/> System.Runtime.Serialization.SerializationEventsCache/*0200001D*/::s_cache /* 0400003E */
+    IL_0000:  /* 73   | (0A)000094       */ newobj     instance void class [System.Collections.Concurrent/*23000003*/]System.Collections.Concurrent.ConcurrentDictionary`2/*01000030*/<class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,class BalthasarIL.Serialization.SerializationEvents/*0200001C*/>/*1B00000A*/::.ctor() /* 0A000094 */
+    IL_0005:  /* 80   | (04)00003E       */ stsfld     class [System.Collections.Concurrent/*23000003*/]System.Collections.Concurrent.ConcurrentDictionary`2/*01000030*/<class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,class BalthasarIL.Serialization.SerializationEvents/*0200001C*/> BalthasarIL.Serialization.SerializationEventsCache/*0200001D*/::s_cache /* 0400003E */
     IL_000a:  /* 2A   |                  */ ret
   } // end of method SerializationEventsCache::.cctor
 
-} // end of class System.Runtime.Serialization.SerializationEventsCache
+} // end of class BalthasarIL.Serialization.SerializationEventsCache
 
-.class /*0200001F*/ private auto ansi sealed beforefieldinit System.Runtime.Serialization.SerializationFieldInfo
+.class /*0200001F*/ private auto ansi sealed beforefieldinit BalthasarIL.Serialization.SerializationFieldInfo
        extends [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/
 {
   .field /*04000040*/ private initonly class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/ m_field
@@ -14260,17 +14260,17 @@
     IL_0001:  /* 28   | (0A)000095       */ call       instance void [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/::.ctor() /* 0A000095 */
     IL_0006:  /* 02   |                  */ ldarg.0
     IL_0007:  /* 03   |                  */ ldarg.1
-    IL_0008:  /* 7D   | (04)000040       */ stfld      class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/ System.Runtime.Serialization.SerializationFieldInfo/*0200001F*/::m_field /* 04000040 */
+    IL_0008:  /* 7D   | (04)000040       */ stfld      class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/ BalthasarIL.Serialization.SerializationFieldInfo/*0200001F*/::m_field /* 04000040 */
     IL_000d:  /* 02   |                  */ ldarg.0
     IL_000e:  /* 04   |                  */ ldarg.2
     IL_000f:  /* 72   | (70)001168       */ ldstr      "+" /* 70001168 */
     IL_0014:  /* 02   |                  */ ldarg.0
-    IL_0015:  /* 7B   | (04)000040       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/ System.Runtime.Serialization.SerializationFieldInfo/*0200001F*/::m_field /* 04000040 */
+    IL_0015:  /* 7B   | (04)000040       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/ BalthasarIL.Serialization.SerializationFieldInfo/*0200001F*/::m_field /* 04000040 */
     IL_001a:  /* 6F   | (0A)00003F       */ callvirt   instance string [System.Private.CoreLib/*23000001*/]System.Reflection.MemberInfo/*01000031*/::get_Name() /* 0A00003F */
     IL_001f:  /* 28   | (0A)000096       */ call       string [System.Private.CoreLib/*23000001*/]System.String/*01000003*/::Concat(string,
                                                                                                                                     string,
                                                                                                                                     string) /* 0A000096 */
-    IL_0024:  /* 7D   | (04)000041       */ stfld      string System.Runtime.Serialization.SerializationFieldInfo/*0200001F*/::m_serializationName /* 04000041 */
+    IL_0024:  /* 7D   | (04)000041       */ stfld      string BalthasarIL.Serialization.SerializationFieldInfo/*0200001F*/::m_serializationName /* 04000041 */
     IL_0029:  /* 2A   |                  */ ret
   } // end of method SerializationFieldInfo::.ctor
 
@@ -14283,7 +14283,7 @@
     // 代码大小       7 (0x7)
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)000040       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/ System.Runtime.Serialization.SerializationFieldInfo/*0200001F*/::m_field /* 04000040 */
+    IL_0001:  /* 7B   | (04)000040       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/ BalthasarIL.Serialization.SerializationFieldInfo/*0200001F*/::m_field /* 04000040 */
     IL_0006:  /* 2A   |                  */ ret
   } // end of method SerializationFieldInfo::get_FieldInfo
 
@@ -14295,7 +14295,7 @@
     // 代码大小       7 (0x7)
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)000041       */ ldfld      string System.Runtime.Serialization.SerializationFieldInfo/*0200001F*/::m_serializationName /* 04000041 */
+    IL_0001:  /* 7B   | (04)000041       */ ldfld      string BalthasarIL.Serialization.SerializationFieldInfo/*0200001F*/::m_serializationName /* 04000041 */
     IL_0006:  /* 2A   |                  */ ret
   } // end of method SerializationFieldInfo::get_Name
 
@@ -14308,7 +14308,7 @@
     // 代码大小       12 (0xc)
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)000040       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/ System.Runtime.Serialization.SerializationFieldInfo/*0200001F*/::m_field /* 04000040 */
+    IL_0001:  /* 7B   | (04)000040       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/ BalthasarIL.Serialization.SerializationFieldInfo/*0200001F*/::m_field /* 04000040 */
     IL_0006:  /* 6F   | (0A)000097       */ callvirt   instance class [System.Private.CoreLib/*23000001*/]System.Reflection.Module/*01000036*/ [System.Private.CoreLib/*23000001*/]System.Reflection.MemberInfo/*01000031*/::get_Module() /* 0A000097 */
     IL_000b:  /* 2A   |                  */ ret
   } // end of method SerializationFieldInfo::get_Module
@@ -14321,7 +14321,7 @@
     // 代码大小       12 (0xc)
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)000040       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/ System.Runtime.Serialization.SerializationFieldInfo/*0200001F*/::m_field /* 04000040 */
+    IL_0001:  /* 7B   | (04)000040       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/ BalthasarIL.Serialization.SerializationFieldInfo/*0200001F*/::m_field /* 04000040 */
     IL_0006:  /* 6F   | (0A)000098       */ callvirt   instance int32 [System.Private.CoreLib/*23000001*/]System.Reflection.MemberInfo/*01000031*/::get_MetadataToken() /* 0A000098 */
     IL_000b:  /* 2A   |                  */ ret
   } // end of method SerializationFieldInfo::get_MetadataToken
@@ -14335,7 +14335,7 @@
     // 代码大小       12 (0xc)
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)000040       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/ System.Runtime.Serialization.SerializationFieldInfo/*0200001F*/::m_field /* 04000040 */
+    IL_0001:  /* 7B   | (04)000040       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/ BalthasarIL.Serialization.SerializationFieldInfo/*0200001F*/::m_field /* 04000040 */
     IL_0006:  /* 6F   | (0A)000099       */ callvirt   instance class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ [System.Private.CoreLib/*23000001*/]System.Reflection.MemberInfo/*01000031*/::get_DeclaringType() /* 0A000099 */
     IL_000b:  /* 2A   |                  */ ret
   } // end of method SerializationFieldInfo::get_DeclaringType
@@ -14349,7 +14349,7 @@
     // 代码大小       12 (0xc)
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)000040       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/ System.Runtime.Serialization.SerializationFieldInfo/*0200001F*/::m_field /* 04000040 */
+    IL_0001:  /* 7B   | (04)000040       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/ BalthasarIL.Serialization.SerializationFieldInfo/*0200001F*/::m_field /* 04000040 */
     IL_0006:  /* 6F   | (0A)00009A       */ callvirt   instance class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ [System.Private.CoreLib/*23000001*/]System.Reflection.MemberInfo/*01000031*/::get_ReflectedType() /* 0A00009A */
     IL_000b:  /* 2A   |                  */ ret
   } // end of method SerializationFieldInfo::get_ReflectedType
@@ -14362,7 +14362,7 @@
     // 代码大小       13 (0xd)
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)000040       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/ System.Runtime.Serialization.SerializationFieldInfo/*0200001F*/::m_field /* 04000040 */
+    IL_0001:  /* 7B   | (04)000040       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/ BalthasarIL.Serialization.SerializationFieldInfo/*0200001F*/::m_field /* 04000040 */
     IL_0006:  /* 03   |                  */ ldarg.1
     IL_0007:  /* 6F   | (0A)00009B       */ callvirt   instance object[] [System.Private.CoreLib/*23000001*/]System.Reflection.MemberInfo/*01000031*/::GetCustomAttributes(bool) /* 0A00009B */
     IL_000c:  /* 2A   |                  */ ret
@@ -14377,7 +14377,7 @@
     // 代码大小       14 (0xe)
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)000040       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/ System.Runtime.Serialization.SerializationFieldInfo/*0200001F*/::m_field /* 04000040 */
+    IL_0001:  /* 7B   | (04)000040       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/ BalthasarIL.Serialization.SerializationFieldInfo/*0200001F*/::m_field /* 04000040 */
     IL_0006:  /* 03   |                  */ ldarg.1
     IL_0007:  /* 04   |                  */ ldarg.2
     IL_0008:  /* 6F   | (0A)00005B       */ callvirt   instance object[] [System.Private.CoreLib/*23000001*/]System.Reflection.MemberInfo/*01000031*/::GetCustomAttributes(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
@@ -14394,7 +14394,7 @@
     // 代码大小       14 (0xe)
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)000040       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/ System.Runtime.Serialization.SerializationFieldInfo/*0200001F*/::m_field /* 04000040 */
+    IL_0001:  /* 7B   | (04)000040       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/ BalthasarIL.Serialization.SerializationFieldInfo/*0200001F*/::m_field /* 04000040 */
     IL_0006:  /* 03   |                  */ ldarg.1
     IL_0007:  /* 04   |                  */ ldarg.2
     IL_0008:  /* 6F   | (0A)000089       */ callvirt   instance bool [System.Private.CoreLib/*23000001*/]System.Reflection.MemberInfo/*01000031*/::IsDefined(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
@@ -14411,7 +14411,7 @@
     // 代码大小       12 (0xc)
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)000040       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/ System.Runtime.Serialization.SerializationFieldInfo/*0200001F*/::m_field /* 04000040 */
+    IL_0001:  /* 7B   | (04)000040       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/ BalthasarIL.Serialization.SerializationFieldInfo/*0200001F*/::m_field /* 04000040 */
     IL_0006:  /* 6F   | (0A)000072       */ callvirt   instance class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/::get_FieldType() /* 0A000072 */
     IL_000b:  /* 2A   |                  */ ret
   } // end of method SerializationFieldInfo::get_FieldType
@@ -14424,7 +14424,7 @@
     // 代码大小       13 (0xd)
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)000040       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/ System.Runtime.Serialization.SerializationFieldInfo/*0200001F*/::m_field /* 04000040 */
+    IL_0001:  /* 7B   | (04)000040       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/ BalthasarIL.Serialization.SerializationFieldInfo/*0200001F*/::m_field /* 04000040 */
     IL_0006:  /* 03   |                  */ ldarg.1
     IL_0007:  /* 6F   | (0A)000055       */ callvirt   instance object [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/::GetValue(object) /* 0A000055 */
     IL_000c:  /* 2A   |                  */ ret
@@ -14442,7 +14442,7 @@
     // 代码大小       19 (0x13)
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)000040       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/ System.Runtime.Serialization.SerializationFieldInfo/*0200001F*/::m_field /* 04000040 */
+    IL_0001:  /* 7B   | (04)000040       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/ BalthasarIL.Serialization.SerializationFieldInfo/*0200001F*/::m_field /* 04000040 */
     IL_0006:  /* 03   |                  */ ldarg.1
     IL_0007:  /* 04   |                  */ ldarg.2
     IL_0008:  /* 05   |                  */ ldarg.3
@@ -14465,7 +14465,7 @@
     // 代码大小       12 (0xc)
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)000040       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/ System.Runtime.Serialization.SerializationFieldInfo/*0200001F*/::m_field /* 04000040 */
+    IL_0001:  /* 7B   | (04)000040       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/ BalthasarIL.Serialization.SerializationFieldInfo/*0200001F*/::m_field /* 04000040 */
     IL_0006:  /* 6F   | (0A)00009D       */ callvirt   instance valuetype [System.Private.CoreLib/*23000001*/]System.RuntimeFieldHandle/*0100000B*/ [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/::get_FieldHandle() /* 0A00009D */
     IL_000b:  /* 2A   |                  */ ret
   } // end of method SerializationFieldInfo::get_FieldHandle
@@ -14479,7 +14479,7 @@
     // 代码大小       12 (0xc)
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)000040       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/ System.Runtime.Serialization.SerializationFieldInfo/*0200001F*/::m_field /* 04000040 */
+    IL_0001:  /* 7B   | (04)000040       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/ BalthasarIL.Serialization.SerializationFieldInfo/*0200001F*/::m_field /* 04000040 */
     IL_0006:  /* 6F   | (0A)000047       */ callvirt   instance valuetype [System.Private.CoreLib/*23000001*/]System.Reflection.FieldAttributes/*0100003B*/ [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/::get_Attributes() /* 0A000047 */
     IL_000b:  /* 2A   |                  */ ret
   } // end of method SerializationFieldInfo::get_Attributes
@@ -14487,49 +14487,49 @@
   .property /*17000068*/ instance class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/
           FieldInfo()
   {
-    .get instance class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/ System.Runtime.Serialization.SerializationFieldInfo/*0200001F*/::get_FieldInfo() /* 0600012F */
+    .get instance class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/ BalthasarIL.Serialization.SerializationFieldInfo/*0200001F*/::get_FieldInfo() /* 0600012F */
   } // end of property SerializationFieldInfo::FieldInfo
   .property /*17000069*/ instance string Name()
   {
-    .get instance string System.Runtime.Serialization.SerializationFieldInfo/*0200001F*/::get_Name() /* 06000130 */
+    .get instance string BalthasarIL.Serialization.SerializationFieldInfo/*0200001F*/::get_Name() /* 06000130 */
   } // end of property SerializationFieldInfo::Name
   .property /*1700006A*/ instance class [System.Private.CoreLib/*23000001*/]System.Reflection.Module/*01000036*/
           Module()
   {
-    .get instance class [System.Private.CoreLib/*23000001*/]System.Reflection.Module/*01000036*/ System.Runtime.Serialization.SerializationFieldInfo/*0200001F*/::get_Module() /* 06000131 */
+    .get instance class [System.Private.CoreLib/*23000001*/]System.Reflection.Module/*01000036*/ BalthasarIL.Serialization.SerializationFieldInfo/*0200001F*/::get_Module() /* 06000131 */
   } // end of property SerializationFieldInfo::Module
   .property /*1700006B*/ instance int32 MetadataToken()
   {
-    .get instance int32 System.Runtime.Serialization.SerializationFieldInfo/*0200001F*/::get_MetadataToken() /* 06000132 */
+    .get instance int32 BalthasarIL.Serialization.SerializationFieldInfo/*0200001F*/::get_MetadataToken() /* 06000132 */
   } // end of property SerializationFieldInfo::MetadataToken
   .property /*1700006C*/ instance class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/
           DeclaringType()
   {
-    .get instance class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ System.Runtime.Serialization.SerializationFieldInfo/*0200001F*/::get_DeclaringType() /* 06000133 */
+    .get instance class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ BalthasarIL.Serialization.SerializationFieldInfo/*0200001F*/::get_DeclaringType() /* 06000133 */
   } // end of property SerializationFieldInfo::DeclaringType
   .property /*1700006D*/ instance class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/
           ReflectedType()
   {
-    .get instance class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ System.Runtime.Serialization.SerializationFieldInfo/*0200001F*/::get_ReflectedType() /* 06000134 */
+    .get instance class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ BalthasarIL.Serialization.SerializationFieldInfo/*0200001F*/::get_ReflectedType() /* 06000134 */
   } // end of property SerializationFieldInfo::ReflectedType
   .property /*1700006E*/ instance class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/
           FieldType()
   {
-    .get instance class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ System.Runtime.Serialization.SerializationFieldInfo/*0200001F*/::get_FieldType() /* 06000138 */
+    .get instance class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ BalthasarIL.Serialization.SerializationFieldInfo/*0200001F*/::get_FieldType() /* 06000138 */
   } // end of property SerializationFieldInfo::FieldType
   .property /*1700006F*/ instance valuetype [System.Private.CoreLib/*23000001*/]System.RuntimeFieldHandle/*0100000B*/
           FieldHandle()
   {
-    .get instance valuetype [System.Private.CoreLib/*23000001*/]System.RuntimeFieldHandle/*0100000B*/ System.Runtime.Serialization.SerializationFieldInfo/*0200001F*/::get_FieldHandle() /* 0600013B */
+    .get instance valuetype [System.Private.CoreLib/*23000001*/]System.RuntimeFieldHandle/*0100000B*/ BalthasarIL.Serialization.SerializationFieldInfo/*0200001F*/::get_FieldHandle() /* 0600013B */
   } // end of property SerializationFieldInfo::FieldHandle
   .property /*17000070*/ instance valuetype [System.Private.CoreLib/*23000001*/]System.Reflection.FieldAttributes/*0100003B*/
           Attributes()
   {
-    .get instance valuetype [System.Private.CoreLib/*23000001*/]System.Reflection.FieldAttributes/*0100003B*/ System.Runtime.Serialization.SerializationFieldInfo/*0200001F*/::get_Attributes() /* 0600013C */
+    .get instance valuetype [System.Private.CoreLib/*23000001*/]System.Reflection.FieldAttributes/*0100003B*/ BalthasarIL.Serialization.SerializationFieldInfo/*0200001F*/::get_Attributes() /* 0600013C */
   } // end of property SerializationFieldInfo::Attributes
-} // end of class System.Runtime.Serialization.SerializationFieldInfo
+} // end of class BalthasarIL.Serialization.SerializationFieldInfo
 
-.class /*02000020*/ public auto ansi sealed beforefieldinit System.Runtime.Serialization.SerializationObjectManager
+.class /*02000020*/ public auto ansi sealed beforefieldinit BalthasarIL.Serialization.SerializationObjectManager
        extends [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/
 {
   .custom /*0C000036:0A00002E*/ instance void [System.Private.CoreLib/*23000001*/]System.ObsoleteAttribute/*0100002C*/::.ctor(string) /* 0A00002E */ = ( 01 00 41 46 6F 72 6D 61 74 74 65 72 2D 62 61 73   // ..AFormatter-bas
@@ -14543,7 +14543,7 @@
                                                                                                                                                          65 74 2D 77 61 72 6E 69 6E 67 73 2F 7B 30 7D )    // et-warnings/{0}
   .field /*04000042*/ private initonly class [System.Private.CoreLib/*23000001*/]System.Collections.Generic.Dictionary`2/*0100005D*/<object,object> _objectSeenTable
   .field /*04000043*/ private initonly valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ _context
-  .field /*04000044*/ private class System.Runtime.Serialization.SerializationEventHandler/*02000007*/ _onSerializedHandler
+  .field /*04000044*/ private class BalthasarIL.Serialization.SerializationEventHandler/*02000007*/ _onSerializedHandler
   .method /*0600013D*/ public hidebysig specialname rtspecialname 
           instance void  .ctor(valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ context) cil managed
   // SIG: 20 01 01 11 41
@@ -14555,10 +14555,10 @@
     IL_0001:  /* 28   | (0A)000011       */ call       instance void [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/::.ctor() /* 0A000011 */
     IL_0006:  /* 02   |                  */ ldarg.0
     IL_0007:  /* 03   |                  */ ldarg.1
-    IL_0008:  /* 7D   | (04)000043       */ stfld      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ System.Runtime.Serialization.SerializationObjectManager/*02000020*/::_context /* 04000043 */
+    IL_0008:  /* 7D   | (04)000043       */ stfld      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ BalthasarIL.Serialization.SerializationObjectManager/*02000020*/::_context /* 04000043 */
     IL_000d:  /* 02   |                  */ ldarg.0
     IL_000e:  /* 73   | (0A)00009E       */ newobj     instance void class [System.Private.CoreLib/*23000001*/]System.Collections.Generic.Dictionary`2/*0100005D*/<object,object>/*1B00000B*/::.ctor() /* 0A00009E */
-    IL_0013:  /* 7D   | (04)000042       */ stfld      class [System.Private.CoreLib/*23000001*/]System.Collections.Generic.Dictionary`2/*0100005D*/<object,object> System.Runtime.Serialization.SerializationObjectManager/*02000020*/::_objectSeenTable /* 04000042 */
+    IL_0013:  /* 7D   | (04)000042       */ stfld      class [System.Private.CoreLib/*23000001*/]System.Collections.Generic.Dictionary`2/*0100005D*/<object,object> BalthasarIL.Serialization.SerializationObjectManager/*02000020*/::_objectSeenTable /* 04000042 */
     IL_0018:  /* 2A   |                  */ ret
   } // end of method SerializationObjectManager::.ctor
 
@@ -14579,17 +14579,17 @@
     // 方法在 RVA 0x2336c 处开始
     // 代码大小       61 (0x3d)
     .maxstack  3
-    .locals /*1100002A*/ (class System.Runtime.Serialization.SerializationEvents/*0200001C*/ V_0)
+    .locals /*1100002A*/ (class BalthasarIL.Serialization.SerializationEvents/*0200001C*/ V_0)
     IL_0000:  /* 03   |                  */ ldarg.1
     IL_0001:  /* 6F   | (0A)00001A       */ callvirt   instance class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/::GetType() /* 0A00001A */
-    IL_0006:  /* 28   | (06)00012B       */ call       class System.Runtime.Serialization.SerializationEvents/*0200001C*/ System.Runtime.Serialization.SerializationEventsCache/*0200001D*/::GetSerializationEventsForType(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/) /* 0600012B */
+    IL_0006:  /* 28   | (06)00012B       */ call       class BalthasarIL.Serialization.SerializationEvents/*0200001C*/ BalthasarIL.Serialization.SerializationEventsCache/*0200001D*/::GetSerializationEventsForType(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/) /* 0600012B */
     IL_000b:  /* 0A   |                  */ stloc.0
     IL_000c:  /* 06   |                  */ ldloc.0
-    IL_000d:  /* 6F   | (06)000123       */ callvirt   instance bool System.Runtime.Serialization.SerializationEvents/*0200001C*/::get_HasOnSerializingEvents() /* 06000123 */
+    IL_000d:  /* 6F   | (06)000123       */ callvirt   instance bool BalthasarIL.Serialization.SerializationEvents/*0200001C*/::get_HasOnSerializingEvents() /* 06000123 */
     IL_0012:  /* 2C   | 28               */ brfalse.s  IL_003c
 
     IL_0014:  /* 02   |                  */ ldarg.0
-    IL_0015:  /* 7B   | (04)000042       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Collections.Generic.Dictionary`2/*0100005D*/<object,object> System.Runtime.Serialization.SerializationObjectManager/*02000020*/::_objectSeenTable /* 04000042 */
+    IL_0015:  /* 7B   | (04)000042       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Collections.Generic.Dictionary`2/*0100005D*/<object,object> BalthasarIL.Serialization.SerializationObjectManager/*02000020*/::_objectSeenTable /* 04000042 */
     IL_001a:  /* 03   |                  */ ldarg.1
     IL_001b:  /* 17   |                  */ ldc.i4.1
     IL_001c:  /* 8C   | (01)00001C       */ box        [System.Private.CoreLib/*23000001*/]System.Boolean/*0100001C*/
@@ -14600,12 +14600,12 @@
     IL_0028:  /* 06   |                  */ ldloc.0
     IL_0029:  /* 03   |                  */ ldarg.1
     IL_002a:  /* 02   |                  */ ldarg.0
-    IL_002b:  /* 7B   | (04)000043       */ ldfld      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ System.Runtime.Serialization.SerializationObjectManager/*02000020*/::_context /* 04000043 */
-    IL_0030:  /* 6F   | (06)000124       */ callvirt   instance void System.Runtime.Serialization.SerializationEvents/*0200001C*/::InvokeOnSerializing(object,
+    IL_002b:  /* 7B   | (04)000043       */ ldfld      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ BalthasarIL.Serialization.SerializationObjectManager/*02000020*/::_context /* 04000043 */
+    IL_0030:  /* 6F   | (06)000124       */ callvirt   instance void BalthasarIL.Serialization.SerializationEvents/*0200001C*/::InvokeOnSerializing(object,
                                                                                                                                                        valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/) /* 06000124 */
     IL_0035:  /* 02   |                  */ ldarg.0
     IL_0036:  /* 03   |                  */ ldarg.1
-    IL_0037:  /* 28   | (06)000140       */ call       instance void System.Runtime.Serialization.SerializationObjectManager/*02000020*/::AddOnSerialized(object) /* 06000140 */
+    IL_0037:  /* 28   | (06)000140       */ call       instance void BalthasarIL.Serialization.SerializationObjectManager/*02000020*/::AddOnSerialized(object) /* 06000140 */
     IL_003c:  /* 2A   |                  */ ret
   } // end of method SerializationObjectManager::RegisterObject
 
@@ -14617,7 +14617,7 @@
     // 代码大小       23 (0x17)
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)000044       */ ldfld      class System.Runtime.Serialization.SerializationEventHandler/*02000007*/ System.Runtime.Serialization.SerializationObjectManager/*02000020*/::_onSerializedHandler /* 04000044 */
+    IL_0001:  /* 7B   | (04)000044       */ ldfld      class BalthasarIL.Serialization.SerializationEventHandler/*02000007*/ BalthasarIL.Serialization.SerializationObjectManager/*02000020*/::_onSerializedHandler /* 04000044 */
     IL_0006:  /* 25   |                  */ dup
     IL_0007:  /* 2D   | 02               */ brtrue.s   IL_000b
 
@@ -14625,8 +14625,8 @@
     IL_000a:  /* 2A   |                  */ ret
 
     IL_000b:  /* 02   |                  */ ldarg.0
-    IL_000c:  /* 7B   | (04)000043       */ ldfld      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ System.Runtime.Serialization.SerializationObjectManager/*02000020*/::_context /* 04000043 */
-    IL_0011:  /* 6F   | (06)000054       */ callvirt   instance void System.Runtime.Serialization.SerializationEventHandler/*02000007*/::Invoke(valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/) /* 06000054 */
+    IL_000c:  /* 7B   | (04)000043       */ ldfld      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ BalthasarIL.Serialization.SerializationObjectManager/*02000020*/::_context /* 04000043 */
+    IL_0011:  /* 6F   | (06)000054       */ callvirt   instance void BalthasarIL.Serialization.SerializationEventHandler/*02000007*/::Invoke(valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/) /* 06000054 */
     IL_0016:  /* 2A   |                  */ ret
   } // end of method SerializationObjectManager::RaiseOnSerializedEvent
 
@@ -14646,27 +14646,27 @@
     // 方法在 RVA 0x233d0 处开始
     // 代码大小       32 (0x20)
     .maxstack  4
-    .locals /*1100002A*/ (class System.Runtime.Serialization.SerializationEvents/*0200001C*/ V_0)
+    .locals /*1100002A*/ (class BalthasarIL.Serialization.SerializationEvents/*0200001C*/ V_0)
     IL_0000:  /* 03   |                  */ ldarg.1
     IL_0001:  /* 6F   | (0A)00001A       */ callvirt   instance class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/::GetType() /* 0A00001A */
-    IL_0006:  /* 28   | (06)00012B       */ call       class System.Runtime.Serialization.SerializationEvents/*0200001C*/ System.Runtime.Serialization.SerializationEventsCache/*0200001D*/::GetSerializationEventsForType(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/) /* 0600012B */
+    IL_0006:  /* 28   | (06)00012B       */ call       class BalthasarIL.Serialization.SerializationEvents/*0200001C*/ BalthasarIL.Serialization.SerializationEventsCache/*0200001D*/::GetSerializationEventsForType(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/) /* 0600012B */
     IL_000b:  /* 0A   |                  */ stloc.0
     IL_000c:  /* 02   |                  */ ldarg.0
     IL_000d:  /* 06   |                  */ ldloc.0
     IL_000e:  /* 03   |                  */ ldarg.1
     IL_000f:  /* 02   |                  */ ldarg.0
-    IL_0010:  /* 7B   | (04)000044       */ ldfld      class System.Runtime.Serialization.SerializationEventHandler/*02000007*/ System.Runtime.Serialization.SerializationObjectManager/*02000020*/::_onSerializedHandler /* 04000044 */
-    IL_0015:  /* 6F   | (06)000127       */ callvirt   instance class System.Runtime.Serialization.SerializationEventHandler/*02000007*/ System.Runtime.Serialization.SerializationEvents/*0200001C*/::AddOnSerialized(object,
-                                                                                                                                                                                                                       class System.Runtime.Serialization.SerializationEventHandler/*02000007*/) /* 06000127 */
-    IL_001a:  /* 7D   | (04)000044       */ stfld      class System.Runtime.Serialization.SerializationEventHandler/*02000007*/ System.Runtime.Serialization.SerializationObjectManager/*02000020*/::_onSerializedHandler /* 04000044 */
+    IL_0010:  /* 7B   | (04)000044       */ ldfld      class BalthasarIL.Serialization.SerializationEventHandler/*02000007*/ BalthasarIL.Serialization.SerializationObjectManager/*02000020*/::_onSerializedHandler /* 04000044 */
+    IL_0015:  /* 6F   | (06)000127       */ callvirt   instance class BalthasarIL.Serialization.SerializationEventHandler/*02000007*/ BalthasarIL.Serialization.SerializationEvents/*0200001C*/::AddOnSerialized(object,
+                                                                                                                                                                                                                       class BalthasarIL.Serialization.SerializationEventHandler/*02000007*/) /* 06000127 */
+    IL_001a:  /* 7D   | (04)000044       */ stfld      class BalthasarIL.Serialization.SerializationEventHandler/*02000007*/ BalthasarIL.Serialization.SerializationObjectManager/*02000020*/::_onSerializedHandler /* 04000044 */
     IL_001f:  /* 2A   |                  */ ret
   } // end of method SerializationObjectManager::AddOnSerialized
 
-} // end of class System.Runtime.Serialization.SerializationObjectManager
+} // end of class BalthasarIL.Serialization.SerializationObjectManager
 
-.class /*02000021*/ public auto ansi beforefieldinit System.Runtime.Serialization.SurrogateSelector
+.class /*02000021*/ public auto ansi beforefieldinit BalthasarIL.Serialization.SurrogateSelector
        extends [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/
-       implements System.Runtime.Serialization.ISurrogateSelector/*0200000F*/
+       implements BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/
 {
   .custom /*0C000037:0A000018*/ instance void [System.Private.CoreLib/*23000001*/]System.Runtime.CompilerServices.NullableContextAttribute/*01000019*/::.ctor(uint8) /* 0A000018 */ = ( 01 00 01 00 00 ) 
   .custom /*0C000038:0A000010*/ instance void [System.Private.CoreLib/*23000001*/]System.Runtime.CompilerServices.NullableAttribute/*01000013*/::.ctor(uint8) /* 0A000010 */ = ( 01 00 00 00 00 ) 
@@ -14679,20 +14679,20 @@
                                                                                                                                                          54 0E 09 55 72 6C 46 6F 72 6D 61 74 22 68 74 74   // T..UrlFormat"htt
                                                                                                                                                          70 73 3A 2F 2F 61 6B 61 2E 6D 73 2F 64 6F 74 6E   // ps://aka.ms/dotn
                                                                                                                                                          65 74 2D 77 61 72 6E 69 6E 67 73 2F 7B 30 7D )    // et-warnings/{0}
-  .interfaceimpl type System.Runtime.Serialization.ISurrogateSelector/*0200000F*/
+  .interfaceimpl type BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/
   .custom /*0C00001A:0A000010*/ instance void [System.Private.CoreLib/*23000001*/]System.Runtime.CompilerServices.NullableAttribute/*01000013*/::.ctor(uint8) /* 0A000010 */ = ( 01 00 00 00 00 ) 
-  .field /*04000045*/ assembly initonly class System.Runtime.Serialization.SurrogateHashtable/*02000023*/ _surrogates
-  .field /*04000046*/ assembly class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ _nextSelector
+  .field /*04000045*/ assembly initonly class BalthasarIL.Serialization.SurrogateHashtable/*02000023*/ _surrogates
+  .field /*04000046*/ assembly class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ _nextSelector
   .method /*06000141*/ public hidebysig newslot virtual 
           instance void  AddSurrogate(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ 'type',
                                       valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ context,
-                                      class System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ surrogate) cil managed
+                                      class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ surrogate) cil managed
   // SIG: 20 03 01 12 1D 11 41 12 38
   {
     // 方法在 RVA 0x233fc 处开始
     // 代码大小       44 (0x2c)
     .maxstack  3
-    .locals /*11000030*/ (class System.Runtime.Serialization.SurrogateKey/*02000022*/ V_0)
+    .locals /*11000030*/ (class BalthasarIL.Serialization.SurrogateKey/*02000022*/ V_0)
     IL_0000:  /* 03   |                  */ ldarg.1
     IL_0001:  /* 72   | (70)001044       */ ldstr      "type" /* 70001044 */
     IL_0006:  /* 28   | (0A)00002F       */ call       void [System.Private.CoreLib/*23000001*/]System.ArgumentNullException/*0100002E*/::ThrowIfNull(object,
@@ -14703,11 +14703,11 @@
                                                                                                                                                       string) /* 0A00002F */
     IL_0016:  /* 03   |                  */ ldarg.1
     IL_0017:  /* 04   |                  */ ldarg.2
-    IL_0018:  /* 73   | (06)000148       */ newobj     instance void System.Runtime.Serialization.SurrogateKey/*02000022*/::.ctor(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
+    IL_0018:  /* 73   | (06)000148       */ newobj     instance void BalthasarIL.Serialization.SurrogateKey/*02000022*/::.ctor(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
                                                                                                                                   valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/) /* 06000148 */
     IL_001d:  /* 0A   |                  */ stloc.0
     IL_001e:  /* 02   |                  */ ldarg.0
-    IL_001f:  /* 7B   | (04)000045       */ ldfld      class System.Runtime.Serialization.SurrogateHashtable/*02000023*/ System.Runtime.Serialization.SurrogateSelector/*02000021*/::_surrogates /* 04000045 */
+    IL_001f:  /* 7B   | (04)000045       */ ldfld      class BalthasarIL.Serialization.SurrogateHashtable/*02000023*/ BalthasarIL.Serialization.SurrogateSelector/*02000021*/::_surrogates /* 04000045 */
     IL_0024:  /* 06   |                  */ ldloc.0
     IL_0025:  /* 05   |                  */ ldarg.3
     IL_0026:  /* 6F   | (0A)0000A0       */ callvirt   instance void [System.Private.CoreLib/*23000001*/]System.Collections.Hashtable/*0100005E*/::Add(object,
@@ -14716,14 +14716,14 @@
   } // end of method SurrogateSelector::AddSurrogate
 
   .method /*06000142*/ private hidebysig static 
-          bool  HasCycle(class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ selector) cil managed
+          bool  HasCycle(class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ selector) cil managed
   // SIG: 00 01 02 12 3C
   {
     // 方法在 RVA 0x23434 处开始
     // 代码大小       49 (0x31)
     .maxstack  2
-    .locals /*11000031*/ (class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ V_0,
-             class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ V_1)
+    .locals /*11000031*/ (class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ V_0,
+             class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ V_1)
     IL_0000:  /* 02   |                  */ ldarg.0
     IL_0001:  /* 0A   |                  */ stloc.0
     IL_0002:  /* 02   |                  */ ldarg.0
@@ -14731,7 +14731,7 @@
     IL_0004:  /* 2B   | 26               */ br.s       IL_002c
 
     IL_0006:  /* 06   |                  */ ldloc.0
-    IL_0007:  /* 6F   | (06)0000AD       */ callvirt   instance class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ System.Runtime.Serialization.ISurrogateSelector/*0200000F*/::GetNextSelector() /* 060000AD */
+    IL_0007:  /* 6F   | (06)0000AD       */ callvirt   instance class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/::GetNextSelector() /* 060000AD */
     IL_000c:  /* 0A   |                  */ stloc.0
     IL_000d:  /* 06   |                  */ ldloc.0
     IL_000e:  /* 2D   | 02               */ brtrue.s   IL_0012
@@ -14747,10 +14747,10 @@
     IL_0017:  /* 2A   |                  */ ret
 
     IL_0018:  /* 06   |                  */ ldloc.0
-    IL_0019:  /* 6F   | (06)0000AD       */ callvirt   instance class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ System.Runtime.Serialization.ISurrogateSelector/*0200000F*/::GetNextSelector() /* 060000AD */
+    IL_0019:  /* 6F   | (06)0000AD       */ callvirt   instance class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/::GetNextSelector() /* 060000AD */
     IL_001e:  /* 0A   |                  */ stloc.0
     IL_001f:  /* 07   |                  */ ldloc.1
-    IL_0020:  /* 6F   | (06)0000AD       */ callvirt   instance class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ System.Runtime.Serialization.ISurrogateSelector/*0200000F*/::GetNextSelector() /* 060000AD */
+    IL_0020:  /* 6F   | (06)0000AD       */ callvirt   instance class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/::GetNextSelector() /* 060000AD */
     IL_0025:  /* 0B   |                  */ stloc.1
     IL_0026:  /* 06   |                  */ ldloc.0
     IL_0027:  /* 07   |                  */ ldloc.1
@@ -14767,16 +14767,16 @@
   } // end of method SurrogateSelector::HasCycle
 
   .method /*06000143*/ public hidebysig newslot virtual 
-          instance void  ChainSelector(class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ selector) cil managed
+          instance void  ChainSelector(class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ selector) cil managed
   // SIG: 20 01 01 12 3C
   {
     // 方法在 RVA 0x23474 处开始
     // 代码大小       234 (0xea)
     .maxstack  2
-    .locals /*11000032*/ (class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ V_0,
-             class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ V_1,
-             class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ V_2,
-             class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ V_3)
+    .locals /*11000032*/ (class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ V_0,
+             class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ V_1,
+             class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ V_2,
+             class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ V_3)
     IL_0000:  /* 03   |                  */ ldarg.1
     IL_0001:  /* 72   | (70)001180       */ ldstr      "selector" /* 70001180 */
     IL_0006:  /* 28   | (0A)00002F       */ call       void [System.Private.CoreLib/*23000001*/]System.ArgumentNullException/*0100002E*/::ThrowIfNull(object,
@@ -14786,11 +14786,11 @@
     IL_000d:  /* 33   | 0B               */ bne.un.s   IL_001a
 
     IL_000f:  /* 28   | (06)000049       */ call       string System.SR/*02000004*/::get_Serialization_SurrogateCycle() /* 06000049 */
-    IL_0014:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0014:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0019:  /* 7A   |                  */ throw
 
     IL_001a:  /* 03   |                  */ ldarg.1
-    IL_001b:  /* 28   | (06)000142       */ call       bool System.Runtime.Serialization.SurrogateSelector/*02000021*/::HasCycle(class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/) /* 06000142 */
+    IL_001b:  /* 28   | (06)000142       */ call       bool BalthasarIL.Serialization.SurrogateSelector/*02000021*/::HasCycle(class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/) /* 06000142 */
     IL_0020:  /* 2D   | 10               */ brtrue.s   IL_0032
 
     IL_0022:  /* 28   | (06)000048       */ call       string System.SR/*02000004*/::get_Serialization_SurrogateCycleInArgument() /* 06000048 */
@@ -14800,7 +14800,7 @@
     IL_0031:  /* 7A   |                  */ throw
 
     IL_0032:  /* 03   |                  */ ldarg.1
-    IL_0033:  /* 6F   | (06)0000AD       */ callvirt   instance class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ System.Runtime.Serialization.ISurrogateSelector/*0200000F*/::GetNextSelector() /* 060000AD */
+    IL_0033:  /* 6F   | (06)0000AD       */ callvirt   instance class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/::GetNextSelector() /* 060000AD */
     IL_0038:  /* 0A   |                  */ stloc.0
     IL_0039:  /* 03   |                  */ ldarg.1
     IL_003a:  /* 0B   |                  */ stloc.1
@@ -14809,7 +14809,7 @@
     IL_003d:  /* 06   |                  */ ldloc.0
     IL_003e:  /* 0B   |                  */ stloc.1
     IL_003f:  /* 06   |                  */ ldloc.0
-    IL_0040:  /* 6F   | (06)0000AD       */ callvirt   instance class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ System.Runtime.Serialization.ISurrogateSelector/*0200000F*/::GetNextSelector() /* 060000AD */
+    IL_0040:  /* 6F   | (06)0000AD       */ callvirt   instance class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/::GetNextSelector() /* 060000AD */
     IL_0045:  /* 0A   |                  */ stloc.0
     IL_0046:  /* 06   |                  */ ldloc.0
     IL_0047:  /* 2C   | 04               */ brfalse.s  IL_004d
@@ -14839,12 +14839,12 @@
     IL_0069:  /* 33   | 09               */ bne.un.s   IL_0074
 
     IL_006b:  /* 02   |                  */ ldarg.0
-    IL_006c:  /* 6F   | (06)000144       */ callvirt   instance class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ System.Runtime.Serialization.SurrogateSelector/*02000021*/::GetNextSelector() /* 06000144 */
+    IL_006c:  /* 6F   | (06)000144       */ callvirt   instance class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.Serialization.SurrogateSelector/*02000021*/::GetNextSelector() /* 06000144 */
     IL_0071:  /* 0A   |                  */ stloc.0
     IL_0072:  /* 2B   | 07               */ br.s       IL_007b
 
     IL_0074:  /* 06   |                  */ ldloc.0
-    IL_0075:  /* 6F   | (06)0000AD       */ callvirt   instance class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ System.Runtime.Serialization.ISurrogateSelector/*0200000F*/::GetNextSelector() /* 060000AD */
+    IL_0075:  /* 6F   | (06)0000AD       */ callvirt   instance class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/::GetNextSelector() /* 060000AD */
     IL_007a:  /* 0A   |                  */ stloc.0
     IL_007b:  /* 06   |                  */ ldloc.0
     IL_007c:  /* 2C   | 53               */ brfalse.s  IL_00d1
@@ -14864,24 +14864,24 @@
     IL_0094:  /* 33   | 09               */ bne.un.s   IL_009f
 
     IL_0096:  /* 02   |                  */ ldarg.0
-    IL_0097:  /* 6F   | (06)000144       */ callvirt   instance class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ System.Runtime.Serialization.SurrogateSelector/*02000021*/::GetNextSelector() /* 06000144 */
+    IL_0097:  /* 6F   | (06)000144       */ callvirt   instance class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.Serialization.SurrogateSelector/*02000021*/::GetNextSelector() /* 06000144 */
     IL_009c:  /* 0A   |                  */ stloc.0
     IL_009d:  /* 2B   | 07               */ br.s       IL_00a6
 
     IL_009f:  /* 06   |                  */ ldloc.0
-    IL_00a0:  /* 6F   | (06)0000AD       */ callvirt   instance class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ System.Runtime.Serialization.ISurrogateSelector/*0200000F*/::GetNextSelector() /* 060000AD */
+    IL_00a0:  /* 6F   | (06)0000AD       */ callvirt   instance class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/::GetNextSelector() /* 060000AD */
     IL_00a5:  /* 0A   |                  */ stloc.0
     IL_00a6:  /* 08   |                  */ ldloc.2
     IL_00a7:  /* 07   |                  */ ldloc.1
     IL_00a8:  /* 33   | 09               */ bne.un.s   IL_00b3
 
     IL_00aa:  /* 02   |                  */ ldarg.0
-    IL_00ab:  /* 6F   | (06)000144       */ callvirt   instance class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ System.Runtime.Serialization.SurrogateSelector/*02000021*/::GetNextSelector() /* 06000144 */
+    IL_00ab:  /* 6F   | (06)000144       */ callvirt   instance class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.Serialization.SurrogateSelector/*02000021*/::GetNextSelector() /* 06000144 */
     IL_00b0:  /* 0C   |                  */ stloc.2
     IL_00b1:  /* 2B   | 07               */ br.s       IL_00ba
 
     IL_00b3:  /* 08   |                  */ ldloc.2
-    IL_00b4:  /* 6F   | (06)0000AD       */ callvirt   instance class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ System.Runtime.Serialization.ISurrogateSelector/*0200000F*/::GetNextSelector() /* 060000AD */
+    IL_00b4:  /* 6F   | (06)0000AD       */ callvirt   instance class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/::GetNextSelector() /* 060000AD */
     IL_00b9:  /* 0C   |                  */ stloc.2
     IL_00ba:  /* 06   |                  */ ldloc.0
     IL_00bb:  /* 08   |                  */ ldloc.2
@@ -14897,22 +14897,22 @@
     IL_00cf:  /* 2D   | 96               */ brtrue.s   IL_0067
 
     IL_00d1:  /* 02   |                  */ ldarg.0
-    IL_00d2:  /* 7B   | (04)000046       */ ldfld      class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ System.Runtime.Serialization.SurrogateSelector/*02000021*/::_nextSelector /* 04000046 */
+    IL_00d2:  /* 7B   | (04)000046       */ ldfld      class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.Serialization.SurrogateSelector/*02000021*/::_nextSelector /* 04000046 */
     IL_00d7:  /* 0D   |                  */ stloc.3
     IL_00d8:  /* 02   |                  */ ldarg.0
     IL_00d9:  /* 03   |                  */ ldarg.1
-    IL_00da:  /* 7D   | (04)000046       */ stfld      class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ System.Runtime.Serialization.SurrogateSelector/*02000021*/::_nextSelector /* 04000046 */
+    IL_00da:  /* 7D   | (04)000046       */ stfld      class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.Serialization.SurrogateSelector/*02000021*/::_nextSelector /* 04000046 */
     IL_00df:  /* 09   |                  */ ldloc.3
     IL_00e0:  /* 2C   | 07               */ brfalse.s  IL_00e9
 
     IL_00e2:  /* 07   |                  */ ldloc.1
     IL_00e3:  /* 09   |                  */ ldloc.3
-    IL_00e4:  /* 6F   | (06)0000AB       */ callvirt   instance void System.Runtime.Serialization.ISurrogateSelector/*0200000F*/::ChainSelector(class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/) /* 060000AB */
+    IL_00e4:  /* 6F   | (06)0000AB       */ callvirt   instance void BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/::ChainSelector(class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/) /* 060000AB */
     IL_00e9:  /* 2A   |                  */ ret
   } // end of method SurrogateSelector::ChainSelector
 
   .method /*06000144*/ public hidebysig newslot virtual 
-          instance class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ 
+          instance class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ 
           GetNextSelector() cil managed
   // SIG: 20 00 12 3C
   {
@@ -14921,15 +14921,15 @@
     // 代码大小       7 (0x7)
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)000046       */ ldfld      class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ System.Runtime.Serialization.SurrogateSelector/*02000021*/::_nextSelector /* 04000046 */
+    IL_0001:  /* 7B   | (04)000046       */ ldfld      class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.Serialization.SurrogateSelector/*02000021*/::_nextSelector /* 04000046 */
     IL_0006:  /* 2A   |                  */ ret
   } // end of method SurrogateSelector::GetNextSelector
 
   .method /*06000145*/ public hidebysig newslot virtual 
-          instance class System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ 
+          instance class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ 
           GetSurrogate(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ 'type',
                        valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ context,
-                       [out] class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/& selector) cil managed
+                       [out] class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/& selector) cil managed
   // SIG: 20 03 12 38 12 1D 11 41 10 12 3C
   {
     .param [0]/*08000153*/ 
@@ -14937,8 +14937,8 @@
     // 方法在 RVA 0x23574 处开始
     // 代码大小       70 (0x46)
     .maxstack  4
-    .locals /*11000033*/ (class System.Runtime.Serialization.SurrogateKey/*02000022*/ V_0,
-             class System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ V_1)
+    .locals /*11000033*/ (class BalthasarIL.Serialization.SurrogateKey/*02000022*/ V_0,
+             class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ V_1)
     IL_0000:  /* 03   |                  */ ldarg.1
     IL_0001:  /* 72   | (70)001044       */ ldstr      "type" /* 70001044 */
     IL_0006:  /* 28   | (0A)00002F       */ call       void [System.Private.CoreLib/*23000001*/]System.ArgumentNullException/*0100002E*/::ThrowIfNull(object,
@@ -14948,14 +14948,14 @@
     IL_000d:  /* 51   |                  */ stind.ref
     IL_000e:  /* 03   |                  */ ldarg.1
     IL_000f:  /* 04   |                  */ ldarg.2
-    IL_0010:  /* 73   | (06)000148       */ newobj     instance void System.Runtime.Serialization.SurrogateKey/*02000022*/::.ctor(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
+    IL_0010:  /* 73   | (06)000148       */ newobj     instance void BalthasarIL.Serialization.SurrogateKey/*02000022*/::.ctor(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
                                                                                                                                   valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/) /* 06000148 */
     IL_0015:  /* 0A   |                  */ stloc.0
     IL_0016:  /* 02   |                  */ ldarg.0
-    IL_0017:  /* 7B   | (04)000045       */ ldfld      class System.Runtime.Serialization.SurrogateHashtable/*02000023*/ System.Runtime.Serialization.SurrogateSelector/*02000021*/::_surrogates /* 04000045 */
+    IL_0017:  /* 7B   | (04)000045       */ ldfld      class BalthasarIL.Serialization.SurrogateHashtable/*02000023*/ BalthasarIL.Serialization.SurrogateSelector/*02000021*/::_surrogates /* 04000045 */
     IL_001c:  /* 06   |                  */ ldloc.0
     IL_001d:  /* 6F   | (0A)0000A2       */ callvirt   instance object [System.Private.CoreLib/*23000001*/]System.Collections.Hashtable/*0100005E*/::get_Item(object) /* 0A0000A2 */
-    IL_0022:  /* 74   | (02)00000E       */ castclass  System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/
+    IL_0022:  /* 74   | (02)00000E       */ castclass  BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/
     IL_0027:  /* 0B   |                  */ stloc.1
     IL_0028:  /* 07   |                  */ ldloc.1
     IL_0029:  /* 2C   | 02               */ brfalse.s  IL_002d
@@ -14964,17 +14964,17 @@
     IL_002c:  /* 2A   |                  */ ret
 
     IL_002d:  /* 02   |                  */ ldarg.0
-    IL_002e:  /* 7B   | (04)000046       */ ldfld      class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ System.Runtime.Serialization.SurrogateSelector/*02000021*/::_nextSelector /* 04000046 */
+    IL_002e:  /* 7B   | (04)000046       */ ldfld      class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.Serialization.SurrogateSelector/*02000021*/::_nextSelector /* 04000046 */
     IL_0033:  /* 2C   | 0F               */ brfalse.s  IL_0044
 
     IL_0035:  /* 02   |                  */ ldarg.0
-    IL_0036:  /* 7B   | (04)000046       */ ldfld      class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ System.Runtime.Serialization.SurrogateSelector/*02000021*/::_nextSelector /* 04000046 */
+    IL_0036:  /* 7B   | (04)000046       */ ldfld      class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.Serialization.SurrogateSelector/*02000021*/::_nextSelector /* 04000046 */
     IL_003b:  /* 03   |                  */ ldarg.1
     IL_003c:  /* 04   |                  */ ldarg.2
     IL_003d:  /* 05   |                  */ ldarg.3
-    IL_003e:  /* 6F   | (06)0000AC       */ callvirt   instance class System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ System.Runtime.Serialization.ISurrogateSelector/*0200000F*/::GetSurrogate(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
+    IL_003e:  /* 6F   | (06)0000AC       */ callvirt   instance class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/::GetSurrogate(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
                                                                                                                                                                                                                  valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/,
-                                                                                                                                                                                                                 class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/&) /* 060000AC */
+                                                                                                                                                                                                                 class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/&) /* 060000AC */
     IL_0043:  /* 2A   |                  */ ret
 
     IL_0044:  /* 14   |                  */ ldnull
@@ -14989,18 +14989,18 @@
     // 方法在 RVA 0x235c8 处开始
     // 代码大小       32 (0x20)
     .maxstack  2
-    .locals /*11000030*/ (class System.Runtime.Serialization.SurrogateKey/*02000022*/ V_0)
+    .locals /*11000030*/ (class BalthasarIL.Serialization.SurrogateKey/*02000022*/ V_0)
     IL_0000:  /* 03   |                  */ ldarg.1
     IL_0001:  /* 72   | (70)001044       */ ldstr      "type" /* 70001044 */
     IL_0006:  /* 28   | (0A)00002F       */ call       void [System.Private.CoreLib/*23000001*/]System.ArgumentNullException/*0100002E*/::ThrowIfNull(object,
                                                                                                                                                       string) /* 0A00002F */
     IL_000b:  /* 03   |                  */ ldarg.1
     IL_000c:  /* 04   |                  */ ldarg.2
-    IL_000d:  /* 73   | (06)000148       */ newobj     instance void System.Runtime.Serialization.SurrogateKey/*02000022*/::.ctor(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
+    IL_000d:  /* 73   | (06)000148       */ newobj     instance void BalthasarIL.Serialization.SurrogateKey/*02000022*/::.ctor(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
                                                                                                                                   valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/) /* 06000148 */
     IL_0012:  /* 0A   |                  */ stloc.0
     IL_0013:  /* 02   |                  */ ldarg.0
-    IL_0014:  /* 7B   | (04)000045       */ ldfld      class System.Runtime.Serialization.SurrogateHashtable/*02000023*/ System.Runtime.Serialization.SurrogateSelector/*02000021*/::_surrogates /* 04000045 */
+    IL_0014:  /* 7B   | (04)000045       */ ldfld      class BalthasarIL.Serialization.SurrogateHashtable/*02000023*/ BalthasarIL.Serialization.SurrogateSelector/*02000021*/::_surrogates /* 04000045 */
     IL_0019:  /* 06   |                  */ ldloc.0
     IL_001a:  /* 6F   | (0A)0000A3       */ callvirt   instance void [System.Private.CoreLib/*23000001*/]System.Collections.Hashtable/*0100005E*/::Remove(object) /* 0A0000A3 */
     IL_001f:  /* 2A   |                  */ ret
@@ -15015,16 +15015,16 @@
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
     IL_0001:  /* 1F   | 20               */ ldc.i4.s   32
-    IL_0003:  /* 73   | (06)00014A       */ newobj     instance void System.Runtime.Serialization.SurrogateHashtable/*02000023*/::.ctor(int32) /* 0600014A */
-    IL_0008:  /* 7D   | (04)000045       */ stfld      class System.Runtime.Serialization.SurrogateHashtable/*02000023*/ System.Runtime.Serialization.SurrogateSelector/*02000021*/::_surrogates /* 04000045 */
+    IL_0003:  /* 73   | (06)00014A       */ newobj     instance void BalthasarIL.Serialization.SurrogateHashtable/*02000023*/::.ctor(int32) /* 0600014A */
+    IL_0008:  /* 7D   | (04)000045       */ stfld      class BalthasarIL.Serialization.SurrogateHashtable/*02000023*/ BalthasarIL.Serialization.SurrogateSelector/*02000021*/::_surrogates /* 04000045 */
     IL_000d:  /* 02   |                  */ ldarg.0
     IL_000e:  /* 28   | (0A)000011       */ call       instance void [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/::.ctor() /* 0A000011 */
     IL_0013:  /* 2A   |                  */ ret
   } // end of method SurrogateSelector::.ctor
 
-} // end of class System.Runtime.Serialization.SurrogateSelector
+} // end of class BalthasarIL.Serialization.SurrogateSelector
 
-.class /*02000022*/ private auto ansi sealed beforefieldinit System.Runtime.Serialization.SurrogateKey
+.class /*02000022*/ private auto ansi sealed beforefieldinit BalthasarIL.Serialization.SurrogateKey
        extends [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/
 {
   .field /*04000047*/ assembly initonly class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ _type
@@ -15041,10 +15041,10 @@
     IL_0001:  /* 28   | (0A)000011       */ call       instance void [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/::.ctor() /* 0A000011 */
     IL_0006:  /* 02   |                  */ ldarg.0
     IL_0007:  /* 03   |                  */ ldarg.1
-    IL_0008:  /* 7D   | (04)000047       */ stfld      class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ System.Runtime.Serialization.SurrogateKey/*02000022*/::_type /* 04000047 */
+    IL_0008:  /* 7D   | (04)000047       */ stfld      class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ BalthasarIL.Serialization.SurrogateKey/*02000022*/::_type /* 04000047 */
     IL_000d:  /* 02   |                  */ ldarg.0
     IL_000e:  /* 04   |                  */ ldarg.2
-    IL_000f:  /* 7D   | (04)000048       */ stfld      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ System.Runtime.Serialization.SurrogateKey/*02000022*/::_context /* 04000048 */
+    IL_000f:  /* 7D   | (04)000048       */ stfld      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ BalthasarIL.Serialization.SurrogateKey/*02000022*/::_context /* 04000048 */
     IL_0014:  /* 2A   |                  */ ret
   } // end of method SurrogateKey::.ctor
 
@@ -15056,14 +15056,14 @@
     // 代码大小       12 (0xc)
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)000047       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ System.Runtime.Serialization.SurrogateKey/*02000022*/::_type /* 04000047 */
+    IL_0001:  /* 7B   | (04)000047       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ BalthasarIL.Serialization.SurrogateKey/*02000022*/::_type /* 04000047 */
     IL_0006:  /* 6F   | (0A)00006C       */ callvirt   instance int32 [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/::GetHashCode() /* 0A00006C */
     IL_000b:  /* 2A   |                  */ ret
   } // end of method SurrogateKey::GetHashCode
 
-} // end of class System.Runtime.Serialization.SurrogateKey
+} // end of class BalthasarIL.Serialization.SurrogateKey
 
-.class /*02000023*/ private auto ansi sealed beforefieldinit System.Runtime.Serialization.SurrogateHashtable
+.class /*02000023*/ private auto ansi sealed beforefieldinit BalthasarIL.Serialization.SurrogateHashtable
        extends [System.Private.CoreLib/*23000001*/]System.Collections.Hashtable/*0100005E*/
 {
   .method /*0600014A*/ assembly hidebysig specialname rtspecialname 
@@ -15087,39 +15087,39 @@
     // 方法在 RVA 0x23640 处开始
     // 代码大小       96 (0x60)
     .maxstack  2
-    .locals /*11000034*/ (class System.Runtime.Serialization.SurrogateKey/*02000022*/ V_0,
-             class System.Runtime.Serialization.SurrogateKey/*02000022*/ V_1)
+    .locals /*11000034*/ (class BalthasarIL.Serialization.SurrogateKey/*02000022*/ V_0,
+             class BalthasarIL.Serialization.SurrogateKey/*02000022*/ V_1)
     IL_0000:  /* 04   |                  */ ldarg.2
-    IL_0001:  /* 74   | (02)000022       */ castclass  System.Runtime.Serialization.SurrogateKey/*02000022*/
+    IL_0001:  /* 74   | (02)000022       */ castclass  BalthasarIL.Serialization.SurrogateKey/*02000022*/
     IL_0006:  /* 0A   |                  */ stloc.0
     IL_0007:  /* 03   |                  */ ldarg.1
-    IL_0008:  /* 74   | (02)000022       */ castclass  System.Runtime.Serialization.SurrogateKey/*02000022*/
+    IL_0008:  /* 74   | (02)000022       */ castclass  BalthasarIL.Serialization.SurrogateKey/*02000022*/
     IL_000d:  /* 0B   |                  */ stloc.1
     IL_000e:  /* 07   |                  */ ldloc.1
-    IL_000f:  /* 7B   | (04)000047       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ System.Runtime.Serialization.SurrogateKey/*02000022*/::_type /* 04000047 */
+    IL_000f:  /* 7B   | (04)000047       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ BalthasarIL.Serialization.SurrogateKey/*02000022*/::_type /* 04000047 */
     IL_0014:  /* 06   |                  */ ldloc.0
-    IL_0015:  /* 7B   | (04)000047       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ System.Runtime.Serialization.SurrogateKey/*02000022*/::_type /* 04000047 */
+    IL_0015:  /* 7B   | (04)000047       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ BalthasarIL.Serialization.SurrogateKey/*02000022*/::_type /* 04000047 */
     IL_001a:  /* 28   | (0A)00001B       */ call       bool [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/::op_Equality(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
                                                                                                                                      class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/) /* 0A00001B */
     IL_001f:  /* 2C   | 3D               */ brfalse.s  IL_005e
 
     IL_0021:  /* 07   |                  */ ldloc.1
-    IL_0022:  /* 7C   | (04)000048       */ ldflda     valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ System.Runtime.Serialization.SurrogateKey/*02000022*/::_context /* 04000048 */
+    IL_0022:  /* 7C   | (04)000048       */ ldflda     valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ BalthasarIL.Serialization.SurrogateKey/*02000022*/::_context /* 04000048 */
     IL_0027:  /* 28   | (0A)00006D       */ call       instance valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContextStates/*0100003C*/ [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/::get_State() /* 0A00006D */
     IL_002c:  /* 06   |                  */ ldloc.0
-    IL_002d:  /* 7C   | (04)000048       */ ldflda     valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ System.Runtime.Serialization.SurrogateKey/*02000022*/::_context /* 04000048 */
+    IL_002d:  /* 7C   | (04)000048       */ ldflda     valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ BalthasarIL.Serialization.SurrogateKey/*02000022*/::_context /* 04000048 */
     IL_0032:  /* 28   | (0A)00006D       */ call       instance valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContextStates/*0100003C*/ [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/::get_State() /* 0A00006D */
     IL_0037:  /* 5F   |                  */ and
     IL_0038:  /* 06   |                  */ ldloc.0
-    IL_0039:  /* 7C   | (04)000048       */ ldflda     valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ System.Runtime.Serialization.SurrogateKey/*02000022*/::_context /* 04000048 */
+    IL_0039:  /* 7C   | (04)000048       */ ldflda     valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ BalthasarIL.Serialization.SurrogateKey/*02000022*/::_context /* 04000048 */
     IL_003e:  /* 28   | (0A)00006D       */ call       instance valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContextStates/*0100003C*/ [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/::get_State() /* 0A00006D */
     IL_0043:  /* 33   | 19               */ bne.un.s   IL_005e
 
     IL_0045:  /* 07   |                  */ ldloc.1
-    IL_0046:  /* 7C   | (04)000048       */ ldflda     valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ System.Runtime.Serialization.SurrogateKey/*02000022*/::_context /* 04000048 */
+    IL_0046:  /* 7C   | (04)000048       */ ldflda     valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ BalthasarIL.Serialization.SurrogateKey/*02000022*/::_context /* 04000048 */
     IL_004b:  /* 28   | (0A)0000A5       */ call       instance object [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/::get_Context() /* 0A0000A5 */
     IL_0050:  /* 06   |                  */ ldloc.0
-    IL_0051:  /* 7C   | (04)000048       */ ldflda     valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ System.Runtime.Serialization.SurrogateKey/*02000022*/::_context /* 04000048 */
+    IL_0051:  /* 7C   | (04)000048       */ ldflda     valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ BalthasarIL.Serialization.SurrogateKey/*02000022*/::_context /* 04000048 */
     IL_0056:  /* 28   | (0A)0000A5       */ call       instance object [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/::get_Context() /* 0A0000A5 */
     IL_005b:  /* FE01 |                  */ ceq
     IL_005d:  /* 2A   |                  */ ret
@@ -15128,9 +15128,9 @@
     IL_005f:  /* 2A   |                  */ ret
   } // end of method SurrogateHashtable::KeyEquals
 
-} // end of class System.Runtime.Serialization.SurrogateHashtable
+} // end of class BalthasarIL.Serialization.SurrogateHashtable
 
-.class /*02000024*/ private auto ansi sealed beforefieldinit System.Runtime.Serialization.ValueTypeFixupInfo
+.class /*02000024*/ private auto ansi sealed beforefieldinit BalthasarIL.Serialization.ValueTypeFixupInfo
        extends [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/
 {
   .field /*04000049*/ private initonly int64 _containerID
@@ -15171,13 +15171,13 @@
 
     IL_0029:  /* 02   |                  */ ldarg.0
     IL_002a:  /* 03   |                  */ ldarg.1
-    IL_002b:  /* 7D   | (04)000049       */ stfld      int64 System.Runtime.Serialization.ValueTypeFixupInfo/*02000024*/::_containerID /* 04000049 */
+    IL_002b:  /* 7D   | (04)000049       */ stfld      int64 BalthasarIL.Serialization.ValueTypeFixupInfo/*02000024*/::_containerID /* 04000049 */
     IL_0030:  /* 02   |                  */ ldarg.0
     IL_0031:  /* 04   |                  */ ldarg.2
-    IL_0032:  /* 7D   | (04)00004A       */ stfld      class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/ System.Runtime.Serialization.ValueTypeFixupInfo/*02000024*/::_parentField /* 0400004A */
+    IL_0032:  /* 7D   | (04)00004A       */ stfld      class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/ BalthasarIL.Serialization.ValueTypeFixupInfo/*02000024*/::_parentField /* 0400004A */
     IL_0037:  /* 02   |                  */ ldarg.0
     IL_0038:  /* 05   |                  */ ldarg.3
-    IL_0039:  /* 7D   | (04)00004B       */ stfld      int32[] System.Runtime.Serialization.ValueTypeFixupInfo/*02000024*/::_parentIndex /* 0400004B */
+    IL_0039:  /* 7D   | (04)00004B       */ stfld      int32[] BalthasarIL.Serialization.ValueTypeFixupInfo/*02000024*/::_parentIndex /* 0400004B */
     IL_003e:  /* 04   |                  */ ldarg.2
     IL_003f:  /* 14   |                  */ ldnull
     IL_0040:  /* 28   | (0A)000071       */ call       bool [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/::op_Inequality(class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/,
@@ -15205,13 +15205,13 @@
 
     IL_0070:  /* 02   |                  */ ldarg.0
     IL_0071:  /* 03   |                  */ ldarg.1
-    IL_0072:  /* 7D   | (04)000049       */ stfld      int64 System.Runtime.Serialization.ValueTypeFixupInfo/*02000024*/::_containerID /* 04000049 */
+    IL_0072:  /* 7D   | (04)000049       */ stfld      int64 BalthasarIL.Serialization.ValueTypeFixupInfo/*02000024*/::_containerID /* 04000049 */
     IL_0077:  /* 02   |                  */ ldarg.0
     IL_0078:  /* 04   |                  */ ldarg.2
-    IL_0079:  /* 7D   | (04)00004A       */ stfld      class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/ System.Runtime.Serialization.ValueTypeFixupInfo/*02000024*/::_parentField /* 0400004A */
+    IL_0079:  /* 7D   | (04)00004A       */ stfld      class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/ BalthasarIL.Serialization.ValueTypeFixupInfo/*02000024*/::_parentField /* 0400004A */
     IL_007e:  /* 02   |                  */ ldarg.0
     IL_007f:  /* 05   |                  */ ldarg.3
-    IL_0080:  /* 7D   | (04)00004B       */ stfld      int32[] System.Runtime.Serialization.ValueTypeFixupInfo/*02000024*/::_parentIndex /* 0400004B */
+    IL_0080:  /* 7D   | (04)00004B       */ stfld      int32[] BalthasarIL.Serialization.ValueTypeFixupInfo/*02000024*/::_parentIndex /* 0400004B */
     IL_0085:  /* 2A   |                  */ ret
   } // end of method ValueTypeFixupInfo::.ctor
 
@@ -15223,7 +15223,7 @@
     // 代码大小       7 (0x7)
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)000049       */ ldfld      int64 System.Runtime.Serialization.ValueTypeFixupInfo/*02000024*/::_containerID /* 04000049 */
+    IL_0001:  /* 7B   | (04)000049       */ ldfld      int64 BalthasarIL.Serialization.ValueTypeFixupInfo/*02000024*/::_containerID /* 04000049 */
     IL_0006:  /* 2A   |                  */ ret
   } // end of method ValueTypeFixupInfo::get_ContainerID
 
@@ -15236,7 +15236,7 @@
     // 代码大小       7 (0x7)
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)00004A       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/ System.Runtime.Serialization.ValueTypeFixupInfo/*02000024*/::_parentField /* 0400004A */
+    IL_0001:  /* 7B   | (04)00004A       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/ BalthasarIL.Serialization.ValueTypeFixupInfo/*02000024*/::_parentField /* 0400004A */
     IL_0006:  /* 2A   |                  */ ret
   } // end of method ValueTypeFixupInfo::get_ParentField
 
@@ -15248,25 +15248,25 @@
     // 代码大小       7 (0x7)
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)00004B       */ ldfld      int32[] System.Runtime.Serialization.ValueTypeFixupInfo/*02000024*/::_parentIndex /* 0400004B */
+    IL_0001:  /* 7B   | (04)00004B       */ ldfld      int32[] BalthasarIL.Serialization.ValueTypeFixupInfo/*02000024*/::_parentIndex /* 0400004B */
     IL_0006:  /* 2A   |                  */ ret
   } // end of method ValueTypeFixupInfo::get_ParentIndex
 
   .property /*17000071*/ instance int64 ContainerID()
   {
-    .get instance int64 System.Runtime.Serialization.ValueTypeFixupInfo/*02000024*/::get_ContainerID() /* 0600014D */
+    .get instance int64 BalthasarIL.Serialization.ValueTypeFixupInfo/*02000024*/::get_ContainerID() /* 0600014D */
   } // end of property ValueTypeFixupInfo::ContainerID
   .property /*17000072*/ instance class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/
           ParentField()
   {
-    .get instance class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/ System.Runtime.Serialization.ValueTypeFixupInfo/*02000024*/::get_ParentField() /* 0600014E */
+    .get instance class [System.Private.CoreLib/*23000001*/]System.Reflection.FieldInfo/*01000032*/ BalthasarIL.Serialization.ValueTypeFixupInfo/*02000024*/::get_ParentField() /* 0600014E */
   } // end of property ValueTypeFixupInfo::ParentField
   .property /*17000073*/ instance int32[]
           ParentIndex()
   {
-    .get instance int32[] System.Runtime.Serialization.ValueTypeFixupInfo/*02000024*/::get_ParentIndex() /* 0600014F */
+    .get instance int32[] BalthasarIL.Serialization.ValueTypeFixupInfo/*02000024*/::get_ParentIndex() /* 0600014F */
   } // end of property ValueTypeFixupInfo::ParentIndex
-} // end of class System.Runtime.Serialization.ValueTypeFixupInfo
+} // end of class BalthasarIL.Serialization.ValueTypeFixupInfo
 
 .class /*02000025*/ public auto ansi sealed BalthasarIL.BinaryFormatters.FormatterTypeStyle
        extends [System.Private.CoreLib/*23000001*/]System.Enum/*0100005F*/
@@ -16012,7 +16012,7 @@
     IL_000e:  /* 02   |                  */ ldarg.0
     IL_000f:  /* 02   |                  */ ldarg.0
     IL_0010:  /* 7B   | (04)000061       */ ldfld      string BalthasarIL.BinaryFormatters.Binary.BinaryAssemblyInfo/*0200002B*/::_assemblyString /* 04000061 */
-    IL_0015:  /* 28   | (06)000095       */ call       class [System.Private.CoreLib/*23000001*/]System.Reflection.Assembly/*01000035*/ System.Runtime.Serialization.FormatterServices/*0200000A*/::LoadAssemblyFromStringNoThrow(string) /* 06000095 */
+    IL_0015:  /* 28   | (06)000095       */ call       class [System.Private.CoreLib/*23000001*/]System.Reflection.Assembly/*01000035*/ BalthasarIL.Serialization.FormatterServices/*0200000A*/::LoadAssemblyFromStringNoThrow(string) /* 06000095 */
     IL_001a:  /* 7D   | (04)000062       */ stfld      class [System.Private.CoreLib/*23000001*/]System.Reflection.Assembly/*01000035*/ BalthasarIL.BinaryFormatters.Binary.BinaryAssemblyInfo/*0200002B*/::_assembly /* 04000062 */
     IL_001f:  /* 02   |                  */ ldarg.0
     IL_0020:  /* 7B   | (04)000062       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Reflection.Assembly/*01000035*/ BalthasarIL.BinaryFormatters.Binary.BinaryAssemblyInfo/*0200002B*/::_assembly /* 04000062 */
@@ -16026,7 +16026,7 @@
     IL_0033:  /* 7B   | (04)000061       */ ldfld      string BalthasarIL.BinaryFormatters.Binary.BinaryAssemblyInfo/*0200002B*/::_assemblyString /* 04000061 */
     IL_0038:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_003d:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_003d:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0042:  /* 7A   |                  */ throw
 
     IL_0043:  /* 02   |                  */ ldarg.0
@@ -16173,7 +16173,7 @@
     IL_00d2:  /* 50   |                  */ ldind.ref
     IL_00d3:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_00d8:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_00d8:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_00dd:  /* 7A   |                  */ throw
 
     IL_00de:  /* 16   |                  */ ldc.i4.0
@@ -16326,7 +16326,7 @@
     IL_0064:  /* 6F   | (0A)000069       */ callvirt   instance string [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/::ToString() /* 0A000069 */
     IL_0069:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_006e:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_006e:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0073:  /* 7A   |                  */ throw
 
     IL_0074:  /* 2A   |                  */ ret
@@ -16384,7 +16384,7 @@
     IL_0060:  /* 6F   | (0A)000069       */ callvirt   instance string [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/::ToString() /* 0A000069 */
     IL_0065:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_006a:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_006a:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_006f:  /* 7A   |                  */ throw
 
     IL_0070:  /* 04   |                  */ ldarg.2
@@ -16515,7 +16515,7 @@
     IL_00cd:  /* 6F   | (0A)000069       */ callvirt   instance string [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/::ToString() /* 0A000069 */
     IL_00d2:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_00d7:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_00d7:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_00dc:  /* 7A   |                  */ throw
 
     IL_00dd:  /* 2A   |                  */ ret
@@ -17846,7 +17846,7 @@
     IL_004b:  /* 03   |                  */ ldarg.1
     IL_004c:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_0051:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0051:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0056:  /* 7A   |                  */ throw
 
     IL_0057:  /* 02   |                  */ ldarg.0
@@ -18312,7 +18312,7 @@
     IL_0038:  /* 28   | (0A)0000AC       */ call       string [System.Private.CoreLib/*23000001*/]System.BitConverter/*01000064*/::ToString(uint8[]) /* 0A0000AC */
     IL_003d:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_0042:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0042:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0047:  /* 7A   |                  */ throw
 
     IL_0048:  /* 02   |                  */ ldarg.0
@@ -19899,7 +19899,7 @@
 
 .class /*0200004A*/ public auto ansi sealed beforefieldinit BalthasarIL.BinaryFormatters.Binary.BinaryFormatter
        extends [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/
-       implements System.Runtime.Serialization.IFormatter/*0200000D*/
+       implements BalthasarIL.Serialization.IFormatter/*0200000D*/
 {
   .custom /*0C000043:0A000018*/ instance void [System.Private.CoreLib/*23000001*/]System.Runtime.CompilerServices.NullableContextAttribute/*01000019*/::.ctor(uint8) /* 0A000018 */ = ( 01 00 02 00 00 ) 
   .custom /*0C000044:0A000010*/ instance void [System.Private.CoreLib/*23000001*/]System.Runtime.CompilerServices.NullableAttribute/*01000013*/::.ctor(uint8) /* 0A000010 */ = ( 01 00 00 00 00 ) 
@@ -19916,7 +19916,7 @@
                                                                                                                                                          6F 72 6D 61 74 22 68 74 74 70 73 3A 2F 2F 61 6B   // ormat"https://ak
                                                                                                                                                          61 2E 6D 73 2F 64 6F 74 6E 65 74 2D 77 61 72 6E   // a.ms/dotnet-warn
                                                                                                                                                          69 6E 67 73 2F 7B 30 7D )                         // ings/{0}
-  .interfaceimpl type System.Runtime.Serialization.IFormatter/*0200000D*/
+  .interfaceimpl type BalthasarIL.Serialization.IFormatter/*0200000D*/
   .custom /*0C000033:0A000010*/ instance void [System.Private.CoreLib/*23000001*/]System.Runtime.CompilerServices.NullableAttribute/*01000013*/::.ctor(uint8) /* 0A000010 */ = ( 01 00 00 00 00 ) 
   .class /*0200004B*/ auto ansi serializable sealed nested private beforefieldinit '<>c'
          extends [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/
@@ -19960,11 +19960,11 @@
                bool V_1)
       IL_0000:  /* 03   |                  */ ldarg.1
       IL_0001:  /* 12   | 01               */ ldloca.s   V_1
-      IL_0003:  /* 28   | (06)000096       */ call       string System.Runtime.Serialization.FormatterServices/*0200000A*/::GetClrAssemblyName(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
+      IL_0003:  /* 28   | (06)000096       */ call       string BalthasarIL.Serialization.FormatterServices/*0200000A*/::GetClrAssemblyName(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
                                                                                                                                                bool&) /* 06000096 */
       IL_0008:  /* 0A   |                  */ stloc.0
       IL_0009:  /* 03   |                  */ ldarg.1
-      IL_000a:  /* 28   | (06)000097       */ call       string System.Runtime.Serialization.FormatterServices/*0200000A*/::GetClrTypeFullName(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/) /* 06000097 */
+      IL_000a:  /* 28   | (06)000097       */ call       string BalthasarIL.Serialization.FormatterServices/*0200000A*/::GetClrTypeFullName(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/) /* 06000097 */
       IL_000f:  /* 06   |                  */ ldloc.0
       IL_0010:  /* 07   |                  */ ldloc.1
       IL_0011:  /* 73   | (06)00022D       */ newobj     instance void BalthasarIL.BinaryFormatters.Binary.TypeInformation/*02000054*/::.ctor(string,
@@ -19976,9 +19976,9 @@
   } // end of class '<>c'
 
   .field /*0400013F*/ private static initonly class [System.Collections.Concurrent/*23000003*/]System.Collections.Concurrent.ConcurrentDictionary`2/*01000030*/<class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,class BalthasarIL.BinaryFormatters.Binary.TypeInformation/*02000054*/> s_typeNameCache
-  .field /*04000140*/ assembly class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ _surrogates
+  .field /*04000140*/ assembly class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ _surrogates
   .field /*04000141*/ assembly valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ _context
-  .field /*04000142*/ assembly class System.Runtime.Serialization.SerializationBinder/*0200001B*/ _binder
+  .field /*04000142*/ assembly class BalthasarIL.Serialization.SerializationBinder/*0200001B*/ _binder
   .field /*04000143*/ assembly valuetype BalthasarIL.BinaryFormatters.FormatterTypeStyle/*02000025*/ _typeFormat
   .field /*04000144*/ assembly valuetype BalthasarIL.BinaryFormatters.FormatterAssemblyStyle/*02000026*/ _assemblyFormat
   .field /*04000145*/ assembly valuetype BalthasarIL.BinaryFormatters.TypeFilterLevel/*02000027*/ _securityLevel
@@ -20062,7 +20062,7 @@
   } // end of method BinaryFormatter::set_FilterLevel
 
   .method /*060001BC*/ public hidebysig newslot specialname virtual final 
-          instance class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ 
+          instance class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ 
           get_SurrogateSelector() cil managed
   // SIG: 20 00 12 3C
   {
@@ -20070,12 +20070,12 @@
     // 代码大小       7 (0x7)
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)000140       */ ldfld      class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.BinaryFormatter/*0200004A*/::_surrogates /* 04000140 */
+    IL_0001:  /* 7B   | (04)000140       */ ldfld      class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.BinaryFormatter/*0200004A*/::_surrogates /* 04000140 */
     IL_0006:  /* 2A   |                  */ ret
   } // end of method BinaryFormatter::get_SurrogateSelector
 
   .method /*060001BD*/ public hidebysig newslot specialname virtual final 
-          instance void  set_SurrogateSelector(class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ 'value') cil managed
+          instance void  set_SurrogateSelector(class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ 'value') cil managed
   // SIG: 20 01 01 12 3C
   {
     // 方法在 RVA 0x254d8 处开始
@@ -20083,12 +20083,12 @@
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
     IL_0001:  /* 03   |                  */ ldarg.1
-    IL_0002:  /* 7D   | (04)000140       */ stfld      class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.BinaryFormatter/*0200004A*/::_surrogates /* 04000140 */
+    IL_0002:  /* 7D   | (04)000140       */ stfld      class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.BinaryFormatter/*0200004A*/::_surrogates /* 04000140 */
     IL_0007:  /* 2A   |                  */ ret
   } // end of method BinaryFormatter::set_SurrogateSelector
 
   .method /*060001BE*/ public hidebysig newslot specialname virtual final 
-          instance class System.Runtime.Serialization.SerializationBinder/*0200001B*/ 
+          instance class BalthasarIL.Serialization.SerializationBinder/*0200001B*/ 
           get_Binder() cil managed
   // SIG: 20 00 12 6C
   {
@@ -20096,12 +20096,12 @@
     // 代码大小       7 (0x7)
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)000142       */ ldfld      class System.Runtime.Serialization.SerializationBinder/*0200001B*/ BalthasarIL.BinaryFormatters.Binary.BinaryFormatter/*0200004A*/::_binder /* 04000142 */
+    IL_0001:  /* 7B   | (04)000142       */ ldfld      class BalthasarIL.Serialization.SerializationBinder/*0200001B*/ BalthasarIL.BinaryFormatters.Binary.BinaryFormatter/*0200004A*/::_binder /* 04000142 */
     IL_0006:  /* 2A   |                  */ ret
   } // end of method BinaryFormatter::get_Binder
 
   .method /*060001BF*/ public hidebysig newslot specialname virtual final 
-          instance void  set_Binder(class System.Runtime.Serialization.SerializationBinder/*0200001B*/ 'value') cil managed
+          instance void  set_Binder(class BalthasarIL.Serialization.SerializationBinder/*0200001B*/ 'value') cil managed
   // SIG: 20 01 01 12 6C
   {
     // 方法在 RVA 0x254ec 处开始
@@ -20109,7 +20109,7 @@
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
     IL_0001:  /* 03   |                  */ ldarg.1
-    IL_0002:  /* 7D   | (04)000142       */ stfld      class System.Runtime.Serialization.SerializationBinder/*0200001B*/ BalthasarIL.BinaryFormatters.Binary.BinaryFormatter/*0200004A*/::_binder /* 04000142 */
+    IL_0002:  /* 7D   | (04)000142       */ stfld      class BalthasarIL.Serialization.SerializationBinder/*0200001B*/ BalthasarIL.BinaryFormatters.Binary.BinaryFormatter/*0200004A*/::_binder /* 04000142 */
     IL_0007:  /* 2A   |                  */ ret
   } // end of method BinaryFormatter::set_Binder
 
@@ -20150,13 +20150,13 @@
     IL_0001:  /* 14   |                  */ ldnull
     IL_0002:  /* 20   | FF000000         */ ldc.i4     0xff
     IL_0007:  /* 73   | (0A)00004C       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/::.ctor(valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContextStates/*0100003C*/) /* 0A00004C */
-    IL_000c:  /* 28   | (06)0001C3       */ call       instance void BalthasarIL.BinaryFormatters.Binary.BinaryFormatter/*0200004A*/::.ctor(class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/,
+    IL_000c:  /* 28   | (06)0001C3       */ call       instance void BalthasarIL.BinaryFormatters.Binary.BinaryFormatter/*0200004A*/::.ctor(class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/,
                                                                                                                                                        valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/) /* 060001C3 */
     IL_0011:  /* 2A   |                  */ ret
   } // end of method BinaryFormatter::.ctor
 
   .method /*060001C3*/ public hidebysig specialname rtspecialname 
-          instance void  .ctor(class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ selector,
+          instance void  .ctor(class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ selector,
                                valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ context) cil managed
   // SIG: 20 02 01 12 3C 11 41
   {
@@ -20173,7 +20173,7 @@
     IL_000f:  /* 28   | (0A)000011       */ call       instance void [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/::.ctor() /* 0A000011 */
     IL_0014:  /* 02   |                  */ ldarg.0
     IL_0015:  /* 03   |                  */ ldarg.1
-    IL_0016:  /* 7D   | (04)000140       */ stfld      class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.BinaryFormatter/*0200004A*/::_surrogates /* 04000140 */
+    IL_0016:  /* 7D   | (04)000140       */ stfld      class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.BinaryFormatter/*0200004A*/::_surrogates /* 04000140 */
     IL_001b:  /* 02   |                  */ ldarg.0
     IL_001c:  /* 04   |                  */ ldarg.2
     IL_001d:  /* 7D   | (04)000141       */ stfld      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ BalthasarIL.BinaryFormatters.Binary.BinaryFormatter/*0200004A*/::_context /* 04000141 */
@@ -20264,7 +20264,7 @@
     IL_002b:  /* 2D   | 0B               */ brtrue.s   IL_0038
 
     IL_002d:  /* 28   | (06)00002B       */ call       string System.SR/*02000004*/::get_Serialization_Stream() /* 0600002B */
-    IL_0032:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0032:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0037:  /* 7A   |                  */ throw
 
     IL_0038:  /* 73   | (06)0002C1       */ newobj     instance void BalthasarIL.BinaryFormatters.Binary.InternalFE/*02000061*/::.ctor() /* 060002C1 */
@@ -20286,17 +20286,17 @@
     IL_0068:  /* 0A   |                  */ stloc.0
     IL_0069:  /* 03   |                  */ ldarg.1
     IL_006a:  /* 02   |                  */ ldarg.0
-    IL_006b:  /* 7B   | (04)000140       */ ldfld      class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.BinaryFormatter/*0200004A*/::_surrogates /* 04000140 */
+    IL_006b:  /* 7B   | (04)000140       */ ldfld      class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.BinaryFormatter/*0200004A*/::_surrogates /* 04000140 */
     IL_0070:  /* 02   |                  */ ldarg.0
     IL_0071:  /* 7B   | (04)000141       */ ldfld      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ BalthasarIL.BinaryFormatters.Binary.BinaryFormatter/*0200004A*/::_context /* 04000141 */
     IL_0076:  /* 06   |                  */ ldloc.0
     IL_0077:  /* 02   |                  */ ldarg.0
-    IL_0078:  /* 7B   | (04)000142       */ ldfld      class System.Runtime.Serialization.SerializationBinder/*0200001B*/ BalthasarIL.BinaryFormatters.Binary.BinaryFormatter/*0200004A*/::_binder /* 04000142 */
+    IL_0078:  /* 7B   | (04)000142       */ ldfld      class BalthasarIL.Serialization.SerializationBinder/*0200001B*/ BalthasarIL.BinaryFormatters.Binary.BinaryFormatter/*0200004A*/::_binder /* 04000142 */
     IL_007d:  /* 73   | (06)000234       */ newobj     instance void BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::.ctor(class [System.Private.CoreLib/*23000001*/]System.IO.Stream/*01000015*/,
-                                                                                                                                                    class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/,
+                                                                                                                                                    class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/,
                                                                                                                                                     valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/,
                                                                                                                                                     class BalthasarIL.BinaryFormatters.Binary.InternalFE/*02000061*/,
-                                                                                                                                                    class System.Runtime.Serialization.SerializationBinder/*0200001B*/) /* 06000234 */
+                                                                                                                                                    class BalthasarIL.Serialization.SerializationBinder/*0200001B*/) /* 06000234 */
     IL_0082:  /* 25   |                  */ dup
     IL_0083:  /* 02   |                  */ ldarg.0
     IL_0084:  /* 7B   | (04)000146       */ ldfld      object[] BalthasarIL.BinaryFormatters.Binary.BinaryFormatter/*0200004A*/::_crossAppDomainArray /* 04000146 */
@@ -20320,7 +20320,7 @@
         IL_00a9:  /* DE   | 1D               */ leave.s    IL_00c8
 
       }  // end .try
-      catch [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/ 
+      catch [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/ 
       {
         IL_00ab:  /* 26   |                  */ pop
         IL_00ac:  /* FE1A |                  */ rethrow
@@ -20331,7 +20331,7 @@
         IL_00ae:  /* 13   | 04               */ stloc.s    V_4
         IL_00b0:  /* 28   | (06)00002A       */ call       string System.SR/*02000004*/::get_Serialization_CorruptedStream() /* 0600002A */
         IL_00b5:  /* 11   | 04               */ ldloc.s    V_4
-        IL_00b7:  /* 73   | (0A)00007D       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string,
+        IL_00b7:  /* 73   | (0A)00007D       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string,
                                                                                                                                                                                     class [System.Private.CoreLib/*23000001*/]System.Exception/*0100003F*/) /* 0A00007D */
         IL_00bc:  /* 7A   |                  */ throw
 
@@ -20406,16 +20406,16 @@
       IL_0042:  /* 7E   | (04)000149       */ ldsfld     class BalthasarIL.BinaryFormatters.Binary.BinaryFormatterEventSource/*0200004C*/ BalthasarIL.BinaryFormatters.Binary.BinaryFormatterEventSource/*0200004C*/::Log /* 04000149 */
       IL_0047:  /* 6F   | (06)0001CC       */ callvirt   instance void BalthasarIL.BinaryFormatters.Binary.BinaryFormatterEventSource/*0200004C*/::SerializationStart() /* 060001CC */
       IL_004c:  /* 02   |                  */ ldarg.0
-      IL_004d:  /* 7B   | (04)000140       */ ldfld      class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.BinaryFormatter/*0200004A*/::_surrogates /* 04000140 */
+      IL_004d:  /* 7B   | (04)000140       */ ldfld      class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.BinaryFormatter/*0200004A*/::_surrogates /* 04000140 */
       IL_0052:  /* 02   |                  */ ldarg.0
       IL_0053:  /* 7B   | (04)000141       */ ldfld      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ BalthasarIL.BinaryFormatters.Binary.BinaryFormatter/*0200004A*/::_context /* 04000141 */
       IL_0058:  /* 06   |                  */ ldloc.0
       IL_0059:  /* 02   |                  */ ldarg.0
-      IL_005a:  /* 7B   | (04)000142       */ ldfld      class System.Runtime.Serialization.SerializationBinder/*0200001B*/ BalthasarIL.BinaryFormatters.Binary.BinaryFormatter/*0200004A*/::_binder /* 04000142 */
-      IL_005f:  /* 73   | (06)000255       */ newobj     instance void BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::.ctor(class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/,
+      IL_005a:  /* 7B   | (04)000142       */ ldfld      class BalthasarIL.Serialization.SerializationBinder/*0200001B*/ BalthasarIL.BinaryFormatters.Binary.BinaryFormatter/*0200004A*/::_binder /* 04000142 */
+      IL_005f:  /* 73   | (06)000255       */ newobj     instance void BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::.ctor(class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/,
                                                                                                                                                       valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/,
                                                                                                                                                       class BalthasarIL.BinaryFormatters.Binary.InternalFE/*02000061*/,
-                                                                                                                                                      class System.Runtime.Serialization.SerializationBinder/*0200001B*/) /* 06000255 */
+                                                                                                                                                      class BalthasarIL.Serialization.SerializationBinder/*0200001B*/) /* 06000255 */
       IL_0064:  /* 0B   |                  */ stloc.1
       IL_0065:  /* 03   |                  */ ldarg.1
       IL_0066:  /* 07   |                  */ ldloc.1
@@ -20477,17 +20477,17 @@
     .get instance valuetype BalthasarIL.BinaryFormatters.TypeFilterLevel/*02000027*/ BalthasarIL.BinaryFormatters.Binary.BinaryFormatter/*0200004A*/::get_FilterLevel() /* 060001BA */
     .set instance void BalthasarIL.BinaryFormatters.Binary.BinaryFormatter/*0200004A*/::set_FilterLevel(valuetype BalthasarIL.BinaryFormatters.TypeFilterLevel/*02000027*/) /* 060001BB */
   } // end of property BinaryFormatter::FilterLevel
-  .property /*17000079*/ instance class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/
+  .property /*17000079*/ instance class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/
           SurrogateSelector()
   {
-    .get instance class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.BinaryFormatter/*0200004A*/::get_SurrogateSelector() /* 060001BC */
-    .set instance void BalthasarIL.BinaryFormatters.Binary.BinaryFormatter/*0200004A*/::set_SurrogateSelector(class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/) /* 060001BD */
+    .get instance class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.BinaryFormatter/*0200004A*/::get_SurrogateSelector() /* 060001BC */
+    .set instance void BalthasarIL.BinaryFormatters.Binary.BinaryFormatter/*0200004A*/::set_SurrogateSelector(class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/) /* 060001BD */
   } // end of property BinaryFormatter::SurrogateSelector
-  .property /*1700007A*/ instance class System.Runtime.Serialization.SerializationBinder/*0200001B*/
+  .property /*1700007A*/ instance class BalthasarIL.Serialization.SerializationBinder/*0200001B*/
           Binder()
   {
-    .get instance class System.Runtime.Serialization.SerializationBinder/*0200001B*/ BalthasarIL.BinaryFormatters.Binary.BinaryFormatter/*0200004A*/::get_Binder() /* 060001BE */
-    .set instance void BalthasarIL.BinaryFormatters.Binary.BinaryFormatter/*0200004A*/::set_Binder(class System.Runtime.Serialization.SerializationBinder/*0200001B*/) /* 060001BF */
+    .get instance class BalthasarIL.Serialization.SerializationBinder/*0200001B*/ BalthasarIL.BinaryFormatters.Binary.BinaryFormatter/*0200004A*/::get_Binder() /* 060001BE */
+    .set instance void BalthasarIL.BinaryFormatters.Binary.BinaryFormatter/*0200004A*/::set_Binder(class BalthasarIL.Serialization.SerializationBinder/*0200001B*/) /* 060001BF */
   } // end of property BinaryFormatter::Binder
   .property /*1700007B*/ instance valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/
           Context()
@@ -22594,7 +22594,7 @@
     IL_015e:  /* 6F   | (0A)000069       */ callvirt   instance string [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/::ToString() /* 0A000069 */
     IL_0163:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_0168:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0168:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_016d:  /* 7A   |                  */ throw
   } // end of method BinaryFormatterWriter::WriteValue
 
@@ -22613,7 +22613,7 @@
   .field /*04000167*/ assembly class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationInfo/*01000044*/ _si
   .field /*04000168*/ assembly class BalthasarIL.BinaryFormatters.Binary.SerObjectInfoCache/*02000053*/ _cache
   .field /*04000169*/ assembly object[] _memberData
-  .field /*0400016A*/ assembly class System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ _serializationSurrogate
+  .field /*0400016A*/ assembly class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ _serializationSurrogate
   .field /*0400016B*/ assembly valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ _context
   .field /*0400016C*/ assembly class BalthasarIL.BinaryFormatters.Binary.SerObjectInfoInit/*02000052*/ _serObjectInfoInit
   .field /*0400016D*/ assembly int64 _objectId
@@ -22698,12 +22698,12 @@
   .method /*06000207*/ assembly hidebysig static 
           class BalthasarIL.BinaryFormatters.Binary.WriteObjectInfo/*02000050*/ 
           Serialize(object obj,
-                    class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ surrogateSelector,
+                    class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ surrogateSelector,
                     valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ context,
                     class BalthasarIL.BinaryFormatters.Binary.SerObjectInfoInit/*02000052*/ serObjectInfoInit,
                     class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.IFormatterConverter/*0100002D*/ converter,
                     class BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/ objectWriter,
-                    class System.Runtime.Serialization.SerializationBinder/*0200001B*/ binder) cil managed
+                    class BalthasarIL.Serialization.SerializationBinder/*0200001B*/ binder) cil managed
   // SIG: 00 07 12 81 40 1C 12 3C 11 41 12 81 48 12 80 B5 12 81 64 12 6C
   {
     .custom /*0C0000B4:0A000014*/ instance void [System.Private.CoreLib/*23000001*/]System.Diagnostics.CodeAnalysis.RequiresUnreferencedCodeAttribute/*01000017*/::.ctor(string) /* 0A000014 */ = ( 01 00 36 49 74 20 69 73 6E 27 74 20 70 6F 73 73   // ..6It isn't poss
@@ -22726,24 +22726,24 @@
     IL_000e:  /* 0E   | 05               */ ldarg.s    objectWriter
     IL_0010:  /* 0E   | 06               */ ldarg.s    binder
     IL_0012:  /* 6F   | (06)000208       */ callvirt   instance void BalthasarIL.BinaryFormatters.Binary.WriteObjectInfo/*02000050*/::InitSerialize(object,
-                                                                                                                                                               class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/,
+                                                                                                                                                               class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/,
                                                                                                                                                                valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/,
                                                                                                                                                                class BalthasarIL.BinaryFormatters.Binary.SerObjectInfoInit/*02000052*/,
                                                                                                                                                                class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.IFormatterConverter/*0100002D*/,
                                                                                                                                                                class BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/,
-                                                                                                                                                               class System.Runtime.Serialization.SerializationBinder/*0200001B*/) /* 06000208 */
+                                                                                                                                                               class BalthasarIL.Serialization.SerializationBinder/*0200001B*/) /* 06000208 */
     IL_0017:  /* 06   |                  */ ldloc.0
     IL_0018:  /* 2A   |                  */ ret
   } // end of method WriteObjectInfo::Serialize
 
   .method /*06000208*/ assembly hidebysig 
           instance void  InitSerialize(object obj,
-                                       class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ surrogateSelector,
+                                       class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ surrogateSelector,
                                        valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ context,
                                        class BalthasarIL.BinaryFormatters.Binary.SerObjectInfoInit/*02000052*/ serObjectInfoInit,
                                        class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.IFormatterConverter/*0100002D*/ converter,
                                        class BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/ objectWriter,
-                                       class System.Runtime.Serialization.SerializationBinder/*0200001B*/ binder) cil managed
+                                       class BalthasarIL.Serialization.SerializationBinder/*0200001B*/ binder) cil managed
   // SIG: 20 07 01 1C 12 3C 11 41 12 81 48 12 80 B5 12 81 64 12 6C
   {
     .custom /*0C0000B5:0A000014*/ instance void [System.Private.CoreLib/*23000001*/]System.Diagnostics.CodeAnalysis.RequiresUnreferencedCodeAttribute/*01000017*/::.ctor(string) /* 0A000014 */ = ( 01 00 36 49 74 20 69 73 6E 27 74 20 70 6F 73 73   // ..6It isn't poss
@@ -22753,8 +22753,8 @@
     // 方法在 RVA 0x4a31c 处开始
     // 代码大小       330 (0x14a)
     .maxstack  5
-    .locals /*1100004E*/ (class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ V_0,
-             class System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ V_1)
+    .locals /*1100004E*/ (class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ V_0,
+             class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ V_1)
     IL_0000:  /* 02   |                  */ ldarg.0
     IL_0001:  /* 05   |                  */ ldarg.3
     IL_0002:  /* 7D   | (04)00016B       */ stfld      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ BalthasarIL.BinaryFormatters.Binary.WriteObjectInfo/*02000050*/::_context /* 0400016B */
@@ -22782,11 +22782,11 @@
 
     IL_003d:  /* 02   |                  */ ldarg.0
     IL_003e:  /* 0E   | 07               */ ldarg.s    binder
-    IL_0040:  /* 28   | (06)000211       */ call       instance void BalthasarIL.BinaryFormatters.Binary.WriteObjectInfo/*02000050*/::InvokeSerializationBinder(class System.Runtime.Serialization.SerializationBinder/*0200001B*/) /* 06000211 */
+    IL_0040:  /* 28   | (06)000211       */ call       instance void BalthasarIL.BinaryFormatters.Binary.WriteObjectInfo/*02000050*/::InvokeSerializationBinder(class BalthasarIL.Serialization.SerializationBinder/*0200001B*/) /* 06000211 */
     IL_0045:  /* 0E   | 06               */ ldarg.s    objectWriter
-    IL_0047:  /* 6F   | (06)000257       */ callvirt   instance class System.Runtime.Serialization.SerializationObjectManager/*02000020*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::get_ObjectManager() /* 06000257 */
+    IL_0047:  /* 6F   | (06)000257       */ callvirt   instance class BalthasarIL.Serialization.SerializationObjectManager/*02000020*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::get_ObjectManager() /* 06000257 */
     IL_004c:  /* 03   |                  */ ldarg.1
-    IL_004d:  /* 6F   | (06)00013E       */ callvirt   instance void System.Runtime.Serialization.SerializationObjectManager/*02000020*/::RegisterObject(object) /* 0600013E */
+    IL_004d:  /* 6F   | (06)00013E       */ callvirt   instance void BalthasarIL.Serialization.SerializationObjectManager/*02000020*/::RegisterObject(object) /* 0600013E */
     IL_0052:  /* 04   |                  */ ldarg.2
     IL_0053:  /* 2C   | 54               */ brfalse.s  IL_00a9
 
@@ -22796,12 +22796,12 @@
     IL_0058:  /* 7B   | (04)000163       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ BalthasarIL.BinaryFormatters.Binary.WriteObjectInfo/*02000050*/::_objectType /* 04000163 */
     IL_005d:  /* 05   |                  */ ldarg.3
     IL_005e:  /* 12   | 00               */ ldloca.s   V_0
-    IL_0060:  /* 6F   | (06)0000AC       */ callvirt   instance class System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ System.Runtime.Serialization.ISurrogateSelector/*0200000F*/::GetSurrogate(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
+    IL_0060:  /* 6F   | (06)0000AC       */ callvirt   instance class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/::GetSurrogate(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
                                                                                                                                                                                                                  valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/,
-                                                                                                                                                                                                                 class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/&) /* 060000AC */
+                                                                                                                                                                                                                 class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/&) /* 060000AC */
     IL_0065:  /* 25   |                  */ dup
     IL_0066:  /* 0B   |                  */ stloc.1
-    IL_0067:  /* 7D   | (04)00016A       */ stfld      class System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.BinaryFormatters.Binary.WriteObjectInfo/*02000050*/::_serializationSurrogate /* 0400016A */
+    IL_0067:  /* 7D   | (04)00016A       */ stfld      class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.BinaryFormatters.Binary.WriteObjectInfo/*02000050*/::_serializationSurrogate /* 0400016A */
     IL_006c:  /* 07   |                  */ ldloc.1
     IL_006d:  /* 2C   | 3A               */ brfalse.s  IL_00a9
 
@@ -22818,12 +22818,12 @@
     IL_008d:  /* 2D   | 13               */ brtrue.s   IL_00a2
 
     IL_008f:  /* 02   |                  */ ldarg.0
-    IL_0090:  /* 7B   | (04)00016A       */ ldfld      class System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.BinaryFormatters.Binary.WriteObjectInfo/*02000050*/::_serializationSurrogate /* 0400016A */
+    IL_0090:  /* 7B   | (04)00016A       */ ldfld      class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.BinaryFormatters.Binary.WriteObjectInfo/*02000050*/::_serializationSurrogate /* 0400016A */
     IL_0095:  /* 03   |                  */ ldarg.1
     IL_0096:  /* 02   |                  */ ldarg.0
     IL_0097:  /* 7B   | (04)000167       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationInfo/*01000044*/ BalthasarIL.BinaryFormatters.Binary.WriteObjectInfo/*02000050*/::_si /* 04000167 */
     IL_009c:  /* 05   |                  */ ldarg.3
-    IL_009d:  /* 6F   | (06)0000A9       */ callvirt   instance void System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/::GetObjectData(object,
+    IL_009d:  /* 6F   | (06)0000A9       */ callvirt   instance void BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/::GetObjectData(object,
                                                                                                                                                      class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationInfo/*01000044*/,
                                                                                                                                                      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/) /* 060000A9 */
     IL_00a2:  /* 02   |                  */ ldarg.0
@@ -22926,11 +22926,11 @@
   .method /*06000209*/ assembly hidebysig static 
           class BalthasarIL.BinaryFormatters.Binary.WriteObjectInfo/*02000050*/ 
           Serialize(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ objectType,
-                    class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ surrogateSelector,
+                    class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ surrogateSelector,
                     valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ context,
                     class BalthasarIL.BinaryFormatters.Binary.SerObjectInfoInit/*02000052*/ serObjectInfoInit,
                     class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.IFormatterConverter/*0100002D*/ converter,
-                    class System.Runtime.Serialization.SerializationBinder/*0200001B*/ binder) cil managed
+                    class BalthasarIL.Serialization.SerializationBinder/*0200001B*/ binder) cil managed
   // SIG: 00 06 12 81 40 12 1D 12 3C 11 41 12 81 48 12 80 B5 12 6C
   {
     .param [1]/*0800027F*/ 
@@ -22950,22 +22950,22 @@
     IL_000c:  /* 0E   | 04               */ ldarg.s    converter
     IL_000e:  /* 0E   | 05               */ ldarg.s    binder
     IL_0010:  /* 6F   | (06)00020A       */ callvirt   instance void BalthasarIL.BinaryFormatters.Binary.WriteObjectInfo/*02000050*/::InitSerialize(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
-                                                                                                                                                               class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/,
+                                                                                                                                                               class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/,
                                                                                                                                                                valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/,
                                                                                                                                                                class BalthasarIL.BinaryFormatters.Binary.SerObjectInfoInit/*02000052*/,
                                                                                                                                                                class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.IFormatterConverter/*0100002D*/,
-                                                                                                                                                               class System.Runtime.Serialization.SerializationBinder/*0200001B*/) /* 0600020A */
+                                                                                                                                                               class BalthasarIL.Serialization.SerializationBinder/*0200001B*/) /* 0600020A */
     IL_0015:  /* 06   |                  */ ldloc.0
     IL_0016:  /* 2A   |                  */ ret
   } // end of method WriteObjectInfo::Serialize
 
   .method /*0600020A*/ assembly hidebysig 
           instance void  InitSerialize(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ objectType,
-                                       class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ surrogateSelector,
+                                       class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ surrogateSelector,
                                        valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ context,
                                        class BalthasarIL.BinaryFormatters.Binary.SerObjectInfoInit/*02000052*/ serObjectInfoInit,
                                        class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.IFormatterConverter/*0100002D*/ converter,
-                                       class System.Runtime.Serialization.SerializationBinder/*0200001B*/ binder) cil managed
+                                       class BalthasarIL.Serialization.SerializationBinder/*0200001B*/ binder) cil managed
   // SIG: 20 06 01 12 1D 12 3C 11 41 12 81 48 12 80 B5 12 6C
   {
     .param [1]/*08000285*/ 
@@ -22973,7 +22973,7 @@
     // 方法在 RVA 0x264e8 处开始
     // 代码大小       212 (0xd4)
     .maxstack  5
-    .locals /*1100004F*/ (class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ V_0)
+    .locals /*1100004F*/ (class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ V_0)
     IL_0000:  /* 02   |                  */ ldarg.0
     IL_0001:  /* 03   |                  */ ldarg.1
     IL_0002:  /* 7D   | (04)000163       */ stfld      class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ BalthasarIL.BinaryFormatters.Binary.WriteObjectInfo/*02000050*/::_objectType /* 04000163 */
@@ -22993,7 +22993,7 @@
 
     IL_0025:  /* 02   |                  */ ldarg.0
     IL_0026:  /* 0E   | 06               */ ldarg.s    binder
-    IL_0028:  /* 28   | (06)000211       */ call       instance void BalthasarIL.BinaryFormatters.Binary.WriteObjectInfo/*02000050*/::InvokeSerializationBinder(class System.Runtime.Serialization.SerializationBinder/*0200001B*/) /* 06000211 */
+    IL_0028:  /* 28   | (06)000211       */ call       instance void BalthasarIL.BinaryFormatters.Binary.WriteObjectInfo/*02000050*/::InvokeSerializationBinder(class BalthasarIL.Serialization.SerializationBinder/*0200001B*/) /* 06000211 */
     IL_002d:  /* 04   |                  */ ldarg.2
     IL_002e:  /* 2C   | 10               */ brfalse.s  IL_0040
 
@@ -23002,12 +23002,12 @@
     IL_0032:  /* 03   |                  */ ldarg.1
     IL_0033:  /* 05   |                  */ ldarg.3
     IL_0034:  /* 12   | 00               */ ldloca.s   V_0
-    IL_0036:  /* 6F   | (06)0000AC       */ callvirt   instance class System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ System.Runtime.Serialization.ISurrogateSelector/*0200000F*/::GetSurrogate(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
+    IL_0036:  /* 6F   | (06)0000AC       */ callvirt   instance class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/::GetSurrogate(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
                                                                                                                                                                                                                  valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/,
-                                                                                                                                                                                                                 class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/&) /* 060000AC */
-    IL_003b:  /* 7D   | (04)00016A       */ stfld      class System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.BinaryFormatters.Binary.WriteObjectInfo/*02000050*/::_serializationSurrogate /* 0400016A */
+                                                                                                                                                                                                                 class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/&) /* 060000AC */
+    IL_003b:  /* 7D   | (04)00016A       */ stfld      class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.BinaryFormatters.Binary.WriteObjectInfo/*02000050*/::_serializationSurrogate /* 0400016A */
     IL_0040:  /* 02   |                  */ ldarg.0
-    IL_0041:  /* 7B   | (04)00016A       */ ldfld      class System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.BinaryFormatters.Binary.WriteObjectInfo/*02000050*/::_serializationSurrogate /* 0400016A */
+    IL_0041:  /* 7B   | (04)00016A       */ ldfld      class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.BinaryFormatters.Binary.WriteObjectInfo/*02000050*/::_serializationSurrogate /* 0400016A */
     IL_0046:  /* 2C   | 23               */ brfalse.s  IL_006b
 
     IL_0048:  /* 02   |                  */ ldarg.0
@@ -23285,7 +23285,7 @@
     IL_0039:  /* 7B   | (04)000163       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ BalthasarIL.BinaryFormatters.Binary.WriteObjectInfo/*02000050*/::_objectType /* 04000163 */
     IL_003e:  /* 02   |                  */ ldarg.0
     IL_003f:  /* 7B   | (04)00016B       */ ldfld      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ BalthasarIL.BinaryFormatters.Binary.WriteObjectInfo/*02000050*/::_context /* 0400016B */
-    IL_0044:  /* 28   | (06)00008B       */ call       class [System.Private.CoreLib/*23000001*/]System.Reflection.MemberInfo/*01000031*/[] System.Runtime.Serialization.FormatterServices/*0200000A*/::GetSerializableMembers(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
+    IL_0044:  /* 28   | (06)00008B       */ call       class [System.Private.CoreLib/*23000001*/]System.Reflection.MemberInfo/*01000031*/[] BalthasarIL.Serialization.FormatterServices/*0200000A*/::GetSerializableMembers(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
                                                                                                                                                                                                                                valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/) /* 0600008B */
     IL_0049:  /* 7D   | (04)000188       */ stfld      class [System.Private.CoreLib/*23000001*/]System.Reflection.MemberInfo/*01000031*/[] BalthasarIL.BinaryFormatters.Binary.SerObjectInfoCache/*02000053*/::_memberInfos /* 04000188 */
     IL_004e:  /* 02   |                  */ ldarg.0
@@ -23358,7 +23358,7 @@
     IL_00f8:  /* 02   |                  */ ldarg.0
     IL_00f9:  /* 7B   | (04)000168       */ ldfld      class BalthasarIL.BinaryFormatters.Binary.SerObjectInfoCache/*02000053*/ BalthasarIL.BinaryFormatters.Binary.WriteObjectInfo/*02000050*/::_cache /* 04000168 */
     IL_00fe:  /* 7B   | (04)000188       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Reflection.MemberInfo/*01000031*/[] BalthasarIL.BinaryFormatters.Binary.SerObjectInfoCache/*02000053*/::_memberInfos /* 04000188 */
-    IL_0103:  /* 28   | (06)000091       */ call       object[] System.Runtime.Serialization.FormatterServices/*0200000A*/::GetObjectData(object,
+    IL_0103:  /* 28   | (06)000091       */ call       object[] BalthasarIL.Serialization.FormatterServices/*0200000A*/::GetObjectData(object,
                                                                                                                                           class [System.Private.CoreLib/*23000001*/]System.Reflection.MemberInfo/*01000031*/[]) /* 06000091 */
     IL_0108:  /* 7D   | (04)000169       */ stfld      object[] BalthasarIL.BinaryFormatters.Binary.WriteObjectInfo/*02000050*/::_memberData /* 04000169 */
     IL_010d:  /* 02   |                  */ ldarg.0
@@ -23406,7 +23406,7 @@
   } // end of method WriteObjectInfo::GetAssemblyString
 
   .method /*06000211*/ private hidebysig 
-          instance void  InvokeSerializationBinder(class System.Runtime.Serialization.SerializationBinder/*0200001B*/ binder) cil managed
+          instance void  InvokeSerializationBinder(class BalthasarIL.Serialization.SerializationBinder/*0200001B*/ binder) cil managed
   // SIG: 20 01 01 12 6C
   {
     // 方法在 RVA 0x268b4 处开始
@@ -23426,7 +23426,7 @@
     IL_001b:  /* 7C   | (04)000170       */ ldflda     string BalthasarIL.BinaryFormatters.Binary.WriteObjectInfo/*02000050*/::_binderAssemblyString /* 04000170 */
     IL_0020:  /* 02   |                  */ ldarg.0
     IL_0021:  /* 7C   | (04)00016F       */ ldflda     string BalthasarIL.BinaryFormatters.Binary.WriteObjectInfo/*02000050*/::_binderTypeName /* 0400016F */
-    IL_0026:  /* 6F   | (06)00011E       */ callvirt   instance void System.Runtime.Serialization.SerializationBinder/*0200001B*/::BindToName(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
+    IL_0026:  /* 6F   | (06)00011E       */ callvirt   instance void BalthasarIL.Serialization.SerializationBinder/*0200001B*/::BindToName(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
                                                                                                                                               string&,
                                                                                                                                               string&) /* 0600011E */
     IL_002b:  /* 2A   |                  */ ret
@@ -23464,7 +23464,7 @@
     IL_0030:  /* 2D   | 0B               */ brtrue.s   IL_003d
 
     IL_0032:  /* 28   | (06)000043       */ call       string System.SR/*02000004*/::get_Serialization_ISerializableMemberInfo() /* 06000043 */
-    IL_0037:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0037:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_003c:  /* 7A   |                  */ throw
 
     IL_003d:  /* 2A   |                  */ ret
@@ -23535,7 +23535,7 @@
   .field /*04000172*/ static assembly int32 _readObjectInfoCounter
   .field /*04000173*/ assembly class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ _objectType
   .custom /*0C00009E:0A000045*/ instance void [System.Private.CoreLib/*23000001*/]System.Diagnostics.CodeAnalysis.DynamicallyAccessedMembersAttribute/*01000038*/::.ctor(valuetype [System.Private.CoreLib/*23000001*/]System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes/*01000039*/) /* 0A000045 */ = ( 01 00 FF FF FF FF 00 00 ) 
-  .field /*04000174*/ assembly class System.Runtime.Serialization.ObjectManager/*02000012*/ _objectManager
+  .field /*04000174*/ assembly class BalthasarIL.Serialization.ObjectManager/*02000012*/ _objectManager
   .field /*04000175*/ assembly int32 _count
   .field /*04000176*/ assembly bool _isSi
   .field /*04000177*/ assembly bool _isTyped
@@ -23544,7 +23544,7 @@
   .field /*0400017A*/ assembly string[] _wireMemberNames
   .field /*0400017B*/ assembly class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/[] _wireMemberTypes
   .field /*0400017C*/ private int32 _lastPosition
-  .field /*0400017D*/ assembly class System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ _serializationSurrogate
+  .field /*0400017D*/ assembly class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ _serializationSurrogate
   .field /*0400017E*/ assembly valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ _context
   .field /*0400017F*/ assembly class [System.Private.CoreLib/*23000001*/]System.Collections.Generic.List`1/*01000033*/<class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/> _memberTypesList
   .field /*04000180*/ assembly class BalthasarIL.BinaryFormatters.Binary.SerObjectInfoInit/*02000052*/ _serObjectInfoInit
@@ -23587,9 +23587,9 @@
   .method /*06000218*/ assembly hidebysig static 
           class BalthasarIL.BinaryFormatters.Binary.ReadObjectInfo/*02000051*/ 
           Create(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ objectType,
-                 class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ surrogateSelector,
+                 class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ surrogateSelector,
                  valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ context,
-                 class System.Runtime.Serialization.ObjectManager/*02000012*/ objectManager,
+                 class BalthasarIL.Serialization.ObjectManager/*02000012*/ objectManager,
                  class BalthasarIL.BinaryFormatters.Binary.SerObjectInfoInit/*02000052*/ serObjectInfoInit,
                  class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.IFormatterConverter/*0100002D*/ converter,
                  bool bSimpleAssembly) cil managed
@@ -23613,9 +23613,9 @@
     IL_000f:  /* 0E   | 05               */ ldarg.s    converter
     IL_0011:  /* 0E   | 06               */ ldarg.s    bSimpleAssembly
     IL_0013:  /* 6F   | (06)000219       */ callvirt   instance void BalthasarIL.BinaryFormatters.Binary.ReadObjectInfo/*02000051*/::Init(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
-                                                                                                                                                     class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/,
+                                                                                                                                                     class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/,
                                                                                                                                                      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/,
-                                                                                                                                                     class System.Runtime.Serialization.ObjectManager/*02000012*/,
+                                                                                                                                                     class BalthasarIL.Serialization.ObjectManager/*02000012*/,
                                                                                                                                                      class BalthasarIL.BinaryFormatters.Binary.SerObjectInfoInit/*02000052*/,
                                                                                                                                                      class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.IFormatterConverter/*0100002D*/,
                                                                                                                                                      bool) /* 06000219 */
@@ -23625,9 +23625,9 @@
 
   .method /*06000219*/ assembly hidebysig 
           instance void  Init(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ objectType,
-                              class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ surrogateSelector,
+                              class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ surrogateSelector,
                               valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ context,
-                              class System.Runtime.Serialization.ObjectManager/*02000012*/ objectManager,
+                              class BalthasarIL.Serialization.ObjectManager/*02000012*/ objectManager,
                               class BalthasarIL.BinaryFormatters.Binary.SerObjectInfoInit/*02000052*/ serObjectInfoInit,
                               class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.IFormatterConverter/*0100002D*/ converter,
                               bool bSimpleAssembly) cil managed
@@ -23643,7 +23643,7 @@
     IL_0002:  /* 7D   | (04)000173       */ stfld      class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ BalthasarIL.BinaryFormatters.Binary.ReadObjectInfo/*02000051*/::_objectType /* 04000173 */
     IL_0007:  /* 02   |                  */ ldarg.0
     IL_0008:  /* 0E   | 04               */ ldarg.s    objectManager
-    IL_000a:  /* 7D   | (04)000174       */ stfld      class System.Runtime.Serialization.ObjectManager/*02000012*/ BalthasarIL.BinaryFormatters.Binary.ReadObjectInfo/*02000051*/::_objectManager /* 04000174 */
+    IL_000a:  /* 7D   | (04)000174       */ stfld      class BalthasarIL.Serialization.ObjectManager/*02000012*/ BalthasarIL.BinaryFormatters.Binary.ReadObjectInfo/*02000051*/::_objectManager /* 04000174 */
     IL_000f:  /* 02   |                  */ ldarg.0
     IL_0010:  /* 05   |                  */ ldarg.3
     IL_0011:  /* 7D   | (04)00017E       */ stfld      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ BalthasarIL.BinaryFormatters.Binary.ReadObjectInfo/*02000051*/::_context /* 0400017E */
@@ -23661,7 +23661,7 @@
     IL_0030:  /* 04   |                  */ ldarg.2
     IL_0031:  /* 05   |                  */ ldarg.3
     IL_0032:  /* 28   | (06)00021C       */ call       instance void BalthasarIL.BinaryFormatters.Binary.ReadObjectInfo/*02000051*/::InitReadConstructor(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
-                                                                                                                                                                    class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/,
+                                                                                                                                                                    class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/,
                                                                                                                                                                     valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/) /* 0600021C */
     IL_0037:  /* 2A   |                  */ ret
   } // end of method ReadObjectInfo::Init
@@ -23671,9 +23671,9 @@
           Create(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ objectType,
                  string[] memberNames,
                  class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/[] memberTypes,
-                 class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ surrogateSelector,
+                 class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ surrogateSelector,
                  valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ context,
-                 class System.Runtime.Serialization.ObjectManager/*02000012*/ objectManager,
+                 class BalthasarIL.Serialization.ObjectManager/*02000012*/ objectManager,
                  class BalthasarIL.BinaryFormatters.Binary.SerObjectInfoInit/*02000052*/ serObjectInfoInit,
                  class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.IFormatterConverter/*0100002D*/ converter,
                  bool bSimpleAssembly) cil managed
@@ -23701,9 +23701,9 @@
     IL_0017:  /* 6F   | (06)00021B       */ callvirt   instance void BalthasarIL.BinaryFormatters.Binary.ReadObjectInfo/*02000051*/::Init(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
                                                                                                                                                      string[],
                                                                                                                                                      class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/[],
-                                                                                                                                                     class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/,
+                                                                                                                                                     class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/,
                                                                                                                                                      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/,
-                                                                                                                                                     class System.Runtime.Serialization.ObjectManager/*02000012*/,
+                                                                                                                                                     class BalthasarIL.Serialization.ObjectManager/*02000012*/,
                                                                                                                                                      class BalthasarIL.BinaryFormatters.Binary.SerObjectInfoInit/*02000052*/,
                                                                                                                                                      class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.IFormatterConverter/*0100002D*/,
                                                                                                                                                      bool) /* 0600021B */
@@ -23715,9 +23715,9 @@
           instance void  Init(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ objectType,
                               string[] memberNames,
                               class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/[] memberTypes,
-                              class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ surrogateSelector,
+                              class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ surrogateSelector,
                               valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ context,
-                              class System.Runtime.Serialization.ObjectManager/*02000012*/ objectManager,
+                              class BalthasarIL.Serialization.ObjectManager/*02000012*/ objectManager,
                               class BalthasarIL.BinaryFormatters.Binary.SerObjectInfoInit/*02000052*/ serObjectInfoInit,
                               class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.IFormatterConverter/*0100002D*/ converter,
                               bool bSimpleAssembly) cil managed
@@ -23733,7 +23733,7 @@
     IL_0002:  /* 7D   | (04)000173       */ stfld      class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ BalthasarIL.BinaryFormatters.Binary.ReadObjectInfo/*02000051*/::_objectType /* 04000173 */
     IL_0007:  /* 02   |                  */ ldarg.0
     IL_0008:  /* 0E   | 06               */ ldarg.s    objectManager
-    IL_000a:  /* 7D   | (04)000174       */ stfld      class System.Runtime.Serialization.ObjectManager/*02000012*/ BalthasarIL.BinaryFormatters.Binary.ReadObjectInfo/*02000051*/::_objectManager /* 04000174 */
+    IL_000a:  /* 7D   | (04)000174       */ stfld      class BalthasarIL.Serialization.ObjectManager/*02000012*/ BalthasarIL.BinaryFormatters.Binary.ReadObjectInfo/*02000051*/::_objectManager /* 04000174 */
     IL_000f:  /* 02   |                  */ ldarg.0
     IL_0010:  /* 04   |                  */ ldarg.2
     IL_0011:  /* 7D   | (04)00017A       */ stfld      string[] BalthasarIL.BinaryFormatters.Binary.ReadObjectInfo/*02000051*/::_wireMemberNames /* 0400017A */
@@ -23769,21 +23769,21 @@
     IL_0052:  /* 0E   | 04               */ ldarg.s    surrogateSelector
     IL_0054:  /* 0E   | 05               */ ldarg.s    context
     IL_0056:  /* 28   | (06)00021C       */ call       instance void BalthasarIL.BinaryFormatters.Binary.ReadObjectInfo/*02000051*/::InitReadConstructor(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
-                                                                                                                                                                    class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/,
+                                                                                                                                                                    class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/,
                                                                                                                                                                     valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/) /* 0600021C */
     IL_005b:  /* 2A   |                  */ ret
   } // end of method ReadObjectInfo::Init
 
   .method /*0600021C*/ private hidebysig 
           instance void  InitReadConstructor(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ objectType,
-                                             class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ surrogateSelector,
+                                             class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ surrogateSelector,
                                              valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ context) cil managed
   // SIG: 20 03 01 12 1D 12 3C 11 41
   {
     // 方法在 RVA 0x26a98 处开始
     // 代码大小       112 (0x70)
     .maxstack  5
-    .locals /*1100004F*/ (class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ V_0)
+    .locals /*1100004F*/ (class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ V_0)
     IL_0000:  /* 7E   | (04)000149       */ ldsfld     class BalthasarIL.BinaryFormatters.Binary.BinaryFormatterEventSource/*0200004C*/ BalthasarIL.BinaryFormatters.Binary.BinaryFormatterEventSource/*0200004C*/::Log /* 04000149 */
     IL_0005:  /* 03   |                  */ ldarg.1
     IL_0006:  /* 6F   | (06)0001D2       */ callvirt   instance void BalthasarIL.BinaryFormatters.Binary.BinaryFormatterEventSource/*0200004C*/::DeserializingObject(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/) /* 060001D2 */
@@ -23803,12 +23803,12 @@
     IL_001f:  /* 03   |                  */ ldarg.1
     IL_0020:  /* 05   |                  */ ldarg.3
     IL_0021:  /* 12   | 00               */ ldloca.s   V_0
-    IL_0023:  /* 6F   | (06)0000AC       */ callvirt   instance class System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ System.Runtime.Serialization.ISurrogateSelector/*0200000F*/::GetSurrogate(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
+    IL_0023:  /* 6F   | (06)0000AC       */ callvirt   instance class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/::GetSurrogate(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
                                                                                                                                                                                                                  valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/,
-                                                                                                                                                                                                                 class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/&) /* 060000AC */
-    IL_0028:  /* 7D   | (04)00017D       */ stfld      class System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.BinaryFormatters.Binary.ReadObjectInfo/*02000051*/::_serializationSurrogate /* 0400017D */
+                                                                                                                                                                                                                 class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/&) /* 060000AC */
+    IL_0028:  /* 7D   | (04)00017D       */ stfld      class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.BinaryFormatters.Binary.ReadObjectInfo/*02000051*/::_serializationSurrogate /* 0400017D */
     IL_002d:  /* 02   |                  */ ldarg.0
-    IL_002e:  /* 7B   | (04)00017D       */ ldfld      class System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.BinaryFormatters.Binary.ReadObjectInfo/*02000051*/::_serializationSurrogate /* 0400017D */
+    IL_002e:  /* 7B   | (04)00017D       */ ldfld      class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.BinaryFormatters.Binary.ReadObjectInfo/*02000051*/::_serializationSurrogate /* 0400017D */
     IL_0033:  /* 2C   | 09               */ brfalse.s  IL_003e
 
     IL_0035:  /* 02   |                  */ ldarg.0
@@ -23893,7 +23893,7 @@
     IL_0018:  /* 7B   | (04)000173       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ BalthasarIL.BinaryFormatters.Binary.ReadObjectInfo/*02000051*/::_objectType /* 04000173 */
     IL_001d:  /* 02   |                  */ ldarg.0
     IL_001e:  /* 7B   | (04)00017E       */ ldfld      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ BalthasarIL.BinaryFormatters.Binary.ReadObjectInfo/*02000051*/::_context /* 0400017E */
-    IL_0023:  /* 28   | (06)00008B       */ call       class [System.Private.CoreLib/*23000001*/]System.Reflection.MemberInfo/*01000031*/[] System.Runtime.Serialization.FormatterServices/*0200000A*/::GetSerializableMembers(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
+    IL_0023:  /* 28   | (06)00008B       */ call       class [System.Private.CoreLib/*23000001*/]System.Reflection.MemberInfo/*01000031*/[] BalthasarIL.Serialization.FormatterServices/*0200000A*/::GetSerializableMembers(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
                                                                                                                                                                                                                                valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/) /* 0600008B */
     IL_0028:  /* 7D   | (04)000188       */ stfld      class [System.Private.CoreLib/*23000001*/]System.Reflection.MemberInfo/*01000031*/[] BalthasarIL.BinaryFormatters.Binary.SerObjectInfoCache/*02000053*/::_memberInfos /* 04000188 */
     IL_002d:  /* 02   |                  */ ldarg.0
@@ -23995,7 +23995,7 @@
                                                                                                                                     string) /* 0A000096 */
     IL_0034:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_0039:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0039:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_003e:  /* 7A   |                  */ throw
 
     IL_003f:  /* 02   |                  */ ldarg.0
@@ -24021,7 +24021,7 @@
                                                                                                                                     string) /* 0A000096 */
     IL_006e:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_0073:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0073:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0078:  /* 7A   |                  */ throw
 
     IL_0079:  /* 02   |                  */ ldarg.0
@@ -24104,7 +24104,7 @@
                                                                                                                                     string) /* 0A000096 */
     IL_005d:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_0062:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0062:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0067:  /* 7A   |                  */ throw
 
     IL_0068:  /* 07   |                  */ ldloc.1
@@ -24210,19 +24210,19 @@
     IL_0006:  /* 2C   | 22               */ brfalse.s  IL_002a
 
     IL_0008:  /* 02   |                  */ ldarg.0
-    IL_0009:  /* 7B   | (04)000174       */ ldfld      class System.Runtime.Serialization.ObjectManager/*02000012*/ BalthasarIL.BinaryFormatters.Binary.ReadObjectInfo/*02000051*/::_objectManager /* 04000174 */
+    IL_0009:  /* 7B   | (04)000174       */ ldfld      class BalthasarIL.Serialization.ObjectManager/*02000012*/ BalthasarIL.BinaryFormatters.Binary.ReadObjectInfo/*02000051*/::_objectManager /* 04000174 */
     IL_000e:  /* 2D   | 0B               */ brtrue.s   IL_001b
 
     IL_0010:  /* 28   | (06)00002A       */ call       string System.SR/*02000004*/::get_Serialization_CorruptedStream() /* 0600002A */
-    IL_0015:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0015:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_001a:  /* 7A   |                  */ throw
 
     IL_001b:  /* 02   |                  */ ldarg.0
-    IL_001c:  /* 7B   | (04)000174       */ ldfld      class System.Runtime.Serialization.ObjectManager/*02000012*/ BalthasarIL.BinaryFormatters.Binary.ReadObjectInfo/*02000051*/::_objectManager /* 04000174 */
+    IL_001c:  /* 7B   | (04)000174       */ ldfld      class BalthasarIL.Serialization.ObjectManager/*02000012*/ BalthasarIL.BinaryFormatters.Binary.ReadObjectInfo/*02000051*/::_objectManager /* 04000174 */
     IL_0021:  /* 03   |                  */ ldarg.1
     IL_0022:  /* 04   |                  */ ldarg.2
     IL_0023:  /* 05   |                  */ ldarg.3
-    IL_0024:  /* 6F   | (06)0000D0       */ callvirt   instance void System.Runtime.Serialization.ObjectManager/*02000012*/::RecordDelayedFixup(int64,
+    IL_0024:  /* 6F   | (06)0000D0       */ callvirt   instance void BalthasarIL.Serialization.ObjectManager/*02000012*/::RecordDelayedFixup(int64,
                                                                                                                                                 string,
                                                                                                                                                 int64) /* 060000D0 */
     IL_0029:  /* 2A   |                  */ ret
@@ -24236,15 +24236,15 @@
     IL_0034:  /* 2E   | 2D               */ beq.s      IL_0063
 
     IL_0036:  /* 02   |                  */ ldarg.0
-    IL_0037:  /* 7B   | (04)000174       */ ldfld      class System.Runtime.Serialization.ObjectManager/*02000012*/ BalthasarIL.BinaryFormatters.Binary.ReadObjectInfo/*02000051*/::_objectManager /* 04000174 */
+    IL_0037:  /* 7B   | (04)000174       */ ldfld      class BalthasarIL.Serialization.ObjectManager/*02000012*/ BalthasarIL.BinaryFormatters.Binary.ReadObjectInfo/*02000051*/::_objectManager /* 04000174 */
     IL_003c:  /* 2D   | 0B               */ brtrue.s   IL_0049
 
     IL_003e:  /* 28   | (06)00002A       */ call       string System.SR/*02000004*/::get_Serialization_CorruptedStream() /* 0600002A */
-    IL_0043:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0043:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0048:  /* 7A   |                  */ throw
 
     IL_0049:  /* 02   |                  */ ldarg.0
-    IL_004a:  /* 7B   | (04)000174       */ ldfld      class System.Runtime.Serialization.ObjectManager/*02000012*/ BalthasarIL.BinaryFormatters.Binary.ReadObjectInfo/*02000051*/::_objectManager /* 04000174 */
+    IL_004a:  /* 7B   | (04)000174       */ ldfld      class BalthasarIL.Serialization.ObjectManager/*02000012*/ BalthasarIL.BinaryFormatters.Binary.ReadObjectInfo/*02000051*/::_objectManager /* 04000174 */
     IL_004f:  /* 03   |                  */ ldarg.1
     IL_0050:  /* 02   |                  */ ldarg.0
     IL_0051:  /* 7B   | (04)000179       */ ldfld      class BalthasarIL.BinaryFormatters.Binary.SerObjectInfoCache/*02000053*/ BalthasarIL.BinaryFormatters.Binary.ReadObjectInfo/*02000051*/::_cache /* 04000179 */
@@ -24252,7 +24252,7 @@
     IL_005b:  /* 06   |                  */ ldloc.0
     IL_005c:  /* 9A   |                  */ ldelem.ref
     IL_005d:  /* 05   |                  */ ldarg.3
-    IL_005e:  /* 6F   | (06)0000CF       */ callvirt   instance void System.Runtime.Serialization.ObjectManager/*02000012*/::RecordFixup(int64,
+    IL_005e:  /* 6F   | (06)0000CF       */ callvirt   instance void BalthasarIL.Serialization.ObjectManager/*02000012*/::RecordFixup(int64,
                                                                                                                                          class [System.Private.CoreLib/*23000001*/]System.Reflection.MemberInfo/*01000031*/,
                                                                                                                                          int64) /* 060000CF */
     IL_0063:  /* 2A   |                  */ ret
@@ -24278,7 +24278,7 @@
     IL_000d:  /* 7B   | (04)000179       */ ldfld      class BalthasarIL.BinaryFormatters.Binary.SerObjectInfoCache/*02000053*/ BalthasarIL.BinaryFormatters.Binary.ReadObjectInfo/*02000051*/::_cache /* 04000179 */
     IL_0012:  /* 7B   | (04)000188       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Reflection.MemberInfo/*01000031*/[] BalthasarIL.BinaryFormatters.Binary.SerObjectInfoCache/*02000053*/::_memberInfos /* 04000188 */
     IL_0017:  /* 04   |                  */ ldarg.2
-    IL_0018:  /* 28   | (06)000090       */ call       object System.Runtime.Serialization.FormatterServices/*0200000A*/::PopulateObjectMembers(object,
+    IL_0018:  /* 28   | (06)000090       */ call       object BalthasarIL.Serialization.FormatterServices/*0200000A*/::PopulateObjectMembers(object,
                                                                                                                                                 class [System.Private.CoreLib/*23000001*/]System.Reflection.MemberInfo/*01000031*/[],
                                                                                                                                                 object[]) /* 06000090 */
     IL_001d:  /* 26   |                  */ pop
@@ -24413,7 +24413,7 @@
     IL_000d:  /* 04   |                  */ ldarg.2
     IL_000e:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_0013:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0013:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0018:  /* 7A   |                  */ throw
 
     IL_0019:  /* 02   |                  */ ldarg.0
@@ -24561,7 +24561,7 @@
     IL_0139:  /* 7B   | (04)000188       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Reflection.MemberInfo/*01000031*/[] BalthasarIL.BinaryFormatters.Binary.SerObjectInfoCache/*02000053*/::_memberInfos /* 04000188 */
     IL_013e:  /* 11   | 04               */ ldloc.s    V_4
     IL_0140:  /* 9A   |                  */ ldelem.ref
-    IL_0141:  /* D0   | (01)000074       */ ldtoken    [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.OptionalFieldAttribute/*01000074*/
+    IL_0141:  /* D0   | (01)000074       */ ldtoken    [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.OptionalFieldAttribute/*01000074*/
     IL_0146:  /* 28   | (0A)000009       */ call       class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/::GetTypeFromHandle(valuetype [System.Private.CoreLib/*23000001*/]System.RuntimeTypeHandle/*01000008*/) /* 0A000009 */
     IL_014b:  /* 16   |                  */ ldc.i4.0
     IL_014c:  /* 28   | (0A)0000EE       */ call       class [System.Private.CoreLib/*23000001*/]System.Attribute/*01000040*/ [System.Private.CoreLib/*23000001*/]System.Reflection.CustomAttributeExtensions/*01000075*/::GetCustomAttribute(class [System.Private.CoreLib/*23000001*/]System.Reflection.MemberInfo/*01000031*/,
@@ -24576,14 +24576,14 @@
     IL_0163:  /* 11   | 04               */ ldloc.s    V_4
     IL_0165:  /* 9A   |                  */ ldelem.ref
     IL_0166:  /* 04   |                  */ ldarg.2
-    IL_0167:  /* D0   | (01)000074       */ ldtoken    [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.OptionalFieldAttribute/*01000074*/
+    IL_0167:  /* D0   | (01)000074       */ ldtoken    [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.OptionalFieldAttribute/*01000074*/
     IL_016c:  /* 28   | (0A)000009       */ call       class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/::GetTypeFromHandle(valuetype [System.Private.CoreLib/*23000001*/]System.RuntimeTypeHandle/*01000008*/) /* 0A000009 */
     IL_0171:  /* 6F   | (0A)000036       */ callvirt   instance string [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/::get_FullName() /* 0A000036 */
     IL_0176:  /* 28   | (06)000009       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object,
                                                                                             object,
                                                                                             object) /* 06000009 */
-    IL_017b:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_017b:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0180:  /* 7A   |                  */ throw
 
     IL_0181:  /* 11   | 04               */ ldloc.s    V_4
@@ -24624,7 +24624,7 @@
     IL_001a:  /* 6F   | (0A)00001A       */ callvirt   instance class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/::GetType() /* 0A00001A */
     IL_001f:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_0024:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0024:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0029:  /* 7A   |                  */ throw
   } // end of method ReadObjectInfo::GetMemberType
 
@@ -24908,11 +24908,11 @@
   } // end of class '<>O'
 
   .field /*0400018E*/ assembly class [System.Private.CoreLib/*23000001*/]System.IO.Stream/*01000015*/ _stream
-  .field /*0400018F*/ assembly class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ _surrogates
+  .field /*0400018F*/ assembly class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ _surrogates
   .field /*04000190*/ assembly valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ _context
-  .field /*04000191*/ assembly class System.Runtime.Serialization.ObjectManager/*02000012*/ _objectManager
+  .field /*04000191*/ assembly class BalthasarIL.Serialization.ObjectManager/*02000012*/ _objectManager
   .field /*04000192*/ assembly class BalthasarIL.BinaryFormatters.Binary.InternalFE/*02000061*/ _formatterEnums
-  .field /*04000193*/ assembly class System.Runtime.Serialization.SerializationBinder/*0200001B*/ _binder
+  .field /*04000193*/ assembly class BalthasarIL.Serialization.SerializationBinder/*0200001B*/ _binder
   .field /*04000194*/ assembly int64 _topId
   .field /*04000195*/ assembly bool _isSimpleAssembly
   .field /*04000196*/ assembly object _topObject
@@ -24976,22 +24976,22 @@
     IL_0001:  /* 03   |                  */ ldarg.1
     IL_0002:  /* 7D   | (04)000196       */ stfld      object BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_topObject /* 04000196 */
     IL_0007:  /* 02   |                  */ ldarg.0
-    IL_0008:  /* 7B   | (04)000191       */ ldfld      class System.Runtime.Serialization.ObjectManager/*02000012*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_objectManager /* 04000191 */
+    IL_0008:  /* 7B   | (04)000191       */ ldfld      class BalthasarIL.Serialization.ObjectManager/*02000012*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_objectManager /* 04000191 */
     IL_000d:  /* 2C   | 0C               */ brfalse.s  IL_001b
 
     IL_000f:  /* 02   |                  */ ldarg.0
-    IL_0010:  /* 7B   | (04)000191       */ ldfld      class System.Runtime.Serialization.ObjectManager/*02000012*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_objectManager /* 04000191 */
+    IL_0010:  /* 7B   | (04)000191       */ ldfld      class BalthasarIL.Serialization.ObjectManager/*02000012*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_objectManager /* 04000191 */
     IL_0015:  /* 03   |                  */ ldarg.1
-    IL_0016:  /* 6F   | (06)0000B9       */ callvirt   instance void System.Runtime.Serialization.ObjectManager/*02000012*/::set_TopObject(object) /* 060000B9 */
+    IL_0016:  /* 6F   | (06)0000B9       */ callvirt   instance void BalthasarIL.Serialization.ObjectManager/*02000012*/::set_TopObject(object) /* 060000B9 */
     IL_001b:  /* 2A   |                  */ ret
   } // end of method ObjectReader::set_TopObject
 
   .method /*06000234*/ assembly hidebysig specialname rtspecialname 
           instance void  .ctor(class [System.Private.CoreLib/*23000001*/]System.IO.Stream/*01000015*/ 'stream',
-                               class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ selector,
+                               class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ selector,
                                valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ context,
                                class BalthasarIL.BinaryFormatters.Binary.InternalFE/*02000061*/ formatterEnums,
-                               class System.Runtime.Serialization.SerializationBinder/*0200001B*/ binder) cil managed
+                               class BalthasarIL.Serialization.SerializationBinder/*0200001B*/ binder) cil managed
   // SIG: 20 05 01 12 55 12 3C 11 41 12 81 84 12 6C
   {
     // 方法在 RVA 0x27220 处开始
@@ -25011,13 +25011,13 @@
     IL_001e:  /* 7D   | (04)00018E       */ stfld      class [System.Private.CoreLib/*23000001*/]System.IO.Stream/*01000015*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_stream /* 0400018E */
     IL_0023:  /* 02   |                  */ ldarg.0
     IL_0024:  /* 04   |                  */ ldarg.2
-    IL_0025:  /* 7D   | (04)00018F       */ stfld      class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_surrogates /* 0400018F */
+    IL_0025:  /* 7D   | (04)00018F       */ stfld      class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_surrogates /* 0400018F */
     IL_002a:  /* 02   |                  */ ldarg.0
     IL_002b:  /* 05   |                  */ ldarg.3
     IL_002c:  /* 7D   | (04)000190       */ stfld      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_context /* 04000190 */
     IL_0031:  /* 02   |                  */ ldarg.0
     IL_0032:  /* 0E   | 05               */ ldarg.s    binder
-    IL_0034:  /* 7D   | (04)000193       */ stfld      class System.Runtime.Serialization.SerializationBinder/*0200001B*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_binder /* 04000193 */
+    IL_0034:  /* 7D   | (04)000193       */ stfld      class BalthasarIL.Serialization.SerializationBinder/*0200001B*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_binder /* 04000193 */
     IL_0039:  /* 02   |                  */ ldarg.0
     IL_003a:  /* 0E   | 04               */ ldarg.s    formatterEnums
     IL_003c:  /* 7D   | (04)000192       */ stfld      class BalthasarIL.BinaryFormatters.Binary.InternalFE/*02000061*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_formatterEnums /* 04000192 */
@@ -25036,7 +25036,7 @@
     // 方法在 RVA 0x27270 处开始
     // 代码大小       280 (0x118)
     .maxstack  3
-    .locals /*11000057*/ (valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.DeserializationToken/*01000077*/ V_0,
+    .locals /*11000057*/ (valuetype [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.DeserializationToken/*01000077*/ V_0,
              object V_1)
     IL_0000:  /* 03   |                  */ ldarg.1
     IL_0001:  /* 72   | (70)001385       */ ldstr      "serParser" /* 70001385 */
@@ -25059,7 +25059,7 @@
     IL_002d:  /* 16   |                  */ ldc.i4.0
     IL_002e:  /* FE01 |                  */ ceq
     IL_0030:  /* 7D   | (04)000195       */ stfld      bool BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_isSimpleAssembly /* 04000195 */
-    IL_0035:  /* 28   | (0A)0000F1       */ call       valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.DeserializationToken/*01000077*/ [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationInfo/*01000044*/::StartDeserialization() /* 0A0000F1 */
+    IL_0035:  /* 28   | (0A)0000F1       */ call       valuetype [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.DeserializationToken/*01000077*/ [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationInfo/*01000044*/::StartDeserialization() /* 0A0000F1 */
     IL_003a:  /* 0A   |                  */ stloc.0
     .try
     {
@@ -25069,12 +25069,12 @@
 
       IL_0043:  /* 02   |                  */ ldarg.0
       IL_0044:  /* 02   |                  */ ldarg.0
-      IL_0045:  /* 7B   | (04)00018F       */ ldfld      class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_surrogates /* 0400018F */
+      IL_0045:  /* 7B   | (04)00018F       */ ldfld      class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_surrogates /* 0400018F */
       IL_004a:  /* 02   |                  */ ldarg.0
       IL_004b:  /* 7B   | (04)000190       */ ldfld      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_context /* 04000190 */
-      IL_0050:  /* 73   | (06)0000B6       */ newobj     instance void System.Runtime.Serialization.ObjectManager/*02000012*/::.ctor(class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/,
+      IL_0050:  /* 73   | (06)0000B6       */ newobj     instance void BalthasarIL.Serialization.ObjectManager/*02000012*/::.ctor(class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/,
                                                                                                                                      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/) /* 060000B6 */
-      IL_0055:  /* 7D   | (04)000191       */ stfld      class System.Runtime.Serialization.ObjectManager/*02000012*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_objectManager /* 04000191 */
+      IL_0055:  /* 7D   | (04)000191       */ stfld      class BalthasarIL.Serialization.ObjectManager/*02000012*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_objectManager /* 04000191 */
       IL_005a:  /* 02   |                  */ ldarg.0
       IL_005b:  /* 73   | (06)00022A       */ newobj     instance void BalthasarIL.BinaryFormatters.Binary.SerObjectInfoInit/*02000052*/::.ctor() /* 0600022A */
       IL_0060:  /* 7D   | (04)000197       */ stfld      class BalthasarIL.BinaryFormatters.Binary.SerObjectInfoInit/*02000052*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_serObjectInfoInit /* 04000197 */
@@ -25085,14 +25085,14 @@
       IL_0071:  /* 2C   | 0B               */ brfalse.s  IL_007e
 
       IL_0073:  /* 02   |                  */ ldarg.0
-      IL_0074:  /* 7B   | (04)000191       */ ldfld      class System.Runtime.Serialization.ObjectManager/*02000012*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_objectManager /* 04000191 */
-      IL_0079:  /* 6F   | (06)0000CD       */ callvirt   instance void System.Runtime.Serialization.ObjectManager/*02000012*/::DoFixups() /* 060000CD */
+      IL_0074:  /* 7B   | (04)000191       */ ldfld      class BalthasarIL.Serialization.ObjectManager/*02000012*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_objectManager /* 04000191 */
+      IL_0079:  /* 6F   | (06)0000CD       */ callvirt   instance void BalthasarIL.Serialization.ObjectManager/*02000012*/::DoFixups() /* 060000CD */
       IL_007e:  /* 02   |                  */ ldarg.0
       IL_007f:  /* 28   | (06)000232       */ call       instance object BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::get_TopObject() /* 06000232 */
       IL_0084:  /* 2D   | 0B               */ brtrue.s   IL_0091
 
       IL_0086:  /* 28   | (06)00003A       */ call       string System.SR/*02000004*/::get_Serialization_TopObject() /* 0600003A */
-      IL_008b:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+      IL_008b:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
       IL_0090:  /* 7A   |                  */ throw
 
       IL_0091:  /* 02   |                  */ ldarg.0
@@ -25108,31 +25108,31 @@
 
       IL_00ac:  /* 02   |                  */ ldarg.0
       IL_00ad:  /* 02   |                  */ ldarg.0
-      IL_00ae:  /* 7B   | (04)000191       */ ldfld      class System.Runtime.Serialization.ObjectManager/*02000012*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_objectManager /* 04000191 */
+      IL_00ae:  /* 7B   | (04)000191       */ ldfld      class BalthasarIL.Serialization.ObjectManager/*02000012*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_objectManager /* 04000191 */
       IL_00b3:  /* 02   |                  */ ldarg.0
       IL_00b4:  /* 7B   | (04)000194       */ ldfld      int64 BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_topId /* 04000194 */
-      IL_00b9:  /* 6F   | (06)0000C5       */ callvirt   instance object System.Runtime.Serialization.ObjectManager/*02000012*/::GetObject(int64) /* 060000C5 */
+      IL_00b9:  /* 6F   | (06)0000C5       */ callvirt   instance object BalthasarIL.Serialization.ObjectManager/*02000012*/::GetObject(int64) /* 060000C5 */
       IL_00be:  /* 28   | (06)000233       */ call       instance void BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::set_TopObject(object) /* 06000233 */
       IL_00c3:  /* 02   |                  */ ldarg.0
       IL_00c4:  /* 28   | (06)000232       */ call       instance object BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::get_TopObject() /* 06000232 */
-      IL_00c9:  /* 75   | (01)000047       */ isinst     [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.IObjectReference/*01000047*/
+      IL_00c9:  /* 75   | (01)000047       */ isinst     [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.IObjectReference/*01000047*/
       IL_00ce:  /* 2C   | 1C               */ brfalse.s  IL_00ec
 
       IL_00d0:  /* 02   |                  */ ldarg.0
       IL_00d1:  /* 02   |                  */ ldarg.0
       IL_00d2:  /* 28   | (06)000232       */ call       instance object BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::get_TopObject() /* 06000232 */
-      IL_00d7:  /* 74   | (01)000047       */ castclass  [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.IObjectReference/*01000047*/
+      IL_00d7:  /* 74   | (01)000047       */ castclass  [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.IObjectReference/*01000047*/
       IL_00dc:  /* 02   |                  */ ldarg.0
       IL_00dd:  /* 7B   | (04)000190       */ ldfld      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_context /* 04000190 */
-      IL_00e2:  /* 6F   | (0A)000070       */ callvirt   instance object [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.IObjectReference/*01000047*/::GetRealObject(valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/) /* 0A000070 */
+      IL_00e2:  /* 6F   | (0A)000070       */ callvirt   instance object [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.IObjectReference/*01000047*/::GetRealObject(valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/) /* 0A000070 */
       IL_00e7:  /* 28   | (06)000233       */ call       instance void BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::set_TopObject(object) /* 06000233 */
       IL_00ec:  /* 02   |                  */ ldarg.0
       IL_00ed:  /* 7B   | (04)00019C       */ ldfld      bool BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_fullDeserialization /* 0400019C */
       IL_00f2:  /* 2C   | 0B               */ brfalse.s  IL_00ff
 
       IL_00f4:  /* 02   |                  */ ldarg.0
-      IL_00f5:  /* 7B   | (04)000191       */ ldfld      class System.Runtime.Serialization.ObjectManager/*02000012*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_objectManager /* 04000191 */
-      IL_00fa:  /* 6F   | (06)0000D3       */ callvirt   instance void System.Runtime.Serialization.ObjectManager/*02000012*/::RaiseDeserializationEvent() /* 060000D3 */
+      IL_00f5:  /* 7B   | (04)000191       */ ldfld      class BalthasarIL.Serialization.ObjectManager/*02000012*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_objectManager /* 04000191 */
+      IL_00fa:  /* 6F   | (06)0000D3       */ callvirt   instance void BalthasarIL.Serialization.ObjectManager/*02000012*/::RaiseDeserializationEvent() /* 060000D3 */
       IL_00ff:  /* 02   |                  */ ldarg.0
       IL_0100:  /* 28   | (06)000232       */ call       instance object BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::get_TopObject() /* 06000232 */
       IL_0105:  /* 0B   |                  */ stloc.1
@@ -25142,7 +25142,7 @@
     finally
     {
       IL_0108:  /* 12   | 00               */ ldloca.s   V_0
-      IL_010a:  /* FE16 | (01)000077       */ constrained. [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.DeserializationToken/*01000077*/
+      IL_010a:  /* FE16 | (01)000077       */ constrained. [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.DeserializationToken/*01000077*/
       IL_0110:  /* 6F   | (0A)000091       */ callvirt   instance void [System.Private.CoreLib/*23000001*/]System.IDisposable/*0100005B*/::Dispose() /* 0A000091 */
       IL_0115:  /* DC   |                  */ endfinally
     }  // end handler
@@ -25158,20 +25158,20 @@
     // 方法在 RVA 0x273a4 处开始
     // 代码大小       34 (0x22)
     .maxstack  4
-    .locals /*1100004F*/ (class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ V_0)
+    .locals /*1100004F*/ (class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ V_0)
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)00018F       */ ldfld      class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_surrogates /* 0400018F */
+    IL_0001:  /* 7B   | (04)00018F       */ ldfld      class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_surrogates /* 0400018F */
     IL_0006:  /* 2C   | 18               */ brfalse.s  IL_0020
 
     IL_0008:  /* 02   |                  */ ldarg.0
-    IL_0009:  /* 7B   | (04)00018F       */ ldfld      class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_surrogates /* 0400018F */
+    IL_0009:  /* 7B   | (04)00018F       */ ldfld      class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_surrogates /* 0400018F */
     IL_000e:  /* 03   |                  */ ldarg.1
     IL_000f:  /* 02   |                  */ ldarg.0
     IL_0010:  /* 7B   | (04)000190       */ ldfld      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_context /* 04000190 */
     IL_0015:  /* 12   | 00               */ ldloca.s   V_0
-    IL_0017:  /* 6F   | (06)0000AC       */ callvirt   instance class System.Runtime.Serialization.ISerializationSurrogate/*0200000E*/ System.Runtime.Serialization.ISurrogateSelector/*0200000F*/::GetSurrogate(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
+    IL_0017:  /* 6F   | (06)0000AC       */ callvirt   instance class BalthasarIL.Serialization.ISerializationSurrogate/*0200000E*/ BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/::GetSurrogate(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
                                                                                                                                                                                                                  valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/,
-                                                                                                                                                                                                                 class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/&) /* 060000AC */
+                                                                                                                                                                                                                 class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/&) /* 060000AC */
     IL_001c:  /* 14   |                  */ ldnull
     IL_001d:  /* FE03 |                  */ cgt.un
     IL_001f:  /* 2A   |                  */ ret
@@ -25261,18 +25261,18 @@
     IL_0012:  /* 7D   | (04)000199       */ stfld      class BalthasarIL.BinaryFormatters.Binary.SerStack/*0200005C*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_stack /* 04000199 */
     IL_0017:  /* 02   |                  */ ldarg.0
     IL_0018:  /* 02   |                  */ ldarg.0
-    IL_0019:  /* 7B   | (04)00018F       */ ldfld      class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_surrogates /* 0400018F */
+    IL_0019:  /* 7B   | (04)00018F       */ ldfld      class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_surrogates /* 0400018F */
     IL_001e:  /* 02   |                  */ ldarg.0
     IL_001f:  /* 7B   | (04)000190       */ ldfld      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_context /* 04000190 */
-    IL_0024:  /* 73   | (06)0000B6       */ newobj     instance void System.Runtime.Serialization.ObjectManager/*02000012*/::.ctor(class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/,
+    IL_0024:  /* 73   | (06)0000B6       */ newobj     instance void BalthasarIL.Serialization.ObjectManager/*02000012*/::.ctor(class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/,
                                                                                                                                    valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/) /* 060000B6 */
-    IL_0029:  /* 7D   | (04)000191       */ stfld      class System.Runtime.Serialization.ObjectManager/*02000012*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_objectManager /* 04000191 */
+    IL_0029:  /* 7D   | (04)000191       */ stfld      class BalthasarIL.Serialization.ObjectManager/*02000012*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_objectManager /* 04000191 */
     IL_002e:  /* 02   |                  */ ldarg.0
     IL_002f:  /* 7B   | (04)000198       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.IFormatterConverter/*0100002D*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_formatterConverter /* 04000198 */
     IL_0034:  /* 2D   | 0B               */ brtrue.s   IL_0041
 
     IL_0036:  /* 02   |                  */ ldarg.0
-    IL_0037:  /* 73   | (06)000086       */ newobj     instance void System.Runtime.Serialization.FormatterConverter/*02000009*/::.ctor() /* 06000086 */
+    IL_0037:  /* 73   | (06)000086       */ newobj     instance void BalthasarIL.Serialization.FormatterConverter/*02000009*/::.ctor() /* 06000086 */
     IL_003c:  /* 7D   | (04)000198       */ stfld      class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.IFormatterConverter/*0100002D*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_formatterConverter /* 04000198 */
     IL_0041:  /* 2A   |                  */ ret
   } // end of method ObjectReader::InitFullDeserialization
@@ -25303,11 +25303,11 @@
     .maxstack  8
     IL_0000:  /* 03   |                  */ ldarg.1
     IL_0001:  /* 02   |                  */ ldarg.0
-    IL_0002:  /* 7B   | (04)00018F       */ ldfld      class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_surrogates /* 0400018F */
+    IL_0002:  /* 7B   | (04)00018F       */ ldfld      class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_surrogates /* 0400018F */
     IL_0007:  /* 02   |                  */ ldarg.0
     IL_0008:  /* 7B   | (04)000190       */ ldfld      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_context /* 04000190 */
     IL_000d:  /* 02   |                  */ ldarg.0
-    IL_000e:  /* 7B   | (04)000191       */ ldfld      class System.Runtime.Serialization.ObjectManager/*02000012*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_objectManager /* 04000191 */
+    IL_000e:  /* 7B   | (04)000191       */ ldfld      class BalthasarIL.Serialization.ObjectManager/*02000012*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_objectManager /* 04000191 */
     IL_0013:  /* 02   |                  */ ldarg.0
     IL_0014:  /* 7B   | (04)000197       */ ldfld      class BalthasarIL.BinaryFormatters.Binary.SerObjectInfoInit/*02000052*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_serObjectInfoInit /* 04000197 */
     IL_0019:  /* 02   |                  */ ldarg.0
@@ -25315,9 +25315,9 @@
     IL_001f:  /* 02   |                  */ ldarg.0
     IL_0020:  /* 7B   | (04)000195       */ ldfld      bool BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_isSimpleAssembly /* 04000195 */
     IL_0025:  /* 28   | (06)000218       */ call       class BalthasarIL.BinaryFormatters.Binary.ReadObjectInfo/*02000051*/ BalthasarIL.BinaryFormatters.Binary.ReadObjectInfo/*02000051*/::Create(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
-                                                                                                                                                                                                                         class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/,
+                                                                                                                                                                                                                         class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/,
                                                                                                                                                                                                                          valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/,
-                                                                                                                                                                                                                         class System.Runtime.Serialization.ObjectManager/*02000012*/,
+                                                                                                                                                                                                                         class BalthasarIL.Serialization.ObjectManager/*02000012*/,
                                                                                                                                                                                                                          class BalthasarIL.BinaryFormatters.Binary.SerObjectInfoInit/*02000052*/,
                                                                                                                                                                                                                          class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.IFormatterConverter/*0100002D*/,
                                                                                                                                                                                                                          bool) /* 06000218 */
@@ -25340,11 +25340,11 @@
     IL_0001:  /* 04   |                  */ ldarg.2
     IL_0002:  /* 05   |                  */ ldarg.3
     IL_0003:  /* 02   |                  */ ldarg.0
-    IL_0004:  /* 7B   | (04)00018F       */ ldfld      class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_surrogates /* 0400018F */
+    IL_0004:  /* 7B   | (04)00018F       */ ldfld      class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_surrogates /* 0400018F */
     IL_0009:  /* 02   |                  */ ldarg.0
     IL_000a:  /* 7B   | (04)000190       */ ldfld      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_context /* 04000190 */
     IL_000f:  /* 02   |                  */ ldarg.0
-    IL_0010:  /* 7B   | (04)000191       */ ldfld      class System.Runtime.Serialization.ObjectManager/*02000012*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_objectManager /* 04000191 */
+    IL_0010:  /* 7B   | (04)000191       */ ldfld      class BalthasarIL.Serialization.ObjectManager/*02000012*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_objectManager /* 04000191 */
     IL_0015:  /* 02   |                  */ ldarg.0
     IL_0016:  /* 7B   | (04)000197       */ ldfld      class BalthasarIL.BinaryFormatters.Binary.SerObjectInfoInit/*02000052*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_serObjectInfoInit /* 04000197 */
     IL_001b:  /* 02   |                  */ ldarg.0
@@ -25354,9 +25354,9 @@
     IL_0027:  /* 28   | (06)00021A       */ call       class BalthasarIL.BinaryFormatters.Binary.ReadObjectInfo/*02000051*/ BalthasarIL.BinaryFormatters.Binary.ReadObjectInfo/*02000051*/::Create(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
                                                                                                                                                                                                                          string[],
                                                                                                                                                                                                                          class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/[],
-                                                                                                                                                                                                                         class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/,
+                                                                                                                                                                                                                         class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/,
                                                                                                                                                                                                                          valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/,
-                                                                                                                                                                                                                         class System.Runtime.Serialization.ObjectManager/*02000012*/,
+                                                                                                                                                                                                                         class BalthasarIL.Serialization.ObjectManager/*02000012*/,
                                                                                                                                                                                                                          class BalthasarIL.BinaryFormatters.Binary.SerObjectInfoInit/*02000052*/,
                                                                                                                                                                                                                          class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.IFormatterConverter/*0100002D*/,
                                                                                                                                                                                                                          bool) /* 0600021A */
@@ -25432,7 +25432,7 @@
     IL_0079:  /* 7B   | (04)0001D9       */ ldfld      string BalthasarIL.BinaryFormatters.Binary.ParseRecord/*0200005B*/::_name /* 040001D9 */
     IL_007e:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_0083:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0083:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0088:  /* 7A   |                  */ throw
 
     IL_0089:  /* 2A   |                  */ ret
@@ -25488,7 +25488,7 @@
     IL_005d:  /* 28   | (0A)0000F2       */ call       string [System.Private.CoreLib/*23000001*/]System.String/*01000003*/::Concat(string[]) /* 0A0000F2 */
     IL_0062:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_0067:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0067:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_006c:  /* 7A   |                  */ throw
   } // end of method ObjectReader::ParseError
 
@@ -25578,7 +25578,7 @@
     IL_0057:  /* 03   |                  */ ldarg.1
     IL_0058:  /* 03   |                  */ ldarg.1
     IL_0059:  /* 7B   | (04)0001DC       */ ldfld      string BalthasarIL.BinaryFormatters.Binary.ParseRecord/*0200005B*/::_keyDt /* 040001DC */
-    IL_005e:  /* 73   | (06)00011A       */ newobj     instance void System.Runtime.Serialization.TypeLoadExceptionHolder/*02000019*/::.ctor(string) /* 0600011A */
+    IL_005e:  /* 73   | (06)00011A       */ newobj     instance void BalthasarIL.Serialization.TypeLoadExceptionHolder/*02000019*/::.ctor(string) /* 0600011A */
     IL_0063:  /* 7D   | (04)0001EF       */ stfld      object BalthasarIL.BinaryFormatters.Binary.ParseRecord/*0200005B*/::_newObj /* 040001EF */
     IL_0068:  /* 2A   |                  */ ret
 
@@ -25632,13 +25632,13 @@
     IL_00d7:  /* 03   |                  */ ldarg.1
     IL_00d8:  /* 03   |                  */ ldarg.1
     IL_00d9:  /* 7B   | (04)0001DD       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ BalthasarIL.BinaryFormatters.Binary.ParseRecord/*0200005B*/::_dtType /* 040001DD */
-    IL_00de:  /* 28   | (06)00008D       */ call       object System.Runtime.Serialization.FormatterServices/*0200000A*/::GetUninitializedObject(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/) /* 0600008D */
+    IL_00de:  /* 28   | (06)00008D       */ call       object BalthasarIL.Serialization.FormatterServices/*0200000A*/::GetUninitializedObject(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/) /* 0600008D */
     IL_00e3:  /* 7D   | (04)0001EF       */ stfld      object BalthasarIL.BinaryFormatters.Binary.ParseRecord/*0200005B*/::_newObj /* 040001EF */
     IL_00e8:  /* 02   |                  */ ldarg.0
-    IL_00e9:  /* 7B   | (04)000191       */ ldfld      class System.Runtime.Serialization.ObjectManager/*02000012*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_objectManager /* 04000191 */
+    IL_00e9:  /* 7B   | (04)000191       */ ldfld      class BalthasarIL.Serialization.ObjectManager/*02000012*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_objectManager /* 04000191 */
     IL_00ee:  /* 03   |                  */ ldarg.1
     IL_00ef:  /* 7B   | (04)0001EF       */ ldfld      object BalthasarIL.BinaryFormatters.Binary.ParseRecord/*0200005B*/::_newObj /* 040001EF */
-    IL_00f4:  /* 6F   | (06)0000D7       */ callvirt   instance void System.Runtime.Serialization.ObjectManager/*02000012*/::RaiseOnDeserializingEvent(object) /* 060000D7 */
+    IL_00f4:  /* 6F   | (06)0000D7       */ callvirt   instance void BalthasarIL.Serialization.ObjectManager/*02000012*/::RaiseOnDeserializingEvent(object) /* 060000D7 */
     IL_00f9:  /* 03   |                  */ ldarg.1
     IL_00fa:  /* 7B   | (04)0001EF       */ ldfld      object BalthasarIL.BinaryFormatters.Binary.ParseRecord/*0200005B*/::_newObj /* 040001EF */
     IL_00ff:  /* 2D   | 16               */ brtrue.s   IL_0117
@@ -25648,7 +25648,7 @@
     IL_0107:  /* 7B   | (04)0001DD       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ BalthasarIL.BinaryFormatters.Binary.ParseRecord/*0200005B*/::_dtType /* 040001DD */
     IL_010c:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_0111:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0111:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0116:  /* 7A   |                  */ throw
 
     IL_0117:  /* 03   |                  */ ldarg.1
@@ -25670,11 +25670,11 @@
     IL_0137:  /* 03   |                  */ ldarg.1
     IL_0138:  /* 7B   | (04)0001DD       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ BalthasarIL.BinaryFormatters.Binary.ParseRecord/*0200005B*/::_dtType /* 040001DD */
     IL_013d:  /* 02   |                  */ ldarg.0
-    IL_013e:  /* 7B   | (04)00018F       */ ldfld      class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_surrogates /* 0400018F */
+    IL_013e:  /* 7B   | (04)00018F       */ ldfld      class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_surrogates /* 0400018F */
     IL_0143:  /* 02   |                  */ ldarg.0
     IL_0144:  /* 7B   | (04)000190       */ ldfld      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_context /* 04000190 */
     IL_0149:  /* 02   |                  */ ldarg.0
-    IL_014a:  /* 7B   | (04)000191       */ ldfld      class System.Runtime.Serialization.ObjectManager/*02000012*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_objectManager /* 04000191 */
+    IL_014a:  /* 7B   | (04)000191       */ ldfld      class BalthasarIL.Serialization.ObjectManager/*02000012*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_objectManager /* 04000191 */
     IL_014f:  /* 02   |                  */ ldarg.0
     IL_0150:  /* 7B   | (04)000197       */ ldfld      class BalthasarIL.BinaryFormatters.Binary.SerObjectInfoInit/*02000052*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_serObjectInfoInit /* 04000197 */
     IL_0155:  /* 02   |                  */ ldarg.0
@@ -25682,9 +25682,9 @@
     IL_015b:  /* 02   |                  */ ldarg.0
     IL_015c:  /* 7B   | (04)000195       */ ldfld      bool BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_isSimpleAssembly /* 04000195 */
     IL_0161:  /* 28   | (06)000218       */ call       class BalthasarIL.BinaryFormatters.Binary.ReadObjectInfo/*02000051*/ BalthasarIL.BinaryFormatters.Binary.ReadObjectInfo/*02000051*/::Create(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
-                                                                                                                                                                                                                         class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/,
+                                                                                                                                                                                                                         class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/,
                                                                                                                                                                                                                          valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/,
-                                                                                                                                                                                                                         class System.Runtime.Serialization.ObjectManager/*02000012*/,
+                                                                                                                                                                                                                         class BalthasarIL.Serialization.ObjectManager/*02000012*/,
                                                                                                                                                                                                                          class BalthasarIL.BinaryFormatters.Binary.SerObjectInfoInit/*02000052*/,
                                                                                                                                                                                                                          class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.IFormatterConverter/*0100002D*/,
                                                                                                                                                                                                                          bool) /* 06000218 */
@@ -26204,7 +26204,7 @@
     IL_031c:  /* 8C   | (02)000045       */ box        BalthasarIL.BinaryFormatters.Binary.InternalArrayTypeE/*02000045*/
     IL_0321:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_0326:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0326:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_032b:  /* 7A   |                  */ throw
   } // end of method ObjectReader::ParseArray
 
@@ -26388,10 +26388,10 @@
     IL_008c:  /* 40   | 89000000         */ bne.un     IL_011a
 
     IL_0091:  /* 02   |                  */ ldarg.0
-    IL_0092:  /* 7B   | (04)000191       */ ldfld      class System.Runtime.Serialization.ObjectManager/*02000012*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_objectManager /* 04000191 */
+    IL_0092:  /* 7B   | (04)000191       */ ldfld      class BalthasarIL.Serialization.ObjectManager/*02000012*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_objectManager /* 04000191 */
     IL_0097:  /* 03   |                  */ ldarg.1
     IL_0098:  /* 7B   | (04)0001E0       */ ldfld      int64 BalthasarIL.BinaryFormatters.Binary.ParseRecord/*0200005B*/::_idRef /* 040001E0 */
-    IL_009d:  /* 6F   | (06)0000C5       */ callvirt   instance object System.Runtime.Serialization.ObjectManager/*02000012*/::GetObject(int64) /* 060000C5 */
+    IL_009d:  /* 6F   | (06)0000C5       */ callvirt   instance object BalthasarIL.Serialization.ObjectManager/*02000012*/::GetObject(int64) /* 060000C5 */
     IL_00a2:  /* 0C   |                  */ stloc.2
     IL_00a3:  /* 08   |                  */ ldloc.2
     IL_00a4:  /* 2D   | 3B               */ brtrue.s   IL_00e1
@@ -26409,13 +26409,13 @@
                                                                                                                                class [System.Private.CoreLib/*23000001*/]System.Array/*01000034*/,
                                                                                                                                int32) /* 0A000043 */
     IL_00c4:  /* 02   |                  */ ldarg.0
-    IL_00c5:  /* 7B   | (04)000191       */ ldfld      class System.Runtime.Serialization.ObjectManager/*02000012*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_objectManager /* 04000191 */
+    IL_00c5:  /* 7B   | (04)000191       */ ldfld      class BalthasarIL.Serialization.ObjectManager/*02000012*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_objectManager /* 04000191 */
     IL_00ca:  /* 06   |                  */ ldloc.0
     IL_00cb:  /* 7B   | (04)0001DF       */ ldfld      int64 BalthasarIL.BinaryFormatters.Binary.ParseRecord/*0200005B*/::_objectId /* 040001DF */
     IL_00d0:  /* 09   |                  */ ldloc.3
     IL_00d1:  /* 03   |                  */ ldarg.1
     IL_00d2:  /* 7B   | (04)0001E0       */ ldfld      int64 BalthasarIL.BinaryFormatters.Binary.ParseRecord/*0200005B*/::_idRef /* 040001E0 */
-    IL_00d7:  /* 6F   | (06)0000D2       */ callvirt   instance void System.Runtime.Serialization.ObjectManager/*02000012*/::RecordArrayElementFixup(int64,
+    IL_00d7:  /* 6F   | (06)0000D2       */ callvirt   instance void BalthasarIL.Serialization.ObjectManager/*02000012*/::RecordArrayElementFixup(int64,
                                                                                                                                                      int32[],
                                                                                                                                                      int64) /* 060000D2 */
     IL_00dc:  /* 38   | AB020000         */ br         IL_038c
@@ -26579,7 +26579,7 @@
     IL_026b:  /* 2D   | 0B               */ brtrue.s   IL_0278
 
     IL_026d:  /* 28   | (06)00003D       */ call       string System.SR/*02000004*/::get_Serialization_ArrayTypeObject() /* 0600003D */
-    IL_0272:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0272:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0277:  /* 7A   |                  */ throw
 
     IL_0278:  /* 03   |                  */ ldarg.1
@@ -26899,10 +26899,10 @@
     IL_0142:  /* 33   | 70               */ bne.un.s   IL_01b4
 
     IL_0144:  /* 02   |                  */ ldarg.0
-    IL_0145:  /* 7B   | (04)000191       */ ldfld      class System.Runtime.Serialization.ObjectManager/*02000012*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_objectManager /* 04000191 */
+    IL_0145:  /* 7B   | (04)000191       */ ldfld      class BalthasarIL.Serialization.ObjectManager/*02000012*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_objectManager /* 04000191 */
     IL_014a:  /* 03   |                  */ ldarg.1
     IL_014b:  /* 7B   | (04)0001E0       */ ldfld      int64 BalthasarIL.BinaryFormatters.Binary.ParseRecord/*0200005B*/::_idRef /* 040001E0 */
-    IL_0150:  /* 6F   | (06)0000C5       */ callvirt   instance object System.Runtime.Serialization.ObjectManager/*02000012*/::GetObject(int64) /* 060000C5 */
+    IL_0150:  /* 6F   | (06)0000C5       */ callvirt   instance object BalthasarIL.Serialization.ObjectManager/*02000012*/::GetObject(int64) /* 060000C5 */
     IL_0155:  /* 0C   |                  */ stloc.2
     IL_0156:  /* 08   |                  */ ldloc.2
     IL_0157:  /* 2D   | 3C               */ brtrue.s   IL_0195
@@ -27015,7 +27015,7 @@
     IL_0249:  /* 7B   | (04)0001D9       */ ldfld      string BalthasarIL.BinaryFormatters.Binary.ParseRecord/*0200005B*/::_name /* 040001D9 */
     IL_024e:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_0253:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0253:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0258:  /* 7A   |                  */ throw
 
     IL_0259:  /* 02   |                  */ ldarg.0
@@ -27272,7 +27272,7 @@
     IL_005a:  /* 2C   | 1B               */ brfalse.s  IL_0077
 
     IL_005c:  /* 02   |                  */ ldarg.0
-    IL_005d:  /* 7B   | (04)000191       */ ldfld      class System.Runtime.Serialization.ObjectManager/*02000012*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_objectManager /* 04000191 */
+    IL_005d:  /* 7B   | (04)000191       */ ldfld      class BalthasarIL.Serialization.ObjectManager/*02000012*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_objectManager /* 04000191 */
     IL_0062:  /* 03   |                  */ ldarg.1
     IL_0063:  /* 74   | (01)000003       */ castclass  [System.Private.CoreLib/*23000001*/]System.String/*01000003*/
     IL_0068:  /* 04   |                  */ ldarg.2
@@ -27280,7 +27280,7 @@
     IL_006e:  /* 06   |                  */ ldloc.0
     IL_006f:  /* 07   |                  */ ldloc.1
     IL_0070:  /* 08   |                  */ ldloc.2
-    IL_0071:  /* 6F   | (06)0000C9       */ callvirt   instance void System.Runtime.Serialization.ObjectManager/*02000012*/::RegisterString(string,
+    IL_0071:  /* 6F   | (06)0000C9       */ callvirt   instance void BalthasarIL.Serialization.ObjectManager/*02000012*/::RegisterString(string,
                                                                                                                                             int64,
                                                                                                                                             class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationInfo/*01000044*/,
                                                                                                                                             int64,
@@ -27288,7 +27288,7 @@
     IL_0076:  /* 2A   |                  */ ret
 
     IL_0077:  /* 02   |                  */ ldarg.0
-    IL_0078:  /* 7B   | (04)000191       */ ldfld      class System.Runtime.Serialization.ObjectManager/*02000012*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_objectManager /* 04000191 */
+    IL_0078:  /* 7B   | (04)000191       */ ldfld      class BalthasarIL.Serialization.ObjectManager/*02000012*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_objectManager /* 04000191 */
     IL_007d:  /* 03   |                  */ ldarg.1
     IL_007e:  /* 04   |                  */ ldarg.2
     IL_007f:  /* 7B   | (04)0001DF       */ ldfld      int64 BalthasarIL.BinaryFormatters.Binary.ParseRecord/*0200005B*/::_objectId /* 040001DF */
@@ -27296,7 +27296,7 @@
     IL_0085:  /* 07   |                  */ ldloc.1
     IL_0086:  /* 08   |                  */ ldloc.2
     IL_0087:  /* 09   |                  */ ldloc.3
-    IL_0088:  /* 6F   | (06)0000CA       */ callvirt   instance void System.Runtime.Serialization.ObjectManager/*02000012*/::RegisterObject(object,
+    IL_0088:  /* 6F   | (06)0000CA       */ callvirt   instance void BalthasarIL.Serialization.ObjectManager/*02000012*/::RegisterObject(object,
                                                                                                                                             int64,
                                                                                                                                             class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationInfo/*01000044*/,
                                                                                                                                             int64,
@@ -27394,14 +27394,14 @@
     IL_0000:  /* 14   |                  */ ldnull
     IL_0001:  /* 0A   |                  */ stloc.0
     IL_0002:  /* 02   |                  */ ldarg.0
-    IL_0003:  /* 7B   | (04)000193       */ ldfld      class System.Runtime.Serialization.SerializationBinder/*0200001B*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_binder /* 04000193 */
+    IL_0003:  /* 7B   | (04)000193       */ ldfld      class BalthasarIL.Serialization.SerializationBinder/*0200001B*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_binder /* 04000193 */
     IL_0008:  /* 2C   | 0E               */ brfalse.s  IL_0018
 
     IL_000a:  /* 02   |                  */ ldarg.0
-    IL_000b:  /* 7B   | (04)000193       */ ldfld      class System.Runtime.Serialization.SerializationBinder/*0200001B*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_binder /* 04000193 */
+    IL_000b:  /* 7B   | (04)000193       */ ldfld      class BalthasarIL.Serialization.SerializationBinder/*0200001B*/ BalthasarIL.BinaryFormatters.Binary.ObjectReader/*02000055*/::_binder /* 04000193 */
     IL_0010:  /* 03   |                  */ ldarg.1
     IL_0011:  /* 04   |                  */ ldarg.2
-    IL_0012:  /* 6F   | (06)00011F       */ callvirt   instance class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ System.Runtime.Serialization.SerializationBinder/*0200001B*/::BindToType(string,
+    IL_0012:  /* 6F   | (06)00011F       */ callvirt   instance class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ BalthasarIL.Serialization.SerializationBinder/*0200001B*/::BindToType(string,
                                                                                                                                                                                                            string) /* 0600011F */
     IL_0017:  /* 0A   |                  */ stloc.0
     IL_0018:  /* 06   |                  */ ldloc.0
@@ -27527,7 +27527,7 @@
 
     IL_007d:  /* 08   |                  */ ldloc.2
     IL_007e:  /* 04   |                  */ ldarg.2
-    IL_007f:  /* 28   | (06)000093       */ call       class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ System.Runtime.Serialization.FormatterServices/*0200000A*/::GetTypeFromAssembly(class [System.Private.CoreLib/*23000001*/]System.Reflection.Assembly/*01000035*/,
+    IL_007f:  /* 28   | (06)000093       */ call       class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ BalthasarIL.Serialization.FormatterServices/*0200000A*/::GetTypeFromAssembly(class [System.Private.CoreLib/*23000001*/]System.Reflection.Assembly/*01000035*/,
                                                                                                                                                                                                          string) /* 06000093 */
     IL_0084:  /* 0A   |                  */ stloc.0
     IL_0085:  /* 06   |                  */ ldloc.0
@@ -27632,7 +27632,7 @@
       IL_0000:  /* 04   |                  */ ldarg.2
       IL_0001:  /* 02   |                  */ ldarg.0
       IL_0002:  /* 03   |                  */ ldarg.1
-      IL_0003:  /* 28   | (06)000093       */ call       class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ System.Runtime.Serialization.FormatterServices/*0200000A*/::GetTypeFromAssembly(class [System.Private.CoreLib/*23000001*/]System.Reflection.Assembly/*01000035*/,
+      IL_0003:  /* 28   | (06)000093       */ call       class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ BalthasarIL.Serialization.FormatterServices/*0200000A*/::GetTypeFromAssembly(class [System.Private.CoreLib/*23000001*/]System.Reflection.Assembly/*01000035*/,
                                                                                                                                                                                                            string) /* 06000093 */
       IL_0008:  /* 51   |                  */ stind.ref
       IL_0009:  /* DE   | 0C               */ leave.s    IL_0017
@@ -27786,7 +27786,7 @@
 
     IL_0096:  /* 07   |                  */ ldloc.1
     IL_0097:  /* 04   |                  */ ldarg.2
-    IL_0098:  /* 28   | (06)000093       */ call       class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ System.Runtime.Serialization.FormatterServices/*0200000A*/::GetTypeFromAssembly(class [System.Private.CoreLib/*23000001*/]System.Reflection.Assembly/*01000035*/,
+    IL_0098:  /* 28   | (06)000093       */ call       class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/ BalthasarIL.Serialization.FormatterServices/*0200000A*/::GetTypeFromAssembly(class [System.Private.CoreLib/*23000001*/]System.Reflection.Assembly/*01000035*/,
                                                                                                                                                                                                          string) /* 06000093 */
     IL_009d:  /* 0A   |                  */ stloc.0
     IL_009e:  /* 06   |                  */ ldloc.0
@@ -27844,15 +27844,15 @@
        extends [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/
 {
   .field /*040001A7*/ private class [System.Private.CoreLib/*23000001*/]System.Collections.Generic.Queue`1/*0100007D*/<object> _objectQueue
-  .field /*040001A8*/ private class System.Runtime.Serialization.ObjectIDGenerator/*02000011*/ _idGenerator
+  .field /*040001A8*/ private class BalthasarIL.Serialization.ObjectIDGenerator/*02000011*/ _idGenerator
   .field /*040001A9*/ private int32 _currentId
-  .field /*040001AA*/ private initonly class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ _surrogates
+  .field /*040001AA*/ private initonly class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ _surrogates
   .field /*040001AB*/ private initonly valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ _context
   .field /*040001AC*/ private class BalthasarIL.BinaryFormatters.Binary.BinaryFormatterWriter/*0200004E*/ _serWriter
-  .field /*040001AD*/ private initonly class System.Runtime.Serialization.SerializationObjectManager/*02000020*/ _objectManager
+  .field /*040001AD*/ private initonly class BalthasarIL.Serialization.SerializationObjectManager/*02000020*/ _objectManager
   .field /*040001AE*/ private int64 _topId
   .field /*040001AF*/ private initonly class BalthasarIL.BinaryFormatters.Binary.InternalFE/*02000061*/ _formatterEnums
-  .field /*040001B0*/ private initonly class System.Runtime.Serialization.SerializationBinder/*0200001B*/ _binder
+  .field /*040001B0*/ private initonly class BalthasarIL.Serialization.SerializationBinder/*0200001B*/ _binder
   .field /*040001B1*/ private class BalthasarIL.BinaryFormatters.Binary.SerObjectInfoInit/*02000052*/ _serObjectInfoInit
   .field /*040001B2*/ private class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.IFormatterConverter/*0100002D*/ _formatterConverter
   .field /*040001B3*/ assembly object[] _crossAppDomainArray
@@ -27863,10 +27863,10 @@
   .field /*040001B8*/ private class [System.Private.CoreLib/*23000001*/]System.Collections.Generic.Dictionary`2/*0100005D*/<string,int64> _assemblyToIdTable
   .field /*040001B9*/ private initonly class BalthasarIL.BinaryFormatters.Binary.SerStack/*0200005C*/ _niPool
   .method /*06000255*/ assembly hidebysig specialname rtspecialname 
-          instance void  .ctor(class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ selector,
+          instance void  .ctor(class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ selector,
                                valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ context,
                                class BalthasarIL.BinaryFormatters.Binary.InternalFE/*02000061*/ formatterEnums,
-                               class System.Runtime.Serialization.SerializationBinder/*0200001B*/ binder) cil managed
+                               class BalthasarIL.Serialization.SerializationBinder/*0200001B*/ binder) cil managed
   // SIG: 20 04 01 12 3C 11 41 12 81 84 12 6C
   {
     // 方法在 RVA 0x287e0 处开始
@@ -27883,20 +27883,20 @@
     IL_0018:  /* 7D   | (04)0001A9       */ stfld      int32 BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_currentId /* 040001A9 */
     IL_001d:  /* 02   |                  */ ldarg.0
     IL_001e:  /* 03   |                  */ ldarg.1
-    IL_001f:  /* 7D   | (04)0001AA       */ stfld      class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_surrogates /* 040001AA */
+    IL_001f:  /* 7D   | (04)0001AA       */ stfld      class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_surrogates /* 040001AA */
     IL_0024:  /* 02   |                  */ ldarg.0
     IL_0025:  /* 04   |                  */ ldarg.2
     IL_0026:  /* 7D   | (04)0001AB       */ stfld      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_context /* 040001AB */
     IL_002b:  /* 02   |                  */ ldarg.0
     IL_002c:  /* 0E   | 04               */ ldarg.s    binder
-    IL_002e:  /* 7D   | (04)0001B0       */ stfld      class System.Runtime.Serialization.SerializationBinder/*0200001B*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_binder /* 040001B0 */
+    IL_002e:  /* 7D   | (04)0001B0       */ stfld      class BalthasarIL.Serialization.SerializationBinder/*0200001B*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_binder /* 040001B0 */
     IL_0033:  /* 02   |                  */ ldarg.0
     IL_0034:  /* 05   |                  */ ldarg.3
     IL_0035:  /* 7D   | (04)0001AF       */ stfld      class BalthasarIL.BinaryFormatters.Binary.InternalFE/*02000061*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_formatterEnums /* 040001AF */
     IL_003a:  /* 02   |                  */ ldarg.0
     IL_003b:  /* 04   |                  */ ldarg.2
-    IL_003c:  /* 73   | (06)00013D       */ newobj     instance void System.Runtime.Serialization.SerializationObjectManager/*02000020*/::.ctor(valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/) /* 0600013D */
-    IL_0041:  /* 7D   | (04)0001AD       */ stfld      class System.Runtime.Serialization.SerializationObjectManager/*02000020*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_objectManager /* 040001AD */
+    IL_003c:  /* 73   | (06)00013D       */ newobj     instance void BalthasarIL.Serialization.SerializationObjectManager/*02000020*/::.ctor(valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/) /* 0600013D */
+    IL_0041:  /* 7D   | (04)0001AD       */ stfld      class BalthasarIL.Serialization.SerializationObjectManager/*02000020*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_objectManager /* 040001AD */
     IL_0046:  /* 2A   |                  */ ret
   } // end of method ObjectWriter::.ctor
 
@@ -27931,13 +27931,13 @@
     IL_001d:  /* 04   |                  */ ldarg.2
     IL_001e:  /* 6F   | (06)0001D6       */ callvirt   instance void BalthasarIL.BinaryFormatters.Binary.BinaryFormatterWriter/*0200004E*/::WriteBegin() /* 060001D6 */
     IL_0023:  /* 02   |                  */ ldarg.0
-    IL_0024:  /* 73   | (06)0000B1       */ newobj     instance void System.Runtime.Serialization.ObjectIDGenerator/*02000011*/::.ctor() /* 060000B1 */
-    IL_0029:  /* 7D   | (04)0001A8       */ stfld      class System.Runtime.Serialization.ObjectIDGenerator/*02000011*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_idGenerator /* 040001A8 */
+    IL_0024:  /* 73   | (06)0000B1       */ newobj     instance void BalthasarIL.Serialization.ObjectIDGenerator/*02000011*/::.ctor() /* 060000B1 */
+    IL_0029:  /* 7D   | (04)0001A8       */ stfld      class BalthasarIL.Serialization.ObjectIDGenerator/*02000011*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_idGenerator /* 040001A8 */
     IL_002e:  /* 02   |                  */ ldarg.0
     IL_002f:  /* 73   | (0A)0000FC       */ newobj     instance void class [System.Private.CoreLib/*23000001*/]System.Collections.Generic.Queue`1/*0100007D*/<object>/*1B000025*/::.ctor() /* 0A0000FC */
     IL_0034:  /* 7D   | (04)0001A7       */ stfld      class [System.Private.CoreLib/*23000001*/]System.Collections.Generic.Queue`1/*0100007D*/<object> BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_objectQueue /* 040001A7 */
     IL_0039:  /* 02   |                  */ ldarg.0
-    IL_003a:  /* 73   | (06)000086       */ newobj     instance void System.Runtime.Serialization.FormatterConverter/*02000009*/::.ctor() /* 06000086 */
+    IL_003a:  /* 73   | (06)000086       */ newobj     instance void BalthasarIL.Serialization.FormatterConverter/*02000009*/::.ctor() /* 06000086 */
     IL_003f:  /* 7D   | (04)0001B2       */ stfld      class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.IFormatterConverter/*0100002D*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_formatterConverter /* 040001B2 */
     IL_0044:  /* 02   |                  */ ldarg.0
     IL_0045:  /* 73   | (06)00022A       */ newobj     instance void BalthasarIL.BinaryFormatters.Binary.SerObjectInfoInit/*02000052*/::.ctor() /* 0600022A */
@@ -27984,7 +27984,7 @@
 
     IL_009a:  /* 07   |                  */ ldloc.1
     IL_009b:  /* 02   |                  */ ldarg.0
-    IL_009c:  /* 7B   | (04)0001AA       */ ldfld      class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_surrogates /* 040001AA */
+    IL_009c:  /* 7B   | (04)0001AA       */ ldfld      class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_surrogates /* 040001AA */
     IL_00a1:  /* 02   |                  */ ldarg.0
     IL_00a2:  /* 7B   | (04)0001AB       */ ldfld      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_context /* 040001AB */
     IL_00a7:  /* 02   |                  */ ldarg.0
@@ -27993,14 +27993,14 @@
     IL_00ae:  /* 7B   | (04)0001B2       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.IFormatterConverter/*0100002D*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_formatterConverter /* 040001B2 */
     IL_00b3:  /* 02   |                  */ ldarg.0
     IL_00b4:  /* 02   |                  */ ldarg.0
-    IL_00b5:  /* 7B   | (04)0001B0       */ ldfld      class System.Runtime.Serialization.SerializationBinder/*0200001B*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_binder /* 040001B0 */
+    IL_00b5:  /* 7B   | (04)0001B0       */ ldfld      class BalthasarIL.Serialization.SerializationBinder/*0200001B*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_binder /* 040001B0 */
     IL_00ba:  /* 28   | (06)000207       */ call       class BalthasarIL.BinaryFormatters.Binary.WriteObjectInfo/*02000050*/ BalthasarIL.BinaryFormatters.Binary.WriteObjectInfo/*02000050*/::Serialize(object,
-                                                                                                                                                                                                                              class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/,
+                                                                                                                                                                                                                              class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/,
                                                                                                                                                                                                                               valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/,
                                                                                                                                                                                                                               class BalthasarIL.BinaryFormatters.Binary.SerObjectInfoInit/*02000052*/,
                                                                                                                                                                                                                               class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.IFormatterConverter/*0100002D*/,
                                                                                                                                                                                                                               class BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/,
-                                                                                                                                                                                                                              class System.Runtime.Serialization.SerializationBinder/*0200001B*/) /* 06000207 */
+                                                                                                                                                                                                                              class BalthasarIL.Serialization.SerializationBinder/*0200001B*/) /* 06000207 */
     IL_00bf:  /* 13   | 04               */ stloc.s    V_4
     IL_00c1:  /* 11   | 04               */ ldloc.s    V_4
     IL_00c3:  /* 02   |                  */ ldarg.0
@@ -28033,13 +28033,13 @@
     IL_0108:  /* 04   |                  */ ldarg.2
     IL_0109:  /* 6F   | (06)0001D7       */ callvirt   instance void BalthasarIL.BinaryFormatters.Binary.BinaryFormatterWriter/*0200004E*/::WriteEnd() /* 060001D7 */
     IL_010e:  /* 02   |                  */ ldarg.0
-    IL_010f:  /* 7B   | (04)0001AD       */ ldfld      class System.Runtime.Serialization.SerializationObjectManager/*02000020*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_objectManager /* 040001AD */
-    IL_0114:  /* 6F   | (06)00013F       */ callvirt   instance void System.Runtime.Serialization.SerializationObjectManager/*02000020*/::RaiseOnSerializedEvent() /* 0600013F */
+    IL_010f:  /* 7B   | (04)0001AD       */ ldfld      class BalthasarIL.Serialization.SerializationObjectManager/*02000020*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_objectManager /* 040001AD */
+    IL_0114:  /* 6F   | (06)00013F       */ callvirt   instance void BalthasarIL.Serialization.SerializationObjectManager/*02000020*/::RaiseOnSerializedEvent() /* 0600013F */
     IL_0119:  /* 2A   |                  */ ret
   } // end of method ObjectWriter::Serialize
 
   .method /*06000257*/ assembly hidebysig specialname 
-          instance class System.Runtime.Serialization.SerializationObjectManager/*02000020*/ 
+          instance class BalthasarIL.Serialization.SerializationObjectManager/*02000020*/ 
           get_ObjectManager() cil managed
   // SIG: 20 00 12 80 80
   {
@@ -28047,7 +28047,7 @@
     // 代码大小       7 (0x7)
     .maxstack  8
     IL_0000:  /* 02   |                  */ ldarg.0
-    IL_0001:  /* 7B   | (04)0001AD       */ ldfld      class System.Runtime.Serialization.SerializationObjectManager/*02000020*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_objectManager /* 040001AD */
+    IL_0001:  /* 7B   | (04)0001AD       */ ldfld      class BalthasarIL.Serialization.SerializationObjectManager/*02000020*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_objectManager /* 040001AD */
     IL_0006:  /* 2A   |                  */ ret
   } // end of method ObjectWriter::get_ObjectManager
 
@@ -28203,7 +28203,7 @@
     IL_00fc:  /* 11   | 07               */ ldloc.s    V_7
     IL_00fe:  /* 9A   |                  */ ldelem.ref
     IL_00ff:  /* 02   |                  */ ldarg.0
-    IL_0100:  /* 7B   | (04)0001AA       */ ldfld      class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_surrogates /* 040001AA */
+    IL_0100:  /* 7B   | (04)0001AA       */ ldfld      class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_surrogates /* 040001AA */
     IL_0105:  /* 02   |                  */ ldarg.0
     IL_0106:  /* 7B   | (04)0001AB       */ ldfld      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_context /* 040001AB */
     IL_010b:  /* 02   |                  */ ldarg.0
@@ -28212,14 +28212,14 @@
     IL_0112:  /* 7B   | (04)0001B2       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.IFormatterConverter/*0100002D*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_formatterConverter /* 040001B2 */
     IL_0117:  /* 02   |                  */ ldarg.0
     IL_0118:  /* 02   |                  */ ldarg.0
-    IL_0119:  /* 7B   | (04)0001B0       */ ldfld      class System.Runtime.Serialization.SerializationBinder/*0200001B*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_binder /* 040001B0 */
+    IL_0119:  /* 7B   | (04)0001B0       */ ldfld      class BalthasarIL.Serialization.SerializationBinder/*0200001B*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_binder /* 040001B0 */
     IL_011e:  /* 28   | (06)000207       */ call       class BalthasarIL.BinaryFormatters.Binary.WriteObjectInfo/*02000050*/ BalthasarIL.BinaryFormatters.Binary.WriteObjectInfo/*02000050*/::Serialize(object,
-                                                                                                                                                                                                                              class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/,
+                                                                                                                                                                                                                              class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/,
                                                                                                                                                                                                                               valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/,
                                                                                                                                                                                                                               class BalthasarIL.BinaryFormatters.Binary.SerObjectInfoInit/*02000052*/,
                                                                                                                                                                                                                               class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.IFormatterConverter/*0100002D*/,
                                                                                                                                                                                                                               class BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/,
-                                                                                                                                                                                                                              class System.Runtime.Serialization.SerializationBinder/*0200001B*/) /* 06000207 */
+                                                                                                                                                                                                                              class BalthasarIL.Serialization.SerializationBinder/*0200001B*/) /* 06000207 */
     IL_0123:  /* A2   |                  */ stelem.ref
     IL_0124:  /* 11   | 06               */ ldloc.s    V_6
     IL_0126:  /* 11   | 07               */ ldloc.s    V_7
@@ -28238,7 +28238,7 @@
     IL_0141:  /* 11   | 07               */ ldloc.s    V_7
     IL_0143:  /* 9A   |                  */ ldelem.ref
     IL_0144:  /* 02   |                  */ ldarg.0
-    IL_0145:  /* 7B   | (04)0001AA       */ ldfld      class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_surrogates /* 040001AA */
+    IL_0145:  /* 7B   | (04)0001AA       */ ldfld      class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_surrogates /* 040001AA */
     IL_014a:  /* 02   |                  */ ldarg.0
     IL_014b:  /* 7B   | (04)0001AB       */ ldfld      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_context /* 040001AB */
     IL_0150:  /* 02   |                  */ ldarg.0
@@ -28246,13 +28246,13 @@
     IL_0156:  /* 02   |                  */ ldarg.0
     IL_0157:  /* 7B   | (04)0001B2       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.IFormatterConverter/*0100002D*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_formatterConverter /* 040001B2 */
     IL_015c:  /* 02   |                  */ ldarg.0
-    IL_015d:  /* 7B   | (04)0001B0       */ ldfld      class System.Runtime.Serialization.SerializationBinder/*0200001B*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_binder /* 040001B0 */
+    IL_015d:  /* 7B   | (04)0001B0       */ ldfld      class BalthasarIL.Serialization.SerializationBinder/*0200001B*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_binder /* 040001B0 */
     IL_0162:  /* 28   | (06)000209       */ call       class BalthasarIL.BinaryFormatters.Binary.WriteObjectInfo/*02000050*/ BalthasarIL.BinaryFormatters.Binary.WriteObjectInfo/*02000050*/::Serialize(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
-                                                                                                                                                                                                                              class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/,
+                                                                                                                                                                                                                              class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/,
                                                                                                                                                                                                                               valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/,
                                                                                                                                                                                                                               class BalthasarIL.BinaryFormatters.Binary.SerObjectInfoInit/*02000052*/,
                                                                                                                                                                                                                               class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.IFormatterConverter/*0100002D*/,
-                                                                                                                                                                                                                              class System.Runtime.Serialization.SerializationBinder/*0200001B*/) /* 06000209 */
+                                                                                                                                                                                                                              class BalthasarIL.Serialization.SerializationBinder/*0200001B*/) /* 06000209 */
     IL_0167:  /* A2   |                  */ stelem.ref
     IL_0168:  /* 11   | 06               */ ldloc.s    V_6
     IL_016a:  /* 11   | 07               */ ldloc.s    V_7
@@ -28834,7 +28834,7 @@
 
     IL_0051:  /* 11   | 04               */ ldloc.s    V_4
     IL_0053:  /* 02   |                  */ ldarg.0
-    IL_0054:  /* 7B   | (04)0001AA       */ ldfld      class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_surrogates /* 040001AA */
+    IL_0054:  /* 7B   | (04)0001AA       */ ldfld      class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_surrogates /* 040001AA */
     IL_0059:  /* 02   |                  */ ldarg.0
     IL_005a:  /* 7B   | (04)0001AB       */ ldfld      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_context /* 040001AB */
     IL_005f:  /* 02   |                  */ ldarg.0
@@ -28842,13 +28842,13 @@
     IL_0065:  /* 02   |                  */ ldarg.0
     IL_0066:  /* 7B   | (04)0001B2       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.IFormatterConverter/*0100002D*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_formatterConverter /* 040001B2 */
     IL_006b:  /* 02   |                  */ ldarg.0
-    IL_006c:  /* 7B   | (04)0001B0       */ ldfld      class System.Runtime.Serialization.SerializationBinder/*0200001B*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_binder /* 040001B0 */
+    IL_006c:  /* 7B   | (04)0001B0       */ ldfld      class BalthasarIL.Serialization.SerializationBinder/*0200001B*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_binder /* 040001B0 */
     IL_0071:  /* 28   | (06)000209       */ call       class BalthasarIL.BinaryFormatters.Binary.WriteObjectInfo/*02000050*/ BalthasarIL.BinaryFormatters.Binary.WriteObjectInfo/*02000050*/::Serialize(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
-                                                                                                                                                                                                                              class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/,
+                                                                                                                                                                                                                              class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/,
                                                                                                                                                                                                                               valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/,
                                                                                                                                                                                                                               class BalthasarIL.BinaryFormatters.Binary.SerObjectInfoInit/*02000052*/,
                                                                                                                                                                                                                               class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.IFormatterConverter/*0100002D*/,
-                                                                                                                                                                                                                              class System.Runtime.Serialization.SerializationBinder/*0200001B*/) /* 06000209 */
+                                                                                                                                                                                                                              class BalthasarIL.Serialization.SerializationBinder/*0200001B*/) /* 06000209 */
     IL_0076:  /* 13   | 05               */ stloc.s    V_5
     IL_0078:  /* 11   | 05               */ ldloc.s    V_5
     IL_007a:  /* 02   |                  */ ldarg.0
@@ -29406,7 +29406,7 @@
 
     IL_00da:  /* 09   |                  */ ldloc.3
     IL_00db:  /* 02   |                  */ ldarg.0
-    IL_00dc:  /* 7B   | (04)0001AA       */ ldfld      class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_surrogates /* 040001AA */
+    IL_00dc:  /* 7B   | (04)0001AA       */ ldfld      class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_surrogates /* 040001AA */
     IL_00e1:  /* 02   |                  */ ldarg.0
     IL_00e2:  /* 7B   | (04)0001AB       */ ldfld      valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_context /* 040001AB */
     IL_00e7:  /* 02   |                  */ ldarg.0
@@ -29415,14 +29415,14 @@
     IL_00ee:  /* 7B   | (04)0001B2       */ ldfld      class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.IFormatterConverter/*0100002D*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_formatterConverter /* 040001B2 */
     IL_00f3:  /* 02   |                  */ ldarg.0
     IL_00f4:  /* 02   |                  */ ldarg.0
-    IL_00f5:  /* 7B   | (04)0001B0       */ ldfld      class System.Runtime.Serialization.SerializationBinder/*0200001B*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_binder /* 040001B0 */
+    IL_00f5:  /* 7B   | (04)0001B0       */ ldfld      class BalthasarIL.Serialization.SerializationBinder/*0200001B*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_binder /* 040001B0 */
     IL_00fa:  /* 28   | (06)000207       */ call       class BalthasarIL.BinaryFormatters.Binary.WriteObjectInfo/*02000050*/ BalthasarIL.BinaryFormatters.Binary.WriteObjectInfo/*02000050*/::Serialize(object,
-                                                                                                                                                                                                                              class System.Runtime.Serialization.ISurrogateSelector/*0200000F*/,
+                                                                                                                                                                                                                              class BalthasarIL.Serialization.ISurrogateSelector/*0200000F*/,
                                                                                                                                                                                                                               valuetype [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.StreamingContext/*01000010*/,
                                                                                                                                                                                                                               class BalthasarIL.BinaryFormatters.Binary.SerObjectInfoInit/*02000052*/,
                                                                                                                                                                                                                               class [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.IFormatterConverter/*0100002D*/,
                                                                                                                                                                                                                               class BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/,
-                                                                                                                                                                                                                              class System.Runtime.Serialization.SerializationBinder/*0200001B*/) /* 06000207 */
+                                                                                                                                                                                                                              class BalthasarIL.Serialization.SerializationBinder/*0200001B*/) /* 06000207 */
     IL_00ff:  /* 13   | 06               */ stloc.s    V_6
     IL_0101:  /* 11   | 06               */ ldloc.s    V_6
     IL_0103:  /* 11   | 05               */ ldloc.s    V_5
@@ -29701,10 +29701,10 @@
     IL_0035:  /* 0C   |                  */ stloc.2
     IL_0036:  /* 03   |                  */ ldarg.1
     IL_0037:  /* 02   |                  */ ldarg.0
-    IL_0038:  /* 7B   | (04)0001A8       */ ldfld      class System.Runtime.Serialization.ObjectIDGenerator/*02000011*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_idGenerator /* 040001A8 */
+    IL_0038:  /* 7B   | (04)0001A8       */ ldfld      class BalthasarIL.Serialization.ObjectIDGenerator/*02000011*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_idGenerator /* 040001A8 */
     IL_003d:  /* 08   |                  */ ldloc.2
     IL_003e:  /* 12   | 00               */ ldloca.s   V_0
-    IL_0040:  /* 6F   | (06)0000B4       */ callvirt   instance int64 System.Runtime.Serialization.ObjectIDGenerator/*02000011*/::HasId(object,
+    IL_0040:  /* 6F   | (06)0000B4       */ callvirt   instance int64 BalthasarIL.Serialization.ObjectIDGenerator/*02000011*/::HasId(object,
                                                                                                                                         bool&) /* 060000B4 */
     IL_0045:  /* 55   |                  */ stind.i8
     IL_0046:  /* 06   |                  */ ldloc.0
@@ -29714,7 +29714,7 @@
     IL_004e:  /* 08   |                  */ ldloc.2
     IL_004f:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_0054:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0054:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0059:  /* 7A   |                  */ throw
 
     IL_005a:  /* 07   |                  */ ldloc.1
@@ -29746,10 +29746,10 @@
     IL_0013:  /* 2A   |                  */ ret
 
     IL_0014:  /* 02   |                  */ ldarg.0
-    IL_0015:  /* 7B   | (04)0001A8       */ ldfld      class System.Runtime.Serialization.ObjectIDGenerator/*02000011*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_idGenerator /* 040001A8 */
+    IL_0015:  /* 7B   | (04)0001A8       */ ldfld      class BalthasarIL.Serialization.ObjectIDGenerator/*02000011*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_idGenerator /* 040001A8 */
     IL_001a:  /* 02   |                  */ ldarg.0
     IL_001b:  /* 7B   | (04)0001A9       */ ldfld      int32 BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_currentId /* 040001A9 */
-    IL_0020:  /* 7D   | (04)00000E       */ stfld      int32 System.Runtime.Serialization.ObjectIDGenerator/*02000011*/::_currentCount /* 0400000E */
+    IL_0020:  /* 7D   | (04)00000E       */ stfld      int32 BalthasarIL.Serialization.ObjectIDGenerator/*02000011*/::_currentCount /* 0400000E */
     IL_0025:  /* 05   |                  */ ldarg.3
     IL_0026:  /* 14   |                  */ ldnull
     IL_0027:  /* 28   | (0A)00003A       */ call       bool [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/::op_Inequality(class [System.Private.CoreLib/*23000001*/]System.Type/*01000007*/,
@@ -29787,10 +29787,10 @@
     IL_005a:  /* 58   |                  */ add
     IL_005b:  /* 7D   | (04)0001A9       */ stfld      int32 BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_currentId /* 040001A9 */
     IL_0060:  /* 02   |                  */ ldarg.0
-    IL_0061:  /* 7B   | (04)0001A8       */ ldfld      class System.Runtime.Serialization.ObjectIDGenerator/*02000011*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_idGenerator /* 040001A8 */
+    IL_0061:  /* 7B   | (04)0001A8       */ ldfld      class BalthasarIL.Serialization.ObjectIDGenerator/*02000011*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::_idGenerator /* 040001A8 */
     IL_0066:  /* 03   |                  */ ldarg.1
     IL_0067:  /* 0E   | 04               */ ldarg.s    isNew
-    IL_0069:  /* 6F   | (06)0000B3       */ callvirt   instance int64 System.Runtime.Serialization.ObjectIDGenerator/*02000011*/::GetId(object,
+    IL_0069:  /* 6F   | (06)0000B3       */ callvirt   instance int64 BalthasarIL.Serialization.ObjectIDGenerator/*02000011*/::GetId(object,
                                                                                                                                         bool&) /* 060000B3 */
     IL_006e:  /* 0A   |                  */ stloc.0
     IL_006f:  /* 02   |                  */ ldarg.0
@@ -30474,10 +30474,10 @@
     IL_000c:  /* 2A   |                  */ ret
   } // end of method ObjectWriter::PutNameInfo
 
-  .property /*17000081*/ instance class System.Runtime.Serialization.SerializationObjectManager/*02000020*/
+  .property /*17000081*/ instance class BalthasarIL.Serialization.SerializationObjectManager/*02000020*/
           ObjectManager()
   {
-    .get instance class System.Runtime.Serialization.SerializationObjectManager/*02000020*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::get_ObjectManager() /* 06000257 */
+    .get instance class BalthasarIL.Serialization.SerializationObjectManager/*02000020*/ BalthasarIL.BinaryFormatters.Binary.ObjectWriter/*02000059*/::get_ObjectManager() /* 06000257 */
   } // end of property ObjectWriter::ObjectManager
 } // end of class BalthasarIL.BinaryFormatters.Binary.ObjectWriter
 
@@ -30776,7 +30776,7 @@
       IL_0102:  /* 8C   | (01)000021       */ box        [System.Private.CoreLib/*23000001*/]System.Byte/*01000021*/
       IL_0107:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                               object) /* 06000007 */
-      IL_010c:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+      IL_010c:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
       IL_0111:  /* 7A   |                  */ throw
 
       IL_0112:  /* 02   |                  */ ldarg.0
@@ -30784,7 +30784,7 @@
       IL_0118:  /* 2B   | 0B               */ br.s       IL_0125
 
       IL_011a:  /* 28   | (06)00002D       */ call       string System.SR/*02000004*/::get_Serialization_TypeExpected() /* 0600002D */
-      IL_011f:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+      IL_011f:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
       IL_0124:  /* 7A   |                  */ throw
 
       IL_0125:  /* 07   |                  */ ldloc.1
@@ -30900,7 +30900,7 @@
     {
       IL_0255:  /* 26   |                  */ pop
       IL_0256:  /* 28   | (06)00002E       */ call       string System.SR/*02000004*/::get_Serialization_StreamEnd() /* 0600002E */
-      IL_025b:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+      IL_025b:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
       IL_0260:  /* 7A   |                  */ throw
 
     }  // end handler
@@ -31328,7 +31328,7 @@
     IL_005d:  /* 28   | (06)000008       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object,
                                                                                             object) /* 06000008 */
-    IL_0062:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0062:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0067:  /* 7A   |                  */ throw
 
     IL_0068:  /* 06   |                  */ ldloc.0
@@ -31393,7 +31393,7 @@
     IL_004e:  /* 8C   | (01)000023       */ box        [System.Private.CoreLib/*23000001*/]System.Int32/*01000023*/
     IL_0053:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_0058:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0058:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_005d:  /* 7A   |                  */ throw
 
     IL_005e:  /* 02   |                  */ ldarg.0
@@ -31504,7 +31504,7 @@
     IL_015b:  /* 6F   | (0A)000069       */ callvirt   instance string [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/::ToString() /* 0A000069 */
     IL_0160:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_0165:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0165:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_016a:  /* 7A   |                  */ throw
 
     IL_016b:  /* 08   |                  */ ldloc.2
@@ -31611,7 +31611,7 @@
     IL_004e:  /* 28   | (06)000008       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object,
                                                                                             object) /* 06000008 */
-    IL_0053:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0053:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0058:  /* 7A   |                  */ throw
   } // end of method BinaryParser::ReadCrossAppDomainMap
 
@@ -31699,7 +31699,7 @@
     IL_0034:  /* 7B   | (04)00006E       */ ldfld      string BalthasarIL.BinaryFormatters.Binary.BinaryObjectWithMap/*02000032*/::_name /* 0400006E */
     IL_0039:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_003e:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_003e:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0043:  /* 7A   |                  */ throw
 
     IL_0044:  /* 02   |                  */ ldarg.0
@@ -31724,7 +31724,7 @@
                                                                                                                                     string) /* 0A000096 */
     IL_007e:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_0083:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0083:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0088:  /* 7A   |                  */ throw
 
     IL_0089:  /* 03   |                  */ ldarg.1
@@ -31865,7 +31865,7 @@
     IL_01cd:  /* 6F   | (0A)000069       */ callvirt   instance string [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/::ToString() /* 0A000069 */
     IL_01d2:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_01d7:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_01d7:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_01dc:  /* 7A   |                  */ throw
 
     IL_01dd:  /* 08   |                  */ ldloc.2
@@ -31997,7 +31997,7 @@
     IL_0034:  /* 7B   | (04)000074       */ ldfld      string BalthasarIL.BinaryFormatters.Binary.BinaryObjectWithMapTyped/*02000033*/::_name /* 04000074 */
     IL_0039:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_003e:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_003e:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0043:  /* 7A   |                  */ throw
 
     IL_0044:  /* 02   |                  */ ldarg.0
@@ -32022,7 +32022,7 @@
                                                                                                                                     string) /* 0A000096 */
     IL_007e:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_0083:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0083:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0088:  /* 7A   |                  */ throw
 
     IL_0089:  /* 03   |                  */ ldarg.1
@@ -32165,7 +32165,7 @@
     IL_01cb:  /* 6F   | (0A)000069       */ callvirt   instance string [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/::ToString() /* 0A000069 */
     IL_01d0:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_01d5:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_01d5:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_01da:  /* 7A   |                  */ throw
 
     IL_01db:  /* 08   |                  */ ldloc.2
@@ -32282,7 +32282,7 @@
     IL_0094:  /* 28   | (06)000008       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object,
                                                                                             object) /* 06000008 */
-    IL_0099:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0099:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_009e:  /* 7A   |                  */ throw
 
     IL_009f:  /* 02   |                  */ ldarg.0
@@ -32410,7 +32410,7 @@
     IL_020a:  /* 6F   | (0A)000069       */ callvirt   instance string [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/::ToString() /* 0A000069 */
     IL_020f:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_0214:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0214:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0219:  /* 7A   |                  */ throw
 
     IL_021a:  /* 02   |                  */ ldarg.0
@@ -32543,7 +32543,7 @@
     IL_0131:  /* 6F   | (0A)000069       */ callvirt   instance string [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/::ToString() /* 0A000069 */
     IL_0136:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_013b:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_013b:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0140:  /* 7A   |                  */ throw
 
     IL_0141:  /* 02   |                  */ ldarg.0
@@ -32598,7 +32598,7 @@
     IL_0026:  /* 7B   | (04)00005B       */ ldfld      object BalthasarIL.BinaryFormatters.Binary.BinaryArray/*02000029*/::_typeInformation /* 0400005B */
     IL_002b:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_0030:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0030:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0035:  /* 7A   |                  */ throw
 
     IL_0036:  /* 02   |                  */ ldarg.0
@@ -32711,7 +32711,7 @@
     IL_0143:  /* 6F   | (0A)000069       */ callvirt   instance string [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/::ToString() /* 0A000069 */
     IL_0148:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_014d:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_014d:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0152:  /* 7A   |                  */ throw
 
     IL_0153:  /* 09   |                  */ ldloc.3
@@ -32884,7 +32884,7 @@
     IL_02d5:  /* 6F   | (0A)000069       */ callvirt   instance string [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/::ToString() /* 0A000069 */
     IL_02da:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_02df:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_02df:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_02e4:  /* 7A   |                  */ throw
 
     IL_02e5:  /* 11   | 05               */ ldloc.s    V_5
@@ -33392,7 +33392,7 @@
     IL_002d:  /* 2D   | 0B               */ brtrue.s   IL_003a
 
     IL_002f:  /* 28   | (06)00002E       */ call       string System.SR/*02000004*/::get_Serialization_StreamEnd() /* 0600002E */
-    IL_0034:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_0034:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0039:  /* 7A   |                  */ throw
 
     IL_003a:  /* 2A   |                  */ ret
@@ -33524,7 +33524,7 @@
     IL_0141:  /* 6F   | (0A)000069       */ callvirt   instance string [System.Private.CoreLib/*23000001*/]System.Object/*01000001*/::ToString() /* 0A000069 */
     IL_0146:  /* 28   | (06)000007       */ call       string System.SR/*02000004*/::Format(string,
                                                                                             object) /* 06000007 */
-    IL_014b:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+    IL_014b:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
     IL_0150:  /* 7A   |                  */ throw
 
     IL_0151:  /* 06   |                  */ ldloc.0
@@ -34279,7 +34279,7 @@
     {
       IL_0073:  /* 26   |                  */ pop
       IL_0074:  /* 28   | (06)00002A       */ call       string System.SR/*02000004*/::get_Serialization_CorruptedStream() /* 0600002A */
-      IL_0079:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+      IL_0079:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
       IL_007e:  /* 7A   |                  */ throw
 
     }  // end handler
@@ -34568,7 +34568,7 @@
     {
       IL_0073:  /* 26   |                  */ pop
       IL_0074:  /* 28   | (06)00002A       */ call       string System.SR/*02000004*/::get_Serialization_CorruptedStream() /* 0600002A */
-      IL_0079:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]System.Runtime.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
+      IL_0079:  /* 73   | (0A)000017       */ newobj     instance void [System.Private.CoreLib/*23000001*/]BalthasarIL.Serialization.SerializationException/*01000018*/::.ctor(string) /* 0A000017 */
       IL_007e:  /* 7A   |                  */ throw
 
     }  // end handler
@@ -34758,14 +34758,14 @@
 
     IL_0049:  /* 02   |                  */ ldarg.0
     IL_004a:  /* 7B   | (04)000203       */ ldfld      class BalthasarIL.BinaryFormatters.Binary.ReadObjectInfo/*02000051*/ BalthasarIL.BinaryFormatters.Binary.ValueFixup/*02000060*/::_objectInfo /* 04000203 */
-    IL_004f:  /* 7B   | (04)000174       */ ldfld      class System.Runtime.Serialization.ObjectManager/*02000012*/ BalthasarIL.BinaryFormatters.Binary.ReadObjectInfo/*02000051*/::_objectManager /* 04000174 */
+    IL_004f:  /* 7B   | (04)000174       */ ldfld      class BalthasarIL.Serialization.ObjectManager/*02000012*/ BalthasarIL.BinaryFormatters.Binary.ReadObjectInfo/*02000051*/::_objectManager /* 04000174 */
     IL_0054:  /* 04   |                  */ ldarg.2
     IL_0055:  /* 7B   | (04)0001DF       */ ldfld      int64 BalthasarIL.BinaryFormatters.Binary.ParseRecord/*0200005B*/::_objectId /* 040001DF */
     IL_005a:  /* 02   |                  */ ldarg.0
     IL_005b:  /* 7B   | (04)000204       */ ldfld      string BalthasarIL.BinaryFormatters.Binary.ValueFixup/*02000060*/::_memberName /* 04000204 */
     IL_0060:  /* 03   |                  */ ldarg.1
     IL_0061:  /* 7B   | (04)0001DF       */ ldfld      int64 BalthasarIL.BinaryFormatters.Binary.ParseRecord/*0200005B*/::_objectId /* 040001DF */
-    IL_0066:  /* 6F   | (06)0000D0       */ callvirt   instance void System.Runtime.Serialization.ObjectManager/*02000012*/::RecordDelayedFixup(int64,
+    IL_0066:  /* 6F   | (06)0000D0       */ callvirt   instance void BalthasarIL.Serialization.ObjectManager/*02000012*/::RecordDelayedFixup(int64,
                                                                                                                                                 string,
                                                                                                                                                 int64) /* 060000D0 */
     IL_006b:  /* 2A   |                  */ ret
@@ -34784,13 +34784,13 @@
 
     IL_0087:  /* 02   |                  */ ldarg.0
     IL_0088:  /* 7B   | (04)000203       */ ldfld      class BalthasarIL.BinaryFormatters.Binary.ReadObjectInfo/*02000051*/ BalthasarIL.BinaryFormatters.Binary.ValueFixup/*02000060*/::_objectInfo /* 04000203 */
-    IL_008d:  /* 7B   | (04)000174       */ ldfld      class System.Runtime.Serialization.ObjectManager/*02000012*/ BalthasarIL.BinaryFormatters.Binary.ReadObjectInfo/*02000051*/::_objectManager /* 04000174 */
+    IL_008d:  /* 7B   | (04)000174       */ ldfld      class BalthasarIL.Serialization.ObjectManager/*02000012*/ BalthasarIL.BinaryFormatters.Binary.ReadObjectInfo/*02000051*/::_objectManager /* 04000174 */
     IL_0092:  /* 04   |                  */ ldarg.2
     IL_0093:  /* 7B   | (04)0001DF       */ ldfld      int64 BalthasarIL.BinaryFormatters.Binary.ParseRecord/*0200005B*/::_objectId /* 040001DF */
     IL_0098:  /* 08   |                  */ ldloc.2
     IL_0099:  /* 03   |                  */ ldarg.1
     IL_009a:  /* 7B   | (04)0001DF       */ ldfld      int64 BalthasarIL.BinaryFormatters.Binary.ParseRecord/*0200005B*/::_objectId /* 040001DF */
-    IL_009f:  /* 6F   | (06)0000CF       */ callvirt   instance void System.Runtime.Serialization.ObjectManager/*02000012*/::RecordFixup(int64,
+    IL_009f:  /* 6F   | (06)0000CF       */ callvirt   instance void BalthasarIL.Serialization.ObjectManager/*02000012*/::RecordFixup(int64,
                                                                                                                                          class [System.Private.CoreLib/*23000001*/]System.Reflection.MemberInfo/*01000031*/,
                                                                                                                                          int64) /* 060000CF */
     IL_00a4:  /* 2A   |                  */ ret
